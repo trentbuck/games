@@ -65,29 +65,40 @@ SELECT -- If there is no rating, guess it is 70%.
 FROM games;
 
 
+-- We don't want hyperbola when time is less than 1.0 hours.
+--   https://en.wikipedia.org/wiki/Division_by_zero#/media/File:Hyperbola_one_over_x.svg
+-- Therefore simply add 1.0 to all quotients.
+-- Don't do the more intuitive max(1 hour, time), as that
+-- would require me to spend a full hour on a game to get it off the top of the list.
 CREATE VIEW IF NOT EXISTS what_game_next AS
-SELECT rating_fudged / (time_fudged / 60.0) AS rating_per_hour,
-       rating_fudged / max(1.0, (time_fudged / 60.0)) AS rating_per_hour_rounded_up,
-       (price / 100.0) / (time_fudged / 60.0) AS price_per_hour,
-       (price / 100.0) / max(1.0, (time / 60.0)) AS steamdb_price_per_hour,
-       -- What games, after 1 hour more play, will most improve (lower) by "Average price per hour" KPI?
-       ((1.0*price/max(1.0, time_fudged)) -
-        (1.0*price/max(1.0, time_fudged + 1))) AS price_per_hour_change_after_1h_more_play,
-       *
+SELECT rating,
+       printf('%.2f', rating_fudged / (1.0 + (time_fudged / 60.0))) AS "rating/hour",
+       CASE WHEN price THEN printf(price / 100.0) ELSE NULL END AS "$",
+       CASE WHEN price >0 THEN printf('%.2f', (price / 100.0) / (time_fudged / 60.0)) ELSE NULL END "$/hour",
+       CASE WHEN price >0 THEN printf('%.2f', (price / 100.0) / max(1.0, (time_fudged / 60.0))) ELSE NULL END AS "$/hour (steamdb)",
+       CASE 
+         WHEN time >3600 THEN printf('%.2f days', time / 3600.0)
+         WHEN time >60 THEN printf('%.2f hours', time  / 60.0)
+         WHEN time >0 THEN printf('%i min', time)
+       END AS time,
+       id,
+       name
 FROM games_fudged
-ORDER BY rating_per_hour DESC;
+ORDER BY rating_fudged / (1.0 + (time_fudged / 60.0)) DESC;
 
 
 -- What games, after 1 hour more play, will most improve (lower) by "Average price per hour" KPI?
 CREATE VIEW IF NOT EXISTS what_game_next_to_lower_my_KPI AS
 SELECT *
-FROM (SELECT ((CASE WHEN price >0 THEN price ELSE NULL END / 100.0) / max(1.0, (time / 60.0))) AS steamdb_price_per_hour,
-             ((1.0 * (price / 100.0) / max(1.0, (time_fudged / 60.0))) -
-              (1.0 * (price / 100.0) / max(1.0, (time_fudged / 60.0) + 1))) AS change,
-             *
+FROM (SELECT CAST (round((CASE WHEN price >0 THEN price ELSE NULL END / 100.0) / max(1.0, (time / 60.0))) AS INTEGER) AS "$/hour (steamdb)",
+             round(
+               ((1.0 * (price / 100.0) / max(1.0, (time_fudged / 60.0))) -
+                (1.0 * (price / 100.0) / max(1.0, (time_fudged / 60.0) + 1))),
+               2) AS Δ,
+             rating, price, time, id, name
       FROM games_fudged
       WHERE price > 0
-      ORDER BY change DESC)
+      ORDER BY Δ DESC)
 -- Don't even mention games that are already below the average.
 -- UGH can't just do "SELECT steamdb_price_per_hour FROM stats" because that's pretty-printed.
-WHERE NOT steamdb_price_per_hour < (SELECT steamdb_average_price_per_hour FROM stats);
+WHERE "$/hour (steamdb)" > (SELECT steamdb_average_price_per_hour FROM stats);
