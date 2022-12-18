@@ -59,5 +59,7 @@ pathlib.Path('stats.ini').write_bytes(
     subprocess.check_output(['sqlite3', '-line', db_path, 'SELECT * FROM stats_text']))
 pathlib.Path('what-game-next.csv').write_bytes(
     subprocess.check_output(['sqlite3', '-header', '-csv', db_path, 'SELECT * FROM what_game_next']))
+pathlib.Path('what-game-next-nonfree.csv').write_bytes(  # skip the "free to play" games
+    subprocess.check_output(['sqlite3', '-header', '-csv', db_path, 'SELECT * FROM what_game_next WHERE "$" >0']))
 pathlib.Path('what-game-next-to-lower-my-KPI.csv').write_bytes(
     subprocess.check_output(['sqlite3', '-header', '-csv', db_path, 'SELECT * FROM what_game_next_to_lower_my_KPI']))
