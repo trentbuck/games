@@ -48,11 +48,11 @@ with sqlite3.connect(db_path) as conn:
         return None if s == '-1' else int(s)
     conn.executemany(
         'INSERT INTO games (id, name, rating, time, price) VALUES (:id, :name, :rating, :time, :price)',
-        ({'id': mystrip(tr.xpath('.//td/a/@href')[-1], prefix='/app/', suffix='/'),
-          'name': tr.xpath('.//td/a/text()')[-1],
-          'rating': rating(tr.xpath('.//td/text()')[-1]),
-          'time': fix(tr.xpath('.//td/@data-sort')[-1]),
-          'price': fix(tr.xpath('.//td/@data-sort')[-2])}
+        ({'id': mystrip(*tr.xpath('./td[3]/a/@href'), prefix='/app/', suffix='/'),
+          'name': tr.xpath('./td[3]/a/text()')[0],
+          'rating': rating(*tr.xpath('./td[7]/text()')),
+          'time': fix(*tr.xpath('./td[6]/@data-sort')),
+          'price': fix(*tr.xpath('./td[5]/@data-sort'))}
          for tr in game_table.xpath('./tr')))
 
 pathlib.Path('stats.ini').write_bytes(
