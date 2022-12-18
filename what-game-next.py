@@ -57,7 +57,7 @@ with sqlite3.connect(db_path) as conn:
 
 pathlib.Path('stats.ini').write_bytes(
     subprocess.check_output(['sqlite3', '-line', db_path, 'SELECT * FROM stats_text']))
-pathlib.Path('what-game-next.tsv').write_bytes(
-    subprocess.check_output(['sqlite3', '-header', '-tabs', db_path, 'SELECT * FROM what_game_next']))
-pathlib.Path('what-game-next-to-lower-my-KPI.tsv').write_bytes(
-    subprocess.check_output(['sqlite3', '-header', '-tabs', db_path, 'SELECT * FROM what_game_next_to_lower_my_KPI']))
+pathlib.Path('what-game-next.csv').write_bytes(
+    subprocess.check_output(['sqlite3', '-header', '-csv', db_path, 'SELECT * FROM what_game_next']))
+pathlib.Path('what-game-next-to-lower-my-KPI.csv').write_bytes(
+    subprocess.check_output(['sqlite3', '-header', '-csv', db_path, 'SELECT * FROM what_game_next_to_lower_my_KPI']))
