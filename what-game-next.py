@@ -38,35 +38,26 @@ except FileNotFoundError:
 obj = lxml.html.parse(str(html_path))
 game_table, = obj.xpath('//*[@id="games"]//tbody')
 
+# Gives better error reporting than conn.executescript(schema_path.read_text()).
+subprocess.check_call(['sqlite3', db_path, '-init', 'schema.sql'])
+
 with sqlite3.connect(db_path) as conn:
     def rating(s):
         return None if s == '-' else float(mystrip(s, suffix='%'))
-    conn.execute('PRAGMA journal_mode = wal')
-    conn.execute('DROP TABLE IF EXISTS games')
-    conn.execute('CREATE TABLE games (id INTEGER PRIMARY KEY, name TEXT, rating REAL, time INTEGER, price INTEGER)')
+    def fix(s):
+        return None if s == '-1' else int(s)
     conn.executemany(
         'INSERT INTO games (id, name, rating, time, price) VALUES (:id, :name, :rating, :time, :price)',
         ({'id': mystrip(tr.xpath('.//td/a/@href')[-1], prefix='/app/', suffix='/'),
           'name': tr.xpath('.//td/a/text()')[-1],
           'rating': rating(tr.xpath('.//td/text()')[-1]),
-          'time': tr.xpath('.//td/@data-sort')[-1],
-          'price': tr.xpath('.//td/@data-sort')[-2]}
+          'time': fix(tr.xpath('.//td/@data-sort')[-1]),
+          'price': fix(tr.xpath('.//td/@data-sort')[-2])}
          for tr in game_table.xpath('./tr')))
-    conn.execute("UPDATE games SET time = NULL WHERE time = -1")
-    conn.execute("UPDATE games SET price = NULL WHERE price = -1")
-    conn.execute("""
-    CREATE VIEW IF NOT EXISTS stats AS
-    SELECT printf('%.2f hours', sum(time / 60.0)) AS total_playtime,
-           printf('%.2f hours', avg(time / 60.0)) AS average_playtime,
-           printf('%i A$', sum(price / 100)) AS total_spent,  -- at today's prices
-           printf('%.2f A$', avg(price / 100.0)) AS average_price,
-           -- "Average price calculation only includes games that have a price"
-           printf('%.2f A$', avg(CASE WHEN price >0 THEN price ELSE NULL END / 100.0)) AS steamdb_average_price,
-           printf('%.2f A$/hour', sum(price / 100.0) / sum(time / 60.0)) AS price_per_hour,
-           printf('%.2f A$/hour', avg((price / 100.0) / max(1.0, (time / 60.0)))) AS average_price_per_hour,
-           -- "Average price calculation only includes games that have a price"
-           printf('%.2f A$/hour', avg((CASE WHEN price >0 THEN price ELSE NULL END / 100.0) / max(1.0, (time / 60.0)))) AS steamdb_average_price_per_hour
-    FROM games
-    """)
+
 pathlib.Path('stats.ini').write_bytes(
-    subprocess.check_output(['sqlite3', '-line', db_path, 'SELECT * FROM stats']))
+    subprocess.check_output(['sqlite3', '-line', db_path, 'SELECT * FROM stats_text']))
+pathlib.Path('what-game-next.tsv').write_bytes(
+    subprocess.check_output(['sqlite3', '-header', '-tabs', db_path, 'SELECT * FROM what_game_next ORDER BY price_per_hour_change_after_1h_more_play DESC ']))
+pathlib.Path('what-game-next-to-lower-my-KPI.tsv').write_bytes(
+    subprocess.check_output(['sqlite3', '-header', '-tabs', db_path, 'SELECT * FROM what_game_next_to_lower_my_KPI']))
