@@ -76,8 +76,8 @@ SELECT rating,
        CASE WHEN price THEN printf(price / 100.0) ELSE NULL END AS "$",
        CASE WHEN price >0 THEN printf('%.2f', (price / 100.0) / (time_fudged / 60.0)) ELSE NULL END "$/hour",
        CASE WHEN price >0 THEN printf('%.2f', (price / 100.0) / max(1.0, (time_fudged / 60.0))) ELSE NULL END AS "$/hour (steamdb)",
-       CASE 
-         WHEN time >3600 THEN printf('%.2f days', time / 3600.0)
+       CASE
+         WHEN time >1440 THEN printf('%.2f days', time / 1440.0)
          WHEN time >60 THEN printf('%.2f hours', time  / 60.0)
          WHEN time >0 THEN printf('%i min', time)
        END AS time,
