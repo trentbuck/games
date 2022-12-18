@@ -4,6 +4,7 @@ import datetime
 import argparse
 import subprocess
 import sqlite3
+import csv
 
 import lxml.html
 import lxml.etree
@@ -57,7 +58,14 @@ with sqlite3.connect(db_path) as conn:
 
 pathlib.Path('stats.ini').write_bytes(
     subprocess.check_output(['sqlite3', '-line', db_path, 'SELECT * FROM stats_text']))
-pathlib.Path('what-game-next.tsv').write_bytes(
-    subprocess.check_output(['sqlite3', '-header', '-tabs', db_path, 'SELECT * FROM what_game_next']))
-pathlib.Path('what-game-next-to-lower-my-KPI.tsv').write_bytes(
-    subprocess.check_output(['sqlite3', '-header', '-tabs', db_path, 'SELECT * FROM what_game_next_to_lower_my_KPI']))
+with sqlite3.connect(db_path) as conn:
+    with pathlib.Path('what-game-next.tsv').open('w') as f:
+        cursor = conn.execute('SELECT * FROM what_game_next')
+        writer = csv.writer(f, dialect='excel-tab')
+        writer.writerow([x[0] for x in cursor.description])
+        writer.writerows(cursor)
+    with pathlib.Path('what-game-next-to-lower-my-KPI.tsv').open('w') as f:
+        cursor = conn.execute('SELECT * FROM what_game_next_to_lower_my_KPI')
+        writer = csv.writer(f, dialect='excel-tab')
+        writer.writerow([x[0] for x in cursor.description])
+        writer.writerows(cursor)
