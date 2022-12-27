@@ -39,7 +39,7 @@ obj = lxml.html.parse(str(html_path))
 game_table, = obj.xpath('//*[@id="games"]//tbody')
 
 # Gives better error reporting than conn.executescript(schema_path.read_text()).
-subprocess.check_call(['sqlite3', db_path, '-init', 'schema.sql'])
+subprocess.check_call(['sqlite3', db_path, '-init', 'schema.sql'], stdin=subprocess.DEVNULL)
 
 with sqlite3.connect(db_path) as conn:
     def rating(s):
