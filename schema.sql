@@ -95,7 +95,15 @@ FROM (SELECT round((CASE WHEN price >0 THEN price ELSE NULL END / 100.0) / max(1
                ((1.0 * (price / 100.0) / max(1.0, (time_fudged / 60.0))) -
                 (1.0 * (price / 100.0) / max(1.0, (time_fudged / 60.0) + 1))),
                2) AS Δ,
-             rating, price, time, id, name
+             rating,
+             CASE WHEN price THEN printf(price / 100.0) ELSE NULL END AS "$",
+             CASE
+               WHEN time >1440 THEN printf('%.2f days', time / 1440.0)
+               WHEN time >60 THEN printf('%.2f hours', time  / 60.0)
+               WHEN time >0 THEN printf('%i min', time)
+             END AS time,
+             id,
+             name
       FROM games_fudged
       WHERE price > 0
       ORDER BY Δ DESC)
