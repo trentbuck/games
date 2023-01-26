@@ -90,7 +90,7 @@ ORDER BY rating_fudged / (1.0 + (time_fudged / 60.0)) DESC;
 -- What games, after 1 hour more play, will most improve (lower) by "Average price per hour" KPI?
 CREATE VIEW IF NOT EXISTS what_game_next_to_lower_my_KPI AS
 SELECT *
-FROM (SELECT CAST (round((CASE WHEN price >0 THEN price ELSE NULL END / 100.0) / max(1.0, (time / 60.0))) AS INTEGER) AS "$/hour (steamdb)",
+FROM (SELECT round((CASE WHEN price >0 THEN price ELSE NULL END / 100.0) / max(1.0, (time / 60.0)), 2) AS "$/hour (steamdb)",
              round(
                ((1.0 * (price / 100.0) / max(1.0, (time_fudged / 60.0))) -
                 (1.0 * (price / 100.0) / max(1.0, (time_fudged / 60.0) + 1))),
