@@ -363,107 +363,86 @@ So let's initially start with the assumption that *all* clothing/armor should be
      * Hands
      * Feet
 
-   * * Light
+   * * **Light**
      * `light Kevlar jumpsuit <https://nornagon.github.io/cdda-guide/#/item/lsurvivor_jumpsuit>`_
      * `light survivor cargo pants <https://nornagon.github.io/cdda-guide/#/item/lsurvivor_pants>`_
-     * Coat
-     * Head
-     * Hands
-     * Feet
+     * https://nornagon.github.io/cdda-guide/#/item/trenchcoat_survivor
+       https://nornagon.github.io/cdda-guide/#/item/sleeveless_trenchcoat_survivor
 
-   * * Regular
+     * https://nornagon.github.io/cdda-guide/#/item/hood_lsurvivor
+     * https://nornagon.github.io/cdda-guide/#/item/gloves_lsurvivor
+       https://nornagon.github.io/cdda-guide/#/item/gloves_lsurvivor_fingerless
+
+     * https://nornagon.github.io/cdda-guide/#/item/boots_lsurvivor
+
+   * * **Regular**
      * `Kevlar jumpsuit <https://nornagon.github.io/cdda-guide/#/item/survivor_jumpsuit>`_
      * `survivor cargo pants <https://nornagon.github.io/cdda-guide/#/item/pants_survivor>`_
-     * Coat
-     * Head
-     * Hands
-     * Feet
+     * https://nornagon.github.io/cdda-guide/#/item/duster_survivor
+       https://nornagon.github.io/cdda-guide/#/item/sleeveless_duster_survivor
 
-   * * Heavy
+     * https://nornagon.github.io/cdda-guide/#/item/hood_survivor
+     * https://nornagon.github.io/cdda-guide/#/item/gloves_survivor
+       https://nornagon.github.io/cdda-guide/#/item/gloves_survivor_fingerless
+
+     * https://nornagon.github.io/cdda-guide/#/item/boots_survivor
+
+   * * **Heavy**
      * `heavy Kevlar jumpsuit <https://nornagon.github.io/cdda-guide/#/item/hsurvivor_jumpsuit>`_
-     * n/a
+     * -
      * Coat
      * Head
-     * Hands
-     * Feet
+     * https://nornagon.github.io/cdda-guide/#/item/gloves_hsurvivor
+     * https://nornagon.github.io/cdda-guide/#/item/boots_hsurvivor
 
-   * * Fur (cold)
-     * `fur Kevlar jumpsuit <https://nornagon.github.io/cdda-guide/#/item/wsurvivor_jumpsuit>`
-     * Legs
+   * * **Fur/Winter**
+     * `fur Kevlar jumpsuit <https://nornagon.github.io/cdda-guide/#/item/wsurvivor_jumpsuit>`_
+       `faux fur Kevlar jumpsuit <https://nornagon.github.io/cdda-guide/#/item/wsurvivor_jumpsuit_nofur>`_
+
+     * -
      * Coat
-     * Head
-     * Hands
-     * Feet
+     * https://nornagon.github.io/cdda-guide/#/item/hood_wsurvivor
+       https://nornagon.github.io/cdda-guide/#/item/hood_wsurvivor_nofur
 
-   * * Neoprene (wet?)
+     * https://nornagon.github.io/cdda-guide/#/item/gloves_wsurvivor
+       https://nornagon.github.io/cdda-guide/#/item/gloves_wsurvivor_nofur
+
+     * https://nornagon.github.io/cdda-guide/#/item/boots_wsurvivor
+       https://nornagon.github.io/cdda-guide/#/item/boots_wsurvivor_nofur
+
+   * * **Neoprene**
      * `Kevlar wetsuit <https://nornagon.github.io/cdda-guide/#/item/h20survivor_jumpsuit>`_
        `thick Kevlar wetsuit <https://nornagon.github.io/cdda-guide/#/item/thick_h20survivor_jumpsuit>`_
 
-     * Legs
+     * -
      * Coat
-     * Head
-     * Hands
-     * Feet
+     * https://nornagon.github.io/cdda-guide/#/item/hood_h20survivor
+     * https://nornagon.github.io/cdda-guide/#/item/gloves_h20survivor
+     * https://nornagon.github.io/cdda-guide/#/item/boots_h20survivor
 
-   * * Nomex (fire)
+   * * **Nomex**
      * `Kevlar firesuit <https://nornagon.github.io/cdda-guide/#/item/fsurvivor_jumpsuit>`_
-     * Legs
+     * -
      * Coat
-     * Head
-     * Hands
-     * Feet
+     * https://nornagon.github.io/cdda-guide/#/item/hood_fsurvivor
+     * https://nornagon.github.io/cdda-guide/#/item/gloves_fsurvivor
+     * https://nornagon.github.io/cdda-guide/#/item/boots_fsurvivor
 
 Stuff that did not fit in the table:
 
-  Legs:
-  https://nornagon.github.io/cdda-guide/#/item/armor_mercenary_bottom
-
-  Bodysuits:
+  Nomad stuff:
+  https://nornagon.github.io/cdda-guide/#/item/nomad_bodyglove_1
+  https://nornagon.github.io/cdda-guide/#/item/nomad_bodyglove_2
   https://nornagon.github.io/cdda-guide/#/item/armor_nomad
   https://nornagon.github.io/cdda-guide/#/item/armor_nomad_advanced
   https://nornagon.github.io/cdda-guide/#/item/armor_nomad_light
-  https://nornagon.github.io/cdda-guide/#/item/wsurvivor_jumpsuit_nofur
+  https://nornagon.github.io/cdda-guide/#/item/helmet_nomad
+  https://nornagon.github.io/cdda-guide/#/item/nomad_rig (nomad_rig = survivor_rig + survivor_belt_notools?)
 
-  Underwear:
-  https://nornagon.github.io/cdda-guide/#/item/nomad_bodyglove_1
-  https://nornagon.github.io/cdda-guide/#/item/nomad_bodyglove_2
-
-  Feet:
-
-  | https://nornagon.github.io/cdda-guide/#/item/boots_lsurvivor
-  | https://nornagon.github.io/cdda-guide/#/item/boots_survivor
-  | https://nornagon.github.io/cdda-guide/#/item/boots_wsurvivor_nofur
-  | https://nornagon.github.io/cdda-guide/#/item/boots_wsurvivor
-  | https://nornagon.github.io/cdda-guide/#/item/boots_h20survivor
-
-  Hands:
-
-  | https://nornagon.github.io/cdda-guide/#/item/gloves_lsurvivor
-  | https://nornagon.github.io/cdda-guide/#/item/gloves_lsurvivor_fingerless
-  | https://nornagon.github.io/cdda-guide/#/item/gloves_survivor_fingerless
-  | https://nornagon.github.io/cdda-guide/#/item/gloves_survivor
-  | https://nornagon.github.io/cdda-guide/#/item/gloves_wsurvivor
-  | https://nornagon.github.io/cdda-guide/#/item/gloves_wsurvivor_nofur
-  | https://nornagon.github.io/cdda-guide/#/item/gloves_h20survivor
-
-  Head:
-
-  | https://nornagon.github.io/cdda-guide/#/item/helmet_nomad
-  | https://nornagon.github.io/cdda-guide/#/item/hood_survivor
-  | https://nornagon.github.io/cdda-guide/#/item/hood_wsurvivor
-  | https://nornagon.github.io/cdda-guide/#/item/hood_lsurvivor
-  | https://nornagon.github.io/cdda-guide/#/item/hood_wsurvivor_nofur
-  | https://nornagon.github.io/cdda-guide/#/item/hood_h20survivor
-  | https://nornagon.github.io/cdda-guide/#/item/helmet_scavenger
-
-
-  Overcoat:
-
-  | https://nornagon.github.io/cdda-guide/#/item/duster_survivor
-  | https://nornagon.github.io/cdda-guide/#/item/sleeveless_duster_survivor
-  | https://nornagon.github.io/cdda-guide/#/item/armor_mercenary_top
-  | https://nornagon.github.io/cdda-guide/#/item/trenchcoat_survivor
-  | https://nornagon.github.io/cdda-guide/#/item/sleeveless_trenchcoat_survivor
+  Merc stuff:
+  https://nornagon.github.io/cdda-guide/#/item/armor_mercenary_top
+  https://nornagon.github.io/cdda-guide/#/item/armor_mercenary_bottom
+  https://nornagon.github.io/cdda-guide/#/item/helmet_scavenger
 
   Storage:
 
@@ -472,7 +451,6 @@ Stuff that did not fit in the table:
   | https://nornagon.github.io/cdda-guide/#/item/survivor_rucksack
   | https://nornagon.github.io/cdda-guide/#/item/survivor_runner_pack
   | https://nornagon.github.io/cdda-guide/#/item/survivor_rig
-  | https://nornagon.github.io/cdda-guide/#/item/nomad_rig
 
   Utility:
 
