@@ -1,3 +1,48 @@
+"Final" Loadout for Perfect Cheating Start
+======================================================================
+
+The goal is to have a character that can run around seeing everything "worry free", to learn the details of the game.
+Vehicles & bionics & mutations are ignored for now.
+Initial focus is on getting a handle on armour, storage, and summer/winterweight layering.
+
+:Melee: RM42_ w/ Eskrima_ or `Krav Maga`_.
+   Always want a knife regardless, for cutting_ and butchering_.
+   Fits in `survivor belt`_ knife holster (20mov).
+   Better dam/turn & dam/stamina than `tempered combat machete`_ w/ Barbarian_ (though lose strong Armor Piercing buff).
+
+:Ranged (long): RM11B_, 25rd mag.
+   Roleplaying: I like DMRs.  5x50mm_ only has pistol & smg; `laser <Laser vs. Rivtech caseless>`_ ammo is too heavy.
+   8x40mm_ isn't *best* at anything, but it's *good* at most things (poor availability, but we're cheating).
+   The thing they're worst at is noise, and this gets it from ~200 to ~100.  Hearing damage is >150noise.  This is the main reason not to RM88.
+   Fits in `survivor harness`_ gun holster (30mov); par with `single_sling`, 4×faster than `shoulder_strap` sling gunmod.
+   Only this and MP5SD_ have integrated suppressors.  All other suppressors *wear out*.  Other 8x40 can't be suppressed.
+   See also `ammo comparisons`_.
+
+:Ranged (short): MP5SD_
+   One of the 2 most common calibres, so you just top this up from corpses.
+   Starts at 48noise.  You can add a *second* suppressor for 0noise.
+   100rd mag.
+   Range is shit, but this is intended for bumbling around in CQB without waking people, for when I get bored of knife fighting.
+   Don't bother to trick this out with other mods.
+
+
+.. _cutting: https://nornagon.github.io/cdda-guide/#/tool_quality/CUT
+.. _butchering: https://nornagon.github.io/cdda-guide/#/tool_quality/BUTCHER
+.. _`survivor harness`: https://nornagon.github.io/cdda-guide/#/item/survivor_vst
+.. _`survivor belt`: https://nornagon.github.io/cdda-guide/#/item/survivor_belt_notools
+.. _RM42: https://nornagon.github.io/cdda-guide/#/item/knife_rm42
+.. _Eskrima: https://nornagon.github.io/cdda-guide/#/martial_art/style_eskrima
+.. _`Krav Maga`: https://nornagon.github.io/cdda-guide/#/martial_art/style_krav_maga
+.. _`tempered combat machete`: https://nornagon.github.io/cdda-guide/#/item/survivor_machete_qt
+.. _barbarian: https://nornagon.github.io/cdda-guide/#/martial_art/style_barbaran
+
+
+Brainstorming
+======================================================================
+
+* Not doing things like
+  `debug backpack <https://nornagon.github.io/cdda-guide/#/search/debug>`
+
 * WEAPONRY
 
   * MELEE
@@ -209,51 +254,8 @@
   :laser stuff: not considered
 
 
-* magazines 8x40mm caseless:
-
-                                              PER SHOT
-  *  10 0.25L 0.06kg 6cm  PISTOL SMG DMR      25.0ml 6.0g 6.0mm
-  *  25 0.50L 0.09kg 8cm  PISTOL SMG DMR      20.0ml 3.5g 3.2mm  <--- DEFINITELY BETTER OF THE SMALL TWO
-  *  50 0.50L 0.11kg 8cm  AR BR               10.0ml 2.2g 1.6mm
-  * 100 0.75L 0.15kg 9cm  AR BR                7.5ml 1.5g 0.9mm  <--- SWEET SPOT, AS EXPECTED
-  * 250 2.00L 0.34kg 13cm    BR LMG HMG        8.0ml 1.3g 0.5mm
-  * 500 4.00L 1.40kg 16cm       LMG HMG        8.0ml 2.8g 0.3mm
-             loose bullet                      5.8ml 1.2g?? 2cmm??
 
 
-* ammo 8x40mm caseless::
-
-    all: 0.23L 0.01kg 6cm
-
-    VARIANT          Dam  AP  Rng  Disp  Recoil Noise Crit×
-    8mm_hvp:         47   38  42   75    2200   1870  2      <-- bosses?    --- 154noise in RB11 -- JUST enough to peak noise deafness threshold
-    8mm_fmj:         37   28  42   75    2200   1120  2
-    8mm_caseless:    42   18  42   75    2200    840  2      (default)
-    8mm_inc:         42   18  42   60    2200    840  2
-    8mm_bootleg:     42    8  42   82    2200    422  2      <-- mobs?
-    8mm_jhp:         47    8  42   75    2200    460  2      <-- mobs?
-    8mm_civilian:    21   18  42   90    1100    462  2      <-- mobs?
-
-  For comparison, here's some default cartridge types::
-
-    VARIANT                             Dam  AP  Rng  Disp   Recoil  Noise Crit×
-    .22 LR          0.07L 0.00kg 4cm    12    0   13   60     150     26   2
-    9x18mm Makarov  0.10L 0.01kg 5cm    16    2   13   60     300     58   2
-    9x19mm Mauser   0.12L 0.01kg 5cm    26    0   14   60     500     28   2
-    5.7×28mm SS190  0.12L 0.01kg 5cm    20   18   14   40      90    388   2    <-- CQB
-    4.6×30mm        0.16L 0.01kg 5cm    18   20   14   40      90    388   2    <-- CQB
-    5.56×45mm M855  0.19L 0.01kg 6cm    41    6   36  170    1650    318   2
-    8×40mm caseless 0.23L 0.01kg 6cm    42   18   42   75    2200    840   2    <-- noisy!
-    7.62x39mm AK    0.11L 0.02kg 5cm    45    8   30   35    2036    420   2
-    7.62×51mm M80   0.16L 0.02kg 5cm    58    6   65    5    3300    478   2    <-- disp crazy low??
-    7.62x54mmR M-N  0.18L 0.02kg 6cm    54   10   75   15    2650    690   2
-    .50BMG M33      0.45L 0.11kg 8cm   131   28  110  150   25250   3888   2
-
-  Looking at actual storage spawning stuff on the floor... ::
-
-    1000rd loose       5.75L  12.00kg
-    10 × 100rd mags    7.50L  13.50kg
-    40 ×  25rd mags   20.00L  15.60kg
 
 * armor:
 
@@ -296,31 +298,6 @@
   |
   | [... I GOT BORED OF THIS...]
 
-* LASER VS RIVTECH:
-
-  * A7 laser doing 25dam/4pen per shot, taking 1000kJ for 25 shots, so assume DOUBLE SHOTS and ignore pen ::
-
-      rifle itself  3.00L   3.0kg
-      10×UPS        40.0L  19.3kg      250 × 25dam shots
-      80×hvy batt   98.4L  80.0kg     2000 × 25dam shots (loose)
-
-  * RM11B doing 52dam/18pen per shot::
-
-      rifle itself  3.35L  3.49kg
-      5 × 25rd mag  2.50L  1.95kg      125 × 52dam shots
-      1000 rd       5.85L 12.00kg     1000 × 52dam shots (loose)
-
-  So if you consider the weight/volume cost, the 8x40 is CRAZILY more good.
-
-  On that basis I think lasers can get fucked right now.
-
-  If you could charge the laser from a rando light battery that might
-  be different, because you can scavenge those.
-
-  Oh maybe you can like drain all the smartphones into the UPS and then use those to shoot?
-
-  Focusing lens improves from 25dam/4pen/30rng to 30dam/4pen/45rng but still sucks compared to DMR.
-  Efficient emitter reduces battery cost from 40/shot to 36/shot but meh.
 
 
 * STATIC STORAGE::
@@ -571,3 +548,81 @@
     RE MELEE WEAPONS
 
         https://www.reddit.com/r/cataclysmdda/comments/usxw73/whats_the_best_melee_build_in_experimental/
+
+
+Ammo comparisons
+------------------------------------------------------------
+
+.. csv-table:: 8x40mm caseless variants (all are 0.23L 0.01kg 6cm)
+   :header: Variant, Dam,   AP, Rng, Disp , Recoil,  Noise
+
+   8mm_hvp_,         47,   38,  42,   75,    2200,   1870
+   8mm_fmj_,         37,   28,  42,   75,    2200,   1120
+   8mm_caseless_,    42,   18,  42,   75,    2200,    840
+   8mm_inc_,         42,   18,  42,   60,    2200,    840
+   8mm_bootleg_,     42,    8,  42,   82,    2200,    422
+   8mm_jhp_,         47,    8,  42,   75,    2200,    460
+   8mm_civilian_,    21,   18,  42,   90,    1100,    462
+
+
+.. csv-table:: Some default cartridges for comparison
+   :header: VARIANT,    Vol,   Mass, Len,   Dam,   AP,  Rng, Disp,  Recoil,  Noise,    Comments
+   .22 LR,            0.07L, 0.00kg, 4cm,    12,    0,   13,   60,     150,     26,
+   9x18mm Makarov,    0.10L, 0.01kg, 5cm,    16,    2,   13,   60,     300,     58,
+   9x19mm Mauser,     0.12L, 0.01kg, 5cm,    26,    0,   14,   60,     500,     28,
+   5.7×28mm SS190,    0.12L, 0.01kg, 5cm,    20,   18,   14,   40,      90,    388,    CQB
+   4.6×30mm,          0.16L, 0.01kg, 5cm,    18,   20,   14,   40,      90,    388,    CQB
+   5.56×45mm M855,    0.19L, 0.01kg, 6cm,    41,    6,   36,  170,    1650,    318,
+   8×40mm caseless,   0.23L, 0.01kg, 6cm,    42,   18,   42,   75,    2200,    840,    noisy!
+   7.62x39mm AK,      0.11L, 0.02kg, 5cm,    45,    8,   30,   35,    2036,    420,
+   7.62×51mm M80,     0.16L, 0.02kg, 5cm,    58,    6,   65,    5,    3300,    478,    disp crazy low?!
+   7.62x54mmR M-N,    0.18L, 0.02kg, 6cm,    54,   10,   75,   15,    2650,    690,
+   .50BMG M33,        0.45L, 0.11kg, 8cm,   131,   28,  110,  150,   25250,   3888,
+
+
+
+.. csv-table:: Looking at actual storage spawning stuff on the floor...
+   :header: MAG, Vol,   Mass, Len,  COMPAT,         per shot,     ,      ,  COMMENT
+
+    010,       0.25L, 0.06kg,  6cm, PISTOL SMG DMR, 25.0ml,   6.0g, 6.0mm,
+    025,       0.50L, 0.09kg,  8cm, PISTOL SMG DMR, 20.0ml,   3.5g, 3.2mm,  DEFINITELY BETTER OF THE SMALL TWO
+    050,       0.50L, 0.11kg,  8cm, AR BR         , 10.0ml,   2.2g, 1.6mm,
+    100,       0.75L, 0.15kg,  9cm, AR BR         ,  7.5ml,   1.5g, 0.9mm,  SWEET SPOT, AS EXPECTED
+    250,       2.00L, 0.34kg, 13cm,   BR LMG HMG  ,  8.0ml,   1.3g, 0.5mm,
+    500,       4.00L, 1.40kg, 16cm,      LMG HMG  ,  8.0ml,   2.8g, 0.3mm,
+    loose,          ,       ,     ,               ,  5.8ml,  1.2g?, 2cmm?,
+
+::
+
+    1000rd loose       5.75L  12.00kg
+    10 × 100rd mags    7.50L  13.50kg
+    40 ×  25rd mags   20.00L  15.60kg
+
+
+
+Laser vs. Rivtech caseless
+------------------------------------------------------------
+
+A7 laser doing 25dam/4pen per shot, taking 1000kJ for 25 shots, so assume DOUBLE SHOTS and ignore pen ::
+
+      rifle itself  3.00L   3.0kg
+      10×UPS        40.0L  19.3kg      250 × 25dam shots
+      80×hvy batt   98.4L  80.0kg     2000 × 25dam shots (loose)
+
+RM11B doing 52dam/18pen per shot::
+
+      rifle itself  3.35L  3.49kg
+      5 × 25rd mag  2.50L  1.95kg      125 × 52dam shots
+      1000 rd       5.85L 12.00kg     1000 × 52dam shots (loose)
+
+So if you consider the weight/volume cost, the 8x40 is *crazily* more good.
+
+On that basis I think lasers can get fucked right now.
+
+If you could charge the laser from a rando light battery that might
+be different, because you can scavenge those.
+
+Oh maybe you can like drain all the smartphones into the UPS and then use those to shoot?
+
+Focusing lens improves from 25dam/4pen/30rng to 30dam/4pen/45rng but still sucks compared to DMR.
+Efficient emitter reduces battery cost from 40/shot to 36/shot but meh.
