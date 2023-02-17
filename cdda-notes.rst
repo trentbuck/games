@@ -1,7 +1,7 @@
 "Final" Loadout for Perfect Cheating Start
 ======================================================================
-
 The goal is to have a character that can run around seeing everything "worry free", to learn the details of the game.
+Not doing `debug backpack <https://nornagon.github.io/cdda-guide/#/search/debug>`, tho.
 Vehicles & bionics & mutations are ignored for now.
 Initial focus is on getting a handle on armour, storage, and summer/winterweight layering.
 
@@ -10,16 +10,27 @@ Initial focus is on getting a handle on armour, storage, and summer/winterweight
    Fits in `survivor belt`_ knife holster (20mov).
    Better dam/turn & dam/stamina than `tempered combat machete`_ w/ Barbarian_ (though lose strong Armor Piercing buff).
 
-:Ranged (long): RM11B_, 25rd mag.
+:Ranged (long): RM11B_, 3-6 × 8x40mm_ 25rd mag, [match trigger, ergonomic grip, high end hand guard, gyro (or laser?)]
    Roleplaying: I like DMRs.  5x50mm_ only has pistol & smg; `laser <Laser vs. Rivtech caseless>`_ ammo is too heavy.
+
+   Fits in `survivor harness`_ gun holster (30mov); par with `single_sling`, 4×faster than `shoulder_strap` sling gunmod.
+
    8x40mm_ isn't *best* at anything, but it's *good* at most things (poor availability, but we're cheating).
    The thing they're worst at is noise, and this gets it from ~200 to ~100.  Hearing damage is >150noise.  This is the main reason not to RM88.
-   Fits in `survivor harness`_ gun holster (30mov); par with `single_sling`, 4×faster than `shoulder_strap` sling gunmod.
    Only this and MP5SD_ have integrated suppressors.  All other suppressors *wear out*.  Other 8x40 can't be suppressed.
+
    See also `ammo comparisons`_.
 
+   Base 10disp, repair (accurize) is -30disp, but cannot go below 0.
+   So you end up with 0disp (from gun) and 75disp (from ammo).
+   Therefore no point getting gun mods that improve dispersion, only recoil and aim speed.
+
+   Carry 3–6×25rd mags (2L 1.6kg) and 1000rd loose (6L 12kg).
+
+
+
 :Ranged (short): MP5SD_
-   One of the 2 most common calibres, so you just top this up from corpses.
+   One of the 2 most common calibres, so just "top up" this up from corpses.
    Starts at 48noise.  You can add a *second* suppressor for 0noise.
    100rd mag.
    Range is shit, but this is intended for bumbling around in CQB without waking people, for when I get bored of knife fighting.
@@ -30,7 +41,10 @@ Initial focus is on getting a handle on armour, storage, and summer/winterweight
 .. _butchering: https://nornagon.github.io/cdda-guide/#/tool_quality/BUTCHER
 .. _`survivor harness`: https://nornagon.github.io/cdda-guide/#/item/survivor_vst
 .. _`survivor belt`: https://nornagon.github.io/cdda-guide/#/item/survivor_belt_notools
+.. _RM11B: https://nornagon.github.io/cdda-guide/#/item/rm11b_sniper_rifle
 .. _RM42: https://nornagon.github.io/cdda-guide/#/item/knife_rm42
+.. _RM88: https://nornagon.github.io/cdda-guide/#/item/rm88_battle_rifle
+.. _MP5SD: https://nornagon.github.io/cdda-guide/#/item/hk_mp5sd
 .. _Eskrima: https://nornagon.github.io/cdda-guide/#/martial_art/style_eskrima
 .. _`Krav Maga`: https://nornagon.github.io/cdda-guide/#/martial_art/style_krav_maga
 .. _`tempered combat machete`: https://nornagon.github.io/cdda-guide/#/item/survivor_machete_qt
@@ -39,9 +53,6 @@ Initial focus is on getting a handle on armour, storage, and summer/winterweight
 
 Brainstorming
 ======================================================================
-
-* Not doing things like
-  `debug backpack <https://nornagon.github.io/cdda-guide/#/search/debug>`
 
 * WEAPONRY
 
@@ -554,15 +565,24 @@ Ammo comparisons
 ------------------------------------------------------------
 
 .. csv-table:: 8x40mm caseless variants (all are 0.23L 0.01kg 6cm)
-   :header: Variant, Dam,   AP, Rng, Disp , Recoil,  Noise
+   :header: Variant,   Dam,   AP, Rng, Disp , Recoil,  Noise
 
-   8mm_hvp_,         47,   38,  42,   75,    2200,   1870
-   8mm_fmj_,         37,   28,  42,   75,    2200,   1120
-   8mm_caseless_,    42,   18,  42,   75,    2200,    840
-   8mm_inc_,         42,   18,  42,   60,    2200,    840
-   8mm_bootleg_,     42,    8,  42,   82,    2200,    422
-   8mm_jhp_,         47,    8,  42,   75,    2200,    460
-   8mm_civilian_,    21,   18,  42,   90,    1100,    462
+   8x40mm_HVP_,         47,   38,  42,   75,    2200,   1870
+   8x40mm_FMJ_,         37,   28,  42,   75,    2200,   1120
+   8x40mm_,             42,   18,  42,   75,    2200,    840
+   8x40mm_tracer_,      42,   18,  42,   60,    2200,    840
+   8x40mm_bootleg_,     42,    8,  42,   82,    2200,    422
+   8x40mm_JHP_,         47,    8,  42,   75,    2200,    460
+   8x40mm_sporting_,    21,   18,  42,   90,    1100,    462
+
+
+.. _8x40_HVP: https://nornagon.github.io/cdda-guide/#/item/8mm_hvp
+.. _8x40_FMJ: https://nornagon.github.io/cdda-guide/#/item/8mm_fmj
+.. _8x40mm: https://nornagon.github.io/cdda-guide/#/item/8mm_caseless
+.. _8x40_tracer: https://nornagon.github.io/cdda-guide/#/item/8mm_inc
+.. _8x40_bootleg: https://nornagon.github.io/cdda-guide/#/item/8mm_bootleg
+.. _8x40_JHP: https://nornagon.github.io/cdda-guide/#/item/8mm_jhp
+.. _8x40_sporting: https://nornagon.github.io/cdda-guide/#/item/8mm_civilian
 
 
 .. csv-table:: Some default cartridges for comparison
@@ -585,9 +605,9 @@ Ammo comparisons
    :header: MAG, Vol,   Mass, Len,  COMPAT,         per shot,     ,      ,  COMMENT
 
     010,       0.25L, 0.06kg,  6cm, PISTOL SMG DMR, 25.0ml,   6.0g, 6.0mm,
-    025,       0.50L, 0.09kg,  8cm, PISTOL SMG DMR, 20.0ml,   3.5g, 3.2mm,  DEFINITELY BETTER OF THE SMALL TWO
+    025,       0.50L, 0.09kg,  8cm, PISTOL SMG DMR, 20.0ml,   3.5g, 3.2mm,  easily best for dmr
     050,       0.50L, 0.11kg,  8cm, AR BR         , 10.0ml,   2.2g, 1.6mm,
-    100,       0.75L, 0.15kg,  9cm, AR BR         ,  7.5ml,   1.5g, 0.9mm,  SWEET SPOT, AS EXPECTED
+    100,       0.75L, 0.15kg,  9cm, AR BR         ,  7.5ml,   1.5g, 0.9mm,  sweet spot for rifles
     250,       2.00L, 0.34kg, 13cm,   BR LMG HMG  ,  8.0ml,   1.3g, 0.5mm,
     500,       4.00L, 1.40kg, 16cm,      LMG HMG  ,  8.0ml,   2.8g, 0.3mm,
     loose,          ,       ,     ,               ,  5.8ml,  1.2g?, 2cmm?,
