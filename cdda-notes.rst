@@ -366,14 +366,10 @@ So let's initially start with the assumption that *all* clothing/armor should be
    * * **Light**
      * `light Kevlar jumpsuit <https://nornagon.github.io/cdda-guide/#/item/lsurvivor_jumpsuit>`_
      * `light survivor cargo pants <https://nornagon.github.io/cdda-guide/#/item/lsurvivor_pants>`_
-     * https://nornagon.github.io/cdda-guide/#/item/trenchcoat_survivor
-       https://nornagon.github.io/cdda-guide/#/item/sleeveless_trenchcoat_survivor
-
-     * https://nornagon.github.io/cdda-guide/#/item/hood_lsurvivor
-     * https://nornagon.github.io/cdda-guide/#/item/gloves_lsurvivor
-       https://nornagon.github.io/cdda-guide/#/item/gloves_lsurvivor_fingerless
-
-     * https://nornagon.github.io/cdda-guide/#/item/boots_lsurvivor
+     * [`sleeveless <https://nornagon.github.io/cdda-guide/#/item/sleeveless_trenchcoat_survivor>`_] `survivor trenchcoat <https://nornagon.github.io/cdda-guide/#/item/trenchcoat_survivor>`_
+     * `light survivor hood <https://nornagon.github.io/cdda-guide/#/item/hood_lsurvivor>`_
+     * [`pair of fingerless <https://nornagon.github.io/cdda-guide/#/item/gloves_lsurvivor_fingerless>`_] `light survivor gloves <https://nornagon.github.io/cdda-guide/#/item/gloves_lsurvivor>`_
+     * `pair of light survivor boots <https://nornagon.github.io/cdda-guide/#/item/boots_lsurvivor>`_
 
    * * **Regular**
      * `Kevlar jumpsuit <https://nornagon.github.io/cdda-guide/#/item/survivor_jumpsuit>`_
@@ -389,20 +385,21 @@ So let's initially start with the assumption that *all* clothing/armor should be
 
    * * **Heavy**
      * `heavy Kevlar jumpsuit <https://nornagon.github.io/cdda-guide/#/item/hsurvivor_jumpsuit>`_
-     * -
-     * Coat
-     * Head
+     * ∅
+     * ∅
+     * ∅?
      * https://nornagon.github.io/cdda-guide/#/item/gloves_hsurvivor
      * https://nornagon.github.io/cdda-guide/#/item/boots_hsurvivor
 
    * * **Fur/Winter**
-     * `fur Kevlar jumpsuit <https://nornagon.github.io/cdda-guide/#/item/wsurvivor_jumpsuit>`_
-       `faux fur Kevlar jumpsuit <https://nornagon.github.io/cdda-guide/#/item/wsurvivor_jumpsuit_nofur>`_
+     * [`faux <https://nornagon.github.io/cdda-guide/#/item/wsurvivor_jumpsuit_nofur>`_]
+       `fur Kevlar jumpsuit <https://nornagon.github.io/cdda-guide/#/item/wsurvivor_jumpsuit>`_
 
-     * -
-     * Coat
-     * https://nornagon.github.io/cdda-guide/#/item/hood_wsurvivor
-       https://nornagon.github.io/cdda-guide/#/item/hood_wsurvivor_nofur
+     * ∅
+     * ∅
+     * `faux <https://nornagon.github.io/cdda-guide/#/item/hood_wsurvivor_nofur>`_
+       `fix https://nornagon.github.io/cdda-guide/#/item/hood_wsurvivor
+       
 
      * https://nornagon.github.io/cdda-guide/#/item/gloves_wsurvivor
        https://nornagon.github.io/cdda-guide/#/item/gloves_wsurvivor_nofur
@@ -411,19 +408,19 @@ So let's initially start with the assumption that *all* clothing/armor should be
        https://nornagon.github.io/cdda-guide/#/item/boots_wsurvivor_nofur
 
    * * **Neoprene**
-     * `Kevlar wetsuit <https://nornagon.github.io/cdda-guide/#/item/h20survivor_jumpsuit>`_
-       `thick Kevlar wetsuit <https://nornagon.github.io/cdda-guide/#/item/thick_h20survivor_jumpsuit>`_
+     * [`thick <https://nornagon.github.io/cdda-guide/#/item/thick_h20survivor_jumpsuit>`_]
+       `Kevlar wetsuit <https://nornagon.github.io/cdda-guide/#/item/h20survivor_jumpsuit>`_
 
-     * -
-     * Coat
+     * ∅?
+     * ∅?
      * https://nornagon.github.io/cdda-guide/#/item/hood_h20survivor
      * https://nornagon.github.io/cdda-guide/#/item/gloves_h20survivor
      * https://nornagon.github.io/cdda-guide/#/item/boots_h20survivor
 
    * * **Nomex**
      * `Kevlar firesuit <https://nornagon.github.io/cdda-guide/#/item/fsurvivor_jumpsuit>`_
-     * -
-     * Coat
+     * ∅?
+     * ∅?
      * https://nornagon.github.io/cdda-guide/#/item/hood_fsurvivor
      * https://nornagon.github.io/cdda-guide/#/item/gloves_fsurvivor
      * https://nornagon.github.io/cdda-guide/#/item/boots_fsurvivor
