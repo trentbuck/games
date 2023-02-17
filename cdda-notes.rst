@@ -6,11 +6,13 @@ Vehicles & bionics & mutations are ignored for now.
 Initial focus is on getting a handle on armour, storage, and summer/winterweight layering.
 
 :Melee: RM42_ w/ Eskrima_ or `Krav Maga`_.
+
    Always want a knife regardless, for cutting_ and butchering_.
    Fits in `survivor belt`_ knife holster (20mov).
    Better dam/turn & dam/stamina than `tempered combat machete`_ w/ Barbarian_ (though lose strong Armor Piercing buff).
 
-:Ranged (long): RM11B_, 3-6 × 8x40mm_ 25rd mag, [match trigger, ergonomic grip, high end hand guard, gyro (or laser?)]
+:Ranged (long): RM11B_ w/ Taekwondo_, 3-6 × 8x40mm_ 25rd mag, [match trigger, ergonomic grip, high end hand guard, gyro (or laser?)].
+
    Roleplaying: I like DMRs.  5x50mm_ only has pistol & smg; `laser <Laser vs. Rivtech caseless>`_ ammo is too heavy.
 
    Fits in `survivor harness`_ gun holster (30mov); par with `single_sling`, 4×faster than `shoulder_strap` sling gunmod.
@@ -27,9 +29,8 @@ Initial focus is on getting a handle on armour, storage, and summer/winterweight
 
    Carry 3–6×25rd mags (2L 1.6kg) and 1000rd loose (6L 12kg).
 
+:Ranged (short): MP5SD_.
 
-
-:Ranged (short): MP5SD_
    One of the 2 most common calibres, so just "top up" this up from corpses.
    Starts at 48noise.  You can add a *second* suppressor for 0noise.
    100rd mag.
@@ -37,18 +38,19 @@ Initial focus is on getting a handle on armour, storage, and summer/winterweight
    Don't bother to trick this out with other mods.
 
 
-.. _cutting: https://nornagon.github.io/cdda-guide/#/tool_quality/CUT
-.. _butchering: https://nornagon.github.io/cdda-guide/#/tool_quality/BUTCHER
-.. _`survivor harness`: https://nornagon.github.io/cdda-guide/#/item/survivor_vst
-.. _`survivor belt`: https://nornagon.github.io/cdda-guide/#/item/survivor_belt_notools
-.. _RM11B: https://nornagon.github.io/cdda-guide/#/item/rm11b_sniper_rifle
-.. _RM42: https://nornagon.github.io/cdda-guide/#/item/knife_rm42
-.. _RM88: https://nornagon.github.io/cdda-guide/#/item/rm88_battle_rifle
-.. _MP5SD: https://nornagon.github.io/cdda-guide/#/item/hk_mp5sd
-.. _Eskrima: https://nornagon.github.io/cdda-guide/#/martial_art/style_eskrima
-.. _`Krav Maga`: https://nornagon.github.io/cdda-guide/#/martial_art/style_krav_maga
+.. _cutting:                   https://nornagon.github.io/cdda-guide/#/tool_quality/CUT
+.. _butchering:                https://nornagon.github.io/cdda-guide/#/tool_quality/BUTCHER
+.. _`survivor harness`:        https://nornagon.github.io/cdda-guide/#/item/survivor_vst
+.. _`survivor belt`:           https://nornagon.github.io/cdda-guide/#/item/survivor_belt_notools
+.. _RM11B:                     https://nornagon.github.io/cdda-guide/#/item/rm11b_sniper_rifle
+.. _RM42:                      https://nornagon.github.io/cdda-guide/#/item/knife_rm42
+.. _RM88:                      https://nornagon.github.io/cdda-guide/#/item/rm88_battle_rifle
+.. _MP5SD:                     https://nornagon.github.io/cdda-guide/#/item/hk_mp5sd
+.. _Eskrima:                   https://nornagon.github.io/cdda-guide/#/martial_art/style_eskrima
+.. _`Krav Maga`:               https://nornagon.github.io/cdda-guide/#/martial_art/style_krav_maga
+.. _Taekwondo:                 https://nornagon.github.io/cdda-guide/#/martial_art/style_taekwondo
 .. _`tempered combat machete`: https://nornagon.github.io/cdda-guide/#/item/survivor_machete_qt
-.. _barbarian: https://nornagon.github.io/cdda-guide/#/martial_art/style_barbaran
+.. _barbarian:                 https://nornagon.github.io/cdda-guide/#/martial_art/style_barbaran
 
 
 Brainstorming
@@ -323,33 +325,81 @@ Brainstorming
     Utility_Shelf        1500L   Y            N
     Warehouse_Shelf      3500L   Y            Y
 
-* ARMOR:
 
-  Let's initially start from the assumption that we should pull *everything* from the "bespoke_armor" subtree.
+Survivor Gear
+------------------------------------------------------------
+General opinion seems to be that
 
-  It seems like we'll need to have TWO copies of some things: winterweight and normal (summerweight).
+• `power armor <https://nornagon.github.io/cdda-guide/#/item/power_armor_light>`_ (et al)
+  `phase immersion suit <https://nornagon.github.io/cdda-guide/#/item/phase_immersion_suit>`_
+  `RM13 combat armor <https://nornagon.github.io/cdda-guide/#/item/rm13_armor>`_
+  are all good but have caveats/finnicky.
 
-  General comment by people is that "normal" stuff is overall shitty.
+• The `bespoke_armor <https://github.com/CleverRaven/Cataclysm-DDA/tree/master/data/json/items/armor/bespoke_armor>`_ tree is pretty good, but
+  `nomad <https://nornagon.github.io/cdda-guide/#/search/nomad>`_ is objectively worse then
+  `survivor <https://nornagon.github.io/cdda-guide/#/search/survivor>_.
+  The nomad stuff also hooks into bionics, and I'm not touching bionics yet.
+
+So let's initially start with the assumption that *all* clothing/armor should be pulled from the `survivor` part of ``bespoke_armor``.
+
+• Light/medium/heavy is the usual dodge/block tradeoff.
+  I'm less confident about the winter, flame, and wetsuit variants.
+  Can we instead get away with just summerweight + some thermal undies?
+
+  Ignore "faux-fur" as being just a crap version of fur (winter)?
+
+• "Survivor Suit" is obsolete, as are modular ballistic vest (MBR).
+  Some of the new names *do not* have "survivor" in their search title!
+
+
+.. list-table:: Survivor gear by kind and location
+   :header-rows: 1
+
+   * * Variant
+     * Bodysuit
+     * Legs
+     * Coat
+     * Head
+     * Hands
+     * Feet
+
+   * * Light
+     * `light Kevlar jumpsuit <https://nornagon.github.io/cdda-guide/#/item/lsurvivor_jumpsuit>`_
+     * `light survivor cargo pants <https://nornagon.github.io/cdda-guide/#/item/lsurvivor_pants>`_
+
+   * * Regular
+     * `Kevlar jumpsuit <https://nornagon.github.io/cdda-guide/#/item/survivor_jumpsuit>`_
+     * `survivor cargo pants <https://nornagon.github.io/cdda-guide/#/item/pants_survivor>`_
+
+   * * Heavy
+     * `heavy Kevlar jumpsuit <https://nornagon.github.io/cdda-guide/#/item/hsurvivor_jumpsuit>`_
+     * n/a
+
+   * * Fur (cold)
+     * `fur Kevlar jumpsuit <https://nornagon.github.io/cdda-guide/#/item/wsurvivor_jumpsuit>`
+
+   * * Neoprene (wet?)
+
+     * `Kevlar wetsuit <https://nornagon.github.io/cdda-guide/#/item/h20survivor_jumpsuit>`_
+       `thick Kevlar wetsuit <https://nornagon.github.io/cdda-guide/#/item/thick_h20survivor_jumpsuit>`_
+
+   * * Nomex (fire)
+     * `Kevlar firesuit <https://nornagon.github.io/cdda-guide/#/item/fsurvivor_jumpsuit>`_
+
+  Stuff that did not fit in the table:
+
+  Legs:
+  https://nornagon.github.io/cdda-guide/#/item/armor_mercenary_bottom
 
   Bodysuits:
+  https://nornagon.github.io/cdda-guide/#/item/armor_nomad
+  https://nornagon.github.io/cdda-guide/#/item/armor_nomad_advanced
+  https://nornagon.github.io/cdda-guide/#/item/armor_nomad_light
+  https://nornagon.github.io/cdda-guide/#/item/wsurvivor_jumpsuit_nofur
 
-  | .. https://nornagon.github.io/cdda-guide/#/item/armor_nomad
-  | .. https://nornagon.github.io/cdda-guide/#/item/armor_nomad_advanced
-  | .. https://nornagon.github.io/cdda-guide/#/item/armor_nomad_advanced_on
-  | .. https://nornagon.github.io/cdda-guide/#/item/armor_nomad_light
-  | https://nornagon.github.io/cdda-guide/#/item/lsurvivor_jumpsuit
-  | https://nornagon.github.io/cdda-guide/#/item/survivor_jumpsuit
-  | https://nornagon.github.io/cdda-guide/#/item/hsurvivor_jumpsuit
-  | https://nornagon.github.io/cdda-guide/#/item/wsurvivor_jumpsuit
-  | https://nornagon.github.io/cdda-guide/#/item/wsurvivor_jumpsuit_nofur
-  | https://nornagon.github.io/cdda-guide/#/item/h20survivor_jumpsuit
-  | https://nornagon.github.io/cdda-guide/#/item/thick_h20survivor_jumpsuit
-  | https://nornagon.github.io/cdda-guide/#/item/fsurvivor_jumpsuit  (fire)
-  | 
-  | Underwear??
-  | 
-  | https://nornagon.github.io/cdda-guide/#/item/nomad_bodyglove_1
-  | https://nornagon.github.io/cdda-guide/#/item/nomad_bodyglove_2
+  Underwear:
+  https://nornagon.github.io/cdda-guide/#/item/nomad_bodyglove_1
+  https://nornagon.github.io/cdda-guide/#/item/nomad_bodyglove_2
 
   Feet:
 
@@ -379,11 +429,6 @@ Brainstorming
   | https://nornagon.github.io/cdda-guide/#/item/hood_h20survivor
   | https://nornagon.github.io/cdda-guide/#/item/helmet_scavenger
 
-  Legs:
-
-  | https://nornagon.github.io/cdda-guide/#/item/lsurvivor_pants
-  | https://nornagon.github.io/cdda-guide/#/item/pants_survivor
-  | https://nornagon.github.io/cdda-guide/#/item/armor_mercenary_bottom
 
   Overcoat:
 
@@ -401,7 +446,6 @@ Brainstorming
   | https://nornagon.github.io/cdda-guide/#/item/survivor_runner_pack
   | https://nornagon.github.io/cdda-guide/#/item/survivor_rig
   | https://nornagon.github.io/cdda-guide/#/item/nomad_rig
-  | https://nornagon.github.io/cdda-guide/#/item/nomad_rig_on
 
   Utility:
 
@@ -605,7 +649,7 @@ Ammo comparisons
    :header: MAG, Vol,   Mass, Len,  COMPAT,         per shot,     ,      ,  COMMENT
 
     010,       0.25L, 0.06kg,  6cm, PISTOL SMG DMR, 25.0ml,   6.0g, 6.0mm,
-    025,       0.50L, 0.09kg,  8cm, PISTOL SMG DMR, 20.0ml,   3.5g, 3.2mm,  easily best for dmr
+    025,       0.50L, 0.09kg,  8cm, PISTOL SMG DMR, 20.0ml,   3.5g, 3.2mm,  easily best for DMR
     050,       0.50L, 0.11kg,  8cm, AR BR         , 10.0ml,   2.2g, 1.6mm,
     100,       0.75L, 0.15kg,  9cm, AR BR         ,  7.5ml,   1.5g, 0.9mm,  sweet spot for rifles
     250,       2.00L, 0.34kg, 13cm,   BR LMG HMG  ,  8.0ml,   1.3g, 0.5mm,
@@ -616,7 +660,7 @@ Ammo comparisons
 
     1000rd loose       5.75L  12.00kg
     10 × 100rd mags    7.50L  13.50kg
-    40 ×  25rd mags   20.00L  15.60kg
+    40 ×  25rd mags   20.00L  15.60kg   <--- overkill; keep most loose
 
 
 
