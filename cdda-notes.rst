@@ -374,56 +374,42 @@ So let's initially start with the assumption that *all* clothing/armor should be
    * * **Regular**
      * `Kevlar jumpsuit <https://nornagon.github.io/cdda-guide/#/item/survivor_jumpsuit>`_
      * `survivor cargo pants <https://nornagon.github.io/cdda-guide/#/item/pants_survivor>`_
-     * https://nornagon.github.io/cdda-guide/#/item/duster_survivor
-       https://nornagon.github.io/cdda-guide/#/item/sleeveless_duster_survivor
-
-     * https://nornagon.github.io/cdda-guide/#/item/hood_survivor
-     * https://nornagon.github.io/cdda-guide/#/item/gloves_survivor
-       https://nornagon.github.io/cdda-guide/#/item/gloves_survivor_fingerless
-
-     * https://nornagon.github.io/cdda-guide/#/item/boots_survivor
+     * [`sleeveless <https://nornagon.github.io/cdda-guide/#/item/sleeveless_duster_survivor>`_] `survivor duster <https://nornagon.github.io/cdda-guide/#/item/duster_survivor>`_
+     * `survivor hood <https://nornagon.github.io/cdda-guide/#/item/hood_survivor>`_
+     * [`pair of fingerless <https://nornagon.github.io/cdda-guide/#/item/gloves_survivor_fingerless>`_] `survivor gloves <https://nornagon.github.io/cdda-guide/#/item/gloves_survivor>`_
+     * `pair of survivor boots <https://nornagon.github.io/cdda-guide/#/item/boots_survivor>`_
 
    * * **Heavy**
      * `heavy Kevlar jumpsuit <https://nornagon.github.io/cdda-guide/#/item/hsurvivor_jumpsuit>`_
      * ∅
      * ∅
      * ∅?
-     * https://nornagon.github.io/cdda-guide/#/item/gloves_hsurvivor
-     * https://nornagon.github.io/cdda-guide/#/item/boots_hsurvivor
+     * `pair of heavy survivor gloves <https://nornagon.github.io/cdda-guide/#/item/gloves_hsurvivor>`_
+     * `pair of heavy survivor gloves <https://nornagon.github.io/cdda-guide/#/item/boots_hsurvivor>`_
 
    * * **Fur/Winter**
-     * [`faux <https://nornagon.github.io/cdda-guide/#/item/wsurvivor_jumpsuit_nofur>`_]
-       `fur Kevlar jumpsuit <https://nornagon.github.io/cdda-guide/#/item/wsurvivor_jumpsuit>`_
-
+     * [`faux <https://nornagon.github.io/cdda-guide/#/item/wsurvivor_jumpsuit_nofur>`_] `fur Kevlar jumpsuit <https://nornagon.github.io/cdda-guide/#/item/wsurvivor_jumpsuit>`_
      * ∅
      * ∅
-     * `faux <https://nornagon.github.io/cdda-guide/#/item/hood_wsurvivor_nofur>`_
-       `fix https://nornagon.github.io/cdda-guide/#/item/hood_wsurvivor
-       
-
-     * https://nornagon.github.io/cdda-guide/#/item/gloves_wsurvivor
-       https://nornagon.github.io/cdda-guide/#/item/gloves_wsurvivor_nofur
-
-     * https://nornagon.github.io/cdda-guide/#/item/boots_wsurvivor
-       https://nornagon.github.io/cdda-guide/#/item/boots_wsurvivor_nofur
+     * [`faux <https://nornagon.github.io/cdda-guide/#/item/hood_wsurvivor_nofur>`_] `fur survivor hood <https://nornagon.github.io/cdda-guide/#/item/hood_wsurvivor>`_
+     * [`pair of faux <https://nornagon.github.io/cdda-guide/#/item/gloves_wsurvivor_nofur>`_] `fur survivor gloves <https://nornagon.github.io/cdda-guide/#/item/gloves_wsurvivor>`_
+     * [`pair of faux <https://nornagon.github.io/cdda-guide/#/item/boots_wsurvivor_nofur>`_] `fur survivor boots <https://nornagon.github.io/cdda-guide/#/item/boots_wsurvivor>`_
 
    * * **Neoprene**
-     * [`thick <https://nornagon.github.io/cdda-guide/#/item/thick_h20survivor_jumpsuit>`_]
-       `Kevlar wetsuit <https://nornagon.github.io/cdda-guide/#/item/h20survivor_jumpsuit>`_
-
+     * [`thick <https://nornagon.github.io/cdda-guide/#/item/thick_h20survivor_jumpsuit>`_] `Kevlar wetsuit <https://nornagon.github.io/cdda-guide/#/item/h20survivor_jumpsuit>`_
      * ∅?
      * ∅?
-     * https://nornagon.github.io/cdda-guide/#/item/hood_h20survivor
-     * https://nornagon.github.io/cdda-guide/#/item/gloves_h20survivor
-     * https://nornagon.github.io/cdda-guide/#/item/boots_h20survivor
+     * `survivor wetsuit hood <https://nornagon.github.io/cdda-guide/#/item/hood_h20survivor>`_
+     * `pair of survivor wetsuit gloves <https://nornagon.github.io/cdda-guide/#/item/gloves_h20survivor>`_
+     * `pair of survivor wetsuit boots <https://nornagon.github.io/cdda-guide/#/item/boots_h20survivor>`_
 
    * * **Nomex**
      * `Kevlar firesuit <https://nornagon.github.io/cdda-guide/#/item/fsurvivor_jumpsuit>`_
      * ∅?
      * ∅?
-     * https://nornagon.github.io/cdda-guide/#/item/hood_fsurvivor
-     * https://nornagon.github.io/cdda-guide/#/item/gloves_fsurvivor
-     * https://nornagon.github.io/cdda-guide/#/item/boots_fsurvivor
+     * `survivor firehood <https://nornagon.github.io/cdda-guide/#/item/hood_fsurvivor>`_
+     * `pair of survivor firegloves <https://nornagon.github.io/cdda-guide/#/item/gloves_fsurvivor>`_
+     * `pair of survivor fireboots <https://nornagon.github.io/cdda-guide/#/item/boots_fsurvivor>`_
 
 Stuff that did not fit in the table:
 
