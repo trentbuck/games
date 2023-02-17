@@ -576,13 +576,13 @@ Ammo comparisons
    8x40mm_sporting_,    21,   18,  42,   90,    1100,    462
 
 
-.. _8x40_HVP: https://nornagon.github.io/cdda-guide/#/item/8mm_hvp
-.. _8x40_FMJ: https://nornagon.github.io/cdda-guide/#/item/8mm_fmj
+.. _8x40mm_HVP: https://nornagon.github.io/cdda-guide/#/item/8mm_hvp
+.. _8x40mm_FMJ: https://nornagon.github.io/cdda-guide/#/item/8mm_fmj
 .. _8x40mm: https://nornagon.github.io/cdda-guide/#/item/8mm_caseless
-.. _8x40_tracer: https://nornagon.github.io/cdda-guide/#/item/8mm_inc
-.. _8x40_bootleg: https://nornagon.github.io/cdda-guide/#/item/8mm_bootleg
-.. _8x40_JHP: https://nornagon.github.io/cdda-guide/#/item/8mm_jhp
-.. _8x40_sporting: https://nornagon.github.io/cdda-guide/#/item/8mm_civilian
+.. _8x40mm_tracer: https://nornagon.github.io/cdda-guide/#/item/8mm_inc
+.. _8x40mm_bootleg: https://nornagon.github.io/cdda-guide/#/item/8mm_bootleg
+.. _8x40mm_JHP: https://nornagon.github.io/cdda-guide/#/item/8mm_jhp
+.. _8x40mm_sporting: https://nornagon.github.io/cdda-guide/#/item/8mm_civilian
 
 
 .. csv-table:: Some default cartridges for comparison
