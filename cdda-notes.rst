@@ -337,7 +337,7 @@ General opinion seems to be that
 
 • The `bespoke_armor <https://github.com/CleverRaven/Cataclysm-DDA/tree/master/data/json/items/armor/bespoke_armor>`_ tree is pretty good, but
   `nomad <https://nornagon.github.io/cdda-guide/#/search/nomad>`_ is objectively worse then
-  `survivor <https://nornagon.github.io/cdda-guide/#/search/survivor>_.
+  `survivor <https://nornagon.github.io/cdda-guide/#/search/survivor>`_.
   The nomad stuff also hooks into bionics, and I'm not touching bionics yet.
 
 So let's initially start with the assumption that *all* clothing/armor should be pulled from the `survivor` part of ``bespoke_armor``.
@@ -366,27 +366,54 @@ So let's initially start with the assumption that *all* clothing/armor should be
    * * Light
      * `light Kevlar jumpsuit <https://nornagon.github.io/cdda-guide/#/item/lsurvivor_jumpsuit>`_
      * `light survivor cargo pants <https://nornagon.github.io/cdda-guide/#/item/lsurvivor_pants>`_
+     * Coat
+     * Head
+     * Hands
+     * Feet
 
    * * Regular
      * `Kevlar jumpsuit <https://nornagon.github.io/cdda-guide/#/item/survivor_jumpsuit>`_
      * `survivor cargo pants <https://nornagon.github.io/cdda-guide/#/item/pants_survivor>`_
+     * Coat
+     * Head
+     * Hands
+     * Feet
 
    * * Heavy
      * `heavy Kevlar jumpsuit <https://nornagon.github.io/cdda-guide/#/item/hsurvivor_jumpsuit>`_
      * n/a
+     * Coat
+     * Head
+     * Hands
+     * Feet
 
    * * Fur (cold)
      * `fur Kevlar jumpsuit <https://nornagon.github.io/cdda-guide/#/item/wsurvivor_jumpsuit>`
+     * Legs
+     * Coat
+     * Head
+     * Hands
+     * Feet
 
    * * Neoprene (wet?)
-
      * `Kevlar wetsuit <https://nornagon.github.io/cdda-guide/#/item/h20survivor_jumpsuit>`_
        `thick Kevlar wetsuit <https://nornagon.github.io/cdda-guide/#/item/thick_h20survivor_jumpsuit>`_
 
+     * Legs
+     * Coat
+     * Head
+     * Hands
+     * Feet
+
    * * Nomex (fire)
      * `Kevlar firesuit <https://nornagon.github.io/cdda-guide/#/item/fsurvivor_jumpsuit>`_
+     * Legs
+     * Coat
+     * Head
+     * Hands
+     * Feet
 
-  Stuff that did not fit in the table:
+Stuff that did not fit in the table:
 
   Legs:
   https://nornagon.github.io/cdda-guide/#/item/armor_mercenary_bottom
