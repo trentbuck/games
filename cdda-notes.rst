@@ -495,6 +495,7 @@ Stuff that did not fit in the table:
   https://nornagon.github.io/cdda-guide/#/item/armor_mercenary_top
   https://nornagon.github.io/cdda-guide/#/item/armor_mercenary_bottom
   https://nornagon.github.io/cdda-guide/#/item/helmet_scavenger
+  (there was a scavenger_gear, but it is obsolete)
 
   Storage / Utility:
 
@@ -637,7 +638,6 @@ Ammo comparisons
    .50BMG M33,        0.45L, 0.11kg, 8cm,   131,   28,  110,  150,   25250,   3888,
 
 
-
 .. csv-table:: Looking at actual storage spawning stuff on the floor...
    :header: MAG, Vol,   Mass, Len,  COMPAT,         per shot,     ,      ,  COMMENT
 
@@ -716,6 +716,40 @@ Considering only LIGHT_100 (100 cd/m2) and above:
 
 |   LIGHT_008 0.5W  cellphone flashlight
 |   LIGHT_020 1.5W  smartphone flashlight
+
+CANT_WEAR stuff
+------------------------------------------------------------
+* Hub 01 (Robot Faction)
+
+  * Gear comes in 3 tiers: Prototype, Ballistic/Kinetic/Turnout, and Soldier (best).
+  * Modular Defense System (or worse, Anchor) takes 1 Skirt and 1 Mantle.
+  * Modular Recon Gear takes 1 Helmet.
+  * Everything else (Jumpsuit, Environment Suit, Greaves, Vambraces) equips normally.
+
+* US Army `MTV <https://en.wikipedia.org/wiki/Modular_Tactical_Vest>`_:
+
+  Vests either take 2 ESAPI (front/back), or 2 ESAPI + 2 ESBI (front/back/sides).
+
+  .. csv-table:: Vests (others are obsolete) -- numbers *with* full ESAPI/ESBI load
+     :header: Variant,               Slots,  Encum,   Coverage,                 Warmth,  Bash,   Cut, Bullet, Other
+
+     heavy_ballistic_vest_,         14.0kg, 2+2,   12/5/2, torso / 15% legs / 50% arms,    15,  8.03, 10.71,  21.42,
+     ballistic_vest_,                9.9kg, 2+2,       12, torso,                          15,  7.77, 10.36,  20.72,
+     hard_armor_vest_,               7.7kg, 2+0,        8, 92% torso,                      15,  7.77, 10.36,  20.72,
+     merc_coat_,                    12.5kg, 2+2,     12/9, torso & arms,                   40,  6.94,  9.25,  18.51, 1.4acid 0.5fire 2env
+     light_ballistic_vest_mag_,      5.9kg, 2+0,        5, 54% torso,                       0,  5.40,  5.40,  16.20,
+     light_ballistic_vest_pouch_,    5.9kg, 2+0,        5, 54% torso,                       0,  5.40,  5.40,  16.20,
+     light_ballistic_vest_shoulder_, 5.9kg, 2+0,        5, 54% torso,                       0,  5.40,  5.40,  16.20,
+
+  .. csv-table:: Inserts (others exist but aren't interesting)
+     :header: Variant, Vol,  Mass,  Len,  Encum,  Cov, Protection, Location
+
+     ESBI,             0.8L, 1.0kg, 20cm, 1encum, 14%, 100%/25/50/50, ABLATIVE_MEDIUM – sides (under arms)
+     ESAPI,            1.9L, 2.5kg, 32cm, 2encum, 27%, 100%/25/50/50, ABLATIVE_LARGE  – front/rear
+     stab panel,       0.3L, 0.5kg, 16cm, 0encum, 27%,   100%/3/8/14, ABLATIVE_LARGE  – front/rear
+
+
+
 
 .. _smartphone:                   https://nornagon.github.io/cdda-guide/#/item/smart_phone
 .. _waterproof_case:              https://nornagon.github.io/cdda-guide/#/item/waterproof_smart_phone_case
@@ -825,3 +859,10 @@ Considering only LIGHT_100 (100 cd/m2) and above:
 .. _survivor_belt:                https://nornagon.github.io/cdda-guide/#/item/survivor_belt_notools
 .. _survivor_harness:             https://nornagon.github.io/cdda-guide/#/item/survivor_vest
 .. _survivor_goggles:             https://nornagon.github.io/cdda-guide/#/item/survivor_goggles
+.. _hard_armor_vest:               https://nornagon.github.io/cdda-guide/#/item/level_3_vest
+.. _light_ballistic_vest_mag:      https://nornagon.github.io/cdda-guide/#/item/ballistic_vest_light
+.. _light_ballistic_vest_pouch:    https://nornagon.github.io/cdda-guide/#/item/ballistic_vest_light_pouches
+.. _light_ballistic_vest_shoulder: https://nornagon.github.io/cdda-guide/#/item/ballistic_vest_light_operator
+.. _ballistic_vest:                https://nornagon.github.io/cdda-guide/#/item/ballistic_vest_esapi
+.. _heavy_ballistic_vest:          https://nornagon.github.io/cdda-guide/#/item/ballistic_vest_heavy
+.. _merc_coat:                     https://nornagon.github.io/cdda-guide/#/item/armor_mercenary_top
