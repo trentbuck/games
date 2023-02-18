@@ -167,7 +167,7 @@ Brainstorming
        RM614_LMG_,    $150,  2.75L,  4.60kg,  94cm,    250/500rd,  70disp, 30sight, 9dur,  +5dam
        RM88_ BR,      $175,  2.50L,  3.20kg, 100cm, 50/100/250rd,  30disp, 30sight, 9dur, +10dam
        RM51_ AR,      $120,  2.15L,  2.85kg,  91cm,     50/100rd,  50disp, 30sight, 9dur,  +5dam
-       RM11B_ DMR     $100,  2.85L,  3.10kg,  91cm,      10/25rd,  10disp, 30sight, 9dur, +10dam +20rng suppressed scoped
+       RM11B_ DMR,    $100,  2.85L,  3.10kg,  91cm,      10/25rd,  10disp, 30sight, 9dur, +10dam +20rng suppressed scoped
        RM2000_ SMG,   $100,  1.75L,  1.90kg,  66cm,      10/25rd, 120disp, 30sight, 9dur,
        RM103A_ HG,     $60,  0.75L,  1.45kg,  30cm,      10/25rd, 175disp, 30sight, 9dur,
 
