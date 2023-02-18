@@ -160,13 +160,24 @@ Brainstorming
     * "8x40mm tracer"   - 12g 230mL $80  42dam (bullet) 18penetration 38dispersion 2200recoil
     * "8x40mm JHP"      - 12g 230mL $80  47dam (bullet)  8penetration 75dispersion 2200recoil
 
-    | https://nornagon.github.io/cdda-guide/#/item/rm298 HMG          $150 10.50L 24.50kg 1260mm    250/500mag  90disp 30sight 9dur +10dam -6rng
-    | https://nornagon.github.io/cdda-guide/#/item/rm614_lmg          $150  2.75L  4.60kg  935mm    250/500mag  70disp 30sight 9dur  +5dam
-    | https://nornagon.github.io/cdda-guide/#/item/rm88_battle_rifle  $175  2.50L  3.20kg  995mm 50/100/250mag  30disp 30sight 9dur +10dam            <-- no muzzle slot - can't suppress
-    | https://nornagon.github.io/cdda-guide/#/item/rm51_assault_rifle $120  2.15L  2.85kg  905mm 50/100mag      50disp 30sight 9dur  +5dam
-    | https://nornagon.github.io/cdda-guide/#/item/rm11b_sniper_rifle $100  2.85L  3.10kg  910mm      10/25mag  10disp 30sight 9dur +10dam +20rng suppressed scoped    <--- I REALLY LIKE THIS ONE
-    | https://nornagon.github.io/cdda-guide/#/item/rm2000_smg         $100  1.75L  1.90kg  660mm      10/25mag 120disp 30sight 9dur
-    | https://nornagon.github.io/cdda-guide/#/item/rm103a_pistol       $60  0.75L  1.45kg  295mm      10/25mag 175disp 30sight 9dur
+    .. csv-table:: 8x40mm caseless variants (all are 0.23L 0.01kg 6cm)
+       :header: Variant,   Price, Vol, Mass, Len, mags, disp, sight disp, dur, bonuses
+
+       RM298_HMG_,    $150, 10.50L, 24.50kg, 126cm,    250/500rd,  90disp, 30sight, 9dur, +10dam -6rng
+       RM614_LMG_,    $150,  2.75L,  4.60kg,  94cm,    250/500rd,  70disp, 30sight, 9dur,  +5dam
+       RM88_ BR,      $175,  2.50L,  3.20kg, 100cm, 50/100/250rd,  30disp, 30sight, 9dur, +10dam
+       RM51_ AR,      $120,  2.15L,  2.85kg,  91cm,     50/100rd,  50disp, 30sight, 9dur,  +5dam
+       RM11B_ DMR     $100,  2.85L,  3.10kg,  91cm,      10/25rd,  10disp, 30sight, 9dur, +10dam +20rng suppressed scoped
+       RM2000_ SMG,   $100,  1.75L,  1.90kg,  66cm,      10/25rd, 120disp, 30sight, 9dur,
+       RM103A_ HG,     $60,  0.75L,  1.45kg,  30cm,      10/25rd, 175disp, 30sight, 9dur,
+
+.. _RM298_HMG: https://nornagon.github.io/cdda-guide/#/item/rm298
+.. _RM614_LMG: https://nornagon.github.io/cdda-guide/#/item/rm614_lmg
+.. _RM88:   https://nornagon.github.io/cdda-guide/#/item/rm88_battle_rifle
+.. _RM51:   https://nornagon.github.io/cdda-guide/#/item/rm51_assault_rifle
+.. _RM11B:  https://nornagon.github.io/cdda-guide/#/item/rm11b_sniper_rifle
+.. _RM2000: https://nornagon.github.io/cdda-guide/#/item/rm2000_smg
+.. _RM103A:  https://nornagon.github.io/cdda-guide/#/item/rm103a_pistol
 
   * 5x50 -- not caseless -- only comes in 50 and 100 mags, and only has two guns
 
@@ -755,7 +766,7 @@ Efficient emitter reduces battery cost from 40/shot to 36/shot but meh.
 
 Light sources
 ------------------------------------------------------------
-Considering only LIGHT_100 (100 cd/m2???) and above:
+Considering only LIGHT_100 (100 cd/m2) and above:
 
 |   LIGHT_500 15W USES_BIONIC_POWER nomad_harness_
 |   LIGHT_500 15W CHARGEDIM heavy_flashlight_ — brightest, belt-able
@@ -774,7 +785,6 @@ Considering only LIGHT_100 (100 cd/m2???) and above:
 |   LIGHT_008 0.5W  cellphone flashlight
 |   LIGHT_020 1.5W  smartphone flashlight
 
-.. _
 .. _smartphone: https://nornagon.github.io/cdda-guide/#/item/smart_phone
 .. _waterproof_case: https://nornagon.github.io/cdda-guide/#/item/waterproof_smart_phone_case
 .. _firearm_repair_kit: https://nornagon.github.io/cdda-guide/#/item/small_repairkit
