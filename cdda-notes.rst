@@ -501,11 +501,11 @@ Stuff that did not fit in the table:
   .. csv-table:: Survivor storage options
      :header: Option,                 Vol,  Mass, Enc (empty),(full), Total capacity,Total Weight,
 
-     survivor_duffel_,              7.88L, 1.00kg, 8, 30,              50L, 78kg, back torso
-     survivor_backpack_,            5.25L, 0.60kg, 3, 24,              45L, 51kg, back torso
-     survivor_rucksack_,           10.00L, 0.80kg, 3, 28,              58L, 70kg, back torso
-     survivor_runner_pack_,         4.20L, 0.44kg, 3, 12,              20L, 16kg, back torso
      survivor_distributed_rigging_, 3.00L, 0.44kg, 1,  3,               7L, 18kg, lower torso & thighs
+     survivor_runner_pack_,         4.20L, 0.44kg, 3, 12,              20L, 16kg, back torso
+     survivor_backpack_,            5.25L, 0.60kg, 3, 24,              45L, 51kg, back torso
+     survivor_duffel_,              7.88L, 1.00kg, 8, 30,              50L, 78kg, back torso
+     survivor_rucksack_,           10.00L, 0.80kg, 3, 28,              58L, 70kg, back torso
 
   Utility:
 
