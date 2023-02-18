@@ -417,8 +417,46 @@ So let's initially start with the assumption that *all* clothing/armor should be
 
   Ignore "faux-fur" as being just a crap version of fur (winter)?
 
-• "Survivor Suit" is obsolete, as are modular ballistic vest (MBR).
+• "Survivor Suit" is obsolete.
+  Modular ballistic vest (MBR) is obsolete.
   Some of the new names *do not* have "survivor" in their search title!
+
+• https://www.reddit.com/r/cataclysmdda/comments/pct2p7/looking_for_armor_guide/:
+
+    | Survivor armor is constantly recommended ∵ few other armors combine 100% coverage & decent protection values.
+    | "95% coverage" means 1 in 20 hits completely bypass your armor.
+    | Roughly 12 bash + 12 cut at 100% coverage → totally immune to vast majority of attacks until late game.
+
+    | SWAT armor (relatively easy to get) invalidates everything except heavy survivor
+    | Elbow & Knee pads are cool, as they have an encumbrance value of 0%.
+    | Early game, leather touring suits and leather chaps are great.
+    | Arms is generally a pain early game.  Invest in good arm protection as soon as you can craft it (or find SWAT armour).
+
+    | Early game (Day 1):-
+    |   Leather jacket
+    |   Leather trousers
+    |   Boots
+    |   Leather gloves
+    |   Safety Glasses
+    |   Motorcycle/Riot hemet
+    |   Backpack (Or two makeshift slings if need be.)
+    | Alternativley if I find a Soldier Corpse spawn
+    |   ESAPI vest (Deconstruct the damaged ones, rebuild a pristine one)
+    |   Kevlar helmet
+    |   Kneepads / Elbow Pads
+    | Midgame (Should have a base location set up near a city for raiding and wood / water. I start the process towards survivor gear here. Day 3+)
+    |   SWAT armour if I run across it (Likely damaged from a Z, needs cleaning and good tailoring and materials to repair.)
+    |   Firefighting / Turnout gear
+    |   ANYTHING with Leather in it; shoes, gloves, high heels, belts, wallets. You name it, if it has leather, I'm snagging it.
+    |   ANYTHING with KEVLAR in it that I can spare; combat boots, turnout gear, kevlar helmets, motorbike boots / touring suits etc.
+    |   ALL the long strings from windows. Seriously. You can never have enough long strings, either for short strings, rope or thread. They're great.
+    |   Start grinding up Tailoring and Fabrication gaining proficiencies along the way. (Leatherworking/Fabric waterproofing/Plastic Working/Garment closures are the ones to work towards.
+    | Mid/Lategame (No fixed time schedule but I like to be making good progress by day 30 or so depending on supplies available)
+    |   Full Light Survivor set if going for a skirmishing/raiding route. (Cheapest/Easiest to make, lightest, allows dodging at lower skill levels.)
+    |   Standard survivor set for general use. (Balanced, better protection, good for general purpose use.)
+    |   Heavy survivor set for heavy combat / dangerous situations. (Heavy/Encumbering, very protective but leaves little weight for loot or spare gear, best for strong characters or short raids.)
+    |   Alternatively if you can find the Medieval Arms & Armor books, go for a full set of platemail and chain armor with a barbute helm and become the true apocalypse knight of your dreams.
+    |   No matter the choice a survivor mask is practically mandatory by this point to nulify smokers/boomers. I prefer the light one for the least encumberance. Dont forget to craft gasmask cartridges and reload & activate your mask!
 
 
 .. list-table:: Survivor gear by kind and location
