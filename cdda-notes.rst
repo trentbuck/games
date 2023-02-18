@@ -427,6 +427,7 @@ So let's initially start with the assumption that *all* clothing/armor should be
    * * Variant
      * Bodysuit
      * Legs
+     * Chest
      * Coat
      * Head
      * Hands
@@ -435,6 +436,7 @@ So let's initially start with the assumption that *all* clothing/armor should be
    * * **Light**
      * `light Kevlar jumpsuit <https://nornagon.github.io/cdda-guide/#/item/lsurvivor_jumpsuit>`_
      * `light survivor cargo pants <https://nornagon.github.io/cdda-guide/#/item/lsurvivor_pants>`_
+     * `light survivor body armor <https://nornagon.github.io/cdda-guide/#/item/lsurvivor_armor>`_
      * [`sleeveless <https://nornagon.github.io/cdda-guide/#/item/sleeveless_trenchcoat_survivor>`_] `survivor trenchcoat <https://nornagon.github.io/cdda-guide/#/item/trenchcoat_survivor>`_
      * `light survivor hood <https://nornagon.github.io/cdda-guide/#/item/hood_lsurvivor>`_
      * [`pair of fingerless <https://nornagon.github.io/cdda-guide/#/item/gloves_lsurvivor_fingerless>`_] `light survivor gloves <https://nornagon.github.io/cdda-guide/#/item/gloves_lsurvivor>`_
@@ -443,6 +445,7 @@ So let's initially start with the assumption that *all* clothing/armor should be
    * * **Regular**
      * `Kevlar jumpsuit <https://nornagon.github.io/cdda-guide/#/item/survivor_jumpsuit>`_
      * `survivor cargo pants <https://nornagon.github.io/cdda-guide/#/item/pants_survivor>`_
+     * ∅
      * [`sleeveless <https://nornagon.github.io/cdda-guide/#/item/sleeveless_duster_survivor>`_] `survivor duster <https://nornagon.github.io/cdda-guide/#/item/duster_survivor>`_
      * `survivor hood <https://nornagon.github.io/cdda-guide/#/item/hood_survivor>`_
      * [`pair of fingerless <https://nornagon.github.io/cdda-guide/#/item/gloves_survivor_fingerless>`_] `survivor gloves <https://nornagon.github.io/cdda-guide/#/item/gloves_survivor>`_
@@ -450,6 +453,7 @@ So let's initially start with the assumption that *all* clothing/armor should be
 
    * * **Heavy**
      * `heavy Kevlar jumpsuit <https://nornagon.github.io/cdda-guide/#/item/hsurvivor_jumpsuit>`_
+     * ∅
      * ∅
      * ∅
      * ∅?
@@ -460,6 +464,7 @@ So let's initially start with the assumption that *all* clothing/armor should be
      * [`faux <https://nornagon.github.io/cdda-guide/#/item/wsurvivor_jumpsuit_nofur>`_] `fur Kevlar jumpsuit <https://nornagon.github.io/cdda-guide/#/item/wsurvivor_jumpsuit>`_
      * ∅
      * ∅
+     * ∅
      * [`faux <https://nornagon.github.io/cdda-guide/#/item/hood_wsurvivor_nofur>`_] `fur survivor hood <https://nornagon.github.io/cdda-guide/#/item/hood_wsurvivor>`_
      * [`pair of faux <https://nornagon.github.io/cdda-guide/#/item/gloves_wsurvivor_nofur>`_] `fur survivor gloves <https://nornagon.github.io/cdda-guide/#/item/gloves_wsurvivor>`_
      * [`pair of faux <https://nornagon.github.io/cdda-guide/#/item/boots_wsurvivor_nofur>`_] `fur survivor boots <https://nornagon.github.io/cdda-guide/#/item/boots_wsurvivor>`_
@@ -467,6 +472,7 @@ So let's initially start with the assumption that *all* clothing/armor should be
    * * **Neoprene**
      * [`thick <https://nornagon.github.io/cdda-guide/#/item/thick_h20survivor_jumpsuit>`_] `Kevlar wetsuit <https://nornagon.github.io/cdda-guide/#/item/h20survivor_jumpsuit>`_
      * ∅?
+     * ∅
      * ∅?
      * `survivor wetsuit hood <https://nornagon.github.io/cdda-guide/#/item/hood_h20survivor>`_
      * `pair of survivor wetsuit gloves <https://nornagon.github.io/cdda-guide/#/item/gloves_h20survivor>`_
@@ -475,6 +481,7 @@ So let's initially start with the assumption that *all* clothing/armor should be
    * * **Nomex**
      * `Kevlar firesuit <https://nornagon.github.io/cdda-guide/#/item/fsurvivor_jumpsuit>`_
      * ∅?
+     * ∅
      * ∅?
      * `survivor firehood <https://nornagon.github.io/cdda-guide/#/item/hood_fsurvivor>`_
      * `pair of survivor firegloves <https://nornagon.github.io/cdda-guide/#/item/gloves_fsurvivor>`_
@@ -503,12 +510,12 @@ Stuff that did not fit in the table:
      :header: Option,                 Vol,  Mass, Enc (empty),(full), Total capacity,,notes
 
      survivor_distributed_rigging_, 3.00L, 0.44kg, 1,  3,               7L, 18kg, strapped lower torso & thighs
+     survivor_belt_,                2.25L, 1.55kg, 2,  6,               9L, 16kg, strapped waist,               knife sheath
+     survivor_harness_,             1.25L, 0.32kg, 1, 19,              13L, 24kg, strapped upper front torso,   rifle sling
      survivor_runner_pack_,         4.20L, 0.44kg, 3, 12,              20L, 16kg, strapped back torso
      survivor_backpack_,            5.25L, 0.60kg, 3, 24,              45L, 51kg, strapped back torso
-     survivor_duffel_,              7.88L, 1.00kg, 8, 30,              50L, 78kg, strapped back torso
      survivor_rucksack_,           10.00L, 0.80kg, 3, 28,              58L, 70kg, strapped back torso
-     survivor_belt_,                2.25L, 1.55kg, 2,  6,               9L, 16kg, strapped waist,knife sheath
-     survivor_harness_,             1.25L, 0.32kg, 1, 19,              13L, 24kg, strapped upper front torso,rifle sling
+     survivor_duffel_,              7.88L, 1.00kg, 8, 30,              50L, 78kg, strapped back torso
 
 
 
@@ -748,6 +755,45 @@ CANT_WEAR stuff
      ESAPI,            1.9L, 2.5kg, 32cm, 2encum, 27%, 100%/25/50/50, ABLATIVE_LARGE  – front/rear
      stab panel,       0.3L, 0.5kg, 16cm, 0encum, 27%,   100%/3/8/14, ABLATIVE_LARGE  – front/rear
 
+* PALS webbing.
+
+  To actually use this, you need to (a)ctivate the PALS receiver, then choose to "Attach pockets"
+
+  https://www.reddit.com/r/cataclysmdda/comments/xarad5/psa_molle_webbing_belt_excellent_lowencumbrance/
+
+  * If an item has it, it has ``attach_molle`` with a size: 4/8/14.
+    PALS_SMALL consumes 1 unit;
+    PALS_MEDIUM consumes 2 units;
+    PALS_LARGE consumes 3 units.
+    So e.g. a light_load_bearing_vest (size=4) can take LARGE/SMALL, or MEDIUM/MEDIUM, or MEDIUM/SMALL/SMALL.
+    FIXME: double-check those numbers.
+
+  .. csv-table:: PALS receiver
+     :header: Slots, Variant,
+
+     4, https://nornagon.github.io/cdda-guide/#/item/light_load_bearing_vest
+     4, https://nornagon.github.io/cdda-guide/#/item/webbing_belt
+     6, https://nornagon.github.io/cdda-guide/#/item/armor_riot
+     6, https://nornagon.github.io/cdda-guide/#/item/armor_riot_torso
+     6, https://nornagon.github.io/cdda-guide/#/item/ballistic_vest_light
+     6, https://nornagon.github.io/cdda-guide/#/item/molle_pack
+     8, https://nornagon.github.io/cdda-guide/#/item/heavy_load_bearing_vest_breacher
+     8, https://nornagon.github.io/cdda-guide/#/item/load_bearing_vest
+     8, https://nornagon.github.io/cdda-guide/#/item/load_bearing_vest_sling
+     8, https://nornagon.github.io/cdda-guide/#/item/molle_medium_rucksack
+     10, https://nornagon.github.io/cdda-guide/#/item/armor_mercenary_top
+     10, https://nornagon.github.io/cdda-guide/#/item/ballistic_vest_esapi
+     10, https://nornagon.github.io/cdda-guide/#/item/ballistic_vest_heavy
+     10, https://nornagon.github.io/cdda-guide/#/item/dragonskin
+     10, https://nornagon.github.io/cdda-guide/#/item/molle_large_rucksack
+     14, https://nornagon.github.io/cdda-guide/#/item/heavy_load_bearing_vest
+     14, https://nornagon.github.io/cdda-guide/#/item/heavy_load_bearing_vest_sling
+
+  PALS attachment:
+
+  | https://nornagon.github.io/cdda-guide/#/json_flag/PALS_SMALL
+  | https://nornagon.github.io/cdda-guide/#/json_flag/PALS_MEDIUM
+  | https://nornagon.github.io/cdda-guide/#/json_flag/PALS_LARGE
 
 
 
