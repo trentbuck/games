@@ -37,41 +37,38 @@ Initial focus is on getting a handle on armour, storage, and summer/winterweight
    Range is shit, but this is intended for bumbling around in CQB without waking people, for when I get bored of knife fighting.
    Don't bother to trick this out with other mods.
 
-:Tool Qualities (important):
-   | cutting_            [2] RM42_
-   | `fine cutting`_     [3] scalpel_ — used for `dissecting corpses to learn weaknesses <https://www.reddit.com/r/cataclysmdda/comments/u7uner/dissectionₐnd_finding_vulnerabilities/>`_ ([4] `bionic scalpel`_)
-   | `glare protection`_ [1] `welding goggles`_ — used for welding; also on survivor_firemask but *not* survivor_goggles.
-   | `awl`_              [2] `tailor's kit`_
-   | `curved needle`_    [1] `tailor's kit`_
-   | `hammering`_        [3] `firearm repair kit`_
-   | `fine hammering`_   [1] `firearm repair kit`_
-   | `soft hammering`_   [1] `firearm repair kit`_
-   | `welding`_ [2] welder_  (welding *kit* appears to be only interesting for vehicles)
-   | `wood sawing`_ [2] `bow saw`_  (skip misc_repair_kit; tailors_kit_ already handles everything else misc_repair_kit can do)
-   | `metal sawing`_ [10] angle_grinder_ [2] `firearm repair kit`_
-   | `fine metal sawing`_ [2] tin_snips_ [1] `firearm repair kit`_
-   | `food cooking`_ [3] survivor_mess_kit_
-   | `boiling`_ [2] survivor_mess_kit_
-   | `containing`_ [1] survivor_mess_kit_ (probably want a huge drum, too)
-   | `fabric cutting`_ (1) `tailor's kit`_
+:Miscellaneous:
+   | smartphone_ in waterproof_case_ — calorie intake tracking, alarm clock (wake up at X), exact time
+   | survivor_light_ (350cd 
 
-.. _`firearm repair kit`: https://nornagon.github.io/cdda-guide/#/item/small_repairkit
-.. _welder: https://nornagon.github.io/cdda-guide/#/item/welder
-.. _`bow saw`: https://nornagon.github.io/cdda-guide/#/item/bow_saw
-.. _tin_snips: https://nornagon.github.io/cdda-guide/#/item/tin_snips
-.. _angle_grinder: https://nornagon.github.io/cdda-guide/#/item/angle_grinder
-.. _survivor_mess_kit: https://nornagon.github.io/cdda-guide/#/item/survivor_mess_kit
+:Tool Qualities (important):
+   | cutting_              [2] RM42_
+   | `fine cutting`_       [3] scalpel_ — used for `dissecting corpses to learn weaknesses <https://www.reddit.com/r/cataclysmdda/comments/u7uner/dissection_and_finding_vulnerabilities/>`_ ([4] `bionic scalpel`_)
+   | `awl`_                [2] tailors_kit_
+   | `curved needle`_      [1] tailors_kit_
+   | `hammering`_          [3] firearm_repair_kit_
+   | `fine hammering`_     [1] firearm_repair_kit_
+   | `soft hammering`_     [1] firearm_repair_kit_
+   | `metal sawing`_       [2] firearm_repair_kit_ — or [10] angle_grinder_
+   | `fine metal sawing`_  [1] firearm_repair_kit_ — or [2] tin_snips_
+   | `glare protection`_   [1] welding_goggles_ — used for welding; also on survivor_firemask but *not* survivor_goggles.
+   | `welding`_            [2] welder_  — welding *kit* appears only interesting for vehicles
+   | `wood sawing`_        [2] bow_saw_  — skip misc_repair_kit; tailors_kit_ already handles everything else misc_repair_kit can do
+   | `food cooking`_       [3] survivor_mess_kit_
+   | `boiling`_            [2] survivor_mess_kit_
+   | `containing`_         [1] survivor_mess_kit_ (probably want a huge drum, too)
+   | `fabric cutting`_     [1] tailors_kit_
 
 :Tool Qualities (meh):
-   |  `grass cutting`_: [1] `tempered combat machete`_ [2] sickle_
-   | `shearing`_ [1] https://nornagon.github.io/cdda-guide/#/item/shears [3] https://nornagon.github.io/cdda-guide/#/item/elec_shears
-   | `churn`_ [1] https://nornagon.github.io/cdda-guide/#/item/churn
-   | `anesthesia`_ [1] https://nornagon.github.io/cdda-guide/#/item/anesthetic_kit
-   | `fishing`_  [2] https://nornagon.github.io/cdda-guide/#/item/fishing_rod_professional
+   | `grass cutting`_ [1] `tempered combat machete`_ [2] sickle_
+   | `shearing`_      [1] https://nornagon.github.io/cdda-guide/#/item/shears [3] https://nornagon.github.io/cdda-guide/#/item/elec_shears
+   | `churn`_         [1] https://nornagon.github.io/cdda-guide/#/item/churn
+   | `anesthesia`_    [1] https://nornagon.github.io/cdda-guide/#/item/anesthetic_kit
+   | `fishing`_       [2] https://nornagon.github.io/cdda-guide/#/item/fishing_rod_professional
    | `fish trapping`_ [1] https://nornagon.github.io/cdda-guide/#/item/fish_trap_basket
-   | `smoothing`_ [2] https://nornagon.github.io/cdda-guide/#/item/metal_smoother — for construction?
+   | `smoothing`_     [2] https://nornagon.github.io/cdda-guide/#/item/metal_smoother — for construction?
 
-   | `chemical making`_
+   | `chemical making`_   [1] survivor_mess_kit_
    | `smoking`_
    | `distilling`_
    | `tree cutting`_
@@ -123,23 +120,6 @@ Initial focus is on getting a handle on armour, storage, and summer/winterweight
    | `pistol`_
    | `glass cutting`_
 
-
-.. _`tailor's kit`: https://nornagon.github.io/cdda-guide/#/item/tailors_kit
-.. _`welding goggles`:         https://nornagon.github.io/cdda-guide/#/item/goggles_welding
-.. _`bionic scalpel`:          https://nornagon.github.io/cdda-guide/#/item/bio_surgical_razor
-.. _scalpel:                   https://nornagon.github.io/cdda-guide/#/item/scalpel
-.. _sickle:                    https://nornagon.github.io/cdda-guide/#/item/sickle
-.. _`survivor harness`:        https://nornagon.github.io/cdda-guide/#/item/survivor_vst
-.. _`survivor belt`:           https://nornagon.github.io/cdda-guide/#/item/survivor_belt_notools
-.. _RM11B:                     https://nornagon.github.io/cdda-guide/#/item/rm11b_sniper_rifle
-.. _RM42:                      https://nornagon.github.io/cdda-guide/#/item/knife_rm42
-.. _RM88:                      https://nornagon.github.io/cdda-guide/#/item/rm88_battle_rifle
-.. _MP5SD:                     https://nornagon.github.io/cdda-guide/#/item/hk_mp5sd
-.. _Eskrima:                   https://nornagon.github.io/cdda-guide/#/martial_art/style_eskrima
-.. _`Krav Maga`:               https://nornagon.github.io/cdda-guide/#/martial_art/style_krav_maga
-.. _Taekwondo:                 https://nornagon.github.io/cdda-guide/#/martial_art/style_taekwondo
-.. _`tempered combat machete`: https://nornagon.github.io/cdda-guide/#/item/survivor_machete_qt
-.. _barbarian:                 https://nornagon.github.io/cdda-guide/#/martial_art/style_barbaran
 
 
 Brainstorming
@@ -771,3 +751,51 @@ Oh maybe you can like drain all the smartphones into the UPS and then use those 
 
 Focusing lens improves from 25dam/4pen/30rng to 30dam/4pen/45rng but still sucks compared to DMR.
 Efficient emitter reduces battery cost from 40/shot to 36/shot but meh.
+
+
+Light sources
+------------------------------------------------------------
+Considering only LIGHT_100 (100 cd/m2???) and above:
+
+|   LIGHT_500 15W USES_BIONIC_POWER nomad_harness_
+|   LIGHT_500 15W CHARGEDIM heavy_flashlight_ — brightest, belt-able
+|   LIGHT_450 15W CHARGEDIM shocktonfa
+|   LIGHT_450 15W CHARGEDIM miner_hat_
+|   LIGHT_350 10W CHARGEDIM survivor_light_  — pretty good balance?
+|   LIGHT_350 10W CHARGEDIM helmet_eod
+|   LIGHT_300 10W CHARGEDIM wizard_cane
+|   LIGHT_300 10W CHARGEDIM wearable_camera_pro
+|   LIGHT_300 10W CHARGEDIM flashlight_
+|   LIGHT_300  5W           l-stick — too long unless it's your primary weapon
+|   LIGHT_240 10W CHARGEDIM smart_lamp
+|   LIGHT_240     CHARGEDIM handflare
+|   LIGHT_200     LEAK_DAM  wearable_atomic_light
+
+|   LIGHT_008 0.5W  cellphone flashlight
+|   LIGHT_020 1.5W  smartphone flashlight
+
+.. _
+.. _smartphone: https://nornagon.github.io/cdda-guide/#/item/smart_phone
+.. _waterproof_case: https://nornagon.github.io/cdda-guide/#/item/waterproof_smart_phone_case
+.. _firearm_repair_kit: https://nornagon.github.io/cdda-guide/#/item/small_repairkit
+.. _welder: https://nornagon.github.io/cdda-guide/#/item/welder
+.. _bow_saw: https://nornagon.github.io/cdda-guide/#/item/bow_saw
+.. _tin_snips: https://nornagon.github.io/cdda-guide/#/item/tin_snips
+.. _angle_grinder: https://nornagon.github.io/cdda-guide/#/item/angle_grinder
+.. _survivor_mess_kit: https://nornagon.github.io/cdda-guide/#/item/survivor_mess_kit
+.. _tailor_kit:                https://nornagon.github.io/cdda-guide/#/item/tailors_kit
+.. _welding_goggles:           https://nornagon.github.io/cdda-guide/#/item/goggles_welding
+.. _`bionic scalpel`:          https://nornagon.github.io/cdda-guide/#/item/bio_surgical_razor
+.. _scalpel:                   https://nornagon.github.io/cdda-guide/#/item/scalpel
+.. _sickle:                    https://nornagon.github.io/cdda-guide/#/item/sickle
+.. _`survivor harness`:        https://nornagon.github.io/cdda-guide/#/item/survivor_vst
+.. _`survivor belt`:           https://nornagon.github.io/cdda-guide/#/item/survivor_belt_notools
+.. _RM11B:                     https://nornagon.github.io/cdda-guide/#/item/rm11b_sniper_rifle
+.. _RM42:                      https://nornagon.github.io/cdda-guide/#/item/knife_rm42
+.. _RM88:                      https://nornagon.github.io/cdda-guide/#/item/rm88_battle_rifle
+.. _MP5SD:                     https://nornagon.github.io/cdda-guide/#/item/hk_mp5sd
+.. _Eskrima:                   https://nornagon.github.io/cdda-guide/#/martial_art/style_eskrima
+.. _`Krav Maga`:               https://nornagon.github.io/cdda-guide/#/martial_art/style_krav_maga
+.. _Taekwondo:                 https://nornagon.github.io/cdda-guide/#/martial_art/style_taekwondo
+.. _`tempered combat machete`: https://nornagon.github.io/cdda-guide/#/item/survivor_machete_qt
+.. _barbarian:                 https://nornagon.github.io/cdda-guide/#/martial_art/style_barbaran
