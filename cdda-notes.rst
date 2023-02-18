@@ -9,7 +9,7 @@ Initial focus is on getting a handle on armour, storage, and summer/winterweight
 
    Always want a knife regardless, for cutting_ and butchering_.
    Fits in `survivor belt`_ knife holster (20mov).
-   Better dam/turn & dam/stamina than `tempered combat machete`_ w/ Barbarian_ (though lose strong Armor Piercing buff).
+   Better dam/turn & dam/stamina than `survivor machete`_ w/ Barbarian_ (though lose strong Armor Piercing buff).
 
 :Ranged (long): RM11B_ w/ Taekwondo_, 3-6 × 8x40mm_ 25rd mag, [match trigger, ergonomic grip, high end hand guard, gyro (or laser?)].
 
@@ -29,95 +29,94 @@ Initial focus is on getting a handle on armour, storage, and summer/winterweight
 
    Carry 3–6×25rd mags (2L 1.6kg) and 1000rd loose (6L 12kg).
 
-:Ranged (short): MP5SD_.
+:Ranged (short): MP5SD_. 100rd mag.
 
    One of the 2 most common calibres, so just "top up" this up from corpses.
    Starts at 48noise.  You can add a *second* suppressor for 0noise.
-   100rd mag.
    Range is shit, but this is intended for bumbling around in CQB without waking people, for when I get bored of knife fighting.
    Don't bother to trick this out with other mods.
 
 :Miscellaneous:
    | smartphone_ in waterproof_case_ — calorie intake tracking, alarm clock (wake up at X), exact time
-   | survivor_light_ (350cd 
+   | survivor_light_ (350cd/m²)
 
 :Tool Qualities (important):
    | cutting_              [2] RM42_
    | `fine cutting`_       [3] scalpel_ — used for `dissecting corpses to learn weaknesses <https://www.reddit.com/r/cataclysmdda/comments/u7uner/dissection_and_finding_vulnerabilities/>`_ ([4] `bionic scalpel`_)
-   | `awl`_                [2] tailors_kit_
+   | awl_                  [2] tailors_kit_
    | `curved needle`_      [1] tailors_kit_
-   | `hammering`_          [3] firearm_repair_kit_
+   | `fabric cutting`_     [1] tailors_kit_
+   | hammering_            [3] firearm_repair_kit_
    | `fine hammering`_     [1] firearm_repair_kit_
    | `soft hammering`_     [1] firearm_repair_kit_
    | `metal sawing`_       [2] firearm_repair_kit_ — or [10] angle_grinder_
    | `fine metal sawing`_  [1] firearm_repair_kit_ — or [2] tin_snips_
    | `glare protection`_   [1] welding_goggles_ — used for welding; also on survivor_firemask but *not* survivor_goggles.
-   | `welding`_            [2] welder_  — welding *kit* appears only interesting for vehicles
+   | welding_              [2] welder_  — welding *kit* appears only interesting for vehicles
    | `wood sawing`_        [2] bow_saw_  — skip misc_repair_kit; tailors_kit_ already handles everything else misc_repair_kit can do
    | `food cooking`_       [3] survivor_mess_kit_
-   | `boiling`_            [2] survivor_mess_kit_
-   | `containing`_         [1] survivor_mess_kit_ (probably want a huge drum, too)
-   | `fabric cutting`_     [1] tailors_kit_
+   | boiling_              [2] survivor_mess_kit_
+   | containing_           [1] survivor_mess_kit_ — probably want a huge drum, too
 
 :Tool Qualities (meh):
-   | `grass cutting`_ [1] `tempered combat machete`_ [2] sickle_
-   | `shearing`_      [1] https://nornagon.github.io/cdda-guide/#/item/shears [3] https://nornagon.github.io/cdda-guide/#/item/elec_shears
-   | `churn`_         [1] https://nornagon.github.io/cdda-guide/#/item/churn
-   | `anesthesia`_    [1] https://nornagon.github.io/cdda-guide/#/item/anesthetic_kit
-   | `fishing`_       [2] https://nornagon.github.io/cdda-guide/#/item/fishing_rod_professional
+   | `grass cutting`_ [1] `survivor machete`_ [2] sickle_
+   | shearing_       [1] shears_  [3] elec_shears_
+   | churn_          [1] https://nornagon.github.io/cdda-guide/#/item/churn
+   | anesthesia_     [1] https://nornagon.github.io/cdda-guide/#/item/anesthetic_kit
+   | fishing_        [2] https://nornagon.github.io/cdda-guide/#/item/fishing_rod_professional
    | `fish trapping`_ [1] https://nornagon.github.io/cdda-guide/#/item/fish_trap_basket
-   | `smoothing`_     [2] https://nornagon.github.io/cdda-guide/#/item/metal_smoother — for construction?
+   | smoothing_      [2] https://nornagon.github.io/cdda-guide/#/item/metal_smoother — for construction?
 
    | `chemical making`_   [1] survivor_mess_kit_
-   | `smoking`_
-   | `distilling`_
+   | smoking_
+   | distilling_
    | `tree cutting`_
-   | `digging`_
+   | digging_
    | `bolt turning`_
    | `fine bolt turning`_
    | `screw driving`_
    | `fine screw driving`_
-   | `butchering`_
-   | `drilling`_
+   | butchering_
+   | drilling_
    | `rock drilling`_
-   | `prying`_
+   | prying_
    | `nail prying`_
-   | `punch`_
-   | `pencil`_
-   | `lifting`_
-   | `jacking`_
+   | punch_
+   | pencil_
+   | lifting_
+   | jacking_
    | `self jacking`_
-   | `siphoning`_
-   | `chiseling`_
+   | siphoning_
+   | chiseling_
    | `wood chiseling`_
-   | `sewing`_
-   | `knitting`_
+   | sewing_
+   | knitting_
    | `bullet pulling`_
-   | `anvil`_
-   | `analysis`_
-   | `concentration`_
-   | `separation`_
+   | anvil_
+   | analysis_
+   | concentration_
+   | separation_
    | `fine distillation`_
-   | `chromatography`_
-   | `grinding`_
+   | chromatography_
+   | grinding_
    | `fine grinding`_
-   | `reaming`_
-   | `filing`_
-   | `clamping`_
-   | `pressurizing`_
-   | `lockpicking`_
-   | `extraction`_
-   | `filtration`_
-   | `suspending`_
-   | `rope`_
+   | reaming_
+   | filing_
+   | clamping_
+   | pressurizing_
+   | lockpicking_
+   | extraction_
+   | filtration_
+   | suspending_
+   | rope_
    | `clean surface`_
    | `wheel fastening`_
    | `oven cooking`_
-   | `gun`_
-   | `rifle`_
-   | `shotgun`_
-   | `smg`_
-   | `pistol`_
+   | gun_
+   | rifle_
+   | shotgun_
+   | smg_
+   | pistol_
    | `glass cutting`_
 
 
@@ -130,7 +129,7 @@ Brainstorming
   * MELEE
 
     | RM42_                             0.75L 0.19kg 30cm 4/22 bash/pierce -1hit  80mov  525DPSec 833DPStam  block rapidstrike KRAVMAGA/ESKRIMA/ninjutsu/silat 19butch/2cut/1finecut  survivor_belt
-    | `tempered combat machete`_        1.00L 0.57kg 50cm 6/28 bash/cut    +1hit  90mov  431DPSec 469DPStam  parry rapidstrike BARBAR/ESKRIMA/ninjutsu/silat/mideval/niten/...  14butch/2cut/1grasscut  survivor_harness
+    | `survivor machete`_        1.00L 0.57kg 50cm 6/28 bash/cut    +1hit  90mov  431DPSec 469DPStam  parry rapidstrike BARBAR/ESKRIMA/ninjutsu/silat/mideval/niten/...  14butch/2cut/1grasscut  survivor_harness
 
     * melee - japanese swords
 
@@ -160,16 +159,6 @@ Brainstorming
     * "8x40mm tracer"   - 12g 230mL $80  42dam (bullet) 18penetration 38dispersion 2200recoil
     * "8x40mm JHP"      - 12g 230mL $80  47dam (bullet)  8penetration 75dispersion 2200recoil
 
-    .. csv-table:: 8x40mm caseless variants (all are 0.23L 0.01kg 6cm)
-       :header: Variant,   Price, Vol, Mass, Len, mags, disp, sight disp, dur, bonuses
-
-       RM298_HMG_,    $150, 10.50L, 24.50kg, 126cm,    250/500rd,  90disp, 30sight, 9dur, +10dam -6rng
-       RM614_LMG_,    $150,  2.75L,  4.60kg,  94cm,    250/500rd,  70disp, 30sight, 9dur,  +5dam
-       RM88_ BR,      $175,  2.50L,  3.20kg, 100cm, 50/100/250rd,  30disp, 30sight, 9dur, +10dam
-       RM51_ AR,      $120,  2.15L,  2.85kg,  91cm,     50/100rd,  50disp, 30sight, 9dur,  +5dam
-       RM11B_ DMR,    $100,  2.85L,  3.10kg,  91cm,      10/25rd,  10disp, 30sight, 9dur, +10dam +20rng suppressed scoped
-       RM2000_ SMG,   $100,  1.75L,  1.90kg,  66cm,      10/25rd, 120disp, 30sight, 9dur,
-       RM103A_ HG,     $60,  0.75L,  1.45kg,  30cm,      10/25rd, 175disp, 30sight, 9dur,
 
 .. _RM298_HMG: https://nornagon.github.io/cdda-guide/#/item/rm298
 .. _RM614_LMG: https://nornagon.github.io/cdda-guide/#/item/rm614_lmg
@@ -509,11 +498,14 @@ Stuff that did not fit in the table:
 
   Storage:
 
-  | https://nornagon.github.io/cdda-guide/#/item/survivor_duffel_bag
-  | https://nornagon.github.io/cdda-guide/#/item/survivor_pack
-  | https://nornagon.github.io/cdda-guide/#/item/survivor_rucksack
-  | https://nornagon.github.io/cdda-guide/#/item/survivor_runner_pack
-  | https://nornagon.github.io/cdda-guide/#/item/survivor_rig
+  .. csv-table:: Survivor storage options
+     :header: Option,                 Vol,  Mass, Enc (empty),(full), Total capacity,Total Weight,
+
+     survivor_duffel_,              7.88L, 1.00kg, 8, 30,              50L, 78kg, back torso
+     survivor_backpack_,            5.25L, 0.60kg, 3, 24,              45L, 51kg, back torso
+     survivor_rucksack_,           10.00L, 0.80kg, 3, 28,              58L, 70kg, back torso
+     survivor_runner_pack_,         4.20L, 0.44kg, 3, 12,              20L, 16kg, back torso
+     survivor_distributed_rigging_, 3.00L, 0.44kg, 1,  3,               7L, 18kg, lower torso & thighs
 
   Utility:
 
@@ -532,6 +524,227 @@ Stuff that did not fit in the table:
 
 
 
+
+
+* OLD REDDIT STUFF ABOUT FULL ARMOR LOADOUT::
+
+    hvy survivor suit 2/30/37
+    win survivor suit 2/15/22 -75w
+    fur coat w80	over torso/arms
+    survivor duster 0/4/9 over torso/arms/legs - storage
+                                                    under				over				strapped
+    mouth		survivor mask 1/9/13 (win)
+                    heavy survivor helmet 3/36/45					survivor hood 2/12/18
+                                                                                    (win surv hood) 2/15/22
+    torso		hoodie +arms 0/4/4		Kevlar 0/9/18			leather jacket +arms 1/9/9	MBR hard 5/36/60
+                    t-shirt 0/1/1			2(camo?)tank tops 0/1/1		leather vest 0/9/9		MBR steel 3/30/37
+                    long sleeved +arms 0/1/1					s.trenchcoat +arms 0/4/9	MBR ceramic 1/15/37
+                                                                                                                    MBR 0/12/24
+                                                                                                                    chest rig 0/3/3
+    arms		hoodie +torso 0/4/4		2arm warmers 0/1/1		leather jacket +torso 1/9/9	chitin guards 1/18/24
+                    long sleeved +torso 0/1/1					trenchcoat +torso 0/4/9		2elbow pads 0/7/7
+    hands		heavy survivor gloves 2/24/30
+                    chitinous gauntlets 1/18/24
+                    leather armor gauntlets 0/9/9	2glove liners 0/1/1
+    legs		survivor cargo 0/3/6		2boxer shorts 0/1/1		metal leg guards 2/24/24	2knee pads 0/7/7
+                                                    hard leg guards 1/6/6		leather chaps 0/9/9		drop leg pouch 0/3/3
+    feet		heavy survivor boots 2/36/45	flame resistant sock 0/3/3					2ankle holster 0/3/3
+                    chitinous boots 1/18/24
+                    leather armor boots 0/15/15
+    eyes no mouth	ballistic glasses 0/9/13
+
+    plus 2helmet netting, 2fanny packs tactical drop pouch?
+    leather pouch 0/3/3
+
+
+  * MBR / "modularvest" / "modular ballistic vest" becomes
+    "ballistic_vest_esapi"
+    "ballistic_vest_heavy"
+    "legpouch_large"
+
+    https://github.com/CleverRaven/Cataclysm-DDA/commit/6b36c10b273e693617cb161972fb561381a1c778
+
+    "heavy survivor suit" is obsolete, becomes....
+
+    "Survivor suits are completely superior to nomad. STURDY means you can
+    get mobbed without fearing prolonged combat will wreck your armor"
+    "Nomad definitely requires a lot of patching up though"
+
+
+
+  * NEWER ADVICE:
+    https://www.reddit.com/r/cataclysmdda/comments/wk7ozt/cdda_best_armor_in_experimental/
+
+    * OUTER https://nornagon.github.io/cdda-guide/#/item/touring_suit
+
+    * NORMAL (early game)
+
+      | https://nornagon.github.io/cdda-guide/#/item/lsurvivor_armor
+      | https://nornagon.github.io/cdda-guide/#/item/pants_survivor
+      | https://nornagon.github.io/cdda-guide/#/item/survivor_jumpsuit
+
+
+    This is effectively what "veteran survivor zombie" has as its loot drops.
+    This is probably a good reference for good "survivor X" gear loadouts:
+
+        https://github.com/CleverRaven/Cataclysm-DDA/blob/master/data/json/itemgroups/Clothing_Gear/clothing.json#L3032-L3280
+
+    RE MELEE WEAPONS
+
+        https://www.reddit.com/r/cataclysmdda/comments/usxw73/whats_the_best_melee_build_in_experimental/
+
+
+8x40 Caseless Firearms Comparisons
+------------------------------------------------------------
+
+
+
+Ammo comparisons
+------------------------------------------------------------
+
+.. csv-table:: 8x40mm caseless variants (all are 0.23L 0.01kg 6cm)
+   :header: Variant,   Dam,   AP, Rng, Disp , Recoil,  Noise, Price
+
+   8x40mm_HVP_,         47,   38,  42,   75,    2200,   1870, 
+   8x40mm_FMJ_,         37,   28,  42,   75,    2200,   1120, 
+   8x40mm_,             42,   18,  42,   75,    2200,    840, 80$
+   8x40mm_tracer_,      42,   18,  42,   60,    2200,    840, 
+   8x40mm_bootleg_,     42,    8,  42,   82,    2200,    422,
+   8x40mm_JHP_,         47,    8,  42,   75,    2200,    460,
+   8x40mm_sporting_,    21,   18,  42,   90,    1100,    462,
+
+
+.. _8x40mm_HVP: https://nornagon.github.io/cdda-guide/#/item/8mm_hvp
+.. _8x40mm_FMJ: https://nornagon.github.io/cdda-guide/#/item/8mm_fmj
+.. _8x40mm: https://nornagon.github.io/cdda-guide/#/item/8mm_caseless
+.. _8x40mm_tracer: https://nornagon.github.io/cdda-guide/#/item/8mm_inc
+.. _8x40mm_bootleg: https://nornagon.github.io/cdda-guide/#/item/8mm_bootleg
+.. _8x40mm_JHP: https://nornagon.github.io/cdda-guide/#/item/8mm_jhp
+.. _8x40mm_sporting: https://nornagon.github.io/cdda-guide/#/item/8mm_civilian
+
+
+.. csv-table:: Some default cartridges for comparison
+   :header: VARIANT,    Vol,   Mass, Len,   Dam,   AP,  Rng, Disp,  Recoil,  Noise,    Comments
+
+   .22 LR,            0.07L, 0.00kg, 4cm,    12,    0,   13,   60,     150,     26,
+   9x18mm Makarov,    0.10L, 0.01kg, 5cm,    16,    2,   13,   60,     300,     58,
+   9x19mm Mauser,     0.12L, 0.01kg, 5cm,    26,    0,   14,   60,     500,     28,
+   5.7×28mm SS190,    0.12L, 0.01kg, 5cm,    20,   18,   14,   40,      90,    388,    CQB
+   4.6×30mm,          0.16L, 0.01kg, 5cm,    18,   20,   14,   40,      90,    388,    CQB
+   5.56×45mm M855,    0.19L, 0.01kg, 6cm,    41,    6,   36,  170,    1650,    318,
+   8×40mm caseless,   0.23L, 0.01kg, 6cm,    42,   18,   42,   75,    2200,    840,    noisy!
+   7.62x39mm AK,      0.11L, 0.02kg, 5cm,    45,    8,   30,   35,    2036,    420,
+   7.62×51mm M80,     0.16L, 0.02kg, 5cm,    58,    6,   65,    5,    3300,    478,    disp crazy low?!
+   7.62x54mmR M-N,    0.18L, 0.02kg, 6cm,    54,   10,   75,   15,    2650,    690,
+   .50BMG M33,        0.45L, 0.11kg, 8cm,   131,   28,  110,  150,   25250,   3888,
+
+
+
+.. csv-table:: Looking at actual storage spawning stuff on the floor...
+   :header: MAG, Vol,   Mass, Len,  COMPAT,         per shot,     ,      ,  COMMENT
+
+    010,       0.25L, 0.06kg,  6cm, PISTOL SMG DMR, 25.0ml,   6.0g, 6.0mm,
+    025,       0.50L, 0.09kg,  8cm, PISTOL SMG DMR, 20.0ml,   3.5g, 3.2mm,  easily best for DMR
+    050,       0.50L, 0.11kg,  8cm, AR BR         , 10.0ml,   2.2g, 1.6mm,
+    100,       0.75L, 0.15kg,  9cm, AR BR         ,  7.5ml,   1.5g, 0.9mm,  sweet spot for rifles
+    250,       2.00L, 0.34kg, 13cm,   BR LMG HMG  ,  8.0ml,   1.3g, 0.5mm,
+    500,       4.00L, 1.40kg, 16cm,      LMG HMG  ,  8.0ml,   2.8g, 0.3mm,
+    loose,          ,       ,     ,               ,  5.8ml,  1.2g?, 2cmm?,
+
+::
+
+    1000rd loose       5.75L  12.00kg
+    10 × 100rd mags    7.50L  13.50kg
+    40 ×  25rd mags   20.00L  15.60kg   <--- overkill; keep most loose
+
+
+
+Laser vs. Rivtech caseless
+------------------------------------------------------------
+
+.. csv-table:: 8x40mm caseless variants (all are 0.23L 0.01kg 6cm)
+   :header: Variant,   Price, Vol, Mass, Len, mags, disp, sight disp, dur, bonuses
+
+   RM298_HMG_,    $150, 10.50L, 24.50kg, 126cm,    250/500rd,  90disp, 30sight, 9dur, +10dam -6rng
+   RM614_LMG_,    $150,  2.75L,  4.60kg,  94cm,    250/500rd,  70disp, 30sight, 9dur,  +5dam
+   RM88_ BR,      $175,  2.50L,  3.20kg, 100cm, 50/100/250rd,  30disp, 30sight, 9dur, +10dam
+   RM51_ AR,      $120,  2.15L,  2.85kg,  91cm,     50/100rd,  50disp, 30sight, 9dur,  +5dam
+   RM11B_ DMR,    $100,  2.85L,  3.10kg,  91cm,      10/25rd,  10disp, 30sight, 9dur, +10dam +20rng suppressed scoped
+   RM2000_ SMG,   $100,  1.75L,  1.90kg,  66cm,      10/25rd, 120disp, 30sight, 9dur,
+   RM103A_ HG,     $60,  0.75L,  1.45kg,  30cm,      10/25rd, 175disp, 30sight, 9dur,
+
+A7 laser doing 25dam/4pen per shot, taking 1000kJ for 25 shots, so assume DOUBLE SHOTS and ignore pen ::
+
+      rifle itself  3.00L   3.0kg
+      10×UPS        40.0L  19.3kg      250 × 25dam shots
+      80×hvy batt   98.4L  80.0kg     2000 × 25dam shots (loose)
+
+RM11B doing 52dam/18pen per shot::
+
+      rifle itself  3.35L  3.49kg
+      5 × 25rd mag  2.50L  1.95kg      125 × 52dam shots
+      1000 rd       5.85L 12.00kg     1000 × 52dam shots (loose)
+
+So if you consider the weight/volume cost, the 8x40 is *crazily* more good.
+
+On that basis I think lasers can get fucked right now.
+
+If you could charge the laser from a rando light battery that might
+be different, because you can scavenge those.
+
+Oh maybe you can like drain all the smartphones into the UPS and then use those to shoot?
+
+Focusing lens improves from 25dam/4pen/30rng to 30dam/4pen/45rng but still sucks compared to DMR.
+Efficient emitter reduces battery cost from 40/shot to 36/shot but meh.
+
+
+Light sources
+------------------------------------------------------------
+Considering only LIGHT_100 (100 cd/m2) and above:
+
+|   LIGHT_500 15W USES_BIONIC_POWER nomad_harness_
+|   LIGHT_500 15W CHARGEDIM heavy_flashlight_ — brightest, belt-able
+|   LIGHT_450 15W CHARGEDIM shocktonfa
+|   LIGHT_450 15W CHARGEDIM miner_hat_
+|   LIGHT_350 10W CHARGEDIM survivor_light_  — pretty good balance?
+|   LIGHT_350 10W CHARGEDIM helmet_eod
+|   LIGHT_300 10W CHARGEDIM wizard_cane
+|   LIGHT_300 10W CHARGEDIM wearable_camera_pro
+|   LIGHT_300 10W CHARGEDIM flashlight_
+|   LIGHT_300  5W           l-stick — too long unless it's your primary weapon
+|   LIGHT_240 10W CHARGEDIM smart_lamp
+|   LIGHT_240     CHARGEDIM handflare
+|   LIGHT_200     LEAK_DAM  wearable_atomic_light
+
+|   LIGHT_008 0.5W  cellphone flashlight
+|   LIGHT_020 1.5W  smartphone flashlight
+
+.. _smartphone: https://nornagon.github.io/cdda-guide/#/item/smart_phone
+.. _waterproof_case: https://nornagon.github.io/cdda-guide/#/item/waterproof_smart_phone_case
+.. _firearm_repair_kit: https://nornagon.github.io/cdda-guide/#/item/small_repairkit
+.. _welder: https://nornagon.github.io/cdda-guide/#/item/welder
+.. _bow_saw: https://nornagon.github.io/cdda-guide/#/item/bow_saw
+.. _tin_snips: https://nornagon.github.io/cdda-guide/#/item/tin_snips
+.. _angle_grinder: https://nornagon.github.io/cdda-guide/#/item/angle_grinder
+.. _survivor_mess_kit: https://nornagon.github.io/cdda-guide/#/item/survivor_mess_kit
+.. _tailor_kit:                https://nornagon.github.io/cdda-guide/#/item/tailors_kit
+.. _welding_goggles:           https://nornagon.github.io/cdda-guide/#/item/goggles_welding
+.. _`bionic scalpel`:          https://nornagon.github.io/cdda-guide/#/item/bio_surgical_razor
+.. _scalpel:                   https://nornagon.github.io/cdda-guide/#/item/scalpel
+.. _sickle:                    https://nornagon.github.io/cdda-guide/#/item/sickle
+.. _`survivor harness`:        https://nornagon.github.io/cdda-guide/#/item/survivor_vst
+.. _`survivor belt`:           https://nornagon.github.io/cdda-guide/#/item/survivor_belt_notools
+.. _RM11B:                     https://nornagon.github.io/cdda-guide/#/item/rm11b_sniper_rifle
+.. _RM42:                      https://nornagon.github.io/cdda-guide/#/item/knife_rm42
+.. _RM88:                      https://nornagon.github.io/cdda-guide/#/item/rm88_battle_rifle
+.. _MP5SD:                     https://nornagon.github.io/cdda-guide/#/item/hk_mp5sd
+.. _Eskrima:                   https://nornagon.github.io/cdda-guide/#/martial_art/style_eskrima
+.. _`Krav Maga`:               https://nornagon.github.io/cdda-guide/#/martial_art/style_krav_maga
+.. _Taekwondo:                 https://nornagon.github.io/cdda-guide/#/martial_art/style_taekwondo
+.. _`survivor machete`:        https://nornagon.github.io/cdda-guide/#/item/survivor_machete_qt
+.. _barbarian:                 https://nornagon.github.io/cdda-guide/#/martial_art/style_barbaran
+.. _shears:                    https://nornagon.github.io/cdda-guide/#/item/shears
+.. _elec_shears:               https://nornagon.github.io/cdda-guide/#/item/elec_shears
 .. _`cutting`:            https://nornagon.github.io/cdda-guide/#/tool_quality/CUT
 .. _`grass cutting`:      https://nornagon.github.io/cdda-guide/#/tool_quality/GRASS_CUT
 .. _`fine cutting`:       https://nornagon.github.io/cdda-guide/#/tool_quality/CUT_FINE
@@ -606,206 +819,8 @@ Stuff that did not fit in the table:
 .. _`smg`:                https://nornagon.github.io/cdda-guide/#/tool_quality/SMG
 .. _`pistol`:             https://nornagon.github.io/cdda-guide/#/tool_quality/PISTOL
 .. _`glass cutting`:      https://nornagon.github.io/cdda-guide/#/tool_quality/CUT_GLASS
-
-
-* OLD REDDIT STUFF ABOUT FULL ARMOR LOADOUT::
-
-    hvy survivor suit 2/30/37
-    win survivor suit 2/15/22 -75w
-    fur coat w80	over torso/arms
-    survivor duster 0/4/9 over torso/arms/legs - storage
-                                                    under				over				strapped
-    mouth		survivor mask 1/9/13 (win)
-                    heavy survivor helmet 3/36/45					survivor hood 2/12/18
-                                                                                    (win surv hood) 2/15/22
-    torso		hoodie +arms 0/4/4		Kevlar 0/9/18			leather jacket +arms 1/9/9	MBR hard 5/36/60
-                    t-shirt 0/1/1			2(camo?)tank tops 0/1/1		leather vest 0/9/9		MBR steel 3/30/37
-                    long sleeved +arms 0/1/1					s.trenchcoat +arms 0/4/9	MBR ceramic 1/15/37
-                                                                                                                    MBR 0/12/24
-                                                                                                                    chest rig 0/3/3
-    arms		hoodie +torso 0/4/4		2arm warmers 0/1/1		leather jacket +torso 1/9/9	chitin guards 1/18/24
-                    long sleeved +torso 0/1/1					trenchcoat +torso 0/4/9		2elbow pads 0/7/7
-    hands		heavy survivor gloves 2/24/30
-                    chitinous gauntlets 1/18/24
-                    leather armor gauntlets 0/9/9	2glove liners 0/1/1
-    legs		survivor cargo 0/3/6		2boxer shorts 0/1/1		metal leg guards 2/24/24	2knee pads 0/7/7
-                                                    hard leg guards 1/6/6		leather chaps 0/9/9		drop leg pouch 0/3/3
-    feet		heavy survivor boots 2/36/45	flame resistant sock 0/3/3					2ankle holster 0/3/3
-                    chitinous boots 1/18/24
-                    leather armor boots 0/15/15
-    eyes no mouth	ballistic glasses 0/9/13
-
-    plus 2helmet netting, 2fanny packs tactical drop pouch?
-    leather pouch 0/3/3
-
-
-  * MBR / "modularvest" / "modular ballistic vest" becomes
-    "ballistic_vest_esapi"
-    "ballistic_vest_heavy"
-    "legpouch_large"
-
-    https://github.com/CleverRaven/Cataclysm-DDA/commit/6b36c10b273e693617cb161972fb561381a1c778
-
-    "heavy survivor suit" is obsolete, becomes....
-
-    "Survivor suits are completely superior to nomad. STURDY means you can
-    get mobbed without fearing prolonged combat will wreck your armor"
-    "Nomad definitely requires a lot of patching up though"
-
-
-
-  * NEWER ADVICE:
-    https://www.reddit.com/r/cataclysmdda/comments/wk7ozt/cdda_best_armor_in_experimental/
-
-    * OUTER https://nornagon.github.io/cdda-guide/#/item/touring_suit
-
-    * NORMAL (early game)
-
-      | https://nornagon.github.io/cdda-guide/#/item/lsurvivor_armor
-      | https://nornagon.github.io/cdda-guide/#/item/pants_survivor
-      | https://nornagon.github.io/cdda-guide/#/item/survivor_jumpsuit
-
-
-    This is effectively what "veteran survivor zombie" has as its loot drops.
-    This is probably a good reference for good "survivor X" gear loadouts:
-
-        https://github.com/CleverRaven/Cataclysm-DDA/blob/master/data/json/itemgroups/Clothing_Gear/clothing.json#L3032-L3280
-
-    RE MELEE WEAPONS
-
-        https://www.reddit.com/r/cataclysmdda/comments/usxw73/whats_the_best_melee_build_in_experimental/
-
-
-Ammo comparisons
-------------------------------------------------------------
-
-.. csv-table:: 8x40mm caseless variants (all are 0.23L 0.01kg 6cm)
-   :header: Variant,   Dam,   AP, Rng, Disp , Recoil,  Noise
-
-   8x40mm_HVP_,         47,   38,  42,   75,    2200,   1870
-   8x40mm_FMJ_,         37,   28,  42,   75,    2200,   1120
-   8x40mm_,             42,   18,  42,   75,    2200,    840
-   8x40mm_tracer_,      42,   18,  42,   60,    2200,    840
-   8x40mm_bootleg_,     42,    8,  42,   82,    2200,    422
-   8x40mm_JHP_,         47,    8,  42,   75,    2200,    460
-   8x40mm_sporting_,    21,   18,  42,   90,    1100,    462
-
-
-.. _8x40mm_HVP: https://nornagon.github.io/cdda-guide/#/item/8mm_hvp
-.. _8x40mm_FMJ: https://nornagon.github.io/cdda-guide/#/item/8mm_fmj
-.. _8x40mm: https://nornagon.github.io/cdda-guide/#/item/8mm_caseless
-.. _8x40mm_tracer: https://nornagon.github.io/cdda-guide/#/item/8mm_inc
-.. _8x40mm_bootleg: https://nornagon.github.io/cdda-guide/#/item/8mm_bootleg
-.. _8x40mm_JHP: https://nornagon.github.io/cdda-guide/#/item/8mm_jhp
-.. _8x40mm_sporting: https://nornagon.github.io/cdda-guide/#/item/8mm_civilian
-
-
-.. csv-table:: Some default cartridges for comparison
-   :header: VARIANT,    Vol,   Mass, Len,   Dam,   AP,  Rng, Disp,  Recoil,  Noise,    Comments
-
-   .22 LR,            0.07L, 0.00kg, 4cm,    12,    0,   13,   60,     150,     26,
-   9x18mm Makarov,    0.10L, 0.01kg, 5cm,    16,    2,   13,   60,     300,     58,
-   9x19mm Mauser,     0.12L, 0.01kg, 5cm,    26,    0,   14,   60,     500,     28,
-   5.7×28mm SS190,    0.12L, 0.01kg, 5cm,    20,   18,   14,   40,      90,    388,    CQB
-   4.6×30mm,          0.16L, 0.01kg, 5cm,    18,   20,   14,   40,      90,    388,    CQB
-   5.56×45mm M855,    0.19L, 0.01kg, 6cm,    41,    6,   36,  170,    1650,    318,
-   8×40mm caseless,   0.23L, 0.01kg, 6cm,    42,   18,   42,   75,    2200,    840,    noisy!
-   7.62x39mm AK,      0.11L, 0.02kg, 5cm,    45,    8,   30,   35,    2036,    420,
-   7.62×51mm M80,     0.16L, 0.02kg, 5cm,    58,    6,   65,    5,    3300,    478,    disp crazy low?!
-   7.62x54mmR M-N,    0.18L, 0.02kg, 6cm,    54,   10,   75,   15,    2650,    690,
-   .50BMG M33,        0.45L, 0.11kg, 8cm,   131,   28,  110,  150,   25250,   3888,
-
-
-
-.. csv-table:: Looking at actual storage spawning stuff on the floor...
-   :header: MAG, Vol,   Mass, Len,  COMPAT,         per shot,     ,      ,  COMMENT
-
-    010,       0.25L, 0.06kg,  6cm, PISTOL SMG DMR, 25.0ml,   6.0g, 6.0mm,
-    025,       0.50L, 0.09kg,  8cm, PISTOL SMG DMR, 20.0ml,   3.5g, 3.2mm,  easily best for DMR
-    050,       0.50L, 0.11kg,  8cm, AR BR         , 10.0ml,   2.2g, 1.6mm,
-    100,       0.75L, 0.15kg,  9cm, AR BR         ,  7.5ml,   1.5g, 0.9mm,  sweet spot for rifles
-    250,       2.00L, 0.34kg, 13cm,   BR LMG HMG  ,  8.0ml,   1.3g, 0.5mm,
-    500,       4.00L, 1.40kg, 16cm,      LMG HMG  ,  8.0ml,   2.8g, 0.3mm,
-    loose,          ,       ,     ,               ,  5.8ml,  1.2g?, 2cmm?,
-
-::
-
-    1000rd loose       5.75L  12.00kg
-    10 × 100rd mags    7.50L  13.50kg
-    40 ×  25rd mags   20.00L  15.60kg   <--- overkill; keep most loose
-
-
-
-Laser vs. Rivtech caseless
-------------------------------------------------------------
-
-A7 laser doing 25dam/4pen per shot, taking 1000kJ for 25 shots, so assume DOUBLE SHOTS and ignore pen ::
-
-      rifle itself  3.00L   3.0kg
-      10×UPS        40.0L  19.3kg      250 × 25dam shots
-      80×hvy batt   98.4L  80.0kg     2000 × 25dam shots (loose)
-
-RM11B doing 52dam/18pen per shot::
-
-      rifle itself  3.35L  3.49kg
-      5 × 25rd mag  2.50L  1.95kg      125 × 52dam shots
-      1000 rd       5.85L 12.00kg     1000 × 52dam shots (loose)
-
-So if you consider the weight/volume cost, the 8x40 is *crazily* more good.
-
-On that basis I think lasers can get fucked right now.
-
-If you could charge the laser from a rando light battery that might
-be different, because you can scavenge those.
-
-Oh maybe you can like drain all the smartphones into the UPS and then use those to shoot?
-
-Focusing lens improves from 25dam/4pen/30rng to 30dam/4pen/45rng but still sucks compared to DMR.
-Efficient emitter reduces battery cost from 40/shot to 36/shot but meh.
-
-
-Light sources
-------------------------------------------------------------
-Considering only LIGHT_100 (100 cd/m2) and above:
-
-|   LIGHT_500 15W USES_BIONIC_POWER nomad_harness_
-|   LIGHT_500 15W CHARGEDIM heavy_flashlight_ — brightest, belt-able
-|   LIGHT_450 15W CHARGEDIM shocktonfa
-|   LIGHT_450 15W CHARGEDIM miner_hat_
-|   LIGHT_350 10W CHARGEDIM survivor_light_  — pretty good balance?
-|   LIGHT_350 10W CHARGEDIM helmet_eod
-|   LIGHT_300 10W CHARGEDIM wizard_cane
-|   LIGHT_300 10W CHARGEDIM wearable_camera_pro
-|   LIGHT_300 10W CHARGEDIM flashlight_
-|   LIGHT_300  5W           l-stick — too long unless it's your primary weapon
-|   LIGHT_240 10W CHARGEDIM smart_lamp
-|   LIGHT_240     CHARGEDIM handflare
-|   LIGHT_200     LEAK_DAM  wearable_atomic_light
-
-|   LIGHT_008 0.5W  cellphone flashlight
-|   LIGHT_020 1.5W  smartphone flashlight
-
-.. _smartphone: https://nornagon.github.io/cdda-guide/#/item/smart_phone
-.. _waterproof_case: https://nornagon.github.io/cdda-guide/#/item/waterproof_smart_phone_case
-.. _firearm_repair_kit: https://nornagon.github.io/cdda-guide/#/item/small_repairkit
-.. _welder: https://nornagon.github.io/cdda-guide/#/item/welder
-.. _bow_saw: https://nornagon.github.io/cdda-guide/#/item/bow_saw
-.. _tin_snips: https://nornagon.github.io/cdda-guide/#/item/tin_snips
-.. _angle_grinder: https://nornagon.github.io/cdda-guide/#/item/angle_grinder
-.. _survivor_mess_kit: https://nornagon.github.io/cdda-guide/#/item/survivor_mess_kit
-.. _tailor_kit:                https://nornagon.github.io/cdda-guide/#/item/tailors_kit
-.. _welding_goggles:           https://nornagon.github.io/cdda-guide/#/item/goggles_welding
-.. _`bionic scalpel`:          https://nornagon.github.io/cdda-guide/#/item/bio_surgical_razor
-.. _scalpel:                   https://nornagon.github.io/cdda-guide/#/item/scalpel
-.. _sickle:                    https://nornagon.github.io/cdda-guide/#/item/sickle
-.. _`survivor harness`:        https://nornagon.github.io/cdda-guide/#/item/survivor_vst
-.. _`survivor belt`:           https://nornagon.github.io/cdda-guide/#/item/survivor_belt_notools
-.. _RM11B:                     https://nornagon.github.io/cdda-guide/#/item/rm11b_sniper_rifle
-.. _RM42:                      https://nornagon.github.io/cdda-guide/#/item/knife_rm42
-.. _RM88:                      https://nornagon.github.io/cdda-guide/#/item/rm88_battle_rifle
-.. _MP5SD:                     https://nornagon.github.io/cdda-guide/#/item/hk_mp5sd
-.. _Eskrima:                   https://nornagon.github.io/cdda-guide/#/martial_art/style_eskrima
-.. _`Krav Maga`:               https://nornagon.github.io/cdda-guide/#/martial_art/style_krav_maga
-.. _Taekwondo:                 https://nornagon.github.io/cdda-guide/#/martial_art/style_taekwondo
-.. _`tempered combat machete`: https://nornagon.github.io/cdda-guide/#/item/survivor_machete_qt
-.. _barbarian:                 https://nornagon.github.io/cdda-guide/#/martial_art/style_barbaran
+.. _survivor_duffel:   https://nornagon.github.io/cdda-guide/#/item/survivor_duffel_bag
+.. _survivor_backpack: https://nornagon.github.io/cdda-guide/#/item/survivor_pack
+.. _survivor_rucksack: https://nornagon.github.io/cdda-guide/#/item/survivor_rucksack
+.. _survivor_runner_pack: https://nornagon.github.io/cdda-guide/#/item/survivor_runner_pack
+.. _survivor_distributed_rigging: https://nornagon.github.io/cdda-guide/#/item/survivor_rig
