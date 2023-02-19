@@ -1,0 +1,315 @@
+ammo,range bonus,damage bonus,length,name
+9mm,1,null,231 mm,px4
+9mm,1,null,249 mm,m9
+9mm,18,3,390 mm,ksub2000
+9mm,20,2,762 mm,cx4
+9mm,null,-1,211 mm,glock_19
+9mm,null,-1,230 mm,usp_9mm
+9mm,null,-1,233 mm,glock_17
+9mm,null,-1,248 mm,p08
+9mm,null,-1,null,kpf9
+9mm,null,-3,538 mm,smg_9mm
+9mm,null,0,377 mm,hk_mp5_semi_pistol
+9mm,null,0,377 mm,hk_mp5k
+9mm,null,1,100 cm,rifle_9mm
+9mm,null,1,480 mm,uzi
+9mm,null,1,648 mm,mp40
+9mm,null,1,655 mm,colt_ro635
+9mm,null,1,682 mm,hk_mp5
+9mm,null,1,765 mm,sten
+9mm,null,1,832 mm,mp18
+9mm,null,2,655 mm,calico
+9mm,null,null,194 mm,walther_ccp
+9mm,null,null,199 mm,hptc9
+9mm,null,null,209 mm,walther_ppq_9mm
+9mm,null,null,216 mm,m11
+9mm,null,null,221 mm,m18
+9mm,null,null,221 mm,sp2022
+9mm,null,null,228 mm,hi_power_9mm
+9mm,null,null,237 mm,p226_9mm
+9mm,null,null,238 mm,cz75
+9mm,null,null,238 mm,m17
+9mm,null,null,244 mm,walther_p38
+9mm,null,null,312 mm,mauser_c96
+9mm,null,null,345 mm,tec9
+9mm,null,null,525 mm,bt_apc9k
+9mm,null,null,544 mm,briefcase_smg
+9mm,null,null,666 mm,hk_mp5sd
+9mm,null,null,null,glock_18c
+9mm,null,null,null,mauser_m714
+9mm,null,null,null,mp40semi
+223,-6,-11,456 mm,oa93
+223,-6,-9,584 mm,ar_pistol
+223,null,-1,798 mm,m27_assault_rifle
+223,null,-2,740 mm,fs2000
+223,null,-2,758 mm,m4_carbine
+223,null,-2,759 mm,famas
+223,null,-5,48 cm,minidraco556
+223,null,1,977 mm,ruger_mini
+223,null,null,1003 mm,m16a4
+223,null,null,1004 mm,hk_g36
+223,null,null,1035 mm,m249
+223,null,null,715 mm,steyr_aug
+223,null,null,727 mm,m231pfw
+223,null,null,741 mm,sig_assault_rifle
+223,null,null,930 mm,ar15
+223,null,null,99 cm,ak556
+223,null,null,null,m16_auto_rifle
+223,null,null,null,m249_semi
+762,null,-5,46 cm,draco
+762,null,1,103 cm,sks
+762,null,null,84 cm,vz58_p
+762,null,null,87 cm,ak47
+762,null,null,87 cm,aksemi
+762,null,null,91 cm,arx160
+762,null,null,930 mm,mk47
+762,null,null,null,vz58ts
+5x50,10,10,690 mm,needlegun
+5x50,null,null,255 mm,needlepistol
+8x40mm,-6,10,1260 mm,rm298
+8x40mm,20,10,760 mm,rm11b_sniper_rifle
+8x40mm,null,10,995 mm,rm88_battle_rifle
+8x40mm,null,5,905 mm,rm51_assault_rifle
+8x40mm,null,5,935 mm,rm614_lmg
+8x40mm,null,null,295 mm,rm103a_pistol
+8x40mm,null,null,660 mm,rm2000_smg
+9x18,null,null,196 mm,makarov
+9x18,null,null,null,skorpion_82
+10mm,null,1,498 mm,hk_mp5_10_semi
+10mm,null,null,177 mm,glock_29
+10mm,null,null,203 mm,witness_10
+10mm,null,null,205 mm,glock_20
+10mm,null,null,210 mm,m1911_10
+10mm,null,null,211 mm,xd_10
+10mm,null,null,224 mm,p220_10
+10mm,null,null,332 mm,sw_610
+10mm,null,null,429 mm,TDI_10
+12mm,60,null,1005 mm,hk_g80
+20x66mm,6,4,920 mm,rm120c
+20x66mm,null,null,275 mm,rm228
+20x66mm,null,null,775 mm,rm20
+22,null,-1,214 mm,sig_mosquito
+22,null,-2,129 mm,moss_brownie
+22,null,1,1000 mm,rifle_22
+22,null,4,905 mm,american_180
+22,null,4,942 mm,ruger_1022
+22,null,5,1029 mm,marlin_9a
+22,null,null,141 mm,j22
+22,null,null,183 mm,walther_p22
+22,null,null,192 mm,ruger_lcr_22
+22,null,null,259 mm,sw_22
+30carbine,null,null,900 mm,m1carbine
+30carbine,null,null,null,m2carbine
+32,null,null,147 mm,kp32
+32,null,null,173 mm,walther_ppk
+32,null,null,194 mm,sig_p230
+32,null,null,298 mm,skorpion_61
+36paper,null,null,351 mm,colt_navy
+38,null,-1,475 mm,2_shot_special
+38,null,-2,192 mm,ruger_lcr_38
+38,null,1,100 cm,rifle_38
+38,null,null,252 mm,model_10_revolver
+38,null,null,273 mm,mr73
+38,null,null,278 mm,sw_619
+38super,null,null,247 mm,af2011a1_38super
+38super,null,null,247 mm,m1911a1_38super
+40,null,-1,33 cm,surv_six_shooter
+40,null,-4,538 mm,smg_40
+40,null,1,100 cm,rifle_40
+40,null,1,234 mm,glock_22
+40,null,null,215 mm,walther_ppq_40
+40,null,null,221 mm,sig_40
+40,null,null,228 mm,hi_power_40
+40,null,null,234 mm,hptjcp
+40x46mm,30,1,400 mm,pseudo_m203
+40x46mm,null,3,736 mm,m79
+40x46mm,null,null,372 mm,m320
+40x46mm,null,null,450 mm,launcher_simple
+40x46mm,null,null,565 mm,mgl
+40x46mm,null,null,820 mm,rm802
+40x46mm,null,null,null,triple_launcher_simple
+40x53mm,30,1,1093 mm,mark19
+44,null,-1,29 cm,deagle_44
+44,null,-1,30 cm,sw629
+44,null,1,100 cm,rifle_44
+44,null,2,98 cm,henry_big_boy
+44,null,null,31 cm,ruger_redhawk
+44paper,null,null,373 mm,colt_army
+44paper,null,null,378 mm,lemat_revolver
+45,null,-4,538 mm,smg_45
+45,null,0,241 mm,usp_45
+45,null,1,100 cm,rifle_45
+45,null,1,452 mm,hk_ump45
+45,null,2,30 cm,surv_hand_cannon
+45,null,2,832 mm,tommygun
+45,null,null,209 mm,glock_21
+45,null,null,224 mm,walther_ppq_45
+45,null,null,238 mm,hptjhp
+45,null,null,245 mm,m1911
+45,null,null,298 mm,mac_10
+45,null,null,611 mm,TDI
+45colt,null,5,1106 mm,colt_lightning
+45colt,null,null,158 mm,bond_410
+45colt,null,null,208 mm,colt_saa
+46,null,null,42 cm,hk_mp7
+50,null,null,130 cm,m2browning_sawn
+57,null,-2,164 mm,fn57
+57,null,-2,220 mm,ruger_57
+57,null,2,670 mm,fn_ps90
+57,null,null,380 mm,p50
+57,null,null,511 mm,fn_p90
+66mm,null,null,693 mm,m202_flash
+84x246mm,null,null,1000 mm,m4_carlgustav
+84x246mm,null,null,1020 mm,AT4
+84x246mm,null,null,1065 mm,m3_carlgustav
+270win,null,null,1135 mm,remington700_270
+300,null,null,1183 mm,weatherby_5
+300,null,null,1187 mm,m2010
+300,null,null,1198 mm,win70
+300BLK,null,-1,938 mm,acr_300blk
+300BLK,null,null,665 mm,iwi_tavor_x95_300blk
+300BLK,null,null,775 mm,sig_mcx_rattler_sbr
+300BLK,null,null,null,ar15_retool_300blk
+308,null,-1,1028 mm,m110a1
+308,null,-1,1050 mm,ar10
+308,null,-1,1090 mm,fn_fal
+308,null,-1,1105 mm,m60
+308,null,-1,1126 mm,m1a
+308,null,-1,800 mm,m134
+308,null,-2,1025 mm,hk_g3
+308,null,-3,906 mm,scar_h
+308,null,-4,914 mm,hk417_13
+308,null,null,1041 mm,savage_111f
+308,null,null,1260 mm,m240
+308,null,null,87 cm,ak308
+308,null,null,889 mm,m14ebr
+308,null,null,992 mm,M24
+308,null,null,null,m60_semi
+357sig,null,null,217 mm,p320_357sig
+357sig,null,null,232 mm,p226_357sig
+357sig,null,null,234 mm,glock_31
+380,null,null,145 mm,rugerlcp
+380,null,null,150 mm,kp3at
+380,null,null,154 mm,taurus_spectrum
+380,null,null,173 mm,fn1910
+380,null,null,200 mm,hptcf380
+380,null,null,253 mm,mac_11
+38,3,null,162 mm,cop_38
+40,1,null,231 mm,px4_40
+40,1,null,250 mm,90two40
+410shot,null,null,1152 mm,shotgun_410
+410shot,null,null,1171 mm,saiga_410
+454,null,null,332 mm,raging_bull
+454,null,null,385 mm,raging_judge
+460,null,null,null,m1911-460
+500,null,2,953 mm,bh_m89
+500,null,null,407 mm,sw_500
+545x39,null,null,94 cm,ak74
+545x39,null,null,96 cm,kord
+700nx,null,null,110 cm,trex_gun
+762R,-3,-3,1015 mm,mosin44
+762R,3,null,1241 mm,mosin91_30
+762x25,2,2,844 mm,ppsh
+762x25,null,null,220 mm,tokarev
+3006,null,-1,1106 mm,browning_blr
+3006,null,null,1102 mm,m1903
+3006,null,null,1107 mm,garand
+3006,null,null,1141 mm,remington_700
+3006,null,null,1216 mm,m1918
+4570,null,-15,491 mm,bfr
+4570,null,4,1278 mm,sharps
+4570,null,null,943 mm,1895sbl
+50,45,-5,1315 mm,bfg50
+50,45,-5,146 cm,tac50
+50,100,-5,145 cm,m107a1
+50,110,null,165 cm,m2browning
+50,115,-5,137 cm,as50
+45,20,4,900 mm,hk_usc45
+artisan_guns,null,null,15 cm,pressin
+artisan_guns,null,null,35 cm,obrez
+artisan_guns,null,null,null,bring_the_sun
+artisan_guns,null,null,null,louverture
+artisan_guns,null,null,null,pulverizer
+atgm,15,null,117 cm,atgm_launcher
+bio,10,10,null,bio_emp_gun
+bio,10,16,null,bio_lightning
+bio,30,10,null,bio_laser_gun
+bio,4,6,null,mut_quills
+bio,6,null,null,mut_longpull
+bio,null,-5,null,bio_shotgun_gun
+blunderbuss,null,null,90 cm,blunderbuss
+cannon,null,null,185 cm,cannon_3in_ordnance
+chemical_spray,null,null,110 cm,chemical_thrower
+combination,null,null,100 cm,combination_gun
+exodii,null,null,1000 mm,pamd68
+exodii,null,null,1100 mm,pamd71z
+exodii,null,null,null,pamd68mountable
+faults_gun,null,null,null,fault_gun_blackpowder
+faults_gun,null,null,null,fault_gun_chamber_spent
+faults_gun,null,null,null,fault_gun_damaged
+faults_gun,null,null,null,fault_gun_dirt
+faults_gun,null,null,null,fault_gun_unaccurized
+faults_gun,null,null,null,fault_gun_unlubricated
+flammable,10,10,945 mm,rm451_flamethrower
+flammable,6,null,100 cm,flamethrower
+flintlock,2,2,345 mm,pistol_flintlock
+flintlock,6,10,1466 mm,rifle_flintlock
+flintlock,null,null,1202 mm,carbine_flintlock
+flintlock,null,null,1278 mm,longrifle_flintlock
+flintlock,null,null,null,carbine_flintlock_double
+nail,12,1,80 cm,coilgun
+nail,null,null,45 cm,nailgun
+paintball,8,1,null,paintballgun
+robofac_gun,null,-2,50 cm,robofac_gun
+robofac_gun,null,null,152 mm,robofac20
+robofac_gun,null,null,220 mm,robofacmultimag
+robofac_gun,null,null,232 mm,robofac50
+robofac_gun,null,null,232 mm,robofac60
+robofac_gun,null,null,236 mm,robofac40
+robofac_gun,null,null,255 mm,robofac60_123ln
+robofac_gun,null,null,300 mm,robofac10
+robofac_gun,null,null,300 mm,robofac100
+robofac_gun,null,null,40 cm,robofac_gun_46
+robofac_gun,null,null,40 cm,robofac_gun_57
+robofac_gun,null,null,40 cm,robofac_gun_smg
+robofac_gun,null,null,45 cm,robofac_gun_ar
+robofac_gun,null,null,50 cm,robofac_gun_shotgun
+robofac_gun,null,null,55 cm,robofac_gun_dmr
+robofac_gun,null,null,55 cm,robofac_gun_exodii
+robofac_gun,null,null,null,robofac30
+robofac_gun,null,null,null,robofac_handguard
+robofac_gun,null,null,null,robofac_laser_sight
+robofac_gun,null,null,null,robofac_stock
+shot,null,-1,85 cm,lever_shotgun
+shot,null,-2,53 cm,remington_870_breacher
+shot,null,-2,708 mm,winchester_1887
+shot,null,-3,65 cm,slamfire_shotgun
+shot,null,-5,35 cm,ashot
+shot,null,1,1166 mm,mossberg_500
+shot,null,1,1234 mm,remington_870
+shot,null,1,971 mm,ksg-25
+shot,null,null,1043 mm,mossberg_590
+shot,null,null,1068 mm,saiga_12
+shot,null,null,110 cm,bigun
+shot,null,null,592 mm,streetsweeper
+shot,null,null,60 cm,revolver_shotgun
+shot,null,null,610 mm,m26_mass_standalone
+shot,null,null,672 mm,ksg
+shot,null,null,725 mm,tavor_12
+shot,null,null,95 cm,pipe_shotgun
+shot,null,null,95 cm,shotgun_s
+shot,null,null,983 mm,remington_870_express
+shot,null,null,989 mm,winchester_1897
+shot,null,null,994 mm,mossberg_930
+shot,null,null,null,pipe_double_shotgun
+shot,null,null,null,shotgun_d
+shot,null,null,null,slamfire_shotgun_d
+signal_flare,null,null,null,flaregun
+ups,30,10,233 mm,v29
+ups,30,20,1086 mm,gatling_mech_laser
+ups,30,25,900 mm,laser_rifle
+ups,35,45,965 mm,emp_gun
+ups,45,30,1228 mm,recon_mech_laser
+ups,null,1,null,hm12
+ups,null,null,null,gatling_mech_laser_single
+ups,null,null,null,recon_mech_laser_single
