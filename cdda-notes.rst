@@ -120,6 +120,18 @@ Initial focus is on getting a handle on armour, storage, and summer/winterweight
    | `glass cutting`_
 
 
+To skip all the starting bullshit
+------------------------------------------------------------
+
+1. `Create World` & `Create Custom Character`  (if you haven't already)
+   Naked might be best, otherwise it'll add stating gear on top of your custom gear...
+
+2. Find/make/cheat yourself the gear you want — make sure it is all on your person!
+3. At main menu, `World > Foo > Character to template > Bar`:kbd:.
+4. At main menu, `New Game > Preset Character > Bar`:kbd:.
+
+
+
 
 Brainstorming
 ======================================================================
