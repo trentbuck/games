@@ -5,6 +5,8 @@ Not doing `debug backpack <https://nornagon.github.io/cdda-guide/#/search/debug>
 Vehicles & bionics & mutations are ignored for now.
 Initial focus is on getting a handle on armour, storage, and summer/winterweight layering.
 
+• **FAVOURITE** your great gear, and turn on autonotes, so if you accidentally drop it, you can fucking find it again.
+
 :Melee: RM42_ w/ Eskrima_ or `Krav Maga`_.
 
    Always want a knife regardless, for cutting_ and butchering_.
@@ -36,9 +38,81 @@ Initial focus is on getting a handle on armour, storage, and summer/winterweight
    Range is shit, but this is intended for bumbling around in CQB without waking people, for when I get bored of knife fighting.
    Don't bother to trick this out with other mods.
 
+   :PROBLEM:
+      This gun is
+      4L/3.65kg/67cm factory-stock, or
+      4.55L/5.2kg/82cm with a second suppressor and a 100rd mag.
+
+      That does not fit into the survivor backpack, and
+      I'm already using the survivor_harness_'s rifle sling for the RM11B, and
+      I'm already using the survivor_belt_'s pistol holster for the RM42.
+
+      So I don't actually have anywhere to put the gun, and I can't add a
+      rifle sling or similar, because strapped-torso-front and
+      strapped-torso-back are both already in use.
+
+      On the survivor_backpack_,
+      I can put up to 5L/6kg/120cm on a krab, paying a *noise & encumbrance penalty*.
+      It doesn't fit *inside* the pack which is capped at 50cm.
+
+      When I switch to knife fighting, if my backpack is full, I am *ALREADY* dropping it to avoid encumber-ment, even with maxed stats.
+      Should I therefore go "fuck it" and just get a survivor_duffel_ instead?  UPDATE: that still only gets me 60cm
+
+      Or should I switch to a takedown carbine (Kel-Tec Sub2000) or pistol?  Those aren't integrally suppressed, but I can add a can to get them from 100 to 50, instead of 50 to 0.
+      Just walking around is doing 2-9 noise and smashing a wall is 20-50 noise, so I guess that's my threshold?
+
+      Noise is purely from the cartridge, which in the stock 9mm JHP is about 100.
+      A suppressor is +15cm -50noise.
+      To fit in a backpack/rucksack/duffel we need to get below 50/55/60cm overall length.
+      We COULD just take off the suppressor every time we want to do stuff other than shoot motherfuckers...
+      Otherwise we need the length pre-suppressor to be 35/40/45cm.
+
+      .. csv-table:: Survivor storage options (* MaxLen ignores penalty-inducing strap/krab points)
+         :Header: Variant,       Range, Len (unsupp), Noise (unsupp),Comment
+
+         Kel-Tec_SUB-2000 (folded),   32, 19, 80
+         Hi-Point C-9,                14, 20, 80
+         Walther_CCP,                 14, 20, 80
+         Walther_PPQ_9mm,             14, 21, 80
+         Glock_19,                    14, 22, 80
+         Hi-Power_9mm,                14, 23, 80
+         CZ_75_B,                     14, 24, 80
+         Glock_17,                    14, 24, 80
+         Glock_18C,                   14, 24, 88, HOW THE HELL IS THIS DIFFERENT?  I DO NOT SEE IT CODED ANYWHERE.  Same for both auto & semiauto.
+         Luger_P08,                   14, 25, 80
+         Walther_P38,                 14, 25, 80
+         Mauser_C96,                  14, 32, 80
+         BT_APC9K (folded),           14, 33, 80
+         TEC-9,                       14, 35, 80
+         MP5K,                        14, 38, 80
+         Luty SMG 9x19,               14, 54, 105, (because only has burst mode???)
+         Calico,                      14, 66, 80
+         MP5SD,                       13, 67, 48
+         MP5A2,                       14, 69, 80
+         Kel-Tec_SUB-2000 (unfolded), 32, 74, 80
+         Beretta CX4,                 34, 77, 80
+         Mauser_M7                    14, 32, 80
+         MP18,                        14, 84, 80
+
+      A Kel-Tec Sub2000 is 20cm/74cm folded/unfolded & 80noise.
+      A Kel-Tec Sub2000 is 34cm/89cm folded/unfolded & 30noise with a suppressor.
+      A Kel-Tec Sub2000 is 13cm/68cm folded/unfolded & 82noise with a sawn-off barrel (-5 length)!
+      A Kel-Tec Sub2000 is 27cm/83cm folded/unfolded & 32noise with a sawn-off barrel and a suppressor.
+      Even folded, once accurized the dispersion is only 5.
+      Unfolding drops recoil from 98 to 30 (UPDATE: can't fire folded at all – makes sense).
+
+      The first play I did after setting up the MP5SD, I ran into about 50 zombies NONE of which were cops/soldiers, and
+      then a bunch of razorclaws which mostly ignore the 9mm ammo.
+      And until I learn zombie anatomy, it's taking 3 shots to down starting zombies.
+      So maybe just say "fuck it" entirely to this idea and use knife fighting for everything except the real badasses?
+
+
 :Miscellaneous:
    | smartphone_ in waterproof_case_ — calorie intake tracking, alarm clock (wake up at X), exact time
    | survivor_light_ (350cd/m²)
+
+   | Some plastic bags (non-rigid containers up to 10L); use knife to label them "DRUGS" and "SEEDZ", then set their priority to 1 (or more) and category whitelitst.  Now you can collapse the individual boring lists easily, without wasting too much space.
+   | Probably want some non-rigid liquid containers as well for water and suchlike...
 
 :Tool Qualities (important):
    | cutting_              [2] RM42_
@@ -54,9 +128,13 @@ Initial focus is on getting a handle on armour, storage, and summer/winterweight
    | `glare protection`_   [1] welding_goggles_ — used for welding; also on survivor_firemask but *not* survivor_goggles.
    | welding_              [2] welder_  — welding *kit* appears only interesting for vehicles
    | `wood sawing`_        [2] bow_saw_  — skip misc_repair_kit; tailors_kit_ already handles everything else misc_repair_kit can do
+   | `tree cutting`_       [2] bow_saw_  — skip fire_axe_ & chainsaw, they're too heavy for +1/+2 points
    | `food cooking`_       [3] survivor_mess_kit_
    | boiling_              [2] survivor_mess_kit_
+   | `chemical making`_    [1] survivor_mess_kit_
    | containing_           [1] survivor_mess_kit_ — probably want a huge drum, too
+   | digging_              [3] entrenching_tool_ — handy for clearing rubble instead of wobbling over it?
+   | lockpicking_          [3] locksmith_kit_ ([10] bio_lockpick_)
 
 :Tool Qualities (meh):
    | `grass cutting`_ [1] `survivor machete`_ [2] sickle_
@@ -66,12 +144,10 @@ Initial focus is on getting a handle on armour, storage, and summer/winterweight
    | fishing_        [2] https://nornagon.github.io/cdda-guide/#/item/fishing_rod_professional
    | `fish trapping`_ [1] https://nornagon.github.io/cdda-guide/#/item/fish_trap_basket
    | smoothing_      [2] https://nornagon.github.io/cdda-guide/#/item/metal_smoother — for construction?
+   | `self jacking`_ — a vehicle thing
 
-   | `chemical making`_   [1] survivor_mess_kit_
    | smoking_
    | distilling_
-   | `tree cutting`_
-   | digging_
    | `bolt turning`_
    | `fine bolt turning`_
    | `screw driving`_
@@ -85,7 +161,6 @@ Initial focus is on getting a handle on armour, storage, and summer/winterweight
    | pencil_
    | lifting_
    | jacking_
-   | `self jacking`_
    | siphoning_
    | chiseling_
    | `wood chiseling`_
@@ -104,7 +179,6 @@ Initial focus is on getting a handle on armour, storage, and summer/winterweight
    | filing_
    | clamping_
    | pressurizing_
-   | lockpicking_
    | extraction_
    | filtration_
    | suspending_
@@ -556,17 +630,20 @@ Stuff that did not fit in the table:
 
   Storage / Utility:
 
-  .. csv-table:: Survivor storage options
-     :header: Option,                 Vol,  Mass, Enc (empty),(full), Total capacity,,notes
+  .. csv-table:: Survivor storage options (* MaxLen ignores penalty-inducing strap/krab points)
+     :header: Option,                 Vol,  Mass, Enc (empty),(full), MaxLen, Total capacity,(excl krabs),notes
 
-     survivor_distributed_rigging_, 3.00L, 0.44kg, 1,  3,               7L, 18kg, strapped lower torso & thighs
-     survivor_belt_,                2.25L, 1.55kg, 2,  6,               9L, 16kg, strapped waist,               knife sheath
-     survivor_harness_,             1.25L, 0.32kg, 1, 19,              13L, 24kg, strapped upper front torso,   rifle sling
-     survivor_runner_pack_,         4.20L, 0.44kg, 3, 12,              20L, 16kg, strapped back torso
-     survivor_backpack_,            5.25L, 0.60kg, 3, 24,              45L, 51kg, strapped back torso
-     survivor_rucksack_,           10.00L, 0.80kg, 3, 28,              58L, 70kg, strapped back torso
-     survivor_duffel_,              7.88L, 1.00kg, 8, 30,              50L, 78kg, strapped back torso
+     survivor_distributed_rigging_, 3.00L, 0.44kg, 1,  3,               30cm,  7L, 18kg, -,        strapped lower torso & thighs
+     survivor_belt_,                2.25L, 1.55kg, 2,  6,        1L/2kg/70cm,  9L, 16kg, -,        strapped waist,               knife sheath
+     survivor_harness_,             1.25L, 0.32kg, 1, 19,     8L/8.2kg/120cm, 13L, 24kg, -,        strapped upper front torso,   rifle sling
+     survivor_runner_pack_,         4.20L, 0.44kg, 3, 12,               40cm, 20L, 16kg, -,        strapped back torso
+     survivor_backpack_,            5.25L, 0.60kg, 3, 24,               50cm, 45L, 51kg, 31L/33kg, strapped back torso
+     survivor_rucksack_,           10.00L, 0.80kg, 3, 28,               55cm, 58L, 70kg, 35L/40kg, strapped back torso
+     survivor_duffel_,              7.88L, 1.00kg, 8, 30,               60cm, 50L, 78kg, 38L/60kg, strapped back torso
 
+
+   Looking at pack capacity mass ÷ pack mass, rucksack looks best: 41/10/75/36/85/88/78.
+   But if you exclude the krabs, you get this: 41/10/75/36/55/50/60.
 
 
 * TOOLS
@@ -962,3 +1039,5 @@ CANT_WEAR stuff
 .. _ballistic_vest:                https://nornagon.github.io/cdda-guide/#/item/ballistic_vest_esapi
 .. _heavy_ballistic_vest:          https://nornagon.github.io/cdda-guide/#/item/ballistic_vest_heavy
 .. _merc_coat:                     https://nornagon.github.io/cdda-guide/#/item/armor_mercenary_top
+.. _entrenching_tool:              https://nornagon.github.io/cdda-guide/#/item/e_tool
+.. _locksmith_kit: https://nornagon.github.io/cdda-guide/#/item/picklocks
