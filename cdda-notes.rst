@@ -67,8 +67,8 @@ Initial focus is on getting a handle on armour, storage, and summer/winterweight
       We COULD just take off the suppressor every time we want to do stuff other than shoot motherfuckers...
       Otherwise we need the length pre-suppressor to be 35/40/45cm.
 
-      .. csv-table:: Survivor storage options (* MaxLen ignores penalty-inducing strap/krab points)
-         :Header: Variant,       Range, Len (unsupp), Noise (unsupp),Comment
+      .. csv-table::
+         :Header: Variant, Range, Len (unsupp), Noise (unsupp)
 
          Kel-Tec_SUB-2000 (folded),   32, 19, 80
          Hi-Point C-9,                14, 20, 80
@@ -78,14 +78,14 @@ Initial focus is on getting a handle on armour, storage, and summer/winterweight
          Hi-Power_9mm,                14, 23, 80
          CZ_75_B,                     14, 24, 80
          Glock_17,                    14, 24, 80
-         Glock_18C,                   14, 24, 88, HOW THE HELL IS THIS DIFFERENT?  I DO NOT SEE IT CODED ANYWHERE.  Same for both auto & semiauto.
+         Glock_18C,                   14, 24, 88
          Luger_P08,                   14, 25, 80
          Walther_P38,                 14, 25, 80
          Mauser_C96,                  14, 32, 80
          BT_APC9K (folded),           14, 33, 80
          TEC-9,                       14, 35, 80
          MP5K,                        14, 38, 80
-         Luty SMG 9x19,               14, 54, 105, (because only has burst mode???)
+         Luty SMG 9x19,               14, 54, 105
          Calico,                      14, 66, 80
          MP5SD,                       13, 67, 48
          MP5A2,                       14, 69, 80
@@ -93,6 +93,10 @@ Initial focus is on getting a handle on armour, storage, and summer/winterweight
          Beretta CX4,                 34, 77, 80
          Mauser_M7                    14, 32, 80
          MP18,                        14, 84, 80
+
+      The Luty is burst-only (no semi-auto), so I guess 105 there makes sense.
+      How the hell is the Glock 18C 88 noise in *both* auto and semi-auto?
+      I cannot see where this is coded...
 
       A Kel-Tec Sub2000 is 20cm/74cm folded/unfolded & 80noise.
       A Kel-Tec Sub2000 is 34cm/89cm folded/unfolded & 30noise with a suppressor.
