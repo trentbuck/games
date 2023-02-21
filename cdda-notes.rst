@@ -121,8 +121,8 @@ Initial focus is on getting a handle on armour, storage, and summer/winterweight
 
 :Tool Qualities (important):
    | survivor_mess_kit_    ⇒ `food cooking`_ [3] boiling_ [2] `chemical making`_ [1] containing_ [1]
-   | tailors_kit_          ⇒  `curved needle`_ [1] `fabric cutting`_ [1]
-   | firearm_repair_kit_   ⇒ hammering_ [3] `fine hammering`_ [1] `soft hammering`_ [1] `bolt turning`_ [1] `fine bolt turning`_  [1] `screw driving`_ [1] `fine screw driving`_
+   | tailors_kit_          ⇒ `curved needle`_ [1] `fabric cutting`_ [1] sewing_ [4] knitting_ [1]
+   | firearm_repair_kit_   ⇒ hammering_ [3] `fine hammering`_ [1] `soft hammering`_ [1] `bolt turning`_ [1] `fine bolt turning`_  [1] `screw driving`_ [1] `fine screw driving`_ [1] `nail prying`_ [1] chiseling_ [3] `wood chiseling`_ [3]
    | `metal sawing`_       ⇐ [2] firearm_repair_kit_ — or [10] angle_grinder_
    | `fine metal sawing`_  ⇐ [1] firearm_repair_kit_ — or [2] tin_snips_
    | cutting_              ⇐ [2] RM42_
@@ -141,34 +141,29 @@ Initial focus is on getting a handle on armour, storage, and summer/winterweight
    | anesthesia_           ⇐ [1] anesthetic_kit_
    | fishing_              ⇐ [2] fishing_rod_professional_
    | `fish trapping`_      ⇐ [1] fish_trap_basket_
-   | smoothing_            ⇐ [2] metal_smoother_     — for construction?
-   | `self jacking`_                                 — a vehicle thing
-   | smoking_                                        — for smoking drugs
+   | smoothing_            ⇐ [2] metal_smoother_ — for construction?
+   | `self jacking`_                             — a vehicle thing
+   | smoking_                                    — for smoking drugs
    | distilling_           ⇐ [2] still_ [1] chemistry_set_
    | `fine distillation`_  ⇐ [1] still_lab_
-   | butchering_
-   | drilling_ [3] cordless_drill_ [2] hand_drill_
-   | `rock drilling`_
-   | prying_
-   | `nail prying`_
-   | punch_
-   | pencil_
-   | lifting_
-   | jacking_
-   | siphoning_
-   | chiseling_
-   | `wood chiseling`_
-   | sewing_
-   | knitting_
-   | `bullet pulling`_
-   | anvil_
-   | analysis_
+   | butchering_           ⇐ [37] butchering_kit_ [19] RM42_
+   | drilling_             ⇐ [3] cordless_drill_ [2] hand_drill_
+   | `rock drilling`_                            — not interesting?
+   | reaming_              ⇐ [1] pin_reamer_     — nothing uses this anymore?
+   | prying_               ⇐ [3] crowbar_        — skip halligan_bar_ as too bulky for +1 point
+   | punch_                ⇐ [2] nail_punch_     — only for making buttons…
+   | pencil_                                     — not used anymore?
+   | lifting_                                    — vehicle stuff
+   | jacking_                                    — vehicle stuff
+   | siphoning_            ⇐ [1] hose_
+   | `bullet pulling`_     ⇐ [2] puller_ — for reloading bullets?  not interesting?
+   | anvil_                ⇐ [3] anvil_ — bronze_anvil_is portable (anvil isn't), but can only make bronze recipes
+   | analysis_             ⇐ [1] analytical_set_basic_ — mutation stuff
    | concentration_
    | separation_
    | chromatography_
    | grinding_
    | `fine grinding`_
-   | reaming_
    | filing_
    | clamping_
    | pressurizing_
@@ -181,6 +176,8 @@ Initial focus is on getting a handle on armour, storage, and summer/winterweight
    | `oven cooking`_
    | `glass cutting`_
    | gun_ rifle_ shotgun_ smg_ pistol_ — only used for training pseudo-recipes
+
+.. _pin_reamer: https://nornagon.github.io/cdda-guide/#/item/pin_reamer
 
 
 To skip all the starting bullshit
@@ -727,10 +724,10 @@ Ammo comparisons
 .. csv-table:: 8x40mm caseless variants (all are 0.23L 0.01kg 6cm)
    :header: Variant,   Dam,   AP, Rng, Disp , Recoil,  Noise, Price
 
-   8x40mm_HVP_,         47,   38,  42,   75,    2200,   1870, 
-   8x40mm_FMJ_,         37,   28,  42,   75,    2200,   1120, 
+   8x40mm_HVP_,         47,   38,  42,   75,    2200,   1870,
+   8x40mm_FMJ_,         37,   28,  42,   75,    2200,   1120,
    8x40mm_,             42,   18,  42,   75,    2200,    840, 80$
-   8x40mm_tracer_,      42,   18,  42,   60,    2200,    840, 
+   8x40mm_tracer_,      42,   18,  42,   60,    2200,    840,
    8x40mm_bootleg_,     42,    8,  42,   82,    2200,    422,
    8x40mm_JHP_,         47,    8,  42,   75,    2200,    460,
    8x40mm_sporting_,    21,   18,  42,   90,    1100,    462,
@@ -1043,3 +1040,10 @@ CANT_WEAR stuff
 .. _chemistry_set: https://nornagon.github.io/cdda-guide/#/item/chemistry_set
 .. _cordless_drill: https://nornagon.github.io/cdda-guide/#/item/cordless_drill
 .. _hand_drill: https://nornagon.github.io/cdda-guide/#/item/hand_drill
+.. _butchering_kit: https://nornagon.github.io/cdda-guide/#/item/butchering_kit
+.. _anvil: https://nornagon.github.io/cdda-guide/#/item/anvil
+.. _bronze_anvil: https://nornagon.github.io/cdda-guide/#/item/anvil_bronze
+.. _puller: https://nornagon.github.io/cdda-guide/#/item/pulle
+.. _nail_punch: https://nornagon.github.io/cdda-guide/#/item/punch_nail
+.. _hose: https://nornagon.github.io/cdda-guide/#/item/hose
+.. _analytical_set_basic: https://nornagon.github.io/cdda-guide/#/item/analytical_set_basic
