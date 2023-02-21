@@ -38,77 +38,78 @@ Initial focus is on getting a handle on armour, storage, and summer/winterweight
    Range is shit, but this is intended for bumbling around in CQB without waking people, for when I get bored of knife fighting.
    Don't bother to trick this out with other mods.
 
-   :PROBLEM:
-      This gun is
-      4L/3.65kg/67cm factory-stock, or
-      4.55L/5.2kg/82cm with a second suppressor and a 100rd mag.
+   **PROBLEM!**
 
-      That does not fit into the survivor backpack, and
-      I'm already using the survivor_harness_'s rifle sling for the RM11B, and
-      I'm already using the survivor_belt_'s pistol holster for the RM42.
+   This gun is
+   4L/3.65kg/67cm factory-stock, or
+   4.55L/5.2kg/82cm with a second suppressor and a 100rd mag.
 
-      So I don't actually have anywhere to put the gun, and I can't add a
-      rifle sling or similar, because strapped-torso-front and
-      strapped-torso-back are both already in use.
+   That does not fit into the survivor backpack, and
+   I'm already using the survivor_harness_'s rifle sling for the RM11B, and
+   I'm already using the survivor_belt_'s pistol holster for the RM42.
 
-      On the survivor_backpack_,
-      I can put up to 5L/6kg/120cm on a krab, paying a *noise & encumbrance penalty*.
-      It doesn't fit *inside* the pack which is capped at 50cm.
+   So I don't actually have anywhere to put the gun, and I can't add a
+   rifle sling or similar, because strapped-torso-front and
+   strapped-torso-back are both already in use.
 
-      When I switch to knife fighting, if my backpack is full, I am *ALREADY* dropping it to avoid encumber-ment, even with maxed stats.
-      Should I therefore go "fuck it" and just get a survivor_duffel_ instead?  UPDATE: that still only gets me 60cm
+   On the survivor_backpack_,
+   I can put up to 5L/6kg/120cm on a krab, paying a *noise & encumbrance penalty*.
+   It doesn't fit *inside* the pack which is capped at 50cm.
 
-      Or should I switch to a takedown carbine (Kel-Tec Sub2000) or pistol?  Those aren't integrally suppressed, but I can add a can to get them from 100 to 50, instead of 50 to 0.
-      Just walking around is doing 2-9 noise and smashing a wall is 20-50 noise, so I guess that's my threshold?
+   When I switch to knife fighting, if my backpack is full, I am *ALREADY* dropping it to avoid encumber-ment, even with maxed stats.
+   Should I therefore go "fuck it" and just get a survivor_duffel_ instead?  UPDATE: that still only gets me 60cm
 
-      Noise is purely from the cartridge, which in the stock 9mm JHP is about 100.
-      A suppressor is +15cm -50noise.
-      To fit in a backpack/rucksack/duffel we need to get below 50/55/60cm overall length.
-      We COULD just take off the suppressor every time we want to do stuff other than shoot motherfuckers...
-      Otherwise we need the length pre-suppressor to be 35/40/45cm.
+   Or should I switch to a takedown carbine (Kel-Tec Sub2000) or pistol?  Those aren't integrally suppressed, but I can add a can to get them from 100 to 50, instead of 50 to 0.
+   Just walking around is doing 2-9 noise and smashing a wall is 20-50 noise, so I guess that's my threshold?
 
-      .. csv-table::
-         :Header: Variant, Range, Len (unsupp), Noise (unsupp)
+   Noise is purely from the cartridge, which in the stock 9mm JHP is about 100.
+   A suppressor is +15cm -50noise.
+   To fit in a backpack/rucksack/duffel we need to get below 50/55/60cm overall length.
+   We COULD just take off the suppressor every time we want to do stuff other than shoot motherfuckers...
+   Otherwise we need the length pre-suppressor to be 35/40/45cm.
 
-         Kel-Tec_SUB-2000 (folded),   32, 19, 80
-         Hi-Point C-9,                14, 20, 80
-         Walther_CCP,                 14, 20, 80
-         Walther_PPQ_9mm,             14, 21, 80
-         Glock_19,                    14, 22, 80
-         Hi-Power_9mm,                14, 23, 80
-         CZ_75_B,                     14, 24, 80
-         Glock_17,                    14, 24, 80
-         Glock_18C,                   14, 24, 88
-         Luger_P08,                   14, 25, 80
-         Walther_P38,                 14, 25, 80
-         Mauser_C96,                  14, 32, 80
-         BT_APC9K (folded),           14, 33, 80
-         TEC-9,                       14, 35, 80
-         MP5K,                        14, 38, 80
-         Luty SMG 9x19,               14, 54, 105
-         Calico,                      14, 66, 80
-         MP5SD,                       13, 67, 48
-         MP5A2,                       14, 69, 80
-         Kel-Tec_SUB-2000 (unfolded), 32, 74, 80
-         Beretta CX4,                 34, 77, 80
-         Mauser_M7                    14, 32, 80
-         MP18,                        14, 84, 80
+   .. csv-table::
+      :Header: Variant, Range, Len (unsupp), Noise (unsupp)
 
-      The Luty is burst-only (no semi-auto), so I guess 105 there makes sense.
-      How the hell is the Glock 18C 88 noise in *both* auto and semi-auto?
-      I cannot see where this is coded...
+      Kel-Tec_SUB-2000 (folded),   32, 19, 80
+      Hi-Point C-9,                14, 20, 80
+      Walther_CCP,                 14, 20, 80
+      Walther_PPQ_9mm,             14, 21, 80
+      Glock_19,                    14, 22, 80
+      Hi-Power_9mm,                14, 23, 80
+      CZ_75_B,                     14, 24, 80
+      Glock_17,                    14, 24, 80
+      Glock_18C,                   14, 24, 88
+      Luger_P08,                   14, 25, 80
+      Walther_P38,                 14, 25, 80
+      Mauser_C96,                  14, 32, 80
+      BT_APC9K (folded),           14, 33, 80
+      TEC-9,                       14, 35, 80
+      MP5K,                        14, 38, 80
+      Luty SMG 9x19,               14, 54, 105
+      Calico,                      14, 66, 80
+      MP5SD,                       13, 67, 48
+      MP5A2,                       14, 69, 80
+      Kel-Tec_SUB-2000 (unfolded), 32, 74, 80
+      Beretta CX4,                 34, 77, 80
+      Mauser_M7                    14, 32, 80
+      MP18,                        14, 84, 80
 
-      A Kel-Tec Sub2000 is 20cm/74cm folded/unfolded & 80noise.
-      A Kel-Tec Sub2000 is 34cm/89cm folded/unfolded & 30noise with a suppressor.
-      A Kel-Tec Sub2000 is 13cm/68cm folded/unfolded & 82noise with a sawn-off barrel (-5 length)!
-      A Kel-Tec Sub2000 is 27cm/83cm folded/unfolded & 32noise with a sawn-off barrel and a suppressor.
-      Even folded, once accurized the dispersion is only 5.
-      Unfolding drops recoil from 98 to 30 (UPDATE: can't fire folded at all – makes sense).
+   The Luty is burst-only (no semi-auto), so I guess 105 there makes sense.
+   How the hell is the Glock 18C 88 noise in *both* auto and semi-auto?
+   I cannot see where this is coded...
 
-      The first play I did after setting up the MP5SD, I ran into about 50 zombies NONE of which were cops/soldiers, and
-      then a bunch of razorclaws which mostly ignore the 9mm ammo.
-      And until I learn zombie anatomy, it's taking 3 shots to down starting zombies.
-      So maybe just say "fuck it" entirely to this idea and use knife fighting for everything except the real badasses?
+   A Kel-Tec Sub2000 is 20cm/74cm folded/unfolded & 80noise.
+   A Kel-Tec Sub2000 is 34cm/89cm folded/unfolded & 30noise with a suppressor.
+   A Kel-Tec Sub2000 is 13cm/68cm folded/unfolded & 82noise with a sawn-off barrel (-5 length)!
+   A Kel-Tec Sub2000 is 27cm/83cm folded/unfolded & 32noise with a sawn-off barrel and a suppressor.
+   Even folded, once accurized the dispersion is only 5.
+   Unfolding drops recoil from 98 to 30 (UPDATE: can't fire folded at all – makes sense).
+
+   The first play I did after setting up the MP5SD, I ran into about 50 zombies NONE of which were cops/soldiers, and
+   then a bunch of razorclaws which mostly ignore the 9mm ammo.
+   And until I learn zombie anatomy, it's taking 3 shots to down starting zombies.
+   So maybe just say "fuck it" entirely to this idea and use knife fighting for everything except the real badasses?
 
 
 :Miscellaneous:
@@ -119,45 +120,34 @@ Initial focus is on getting a handle on armour, storage, and summer/winterweight
    | Probably want some non-rigid liquid containers as well for water and suchlike...
 
 :Tool Qualities (important):
-   | cutting_              [2] RM42_
-   | `fine cutting`_       [3] scalpel_ — used for `dissecting corpses to learn weaknesses <https://www.reddit.com/r/cataclysmdda/comments/u7uner/dissection_and_finding_vulnerabilities/>`_ ([4] `bionic scalpel`_)
-   | awl_                  [2] tailors_kit_
-   | `curved needle`_      [1] tailors_kit_
-   | `fabric cutting`_     [1] tailors_kit_
-   | hammering_            [3] firearm_repair_kit_
-   | `fine hammering`_     [1] firearm_repair_kit_
-   | `soft hammering`_     [1] firearm_repair_kit_
-   | `metal sawing`_       [2] firearm_repair_kit_ — or [10] angle_grinder_
-   | `fine metal sawing`_  [1] firearm_repair_kit_ — or [2] tin_snips_
-   | `glare protection`_   [1] welding_goggles_ — used for welding; also on survivor_firemask but *not* survivor_goggles.
-   | welding_              [2] welder_  — welding *kit* appears only interesting for vehicles
-   | `wood sawing`_        [2] bow_saw_  — skip misc_repair_kit; tailors_kit_ already handles everything else misc_repair_kit can do
-   | `tree cutting`_       [2] bow_saw_  — skip fire_axe_ & chainsaw, they're too heavy for +1/+2 points
-   | `food cooking`_       [3] survivor_mess_kit_
-   | boiling_              [2] survivor_mess_kit_
-   | `chemical making`_    [1] survivor_mess_kit_
-   | containing_           [1] survivor_mess_kit_ — probably want a huge drum, too
-   | digging_              [3] entrenching_tool_ — handy for clearing rubble instead of wobbling over it?
-   | lockpicking_          [3] locksmith_kit_ ([10] bio_lockpick_)
+   | survivor_mess_kit_    ⇒ `food cooking`_ [3] boiling_ [2] `chemical making`_ [1] containing_ [1]
+   | tailors_kit_          ⇒  `curved needle`_ [1] `fabric cutting`_ [1]
+   | firearm_repair_kit_   ⇒ hammering_ [3] `fine hammering`_ [1] `soft hammering`_ [1] `bolt turning`_ [1] `fine bolt turning`_  [1] `screw driving`_ [1] `fine screw driving`_
+   | `metal sawing`_       ⇐ [2] firearm_repair_kit_ — or [10] angle_grinder_
+   | `fine metal sawing`_  ⇐ [1] firearm_repair_kit_ — or [2] tin_snips_
+   | cutting_              ⇐ [2] RM42_
+   | `fine cutting`_       ⇐ [3] scalpel_ — used for `dissecting corpses to learn weaknesses <https://www.reddit.com/r/cataclysmdda/comments/u7uner/dissection_and_finding_vulnerabilities/>`_ ([4] `bionic scalpel`_)
+   | `glare protection`_   ⇐ [1] welding_goggles_ — used for welding; also on survivor_firemask but *not* survivor_goggles.
+   | welding_              ⇐ [2] welder_  — welding *kit* appears only interesting for vehicles
+   | `wood sawing`_        ⇐ [2] bow_saw_  — skip misc_repair_kit; tailors_kit_ already handles everything else misc_repair_kit can do
+   | `tree cutting`_       ⇐ [2] bow_saw_  — skip fire_axe_ & chainsaw, they're too heavy for +1/+2 points
+   | digging_              ⇐ [3] entrenching_tool_ — handy for clearing rubble instead of wobbling over it?
+   | lockpicking_          ⇐ [3] locksmith_kit_ ([10] bio_lockpick_)
 
 :Tool Qualities (meh):
-   | `grass cutting`_ [1] `survivor machete`_ [2] sickle_
-   | shearing_       [1] shears_  [3] elec_shears_
-   | churn_          [1] https://nornagon.github.io/cdda-guide/#/item/churn
-   | anesthesia_     [1] https://nornagon.github.io/cdda-guide/#/item/anesthetic_kit
-   | fishing_        [2] https://nornagon.github.io/cdda-guide/#/item/fishing_rod_professional
-   | `fish trapping`_ [1] https://nornagon.github.io/cdda-guide/#/item/fish_trap_basket
-   | smoothing_      [2] https://nornagon.github.io/cdda-guide/#/item/metal_smoother — for construction?
-   | `self jacking`_ — a vehicle thing
-
-   | smoking_
-   | distilling_
-   | `bolt turning`_
-   | `fine bolt turning`_
-   | `screw driving`_
-   | `fine screw driving`_
+   | `grass cutting`_      ⇐ [1] `survivor machete`_ [2] sickle_
+   | shearing_             ⇐ [1] shears_  [3] elec_shears_
+   | churn_                ⇐ [1] churn_
+   | anesthesia_           ⇐ [1] anesthetic_kit_
+   | fishing_              ⇐ [2] fishing_rod_professional_
+   | `fish trapping`_      ⇐ [1] fish_trap_basket_
+   | smoothing_            ⇐ [2] metal_smoother_     — for construction?
+   | `self jacking`_                                 — a vehicle thing
+   | smoking_                                        — for smoking drugs
+   | distilling_           ⇐ [2] still_ [1] chemistry_set_
+   | `fine distillation`_  ⇐ [1] still_lab_
    | butchering_
-   | drilling_
+   | drilling_ [3] cordless_drill_ [2] hand_drill_
    | `rock drilling`_
    | prying_
    | `nail prying`_
@@ -175,7 +165,6 @@ Initial focus is on getting a handle on armour, storage, and summer/winterweight
    | analysis_
    | concentration_
    | separation_
-   | `fine distillation`_
    | chromatography_
    | grinding_
    | `fine grinding`_
@@ -186,16 +175,12 @@ Initial focus is on getting a handle on armour, storage, and summer/winterweight
    | extraction_
    | filtration_
    | suspending_
-   | rope_
+   | rope_ [1] long_rope_ [1] grappling_hook_
    | `clean surface`_
    | `wheel fastening`_
    | `oven cooking`_
-   | gun_
-   | rifle_
-   | shotgun_
-   | smg_
-   | pistol_
    | `glass cutting`_
+   | gun_ rifle_ shotgun_ smg_ pistol_ — only used for training pseudo-recipes
 
 
 To skip all the starting bullshit
@@ -936,7 +921,7 @@ CANT_WEAR stuff
 .. _tin_snips:                    https://nornagon.github.io/cdda-guide/#/item/tin_snips
 .. _angle_grinder:                https://nornagon.github.io/cdda-guide/#/item/angle_grinder
 .. _survivor_mess_kit:            https://nornagon.github.io/cdda-guide/#/item/survivor_mess_kit
-.. _tailor_kit:                   https://nornagon.github.io/cdda-guide/#/item/tailors_kit
+.. _tailors_kit:                  https://nornagon.github.io/cdda-guide/#/item/tailors_kit
 .. _welding_goggles:              https://nornagon.github.io/cdda-guide/#/item/goggles_welding
 .. _`bionic scalpel`:             https://nornagon.github.io/cdda-guide/#/item/bio_surgical_razor
 .. _scalpel:                      https://nornagon.github.io/cdda-guide/#/item/scalpel
@@ -1045,3 +1030,16 @@ CANT_WEAR stuff
 .. _merc_coat:                     https://nornagon.github.io/cdda-guide/#/item/armor_mercenary_top
 .. _entrenching_tool:              https://nornagon.github.io/cdda-guide/#/item/e_tool
 .. _locksmith_kit: https://nornagon.github.io/cdda-guide/#/item/picklocks
+.. _bio_lockpick: https://nornagon.github.io/cdda-guide/#/item/bio_lockpick
+.. _churn: https://nornagon.github.io/cdda-guide/#/item/churn
+.. _anesthetic_kit: https://nornagon.github.io/cdda-guide/#/item/anesthetic_kit
+.. _fishing_rod_professional: https://nornagon.github.io/cdda-guide/#/item/fishing_rod_professional
+.. _fish_trap_basket: https://nornagon.github.io/cdda-guide/#/item/fish_trap_basket
+.. _metal_smoother: https://nornagon.github.io/cdda-guide/#/item/metal_smoother
+.. _long_rope: https://nornagon.github.io/cdda-guide/#/item/rope_30
+.. _grappling_hook: https://nornagon.github.io/cdda-guide/#/item/grapnel
+.. _still_lab: https://nornagon.github.io/cdda-guide/#/item/still_lab
+.. _still: https://nornagon.github.io/cdda-guide/#/item/still
+.. _chemistry_set: https://nornagon.github.io/cdda-guide/#/item/chemistry_set
+.. _cordless_drill: https://nornagon.github.io/cdda-guide/#/item/cordless_drill
+.. _hand_drill: https://nornagon.github.io/cdda-guide/#/item/hand_drill
