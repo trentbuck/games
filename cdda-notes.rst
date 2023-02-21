@@ -125,6 +125,7 @@ Initial focus is on getting a handle on armour, storage, and summer/winterweight
    | firearm_repair_kit_   ⇒ hammering_ [3] `fine hammering`_ [1] `soft hammering`_ [1] `bolt turning`_ [1] `fine bolt turning`_  [1] `screw driving`_ [1] `fine screw driving`_ [1] `nail prying`_ [1] chiseling_ [3] `wood chiseling`_ [3]
    | `metal sawing`_       ⇐ [2] firearm_repair_kit_ — or [10] angle_grinder_
    | `fine metal sawing`_  ⇐ [1] firearm_repair_kit_ — or [2] tin_snips_
+   | metal_fileset_        ⇒ filing_ [2] grinding_ [2]
    | cutting_              ⇐ [2] RM42_
    | `fine cutting`_       ⇐ [3] scalpel_ — used for `dissecting corpses to learn weaknesses <https://www.reddit.com/r/cataclysmdda/comments/u7uner/dissection_and_finding_vulnerabilities/>`_ ([4] `bionic scalpel`_)
    | `glare protection`_   ⇐ [1] welding_goggles_ — used for welding; also on survivor_firemask but *not* survivor_goggles.
@@ -133,6 +134,8 @@ Initial focus is on getting a handle on armour, storage, and summer/winterweight
    | `tree cutting`_       ⇐ [2] bow_saw_  — skip fire_axe_ & chainsaw, they're too heavy for +1/+2 points
    | digging_              ⇐ [3] entrenching_tool_ — handy for clearing rubble instead of wobbling over it?
    | lockpicking_          ⇐ [3] locksmith_kit_ ([10] bio_lockpick_)
+   | clamping_             ⇐ [1] pliers_locking_
+   | rope_ [1] long_rope_ [1] grappling_hook_
 
 :Tool Qualities (meh):
    | `grass cutting`_      ⇐ [1] `survivor machete`_ [2] sickle_
@@ -141,43 +144,38 @@ Initial focus is on getting a handle on armour, storage, and summer/winterweight
    | anesthesia_           ⇐ [1] anesthetic_kit_
    | fishing_              ⇐ [2] fishing_rod_professional_
    | `fish trapping`_      ⇐ [1] fish_trap_basket_
-   | smoothing_            ⇐ [2] metal_smoother_ — for construction?
-   | `self jacking`_                             — a vehicle thing
-   | smoking_                                    — for smoking drugs
+   | smoothing_            ⇐ [2] metal_smoother_          — for construction?
+   | `self jacking`_                                      — a vehicle thing
+   | smoking_                                             — drugs only
    | distilling_           ⇐ [2] still_ [1] chemistry_set_
    | `fine distillation`_  ⇐ [1] still_lab_
    | butchering_           ⇐ [37] butchering_kit_ [19] RM42_
    | drilling_             ⇐ [3] cordless_drill_ [2] hand_drill_
-   | `rock drilling`_                            — not interesting?
-   | reaming_              ⇐ [1] pin_reamer_     — nothing uses this anymore?
-   | prying_               ⇐ [3] crowbar_        — skip halligan_bar_ as too bulky for +1 point
-   | punch_                ⇐ [2] nail_punch_     — only for making buttons…
-   | pencil_                                     — not used anymore?
-   | lifting_                                    — vehicle stuff
-   | jacking_                                    — vehicle stuff
+   | `rock drilling`_                                     — not interesting?
+   | reaming_              ⇐ [1] pin_reamer_              — nothing uses this anymore?
+   | prying_               ⇐ [3] crowbar_                 — skip halligan_bar_ as too bulky for +1 point
+   | punch_                ⇐ [2] nail_punch_              — only for making buttons…
+   | pencil_                                              — not used anymore?
+   | lifting_                                             — vehicle stuff
+   | jacking_                                             — vehicle stuff
    | siphoning_            ⇐ [1] hose_
-   | `bullet pulling`_     ⇐ [2] puller_ — for reloading bullets?  not interesting?
-   | anvil_                ⇐ [3] anvil_ — bronze_anvil_is portable (anvil isn't), but can only make bronze recipes
-   | analysis_             ⇐ [1] analytical_set_basic_ — mutation stuff
-   | concentration_
-   | separation_
-   | chromatography_
-   | grinding_
-   | `fine grinding`_
-   | filing_
-   | clamping_
-   | pressurizing_
-   | extraction_
-   | filtration_
-   | suspending_
-   | rope_ [1] long_rope_ [1] grappling_hook_
-   | `clean surface`_
-   | `wheel fastening`_
-   | `oven cooking`_
-   | `glass cutting`_
-   | gun_ rifle_ shotgun_ smg_ pistol_ — only used for training pseudo-recipes
+   | `bullet pulling`_     ⇐ [2] puller_                  — for reloading bullets?  not interesting?
+   | anvil_                ⇐ [3] anvil_                   — bronze_anvil_is portable (anvil isn't), but can only make bronze recipes
+   | analysis_                                            — mutation stuff
+   | concentration_                                       — mutation stuff
+   | separation_                                          — mutation stuff
+   | chromatography_                                      — obsolete?
+   | `fine grinding`_      ⇐ [2] mortar_pestle_
+   | pressurizing_                                        — vehicle stuff
+   | extraction_                                          — kerosene (vehicle stuff) and drugs only
+   | filtration_                                          — drugs only
+   | suspending_                                          — rope does this automatically when butchering
+   | `clean surface`_ [3] plastic_sheet_
+   | `wheel fastening`_                                   — vehicle stuff
+   | `oven cooking`_ [1] improvised_oven_ [2] dutch_oven_ — only need level 1 for most things - much lighter
+   | `glass cutting`_                                     — only for making aquariums
+   | gun_ rifle_ shotgun_ smg_ pistol_                    — only used for training pseudo-recipes
 
-.. _pin_reamer: https://nornagon.github.io/cdda-guide/#/item/pin_reamer
 
 
 To skip all the starting bullshit
@@ -1047,3 +1045,10 @@ CANT_WEAR stuff
 .. _nail_punch: https://nornagon.github.io/cdda-guide/#/item/punch_nail
 .. _hose: https://nornagon.github.io/cdda-guide/#/item/hose
 .. _analytical_set_basic: https://nornagon.github.io/cdda-guide/#/item/analytical_set_basic
+.. _metal_fileset: https://nornagon.github.io/cdda-guide/#/item/metal_file
+.. _mortar_pestle: https://nornagon.github.io/cdda-guide/#/item/mortar_pestle
+.. _pliers_locking: https://nornagon.github.io/cdda-guide/#/item/pliers_locking
+.. _plastic_sheet: https://nornagon.github.io/cdda-guide/#/item/plastic_sheet
+.. _pin_reamer: https://nornagon.github.io/cdda-guide/#/item/pin_reamer
+.. _dutch_oven: https://nornagon.github.io/cdda-guide/#/item/dutch_oven
+.. _improvised_oven: https://nornagon.github.io/cdda-guide/#/item/improvised_oven
