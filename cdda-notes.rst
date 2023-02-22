@@ -7,6 +7,21 @@ Initial focus is on getting a handle on armour, storage, and summer/winterweight
 
 • **FAVOURITE** your great gear, and turn on autonotes, so if you accidentally drop it, you can fucking find it again.
 
+:Clothing and Armor:
+
+   • nomad_bodymesh_ or zentai_
+   • RM13_ which is 100% 12-16 defense, and *even with the power off*, is only ~10encum...
+   • survivor_duffel_ because fuck it.
+   • survivor_harness_ because can't *quite* fit 25rd RM11B into nomad_harness_ 3L/4kg/30-130cm holster
+   • survivor_belt_ for knife and tools
+
+:Bionics:
+
+   • https://nornagon.github.io/cdda-guide/#/item/bio_ups to recharge the RM13
+   • https://nornagon.github.io/cdda-guide/#/item/bio_metabolics to recharge from food
+   * https://nornagon.github.io/cdda-guide/#/item/bio_power_storage_mkII (or 2) to store it
+   • bio_scalpel_, bio_lockpick_, https://nornagon.github.io/cdda-guide/#/item/bio_cable
+
 :Melee: RM42_ w/ Eskrima_ or `Krav Maga`_.
 
    Always want a knife regardless, for cutting_ and butchering_.
@@ -115,9 +130,14 @@ Initial focus is on getting a handle on armour, storage, and summer/winterweight
 :Miscellaneous:
    | smartphone_ in waterproof_case_ — calorie intake tracking, alarm clock (wake up at X), exact time
    | survivor_light_ (350cd/m²)
-
+   | rollmat_ and tent_kit_ – or just sleeping_bag_?
+   | some kind of medit, e.g. a full IFAK?
    | Some plastic bags (non-rigid containers up to 10L); use knife to label them "DRUGS" and "SEEDZ", then set their priority to 1 (or more) and category whitelitst.  Now you can collapse the individual boring lists easily, without wasting too much space.
-   | Probably want some non-rigid liquid containers as well for water and suchlike...
+   | Probably want some non-rigid liquid containers as well for water and suchlike... camelbak_ or waterskin_
+   | batteries_ of some sort
+   | "Clean gun and lubricate" — cotton_patch_ & soap_ (soapy_water_) & animal_cooking_oil_
+   | washing_kit_ to remove "dirty" from zombie items?
+
 
 :Tool Qualities (important):
    | survivor_mess_kit_    ⇒ `food cooking`_ [3] boiling_ [2] `chemical making`_ [1] containing_ [1]
@@ -908,114 +928,114 @@ CANT_WEAR stuff
 
 
 
-.. _smartphone:                   https://nornagon.github.io/cdda-guide/#/item/smart_phone
-.. _waterproof_case:              https://nornagon.github.io/cdda-guide/#/item/waterproof_smart_phone_case
-.. _firearm_repair_kit:           https://nornagon.github.io/cdda-guide/#/item/small_repairkit
-.. _welder:                       https://nornagon.github.io/cdda-guide/#/item/welder
-.. _bow_saw:                      https://nornagon.github.io/cdda-guide/#/item/bow_saw
-.. _tin_snips:                    https://nornagon.github.io/cdda-guide/#/item/tin_snips
-.. _angle_grinder:                https://nornagon.github.io/cdda-guide/#/item/angle_grinder
-.. _survivor_mess_kit:            https://nornagon.github.io/cdda-guide/#/item/survivor_mess_kit
-.. _tailors_kit:                  https://nornagon.github.io/cdda-guide/#/item/tailors_kit
-.. _welding_goggles:              https://nornagon.github.io/cdda-guide/#/item/goggles_welding
-.. _`bionic scalpel`:             https://nornagon.github.io/cdda-guide/#/item/bio_surgical_razor
-.. _scalpel:                      https://nornagon.github.io/cdda-guide/#/item/scalpel
-.. _sickle:                       https://nornagon.github.io/cdda-guide/#/item/sickle
-.. _`survivor harness`:           https://nornagon.github.io/cdda-guide/#/item/survivor_vst
-.. _`survivor belt`:              https://nornagon.github.io/cdda-guide/#/item/survivor_belt_notools
-.. _RM11B:                        https://nornagon.github.io/cdda-guide/#/item/rm11b_sniper_rifle
-.. _RM42:                         https://nornagon.github.io/cdda-guide/#/item/knife_rm42
-.. _RM88:                         https://nornagon.github.io/cdda-guide/#/item/rm88_battle_rifle
-.. _MP5SD:                        https://nornagon.github.io/cdda-guide/#/item/hk_mp5sd
-.. _Eskrima:                      https://nornagon.github.io/cdda-guide/#/martial_art/style_eskrima
-.. _`Krav Maga`:                  https://nornagon.github.io/cdda-guide/#/martial_art/style_krav_maga
-.. _Taekwondo:                    https://nornagon.github.io/cdda-guide/#/martial_art/style_taekwondo
-.. _`survivor machete`:           https://nornagon.github.io/cdda-guide/#/item/survivor_machete_qt
-.. _barbarian:                    https://nornagon.github.io/cdda-guide/#/martial_art/style_barbaran
-.. _shears:                       https://nornagon.github.io/cdda-guide/#/item/shears
-.. _elec_shears:                  https://nornagon.github.io/cdda-guide/#/item/elec_shears
-.. _`cutting`:                    https://nornagon.github.io/cdda-guide/#/tool_quality/CUT
-.. _`grass cutting`:              https://nornagon.github.io/cdda-guide/#/tool_quality/GRASS_CUT
-.. _`fine cutting`:               https://nornagon.github.io/cdda-guide/#/tool_quality/CUT_FINE
-.. _`glare protection`:           https://nornagon.github.io/cdda-guide/#/tool_quality/GLARE
-.. _`shearing`:                   https://nornagon.github.io/cdda-guide/#/tool_quality/SHEAR
-.. _`churn`:                      https://nornagon.github.io/cdda-guide/#/tool_quality/CHURN
-.. _`awl`:                        https://nornagon.github.io/cdda-guide/#/tool_quality/LEATHER_AWL
-.. _`curved needle`:              https://nornagon.github.io/cdda-guide/#/tool_quality/SEW_CURVED
-.. _`anesthesia`:                 https://nornagon.github.io/cdda-guide/#/tool_quality/ANESTHESIA
-.. _`fishing`:                    https://nornagon.github.io/cdda-guide/#/tool_quality/FISHING
-.. _`fish trapping`:              https://nornagon.github.io/cdda-guide/#/tool_quality/FISH_TRAP
-.. _`smoothing`:                  https://nornagon.github.io/cdda-guide/#/tool_quality/SMOOTH
-.. _`welding`:                    https://nornagon.github.io/cdda-guide/#/tool_quality/WELD
-.. _`hammering`:                  https://nornagon.github.io/cdda-guide/#/tool_quality/HAMMER
-.. _`fine hammering`:             https://nornagon.github.io/cdda-guide/#/tool_quality/HAMMER_FINE
-.. _`soft hammering`:             https://nornagon.github.io/cdda-guide/#/tool_quality/HAMMER_SOFT
-.. _`wood sawing`:                https://nornagon.github.io/cdda-guide/#/tool_quality/SAW_W
-.. _`metal sawing`:               https://nornagon.github.io/cdda-guide/#/tool_quality/SAW_M
-.. _`fine metal sawing`:          https://nornagon.github.io/cdda-guide/#/tool_quality/SAW_M_FINE
-.. _`food cooking`:               https://nornagon.github.io/cdda-guide/#/tool_quality/COOK
-.. _`boiling`:                    https://nornagon.github.io/cdda-guide/#/tool_quality/BOIL
-.. _`containing`:                 https://nornagon.github.io/cdda-guide/#/tool_quality/CONTAIN
-.. _`chemical making`:            https://nornagon.github.io/cdda-guide/#/tool_quality/CHEM
-.. _`smoking`:                    https://nornagon.github.io/cdda-guide/#/tool_quality/SMOKE_PIPE
-.. _`distilling`:                 https://nornagon.github.io/cdda-guide/#/tool_quality/DISTILL
-.. _`tree cutting`:               https://nornagon.github.io/cdda-guide/#/tool_quality/AXE
-.. _`digging`:                    https://nornagon.github.io/cdda-guide/#/tool_quality/DIG
-.. _`bolt turning`:               https://nornagon.github.io/cdda-guide/#/tool_quality/WRENCH
-.. _`fine bolt turning`:          https://nornagon.github.io/cdda-guide/#/tool_quality/WRENCH_FINE
-.. _`screw driving`:              https://nornagon.github.io/cdda-guide/#/tool_quality/SCREW
-.. _`fine screw driving`:         https://nornagon.github.io/cdda-guide/#/tool_quality/SCREW_FINE
-.. _`butchering`:                 https://nornagon.github.io/cdda-guide/#/tool_quality/BUTCHER
-.. _`drilling`:                   https://nornagon.github.io/cdda-guide/#/tool_quality/DRILL
-.. _`rock drilling`:              https://nornagon.github.io/cdda-guide/#/tool_quality/DRILL_ROCK
-.. _`prying`:                     https://nornagon.github.io/cdda-guide/#/tool_quality/PRY
-.. _`nail prying`:                https://nornagon.github.io/cdda-guide/#/tool_quality/PRYING_NAIL
-.. _`punch`:                      https://nornagon.github.io/cdda-guide/#/tool_quality/PUNCH
-.. _`pencil`:                     https://nornagon.github.io/cdda-guide/#/tool_quality/WRITE
-.. _`lifting`:                    https://nornagon.github.io/cdda-guide/#/tool_quality/LIFT
-.. _`jacking`:                    https://nornagon.github.io/cdda-guide/#/tool_quality/JACK
-.. _`self jacking`:               https://nornagon.github.io/cdda-guide/#/tool_quality/SELF_JACK
-.. _`siphoning`:                  https://nornagon.github.io/cdda-guide/#/tool_quality/HOSE
-.. _`chiseling`:                  https://nornagon.github.io/cdda-guide/#/tool_quality/CHISEL
-.. _`wood chiseling`:             https://nornagon.github.io/cdda-guide/#/tool_quality/CHISEL_WOOD
-.. _`sewing`:                     https://nornagon.github.io/cdda-guide/#/tool_quality/SEW
-.. _`knitting`:                   https://nornagon.github.io/cdda-guide/#/tool_quality/KNIT
-.. _`bullet pulling`:             https://nornagon.github.io/cdda-guide/#/tool_quality/PULL
-.. _`anvil`:                      https://nornagon.github.io/cdda-guide/#/tool_quality/ANVIL
-.. _`analysis`:                   https://nornagon.github.io/cdda-guide/#/tool_quality/ANALYSIS
-.. _`concentration`:              https://nornagon.github.io/cdda-guide/#/tool_quality/CONCENTRATE
-.. _`separation`:                 https://nornagon.github.io/cdda-guide/#/tool_quality/SEPARATE
-.. _`fine distillation`:          https://nornagon.github.io/cdda-guide/#/tool_quality/FINE_DISTILL
-.. _`chromatography`:             https://nornagon.github.io/cdda-guide/#/tool_quality/CHROMATOGRAPHY
-.. _`grinding`:                   https://nornagon.github.io/cdda-guide/#/tool_quality/GRIND
-.. _`fine grinding`:              https://nornagon.github.io/cdda-guide/#/tool_quality/FINE_GRIND
-.. _`reaming`:                    https://nornagon.github.io/cdda-guide/#/tool_quality/REAM
-.. _`filing`:                     https://nornagon.github.io/cdda-guide/#/tool_quality/FILE
-.. _`clamping`:                   https://nornagon.github.io/cdda-guide/#/tool_quality/VISE
-.. _`pressurizing`:               https://nornagon.github.io/cdda-guide/#/tool_quality/PRESSURIZATION
-.. _`lockpicking`:                https://nornagon.github.io/cdda-guide/#/tool_quality/LOCKPICK
-.. _`extraction`:                 https://nornagon.github.io/cdda-guide/#/tool_quality/EXTRACT
-.. _`filtration`:                 https://nornagon.github.io/cdda-guide/#/tool_quality/FILTER
-.. _`suspending`:                 https://nornagon.github.io/cdda-guide/#/tool_quality/SUSPENDING
-.. _`rope`:                       https://nornagon.github.io/cdda-guide/#/tool_quality/ROPE
-.. _`clean surface`:              https://nornagon.github.io/cdda-guide/#/tool_quality/SURFACE
-.. _`wheel fastening`:            https://nornagon.github.io/cdda-guide/#/tool_quality/WHEEL_FAST
-.. _`fabric cutting`:             https://nornagon.github.io/cdda-guide/#/tool_quality/FABRIC_CUT
-.. _`oven cooking`:               https://nornagon.github.io/cdda-guide/#/tool_quality/OVEN
-.. _`gun`:                        https://nornagon.github.io/cdda-guide/#/tool_quality/GUN
-.. _`rifle`:                      https://nornagon.github.io/cdda-guide/#/tool_quality/RIFLE
-.. _`shotgun`:                    https://nornagon.github.io/cdda-guide/#/tool_quality/SHOTGUN
-.. _`smg`:                        https://nornagon.github.io/cdda-guide/#/tool_quality/SMG
-.. _`pistol`:                     https://nornagon.github.io/cdda-guide/#/tool_quality/PISTOL
-.. _`glass cutting`:              https://nornagon.github.io/cdda-guide/#/tool_quality/CUT_GLASS
-.. _survivor_duffel:              https://nornagon.github.io/cdda-guide/#/item/survivor_duffel_bag
-.. _survivor_backpack:            https://nornagon.github.io/cdda-guide/#/item/survivor_pack
-.. _survivor_rucksack:            https://nornagon.github.io/cdda-guide/#/item/survivor_rucksack
-.. _survivor_runner_pack:         https://nornagon.github.io/cdda-guide/#/item/survivor_runner_pack
-.. _survivor_distributed_rigging: https://nornagon.github.io/cdda-guide/#/item/survivor_rig
-.. _survivor_belt:                https://nornagon.github.io/cdda-guide/#/item/survivor_belt_notools
-.. _survivor_harness:             https://nornagon.github.io/cdda-guide/#/item/survivor_vest
-.. _survivor_goggles:             https://nornagon.github.io/cdda-guide/#/item/survivor_goggles
+.. _smartphone:                    https://nornagon.github.io/cdda-guide/#/item/smart_phone
+.. _waterproof_case:               https://nornagon.github.io/cdda-guide/#/item/waterproof_smart_phone_case
+.. _firearm_repair_kit:            https://nornagon.github.io/cdda-guide/#/item/small_repairkit
+.. _welder:                        https://nornagon.github.io/cdda-guide/#/item/welder
+.. _bow_saw:                       https://nornagon.github.io/cdda-guide/#/item/bow_saw
+.. _tin_snips:                     https://nornagon.github.io/cdda-guide/#/item/tin_snips
+.. _angle_grinder:                 https://nornagon.github.io/cdda-guide/#/item/angle_grinder
+.. _survivor_mess_kit:             https://nornagon.github.io/cdda-guide/#/item/survivor_mess_kit
+.. _tailors_kit:                   https://nornagon.github.io/cdda-guide/#/item/tailors_kit
+.. _welding_goggles:               https://nornagon.github.io/cdda-guide/#/item/goggles_welding
+.. _`bionic scalpel`:              https://nornagon.github.io/cdda-guide/#/item/bio_surgical_razor
+.. _scalpel:                       https://nornagon.github.io/cdda-guide/#/item/scalpel
+.. _sickle:                        https://nornagon.github.io/cdda-guide/#/item/sickle
+.. _`survivor harness`:            https://nornagon.github.io/cdda-guide/#/item/survivor_vst
+.. _`survivor belt`:               https://nornagon.github.io/cdda-guide/#/item/survivor_belt_notools
+.. _RM11B:                         https://nornagon.github.io/cdda-guide/#/item/rm11b_sniper_rifle
+.. _RM42:                          https://nornagon.github.io/cdda-guide/#/item/knife_rm42
+.. _RM88:                          https://nornagon.github.io/cdda-guide/#/item/rm88_battle_rifle
+.. _MP5SD:                         https://nornagon.github.io/cdda-guide/#/item/hk_mp5sd
+.. _Eskrima:                       https://nornagon.github.io/cdda-guide/#/martial_art/style_eskrima
+.. _`Krav Maga`:                   https://nornagon.github.io/cdda-guide/#/martial_art/style_krav_maga
+.. _Taekwondo:                     https://nornagon.github.io/cdda-guide/#/martial_art/style_taekwondo
+.. _`survivor machete`:            https://nornagon.github.io/cdda-guide/#/item/survivor_machete_qt
+.. _barbarian:                     https://nornagon.github.io/cdda-guide/#/martial_art/style_barbaran
+.. _shears:                        https://nornagon.github.io/cdda-guide/#/item/shears
+.. _elec_shears:                   https://nornagon.github.io/cdda-guide/#/item/elec_shears
+.. _`cutting`:                     https://nornagon.github.io/cdda-guide/#/tool_quality/CUT
+.. _`grass cutting`:               https://nornagon.github.io/cdda-guide/#/tool_quality/GRASS_CUT
+.. _`fine cutting`:                https://nornagon.github.io/cdda-guide/#/tool_quality/CUT_FINE
+.. _`glare protection`:            https://nornagon.github.io/cdda-guide/#/tool_quality/GLARE
+.. _`shearing`:                    https://nornagon.github.io/cdda-guide/#/tool_quality/SHEAR
+.. _`churn`:                       https://nornagon.github.io/cdda-guide/#/tool_quality/CHURN
+.. _`awl`:                         https://nornagon.github.io/cdda-guide/#/tool_quality/LEATHER_AWL
+.. _`curved needle`:               https://nornagon.github.io/cdda-guide/#/tool_quality/SEW_CURVED
+.. _`anesthesia`:                  https://nornagon.github.io/cdda-guide/#/tool_quality/ANESTHESIA
+.. _`fishing`:                     https://nornagon.github.io/cdda-guide/#/tool_quality/FISHING
+.. _`fish trapping`:               https://nornagon.github.io/cdda-guide/#/tool_quality/FISH_TRAP
+.. _`smoothing`:                   https://nornagon.github.io/cdda-guide/#/tool_quality/SMOOTH
+.. _`welding`:                     https://nornagon.github.io/cdda-guide/#/tool_quality/WELD
+.. _`hammering`:                   https://nornagon.github.io/cdda-guide/#/tool_quality/HAMMER
+.. _`fine hammering`:              https://nornagon.github.io/cdda-guide/#/tool_quality/HAMMER_FINE
+.. _`soft hammering`:              https://nornagon.github.io/cdda-guide/#/tool_quality/HAMMER_SOFT
+.. _`wood sawing`:                 https://nornagon.github.io/cdda-guide/#/tool_quality/SAW_W
+.. _`metal sawing`:                https://nornagon.github.io/cdda-guide/#/tool_quality/SAW_M
+.. _`fine metal sawing`:           https://nornagon.github.io/cdda-guide/#/tool_quality/SAW_M_FINE
+.. _`food cooking`:                https://nornagon.github.io/cdda-guide/#/tool_quality/COOK
+.. _`boiling`:                     https://nornagon.github.io/cdda-guide/#/tool_quality/BOIL
+.. _`containing`:                  https://nornagon.github.io/cdda-guide/#/tool_quality/CONTAIN
+.. _`chemical making`:             https://nornagon.github.io/cdda-guide/#/tool_quality/CHEM
+.. _`smoking`:                     https://nornagon.github.io/cdda-guide/#/tool_quality/SMOKE_PIPE
+.. _`distilling`:                  https://nornagon.github.io/cdda-guide/#/tool_quality/DISTILL
+.. _`tree cutting`:                https://nornagon.github.io/cdda-guide/#/tool_quality/AXE
+.. _`digging`:                     https://nornagon.github.io/cdda-guide/#/tool_quality/DIG
+.. _`bolt turning`:                https://nornagon.github.io/cdda-guide/#/tool_quality/WRENCH
+.. _`fine bolt turning`:           https://nornagon.github.io/cdda-guide/#/tool_quality/WRENCH_FINE
+.. _`screw driving`:               https://nornagon.github.io/cdda-guide/#/tool_quality/SCREW
+.. _`fine screw driving`:          https://nornagon.github.io/cdda-guide/#/tool_quality/SCREW_FINE
+.. _`butchering`:                  https://nornagon.github.io/cdda-guide/#/tool_quality/BUTCHER
+.. _`drilling`:                    https://nornagon.github.io/cdda-guide/#/tool_quality/DRILL
+.. _`rock drilling`:               https://nornagon.github.io/cdda-guide/#/tool_quality/DRILL_ROCK
+.. _`prying`:                      https://nornagon.github.io/cdda-guide/#/tool_quality/PRY
+.. _`nail prying`:                 https://nornagon.github.io/cdda-guide/#/tool_quality/PRYING_NAIL
+.. _`punch`:                       https://nornagon.github.io/cdda-guide/#/tool_quality/PUNCH
+.. _`pencil`:                      https://nornagon.github.io/cdda-guide/#/tool_quality/WRITE
+.. _`lifting`:                     https://nornagon.github.io/cdda-guide/#/tool_quality/LIFT
+.. _`jacking`:                     https://nornagon.github.io/cdda-guide/#/tool_quality/JACK
+.. _`self jacking`:                https://nornagon.github.io/cdda-guide/#/tool_quality/SELF_JACK
+.. _`siphoning`:                   https://nornagon.github.io/cdda-guide/#/tool_quality/HOSE
+.. _`chiseling`:                   https://nornagon.github.io/cdda-guide/#/tool_quality/CHISEL
+.. _`wood chiseling`:              https://nornagon.github.io/cdda-guide/#/tool_quality/CHISEL_WOOD
+.. _`sewing`:                      https://nornagon.github.io/cdda-guide/#/tool_quality/SEW
+.. _`knitting`:                    https://nornagon.github.io/cdda-guide/#/tool_quality/KNIT
+.. _`bullet pulling`:              https://nornagon.github.io/cdda-guide/#/tool_quality/PULL
+.. _`anvil`:                       https://nornagon.github.io/cdda-guide/#/tool_quality/ANVIL
+.. _`analysis`:                    https://nornagon.github.io/cdda-guide/#/tool_quality/ANALYSIS
+.. _`concentration`:               https://nornagon.github.io/cdda-guide/#/tool_quality/CONCENTRATE
+.. _`separation`:                  https://nornagon.github.io/cdda-guide/#/tool_quality/SEPARATE
+.. _`fine distillation`:           https://nornagon.github.io/cdda-guide/#/tool_quality/FINE_DISTILL
+.. _`chromatography`:              https://nornagon.github.io/cdda-guide/#/tool_quality/CHROMATOGRAPHY
+.. _`grinding`:                    https://nornagon.github.io/cdda-guide/#/tool_quality/GRIND
+.. _`fine grinding`:               https://nornagon.github.io/cdda-guide/#/tool_quality/FINE_GRIND
+.. _`reaming`:                     https://nornagon.github.io/cdda-guide/#/tool_quality/REAM
+.. _`filing`:                      https://nornagon.github.io/cdda-guide/#/tool_quality/FILE
+.. _`clamping`:                    https://nornagon.github.io/cdda-guide/#/tool_quality/VISE
+.. _`pressurizing`:                https://nornagon.github.io/cdda-guide/#/tool_quality/PRESSURIZATION
+.. _`lockpicking`:                 https://nornagon.github.io/cdda-guide/#/tool_quality/LOCKPICK
+.. _`extraction`:                  https://nornagon.github.io/cdda-guide/#/tool_quality/EXTRACT
+.. _`filtration`:                  https://nornagon.github.io/cdda-guide/#/tool_quality/FILTER
+.. _`suspending`:                  https://nornagon.github.io/cdda-guide/#/tool_quality/SUSPENDING
+.. _`rope`:                        https://nornagon.github.io/cdda-guide/#/tool_quality/ROPE
+.. _`clean surface`:               https://nornagon.github.io/cdda-guide/#/tool_quality/SURFACE
+.. _`wheel fastening`:             https://nornagon.github.io/cdda-guide/#/tool_quality/WHEEL_FAST
+.. _`fabric cutting`:              https://nornagon.github.io/cdda-guide/#/tool_quality/FABRIC_CUT
+.. _`oven cooking`:                https://nornagon.github.io/cdda-guide/#/tool_quality/OVEN
+.. _`gun`:                         https://nornagon.github.io/cdda-guide/#/tool_quality/GUN
+.. _`rifle`:                       https://nornagon.github.io/cdda-guide/#/tool_quality/RIFLE
+.. _`shotgun`:                     https://nornagon.github.io/cdda-guide/#/tool_quality/SHOTGUN
+.. _`smg`:                         https://nornagon.github.io/cdda-guide/#/tool_quality/SMG
+.. _`pistol`:                      https://nornagon.github.io/cdda-guide/#/tool_quality/PISTOL
+.. _`glass cutting`:               https://nornagon.github.io/cdda-guide/#/tool_quality/CUT_GLASS
+.. _survivor_duffel:               https://nornagon.github.io/cdda-guide/#/item/survivor_duffel_bag
+.. _survivor_backpack:             https://nornagon.github.io/cdda-guide/#/item/survivor_pack
+.. _survivor_rucksack:             https://nornagon.github.io/cdda-guide/#/item/survivor_rucksack
+.. _survivor_runner_pack:          https://nornagon.github.io/cdda-guide/#/item/survivor_runner_pack
+.. _survivor_distributed_rigging:  https://nornagon.github.io/cdda-guide/#/item/survivor_rig
+.. _survivor_belt:                 https://nornagon.github.io/cdda-guide/#/item/survivor_belt_notools
+.. _survivor_harness:              https://nornagon.github.io/cdda-guide/#/item/survivor_vest
+.. _survivor_goggles:              https://nornagon.github.io/cdda-guide/#/item/survivor_goggles
 .. _hard_armor_vest:               https://nornagon.github.io/cdda-guide/#/item/level_3_vest
 .. _light_ballistic_vest_mag:      https://nornagon.github.io/cdda-guide/#/item/ballistic_vest_light
 .. _light_ballistic_vest_pouch:    https://nornagon.github.io/cdda-guide/#/item/ballistic_vest_light_pouches
@@ -1024,31 +1044,33 @@ CANT_WEAR stuff
 .. _heavy_ballistic_vest:          https://nornagon.github.io/cdda-guide/#/item/ballistic_vest_heavy
 .. _merc_coat:                     https://nornagon.github.io/cdda-guide/#/item/armor_mercenary_top
 .. _entrenching_tool:              https://nornagon.github.io/cdda-guide/#/item/e_tool
-.. _locksmith_kit: https://nornagon.github.io/cdda-guide/#/item/picklocks
-.. _bio_lockpick: https://nornagon.github.io/cdda-guide/#/item/bio_lockpick
-.. _churn: https://nornagon.github.io/cdda-guide/#/item/churn
-.. _anesthetic_kit: https://nornagon.github.io/cdda-guide/#/item/anesthetic_kit
-.. _fishing_rod_professional: https://nornagon.github.io/cdda-guide/#/item/fishing_rod_professional
-.. _fish_trap_basket: https://nornagon.github.io/cdda-guide/#/item/fish_trap_basket
-.. _metal_smoother: https://nornagon.github.io/cdda-guide/#/item/metal_smoother
-.. _long_rope: https://nornagon.github.io/cdda-guide/#/item/rope_30
-.. _grappling_hook: https://nornagon.github.io/cdda-guide/#/item/grapnel
-.. _still_lab: https://nornagon.github.io/cdda-guide/#/item/still_lab
-.. _still: https://nornagon.github.io/cdda-guide/#/item/still
-.. _chemistry_set: https://nornagon.github.io/cdda-guide/#/item/chemistry_set
-.. _cordless_drill: https://nornagon.github.io/cdda-guide/#/item/cordless_drill
-.. _hand_drill: https://nornagon.github.io/cdda-guide/#/item/hand_drill
-.. _butchering_kit: https://nornagon.github.io/cdda-guide/#/item/butchering_kit
-.. _anvil: https://nornagon.github.io/cdda-guide/#/item/anvil
-.. _bronze_anvil: https://nornagon.github.io/cdda-guide/#/item/anvil_bronze
-.. _puller: https://nornagon.github.io/cdda-guide/#/item/pulle
-.. _nail_punch: https://nornagon.github.io/cdda-guide/#/item/punch_nail
-.. _hose: https://nornagon.github.io/cdda-guide/#/item/hose
-.. _analytical_set_basic: https://nornagon.github.io/cdda-guide/#/item/analytical_set_basic
-.. _metal_fileset: https://nornagon.github.io/cdda-guide/#/item/metal_file
-.. _mortar_pestle: https://nornagon.github.io/cdda-guide/#/item/mortar_pestle
-.. _pliers_locking: https://nornagon.github.io/cdda-guide/#/item/pliers_locking
-.. _plastic_sheet: https://nornagon.github.io/cdda-guide/#/item/plastic_sheet
-.. _pin_reamer: https://nornagon.github.io/cdda-guide/#/item/pin_reamer
-.. _dutch_oven: https://nornagon.github.io/cdda-guide/#/item/dutch_oven
-.. _improvised_oven: https://nornagon.github.io/cdda-guide/#/item/improvised_oven
+.. _locksmith_kit:                 https://nornagon.github.io/cdda-guide/#/item/picklocks
+.. _bio_lockpick:                  https://nornagon.github.io/cdda-guide/#/item/bio_lockpick
+.. _churn:                         https://nornagon.github.io/cdda-guide/#/item/churn
+.. _anesthetic_kit:                https://nornagon.github.io/cdda-guide/#/item/anesthetic_kit
+.. _fishing_rod_professional:      https://nornagon.github.io/cdda-guide/#/item/fishing_rod_professional
+.. _fish_trap_basket:              https://nornagon.github.io/cdda-guide/#/item/fish_trap_basket
+.. _metal_smoother:                https://nornagon.github.io/cdda-guide/#/item/metal_smoother
+.. _long_rope:                     https://nornagon.github.io/cdda-guide/#/item/rope_30
+.. _grappling_hook:                https://nornagon.github.io/cdda-guide/#/item/grapnel
+.. _still_lab:                     https://nornagon.github.io/cdda-guide/#/item/still_lab
+.. _still:                         https://nornagon.github.io/cdda-guide/#/item/still
+.. _chemistry_set:                 https://nornagon.github.io/cdda-guide/#/item/chemistry_set
+.. _cordless_drill:                https://nornagon.github.io/cdda-guide/#/item/cordless_drill
+.. _hand_drill:                    https://nornagon.github.io/cdda-guide/#/item/hand_drill
+.. _butchering_kit:                https://nornagon.github.io/cdda-guide/#/item/butchering_kit
+.. _anvil:                         https://nornagon.github.io/cdda-guide/#/item/anvil
+.. _bronze_anvil:                  https://nornagon.github.io/cdda-guide/#/item/anvil_bronze
+.. _puller:                        https://nornagon.github.io/cdda-guide/#/item/pulle
+.. _nail_punch:                    https://nornagon.github.io/cdda-guide/#/item/punch_nail
+.. _hose:                          https://nornagon.github.io/cdda-guide/#/item/hose
+.. _analytical_set_basic:          https://nornagon.github.io/cdda-guide/#/item/analytical_set_basic
+.. _metal_fileset:                 https://nornagon.github.io/cdda-guide/#/item/metal_file
+.. _mortar_pestle:                 https://nornagon.github.io/cdda-guide/#/item/mortar_pestle
+.. _pliers_locking:                https://nornagon.github.io/cdda-guide/#/item/pliers_locking
+.. _plastic_sheet:                 https://nornagon.github.io/cdda-guide/#/item/plastic_sheet
+.. _pin_reamer:                    https://nornagon.github.io/cdda-guide/#/item/pin_reamer
+.. _dutch_oven:                    https://nornagon.github.io/cdda-guide/#/item/dutch_oven
+.. _improvised_oven:               https://nornagon.github.io/cdda-guide/#/item/improvised_oven
+.. _batteries:                     https://nornagon.github.io/cdda-guide/#/json_flag/RECHARGE
+.. _survivor_light:                https://nornagon.github.io/cdda-guide/#/item/survivor_light
