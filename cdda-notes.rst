@@ -137,6 +137,7 @@ Initial focus is on getting a handle on armour, storage, and summer/winterweight
    | batteries_ of some sort
    | "Clean gun and lubricate" — cotton_patch_ & soap_ (soapy_water_) & animal_cooking_oil_
    | washing_kit_ to remove "dirty" from zombie items?
+   | syringe_
 
 
 :Tool Qualities (important):
@@ -646,8 +647,8 @@ Stuff that did not fit in the table:
      survivor_duffel_,              7.88L, 1.00kg, 8, 30,               60cm, 50L, 78kg, 38L/60kg, strapped back torso
 
 
-   Looking at pack capacity mass ÷ pack mass, rucksack looks best: 41/10/75/36/85/88/78.
-   But if you exclude the krabs, you get this: 41/10/75/36/55/50/60.
+  Looking at pack capacity mass ÷ pack mass, rucksack looks best: 41/10/75/36/85/88/78.
+  But if you exclude the krabs, you get this: 41/10/75/36/55/50/60.
 
 
 * TOOLS
