@@ -134,10 +134,12 @@ Initial focus is on getting a handle on armour, storage, and summer/winterweight
    | some kind of medit, e.g. a full IFAK?
    | Some plastic bags (non-rigid containers up to 10L); use knife to label them "DRUGS" and "SEEDZ", then set their priority to 1 (or more) and category whitelitst.  Now you can collapse the individual boring lists easily, without wasting too much space.
    | Probably want some non-rigid liquid containers as well for water and suchlike... camelbak_ or waterskin_
-   | batteries_ of some sort
+   | batteries_ of some sort  (and a UPS_ — into which you insert a heavy_battery_ and from which other stuff auto-recharges)
    | "Clean gun and lubricate" — cotton_patch_ & soap_ (soapy_water_) & animal_cooking_oil_
    | washing_kit_ to remove "dirty" from zombie items?
    | syringe_
+   | hand_crank_charger_ for recharging batteries by hand?
+   | jumper_cable_ for showhow recharging internal batteries?
 
 
 :Tool Qualities (important):
