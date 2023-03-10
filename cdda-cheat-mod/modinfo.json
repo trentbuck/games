@@ -1,0 +1,16 @@
+[
+  {
+    "type": "MOD_INFO",
+    "id": "twb",
+    "name": "Trent's Creating Background",
+    "authors": [
+      "trentbuck+Cataclysm-DDA@gmail.com"
+    ],
+    "description": "Let's you cheat right at the start, to play around",
+    "category": "rebalance",
+    "dependencies": [
+      "dda",
+      "speedydex"
+    ]
+  }
+]
