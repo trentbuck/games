@@ -361,6 +361,9 @@
               "metal_smoother",
               "butchering_kit",
               "sleeping_bag_roll",
+              "battery_ups",
+              "battery_ups",
+              "battery_ups",
               "adv_chemistry",
               "manual_dodge",
               "labmap",
@@ -427,9 +430,6 @@
               "cordless_drill"
             ]
           },
-          "battery_ups",
-          "battery_ups",
-          "battery_ups",
           {
             "item": "rm88_battle_rifle",
             "magazine": "8x40_250_mag",

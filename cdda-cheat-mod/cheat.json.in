@@ -237,6 +237,7 @@
              "metal_smoother",
              "butchering_kit",
              "sleeping_bag_roll",
+             "battery_ups", "battery_ups", "battery_ups",
 
              // BOOKZ --- only the books that have recipes you can't get automatically with high-enough skill level.
 
@@ -754,7 +755,6 @@
             "contents-item": [
               "eink_tablet_pc",
               "cordless_drill"]},
-          "battery_ups", "battery_ups", "battery_ups",
           // { "item": "compbow",
           //   "ammo-item": "arrow_cf", "charges": 1,
           //   "contents-item": [ "arrowrest", "bow_stabilizer_set", "bow_silencer", "laser_sight", "bow_scope" ]},

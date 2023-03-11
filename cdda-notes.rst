@@ -1467,6 +1467,24 @@ CANT_WEAR stuff
 
 
 
+EBOOKSAVE and EBOOKREAD actions
+----------------------------------------------------------------------
+
+::
+
+    22:32 <twb> Which uses more power to store/read crafting recipe books?  e-ink tablet pc, or smartphone?
+    22:33 <twb> electronics.json suggests the e-ink uses 2W where laptop and phone aeach use 1W... which seems backwards
+    22:33 <twb> But e.g. https://nornagon.github.io/cdda-guide/#/item/mobile_memory_card  says it needs "120 charges", and I'm not sure how that combines with the reading device
+    22:52 <twb> I couldn't put a non-UPS battery in a smartphone, so I tried putting a UPS converter in a e-ink.  Storing a book used about 800J.  Storing a book in a smartphone used 10 charges of its internal battery, which drained about 10,000J
+    22:52 <twb> So eink appears to be much ahead
+    22:53 <twb> I'm blowed if I can see where that happens, though
+    23:02 <specing> does it matter? it's negligeable anyway compared to a fridge/freezer
+    23:05 <twb> I'm not that advanced yet
+
+
+
+----------------------------------------------------------------------
+
 .. _smartphone:                    https://nornagon.github.io/cdda-guide/#/item/smart_phone
 .. _waterproof_case:               https://nornagon.github.io/cdda-guide/#/item/waterproof_smart_phone_case
 .. _firearm_repair_kit:            https://nornagon.github.io/cdda-guide/#/item/small_repairkit
