@@ -48,6 +48,18 @@ FROM stats;
 --
 -- Let's look for high-rated low-playtime games.
 
+
+-- FIXME...
+-- "If game A has 80% score, and game B has 90% score, you should play game B *TWICE* as much, not 10% more."
+-- i.e. treat score as a log scale not linear scale.
+-- sqlite supports log/exponential functions: https://www.sqlite.org/lang_mathfunc.html
+-- But Debian disables them:
+--     sqlite3 '' 'select log(1)'
+--     ⇒ Error: no such function: log
+--     python3 -c 'import sqlite3; print(sqlite3.connect(":memory:").execute("select log(1)").fetchall())'
+--     ⇒ python3 -c 'import sqlite3; print(sqlite3.connect(":memory:").execute("select log(1)").fetchall())'
+
+
 CREATE VIEW IF NOT EXISTS games_fudged AS
 SELECT -- If there is no rating, guess it is 70%.
        -- sqlite> SELECT min(rating), avg(rating), max(rating) FROM games;
