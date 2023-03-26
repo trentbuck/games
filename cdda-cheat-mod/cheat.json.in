@@ -196,6 +196,13 @@
     ],
     "items": {
       "both": {
+        "groups": [
+          "full_ifak", "full_ifak", "full_ifak", "full_ifak", "full_ifak",
+          "MRE","MRE","MRE","MRE","MRE","MRE","MRE","MRE","MRE","MRE",
+          "MRE","MRE","MRE","MRE","MRE","MRE","MRE","MRE","MRE","MRE",
+          "MRE","MRE","MRE","MRE","MRE","MRE","MRE","MRE","MRE","MRE",
+          "MRE","MRE","MRE","MRE","MRE","MRE","MRE","MRE","MRE","MRE",
+          "MRE","MRE","MRE","MRE","MRE","MRE","MRE","MRE","MRE","MRE"],
         "items": [
           "nomad_bodyglove_2",
           "helmet_liner",
@@ -203,26 +210,6 @@
           "debug_backpack",
           "waterskin",
           "waterskin",
-          "knife_rm42"],
-        // "//broken": [
-        //   "HOW THE FUCK DO I CREATE AN SD CARD PRE-LOADED WITH BOOKS?",
-        //   { "item": "mag_dude", "container-item": "usb_drive"},
-        //   { "item": "mobile_memory_card", "contents-item": ["mag_dude"]},
-        //   { "item": "mobile_memory_card_used", "contents-item": ["mag_dude"]},
-        //   { "item": "usb_drive", "contents-item": ["mag_dude"]}],
-        "entries": [
-          {"item": "grapnel", "custom-flags": ["no_auto_equip"]},
-          // Use a sub-pack purely so I can "hide" all the boring stuff.
-          {"item": "debug_backpack",
-           "custom-flags": ["no_auto_equip"],
-           "contents-group": [
-             "full_ifak", "full_ifak", "full_ifak", "full_ifak", "full_ifak",
-             "MRE","MRE","MRE","MRE","MRE","MRE","MRE","MRE","MRE","MRE",
-             "MRE","MRE","MRE","MRE","MRE","MRE","MRE","MRE","MRE","MRE",
-             "MRE","MRE","MRE","MRE","MRE","MRE","MRE","MRE","MRE","MRE",
-             "MRE","MRE","MRE","MRE","MRE","MRE","MRE","MRE","MRE","MRE",
-             "MRE","MRE","MRE","MRE","MRE","MRE","MRE","MRE","MRE","MRE"],
-           "contents-item": [
              "water_clean", "water_clean", "water_clean", "water_clean", "water_clean",
              "water_clean", "water_clean", "water_clean", "water_clean", "water_clean",
              "water_clean", "water_clean", "water_clean", "water_clean", "water_clean",
@@ -254,7 +241,6 @@
              "improvised_oven",
              "sleeping_bag_roll",
              "battery_ups", "battery_ups", "battery_ups",
-
              // BOOKZ --- only the books that have recipes you can't get automatically with high-enough skill level.
 
              // == anthology.json ==
@@ -704,7 +690,7 @@
              // "mag_dude"
              // "mag_survival"
              // "manual_survival"
-             "pocket_survival"
+             "pocket_survival",
              // "survival_book"
              // "textbook_survival"
              // "textbook_botany"
@@ -756,12 +742,20 @@
              // "book_fict_hard_ya_btwo"
              // "novel_coa"
              // "novel_coa2"
-           ]},
+          "knife_rm42"],
+        // "//broken": [
+        //   "HOW THE FUCK DO I CREATE AN SD CARD PRE-LOADED WITH BOOKS?",
+        //   { "item": "mag_dude", "container-item": "usb_drive"},
+        //   { "item": "mobile_memory_card", "contents-item": ["mag_dude"]},
+        //   { "item": "mobile_memory_card_used", "contents-item": ["mag_dude"]},
+        //   { "item": "usb_drive", "contents-item": ["mag_dude"]}],
+        "entries": [
+          {"item": "grapnel", "custom-flags": ["no_auto_equip"]},
 
-          { "item": "survivor_rig", "custom-flags": ["no_auto_equip"] },
+          { "item": "survivor_rig" },
           { "item": "survivor_belt_notools" },
           { "item": "survivor_vest" },
-          { "item": "trenchcoat_survivor", "custom-flags": ["no_auto_equip"] },
+          { "item": "trenchcoat_survivor" },
 
           { "item": "rm13_armor", "charges": 5000 },
           { "item": "tailors_kit", "charges": 400 },
