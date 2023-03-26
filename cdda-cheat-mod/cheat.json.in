@@ -228,6 +228,12 @@
                     "mortar_pestle",
                     "plastic_sheet",
                     "improvised_oven",
+                    "crucible",
+                    "brazier",
+                    "oxy_torch",
+                    "weldtank", "weldtank",
+                    "anvil", "hotcut", "drift", "clay_quern",
+                    "tongs", "metalworking_tongs",
                     "battery_ups", "battery_ups", "battery_ups",
                     // BOOKZ --- only the books that have recipes you can't get automatically with high-enough skill level.
 
@@ -755,10 +761,17 @@
                           "eink_tablet_pc",
                           "cordless_drill"]},
                     { "item": "match", "charges": 500 },
+                    // FIXME: "charges" isn't working for string?
+                    // { "item": "string_36", "charges": 500 },
+                    // { "item": "string_6", "charges": 500 },
+                    // { "item": "2x4", "charges": 100 },
+                    // { "item": "stick", "charges": 100 },
+                    { "item": "duct_tape", "charges": 500 },
+                    { "item": "nail", "charges": 500 },
 
                     // This replaces the IFAK packages.
                     // Putting them together makes the inventory menu less annoying.
-                    // FIXME: "charges" isn't working for bandages?
+                    // FIXME: "charges" isn't working for this item?
                     { "item": "bandages", "count": 50 },
                     { "item": "adhesive_bandages", "count": 50 },
                     { "item": "quikclot", "count": 10 },
@@ -779,6 +792,8 @@
 
 
                     { "container-item": "metal_tank", "item": "water_clean", "charges": 800 },
+                    { "container-item": "metal_tank", "item": "water", "charges": 800 },
+                    { "container-item": "metal_tank", "item": "salt_water", "charges": 800 },
 
 
                     { "item": "compbow",
