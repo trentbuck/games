@@ -74,12 +74,12 @@
         "proficiencies": [
             // I really hate dissecting basic zombies & animals to acquire these.
             // Also Physiology requires cutting up "feral" humans, which makes me MUCH sadder than killing them and smashing their skulls for some reason?
+            "prof_intro_biology",
             "prof_wp_zombie",
             "prof_wp_flying",
             "prof_physiology",
             "prof_wp_child",
             "prof_wp_syn_armored",
-            "prof_intro_biology",
             "prof_electromagnetics",
             "prof_burn_care",
             // Rebandaging my leg 1000 times to train this is boring.
