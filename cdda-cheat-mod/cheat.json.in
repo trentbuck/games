@@ -228,7 +228,6 @@
                     "mortar_pestle",
                     "plastic_sheet",
                     "improvised_oven",
-                    "sleeping_bag_roll",
                     "battery_ups", "battery_ups", "battery_ups",
                     // BOOKZ --- only the books that have recipes you can't get automatically with high-enough skill level.
 
@@ -740,6 +739,7 @@
                 //   { "item": "usb_drive", "contents-item": ["mag_dude"]}],
                 "entries": [
                     {"item": "grapnel", "custom-flags": ["no_auto_equip"]},
+                    {"item": "sleeping_bag_roll", "custom-flags": ["no_auto_equip"]},
 
                     { "item": "survivor_rig" },
                     { "item": "survivor_belt_notools" },
