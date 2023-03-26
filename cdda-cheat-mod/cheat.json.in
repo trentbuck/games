@@ -196,13 +196,6 @@
         ],
         "items": {
             "both": {
-                "groups": [
-                    "full_ifak", "full_ifak", "full_ifak", "full_ifak", "full_ifak",
-                    "MRE","MRE","MRE","MRE","MRE","MRE","MRE","MRE","MRE","MRE",
-                    "MRE","MRE","MRE","MRE","MRE","MRE","MRE","MRE","MRE","MRE",
-                    "MRE","MRE","MRE","MRE","MRE","MRE","MRE","MRE","MRE","MRE",
-                    "MRE","MRE","MRE","MRE","MRE","MRE","MRE","MRE","MRE","MRE",
-                    "MRE","MRE","MRE","MRE","MRE","MRE","MRE","MRE","MRE","MRE"],
                 "items": [
                     "nomad_bodyglove_2",
                     "helmet_liner",
@@ -210,10 +203,6 @@
                     "debug_backpack",
                     "waterskin",
                     "waterskin",
-                    "water_clean", "water_clean", "water_clean", "water_clean", "water_clean",
-                    "water_clean", "water_clean", "water_clean", "water_clean", "water_clean",
-                    "water_clean", "water_clean", "water_clean", "water_clean", "water_clean",
-                    "water_clean", "water_clean", "water_clean", "water_clean", "water_clean",
                     "metal_file",
                     "wash_kit",
                     "jumper_cable",
@@ -765,6 +754,33 @@
                       "contents-item": [
                           "eink_tablet_pc",
                           "cordless_drill"]},
+                    { "item": "match", "charges": 500 },
+
+                    // This replaces the IFAK packages.
+                    // Putting them together makes the inventory menu less annoying.
+                    // FIXME: "charges" isn't working for bandages?
+                    { "item": "bandages", "count": 50 },
+                    { "item": "adhesive_bandages", "count": 50 },
+                    { "item": "quikclot", "count": 10 },
+
+                    // This replaces the MRE packages.
+                    // Putting them together makes the inventory menu less annoying.
+                    { "item": "chocolate_military", "charges": 50 },
+                    { "item": "fruit_leather", "charges": 50 },
+                    { "item": "cheese_hard", "charges": 100 },
+                    // FIXME: "charges" isn't working for this item?
+                    { "item": "can_cheese", "charges": 100 },
+                    // FIXME: "charges" isn't working for this item?
+                    { "item": "spread_peanutbutter", "charges": 100 },
+                    // FIXME: "charges" isn't working for this item?
+                    { "item": "crackers", "charges": 1000 },
+                    { "item": "flour", "charges": 100 },
+                    { "item": "mre_ravioli", "charges": 10 },
+
+
+                    { "container-item": "metal_tank", "item": "water_clean", "charges": 800 },
+
+
                     { "item": "compbow",
                       "ammo-item": "arrow_cf", "charges": 1,
                       "contents-item": [ "arrowrest", "bow_stabilizer_set", "bow_silencer", "laser_sight", "bow_scope" ]},
