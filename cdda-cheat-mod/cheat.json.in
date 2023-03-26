@@ -139,7 +139,6 @@
             "prof_tanning_basic",
             "prof_carpentry_basic",
             // Fuck it it's try this out.
-            "prof_gunmaking",
             "prof_handloading"],
 
         "//skills": "If you set them all to 10, you never experience the training system at all...",
