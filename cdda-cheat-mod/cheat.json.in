@@ -771,10 +771,10 @@
             "contents-item": [
               "eink_tablet_pc",
               "cordless_drill"]},
-          // { "item": "compbow",
-          //   "ammo-item": "arrow_cf", "charges": 1,
-          //   "contents-item": [ "arrowrest", "bow_stabilizer_set", "bow_silencer", "laser_sight", "bow_scope" ]},
-          // { "item": "arrow_cf", "charges": 1000 },
+          { "item": "compbow",
+            "ammo-item": "arrow_cf", "charges": 1,
+            "contents-item": [ "arrowrest", "bow_stabilizer_set", "bow_silencer", "laser_sight", "bow_scope" ]},
+          { "item": "arrow_cf", "charges": 1000 },
 
           // { "item": "rm11b_sniper_rifle",
           //   "magazine": "8x40_25_mag",
