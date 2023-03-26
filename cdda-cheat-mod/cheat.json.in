@@ -71,6 +71,77 @@
             // "BEAUTIFUL3", "LIAR", "PSYCHOPATH",
             "FLEET2"
         ],
+        "proficiencies": [
+            // I really hate dissecting basic zombies & animals to acquire these.
+            // Also Physiology requires cutting up "feral" humans, which makes me MUCH sadder than killing them and smashing their skulls for some reason?
+            "prof_wp_zombie",
+            "prof_wp_flying",
+            "prof_physiology",
+            "prof_wp_child",
+            "prof_wp_syn_armored",
+            "prof_intro_biology",
+            "prof_electromagnetics",
+            "prof_burn_care",
+            // Rebandaging my leg 1000 times to train this is boring.
+            "prof_wound_care",
+            "prof_wound_care_expert",
+            // Making 1000 fried burdock to train Bread is boring.
+            "prof_food_prep",
+            "prof_knife_skills",
+            "prof_baking",
+            "prof_frying",
+            "prof_frying_bread",
+            "prof_fermenting",
+            "prof_preservation",
+            "prof_forage_cooking",
+            // Is this one new?
+            "prof_scav_cooking",
+            // Casting 1000 copper daggers & 1000 XS gloves to train this is boring.
+            // (adding blacksmith here is kinda extreme)
+            "prof_redsmithing",
+            "prof_blacksmithing",
+            "prof_metalworking",
+            "prof_welding_basic",
+            "prof_armorsmithing",
+            "prof_articulation",
+            "prof_closures",
+            "prof_closures_waterproofing",
+            "prof_elastics",
+            "prof_leatherworking_basic",
+            "prof_furriery",
+            // Harvesting chitin from ants to train this is boring.
+            "prof_chitinworking",
+            // Deconstructing lockers trying to find a lock to practice this is boring.
+            "prof_lockpicking",
+            "prof_lockpicking_expert",
+            "prof_safecracking",
+            // Making 1000 querns is boring.
+            "prof_knapping",
+            "prof_knapping_speed",
+            "prof_pottery",
+            "prof_carving",
+            // Making 1000 shotbows and then shooting a hay bale with SPECIFIC shit arrows is boring.
+            "prof_bowyery",
+            "prof_fletching",
+            "prof_bow_basic",
+            "prof_bow_expert",
+            "prof_bow_master",
+            // Random other stuff.
+            "prof_elec_soldering",
+            "prof_gunsmithing_basic",
+            "prof_basic_engines",
+            "prof_basketweaving",
+            "prof_aircraft_mechanic",
+            "prof_helicopter_pilot",
+            "prof_parkour",
+            "prof_fibers",
+            "prof_fibers_rope",
+            "prof_tanning_basic",
+            "prof_carpentry_basic",
+            // Fuck it it's try this out.
+            "prof_gunmaking",
+            "prof_handloading"],
+
         "//skills": "If you set them all to 10, you never experience the training system at all...",
         "skills": [
             { "level": 6, "name": "speech" },
