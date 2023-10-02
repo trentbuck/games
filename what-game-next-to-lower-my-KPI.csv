@@ -1,5 +1,6 @@
 "$/hour (steamdb)","Δ",rating,$,time,id,name
 99.95,45.43,94.18,99.95,"50 min",607080,"Psychonauts 2"
+80.55,38.06,78.84,89.95,"1.12 hours",1091500,"Cyberpunk 2077"
 89.95,32.54,88.76,89.95,"34 min",1693980,"Dead Space"
 59.95,28.12,72.22,59.95,"53 min",794260,Outward
 59.95,27.83,44.14,59.95,"52 min",1454970,"New Tales from the Borderlands"
@@ -10,7 +11,6 @@
 69.99,24.84,76.57,69.99,"33 min",1137300,"Sherlock Holmes Chapter One"
 51.41,24.59,69.71,51.41,"55 min",1101790,"War Mongrels"
 47.57,23.21,81.16,49.95,"1.05 hours",710920,"Darksiders Genesis"
-48.33,22.83,78.75,53.97,"1.12 hours",1091500,"Cyberpunk 2077"
 56.95,22.78,59.84,56.95,"40 min",935570,"Ary and the secret of seasons"
 44.95,21.5,70.5,44.95,"55 min",816090,"Space Hulk: Deathwing - Enhanced Edition"
 42.95,21.11,76.35,42.95,"58 min",388410,"Darksiders II Deathinitive Edition"
@@ -58,10 +58,10 @@
 39.73,16.33,83.89,56.95,"1.43 hours",541210,"Cold Waters"
 33.7,16.31,72.36,35.95,"1.07 hours",844260,Rustler
 35.79,16.27,82.6,42.95,"1.20 hours",396900,"GRIP: Combat Racing"
-36.5,16.22,80.54,36.5,"48 min",792300,"The Beast Inside"
+36.5,16.22,80.55,36.5,"48 min",792300,"The Beast Inside"
 35.04,15.93,87.36,35.04,"50 min",251730,"Legend of Grimrock 2"
 42.95,15.82,91.24,42.95,"35 min",1063660,"Bendy and the Dark Revival"
-42.83,15.57,74.84,74.95,"1.75 hours",755500,"ONE PIECE World Seeker"
+42.83,15.57,74.86,74.95,"1.75 hours",755500,"ONE PIECE World Seeker"
 33.76,15.46,74.21,39.95,"1.18 hours",265550,"Dead Rising 3"
 39.77,15.1,94.77,64.95,"1.63 hours",435150,"Divinity: Original Sin 2"
 34.58,15.03,68.89,44.95,"1.30 hours",768520,"Red Solstice 2: Survivors"
@@ -110,7 +110,7 @@
 36.5,13.45,72.07,36.5,"35 min",691690,"Ash of Gods: Redemption"
 27.57,13.45,92.83,28.95,"1.05 hours",860950,"Mark of the Ninja: Remastered"
 27.57,13.45,76.32,28.95,"1.05 hours",944920,"Nanotale - Typing Chronicles"
-27.57,13.45,83.72,28.95,"1.05 hours",960980,"Apsulov: End of Gods"
+27.57,13.45,83.73,28.95,"1.05 hours",960980,"Apsulov: End of Gods"
 28.95,13.44,85.16,28.95,"52 min",462780,"Darksiders Warmastered Edition"
 27.66,13.38,91.68,29.5,"1.07 hours",248610,"Door Kickers"
 39.95,13.32,78.18,39.95,"30 min",1328660,"Need for Speed™ Hot Pursuit Remastered"
@@ -123,7 +123,6 @@
 29.5,12.96,80.02,29.5,"47 min",535480,"Sundered: Eldritch Edition"
 29.5,12.96,76.77,29.5,"47 min",1119600,"Help Will Come Tomorrow"
 34.99,12.89,93.43,34.99,"35 min",251290,"The Legend of Heroes: Trails in the Sky SC"
-37.14,12.88,85.72,69.95,"1.88 hours",1030840,"Mafia: Definitive Edition"
 28.95,12.87,75.38,28.95,"48 min",454410,"GIGA WRECKER"
 28.95,12.87,74.67,28.95,"48 min",470740,"Demolish & Build 2017"
 28.95,12.87,81.93,28.95,"48 min",532320,"de Blob"
@@ -162,7 +161,7 @@
 29.5,12.15,94.98,29.5,"42 min",238320,Outlast
 30.94,12.13,49.3,47.95,"1.55 hours",254370,"Aquanox Deep Descent"
 28.95,12.09,86.73,28.95,"43 min",313690,"LEGO® Batman™ 3: Beyond Gotham"
-28.95,12.09,92.03,28.95,"43 min",801480,"Agent A: A puzzle in disguise"
+28.95,12.09,92.04,28.95,"43 min",801480,"Agent A: A puzzle in disguise"
 44.99,12.07,76.43,44.99,"22 min",1175830,"Legend of Mana"
 59.95,11.99,89.73,59.95,"15 min",1089090,"ONE PIECE: PIRATE WARRIORS 4"
 29.95,11.98,91.32,29.95,"40 min",254700,"Resident Evil 4 (2005)"
@@ -263,7 +262,7 @@
 22.13,9.98,87.45,26.92,"1.22 hours",544390,"NITE Team 4"
 21.5,9.98,66.41,21.5,"52 min",1266890,"Tactical Troops: Anthracite Shift"
 21.95,9.98,66.63,21.95,"50 min",1570070,"Beholder 3"
-35.95,9.96,92.2,35.95,"23 min",219990,"Grim Dawn"
+35.95,9.96,92.21,35.95,"23 min",219990,"Grim Dawn"
 35.95,9.96,88.2,35.95,"23 min",512790,"Quern - Undying Thoughts"
 42.95,9.91,69.73,42.95,"18 min",650510,"ZONE OF THE ENDERS THE 2nd RUNNER : MARS / ANUBIS ZONE OF THE ENDERS : MARS"
 21.95,9.87,71.3,21.95,"49 min",680380,"Night Call"
@@ -292,12 +291,12 @@
 19.95,9.5,89.87,21.95,"1.10 hours",278360,"A Story About My Uncle"
 42.95,9.48,86.26,42.95,"17 min",279940,"The Book of Unwritten Tales 2"
 20.53,9.47,74.29,23.95,"1.17 hours",409850,"Criminal Girls: Invite Only"
-23.0,9.47,86.8,23.0,"42 min",704450,"Neverwinter Nights: Enhanced Edition"
+23.0,9.47,86.82,23.0,"42 min",704450,"Neverwinter Nights: Enhanced Edition"
 29.01,9.46,75.65,59.95,"2.07 hours",536270,"Ancestors: The Humankind Odyssey "
 36.5,9.46,64.55,36.5,"21 min",865610,"Tails Noir"
 21.5,9.44,88.03,21.5,"47 min",113020,Monaco
 21.5,9.44,95.47,21.5,"47 min",736260,"Baba Is You"
-21.5,9.44,89.96,21.5,"47 min",1347780,"Freedom Fighters"
+21.5,9.44,89.97,21.5,"47 min",1347780,"Freedom Fighters"
 28.95,9.43,92.36,28.95,"29 min",866800,"The Walking Dead: The Final Season"
 28.95,9.43,68.57,28.95,"29 min",1597580,"Clid the Snail"
 21.95,9.41,92.92,21.95,"45 min",611760,"Don't Escape: 4 Days to Survive"
@@ -311,7 +310,7 @@
 20.27,9.29,88.08,23.99,"1.18 hours",294860,"Valkyria Chronicles™"
 26.15,9.23,90.08,47.95,"1.83 hours",803330,"Destroy All Humans!"
 21.5,9.21,93.25,21.5,"45 min",35700,Trine
-28.95,9.21,82.74,28.95,"28 min",372360,"Tales of Symphonia"
+28.95,9.21,82.75,28.95,"28 min",372360,"Tales of Symphonia"
 21.5,9.21,74.29,21.5,"45 min",462240,"Post Human W.A.R"
 28.95,9.21,90.04,28.95,"28 min",569860,"Thimbleweed Park"
 33.73,9.2,91.47,89.95,"2.67 hours",851850,"DRAGON BALL Z: KAKAROT"
@@ -363,7 +362,7 @@
 24.95,8.68,83.05,24.95,"32 min",790850,"Undead Horde"
 21.95,8.65,90.49,21.95,"39 min",447150,"APE OUT"
 20.9,8.59,76.96,29.95,"1.43 hours",399810,"Call of Cthulhu"
-42.95,8.59,87.34,42.95,"15 min",690640,"Trine 4: The Nightmare Prince"
+42.95,8.59,87.35,42.95,"15 min",690640,"Trine 4: The Nightmare Prince"
 26.95,8.58,88.07,26.95,"28 min",969760,Omno
 18.99,8.54,83.55,18.99,"49 min",4720,"Condemned: Criminal Origins"
 28.95,8.51,93.25,28.95,"25 min",35720,"Trine 2"
@@ -377,10 +376,12 @@
 39.95,8.41,82.44,39.95,"16 min",735580,"11-11 Memories Retold"
 16.95,8.4,72.31,16.95,"59 min",594050,"Red Alliance"
 22.12,8.35,81.02,36.5,"1.65 hours",651670,"Star Renegades"
+21.5,8.34,74.16,21.5,"38 min",318600,"The Flame in the Flood"
 18.17,8.32,80.01,21.5,"1.18 hours",650220,"Interplanetary: Enhanced Edition"
 22.95,8.3,93.44,22.95,"34 min",260230,"Valiant Hearts: The Great War™ / Soldats Inconnus : Mémoires de la Grande Guerre™"
 28.95,8.27,91.51,28.95,"24 min",530320,Wandersong
 25.95,8.26,83.51,25.95,"28 min",1205900,"Alwa's Legacy"
+20.04,8.23,72.91,28.72,"1.43 hours",875310,LIBERATED
 21.95,8.23,91.65,21.95,"36 min",1045720,"The Coma 2: Vicious Sisters"
 21.5,8.2,82.96,21.5,"37 min",573320,Underhero
 29.5,8.17,83.17,29.5,"23 min",274270,"NOT A HERO"
@@ -397,7 +398,7 @@
 20.82,8.06,35.48,32.97,"1.58 hours",730310,"DYNASTY WARRIORS 9"
 29.95,8.04,90.48,29.95,"22 min",304240,"Resident Evil"
 29.95,8.04,74.01,29.95,"22 min",314810,"Randal's Monday"
-23.45,8.04,85.14,44.95,"1.92 hours",973810,"Journey To The Savage Planet"
+23.45,8.04,85.09,44.95,"1.92 hours",973810,"Journey To The Savage Planet"
 30.99,8.03,70.31,30.99,"21 min",209630,"Magrunner: Dark Pulse"
 28.95,8.02,94.57,28.95,"23 min",242760,"The Forest"
 28.95,8.02,83.87,28.95,"23 min",635320,"Last Day of June"
@@ -414,7 +415,7 @@
 24.95,7.94,91.92,24.95,"28 min",597760,"Yuppie Psycho"
 21.95,7.94,82.33,21.95,"34 min",684270,"Silicon Zeroes"
 21.95,7.94,66.56,21.95,"34 min",1363210,"Live by the Sword: Tactics"
-21.5,7.92,75.1,21.5,"35 min",618970,"Outcast - Second Contact"
+21.5,7.92,75.12,21.5,"35 min",618970,"Outcast - Second Contact"
 21.5,7.92,45.7,21.5,"35 min",648630,"Damascus Gear Operation Tokyo HD"
 29.5,7.91,83.08,29.5,"22 min",539470,"Police Stories"
 17.75,7.89,70.32,17.75,"48 min",635200,Distrust
@@ -428,7 +429,7 @@
 28.95,7.77,72.58,28.95,"22 min",371300,"Knee Deep"
 28.95,7.77,86.31,28.95,"22 min",1106830,"Rainbow Billy: The Curse of the Leviathan"
 29.95,7.76,82.76,29.95,"21 min",1123770,"Curse of the Dead Gods"
-27.95,7.75,80.03,27.95,"23 min",355790,"Styx: Shards of Darkness"
+27.95,7.75,80.04,27.95,"23 min",355790,"Styx: Shards of Darkness"
 19.53,7.71,64.28,29.95,"1.53 hours",641080,"Trials Rising"
 18.95,7.69,75.59,18.95,"41 min",327890,"I Am Bread"
 20.44,7.67,81.34,20.44,"36 min",232790,"Broken Age"
@@ -451,6 +452,7 @@
 28.95,7.51,77.17,28.95,"21 min",280180,Hover
 28.95,7.51,77.43,28.95,"21 min",490280,"Realms of Magic"
 28.95,7.51,88.8,28.95,"21 min",625980,"Yomawari: Midnight Shadows"
+16.97,7.49,80.11,21.5,"1.27 hours",282530,"Castlevania: Lords of Shadow – Mirror of Fate HD"
 28.9,7.49,82.1,28.9,"21 min",626660,"Flipping Death"
 21.5,7.48,77.24,21.5,"32 min",358090,"D4: Dark Dreams Don't Die"
 21.5,7.48,68.17,21.5,"32 min",365810,"Flying Tigers: Shadows Over China"
@@ -481,7 +483,7 @@
 35.95,7.19,67.66,35.95,"15 min",250680,BELOW
 35.95,7.19,72.7,35.95,"15 min",435100,2Dark
 35.95,7.19,87.09,35.95,"15 min",636450,"Rez Infinite"
-16.54,7.19,91.82,21.5,"1.30 hours",1205450,"Turnip Boy Commits Tax Evasion"
+16.54,7.19,91.81,21.5,"1.30 hours",1205450,"Turnip Boy Commits Tax Evasion"
 21.5,7.17,90.26,21.5,"30 min",200900,"Cave Story+"
 21.5,7.17,61.54,21.5,"30 min",369110,"The Swindle"
 21.5,7.17,78.44,21.5,"30 min",602430,"Yono and the Celestial Elephants"
@@ -493,7 +495,7 @@
 14.26,7.07,94.33,14.5,"1.02 hours",942970,Unheard
 14.5,7.06,72.24,14.5,"57 min",520720,"Dear Esther: Landmark Edition"
 21.3,7.06,61.59,42.95,"2.02 hours",910830,"Rebel Galaxy Outlaw"
-23.95,7.04,86.31,23.95,"25 min",994730,"圣女战旗 Banner of the Maid"
+23.95,7.04,86.28,23.95,"25 min",994730,"圣女战旗 Banner of the Maid"
 15.42,7.01,73.23,18.5,"1.20 hours",292120,"FINAL FANTASY XIII"
 21.5,7.01,85.97,21.5,"29 min",1393820,Prodigal
 14.5,7.0,83.72,14.5,"56 min",447290,Redeemer
@@ -533,7 +535,7 @@
 18.95,6.72,62.08,18.95,"33 min",1510580,"Toy Tinker Simulator"
 28.95,6.68,83.85,28.95,"18 min",12360,"FlatOut: Ultimate Carnage"
 28.95,6.68,49.46,28.95,"18 min",987330,"Street Outlaws The List"
-28.95,6.68,93.76,28.95,"18 min",1082710,"Bug Fables: The Everlasting Sapling"
+28.95,6.68,93.77,28.95,"18 min",1082710,"Bug Fables: The Everlasting Sapling"
 28.95,6.68,83.66,28.95,"18 min",1115690,"Yes, Your Grace"
 21.5,6.67,95.46,21.5,"27 min",447530,"VA-11 Hall-A: Cyberpunk Bartender Action"
 19.99,6.66,96.48,19.99,"30 min",250900,"The Binding of Isaac: Rebirth"
@@ -579,7 +581,7 @@
 15.18,6.28,66.59,21.5,"1.42 hours",523650,"Lust for Darkness"
 21.95,6.27,82.07,21.95,"24 min",622680,"Mayhem in Single Valley"
 21.95,6.27,94.93,21.95,"24 min",683320,GRIS
-14.95,6.24,91.4,14.95,"43 min",2320,"Quake II"
+14.95,6.24,91.41,14.95,"43 min",2320,"Quake II"
 24.95,6.24,87.31,24.95,"20 min",427700,"Zwei: The Ilvard Insurrection"
 17.11,6.22,85.58,29.95,"1.75 hours",219910,"Edna & Harvey: Harvey's New Eyes"
 17.11,6.22,59.51,29.95,"1.75 hours",879000,Comanche
@@ -644,8 +646,9 @@
 14.5,5.71,94.96,14.5,"39 min",223470,"POSTAL 2"
 39.95,5.71,87.13,39.95,"10 min",493200,RiME
 21.99,5.7,78.76,21.99,"21 min",783840,"Lakeview Valley"
+24.99,5.68,82.15,84.95,"3.40 hours",589360,"Ni no Kuni™ II: Revenant Kingdom"
 16.19,5.68,76.05,29.95,"1.85 hours",1237980,"STAR WARS™ Battlefront™"
-29.95,5.67,86.84,29.95,"14 min",2610,GUN
+29.95,5.67,86.85,29.95,"14 min",2610,GUN
 29.95,5.67,65.61,29.95,"14 min",289690,"Lara Croft and the Temple of Osiris"
 18.99,5.64,85.77,44.95,"2.37 hours",582010,"Monster Hunter: World"
 20.99,5.63,51.61,20.99,"22 min",464340,"Syberia 3"
@@ -680,7 +683,6 @@
 14.5,5.44,83.29,14.5,"36 min",927250,"Bladed Fury"
 14.95,5.41,76.52,14.95,"34 min",13540,"Tom Clancy's Rainbow Six: Vegas"
 22.45,5.4,60.35,22.45,"19 min",441680,Obscuritas
-21.5,5.38,80.11,21.5,"20 min",282530,"Castlevania: Lords of Shadow – Mirror of Fate HD"
 21.5,5.38,90.0,21.5,"20 min",383270,Hue
 21.5,5.38,60.51,21.5,"20 min",740550,"Record of Agarest War Mariage"
 15.63,5.36,72.9,29.95,"1.92 hours",47790,"Medal of Honor(TM) Single Player"
@@ -738,6 +740,7 @@
 14.5,4.94,91.17,14.5,"31 min",428550,"Momodora: Reverie Under the Moonlight"
 14.5,4.94,72.62,14.5,"31 min",443650,"Wailing Heights"
 29.5,4.92,82.99,29.5,"12 min",201010,"Geneforge 5"
+29.5,4.92,87.22,29.5,"12 min",866140,"Arise: A Simple Story"
 18.95,4.91,68.09,18.95,"21 min",274230,RONIN
 14.6,4.89,70.47,28.95,"1.98 hours",21100,"F.E.A.R. 3"
 21.95,4.85,89.85,21.95,"17 min",583470,"The End Is Nigh"
@@ -751,7 +754,7 @@
 28.95,4.83,65.75,28.95,"12 min",1000080,Zengeon
 22.95,4.83,89.94,22.95,"16 min",1116580,"Shady Part of Me"
 14.5,4.83,91.97,14.5,"30 min",1333910,Sizeable
-19.99,4.81,79.71,19.99,"19 min",1019310,VirtuaVerse
+19.99,4.81,79.72,19.99,"19 min",1019310,VirtuaVerse
 18.5,4.8,81.85,18.5,"21 min",234390,"Teleglitch: Die More Edition"
 20.88,4.8,77.75,69.95,"3.35 hours",607890,"Sword Art Online: Hollow Realization Deluxe Edition"
 15.55,4.78,89.07,34.99,"2.25 hours",322500,SUPERHOT
@@ -760,7 +763,7 @@
 18.99,4.75,88.77,18.99,"20 min",10680,"Aliens vs. Predator"
 21.5,4.75,83.82,21.5,"17 min",31170,"Tales of Monkey Island: Chapter 1 - Launch of the Screaming Narwhal"
 21.5,4.75,83.43,21.5,"17 min",732930,"Wunderling DX"
-15.63,4.74,87.23,35.95,"2.30 hours",330020,"Children of Morta"
+15.63,4.74,87.22,35.95,"2.30 hours",330020,"Children of Morta"
 25.0,4.73,76.96,25.0,"14 min",310740,"NEON STRUCT"
 14.5,4.72,67.17,14.5,"29 min",278440,0RBITALIS
 14.5,4.72,87.04,14.5,"29 min",368370,"Her Story"
@@ -782,12 +785,13 @@
 16.95,4.55,79.86,16.95,"22 min",397330,"Twinsen's Little Big Adventure Classic"
 14.15,4.54,72.97,29.95,"2.12 hours",239160,Thief
 21.5,4.53,83.84,21.5,"16 min",221810,"The Cave"
+21.5,4.53,70.91,21.5,"16 min",301560,"White Night"
 14.5,4.5,73.71,14.5,"27 min",34870,"Sniper Ghost Warrior 2"
 14.5,4.5,81.92,14.5,"27 min",359420,"The Journeyman Project 1: Pegasus Prime"
 14.5,4.5,69.97,14.5,"27 min",436500,"Diaries of a Spaceport Janitor"
 42.95,4.49,90.47,42.95,"7 min",353540,"Stephen's Sausage Roll"
 26.95,4.49,67.87,26.95,"12 min",1026680,"FINAL FANTASY VIII - REMASTERED"
-20.26,4.47,82.89,20.26,"17 min",368620,Timespinner
+20.26,4.47,82.92,20.26,"17 min",368620,Timespinner
 24.99,4.45,89.75,24.99,"13 min",600990,"The Gardens Between"
 33.95,4.43,89.66,33.95,"9 min",234270,"Ken Follett's The Pillars of the Earth"
 14.95,4.4,88.74,14.95,"25 min",540840,"Lara Croft GO"
@@ -860,9 +864,7 @@
 14.5,4.02,71.8,14.5,"23 min",361690,"STAR WARS™ X-Wing vs TIE Fighter: Balance of Power Campaigns™"
 14.5,4.02,72.9,14.5,"23 min",550840,"Fresh Body"
 15.99,4.0,85.82,15.99,"20 min",1138410,"Demons Never Lie"
-19.95,3.99,86.23,19.95,"15 min",1273080,"Raptor Boyfriend"
-27.88,3.98,86.52,27.88,"10 min",317320,"Nelly Cootalot: The Fowl Fleet"
-17.38,3.98,65.56,58.5,"3.37 hours",1036890,"Shadow Warrior 3: Definitive Edition"
+17.38,3.98,65.59,58.5,"3.37 hours",1036890,"Shadow Warrior 3: Definitive Edition"
 21.95,3.91,60.28,21.95,"13 min",406720,"Alekhine's Gun"
 21.95,3.91,86.54,21.95,"13 min",583270,"Cosmic Express"
 16.95,3.91,90.78,16.95,"18 min",743450,"Monster Prom"
@@ -1056,7 +1058,7 @@
 14.5,2.42,77.82,14.5,"12 min",291710,"The Lost Crown"
 14.5,2.42,79.23,14.5,"12 min",620220,Catmaze
 14.5,2.42,73.51,14.5,"12 min",678850,"Uurnog Uurnlimited"
-14.5,2.42,68.38,14.5,"12 min",754530,"IL-2 Sturmovik: Cliffs of Dover Blitz"
+14.5,2.42,68.4,14.5,"12 min",754530,"IL-2 Sturmovik: Cliffs of Dover Blitz"
 15.49,2.4,79.54,15.49,"11 min",533950,"Don't open the doors!"
 22.95,2.4,49.43,22.95,"7 min",715020,"Elden: Path of the Forgotten"
 14.36,2.39,79.76,14.36,"12 min",524250,"Dad Quest"
@@ -1097,6 +1099,7 @@
 14.95,2.14,39.64,14.95,"10 min",13580,"Tom Clancy's Splinter Cell: Double Agent"
 23.5,2.14,79.68,23.5,"6 min",470580,"In The Shadows"
 14.99,2.14,88.41,14.99,"10 min",703320,"Hidden & Dangerous 2: Courage Under Fire"
+14.75,2.11,86.52,14.75,"10 min",317320,"Nelly Cootalot: The Fowl Fleet"
 19.95,2.08,83.02,19.95,"7 min",1284870,"Ultreïa"
 14.5,2.07,92.77,14.5,"10 min",3830,Psychonauts
 14.5,2.07,86.12,14.5,"10 min",42910,Magicka
