@@ -17,10 +17,13 @@
         // POLICE/PD_DET/SWAT/FED just prevents flying cameras from whinging at you.
         // These are WELL over the max of 12, but you can pick freeform or single pool.
         "traits": [
+            "DEBUG_CS",
+            // "DEBUG_SPEED",
+
             "PROF_DICEMASTER",
             "PROF_AUTODOC",
             "PROF_FED",
-            "PROF_BOXER", "PROF_MA_BLACK", "MARTIAL_FENCING",
+            "PROF_BOXER", "PROF_MA_BLACK", "MARTIAL_FENCING", "PROF_KICKBOXER",
             "PROF_SKATER",
             // "STR_UP_2", "DEX_UP_2", "INT_UP_2", "PER_UP_2",
             "FASTHEALER2",
@@ -138,6 +141,18 @@
             "prof_fibers_rope",
             "prof_tanning_basic",
             "prof_carpentry_basic",
+
+            // Available via hobbies but somehow I missed this earlier?
+            "prof_boat_pilot", "prof_driver",
+
+            // I have achieved all these by grinding in-game and cannot be arsed grinding them again.
+            "prof_athlete_basic", "prof_athlete_expert", "prof_athlete_master",
+            "prof_wp_hulk", "prof_wp_skeleton", "prof_wp_spider", "prof_wp_hymenoptera", "prof_wp_basic_bug", "prof_wp_basic_bird", "prof_wp_cyborg", "prof_wp_demihuman",
+            "prof_cobbling", "prof_spinning", "prof_weaving", "prof_knitting", "prof_knitting_speed",
+            "prof_bladesmith", "prof_toolsmithing", "prof_quenching", "prof_gunsmithing_improv", "prof_gunsmithing_antique", "prof_gunsmithing_spring", "prof_gun_cleaning", "prof_shock_weapons",
+            "prof_brewing", "prof_winemaking", "prof_lactofermenting", "prof_food_canning",
+            "prof_distilling",
+
             // Fuck it it's try this out.
             "prof_handloading"],
 
@@ -179,12 +194,15 @@
         "description": "Debug mutations - effectively disable some gameplay aspects entirely (e.g. immune to stamina)",
         "points": -1000,
         "traits": [
-            "DEBUG_BIONIC_POWER",
-            "DEBUG_BIONIC_POWERGEN",
+            // Doesn't exist anymore.
+            // "DEBUG_BIONIC_POWER",
+            // "DEBUG_BIONIC_POWERGEN",
             "DEBUG_CARDIO",
             "DEBUG_CLAIRVOYANCE_PLUS",
             "DEBUG_CLOAK",
             "DEBUG_CNF",
+            "DEBUG_CS",
+            "DEBUG_SPEED",
             "DEBUG_HP",
             "DEBUG_HP_REGEN",
             "DEBUG_HS",
@@ -814,7 +832,51 @@
                 //   { "item": "mobile_memory_card_used", "contents-item": ["mag_dude"]},
                 //   { "item": "usb_drive", "contents-item": ["mag_dude"]}],
                 "entries": [
+                    // After doing some fighting in the heat, I start to sweat and get damp.
+                    // This makes me feel sad, and also maybe catch influenza after swimming to the AC.
+                    // To "dry off" you "activate" a towel (but not a dishtowel) and the water moves into it.
+                    // You can't wring out the towel; it empties itself automatically after a while.
+
+                    // scuba_tank?
+
+                    // I found a folding bicycle once by accident, and
+                    // it's SUPER handy for quick trips.
+                    // Slower, but much handier than a stolen car.
+                    { "item": "folded_bicycle" },
+                    // I haven't tried these but maybe they're fun.
+                    // { "item": "folded_inflatable_boat" },
+                    // { "item": "folded_skateboard_generic" },
+                    // Unicycle folds up as well, but can't be spawned pre-folded???
+
+
+                    // Build your own folding bicycle/unicycle?
+                    // I notice that "folded_bicycle" is using "foldable light frame" (steel), but
+                    // regular bicycles use "extra light frame" (aluminium).
+                    // Maybe we want both those properties (foldable extra-light frame).
+                    {"item": "foldxlframe", "count": 5}, {"item": "nuts_bolts", "count": 2}, {"item": "welding_wire_alloy", "count": 20},
+                    {"item": "saddle"},
+                    {"item": "foot_crank"},
+                    {"item": "alternator_bicycle"},
+                    {"item": "wheel_bicycle_or", "count": 3}, {"item": "tire_bicycle_or", "count": 3}, {"item": "welding_wire_alloy", "count": 20},
+                    {"item": "wheel_bicycle", "count": 3}, {"item": "tire_bicycle", "count": 3}, {"item": "welding_wire_alloy", "count": 20},
+                    // Need handle for unicycle but not bicycle?
+                    // {"item": "handle"}, {"item": "pipe", "count": 10},
+                    // Add a spike to the front for ramming damage? ... meh, looks ugly in the sprite.
+                    // {"item": "spike"},
+                    // tiny electric motor
+                    // {"item": "small_storage_battery"},
+                    // controls
+                    // electronic control unit
+                    // NOT RELEVANT -- "bike rack" is for "mount bike on car", NOT for "mount stuff on bike".
+                    // {"item": "bike_rack"},
+                    // Normally having a front and rear basket would be nice (+40L storage).
+                    // But with the debug_backpack, I don't care.
+                    // There are also no bike-compatible panniers/saddlebags.
+                    // {"item": "bike_basket", "count": 2},
+
+                    // grapnel is especially useful for getting out of the Hub 01 mission to the fallen skyscraper.
                     {"item": "grapnel", "custom-flags": ["no_auto_equip"]},
+                    {"item": "towel", "custom-flags": ["no_auto_equip"]},
                     {"item": "sleeping_bag_roll", "custom-flags": ["no_auto_equip"]},
 
                     { "item": "survivor_rig" },
@@ -830,13 +892,16 @@
                       "contents-item": [
                           "eink_tablet_pc",
                           "cordless_drill"]},
+                    // Putting the UPS or battery into the drill is a fucking pain.
+                    { "item": "hand_drill"}, 
                     { "item": "match", "charges": 500 },
                     // FIXME: "charges" isn't working for string?
-                    // { "item": "string_36", "charges": 500 },
-                    // { "item": "string_6", "charges": 500 },
-                    // { "item": "2x4", "charges": 100 },
-                    // { "item": "stick", "charges": 100 },
+                    { "item": "string_36", "count": 500 },
+                    { "item": "string_6", "count": 500 },
+                    { "item": "2x4", "count": 40 },
+                    { "item": "stick", "count": 60 },
                     { "item": "duct_tape", "charges": 500 },
+                    { "item": "superglue", "count": 100 },
                     { "item": "nail", "charges": 500 },
 
                     // This replaces the IFAK packages.
@@ -845,49 +910,189 @@
                     { "item": "bandages", "count": 50 },
                     { "item": "adhesive_bandages", "count": 50 },
                     { "item": "quikclot", "count": 10 },
+                    { "item": "arm_splint", "count": 2 },
+                    { "item": "leg_splint", "count": 2 },
 
+                    // Ugh.  UPS ends up being MORE fiddly, sometimes.
+                    {"item": "heavy_atomic_battery_cell", "count": 11, "charges": 10000},
+                    {"item": "light_atomic_battery_cell", "count": 11, "charges": 1000},
+                    {"item": "medium_atomic_battery_cell", "count": 11, "charges": 5000},
+                    {"item": "light_minus_atomic_battery_cell", "count": 11, "charges": 500},
+
+                    // Stuff that quest givers often ask for.
+                    {"item": "acoustic_guitar"},
+                    {"item": "holybook_quran"},
+                    {"item": "book_pneumatics"},
+                    {"item": "scrap", "count": 50},
+                    // {"item": "magnetron", "count": 25},
+                    {"item": "lens_small", "count": 5},
+                    {"item": "radiocontrol"},
+                    {"item": "box_small", "count": 40},
+                    {"item": "fertilizer_commercial", "count": 120},
+                    {"item": "disinfectant", "count": 50},
+                    {"item": "survivor_hairtrimmer"},
+                    {"item": "anesthetic_kit", "charges": 6000},
+                    {"item": "medium_battery_cell", "charges": 500, "count": 6},
+                    {"item": "bone", "count": 8},
+                    {"item": "inhaler", "count": 2},
+                    {"item": "box_cigarette", "count": 20, "contents-item": ["cig", "cig", "cig", "cig", "cig", "cig", "cig", "cig", "cig", "cig", "cig", "cig", "cig", "cig", "cig", "cig", "cig", "cig", "cig", "cig"]},
+                    // {"item": "cig", "count": 10, "charges": 20},
+                    {"item": "bag_zipper_gallon", "contents-item": ["weed", "weed", "weed", "weed", "weed", "weed", "weed", "weed", "weed", "weed"]},
+
+                    // If I have a bunch of MREs in my backpack, every time I open the "i" or "d" or "w" menus, the game hangs at 100% CPU for like 10-20 seconds.
+                    // It doesn't do this for the "/" menu.
+                    // To try to combat this, assign individual components from the MREs instead?
+                    // I also want stuff that'll last for at least a season, maybe forever i.e. "sealed": true...
+                    //
                     // This replaces the MRE packages.
                     // Putting them together makes the inventory menu less annoying.
-                    { "item": "chocolate_military", "charges": 50 },
-                    { "item": "fruit_leather", "charges": 50 },
-                    { "item": "cheese_hard", "charges": 100 },
-                    // FIXME: "charges" isn't working for this item?
-                    { "item": "can_cheese", "charges": 100 },
-                    // FIXME: "charges" isn't working for this item?
-                    { "item": "spread_peanutbutter", "charges": 100 },
-                    // FIXME: "charges" isn't working for this item?
-                    { "item": "crackers", "charges": 1000 },
-                    { "item": "flour", "charges": 100 },
-                    { "item": "mre_ravioli", "charges": 10 },
+                    // Can't have charges in chocolate_military, fruit_leather, cheese_hard, can_cheese, spread_peanutbutter, crackers, flour, mre_ravioli,  anymore -- why?
+                    { "item": "chocolate_military", "count": 50 },
+                    { "item": "fruit_leather", "count": 50 },
+                    { "item": "cheese_hard", "count": 100 },
+                    { "item": "can_cheese", "count": 100 },
+                    { "item": "spread_peanutbutter", "count": 100 },
+                    { "item": "crackers", "count": 100 },
+                    { "item": "flour", "count": 100 },
+                    { "item": "mre_ravioli", "count": 10 },
 
 
                     { "container-item": "metal_tank", "item": "water_clean", "charges": 800 },
-                    { "container-item": "metal_tank", "item": "water", "charges": 800 },
+                    { "item": "metal_tank"},
                     { "container-item": "metal_tank", "item": "salt_water", "charges": 800 },
 
+                    // Sledges are useful for opening jammed safes and doors.
+                    // The alternative would be a rocket launcher, maybe.
+                    // You can also cut open doors with a cutting torch, BUT
+                    // if you try that on a jammed gun safe, it'll detonate all the ammo within!
+                    // PS: what actually matters is having a high single-hit bash damage.
+                    // The heavy sledge was knackering me very quickly, and
+                    // didn't seem to get through doors any faster than the short sledg.
+                    // {"item": "hammer_sledge_short"},
+                    {"item": "hammer_sledge"},
+                    {"item": "hammer_sledge_heavy"},
+                    {"item": "m4_carlgustav", "ammo-item": "84x246mm_hedp", "charges": 1, "contents-item": ["modern_handguard", "match_trigger", "rifle_scope_high_end_mount", "holo_sight"]},
+                    {"item": "84x246mm_hedp", "count": 6},
+                    {"item": "m320", "ammo-item": "40x46mm_m433", "charges": 1, "contents-item": ["rifle_scope_high_end_mount", "holo_sight"]},
+                    {"item": "40x46mm_m433", "count": 15},
+                    // The knife is real fast and fun for combat, but
+                    // I would also like to have something with reach attacks.
+                    // What's the difference between REACH_ATTACK and REACH3?
+                    // The latter is only on bullwhip and pike (all variants).
+                    // The RM42 actually gives REACH_ATTACK when mounted on a gun.
+                    // Although I think then I have to NOT use Taekwondo, so
+                    // I attack with my bayonet instead of my feet...
+                    {"item": "bullwhip"},
+                    // I also had fun running around with a sword for a while.
+                    {"item": "qt_nodachi"},
+                    {"item": "qt_katana"},
+                    {"item": "qt_wakizashi"},
+                    // For just bumbling around having fun,
+                    // it's nice to have stuff that shoots the most common rounds.
+                    // These are 5.57×45mm NATO, 9×19mm Luger, and 00 shot.
+                    // Fuck these calibres:
+                    //
+                    //   .50 Beowulf
+                    //   .303 British
+                    //   5.7 (guns keep jamming for some reason???)
+                    //   7.62×53mmR (Mosin)
+                    //   7.62×39mm (AKM)
+                    //   5.45×39mm (AK-74)
+                    //   .30 Carbine (M1 Carbine)
+                    //   .30-06 (M1 Garand, Springfield)
+                    //   .32, .380, ,38, .454, .460
+                    //   .45 Colt (NOTE: not the same as .45 ACP!)
+                    //   4.6mm (HK MP7)
+                    //   .300 BLK
+                    //   .357 SIG
+                    //   700 NX
+                    //   7.62×25 (Tokarev)
+                    //   45-70 Government
+                    //   .50 BMG (maybe keep this one?)
+                    //
+                    // Likewise the most common magazines are STANAG (up to 150rd).
+                    // Fuck these guns with custom magazines:
+                    //
+                    //   S&W 22A
+                    //   AUG
+                    //   BAR
+                    //   Bren 2
+                    //   Browning BLR
+                    //   Hi-Point *
+                    //   Walther *
+                    //   HK *
+                    //   Vector SMG
+                    //   M3, M9, M11, M17, M18
+                    //   FN *
+                    //   Ruger Mini-14
+                    //   SIG (except the Stg 553)
+                    //
+                    // The 7.62×51mm NATO (M80) is kinda nice in an
+                    // M14 EBR or something that takes FAL 30rd mags?
+                    // Or just in an belt-fed single-shot M60 Civilian?
+                    // I tried putting a single-shot trigger into an M249, but
+                    // it broke right away.
+                    //
+                    // The American-180 is fun for leaving on burst
+                    // and just burning through weak zombies.
+                    //
+                    // I kinda want to just have a complete collection
+                    // of glocks, just so I can occasionally have fun
+                    // throwing a bunch of random pistol cartridges
+                    // downrange?  The COP Derringer was also fun for this.
+                    //
+                    // When I've been just throwing random bullets downrange,
+                    // I found that the FMJ is better.  Typically it's -2dam +10AP,
+                    // which lets me push over SWAT dudes in 1 shot instead of 2.
+                    {"item": "american_180", "charges": 275, "ammo-item": "22_fmj", "contents-item": ["pistol_grip", "modern_handguard","suppressor_compact", "match_trigger", "holo_sight", "stabilizer", "butt_hook", "cheek_pad", "high_end_folding_stock"]},
+                    {"item": "a180mag4", "count": 3, "charges": 275, "ammo-item": "22_fmj"},
+                    // {"item": "glock_18c", "charges": 100, "ammo-item": "9mmfmj", "contents-item": [ ]},
+                    {"item": "glock_19", "charges": 100, "ammo-item": "9mmfmj", "contents-item": ["pistol_grip", "glocksear", "suppressor_compact", "match_trigger", "pistol_scope", "pistol_stock", "rail_laser_sight", "grip_mod"]},
+                    {"item": "glock_drum_100rd", "count": 3, "charges": 100, "ammo-item": "9mmfmj"},
+                    {"item": "glock_20", "charges": 30, "ammo-item": "10mm_fmj", "contents-item": ["pistol_grip", "glocksear", "suppressor_compact", "match_trigger", "pistol_scope", "pistol_stock", "rail_laser_sight", "grip_mod"]},
+                    {"item": "tdi_10mm_mag", "count": 3, "charges": 30, "ammo-item": "10mm_fmj"},
+                    {"item": "glock_21", "charges": 26, "ammo-item": "45_acp", "contents-item": ["pistol_grip", "glocksear", "suppressor_compact", "match_trigger", "pistol_scope", "pistol_stock", "rail_laser_sight", "grip_mod"]},
+                    {"item": "glock_21mag26", "count": 3, "charges": 26, "ammo-item": "45_acp"},
+                    {"item": "glock_22", "charges": 22, "ammo-item": "40fmj", "contents-item": ["pistol_grip", "glocksear", "suppressor_compact", "match_trigger", "pistol_scope", "pistol_stock", "rail_laser_sight", "grip_mod"]},
+                    {"item": "glock40bigmag", "count": 3, "charges": 26, "ammo-item": "40fmj"},
+                    {"item": "sig_assault_rifle", "charges": 150, "ammo-item": "556_m855a1", "contents-item": ["pistol_grip", "suppressor", "modern_handguard", "match_trigger", "rifle_scope_high_end_mount", "holo_sight", "stabilizer", "butt_hook", "cheek_pad"]},
+                    {"item": "stanag150", "count": 3, "charges": 150, "ammo-item": "556_m855a1"},
+                    // I had fun with the KSG (14 mag).
+                    // The Tavor-12 (15 mag) and KSG-25 (24 mag) look similar.
+                    {"item": "tavor_12", "charges": 5, "contents-item": ["shot_suppressor", "match_trigger", "holo_sight"]},
+                    {"item": "shot_00", "count": 50},
 
+
+                    // For a very strong character, this is a super nice weapon.
+                    // This is my go-to weapon for mook zombies, because
+                    // I don't have to keep reloading magazines or finding more ammo.
                     { "item": "compbow",
-                      "ammo-item": "arrow_cf", "charges": 1,
+                      "custom-flags": [ "auto_wield" ],
+                      // "ammo-item": "arrow_cf", "charges": 1,
                       "contents-item": [ "arrowrest", "bow_stabilizer_set", "bow_silencer", "laser_sight", "bow_scope" ]},
                     { "item": "arrow_cf", "charges": 1000 },
 
-                    // { "item": "rm11b_sniper_rifle",
-                    //   "magazine": "8x40_25_mag",
-                    //   "ammo-item": "8mm_inc", "charges": 25,
-                    //   "custom-flags": [ "auto_wield" ],
-                    //   "contents-item": [ "modern_handguard", "pistol_grip", "match_trigger", "stabilizer"]},
-                    // { "item": "8x40_25_mag", "ammo-item": "8mm_inc", "charges": 25 },
-                    // { "item": "8x40_25_mag", "ammo-item": "8mm_inc", "charges": 25 },
-                    // { "item": "8x40_25_mag", "ammo-item": "8mm_inc", "charges": 25 },
-                    // { "item": "8x40_25_mag", "ammo-item": "8mm_inc", "charges": 25 },
-                    // { "item": "8x40_25_mag", "ammo-item": "8mm_inc", "charges": 25 },
-                    // { "item": "8x40_25_mag", "ammo-item": "8mm_inc", "charges": 25 },
+                    // I thought this one would be really nice, when
+                    // I thought stealth and engaging at max distance was important.
+                    // But the RM88 holds literally 10 times more ammo per magazine, and
+                    // can burst fire for "oh fuck" stuff like shoggoths.
+                    { "item": "rm11b_sniper_rifle",
+                      // "magazine": "8x40_25_mag",
+                      "ammo-item": "8mm_inc", "charges": 25,
+                      "contents-item": [ "modern_handguard", "pistol_grip", "match_trigger", "stabilizer"]},
+                    { "item": "8x40_25_mag", "ammo-item": "8mm_inc", "charges": 25 },
+                    { "item": "8x40_25_mag", "ammo-item": "8mm_inc", "charges": 25 },
+                    { "item": "8x40_25_mag", "ammo-item": "8mm_inc", "charges": 25 },
+                    { "item": "8x40_25_mag", "ammo-item": "8mm_inc", "charges": 25 },
+                    { "item": "8x40_25_mag", "ammo-item": "8mm_inc", "charges": 25 },
+                    { "item": "8x40_25_mag", "ammo-item": "8mm_inc", "charges": 25 },
 
+                    // This is one of my favourite "oh fuck" weapons.
+                    // It's very loud and the ammo is relatively heavy.
                     { "item": "rm88_battle_rifle",
-                      "magazine": "8x40_250_mag",
+                      // "magazine": "8x40_250_mag",
                       "ammo-item": "8mm_inc", "charges": 250,
-                      "custom-flags": [ "auto_wield" ],
-                      "contents-item": [ "modern_handguard", "pistol_grip", "match_trigger", "stabilizer", "butt_hook", "recoil_stock", "rifle_scope_high_end_mount", "red_dot_sight"]},
+                      "contents-item": [ "modern_handguard", "pistol_grip", "match_trigger", "stabilizer", "butt_hook", "recoil_stock", "rifle_scope_high_end_mount", "holo_sight"]},
                     { "item": "8x40_250_mag", "ammo-item": "8mm_inc", "charges": 250 },
                     { "item": "8x40_250_mag", "ammo-item": "8mm_inc", "charges": 250 },
 
