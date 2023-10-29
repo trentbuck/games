@@ -1,4 +1,79 @@
 [
+    // The "achievements" stuff is per-world.
+    // So if you make a new world, you need to drop back down below
+    // "all 10" skills again, to unlock 3->4 and 6->7 again...
+    {
+        "type": "profession",
+        "subtype": "hobby",
+        "id": "cheater_skill6",
+        "name": {"male": "Cheater (all skills 6)", "female": "Cheatress (all skills 6)"},
+        "description": "You never prosper.",
+        "points": -1111,
+        "skills": [
+            { "level": 6, "name": "speech" },
+            { "level": 6, "name": "computer" },
+            { "level": 6, "name": "firstaid" },
+            { "level": 6, "name": "mechanics" },
+            { "level": 6, "name": "traps" },
+            { "level": 6, "name": "driving" },
+            { "level": 6, "name": "swimming" },
+            { "level": 6, "name": "fabrication" },
+            { "level": 6, "name": "cooking" },
+            { "level": 6, "name": "tailor" },
+            { "level": 6, "name": "survival" },
+            { "level": 6, "name": "electronics" },
+            { "level": 6, "name": "archery" },
+            { "level": 6, "name": "gun" },
+            { "level": 6, "name": "launcher" },
+            { "level": 6, "name": "pistol" },
+            { "level": 6, "name": "rifle" },
+            { "level": 6, "name": "shotgun" },
+            { "level": 6, "name": "smg" },
+            { "level": 6, "name": "throw" },
+            { "level": 6, "name": "melee" },
+            { "level": 6, "name": "bashing" },
+            { "level": 6, "name": "cutting" },
+            { "level": 6, "name": "dodge" },
+            { "level": 6, "name": "stabbing" },
+            { "level": 6, "name": "unarmed" },
+            { "level": 6, "name": "chemistry" }]},
+    {
+        "type": "profession",
+        "subtype": "hobby",
+        "id": "cheater_skill10",
+        "name": {"male": "Cheater (all skills 10)", "female": "Cheatress (all skills 10)"},
+        "description": "You never prosper.",
+        "points": -1111,
+        "skills": [
+            { "level": 10, "name": "speech" },
+            { "level": 10, "name": "computer" },
+            { "level": 10, "name": "firstaid" },
+            { "level": 10, "name": "mechanics" },
+            { "level": 10, "name": "traps" },
+            { "level": 10, "name": "driving" },
+            { "level": 10, "name": "swimming" },
+            { "level": 10, "name": "fabrication" },
+            { "level": 10, "name": "cooking" },
+            { "level": 10, "name": "tailor" },
+            { "level": 10, "name": "survival" },
+            { "level": 10, "name": "electronics" },
+            { "level": 10, "name": "archery" },
+            { "level": 10, "name": "gun" },
+            { "level": 10, "name": "launcher" },
+            { "level": 10, "name": "pistol" },
+            { "level": 10, "name": "rifle" },
+            { "level": 10, "name": "shotgun" },
+            { "level": 10, "name": "smg" },
+            { "level": 10, "name": "throw" },
+            { "level": 10, "name": "melee" },
+            { "level": 10, "name": "bashing" },
+            { "level": 10, "name": "cutting" },
+            { "level": 10, "name": "dodge" },
+            { "level": 10, "name": "stabbing" },
+            { "level": 10, "name": "unarmed" },
+            { "level": 10, "name": "chemistry" }]},
+
+
     {
         // Using a hobby (background) instead of a profession or scenario, as
         // you can choose more than one, and scenarios generally do not restrict them.
@@ -42,10 +117,14 @@
             // "STYLISH",
             "LIGHTSTEP",
             "EAGLEEYED",
+            // +5 Taekwondo is great to avoid smashing your rifle to pieces when accidentally smacking a zombie.
             "MARTIAL_ARTS",
+            // +1 Ninjutsu is fun to switch to a sword and chop up motherfuckers.
             "MARTIAL_ARTS2",
-            "MARTIAL_ARTS3",
-            "MARTIAL_ARTS5",
+            // -1 These are all boring, and I'm sick of clicking through it in the new game menu.
+            // "MARTIAL_ARTS3",
+            // Two Heavens Style is fun alternative to Ninjutsu.
+            // "MARTIAL_ARTS5",
             "EASYSLEEPER",
             // "PROJUNK",
             "OPTIMISTIC",
@@ -158,33 +237,33 @@
 
         "//skills": "If you set them all to 10, you never experience the training system at all...",
         "skills": [
-            { "level": 6, "name": "speech" },
-            { "level": 6, "name": "computer" },
-            { "level": 6, "name": "firstaid" },
-            { "level": 6, "name": "mechanics" },
-            { "level": 6, "name": "traps" },
-            { "level": 6, "name": "driving" },
-            { "level": 6, "name": "swimming" },
-            { "level": 6, "name": "fabrication" },
-            { "level": 6, "name": "cooking" },
-            { "level": 6, "name": "tailor" },
-            { "level": 6, "name": "survival" },
-            { "level": 6, "name": "electronics" },
-            { "level": 6, "name": "archery" },
-            { "level": 6, "name": "gun" },
-            { "level": 6, "name": "launcher" },
-            { "level": 6, "name": "pistol" },
-            { "level": 6, "name": "rifle" },
-            { "level": 6, "name": "shotgun" },
-            { "level": 6, "name": "smg" },
-            { "level": 6, "name": "throw" },
-            { "level": 6, "name": "melee" },
-            { "level": 6, "name": "bashing" },
-            { "level": 6, "name": "cutting" },
-            { "level": 6, "name": "dodge" },
-            { "level": 6, "name": "stabbing" },
-            { "level": 6, "name": "unarmed" },
-            { "level": 6, "name": "chemistry" }]  },
+            { "level": 3, "name": "speech" },
+            { "level": 3, "name": "computer" },
+            { "level": 3, "name": "firstaid" },
+            { "level": 3, "name": "mechanics" },
+            { "level": 3, "name": "traps" },
+            { "level": 3, "name": "driving" },
+            { "level": 3, "name": "swimming" },
+            { "level": 3, "name": "fabrication" },
+            { "level": 3, "name": "cooking" },
+            { "level": 3, "name": "tailor" },
+            { "level": 3, "name": "survival" },
+            { "level": 3, "name": "electronics" },
+            { "level": 3, "name": "archery" },
+            { "level": 3, "name": "gun" },
+            { "level": 3, "name": "launcher" },
+            { "level": 3, "name": "pistol" },
+            { "level": 3, "name": "rifle" },
+            { "level": 3, "name": "shotgun" },
+            { "level": 3, "name": "smg" },
+            { "level": 3, "name": "throw" },
+            { "level": 3, "name": "melee" },
+            { "level": 3, "name": "bashing" },
+            { "level": 3, "name": "cutting" },
+            { "level": 3, "name": "dodge" },
+            { "level": 3, "name": "stabbing" },
+            { "level": 3, "name": "unarmed" },
+            { "level": 3, "name": "chemistry" }]  },
 
     {
         "type": "profession",
@@ -221,6 +300,10 @@
         "name": {"male": "Cheater", "female": "Cheatress"},
         "description": "You never prosper.",
         "points": -1111,
+
+        // "vehicle": "superbike",
+        "vehicle": "surv_car",
+        // "vehicle": "surv_rv",
 
         "// MAYBE CBMS":
         [
@@ -301,7 +384,6 @@
                     "metal_smoother",
                     "mop_folded",
                     "butchering_kit",
-                    "stethoscope",
                     "hose",
                     "crowbar",
                     "punch_nail",
@@ -847,37 +929,35 @@
                     // { "item": "folded_inflatable_boat" },
                     // { "item": "folded_skateboard_generic" },
                     // Unicycle folds up as well, but can't be spawned pre-folded???
-
-
-                    // Build your own folding bicycle/unicycle?
-                    // I notice that "folded_bicycle" is using "foldable light frame" (steel), but
-                    // regular bicycles use "extra light frame" (aluminium).
-                    // Maybe we want both those properties (foldable extra-light frame).
-                    {"item": "foldxlframe", "count": 5}, {"item": "nuts_bolts", "count": 2}, {"item": "welding_wire_alloy", "count": 20},
-                    {"item": "saddle"},
-                    {"item": "foot_crank"},
-                    {"item": "alternator_bicycle"},
-                    {"item": "wheel_bicycle_or", "count": 3}, {"item": "tire_bicycle_or", "count": 3}, {"item": "welding_wire_alloy", "count": 20},
-                    {"item": "wheel_bicycle", "count": 3}, {"item": "tire_bicycle", "count": 3}, {"item": "welding_wire_alloy", "count": 20},
-                    // Need handle for unicycle but not bicycle?
-                    // {"item": "handle"}, {"item": "pipe", "count": 10},
-                    // Add a spike to the front for ramming damage? ... meh, looks ugly in the sprite.
-                    // {"item": "spike"},
-                    // tiny electric motor
-                    // {"item": "small_storage_battery"},
-                    // controls
-                    // electronic control unit
-                    // NOT RELEVANT -- "bike rack" is for "mount bike on car", NOT for "mount stuff on bike".
-                    // {"item": "bike_rack"},
-                    // Normally having a front and rear basket would be nice (+40L storage).
-                    // But with the debug_backpack, I don't care.
-                    // There are also no bike-compatible panniers/saddlebags.
-                    // {"item": "bike_basket", "count": 2},
+                    // // Build your own folding bicycle/unicycle?
+                    // // I notice that "folded_bicycle" is using "foldable light frame" (steel, 19kg total), but
+                    // // regular bicycles use "extra light frame" (aluminium, 9kg total).
+                    // // Maybe we want both those properties (foldable extra-light frame).
+                    // {"item": "foldxlframe", "count": 3}, {"item": "nuts_bolts", "count": 2}, {"item": "welding_wire_alloy", "count": 20},
+                    // {"item": "saddle"},
+                    // {"item": "foot_crank"},
+                    // // {"item": "alternator_bicycle"},
+                    // {"item": "wheel_mount_light", "count": 2}, {"item": "wheel_bicycle_or", "count": 2}, {"item": "tire_bicycle_or", "count": 2}, {"item": "welding_wire_steel", "count": 20},
+                    // // Need handle for unicycle but not bicycle?
+                    // // {"item": "handle"}, {"item": "pipe", "count": 10},
+                    // // Add a spike to the front for ramming damage? ... meh, looks ugly in the sprite.
+                    // // {"item": "spike"},
+                    // // tiny electric motor
+                    // // {"item": "small_storage_battery"},
+                    // // controls
+                    // // electronic control unit
+                    // // NOT RELEVANT -- "bike rack" is for "mount bike on car", NOT for "mount stuff on bike".
+                    // // {"item": "bike_rack"},
+                    // // Normally having a front and rear basket would be nice (+40L storage).
+                    // // But with the debug_backpack, I don't care.
+                    // // There are also no bike-compatible panniers/saddlebags.
+                    // // {"item": "bike_basket", "count": 2},
 
                     // grapnel is especially useful for getting out of the Hub 01 mission to the fallen skyscraper.
                     {"item": "grapnel", "custom-flags": ["no_auto_equip"]},
                     {"item": "towel", "custom-flags": ["no_auto_equip"]},
                     {"item": "sleeping_bag_roll", "custom-flags": ["no_auto_equip"]},
+                    {"item": "stethoscope", "custom-flags": ["no_auto_equip"]},
 
                     { "item": "survivor_rig" },
                     { "item": "survivor_belt_notools" },
@@ -898,8 +978,8 @@
                     // FIXME: "charges" isn't working for string?
                     { "item": "string_36", "count": 500 },
                     { "item": "string_6", "count": 500 },
-                    { "item": "2x4", "count": 40 },
-                    { "item": "stick", "count": 60 },
+                    { "item": "2x4", "count": 20 },
+                    { "item": "stick", "count": 20 },
                     { "item": "duct_tape", "charges": 500 },
                     { "item": "superglue", "count": 100 },
                     { "item": "nail", "charges": 500 },
@@ -908,10 +988,13 @@
                     // Putting them together makes the inventory menu less annoying.
                     // FIXME: "charges" isn't working for this item?
                     { "item": "bandages", "count": 50 },
-                    { "item": "adhesive_bandages", "count": 50 },
+                    // { "item": "adhesive_bandages", "count": 50 },
                     { "item": "quikclot", "count": 10 },
                     { "item": "arm_splint", "count": 2 },
                     { "item": "leg_splint", "count": 2 },
+                    { "item": "flu_shot" },
+                    { "item": "wrapped_rad_badge" },
+
 
                     // Ugh.  UPS ends up being MORE fiddly, sometimes.
                     {"item": "heavy_atomic_battery_cell", "count": 11, "charges": 10000},
@@ -920,7 +1003,7 @@
                     {"item": "light_minus_atomic_battery_cell", "count": 11, "charges": 500},
 
                     // Stuff that quest givers often ask for.
-                    {"item": "acoustic_guitar"},
+                    {"item": "acoustic_guitar", "custom-flags": ["no_auto_equip"]},
                     {"item": "holybook_quran"},
                     {"item": "book_pneumatics"},
                     {"item": "scrap", "count": 50},
@@ -934,9 +1017,8 @@
                     {"item": "anesthetic_kit", "charges": 6000},
                     {"item": "medium_battery_cell", "charges": 500, "count": 6},
                     {"item": "bone", "count": 8},
-                    {"item": "inhaler", "count": 2},
-                    {"item": "box_cigarette", "count": 20, "contents-item": ["cig", "cig", "cig", "cig", "cig", "cig", "cig", "cig", "cig", "cig", "cig", "cig", "cig", "cig", "cig", "cig", "cig", "cig", "cig", "cig"]},
-                    // {"item": "cig", "count": 10, "charges": 20},
+                    {"item": "inhaler", "count": 2, "charges": 100},
+                    {"container-item": "box_cigarette", "item": "cig", "count": 200},
                     {"item": "bag_zipper_gallon", "contents-item": ["weed", "weed", "weed", "weed", "weed", "weed", "weed", "weed", "weed", "weed"]},
 
                     // If I have a bunch of MREs in my backpack, every time I open the "i" or "d" or "w" menus, the game hangs at 100% CPU for like 10-20 seconds.
@@ -946,7 +1028,6 @@
                     //
                     // This replaces the MRE packages.
                     // Putting them together makes the inventory menu less annoying.
-                    // Can't have charges in chocolate_military, fruit_leather, cheese_hard, can_cheese, spread_peanutbutter, crackers, flour, mre_ravioli,  anymore -- why?
                     { "item": "chocolate_military", "count": 50 },
                     { "item": "fruit_leather", "count": 50 },
                     { "item": "cheese_hard", "count": 100 },
@@ -954,12 +1035,26 @@
                     { "item": "spread_peanutbutter", "count": 100 },
                     { "item": "crackers", "count": 100 },
                     { "item": "flour", "count": 100 },
-                    { "item": "mre_ravioli", "count": 10 },
+                    // { "item": "mre_ravioli", "count": 10 },
 
 
                     { "container-item": "metal_tank", "item": "water_clean", "charges": 800 },
                     { "item": "metal_tank"},
                     { "container-item": "metal_tank", "item": "salt_water", "charges": 800 },
+                    // kerosene = lamp_oil
+                    { "container-item": "jug_plastic", "item": "lamp_oil", "charges": 3750 },
+                    { "container-item": "jug_plastic", "item": "motor_oil", "charges": 3750 },
+                    { "container-item": "jug_plastic", "item": "gasoline", "charges": 3750 },
+                    { "container-item": "jug_plastic", "item": "diesel", "charges": 3750 },
+                    { "container-item": "jug_plastic", "item": "jp8", "charges": 3750 },
+                    { "container-item": "jug_plastic", "item": "chem_ethanol", "charges": 3750 },
+                    { "container-item": "jug_plastic", "item": "methed_alcohol", "charges": 3750 },
+                    { "container-item": "jug_plastic", "item": "denat_alcohol", "charges": 3750 },
+                    { "container-item": "jug_plastic", "item": "chem_acetone", "charges": 75 },
+                    { "container-item": "jug_plastic", "item": "ammonia_liquid", "charges": 15 },
+                    { "container-item": "jug_plastic", "item": "bleach", "charges": 30 },
+                    { "container-item": "jug_plastic", "item": "cooking_oil", "charges": 240 },
+                    { "container-item": "jug_plastic", "item": "napalm", "charges": 3750 },
 
                     // Sledges are useful for opening jammed safes and doors.
                     // The alternative would be a rocket launcher, maybe.
@@ -971,7 +1066,7 @@
                     // {"item": "hammer_sledge_short"},
                     {"item": "hammer_sledge"},
                     {"item": "hammer_sledge_heavy"},
-                    {"item": "m4_carlgustav", "ammo-item": "84x246mm_hedp", "charges": 1, "contents-item": ["modern_handguard", "match_trigger", "rifle_scope_high_end_mount", "holo_sight"]},
+                    {"item": "m4_carlgustav", "ammo-item": "84x246mm_hedp", "charges": 1, "contents-item": ["modern_handguard", "match_trigger", "rifle_scope_high_end_mount", "holo_sight", "light_grip"]},
                     {"item": "84x246mm_hedp", "count": 6},
                     {"item": "m320", "ammo-item": "40x46mm_m433", "charges": 1, "contents-item": ["rifle_scope_high_end_mount", "holo_sight"]},
                     {"item": "40x46mm_m433", "count": 15},
@@ -1044,23 +1139,30 @@
                     // When I've been just throwing random bullets downrange,
                     // I found that the FMJ is better.  Typically it's -2dam +10AP,
                     // which lets me push over SWAT dudes in 1 shot instead of 2.
-                    {"item": "american_180", "charges": 275, "ammo-item": "22_fmj", "contents-item": ["pistol_grip", "modern_handguard","suppressor_compact", "match_trigger", "holo_sight", "stabilizer", "butt_hook", "cheek_pad", "high_end_folding_stock"]},
+                    {"item": "american_180", "charges": 275, "ammo-item": "22_fmj", "contents-item": ["pistol_grip", "modern_handguard", "match_trigger", "holo_sight", "high_end_folding_stock"]},
                     {"item": "a180mag4", "count": 3, "charges": 275, "ammo-item": "22_fmj"},
                     // {"item": "glock_18c", "charges": 100, "ammo-item": "9mmfmj", "contents-item": [ ]},
-                    {"item": "glock_19", "charges": 100, "ammo-item": "9mmfmj", "contents-item": ["pistol_grip", "glocksear", "suppressor_compact", "match_trigger", "pistol_scope", "pistol_stock", "rail_laser_sight", "grip_mod"]},
+                    {"item": "glock_19", "charges": 100, "ammo-item": "9mmfmj", "contents-item": ["pistol_grip", "glocksear", "match_trigger", "pistol_scope"]},
                     {"item": "glock_drum_100rd", "count": 3, "charges": 100, "ammo-item": "9mmfmj"},
-                    {"item": "glock_20", "charges": 30, "ammo-item": "10mm_fmj", "contents-item": ["pistol_grip", "glocksear", "suppressor_compact", "match_trigger", "pistol_scope", "pistol_stock", "rail_laser_sight", "grip_mod"]},
+                    {"item": "glock_20", "charges": 30, "ammo-item": "10mm_fmj", "contents-item": ["pistol_grip", "glocksear",  "match_trigger", "pistol_scope"]},
                     {"item": "tdi_10mm_mag", "count": 3, "charges": 30, "ammo-item": "10mm_fmj"},
-                    {"item": "glock_21", "charges": 26, "ammo-item": "45_acp", "contents-item": ["pistol_grip", "glocksear", "suppressor_compact", "match_trigger", "pistol_scope", "pistol_stock", "rail_laser_sight", "grip_mod"]},
+                    {"item": "glock_21", "charges": 26, "ammo-item": "45_acp", "contents-item": ["pistol_grip", "glocksear",  "match_trigger", "pistol_scope"]},
                     {"item": "glock_21mag26", "count": 3, "charges": 26, "ammo-item": "45_acp"},
-                    {"item": "glock_22", "charges": 22, "ammo-item": "40fmj", "contents-item": ["pistol_grip", "glocksear", "suppressor_compact", "match_trigger", "pistol_scope", "pistol_stock", "rail_laser_sight", "grip_mod"]},
+                    {"item": "glock_22", "charges": 22, "ammo-item": "40fmj", "contents-item": ["pistol_grip", "glocksear",  "match_trigger", "pistol_scope"]},
                     {"item": "glock40bigmag", "count": 3, "charges": 26, "ammo-item": "40fmj"},
-                    {"item": "sig_assault_rifle", "charges": 150, "ammo-item": "556_m855a1", "contents-item": ["pistol_grip", "suppressor", "modern_handguard", "match_trigger", "rifle_scope_high_end_mount", "holo_sight", "stabilizer", "butt_hook", "cheek_pad"]},
+                    {"item": "modular_m16a4", "charges": 150, "ammo-item": "556_m855a1", "contents-item": ["pistol_grip", "modern_handguard", "match_trigger", "holo_magnifier", "holo_sight", "butt_hook", "high_end_folding_stock"]},
                     {"item": "stanag150", "count": 3, "charges": 150, "ammo-item": "556_m855a1"},
+                    {"item": "m14ebr", "charges": 20, "ammo-item": "762_51_incendiary", "contents-item": ["pistol_grip", "modern_handguard", "match_trigger", "holo_magnifier", "holo_sight", "butt_hook", "high_end_folding_stock"]},
+                    {"item": "m14mag", "count": 5, "charges": 20, "ammo-item": "762_51_incendiary"},
                     // I had fun with the KSG (14 mag).
                     // The Tavor-12 (15 mag) and KSG-25 (24 mag) look similar.
-                    {"item": "tavor_12", "charges": 5, "contents-item": ["shot_suppressor", "match_trigger", "holo_sight"]},
+                    {"item": "tavor_12", "charges": 5, "contents-item": ["match_trigger", "holo_sight"]},
                     {"item": "shot_00", "count": 50},
+
+                    // When there's a batch of like 20+ weak zombies packed together,
+                    // I like to toss a grenade and duck around a corner.
+                    {"item": "grenade", "count": 50},
+                    {"item": "grenade_inc", "count": 50},
 
 
                     // For a very strong character, this is a super nice weapon.
@@ -1080,21 +1182,22 @@
                       // "magazine": "8x40_25_mag",
                       "ammo-item": "8mm_inc", "charges": 25,
                       "contents-item": [ "modern_handguard", "pistol_grip", "match_trigger", "stabilizer"]},
-                    { "item": "8x40_25_mag", "ammo-item": "8mm_inc", "charges": 25 },
-                    { "item": "8x40_25_mag", "ammo-item": "8mm_inc", "charges": 25 },
-                    { "item": "8x40_25_mag", "ammo-item": "8mm_inc", "charges": 25 },
-                    { "item": "8x40_25_mag", "ammo-item": "8mm_inc", "charges": 25 },
-                    { "item": "8x40_25_mag", "ammo-item": "8mm_inc", "charges": 25 },
-                    { "item": "8x40_25_mag", "ammo-item": "8mm_inc", "charges": 25 },
+                    { "item": "8x40_25_mag", "count": 5, "ammo-item": "8mm_inc", "charges": 25 },
 
                     // This is one of my favourite "oh fuck" weapons.
                     // It's very loud and the ammo is relatively heavy.
                     { "item": "rm88_battle_rifle",
                       // "magazine": "8x40_250_mag",
                       "ammo-item": "8mm_inc", "charges": 250,
-                      "contents-item": [ "modern_handguard", "pistol_grip", "match_trigger", "stabilizer", "butt_hook", "recoil_stock", "rifle_scope_high_end_mount", "holo_sight"]},
-                    { "item": "8x40_250_mag", "ammo-item": "8mm_inc", "charges": 250 },
-                    { "item": "8x40_250_mag", "ammo-item": "8mm_inc", "charges": 250 },
+                      "contents-item": [
+                          // These aren't actually compatible with this rifle, BUT
+                          // the game doesn't stop me shoving them on.  Mua ha ha.
+                          "riv_scope", "riv_suppressor",
+                          // "rifle_scope_high_end_mount", "holo_sight"
+                          "modern_handguard", "pistol_grip", "match_trigger", "stabilizer", "butt_hook", "recoil_stock"
+                      ]},
+                    { "item": "8x40_250_mag", "count": 3, "ammo-item": "8mm_inc", "charges": 250 },
+
 
                     { "item": "8mm_inc", "charges": 5000 }]}}}]
 
