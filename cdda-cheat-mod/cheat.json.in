@@ -400,8 +400,6 @@
                     "improvised_oven",
                     "crucible",
                     "brazier",
-                    "oxy_torch",
-                    "weldtank", "weldtank",
                     "anvil", "hotcut", "drift", "clay_quern",
                     "tongs", "metalworking_tongs",
                     "battery_ups", "battery_ups", "battery_ups",
@@ -1039,7 +1037,7 @@
 
 
                     { "container-item": "metal_tank", "item": "water_clean", "charges": 800 },
-                    { "item": "metal_tank"},
+                    { "item": "metal_tank", "count": 2},
                     { "container-item": "metal_tank", "item": "salt_water", "charges": 800 },
                     // kerosene = lamp_oil
                     { "container-item": "jug_plastic", "item": "lamp_oil", "charges": 3750 },
@@ -1055,6 +1053,28 @@
                     { "container-item": "jug_plastic", "item": "bleach", "charges": 30 },
                     { "container-item": "jug_plastic", "item": "cooking_oil", "charges": 240 },
                     { "container-item": "jug_plastic", "item": "napalm", "charges": 3750 },
+
+
+                    // It's super duper useful to preserve stuff indefinitely using "sealed" items.
+                    // That means you need a bunch of water (can be dirty), a pressure cooker, a fire, and
+                    // sealable containers.  There are two available sealable containers,
+                    // https://github.com/CleverRaven/Cataclysm-DDA/blob/master/data/json/requirements/cooking_tools.json
+                    {"item": "pressure_cooker"},
+                    {"item": "pot_canning"},
+                    {"item": "jar_3l_glass_sealed", "count": 10},
+                    {"item": "jar_glass_sealed", "count": 20},
+
+                    // Smoked meat runs on a charcoal smoker.
+                    // That is charged with consumable charcoal.
+                    // You can make charcoal by burning wood (e.g. planks, logs) in a charcoal kiln.
+                    {"item": "char_smoker", "charges": 2000},
+                    {"item": "metal_tank_little", "count": 4},
+                    {"item": "pipe", "count": 32},
+                    {"item": "pipe_fittings", "count": 8},
+                    {"item": "oxy_torch", "charge": 350},
+                    {"item": "tinyweldtank", "charge": 350, "count": 3},
+                    {"item": "propane_torch", "charge": 3000},
+                    {"item": "small_propane_tank", "charge": 3000, "count": 3},
 
                     // Sledges are useful for opening jammed safes and doors.
                     // The alternative would be a rocket launcher, maybe.
