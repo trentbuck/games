@@ -974,7 +974,9 @@
                     { "item": "tailors_kit", "charges": 400 },
                     { "item": "large_repairkit", "charges": 9999 },
                     // Use this to avoid water damage to the equipment.
-                    { "item": "bag_zipper_gallon",
+                    { "item": "bag_zipper_gallon", "count": 10},
+                    { "item": "survivor_dry_bag"},
+                    { "item": "survivor_dry_duffelbag",
                       "contents-item": [
                           "eink_tablet_pc",
                           "cordless_drill"]},
@@ -1043,8 +1045,13 @@
                     { "item": "flour", "count": 100 },
                     // { "item": "mre_ravioli", "count": 10 },
 
-
-                    { "container-item": "metal_tank", "item": "water_clean", "charges": 800 },
+                    //   2L    = "metal_tank_little"
+                    //   3.75L = "jug_plastic"
+                    //  60L    = "metal_tank" (needed for some crafting)
+                    // 100L    = "30gal_drum", "30gal_drum_aluminum"
+                    // 200L    = "55gal_drum", "55gal_drum_aluminum", "55gal_drum_rubber" (collapsible)
+                    { "container-item": "55gal_drum_rubber", "item": "water_clean", "charges": 200 },
+                    { "container-item": "metal_tank", "item": "water_clean", "charges": 200 },
                     { "item": "metal_tank", "count": 2},
                     { "container-item": "metal_tank", "item": "salt_water", "charges": 800 },
                     // kerosene = lamp_oil
