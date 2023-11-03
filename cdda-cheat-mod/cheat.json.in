@@ -2,6 +2,8 @@
     // The "achievements" stuff is per-world.
     // So if you make a new world, you need to drop back down below
     // "all 10" skills again, to unlock 3->4 and 6->7 again...
+    // UPDATE: it's saved across worlds, but it's only saved once your achieving character dies.
+    //         If you delete the world before then, it isn't logged.
     {
         "type": "profession",
         "subtype": "hobby",
@@ -394,7 +396,8 @@
                     "chemistry_set",
                     "fishing_rod_professional",
                     "shears",
-                    "survivor_machete",
+                    "survivor_machete_qt",
+                    "spear_survivor",
                     "mortar_pestle",
                     "plastic_sheet",
                     "improvised_oven",
@@ -403,6 +406,11 @@
                     "anvil", "hotcut", "drift", "clay_quern",
                     "tongs", "metalworking_tongs",
                     "battery_ups", "battery_ups", "battery_ups",
+
+                    /////////////////////////////////////////////////////////////
+                    "mp3",
+                    /////////////////////////////////////////////////////////////
+
                     // BOOKZ --- only the books that have recipes you can't get automatically with high-enough skill level.
 
                     // == anthology.json ==
@@ -1071,10 +1079,10 @@
                     {"item": "metal_tank_little", "count": 4},
                     {"item": "pipe", "count": 32},
                     {"item": "pipe_fittings", "count": 8},
-                    {"item": "oxy_torch", "charge": 350},
-                    {"item": "tinyweldtank", "charge": 350, "count": 3},
-                    {"item": "propane_torch", "charge": 3000},
-                    {"item": "small_propane_tank", "charge": 3000, "count": 3},
+                    {"item": "oxy_torch"},
+                    {"item": "tinyweldtank", "count": 3},
+                    {"item": "propane_torch"},
+                    {"item": "small_propane_tank", "count": 3},
 
                     // Sledges are useful for opening jammed safes and doors.
                     // The alternative would be a rocket launcher, maybe.
@@ -1097,7 +1105,7 @@
                     // The RM42 actually gives REACH_ATTACK when mounted on a gun.
                     // Although I think then I have to NOT use Taekwondo, so
                     // I attack with my bayonet instead of my feet...
-                    {"item": "bullwhip"},
+                    {"item": "bullwhip"}, {"item": "pike"}, {"item": "lucern_hammer"},
                     // I also had fun running around with a sword for a while.
                     {"item": "qt_nodachi"},
                     {"item": "qt_katana"},
@@ -1184,6 +1192,23 @@
                     {"item": "grenade", "count": 50},
                     {"item": "grenade_inc", "count": 50},
 
+
+                    // "Fun" weapons for grinding the "not-fun" skills? (throwing, launcher, unarmed, blunt, piercing)
+                    {"item": "varmint_airgun"}, {"item": "airgun_pellet_hunting", "count": 5},
+                    {"item": "bbgun", "charges": 150}, {"item": "bb", "count": 5},
+                    {"item": "sling"}, {"item": "bearing", "count": 20},
+                    {"item": "staff_sling"}, {"item": "pool_ball", "count": 1000},
+                    {"item": "rm451_flamethrower", "ammo-item": "napalm", "charges": 4000}, {"item": "rm4504", "count": 3, "ammo-item": "napalm", "charges": 4000},
+                    {"item": "rm802"},
+                    {"item": "40x46mm_m576", "count": 20},
+                    {"item": "40x46mm_flechette_m199", "count": 20},
+                    {"item": "40x46mm_slug_m199", "count": 20},
+                    {"item": "40x46mm_hornets_nest_410", "count": 20},
+                    {"item": "40x46mm_hornets_nest_22lr", "count": 20},
+                    {"item": "qt_steel_staff"}, {"item": "qt_mace"}, {"item": "PR-24-extended"}, {"item": "bat-metal"},
+                    {"item": "qt_rapier"}, {"item": "qt_estoc"},
+                    {"item": "cestus"}, {"item": "knuckle_impact"}, {"item": "knuckle_skewer"},
+                    {"item": "spear_steel"}, {"item": "spear_dory"},
 
                     // For a very strong character, this is a super nice weapon.
                     // This is my go-to weapon for mook zombies, because
