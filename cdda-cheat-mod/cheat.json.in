@@ -1205,7 +1205,7 @@
                     {"item": "40x46mm_slug_m199", "count": 20},
                     {"item": "40x46mm_hornets_nest_410", "count": 20},
                     {"item": "40x46mm_hornets_nest_22lr", "count": 20},
-                    {"item": "qt_steel_staff"}, {"item": "qt_mace"}, {"item": "PR-24-extended"}, {"item": "bat-metal"},
+                    {"item": "qt_steel_staff"}, {"item": "qt_mace"}, {"item": "PR24-extended"}, {"item": "bat_metal"},
                     {"item": "qt_rapier"}, {"item": "qt_estoc"},
                     {"item": "cestus"}, {"item": "knuckle_impact"}, {"item": "knuckle_skewer"},
                     {"item": "spear_steel"}, {"item": "spear_dory"},
