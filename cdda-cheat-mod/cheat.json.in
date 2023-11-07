@@ -163,6 +163,7 @@
             "prof_wp_flying",
             "prof_physiology",
             "prof_wp_child",
+            "prof_wp_hymenoptera",
             "prof_wp_syn_armored",
             "prof_electromagnetics",
             "prof_burn_care",
@@ -182,6 +183,7 @@
             "prof_scav_cooking",
             // Casting 1000 copper daggers & 1000 XS gloves to train this is boring.
             // (adding blacksmith here is kinda extreme)
+            // This doesn't unlock properly, why????
             "prof_redsmithing",
             "prof_blacksmithing",
             "prof_metalworking",
@@ -975,8 +977,9 @@
                     { "item": "large_repairkit", "charges": 9999 },
                     // Use this to avoid water damage to the equipment.
                     { "item": "bag_zipper_gallon", "count": 10},
-                    { "item": "survivor_dry_bag"},
+                    { "item": "survivor_dry_bag", "custom-flags": ["no_auto_equip"]},
                     { "item": "survivor_dry_duffelbag",
+                      "custom-flags": ["no_auto_equip"],
                       "contents-item": [
                           "eink_tablet_pc",
                           "cordless_drill"]},
