@@ -1211,7 +1211,8 @@
                     // {"item": "modular_m16a4", "charges": 150, "ammo-item": "556_m855a1", "contents-item": ["pistol_grip", "modern_handguard", "match_trigger", "holo_magnifier", "holo_sight", "butt_hook", "high_end_folding_stock"]},
                     {"item": "rdb_223", "charges": 150, "ammo-item": "556_m855a1", "contents-item": ["match_trigger", "modern_handguard", "holo_sight", "holo_magnifier", "pistol_grip"]},
                     {"item": "stanag150", "count": 3, "charges": 150, "ammo-item": "556_m855a1"},
-                    {"item": "rfb_308", "charges": 50, "ammo-item": "762_51_incendiary", "contents-item": ["underbarrel_mount", "match_trigger", "modern_handguard", "acog_sight", "pistol_grip"]},
+                    // I wish this fucker could take 50-round mags.  MDRX can, but then it'll sort into "M's" instead of "Kel's".
+                    {"item": "rfb_308", "charges": 50, "ammo-item": "762_51_incendiary", "contents-item": ["underbarrel_mount", "match_trigger", "modern_handguard", "acog_scope", "pistol_grip"]},
                     {"item": "falbigmag", "count": 5, "charges": 30, "ammo-item": "762_51_incendiary"},
                     // {"item": "m14ebr", "charges": 20, "ammo-item": "762_51_incendiary", "contents-item": ["pistol_grip", "modern_handguard", "match_trigger", "holo_magnifier", "holo_sight", "butt_hook", "high_end_folding_stock"]},
                     // {"item": "m14mag", "count": 5, "charges": 20, "ammo-item": "762_51_incendiary"},
@@ -1278,7 +1279,7 @@
                       ]},
                     { "item": "8x40_250_mag", "count": 3, "ammo-item": "8mm_hvp", "charges": 250 },
 
-                    { "item": "rm614_lmg", "chargeS": 500, "ammo-item": "8mm_hvp",
+                    { "item": "rm614_lmg", "charges": 500, "ammo-item": "8mm_hvp",
                       "contents-item": [
                           "riv_scope", "riv_suppressor",
                           "modern_handguard", "pistol_grip", "match_trigger", "stabilizer", "butt_hook", "recoil_stock"
