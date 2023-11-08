@@ -983,8 +983,12 @@
                       "contents-item": [
                           "eink_tablet_pc",
                           "cordless_drill"]},
+                    // for when the Aircraft Carrier's a long way from land.
+                    { "item": "swim_fins", "custom-flags": ["no_auto_equip"]},
+                    { "item": "rebreather", "custom-flags": ["no_auto_equip"], "charges": 360},
+                    { "item": "goggles_swim", "custom-flags": ["no_auto_equip"]},
                     // Putting the UPS or battery into the drill is a fucking pain.
-                    { "item": "hand_drill"}, 
+                    { "item": "hand_drill"},
                     { "item": "match", "charges": 500 },
                     // FIXME: "charges" isn't working for string?
                     { "item": "string_36", "count": 500 },
@@ -1092,7 +1096,7 @@
                     {"item": "oxy_torch"},
                     {"item": "tinyweldtank", "count": 3},
                     {"item": "propane_torch"},
-                    {"item": "small_propane_tank", "count": 3},
+                    {"item": "small_propane_tank", "count": 3, "charges": 10000},
 
                     // Sledges are useful for opening jammed safes and doors.
                     // The alternative would be a rocket launcher, maybe.
@@ -1102,11 +1106,14 @@
                     // The heavy sledge was knackering me very quickly, and
                     // didn't seem to get through doors any faster than the short sledg.
                     // {"item": "hammer_sledge_short"},
-                    {"item": "hammer_sledge"},
-                    {"item": "hammer_sledge_heavy"},
+                    // {"item": "hammer_sledge"}, {"item": "hammer_sledge_heavy"},
+                    // mace is actually better than sledge in terms of stamina &c, and it's pure bash per hit is only slightly lower.
+                    {"item": "qt_mace"},
+
                     {"item": "m4_carlgustav", "ammo-item": "84x246mm_hedp", "charges": 1, "contents-item": ["modern_handguard", "match_trigger", "rifle_scope_high_end_mount", "holo_sight", "light_grip"]},
                     {"item": "84x246mm_hedp", "count": 6},
-                    {"item": "m320", "ammo-item": "40x46mm_m433", "charges": 1, "contents-item": ["rifle_scope_high_end_mount", "holo_sight"]},
+                    // {"item": "m320", "ammo-item": "40x46mm_m433", "charges": 1, "contents-item": ["rifle_scope_high_end_mount", "holo_sight"]},
+                    {"item": "rm802", "ammo-item": "40x46mm_m433", "charges": 4, "contents-item": ["rifle_scope_high_end_mount", "holo_sight"]},
                     {"item": "40x46mm_m433", "count": 15},
                     // The knife is real fast and fun for combat, but
                     // I would also like to have something with reach attacks.
@@ -1115,11 +1122,16 @@
                     // The RM42 actually gives REACH_ATTACK when mounted on a gun.
                     // Although I think then I have to NOT use Taekwondo, so
                     // I attack with my bayonet instead of my feet...
-                    {"item": "bullwhip"}, {"item": "pike"}, {"item": "lucern_hammer"},
+                    // {"item": "bullwhip"}, {"item": "pike"}, {"item": "lucern_hammer"},
                     // I also had fun running around with a sword for a while.
-                    {"item": "qt_nodachi"},
-                    {"item": "qt_katana"},
-                    {"item": "qt_wakizashi"},
+                    // {"item": "qt_nodachi"},
+                    // {"item": "qt_katana"},
+                    // {"item": "qt_wakizashi"},
+                    // kukri is better stamina and speed, except against heavily armoured dudes - and only slightly worse against those.  It has worse block, but still works with Ninjutsu techniques.
+                    // kukri is purely better than survivor_machete_qt, except for blocking and grass cutting (who cares?)
+                    // kukri is slightly slower but better stamina than qt_knife_trench.  kukri is much longer but a bit lighter than qt_knife_trench.  qt_knife_trench does piere, so it's a different kind of attack.
+                    {"item": "qt_kukri"}, {"item": "qt_knife_trench"},
+
                     // For just bumbling around having fun,
                     // it's nice to have stuff that shoots the most common rounds.
                     // These are 5.57×45mm NATO, 9×19mm Luger, and 00 shot.
@@ -1180,45 +1192,58 @@
                     {"item": "american_180", "charges": 275, "ammo-item": "22_fmj", "contents-item": ["pistol_grip", "modern_handguard", "match_trigger", "holo_sight", "high_end_folding_stock"]},
                     {"item": "a180mag4", "count": 3, "charges": 275, "ammo-item": "22_fmj"},
                     // {"item": "glock_18c", "charges": 100, "ammo-item": "9mmfmj", "contents-item": [ ]},
-                    {"item": "glock_19", "charges": 100, "ammo-item": "9mmfmj", "contents-item": ["pistol_grip", "glocksear", "match_trigger", "pistol_scope"]},
+                    // glock/ksub2000 have biggest 9x19mm mag (100).
+                    // ksub200 has highest damage and range
+                    // mp5/mp5sd is only 9x19 with burst (cf. auto).  I think it's only got a high price_postapoc because of a few years ago when sound and "night raids" were viable
+                    // Because I'm cheating and carrying *all* the guns at once, I almost never bother with burst first; I just switch to a bigger calibre.
+                    // So *I* don't actually care about burst at all, I think.
+                    // What I *do* like is having >50 rounds in a magazine so I can just dump rounds into a horde of mooks.
+                    // {"item": "hk_mp5sd", "charges": 100, "ammo-item": "9mmfmj", "contents-item": ["light_grip", "match_trigger"]},
+                    {"item": "ksub2000", "charges": 100, "ammo-item": "9mmfmj", "contents-item": ["light_grip", "match_trigger"]},
+                    // {"item": "glock_19", "charges": 100, "ammo-item": "9mmfmj", "contents-item": ["light_grip", "match_trigger"]},
                     {"item": "glock_drum_100rd", "count": 3, "charges": 100, "ammo-item": "9mmfmj"},
-                    {"item": "glock_20", "charges": 30, "ammo-item": "10mm_fmj", "contents-item": ["pistol_grip", "glocksear",  "match_trigger", "pistol_scope"]},
-                    {"item": "tdi_10mm_mag", "count": 3, "charges": 30, "ammo-item": "10mm_fmj"},
-                    {"item": "glock_21", "charges": 26, "ammo-item": "45_acp", "contents-item": ["pistol_grip", "glocksear",  "match_trigger", "pistol_scope"]},
-                    {"item": "glock_21mag26", "count": 3, "charges": 26, "ammo-item": "45_acp"},
-                    {"item": "glock_22", "charges": 22, "ammo-item": "40fmj", "contents-item": ["pistol_grip", "glocksear",  "match_trigger", "pistol_scope"]},
-                    {"item": "glock40bigmag", "count": 3, "charges": 26, "ammo-item": "40fmj"},
-                    {"item": "modular_m16a4", "charges": 150, "ammo-item": "556_m855a1", "contents-item": ["pistol_grip", "modern_handguard", "match_trigger", "holo_magnifier", "holo_sight", "butt_hook", "high_end_folding_stock"]},
+                    // {"item": "glock_20", "charges": 30, "ammo-item": "10mm_fmj", "contents-item": ["light_grip", "match_trigger"]},
+                    // {"item": "tdi_10mm_mag", "count": 3, "charges": 30, "ammo-item": "10mm_fmj"},
+                    // {"item": "glock_21", "charges": 26, "ammo-item": "45_acp", "contents-item": ["light_grip", "match_trigger"]},
+                    // {"item": "glock_21mag26", "count": 3, "charges": 26, "ammo-item": "45_acp"},
+                    // {"item": "glock_22", "charges": 22, "ammo-item": "40fmj", "contents-item": ["light_grip", "match_trigger"]},
+                    // {"item": "glock40bigmag", "count": 3, "charges": 26, "ammo-item": "40fmj"},
+                    // {"item": "modular_m16a4", "charges": 150, "ammo-item": "556_m855a1", "contents-item": ["pistol_grip", "modern_handguard", "match_trigger", "holo_magnifier", "holo_sight", "butt_hook", "high_end_folding_stock"]},
+                    {"item": "rdb_223", "charges": 150, "ammo-item": "556_m855a1", "contents-item": ["match_trigger", "modern_handguard", "holo_sight", "holo_magnifier", "suppressor", "pistol_grip"]},
                     {"item": "stanag150", "count": 3, "charges": 150, "ammo-item": "556_m855a1"},
-                    {"item": "m14ebr", "charges": 20, "ammo-item": "762_51_incendiary", "contents-item": ["pistol_grip", "modern_handguard", "match_trigger", "holo_magnifier", "holo_sight", "butt_hook", "high_end_folding_stock"]},
-                    {"item": "m14mag", "count": 5, "charges": 20, "ammo-item": "762_51_incendiary"},
+                    {"item": "rfb_308", "charges": 50, "ammo-item": "762_51_incendiary", "contents-item": ["underbarrel_mount", "match_trigger", "modern_handguard", "acog_sight", "suppressor", "pistol_grip"]},
+                    {"item": "falbigmag", "count": 5, "charges": 30, "ammo-item": "762_51_incendiary"},
+                    // {"item": "m14ebr", "charges": 20, "ammo-item": "762_51_incendiary", "contents-item": ["pistol_grip", "modern_handguard", "match_trigger", "holo_magnifier", "holo_sight", "butt_hook", "high_end_folding_stock"]},
+                    // {"item": "m14mag", "count": 5, "charges": 20, "ammo-item": "762_51_incendiary"},
                     // I had fun with the KSG (14 mag).
                     // The Tavor-12 (15 mag) and KSG-25 (24 mag) look similar.
-                    {"item": "tavor_12", "charges": 5, "contents-item": ["match_trigger", "holo_sight"]},
+                    // UPDATE: I got SUPER sick of reloading every 5 rounds, because switching tubes on empty isn't automatic.
+                    {"item": "ksg-25", "charges": 24, "contents-item": ["match_trigger", "holo_sight", "choke", "grip_mount", "laser_sight"]},
+                    // {"item": "tavor_12", "charges": 5, "contents-item": ["match_trigger", "holo_sight"]},
                     {"item": "shot_00", "count": 50},
 
                     // When there's a batch of like 20+ weak zombies packed together,
                     // I like to toss a grenade and duck around a corner.
-                    {"item": "grenade", "count": 50},
-                    {"item": "grenade_inc", "count": 50},
+                    // {"item": "grenade", "count": 50},
+                    // {"item": "grenade_inc", "count": 50},
 
 
                     // "Fun" weapons for grinding the "not-fun" skills? (throwing, launcher, unarmed, blunt, piercing)
-                    {"item": "varmint_airgun"}, {"item": "airgun_pellet_hunting", "count": 5},
-                    {"item": "bbgun", "charges": 150}, {"item": "bb", "count": 5},
-                    {"item": "sling"}, {"item": "bearing", "count": 20},
-                    {"item": "staff_sling"}, {"item": "pool_ball", "count": 1000},
-                    {"item": "rm451_flamethrower", "ammo-item": "napalm", "charges": 4000}, {"item": "rm4504", "count": 3, "ammo-item": "napalm", "charges": 4000},
-                    {"item": "rm802"},
-                    {"item": "40x46mm_m576", "count": 20},
-                    {"item": "40x46mm_flechette_m199", "count": 20},
-                    {"item": "40x46mm_slug_m199", "count": 20},
-                    {"item": "40x46mm_hornets_nest_410", "count": 20},
-                    {"item": "40x46mm_hornets_nest_22lr", "count": 20},
-                    {"item": "qt_steel_staff"}, {"item": "qt_mace"}, {"item": "PR24-extended"}, {"item": "bat_metal"},
-                    {"item": "qt_rapier"}, {"item": "qt_estoc"},
-                    {"item": "cestus"}, {"item": "knuckle_impact"}, {"item": "knuckle_skewer"},
-                    {"item": "spear_steel"}, {"item": "spear_dory"},
+                    // {"item": "varmint_airgun"}, {"item": "airgun_pellet_hunting", "count": 5},
+                    // {"item": "bbgun", "charges": 150}, {"item": "bb", "count": 5},
+                    // {"item": "sling"}, {"item": "bearing", "count": 20},
+                    // {"item": "staff_sling"}, {"item": "pool_ball", "count": 1000},
+                    // {"item": "rm451_flamethrower", "ammo-item": "napalm", "charges": 4000}, {"item": "rm4504", "count": 3, "ammo-item": "napalm", "charges": 4000},
+                    // {"item": "rm802"},
+                    // {"item": "40x46mm_m576", "count": 20},
+                    // {"item": "40x46mm_flechette_m199", "count": 20},
+                    // {"item": "40x46mm_slug_m199", "count": 20},
+                    // {"item": "40x46mm_hornets_nest_410", "count": 20},
+                    // {"item": "40x46mm_hornets_nest_22lr", "count": 20},
+                    // {"item": "qt_steel_staff"}, {"item": "qt_mace"}, {"item": "PR24-extended"}, {"item": "bat_metal"},
+                    // {"item": "qt_rapier"}, {"item": "qt_estoc"},
+                    // {"item": "cestus"}, {"item": "knuckle_impact"}, {"item": "knuckle_skewer"},
+                    // {"item": "spear_steel"}, {"item": "spear_dory"},
 
                     // For a very strong character, this is a super nice weapon.
                     // This is my go-to weapon for mook zombies, because
@@ -1235,15 +1260,15 @@
                     // can burst fire for "oh fuck" stuff like shoggoths.
                     { "item": "rm11b_sniper_rifle",
                       // "magazine": "8x40_25_mag",
-                      "ammo-item": "8mm_inc", "charges": 25,
+                      "ammo-item": "8mm_hvp", "charges": 25,
                       "contents-item": [ "modern_handguard", "pistol_grip", "match_trigger", "stabilizer"]},
-                    { "item": "8x40_25_mag", "count": 5, "ammo-item": "8mm_inc", "charges": 25 },
+                    { "item": "8x40_25_mag", "count": 5, "ammo-item": "8mm_hvp", "charges": 25 },
 
                     // This is one of my favourite "oh fuck" weapons.
                     // It's very loud and the ammo is relatively heavy.
                     { "item": "rm88_battle_rifle",
                       // "magazine": "8x40_250_mag",
-                      "ammo-item": "8mm_inc", "charges": 250,
+                      "ammo-item": "8mm_hvp", "charges": 250,
                       "contents-item": [
                           // These aren't actually compatible with this rifle, BUT
                           // the game doesn't stop me shoving them on.  Mua ha ha.
@@ -1251,9 +1276,16 @@
                           // "rifle_scope_high_end_mount", "holo_sight"
                           "modern_handguard", "pistol_grip", "match_trigger", "stabilizer", "butt_hook", "recoil_stock"
                       ]},
-                    { "item": "8x40_250_mag", "count": 3, "ammo-item": "8mm_inc", "charges": 250 },
+                    { "item": "8x40_250_mag", "count": 3, "ammo-item": "8mm_hvp", "charges": 250 },
+
+                    { "item": "rm614_lmg", "chargeS": 500, "ammo-item": "8mm_hvp",
+                      "contents-item": [
+                          "riv_scope", "riv_suppressor",
+                          "modern_handguard", "pistol_grip", "match_trigger", "stabilizer", "butt_hook", "recoil_stock"
+                          ]},
+                    { "item": "8x40_500_mag", "count": 3, "ammo-item": "8mm_hvp", "charges": 500 },
 
 
-                    { "item": "8mm_inc", "charges": 5000 }]}}}]
+                    { "item": "8mm_hvp", "charges": 5000 }]}}}]
 
 
