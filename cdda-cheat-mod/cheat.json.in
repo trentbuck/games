@@ -411,6 +411,7 @@
 
                     /////////////////////////////////////////////////////////////
                     "mp3",
+                    "mirror",
                     /////////////////////////////////////////////////////////////
 
                     // BOOKZ --- only the books that have recipes you can't get automatically with high-enough skill level.
