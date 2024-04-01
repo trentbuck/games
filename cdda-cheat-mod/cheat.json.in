@@ -1,4 +1,17 @@
 [
+    // This mod was removed by upstream for being overpowered.
+    // I want it back BECAUSE it's overpowered.
+    {
+        "id": "bio_trickle_twb",
+        "type": "bionic",
+        "name": { "str": "Trickle Charger" },
+        "description": "You have been equipped with a CBM that slowly recharges your power reserves at all times.  Provides extremely low power but has no cost and will last several years.",
+        "occupied_bodyparts": [ [ "torso", 7 ] ],
+        "dupes_allowed": true,
+        "power_trickle": "2 J",
+        "flags": [ "BIONIC_POWER_SOURCE", "BIONIC_NPC_USABLE", "BIONIC_SHOCKPROOF" ]
+    },
+
     // The "achievements" stuff is per-world.
     // So if you make a new world, you need to drop back down below
     // "all 10" skills again, to unlock 3->4 and 6->7 again...
