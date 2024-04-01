@@ -7,12 +7,23 @@
     {
         "id": "bio_trickle",
         "type": "bionic",
-        "name": { "str": "Trickle Charger" },
-        "description": "You have been equipped with a CBM that slowly recharges your power reserves at all times.  Provides extremely low power but has no cost and will last several years.",
+        "name": { "str": "Microfusion Generator" },
+        "description": "An implanted fusion reactor with its own internal nuclear fuel reservoir.  It will last over a century without servicing.",
         "occupied_bodyparts": [ [ "torso", 7 ] ],
         "dupes_allowed": true,
         "enchantments": [ { "values": [ { "value": "POWER_TRICKLE", "add": 6 } ] } ],
         "flags": [ "BIONIC_POWER_SOURCE", "BIONIC_NPC_USABLE", "BIONIC_SHOCKPROOF" ]
+    },
+    {
+        "id": "bio_trickle",
+        "copy-from": "bionic_general_npc_usable",
+        "type": "BIONIC_ITEM",
+        "name": { "str": "Microfusion Generator CBM" },
+        "description": "A miniaturized fusion reactor.  It has modest output, but will run continuously for over two hundred years thanks to its internal nuclear fuel reservoir.",
+        "weight": "500 g",
+        "price": 120000,
+        "price_postapoc": 1500,
+        "difficulty": 3
     },
 
     // The "achievements" stuff is per-world.
