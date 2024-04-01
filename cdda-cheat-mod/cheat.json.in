@@ -1,14 +1,17 @@
 [
     // This mod was removed by upstream for being overpowered.
     // I want it back BECAUSE it's overpowered.
+    // https://github.com/CleverRaven/Cataclysm-DDA/pull/70989
+    // https://github.com/CleverRaven/Cataclysm-DDA/blob/d2b51fdc645cf1a49bab6c06c06533737c7fd605/data/mods/Aftershock/player/bionics.json#L13-L22
+    // https://github.com/CleverRaven/Cataclysm-DDA/blob/d2b51fdc645cf1a49bab6c06c06533737c7fd605/data/mods/Aftershock/migration.json#L12-L23
     {
-        "id": "bio_trickle_twb",
+        "id": "bio_trickle",
         "type": "bionic",
         "name": { "str": "Trickle Charger" },
         "description": "You have been equipped with a CBM that slowly recharges your power reserves at all times.  Provides extremely low power but has no cost and will last several years.",
         "occupied_bodyparts": [ [ "torso", 7 ] ],
         "dupes_allowed": true,
-        "power_trickle": "2 J",
+        "enchantments": [ { "values": [ { "value": "POWER_TRICKLE", "add": 6 } ] } ],
         "flags": [ "BIONIC_POWER_SOURCE", "BIONIC_NPC_USABLE", "BIONIC_SHOCKPROOF" ]
     },
 
