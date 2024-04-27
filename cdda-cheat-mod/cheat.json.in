@@ -382,6 +382,9 @@
                 "NOT clamp/locking_pliers"
             ]},
         "CBMs": [
+            // New in 2024
+            "bio_ar", "bio_radio",
+
             "bio_power_storage_mkII", "bio_power_storage_mkII", "bio_power_storage_mkII", "bio_power_storage_mkII",
             "bio_cable", "bio_metabolics", "bio_trickle", "bio_trickle", "bio_trickle", "bio_trickle",
             "bio_ups",
