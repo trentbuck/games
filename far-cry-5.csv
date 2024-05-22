@@ -1,0 +1,19 @@
+Accuracy,Damage,Range,Rate of Fire,Handling,Ammunition,Firearm
+6,4,6,7,4,Rifle,BP-2
+6,4,5,9,6,SMG,Vector
+7,9,8,5,3,Sniper,SA-50
+5,9,7,2,5,40mm,China Lake
+7,7,6,5,5,Bow,Compound
+7,7,6,6,6,Bow,Recurve
+5,6,7,8,3,LMG,M-249
+7,6,7,9,2,LMG,MG-42
+7,8,6,5,5,Rifle,45/70
+7,8,6,5,5,Rifle,45/70 Fall's Ghost
+5,6,6,5,5,Rifle,AKM
+6,4,6,8,5,Rifle,AR-15
+6,5,6,6,6,Rifle,MS-16 Carbine
+7,5,6,6,5,Rifle,MS-16
+6,8,6,5,6,Rifle,56/70-T
+6,4,5,8,6,SMG,MP5
+6,4,5,8,6,SMG,MP5SD
+5,4,5,6,6,SMG,Sten
