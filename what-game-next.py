@@ -1,9 +1,10 @@
 #!/usr/bin/python3
-import pathlib
-import datetime
 import argparse
-import subprocess
+import datetime
+import pathlib
+import random
 import sqlite3
+import subprocess
 
 import lxml.html
 import lxml.etree
@@ -63,3 +64,7 @@ pathlib.Path('what-game-next-nonfree.csv').write_bytes(  # skip the "free to pla
     subprocess.check_output(['sqlite3', '-header', '-csv', db_path, 'SELECT * FROM what_game_next WHERE "$" >0']))
 pathlib.Path('what-game-next-to-lower-my-KPI.csv').write_bytes(
     subprocess.check_output(['sqlite3', '-header', '-csv', db_path, 'SELECT * FROM what_game_next_to_lower_my_KPI']))
+
+
+print(' == Random selection of paid games weighted rating by rating/hour... == ')
+print(*random.choices(*zip(*conn.execute('SELECT name, CAST("rating/hour" AS REAL) FROM what_game_next WHERE "$" >0').fetchall()), k=100), sep='\n')
