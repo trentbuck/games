@@ -501,6 +501,7 @@ rating,rating/hour,$,$/hour,"$/hour (steamdb)",time,id,name
 83.74,82.37,,,,,1394090,"Power of Ten - Demo"
 83.72,82.35,,,,"1 min",978800,"Rolling Bird"
 83.72,82.35,,,,,2308520,PoPuP
+83.72,82.35,,,,,2947890,"Guardians of the Sanctree: Early Birds"
 90.58,82.35,7.5,75.00,7.50,"6 min",1047220,"Frog Detective 2: The Case of the Invisible Wizard"
 83.7,82.33,,,,,802200,"Hellbound: Survival Mode"
 83.7,82.33,,,,,891220,pla_toon
@@ -513,7 +514,6 @@ rating,rating/hour,$,$/hour,"$/hour (steamdb)",time,id,name
 83.63,82.26,,,,,1862020,HoverRace
 83.63,82.26,,,,,2497550,"Summum Aeterna: Prologue"
 83.63,82.26,,,,,2658990,"Will The Man Get Frog"
-83.63,82.26,,,,,2947890,"Guardians of the Sanctree: Early Birds"
 83.61,82.24,,,,,1035890,"vApe Escape"
 83.61,82.24,,,,,1599080,"Slow and Steady"
 83.61,82.24,,,,,1816880,"EXIT 2"
@@ -2383,7 +2383,6 @@ rating,rating/hour,$,$/hour,"$/hour (steamdb)",time,id,name
 76.49,75.24,,,,,1394340,DreamDasher
 76.49,75.24,,,,,1557840,Maze
 76.48,75.23,,,,,534190,"Blink the Bulb"
-76.48,75.23,,,,,2725560,"Idle Fishing"
 89.01,75.22,,,,"11 min",1106770,"Shepherd of Light"
 77.72,75.21,,,,"2 min",1333090,Gravity
 78.97,75.21,,,,"3 min",1953970,"MATH EXPRESSions"
@@ -2802,6 +2801,7 @@ rating,rating/hour,$,$/hour,"$/hour (steamdb)",time,id,name
 75.23,74.00,,,,,1578050,"Fatal Core"
 75.23,74.00,,,,,1835020,"BornWild • Versus S1 - Prologue"
 75.23,74.00,,,,,1862030,Duloga
+75.23,74.00,,,,,2725560,"Idle Fishing"
 77.69,73.99,7.5,150.00,7.50,"3 min",234190,Receiver
 75.22,73.99,,,,,878940,"Collective Card Game"
 85.08,73.98,19.99,133.27,19.99,"9 min",223810,"Ys I"
@@ -2812,9 +2812,9 @@ rating,rating/hour,$,$/hour,"$/hour (steamdb)",time,id,name
 80.11,73.95,13.99,167.88,13.99,"5 min",433910,"Neon Drive"
 75.18,73.95,,,,,886460,"Outside the Lines"
 75.18,73.95,,,,,2347530,IndependANT
+75.18,73.95,,,,,2707930,Palia
 85.03,73.94,19.99,133.27,19.99,"9 min",907470,Iris.Fall
 75.17,73.94,,,,,370770,Holodrive
-75.17,73.94,,,,,2707930,Palia
 78.85,73.92,3.96,59.40,3.96,"4 min",747620,Joggernauts
 85.01,73.92,29.5,196.67,29.50,"9 min",32330,"LEGOⓇ Indiana Jones™: The Original Adventures"
 75.15,73.92,,,,,1193900,"Island Marauder"
@@ -5174,6 +5174,7 @@ rating,rating/hour,$,$/hour,"$/hour (steamdb)",time,id,name
 68.94,67.81,,,,,1192550,"Master of Wills"
 68.94,67.81,,,,,1203220,"NARAKA: BLADEPOINT"
 68.94,67.81,,,,,2435890,"Snotty's Sewer"
+68.94,67.81,,,,,2456080,"Formula Evolution 2024"
 87.02,67.81,,,,"17 min",1040490,"Prologue For A Vacant Kingdom"
 89.28,67.81,,,,"19 min",1808400,"Tag: The Power of Paint"
 94.93,67.81,21.95,54.88,21.95,"24 min",683320,GRIS
@@ -5293,7 +5294,6 @@ rating,rating/hour,$,$/hour,"$/hour (steamdb)",time,id,name
 90.98,67.39,29.5,84.29,29.50,"21 min",764790,"The Messenger"
 68.51,67.39,,,,,1119620,"Beyond Shattered Isles"
 68.51,67.39,,,,,1588460,"Little Traveler"
-68.51,67.39,,,,,2456080,"Formula Evolution 2024"
 68.5,67.38,,,,,1389260,"Isles of Limbo"
 68.5,67.38,,,,,2117420,"Prime Horror II"
 68.49,67.37,,,,,1274090,Hotfix
@@ -8761,6 +8761,7 @@ rating,rating/hour,$,$/hour,"$/hour (steamdb)",time,id,name
 69.98,54.53,16.95,59.82,16.95,"17 min",764670,"Sea Dogs"
 74.52,54.53,9.99,27.25,9.99,"22 min",314810,"Randal's Monday"
 84.48,54.50,,,,"33 min",950860,"Spiral Clicker"
+55.4,54.49,,,,,2764370,"星之翼（Starward）"
 71.74,54.49,21.95,69.32,21.95,"19 min",851280,MindSeize
 85.36,54.49,5.95,10.50,5.95,"34 min",348430,"Quell Reflect"
 69.91,54.48,28.95,102.18,28.95,"17 min",426310,Perception
@@ -8841,7 +8842,6 @@ rating,rating/hour,$,$/hour,"$/hour (steamdb)",time,id,name
 70.37,54.13,14.5,48.33,14.50,"18 min",22670,"Alien Breed 3: Descent"
 74.87,54.12,29.5,76.96,29.50,"23 min",301840,"City Of Brass"
 93.81,54.12,29.5,40.23,29.50,"44 min",512900,"Streets of Rogue"
-55.01,54.11,,,,,2764370,"星之翼（Starward）"
 54.99,54.09,,,,,1021940,"Space Warfare"
 88.3,54.06,28.95,45.71,28.95,"38 min",998740,"Ring of Pain"
 54.96,54.06,,,,,1066230,"Project Katharsis"
