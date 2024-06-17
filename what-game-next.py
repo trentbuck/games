@@ -21,21 +21,35 @@ def mystrip(s: str, prefix=None, suffix=None) -> str:
 
 
 parser = argparse.ArgumentParser()
-parser.add_argument(
-    'url',
-    nargs='?',
-    default='https://steamdb.info/calculator/76561198815748328/?cc=au&all_games')
-args = parser.parse_args()
-html_path = pathlib.Path('all-games.html')
-db_path = pathlib.Path('all-games.db')
+if False:
+    # This is now a 403. --twb, June 2024
+    parser.add_argument(
+        'url',
+        nargs='?',
+        default='https://steamdb.info/calculator/76561198815748328/?cc=au&all_games')
+    args = parser.parse_args()
+    html_path = pathlib.Path('all-games.html')
+    db_path = pathlib.Path('all-games.db')
+    try:
+        if datetime.datetime.fromtimestamp(html_path.stat().st_mtime) < datetime.datetime.now() - datetime.timedelta(days=7):
+            raise FileNotFoundError('too old', html_path)
+    except FileNotFoundError:
+        # File doesn't exist, or is over a week old.
+        subprocess.check_call(['wget2', '-O', html_path, args.url])
+else:
+    # Instead try browsing to it with Firefox then opening the saved file...
+    # 1. Browse to https://steamdb.info/calculator/76561198815748328/?cc=au&all_games
+    # 2. Save As
+    # 3. Change format from "Web Page, complete" to "Web Page, HTML only".
+    parser.add_argument(
+        'html_path',
+        nargs='?',
+        default=pathlib.Path('~/Downloads/Trent W. Buck · Steam Calculator · 76561198815748328 · SteamDB.html').expanduser())
+    args = parser.parse_args()
+    html_path = args.html_path
+    db_path = pathlib.Path('all-games.db')
 
 
-try:
-    if datetime.datetime.fromtimestamp(html_path.stat().st_mtime) < datetime.datetime.now() - datetime.timedelta(days=7):
-        raise FileNotFoundError('too old', html_path)
-except FileNotFoundError:
-    # File doesn't exist, or is over a week old.
-    subprocess.check_call(['wget2', '-O', html_path, args.url])
 obj = lxml.html.parse(str(html_path))
 game_table, = obj.xpath('//*[@id="games"]//tbody')
 
@@ -49,7 +63,11 @@ with sqlite3.connect(db_path) as conn:
         return None if s == '-1' else int(s)
     conn.executemany(
         'INSERT INTO games (id, name, rating, time, price) VALUES (:id, :name, :rating, :time, :price)',
-        ({'id': mystrip(*tr.xpath('./td[3]/a/@href'), prefix='/app/', suffix='/'),
+        ({'id': mystrip(*tr.xpath('./td[3]/a/@href'),
+                        # If you see 'https://steamdb.info/app/' prefix, you did
+                        # Format: "Web Page, complete" not "Web Page, HTML only".
+                        prefix='/app/' if True else 'https://steamdb.info/app/',  # changed in saved-from-Firefox version
+                        suffix='/'),
           'name': tr.xpath('./td[3]/a/text()')[0],
           'rating': rating(*tr.xpath('./td[7]/text()')),
           'time': fix(*tr.xpath('./td[6]/@data-sort')),
