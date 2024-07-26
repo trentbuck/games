@@ -1,3 +1,4 @@
+-- -*- sql-product: sqlite -*-
 PRAGMA journal_mode = wal;
 DROP TABLE IF EXISTS games;
 CREATE TABLE games (id INTEGER PRIMARY KEY, rating REAL, price INTEGER, time INTEGER, name TEXT);
@@ -122,3 +123,14 @@ FROM (SELECT round((CASE WHEN price >0 THEN price ELSE NULL END / 100.0) / max(1
 -- Don't even mention games that are already below the average.
 -- UGH can't just do "SELECT steamdb_price_per_hour FROM stats" because that's pretty-printed.
 WHERE "$/hour (steamdb)" > (SELECT steamdb_average_price_per_hour FROM stats);
+
+
+
+CREATE TABLE IF NOT EXISTS howlongtobeat (
+    game_id INTEGER PRIMARY KEY,
+    game_name TEXT NOT NULL,
+    profile_steam INTEGER UNIQUE REFERENCES games (id),
+    comp_main INTEGER,          -- Main Story (in seconds)
+    comp_plus INTEGER,          -- Main + Sides (in seconds)
+    comp_100 INTEGER,           -- Completionist (in seconds)
+    comp_all INTEGER);          -- All Styles (in seconds)
