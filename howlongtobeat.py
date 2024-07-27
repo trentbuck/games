@@ -2,6 +2,7 @@ import json
 import random
 import sqlite3
 import logging
+import re
 
 import httpx
 
@@ -19,11 +20,15 @@ with sqlite3.connect('all-games.db') as conn:
         SELECT games.name FROM games
         LEFT OUTER JOIN howlongtobeat ON (games.id = howlongtobeat.profile_steam)
         WHERE howlongtobeat.profile_steam IS NULL  -- haven't already fetched it
-        AND price                                  -- skip free-to-play games initially
-        ORDER BY time DESC                         -- initially sort by play time
+        -- AND NOT price                                  -- only free-to-play games
+        -- ORDER BY time DESC                         -- initially sort by play time
+        -- AND name > 'Box Ninja'
+        -- ORDER BY 1
         """).fetchall()
-    # random.shuffle(rows)
+    random.shuffle(rows)
     for game_name, in rows:
+    # import sys
+    # for game_name in sys.argv[1:]:
         logging.debug('QUERY %s', game_name)
         resp = sess.post('https://howlongtobeat.com/api/search',
                          json={"useCache": True,
@@ -37,6 +42,8 @@ with sqlite3.connect('all-games.db') as conn:
                                # INFO:root:RESULTS You Suck at Parking® - Complete Edition 0 <---
                                # "searchTerms": [game_name],
                                "searchTerms": (
+                                   # re.findall(r'(?i)\w+', game_name)),
+
                                    game_name
                                    .replace('®', '')
                                    .replace('™', '')

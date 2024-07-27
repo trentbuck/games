@@ -94,9 +94,11 @@ SELECT rating,
          WHEN time >60 THEN printf('%.2f hours', time  / 60.0)
          WHEN time >0 THEN printf('%i min', time)
        END AS time,
+       CASE WHEN comp_main IS NULL THEN NULL ELSE printf('%.2f hours', comp_main / 3600.0) END AS hltb,
        id,
        name
 FROM games_fudged
+LEFT JOIN howlongtobeat ON (id = profile_steam)
 ORDER BY rating_fudged / (1.0 + (time_fudged / 60.0)) DESC;
 
 
@@ -115,9 +117,11 @@ FROM (SELECT round((CASE WHEN price >0 THEN price ELSE NULL END / 100.0) / max(1
                WHEN time >60 THEN printf('%.2f hours', time  / 60.0)
                WHEN time >0 THEN printf('%i min', time)
              END AS time,
+             CASE WHEN comp_main IS NULL THEN NULL ELSE printf('%.2f hours', comp_main / 3600.0) END AS hltb,
              id,
              name
       FROM games_fudged
+      LEFT JOIN howlongtobeat ON (id = profile_steam)
       WHERE price > 0
       ORDER BY Δ DESC)
 -- Don't even mention games that are already below the average.
@@ -126,6 +130,7 @@ WHERE "$/hour (steamdb)" > (SELECT steamdb_average_price_per_hour FROM stats);
 
 
 
+-- bash5$ sqlite3 -header -csv all-games.db "SELECT CAST(round(100.0*time_fudged/(comp_main/60.0)) AS INTEGER) AS completion_percentage, rating_fudged, name FROM games_fudged JOIN howlongtobeat ON (id = profile_steam) ORDER BY 1 DESC, 2 DESC" >games-by-my-completion.csv
 CREATE TABLE IF NOT EXISTS howlongtobeat (
     game_id INTEGER PRIMARY KEY,
     game_name TEXT NOT NULL,
