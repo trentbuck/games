@@ -94,7 +94,7 @@ SELECT rating,
          WHEN time >60 THEN printf('%.2f hours', time  / 60.0)
          WHEN time >0 THEN printf('%i min', time)
        END AS time,
-       CASE WHEN comp_main IS NULL THEN NULL ELSE printf('%.2f hours', comp_main / 3600.0) END AS hltb,
+       CASE WHEN comp_all IS NULL THEN NULL ELSE printf('%.2f hours', comp_all / 3600.0) END AS hltb,
        id,
        name
 FROM games_fudged
@@ -117,7 +117,7 @@ FROM (SELECT round((CASE WHEN price >0 THEN price ELSE NULL END / 100.0) / max(1
                WHEN time >60 THEN printf('%.2f hours', time  / 60.0)
                WHEN time >0 THEN printf('%i min', time)
              END AS time,
-             CASE WHEN comp_main IS NULL THEN NULL ELSE printf('%.2f hours', comp_main / 3600.0) END AS hltb,
+             CASE WHEN comp_all IS NULL THEN NULL ELSE printf('%.2f hours', comp_all / 3600.0) END AS hltb,
              id,
              name
       FROM games_fudged
