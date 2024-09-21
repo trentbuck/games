@@ -10,6 +10,7 @@
     "category": "rebalance",
     "dependencies": [
       "dda",
+      "package_bionic_professions",
       "no_npc_food",
       "no_fungal_growth",
       "personal_portal_storms",
