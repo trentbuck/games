@@ -3,6 +3,8 @@ import random
 import sqlite3
 import logging
 import re
+import lxml.html
+import json
 
 import httpx
 
@@ -14,23 +16,42 @@ sess.headers.update(
         'referer': 'https://howlongtobeat.com/'})
 
 
+# As at October 2024, this is now gone...
+# I can see it at curl https://howlongtobeat.com/game/93960 | grep -Fw 1599020
+# "profile_steam": 1232130,
+def fudge_json(j: dict) -> dict:
+    if 'profile_steam' in j:
+        return j
+    url = f"https://howlongtobeat.com/game/{j['game_id']}"
+    resp = sess.get(url)
+    resp.raise_for_status()
+    obj = lxml.html.fromstring(resp.content)  # BYTES
+    new_str, = obj.xpath('//script[@id="__NEXT_DATA__"]/text()')
+    new_dict = json.loads(new_str)
+    profile_steam = max(
+        game_dict['profile_steam']
+        for game_dict in new_dict['props']['pageProps']['game']['data']['game'])
+    j['profile_steam'] = profile_steam
+    logging.info('profile_steam %s', profile_steam)
+    return j
+
+
 with sqlite3.connect('all-games.db') as conn:
     rows = conn.execute(
         """
         SELECT games.name FROM games
         LEFT OUTER JOIN howlongtobeat ON (games.id = howlongtobeat.profile_steam)
         WHERE howlongtobeat.profile_steam IS NULL  -- haven't already fetched it
-        -- AND NOT price                                  -- only free-to-play games
-        -- ORDER BY time DESC                         -- initially sort by play time
+        AND price                                  -- skip free-to-play games
         -- AND name > 'Box Ninja'
-        -- ORDER BY 1
+        ORDER BY 1
         """).fetchall()
-    random.shuffle(rows)
+    # random.shuffle(rows)
     for game_name, in rows:
     # import sys
     # for game_name in sys.argv[1:]:
         logging.debug('QUERY %s', game_name)
-        resp = sess.post('https://howlongtobeat.com/api/search',
+        resp = sess.post('https://howlongtobeat.com/api/search/5fe4b12e81a8fb4c',
                          json={"useCache": True,
                                # If there's e.g. Final Fantasy VII for both PS1 and PC,
                                # skip the former.
@@ -57,7 +78,7 @@ with sqlite3.connect('all-games.db') as conn:
             VALUES (:game_id, :game_name, :profile_steam, :comp_main, :comp_plus, :comp_100, :comp_all)
             ON CONFLICT DO NOTHING;
             """,
-            resp.json()['data'])
+            map(fudge_json, resp.json()['data']))
         conn.commit()
 
 
@@ -103,6 +124,8 @@ example_reponse = {
             "count_retired": 5,
             "profile_dev": "Rabotiagi games",
             "profile_popular": 12,
+# As at October 2024, this is now gone...
+# I can see it at curl https://howlongtobeat.com/game/93960 | grep -Fw 1599020
             "profile_steam": 1232130,
             "profile_platform": "PC",
             "release_world": 2020
