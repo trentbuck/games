@@ -1143,8 +1143,9 @@
 
                     {"item": "m4_carlgustav", "ammo-item": "84x246mm_hedp", "charges": 1, "contents-item": ["modern_handguard", "match_trigger", "rifle_scope_high_end_mount", "holo_sight", "light_grip"]},
                     {"item": "84x246mm_hedp", "count": 6},
-                    // {"item": "m320", "ammo-item": "40x46mm_m433", "charges": 1, "contents-item": ["rifle_scope_high_end_mount", "holo_sight"]},
-                    {"item": "rm802", "ammo-item": "40x46mm_m433", "charges": 4, "contents-item": ["rifle_scope_high_end_mount", "holo_sight"]},
+                    // Obsoleted in CDDA 0.H :-(
+                    // {"item": "rm802", "ammo-item": "40x46mm_m433", "charges": 4, "contents-item": ["rifle_scope_high_end_mount", "holo_sight"]},
+                    {"item": "m320", "ammo-item": "40x46mm_m433", "charges": 1, "contents-item": ["rifle_scope_high_end_mount", "holo_sight"]},
                     {"item": "40x46mm_m433", "count": 15},
                     // The knife is real fast and fun for combat, but
                     // I would also like to have something with reach attacks.
@@ -1165,7 +1166,7 @@
 
                     // For just bumbling around having fun,
                     // it's nice to have stuff that shoots the most common rounds.
-                    // These are 5.57×45mm NATO, 9×19mm Luger, and 00 shot.
+                    // These are 5.56×45mm NATO, 9×19mm Luger, and 00 shot.
                     // Fuck these calibres:
                     //
                     //   .50 Beowulf
@@ -1220,6 +1221,8 @@
                     // When I've been just throwing random bullets downrange,
                     // I found that the FMJ is better.  Typically it's -2dam +10AP,
                     // which lets me push over SWAT dudes in 1 shot instead of 2.
+                    //
+                    // UPDATE: goes away in CDDA 0.I.
                     {"item": "american_180", "charges": 275, "ammo-item": "22_fmj", "contents-item": ["pistol_grip", "modern_handguard", "match_trigger", "holo_sight", "high_end_folding_stock"]},
                     {"item": "a180mag4", "count": 3, "charges": 275, "ammo-item": "22_fmj"},
                     // {"item": "glock_18c", "charges": 100, "ammo-item": "9mmfmj", "contents-item": [ ]},
@@ -1250,6 +1253,7 @@
                     // I had fun with the KSG (14 mag).
                     // The Tavor-12 (15 mag) and KSG-25 (24 mag) look similar.
                     // UPDATE: I got SUPER sick of reloading every 5 rounds, because switching tubes on empty isn't automatic.
+                    // UPDATE: in 2024, the "auxiliary magazine" attachment bullshit is gone.
                     {"item": "ksg-25", "charges": 24, "contents-item": ["match_trigger", "holo_sight", "choke", "grip_mount", "laser_sight"]},
                     // {"item": "tavor_12", "charges": 5, "contents-item": ["match_trigger", "holo_sight"]},
                     {"item": "shot_00", "count": 50},
