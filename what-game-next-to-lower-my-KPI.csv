@@ -83,7 +83,7 @@
 36.74,14.41,83.07,56.95,"1.55 hours","22.88 hours",210970,"The Witness"
 37.47,14.41,91.5,59.95,"1.60 hours","20.78 hours",214490,"Alien: Isolation"
 29.02,14.39,82.99,29.5,"1.02 hours","5.00 hours",274480,"Drox Operative"
-29.02,14.39,70.07,29.5,"1.02 hours",,1016790,"West of Dead"
+29.02,14.39,70.07,29.5,"1.02 hours","12.13 hours",1016790,"West of Dead"
 29.5,14.37,74.86,29.5,"57 min","4.56 hours",313780,Conarium
 29.5,14.37,69.26,29.5,"57 min","5.94 hours",635390,"Thief of Thieves: Season One"
 28.95,14.35,71.94,28.95,"59 min","16.73 hours",1315610,"Source of Madness"
@@ -302,7 +302,7 @@
 29.5,10.05,81.93,29.5,"31 min","13.25 hours",837880,"You Suck at Parking® - Complete Edition"
 29.5,10.05,78.08,29.5,"31 min","3.09 hours",1175190,"Natsuki Chronicles"
 31.38,10.02,84.62,66.95,"2.13 hours","59.65 hours",1413480,"Shin Megami Tensei III Nocturne HD Remaster"
-22.49,10.0,91.47,22.49,"48 min",,554620,"Life is Strange: Before the Storm"
+22.49,10.0,91.47,22.49,"48 min","11.53 hours",554620,"Life is Strange: Before the Storm"
 20.48,9.99,76.74,21.5,"1.05 hours","19.65 hours",326840,Heart&Slash
 39.95,9.99,89.48,39.95,"20 min","28.17 hours",631510,"Devil May Cry HD Collection"
 21.5,9.98,65.98,21.5,"52 min","15.38 hours",464100,"Codex of Victory"
@@ -322,7 +322,7 @@
 27.5,9.76,83.45,49.95,"1.82 hours","20.58 hours",288470,"Fable Anniversary"
 29.95,9.76,80.25,29.95,"29 min","3.69 hours",1225590,"Sea of Solitude"
 29.95,9.76,68.66,29.95,"29 min","7.55 hours",1597580,"Clid the Snail"
-20.16,9.75,88.28,21.5,"1.07 hours",,41500,Torchlight
+20.16,9.75,88.28,21.5,"1.07 hours","19.10 hours",41500,Torchlight
 20.16,9.75,77.74,21.5,"1.07 hours","13.60 hours",598490,"Healer's Quest"
 25.95,9.73,87.74,25.95,"36 min","20.92 hours",283640,"Salt and Sanctuary"
 20.26,9.73,96.11,21.95,"1.08 hours","41.57 hours",367520,"Hollow Knight"
@@ -440,7 +440,7 @@
 39.95,8.41,82.48,39.95,"16 min","6.36 hours",735580,"11-11 Memories Retold"
 21.5,8.34,89.81,21.5,"38 min","7.76 hours",255390,"Max: The Curse of Brotherhood"
 21.5,8.34,74.2,21.5,"38 min","11.33 hours",318600,"The Flame in the Flood"
-18.17,8.32,80.24,21.5,"1.18 hours",,650220,"Interplanetary: Enhanced Edition"
+18.17,8.32,80.24,21.5,"1.18 hours","3.72 hours",650220,"Interplanetary: Enhanced Edition"
 22.95,8.3,93.38,22.95,"34 min","7.28 hours",260230,"Valiant Hearts: The Great War™ / Soldats Inconnus : Mémoires de la Grande Guerre™"
 20.42,8.28,74.7,29.95,"1.47 hours","20.98 hours",743890,"Mega Man X Legacy Collection"
 28.95,8.27,91.42,28.95,"24 min","10.71 hours",530320,Wandersong
@@ -678,7 +678,7 @@
 21.5,6.14,86.44,21.5,"24 min","12.18 hours",602700,Chippy
 24.5,6.13,77.6,24.5,"20 min",,576960,"🧠 OUT OF THE BOX"
 15.3,6.12,88.85,22.95,"1.50 hours","17.18 hours",445980,"Wizard of Legend"
-28.95,6.09,66.21,28.95,"16 min",,269850,"Get Packed"
+28.95,6.09,66.21,28.95,"16 min","3.04 hours",269850,"Get Packed"
 28.95,6.09,83.18,28.95,"16 min","4.83 hours",669950,"BDSM: Big Drunk Satanic Massacre"
 28.95,6.09,68.59,28.95,"16 min","5.99 hours",774811,"YUMENIKKI -DREAM DIARY-"
 28.95,6.09,87.06,28.95,"16 min","71.92 hours",1000030,"Cook, Serve, Delicious! 3?!"
@@ -697,7 +697,7 @@
 21.5,5.96,82.73,21.5,"23 min","6.37 hours",522210,"Serial Cleaner"
 21.5,5.96,82.07,21.5,"23 min","13.45 hours",638000,"When Ski Lifts Go Wrong "
 21.5,5.96,63.84,21.5,"23 min","16.83 hours",966720,"Pumped BMX Pro"
-16.64,5.94,78.35,29.95,"1.80 hours",,10150,Prototype
+16.64,5.94,78.35,29.95,"1.80 hours","14.21 hours",10150,Prototype
 16.54,5.94,83.29,29.5,"1.78 hours","3.04 hours",343860,Tacoma
 17.75,5.92,79.22,17.75,"30 min","0.00 hours",1079230,"Himno - The Silent Melody"
 29.5,5.9,79.72,29.5,"15 min","16.85 hours",32450,"LEGO® Indiana Jones™ 2: The Adventure Continues"
@@ -797,7 +797,7 @@
 21.95,5.28,71.31,21.95,"19 min","10.60 hours",851280,MindSeize
 21.95,5.28,82.71,21.95,"19 min","5.79 hours",1063490,"Still There"
 29.5,5.25,87.98,29.5,"13 min","15.41 hours",792120,"FIGHT KNIGHT"
-14.5,5.24,60.77,14.5,"34 min",,208110,"Myst V"
+14.5,5.24,60.77,14.5,"34 min","9.18 hours",208110,"Myst V"
 14.5,5.24,95.72,14.5,"34 min","6.74 hours",219150,"Hotline Miami"
 14.5,5.24,73.26,14.5,"34 min","24.34 hours",226100,"Nom Nom Galaxy"
 14.99,5.23,92.89,27.99,"1.87 hours","17.37 hours",70400,"Recettear: An Item Shop's Tale"
@@ -1019,7 +1019,7 @@
 14.95,3.6,85.51,14.95,"19 min","11.32 hours",21780,"Driver: Parallel Lines"
 17.99,3.6,73.88,17.99,"15 min","0.00 hours",790360,WarriOrb
 14.35,3.59,68.44,14.35,"20 min","0.00 hours",405720,"Perfect Universe"
-21.5,3.58,80.55,21.5,"12 min",,18050,"DeathSpank: Thongs Of Virtue"
+21.5,3.58,80.55,21.5,"12 min","13.64 hours",18050,"DeathSpank: Thongs Of Virtue"
 21.5,3.58,78.95,21.5,"12 min","3.64 hours",295790,"Never Alone (Kisima Ingitchuna)"
 21.5,3.58,78.87,21.5,"12 min","2.55 hours",499890,Aaero
 21.5,3.58,86.54,21.5,"12 min","9.40 hours",545980,"Voodoo Vince: Remastered"
@@ -1113,7 +1113,7 @@
 18.95,2.94,74.99,18.95,"11 min","24.50 hours",517330,"Stellar Interface"
 18.68,2.94,59.32,99.95,"5.35 hours","27.81 hours",1846380,"Need for Speed™ Unbound"
 15.5,2.93,84.32,15.5,"14 min","5.18 hours",792040,"Detective Di: The Silk Rose Murders"
-14.5,2.9,46.23,14.5,"15 min",,12790,Damnation
+14.5,2.9,46.23,14.5,"15 min","8.26 hours",12790,Damnation
 14.5,2.9,91.19,14.5,"15 min","7.26 hours",32460,"Monkey Island 2: Special Edition"
 14.5,2.9,61.96,14.5,"15 min","9.34 hours",45300,"Wings of Prey"
 14.5,2.9,84.62,14.5,"15 min","7.40 hours",80310,"Gemini Rue"
@@ -1124,7 +1124,7 @@
 14.5,2.9,91.09,14.5,"15 min","6.51 hours",469790,Linelight
 14.5,2.9,46.52,14.5,"15 min","6.30 hours",496390,Shiny
 14.5,2.9,74.84,14.5,"15 min","2.59 hours",899470,"Chook & Sosig: Walk the Plank"
-14.5,2.9,74.51,14.5,"15 min",,1267930,"Deadly Dozen: Pacific Theater"
+14.5,2.9,74.51,14.5,"15 min","4.79 hours",1267930,"Deadly Dozen: Pacific Theater"
 15.3,2.89,86.04,15.3,"14 min","19.64 hours",6310,"The Longest Journey"
 18.5,2.87,73.36,18.5,"11 min","5.26 hours",454950,Mainlining
 19.99,2.86,85.34,19.99,"10 min","17.54 hours",40990,Mafia
@@ -1202,7 +1202,7 @@
 15.0,2.32,89.26,15.0,"11 min","33.04 hours",367450,"Poly Bridge"
 14.99,2.32,72.21,14.99,"11 min",,994040,"Lichtspeer: Double Speer Edition"
 21.95,2.29,81.72,21.95,"7 min","1.48 hours",629770,"Tiny Echo"
-21.95,2.29,56.54,21.95,"7 min",,879420,"Agony UNRATED"
+21.95,2.29,56.54,21.95,"7 min","8.53 hours",879420,"Agony UNRATED"
 29.5,2.27,75.17,29.5,"5 min","4.51 hours",383930,"Doorways: Holy Mountains of Flesh"
 24.95,2.27,71.01,24.95,"6 min","5.20 hours",827610,"Dead End Job"
 14.5,2.25,73.0,14.5,"11 min","6.98 hours",18120,"Unstoppable Gorg"
@@ -1318,7 +1318,7 @@
 14.5,1.51,69.22,14.5,"7 min","13.70 hours",816430,"Radical Relocation"
 14.5,1.51,78.02,14.5,"7 min","7.45 hours",841660,"The Treehouse Man"
 14.5,1.51,77.54,14.5,"7 min","9.63 hours",1717570,Pompom
-23.5,1.47,82.19,23.5,"4 min",,2820,"X3: Terran Conflict"
+23.5,1.47,82.19,23.5,"4 min","99.85 hours",2820,"X3: Terran Conflict"
 13.95,1.46,64.32,13.95,"7 min","16.73 hours",243000,"Omikron - The Nomad Soul"
 13.99,1.46,86.4,13.99,"7 min","11.53 hours",322290,"Gurumin: A Monstrous Adventure"
 30.55,1.45,80.21,30.55,"3 min","13.13 hours",6300,"Dreamfall: The Longest Journey"
