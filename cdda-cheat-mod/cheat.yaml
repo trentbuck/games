@@ -557,6 +557,38 @@
         - qt_knife_trench
         - knife_rm42
 
+        # I found a folding bicycle once by accident, and
+        # it's SUPER handy for quick trips.
+        # Slower, but much handier than a stolen car.
+        # - folded_bicycle
+        # - folded_skateboard_generic
+        - folded_unicycle_twb
+        # Unicycle folds up as well, but can't be spawned pre-folded???
+        # Define my own as a pre-defined vehicle! -- UPDATE: SOLVED!
+        # // Build your own folding bicycle/unicycle?
+        # // I notice that "folded_bicycle" is using "foldable light frame" (steel, 19kg total), but
+        # // regular bicycles use "extra light frame" (aluminium, 9kg total).
+        # // Maybe we want both those properties (foldable extra-light frame).
+        # {"item": "foldxlframe", "count": 3}, {"item": "nuts_bolts", "count": 2}, {"item": "welding_wire_alloy", "count": 20},
+        # {"item": "saddle"},
+        # {"item": "foot_crank"},
+        # // {"item": "alternator_bicycle"},
+        # {"item": "wheel_mount_light", "count": 2}, {"item": "wheel_bicycle_or", "count": 2}, {"item": "tire_bicycle_or", "count": 2}, {"item": "welding_wire_steel", "count": 20},
+        # // Need handle for unicycle but not bicycle?
+        # // {"item": "handle"}, {"item": "pipe", "count": 10},
+        # // Add a spike to the front for ramming damage? ... meh, looks ugly in the sprite.
+        # // {"item": "spike"},
+        # // tiny electric motor
+        # // {"item": "small_storage_battery"},
+        # // controls
+        # // electronic control unit
+        # // NOT RELEVANT -- "bike rack" is for "mount bike on car", NOT for "mount stuff on bike".
+        # // {"item": "bike_rack"},
+        # // Normally having a front and rear basket would be nice (+40L storage).
+        # // But with the debug_backpack, I don't care.
+        # // There are also no bike-compatible panniers/saddlebags.
+        # // {"item": "bike_basket", "count": 2},
+
 
         ########################################
         # BOOKZ --- only the books that have recipes you can't get automatically with high-enough skill level.
@@ -1072,37 +1104,6 @@
       # • weapon mods (useful for weapons)
       # • flags (useful for "don't wear by default" wearables, e.g. blanket, towel, armor)
       entries:
-
-        # I found a folding bicycle once by accident, and
-        # it's SUPER handy for quick trips.
-        # Slower, but much handier than a stolen car.
-        - item: folded_bicycle
-        # Unicycle folds up as well, but can't be spawned pre-folded???
-        # FIXME: define my own as a pre-defined vehicle!
-        # // Build your own folding bicycle/unicycle?
-        # // I notice that "folded_bicycle" is using "foldable light frame" (steel, 19kg total), but
-        # // regular bicycles use "extra light frame" (aluminium, 9kg total).
-        # // Maybe we want both those properties (foldable extra-light frame).
-        # {"item": "foldxlframe", "count": 3}, {"item": "nuts_bolts", "count": 2}, {"item": "welding_wire_alloy", "count": 20},
-        # {"item": "saddle"},
-        # {"item": "foot_crank"},
-        # // {"item": "alternator_bicycle"},
-        # {"item": "wheel_mount_light", "count": 2}, {"item": "wheel_bicycle_or", "count": 2}, {"item": "tire_bicycle_or", "count": 2}, {"item": "welding_wire_steel", "count": 20},
-        # // Need handle for unicycle but not bicycle?
-        # // {"item": "handle"}, {"item": "pipe", "count": 10},
-        # // Add a spike to the front for ramming damage? ... meh, looks ugly in the sprite.
-        # // {"item": "spike"},
-        # // tiny electric motor
-        # // {"item": "small_storage_battery"},
-        # // controls
-        # // electronic control unit
-        # // NOT RELEVANT -- "bike rack" is for "mount bike on car", NOT for "mount stuff on bike".
-        # // {"item": "bike_rack"},
-        # // Normally having a front and rear basket would be nice (+40L storage).
-        # // But with the debug_backpack, I don't care.
-        # // There are also no bike-compatible panniers/saddlebags.
-        # // {"item": "bike_basket", "count": 2},
-
         # grapnel is especially useful for getting out of the Hub 01 mission to the fallen skyscraper.
         - item: grapnel
           custom-flags: [no_auto_equip]
@@ -1981,3 +1982,19 @@
       watertight: true
       airtight: true
       description: Tardis pocket
+
+
+
+- id: folded_unicycle_twb
+  type: TOOL
+  copy-from: generic_folded_vehicle
+  name:
+    str: folded Unicycle
+  description: A folded Unicycle.
+  weight: 4 kg
+  volume: 4 L
+  symbol: '0'
+  color: light_gray
+  variables:
+    vehicle_name: Unicycle
+    folded_parts: '[{"id":"frame_handle","base":{"typeid":"foldxlframe","item_tags":["VEHICLE"]},"mount_dx":0,"mount_dy":0},{"id":"saddle","base":{"typeid":"saddle","item_tags":["VEHICLE"]},"mount_dx":0,"mount_dy":0,"variant":"pedal"},{"id":"foot_pedals","base":{"typeid":"foot_crank","item_tags":["VEHICLE"]},"mount_dx":0,"mount_dy":0},{"id":"wheel_mount_light","base":{"typeid":"wheel_mount_light","item_tags":["VEHICLE"]},"mount_dx":0,"mount_dy":0},{"id":"wheel_unicycle","base":{"typeid":"wheel_bicycle","item_tags":["VEHICLE"]},"mount_dx":0,"mount_dy":0}]'
