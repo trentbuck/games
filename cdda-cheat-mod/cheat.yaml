@@ -475,7 +475,7 @@
         # - nomad_bodyglove_2
         # - helmet_liner
         # - gloves_liner
-        - debug_backpack
+        # - debug_backpack
         # - waterskin
         # - waterskin
         - metal_file
@@ -1921,6 +1921,8 @@
     - SAFECRACK
     # https://cdda-guide.nornagon.net/item/solarpack_on
     - SOLARPACK_ON
+    # https://cdda-guide.nornagon.net/item/debug_backpack
+    - TARDIS
   # FIXME: techniques: ...
   pocket_data:
     # https://cdda-guide.nornagon.net/item/ar_glasses_advanced
@@ -1929,12 +1931,15 @@
       max_contains_volume: 1 ml
       max_contains_weight: 1 g
       weight_multiplier: 0
+    # https://cdda-guide.nornagon.net/item/debug_backpack
+    # https://cdda-guide.nornagon.net/item/armor_star_samurai
     - pocket_type: CONTAINER
       volume_encumber_modifier: 0
       weight_multiplier: 0
-      max_contains_volume: 6000 ml
-      max_contains_weight: 20000 kg
-      max_item_length: 100 cm
-      moves: 800
-      description: Synchronization point for ryūsei dō plate.
+      max_contains_volume: 100000 L
+      max_contains_weight: 100000 kg
+      max_item_length: 1 km
+      moves: 1
       watertight: true
+      airtight: true
+      description: Tardis pocket
