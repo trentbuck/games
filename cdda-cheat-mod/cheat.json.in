@@ -1140,6 +1140,16 @@
                     // {"item": "hammer_sledge"}, {"item": "hammer_sledge_heavy"},
                     // mace is actually better than sledge in terms of stamina &c, and it's pure bash per hit is only slightly lower.
                     {"item": "qt_mace"},
+                    {"item": "mjolnir"},
+                    {"item": "hk_mp5sd", "charges": 40, "ammo-item": "9mmfmj", "contents-item": ["light_grip", "match_trigger"]},
+                    {"item": "mp5mag_40rd", "count": 5, "ammo-item": "9mmfmj", "charges": 40 },
+
+                    {"item": "phase_immersion_suit", "custom-flags": ["no_auto_equip"]},
+                    {"item": "jacket_eod", "custom-flags": ["no_auto_equip"]},
+                    {"item": "trousers_eod", "custom-flags": ["no_auto_equip"]},
+                    {"item": "helmet_eod", "custom-flags": ["no_auto_equip"]},
+                    {"item": "gloves_eod", "custom-flags": ["no_auto_equip"]},
+                    {"item": "foot_protectors_eod", "custom-flags": ["no_auto_equip"]},
 
                     {"item": "m4_carlgustav", "ammo-item": "84x246mm_hedp", "charges": 1, "contents-item": ["modern_handguard", "match_trigger", "rifle_scope_high_end_mount", "holo_sight", "light_grip"]},
                     {"item": "84x246mm_hedp", "count": 6},
