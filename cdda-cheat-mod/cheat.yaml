@@ -1078,6 +1078,7 @@
         # Slower, but much handier than a stolen car.
         - item: folded_bicycle
         # Unicycle folds up as well, but can't be spawned pre-folded???
+        # FIXME: define my own as a pre-defined vehicle!
         # // Build your own folding bicycle/unicycle?
         # // I notice that "folded_bicycle" is using "foldable light frame" (steel, 19kg total), but
         # // regular bicycles use "extra light frame" (aluminium, 9kg total).
@@ -1113,12 +1114,12 @@
           custom-flags: [no_auto_equip]
         - item: sleeping_bag_roll
           custom-flags: [no_auto_equip]
-        - item: stethoscope
-          custom-flags: [no_auto_equip]
-        - item: survivor_rig
-        - item: survivor_belt_notools
-        - item: survivor_vest
-        - item: trenchcoat_survivor
+        # - item: stethoscope
+        #   custom-flags: [no_auto_equip]
+        # - item: survivor_rig
+        # - item: survivor_belt_notools
+        # - item: survivor_vest
+        # - item: trenchcoat_survivor
         # - item: rm13_armor
         #   charges: 5000
         - item: tailors_kit
@@ -1128,13 +1129,14 @@
         # Use this to avoid water damage to the equipment.
         - item: bag_zipper_gallon
           count: 10
-        - item: survivor_dry_bag
-          custom-flags: [no_auto_equip]
-        - item: survivor_dry_duffelbag
-          custom-flags: [no_auto_equip]
-          contents-item:
-            - eink_tablet_pc
-            - cordless_drill
+        # - item: survivor_dry_bag
+        #   custom-flags: [no_auto_equip]
+        # - item: survivor_dry_duffelbag
+        #   custom-flags: [no_auto_equip]
+        #   contents-item:
+        #     # - eink_tablet_pc
+        #     - cordless_drill
+        - item: cordless_drill
 
         # for when the Aircraft Carrier's a long way from land.
         - item: swim_fins
@@ -1142,8 +1144,8 @@
         - item: rebreather
           custom-flags: [no_auto_equip]
           charges: 360
-        - item: goggles_swim
-          custom-flags: [no_auto_equip]
+        # - item: goggles_swim
+        #   custom-flags: [no_auto_equip]
         # Putting the UPS or battery into the drill is a fucking pain.
         - item: hand_drill
         - item: match
@@ -1243,19 +1245,25 @@
         #
         # This replaces the MRE packages.
         # Putting them together makes the inventory menu less annoying.
-        - item: chocolate_military
-          count: 50
-        - item: fruit_leather
-          count: 50
-        - item: cheese_hard
-          count: 100
-        - item: can_cheese
-          count: 100
-        - item: spread_peanutbutter
-          count: 100
-        - item: crackers
-          count: 100
-        - item: flour
+        # - item: chocolate_military
+        #   count: 50
+        # - item: fruit_leather
+        #   count: 50
+        # - item: cheese_hard
+        #   count: 100
+        # - item: can_cheese
+        #   count: 100
+        # - item: spread_peanutbutter
+        #   count: 100
+        # - item: crackers
+        #   count: 100
+        # - item: flour
+        #   count: 100
+        # There used to be "debug SPAM", which made you sad to eat it.
+        # This is better, it makes you happy to eat it.
+        # NOTE: still perishable, after 3 days.
+        # NOTE: doesn't include necessary vitamins.
+        - item: debug_calories
           count: 100
 
         # { "item": "mre_ravioli", "count": 10 },
@@ -1931,8 +1939,38 @@
       max_contains_volume: 1 ml
       max_contains_weight: 1 g
       weight_multiplier: 0
+    # https://cdda-guide.nornagon.net/item/survivor_rig
+    # https://cdda-guide.nornagon.net/item/survivor_vest
+    - description: Rifle sling.
+      pocket_type: CONTAINER
+      holster: true
+      min_item_volume: 1000 ml
+      max_contains_volume: 10 L
+      max_contains_weight: 10 kg
+      max_item_length: 200 cm
+      volume_encumber_modifier: 0.1
+      moves: 1
+    - description: Pistol holster.
+      magazine_well: 350 ml
+      pocket_type: CONTAINER
+      holster: true
+      min_item_volume: 300 ml
+      max_contains_volume: 1000 ml
+      max_contains_weight: 2 kg
+      max_item_length: 30 cm
+      moves: 1
+    - description: Knife sheath.
+      holster: true
+      max_contains_volume: 1 L
+      max_contains_weight: 2 kg
+      max_item_length: 70 cm
+      moves: 1
+      flag_restriction:
+        - SHEATH_KNIFE
     # https://cdda-guide.nornagon.net/item/debug_backpack
     # https://cdda-guide.nornagon.net/item/armor_star_samurai
+    # FIXME: Make a few of these, so it can contain e.g. water and oil directly?
+    #        Compare with https://cdda-guide.nornagon.net/item/feeding_kit
     - pocket_type: CONTAINER
       volume_encumber_modifier: 0
       weight_multiplier: 0
