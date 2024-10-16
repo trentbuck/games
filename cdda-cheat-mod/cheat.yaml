@@ -49,33 +49,33 @@
   description: You never prosper.
   points: -1111
   skills:
-     - { "level": 6, "name": "speech" }
-     - { "level": 6, "name": "computer" }
-     - { "level": 6, "name": "firstaid" }
-     - { "level": 6, "name": "mechanics" }
-     - { "level": 6, "name": "traps" }
-     - { "level": 6, "name": "driving" }
-     - { "level": 6, "name": "swimming" }
-     - { "level": 6, "name": "fabrication" }
-     - { "level": 6, "name": "cooking" }
-     - { "level": 6, "name": "tailor" }
-     - { "level": 6, "name": "survival" }
-     - { "level": 6, "name": "electronics" }
-     - { "level": 6, "name": "archery" }
-     - { "level": 6, "name": "gun" }
-     - { "level": 6, "name": "launcher" }
-     - { "level": 6, "name": "pistol" }
-     - { "level": 6, "name": "rifle" }
-     - { "level": 6, "name": "shotgun" }
-     - { "level": 6, "name": "smg" }
-     - { "level": 6, "name": "throw" }
-     - { "level": 6, "name": "melee" }
-     - { "level": 6, "name": "bashing" }
-     - { "level": 6, "name": "cutting" }
-     - { "level": 6, "name": "dodge" }
-     - { "level": 6, "name": "stabbing" }
-     - { "level": 6, "name": "unarmed" }
-     - { "level": 6, "name": "chemistry" }
+     - { level: 6, name: speech }
+     - { level: 6, name: computer }
+     - { level: 6, name: firstaid }
+     - { level: 6, name: mechanics }
+     - { level: 6, name: traps }
+     - { level: 6, name: driving }
+     - { level: 6, name: swimming }
+     - { level: 6, name: fabrication }
+     - { level: 6, name: cooking }
+     - { level: 6, name: tailor }
+     - { level: 6, name: survival }
+     - { level: 6, name: electronics }
+     - { level: 6, name: archery }
+     - { level: 6, name: gun }
+     - { level: 6, name: launcher }
+     - { level: 6, name: pistol }
+     - { level: 6, name: rifle }
+     - { level: 6, name: shotgun }
+     - { level: 6, name: smg }
+     - { level: 6, name: throw }
+     - { level: 6, name: melee }
+     - { level: 6, name: bashing }
+     - { level: 6, name: cutting }
+     - { level: 6, name: dodge }
+     - { level: 6, name: stabbing }
+     - { level: 6, name: unarmed }
+     - { level: 6, name: chemistry }
 
 - type: profession
   subtype: hobby
@@ -86,33 +86,33 @@
   description: You never prosper.
   points: -1111
   skills:
-     - { "level": 10, "name": "speech" }
-     - { "level": 10, "name": "computer" }
-     - { "level": 10, "name": "firstaid" }
-     - { "level": 10, "name": "mechanics" }
-     - { "level": 10, "name": "traps" }
-     - { "level": 10, "name": "driving" }
-     - { "level": 10, "name": "swimming" }
-     - { "level": 10, "name": "fabrication" }
-     - { "level": 10, "name": "cooking" }
-     - { "level": 10, "name": "tailor" }
-     - { "level": 10, "name": "survival" }
-     - { "level": 10, "name": "electronics" }
-     - { "level": 10, "name": "archery" }
-     - { "level": 10, "name": "gun" }
-     - { "level": 10, "name": "launcher" }
-     - { "level": 10, "name": "pistol" }
-     - { "level": 10, "name": "rifle" }
-     - { "level": 10, "name": "shotgun" }
-     - { "level": 10, "name": "smg" }
-     - { "level": 10, "name": "throw" }
-     - { "level": 10, "name": "melee" }
-     - { "level": 10, "name": "bashing" }
-     - { "level": 10, "name": "cutting" }
-     - { "level": 10, "name": "dodge" }
-     - { "level": 10, "name": "stabbing" }
-     - { "level": 10, "name": "unarmed" }
-     - { "level": 10, "name": "chemistry" }
+     - { level: 10, name: speech }
+     - { level: 10, name: computer }
+     - { level: 10, name: firstaid }
+     - { level: 10, name: mechanics }
+     - { level: 10, name: traps }
+     - { level: 10, name: driving }
+     - { level: 10, name: swimming }
+     - { level: 10, name: fabrication }
+     - { level: 10, name: cooking }
+     - { level: 10, name: tailor }
+     - { level: 10, name: survival }
+     - { level: 10, name: electronics }
+     - { level: 10, name: archery }
+     - { level: 10, name: gun }
+     - { level: 10, name: launcher }
+     - { level: 10, name: pistol }
+     - { level: 10, name: rifle }
+     - { level: 10, name: shotgun }
+     - { level: 10, name: smg }
+     - { level: 10, name: throw }
+     - { level: 10, name: melee }
+     - { level: 10, name: bashing }
+     - { level: 10, name: cutting }
+     - { level: 10, name: dodge }
+     - { level: 10, name: stabbing }
+     - { level: 10, name: unarmed }
+     - { level: 10, name: chemistry }
 
 # Using a hobby (background) instead of a profession or scenario, as
 # you can choose more than one, and scenarios generally do not restrict them.
@@ -318,33 +318,33 @@
 
     # If you set all skills to 10, you never experience the training system at all...
   skills:
-     - { "level": 3, "name": "speech" }
-     - { "level": 3, "name": "computer" }
-     - { "level": 3, "name": "firstaid" }
-     - { "level": 3, "name": "mechanics" }
-     - { "level": 3, "name": "traps" }
-     - { "level": 3, "name": "driving" }
-     - { "level": 3, "name": "swimming" }
-     - { "level": 3, "name": "fabrication" }
-     - { "level": 3, "name": "cooking" }
-     - { "level": 3, "name": "tailor" }
-     - { "level": 3, "name": "survival" }
-     - { "level": 3, "name": "electronics" }
-     - { "level": 3, "name": "archery" }
-     - { "level": 3, "name": "gun" }
-     - { "level": 3, "name": "launcher" }
-     - { "level": 3, "name": "pistol" }
-     - { "level": 3, "name": "rifle" }
-     - { "level": 3, "name": "shotgun" }
-     - { "level": 3, "name": "smg" }
-     - { "level": 3, "name": "throw" }
-     - { "level": 3, "name": "melee" }
-     - { "level": 3, "name": "bashing" }
-     - { "level": 3, "name": "cutting" }
-     - { "level": 3, "name": "dodge" }
-     - { "level": 3, "name": "stabbing" }
-     - { "level": 3, "name": "unarmed" }
-     - { "level": 3, "name": "chemistry" }
+     - { level: 3, name: speech }
+     - { level: 3, name: computer }
+     - { level: 3, name: firstaid }
+     - { level: 3, name: mechanics }
+     - { level: 3, name: traps }
+     - { level: 3, name: driving }
+     - { level: 3, name: swimming }
+     - { level: 3, name: fabrication }
+     - { level: 3, name: cooking }
+     - { level: 3, name: tailor }
+     - { level: 3, name: survival }
+     - { level: 3, name: electronics }
+     - { level: 3, name: archery }
+     - { level: 3, name: gun }
+     - { level: 3, name: launcher }
+     - { level: 3, name: pistol }
+     - { level: 3, name: rifle }
+     - { level: 3, name: shotgun }
+     - { level: 3, name: smg }
+     - { level: 3, name: throw }
+     - { level: 3, name: melee }
+     - { level: 3, name: bashing }
+     - { level: 3, name: cutting }
+     - { level: 3, name: dodge }
+     - { level: 3, name: stabbing }
+     - { level: 3, name: unarmed }
+     - { level: 3, name: chemistry }
 
 
 - type: profession
@@ -512,11 +512,46 @@
         - battery_ups
         - mp3
         - mirror
-        - knife_rm42
         # - scuba_tank
         # I haven't tried these but maybe they're fun.
         # - folded_inflatable_boat
         # - folded_skateboard_generic
+
+        # Sledges are useful for opening jammed safes and doors.
+        # The alternative would be a rocket launcher, maybe.
+        # You can also cut open doors with a cutting torch, BUT
+        # if you try that on a jammed gun safe, it'll detonate all the ammo within!
+        # PS: what actually matters is having a high single-hit bash damage.
+        # The heavy sledge was knackering me very quickly, and
+        # didn't seem to get through doors any faster than the short sledg.
+        # - hammer_sledge_short
+        # - hammer_sledge
+        # - hammer_sledge_heavy
+        # mace is actually better than sledge in terms of stamina &c, and
+        # it's pure bash per hit is only slightly lower.
+        - qt_mace
+        - mjolnir
+
+        # The knife is real fast and fun for combat, but
+        # I would also like to have something with reach attacks.
+        # What's the difference between REACH_ATTACK and REACH3?
+        # The latter is only on bullwhip and pike (all variants).
+        # The RM42 actually gives REACH_ATTACK when mounted on a gun.
+        # Although I think then I have to NOT use Taekwondo, so
+        # I attack with my bayonet instead of my feet...
+        # - bullwhip
+        # - pike
+        # - lucern_hammer
+        # I also had fun running around with a sword for a while.
+        # - qt_nodachi
+        # - qt_katana
+        # - qt_wakizashi
+        # kukri is better stamina and speed, except against heavily armoured dudes - and only slightly worse against those.  It has worse block, but still works with Ninjutsu techniques.
+        # kukri is purely better than survivor_machete_qt, except for blocking and grass cutting (who cares?)
+        # kukri is slightly slower but better stamina than qt_knife_trench.  kukri is much longer but a bit lighter than qt_knife_trench.  qt_knife_trench does piere, so it's a different kind of attack.
+        - qt_kukri
+        - qt_knife_trench
+        - knife_rm42
 
 
         ########################################
@@ -1028,6 +1063,10 @@
       #   { "item": "mobile_memory_card_used", "contents-item": ["mag_dude"]},
       #   { "item": "usb_drive", "contents-item": ["mag_dude"]}],
 
+      # "entries" is the same as "items" except you can provide additional data, e.g.
+      # • count (useful for ammo and consumables)
+      # • weapon mods (useful for weapons)
+      # • flags (useful for "don't wear by default" wearables, e.g. blanket, towel, armor)
       entries:
 
         # I found a folding bicycle once by accident, and
@@ -1061,21 +1100,17 @@
 
         # grapnel is especially useful for getting out of the Hub 01 mission to the fallen skyscraper.
         - item: grapnel
-          custom-flags:
-            - no_auto_equip
+          custom-flags: [no_auto_equip]
         # After doing some fighting in the heat, I start to sweat and get damp.
         # This makes me feel sad, and also maybe catch influenza after swimming to the AC.
         # To "dry off" you "activate" a towel (but not a dishtowel) and the water moves into it.
         # You can't wring out the towel; it empties itself automatically after a while.
         - item: towel
-          custom-flags:
-            - no_auto_equip
+          custom-flags: [no_auto_equip]
         - item: sleeping_bag_roll
-          custom-flags:
-            - no_auto_equip
+          custom-flags: [no_auto_equip]
         - item: stethoscope
-          custom-flags:
-            - no_auto_equip
+          custom-flags: [no_auto_equip]
         - item: survivor_rig
         - item: survivor_belt_notools
         - item: survivor_vest
@@ -1090,26 +1125,21 @@
         - item: bag_zipper_gallon
           count: 10
         - item: survivor_dry_bag
-          custom-flags:
-            - no_auto_equip
+          custom-flags: [no_auto_equip]
         - item: survivor_dry_duffelbag
-          custom-flags:
-            - no_auto_equip
+          custom-flags: [no_auto_equip]
           contents-item:
             - eink_tablet_pc
             - cordless_drill
 
         # for when the Aircraft Carrier's a long way from land.
         - item: swim_fins
-          custom-flags:
-            - no_auto_equip
+          custom-flags: [no_auto_equip]
         - item: rebreather
-          custom-flags:
-            - no_auto_equip
+          custom-flags: [no_auto_equip]
           charges: 360
         - item: goggles_swim
-          custom-flags:
-            - no_auto_equip
+          custom-flags: [no_auto_equip]
         # Putting the UPS or battery into the drill is a fucking pain.
         - item: hand_drill
         - item: match
@@ -1159,8 +1189,7 @@
           charges: 500
         # Stuff that quest givers often ask for.
         - item: acoustic_guitar
-          custom-flags:
-            - no_auto_equip
+          custom-flags: [no_auto_equip]
         - item: holybook_quran
         - item: book_pneumatics
         - item: scrap
@@ -1313,19 +1342,6 @@
           count: 3
           charges: 10000
 
-        # Sledges are useful for opening jammed safes and doors.
-        # The alternative would be a rocket launcher, maybe.
-        # You can also cut open doors with a cutting torch, BUT
-        # if you try that on a jammed gun safe, it'll detonate all the ammo within!
-        # PS: what actually matters is having a high single-hit bash damage.
-        # The heavy sledge was knackering me very quickly, and
-        # didn't seem to get through doors any faster than the short sledg.
-        # {"item": "hammer_sledge_short"},
-        # {"item": "hammer_sledge"}, {"item": "hammer_sledge_heavy"},
-        # mace is actually better than sledge in terms of stamina &c, and
-        # it's pure bash per hit is only slightly lower.
-        - item: qt_mace
-        - item: mjolnir
         - item: hk_mp5sd
           charges: 40
           ammo-item: 9mmfmj
@@ -1337,23 +1353,17 @@
           ammo-item: 9mmfmj
           charges: 40
         - item: phase_immersion_suit
-          custom-flags:
-            - no_auto_equip
+          custom-flags: [no_auto_equip]
         - item: jacket_eod
-          custom-flags:
-            - no_auto_equip
+          custom-flags: [no_auto_equip]
         - item: trousers_eod
-          custom-flags:
-            - no_auto_equip
+          custom-flags: [no_auto_equip]
         - item: helmet_eod
-          custom-flags:
-            - no_auto_equip
+          custom-flags: [no_auto_equip]
         - item: gloves_eod
-          custom-flags:
-            - no_auto_equip
+          custom-flags: [no_auto_equip]
         - item: foot_protectors_eod
-          custom-flags:
-            - no_auto_equip
+          custom-flags: [no_auto_equip]
         - item: m4_carlgustav
           ammo-item: 84x246mm_hedp
           charges: 1
@@ -1376,24 +1386,6 @@
             - holo_sight
         - item: 40x46mm_m433
           count: 15
-
-        # The knife is real fast and fun for combat, but
-        # I would also like to have something with reach attacks.
-        # What's the difference between REACH_ATTACK and REACH3?
-        # The latter is only on bullwhip and pike (all variants).
-        # The RM42 actually gives REACH_ATTACK when mounted on a gun.
-        # Although I think then I have to NOT use Taekwondo, so
-        # I attack with my bayonet instead of my feet...
-        # {"item": "bullwhip"}, {"item": "pike"}, {"item": "lucern_hammer"},
-        # I also had fun running around with a sword for a while.
-        # {"item": "qt_nodachi"},
-        # {"item": "qt_katana"},
-        # {"item": "qt_wakizashi"},
-        # kukri is better stamina and speed, except against heavily armoured dudes - and only slightly worse against those.  It has worse block, but still works with Ninjutsu techniques.
-        # kukri is purely better than survivor_machete_qt, except for blocking and grass cutting (who cares?)
-        # kukri is slightly slower but better stamina than qt_knife_trench.  kukri is much longer but a bit lighter than qt_knife_trench.  qt_knife_trench does piere, so it's a different kind of attack.
-        - item: qt_kukri
-        - item: qt_knife_trench
 
         # For just bumbling around having fun,
         # it's nice to have stuff that shoots the most common rounds.
