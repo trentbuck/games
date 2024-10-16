@@ -387,49 +387,50 @@
     # superbike
     surv_car
     # surv_rv
-  "// MAYBE CBMS":
-    - bio_radscrubber
-    - bio_scent_mask
-    - bio_remote
-    - bio_ground_sonar
-    - bio_climate
-    - bio_nanobots
-    - bio_geiger
-    - bio_blood_anal
-    - bio_evap
-    - bio_night_vision
-    - bio_meteorologist
-    - bio_infrared
-    - bio_memory
-    # handy to counteract getting winded when pulping corpses???
-    - bio_gills
-    - bio_soporific
-    - bio_taste_blocker
-    - bio_face_mask
-    - bio_dex_enhancer
-    - bio_eye_enhancer
-    - bio_int_enhancer
-    - bio_str_enhancer
-    - bio_membrane
-    - bio_weight
-    - bio_power_armor_interface_mkII
 
+  ### Bionics stuff ###
+  # "// MAYBE CBMS":
+  #   - bio_radscrubber
+  #   - bio_scent_mask
+  #   - bio_remote
+  #   - bio_ground_sonar
+  #   - bio_climate
+  #   - bio_nanobots
+  #   - bio_geiger
+  #   - bio_blood_anal
+  #   - bio_evap
+  #   - bio_night_vision
+  #   - bio_meteorologist
+  #   - bio_infrared
+  #   - bio_memory
+  #   # handy to counteract getting winded when pulping corpses???
+  #   - bio_gills
+  #   - bio_soporific
+  #   - bio_taste_blocker
+  #   - bio_face_mask
+  #   - bio_dex_enhancer
+  #   - bio_eye_enhancer
+  #   - bio_int_enhancer
+  #   - bio_str_enhancer
+  #   - bio_membrane
+  #   - bio_weight
+  #   - bio_power_armor_interface_mkII
   # NOTE: most of these do not auto-activate, e.g. bio_UPS will not start charging your UPS-powered gear
-  "// CBMs replaces…":
-    bio_sunglasses: welding_goggles
-    bio_fitnessband: smartphone (partially)
-    bio_watch: smartphone (partially)
-    bio_lighter: lighter
-    bio_ups: ups_off + heavy battery
-    bio_surgical_razor: scalpel
-    bio_fingerhack: electrohack + light battery
-    bio_lockpick: locksmith_kit / crude_picklock
-    bio_ears: earplugs
-    bio_eye_optic: binoculars / retractable telescope
-    bio_tools:
-      - NOT small_repairkit/large_repairkit!
-      - NOT tailors_kit!
-      - NOT clamp/locking_pliers
+  # "// CBMs replaces…":
+  #   bio_sunglasses: welding_goggles
+  #   bio_fitnessband: smartphone (partially)
+  #   bio_watch: smartphone (partially)
+  #   bio_lighter: lighter
+  #   bio_ups: ups_off + heavy battery
+  #   bio_surgical_razor: scalpel
+  #   bio_fingerhack: electrohack + light battery
+  #   bio_lockpick: locksmith_kit / crude_picklock
+  #   bio_ears: earplugs
+  #   bio_eye_optic: binoculars / retractable telescope
+  #   bio_tools:
+  #     - NOT small_repairkit/large_repairkit!
+  #     - NOT tailors_kit!
+  #     - NOT clamp/locking_pliers
   CBMs:
     - bio_power_storage_mkII
     - bio_power_storage_mkII
@@ -459,21 +460,24 @@
     - bio_purifier
     - bio_targeting
     - bio_recoil
-    - bio_eye_optic
     - bio_syringe
     - bio_carbon
-    # New in 2024
-    - bio_ar
+    # nomad_bodyglove_2_twb replaces...
+    # - bio_ar
+    # - bio_eye_optic
     - bio_radio
+
   items:
     both:
       items:
-        - nomad_bodyglove_2
-        - helmet_liner
-        - gloves_liner
+        # Custom armor that combines a bunch of stuff...
+        - nomad_bodyglove_2_twb
+        # - nomad_bodyglove_2
+        # - helmet_liner
+        # - gloves_liner
         - debug_backpack
-        - waterskin
-        - waterskin
+        # - waterskin
+        # - waterskin
         - metal_file
         - wash_kit
         - jumper_cable
@@ -1115,8 +1119,8 @@
         - item: survivor_belt_notools
         - item: survivor_vest
         - item: trenchcoat_survivor
-        - item: rm13_armor
-          charges: 5000
+        # - item: rm13_armor
+        #   charges: 5000
         - item: tailors_kit
           charges: 400
         - item: large_repairkit
@@ -1342,28 +1346,29 @@
           count: 3
           charges: 10000
 
-        - item: hk_mp5sd
-          charges: 40
-          ammo-item: 9mmfmj
-          contents-item:
-            - light_grip
-            - match_trigger
-        - item: mp5mag_40rd
-          count: 5
-          ammo-item: 9mmfmj
-          charges: 40
-        - item: phase_immersion_suit
-          custom-flags: [no_auto_equip]
-        - item: jacket_eod
-          custom-flags: [no_auto_equip]
-        - item: trousers_eod
-          custom-flags: [no_auto_equip]
-        - item: helmet_eod
-          custom-flags: [no_auto_equip]
-        - item: gloves_eod
-          custom-flags: [no_auto_equip]
-        - item: foot_protectors_eod
-          custom-flags: [no_auto_equip]
+        # - item: hk_mp5sd
+        #   charges: 40
+        #   ammo-item: 9mmfmj
+        #   contents-item:
+        #     - light_grip
+        #     - match_trigger
+        # - item: mp5mag_40rd
+        #   count: 5
+        #   ammo-item: 9mmfmj
+        #   charges: 40
+        # - item: phase_immersion_suit
+        #   custom-flags: [no_auto_equip]
+        # - item: jacket_eod
+        #   custom-flags: [no_auto_equip]
+        # - item: trousers_eod
+        #   custom-flags: [no_auto_equip]
+        # - item: helmet_eod
+        #   custom-flags: [no_auto_equip]
+        # - item: gloves_eod
+        #   custom-flags: [no_auto_equip]
+        # - item: foot_protectors_eod
+        #   custom-flags: [no_auto_equip]
+
         - item: m4_carlgustav
           ammo-item: 84x246mm_hedp
           charges: 1
@@ -1470,6 +1475,9 @@
         # Because I'm cheating and carrying *all* the guns at once, I almost never bother with burst first; I just switch to a bigger calibre.
         # So *I* don't actually care about burst at all, I think.
         # What I *do* like is having >50 rounds in a magazine so I can just dump rounds into a horde of mooks.
+        # NOTE: I didn't notice for a long time, but the bulky mags
+        #       often have an invisible jam probability multiplier of 2.0x.
+        #       Is it worth going back to smaller mags with COMPACT_MAG and regular jam rate?
         # - item: hk_mp5sd
         #   charges: 100
         #   ammo-item: 9mmfmj
@@ -1561,7 +1569,7 @@
             - acog_scope
             - pistol_grip
         - item: falbigmag
-          count: 5
+          count: 15
           charges: 30
           ammo-item: 762_51_incendiary
         # - item: m14ebr
@@ -1585,7 +1593,8 @@
         # The Tavor-12 (15 mag) and KSG-25 (24 mag) look similar.
         # UPDATE: I got SUPER sick of reloading every 5 rounds, because switching tubes on empty isn't automatic.
         # UPDATE: in 2024, the "auxiliary magazine" attachment bullshit is gone.
-        - item: ksg-25
+        # KSG-25 is obsolete in 0.I
+        - item: ksg
           charges: 24
           contents-item:
             - match_trigger
@@ -1598,7 +1607,11 @@
         #   contents-item:
         #     - match_trigger
         #     - holo_sight
-        - item: shot_00
+        # Regular shot isn't that interesting, but dragon shot works like an incendiary grenade, but more directional.
+        # Very nice for dismissing a large crowd.
+        # - item: shot_00
+        #   count: 50
+        - item: shot_dragon
           count: 50
 
         # When there's a batch of like 20+ weak zombies packed together,
@@ -1729,3 +1742,199 @@
           charges: 500
         - item: 8mm_hvp
           charges: 5000
+
+
+# I wonder how hard it is to make custom gear?
+- id: nomad_bodyglove_2_twb
+  type: ARMOR
+  name:
+    str: Zagreb armor
+  symbol: "["
+  color: white
+  description: Looks great to you, but everyone else thinks you're naked.
+  # copy-from: nomad_bodyglove_2
+  looks_like: rm13_armor
+  material:
+    - cotton
+  weight: 1 g
+  volume: 1 ml
+  longest_side: 1 cm
+  price: 1 cent
+  price_postapoc: 1 cent
+  material_thickness: 1
+  environmental_protection: 80
+  armor:
+    # FIXME: I'm still getting a "NO SHOES" movement penalty.
+    #        Is this because this is covering the feet at the SKINTIGHT layer, instead of the OUTER layer?
+    #        It doesn't seem to matter if it is RIGID vs SOFT -- flip flops are sufficient to remove the penalty.
+    #        UPDATE:
+    #        /** Returns true if the player is wearing something on their feet that is not SKINTIGHT */
+    #        bool is_wearing_shoes( const side &check_side = side::BOTH ) const;
+    #        This checks the overall item only, not the armor layers.
+    #        So it is impossible to avoid "No Shoes" if the global flag is SKINTIGHT.
+    - material:
+        # https://cdda-guide.nornagon.net/item/armor_star_samurai_mask
+        # UPDATE: I think this is *too much*, even for cheating.
+        # - type: monolith
+        #   thickness: 1
+        - type: carbide
+          thickness: 1
+        - type: hyperweave_on
+          thickness: 1
+        # - type: lvl4ballisticglass
+        #   thickness: 1
+        # - type: thermo_resin
+        #   thickness: 1
+        # - type: qt_steel
+        #   thickness: 1
+        # - type: superalloy
+        #   thickness: 1
+      # https://docs.cataclysmdda.org/JSON_INFO.html#coverage
+      coverage: 100
+      cover_vitals: 100
+      layers: [SKINTIGHT]
+      covers:
+        - torso
+        - arm_l
+        - arm_r
+        - leg_l
+        - leg_r
+        - foot_l
+        - foot_r
+        - head
+        - hand_l
+        - hand_r
+        - mouth
+        - eyes
+      encumbrance: 0
+      volume_encumber_modifier: 0
+      # https://docs.cataclysmdda.org/JSON_INFO.html#breathability
+      breathability: SECOND_SKIN
+    # - material:
+    #     - type: lvl4ballisticglass
+    #       covered_by_mat: 100
+    #       thickness: 1
+    #   coverage: 100
+    #   cover_vitals: 100
+    #   covers:
+    #     - eyes
+    #     - mouth
+    #   encumbrance: 1
+  environmental_protection: 80
+  warmth: 30
+  relic_data:
+    passive_effects:
+      # https://cdda-guide.nornagon.net/item/phase_immersion_suit_on
+      # https://cdda-guide.nornagon.net/item/rm13_armor
+      - id: ench_climate_control_all
+      # https://cdda-guide.nornagon.net/item/utility_exoskeleton_off
+      - id: ench_exo_strength
+      - condition: ACTIVE
+        values:
+          - value: CARRY_WEIGHT
+            add: 215000
+      - condition: ALWAYS
+        values:
+          - value: MOVE_COST
+            multiply: -0.1
+  use_action:
+    # https://cdda-guide.nornagon.net/item/ar_glasses_advanced
+    - CAMERA
+    - PORTABLE_GAME
+    - EINKTABLETPC
+    - ELECTRICSTORAGE
+    - EBOOKSAVE
+    - EBOOKREAD
+    # https://cdda-guide.nornagon.net/item/fitness_band
+    # https://cdda-guide.nornagon.net/item/smart_watch
+    - FITNESS_CHECK
+    - CAMERA
+    - MP3
+    - CALORIES_INTAKE_TRACKER
+    # https://cdda-guide.nornagon.net/item/radglove
+    - RADGLOVE
+    # https://cdda-guide.nornagon.net/item/towel
+    # - TOWEL
+  tick_action:
+    - EPIC_MUSIC
+  # https://docs.cataclysmdda.org/JSON_FLAGS.html#armor
+  # https://docs.cataclysmdda.org/ARMOR_BALANCE_AND_DESIGN.html#layers
+  flags:
+    # Need to *not* have SKINTIGHT at the item level, else we get "No Shoes" penalty.
+    # Override this for the individual armor segments?
+    # - SKINTIGHT
+    - VARSIZE
+    - HOOD
+    - STURDY
+    - SOFT
+    # https://cdda-guide.nornagon.net/item/binoculars
+    - ZOOM
+    - ENHANCED_VISION
+    # MISCELLANEOUS STUFF
+    - ONLY_ONE
+    - WATER_FRIENDLY
+    - ALLOWS_TAIL
+    - ALLOWS_TALONS
+    - ALLOWS_NATURAL_ATTACKS
+    - POWERARMOR_COMPATIBLE
+    - BAROMETER
+    - COLLAR
+    - SLEEP_IGNORE
+    - SUPER_FANCY
+    # Inhibits land walking.
+    # - FIN
+    # Prevents diving; I might want to dive sometime?
+    # The survivor_dry_duffelbag also provides this.
+    # - FLOTATION
+    # https://cdda-guide.nornagon.net/item/phase_immersion_suit_on
+    - RAD_PROOF
+    - PORTAL_PROOF
+    - STURDY
+    - WATERPROOF
+    - HYGROMETER
+    - THERMOMETER
+    - RAINPROOF
+    - WATCH
+    - ALARMCLOCK
+    - SWIM_GOGGLES
+    - SUN_GLASSES
+    - ELECTRIC_IMMUNE
+    - PARTIAL_DEAF
+    - GAS_PROOF
+    - TRADER_AVOID
+    - PSYSHIELD_PARTIAL
+    - PADDED
+    # Make sure this isn't damaged when punching bad guys!
+    - UNBREAKABLE_MELEE
+    # This is WAY too annoying.
+    # - GNV_EFFECT
+    # https://cdda-guide.nornagon.net/item/holo_cloak
+    - SOFT
+    # https://cdda-guide.nornagon.net/item/welding_mask
+    - FLASH_PROTECTION
+    # https://cdda-guide.nornagon.net/item/robofac_armor_anchor_on
+    # https://cdda-guide.nornagon.net/item/dimensional_anchor_on
+    - DIMENSIONAL_ANCHOR
+    # https://cdda-guide.nornagon.net/item/wearable_camera_pro
+    - CAMERA_PRO
+    # https://cdda-guide.nornagon.net/item/stethoscope
+    - SAFECRACK
+    # https://cdda-guide.nornagon.net/item/solarpack_on
+    - SOLARPACK_ON
+  # FIXME: techniques: ...
+  pocket_data:
+    # https://cdda-guide.nornagon.net/item/ar_glasses_advanced
+    - pocket_type: EBOOK
+      rigid: true
+      max_contains_volume: 1 ml
+      max_contains_weight: 1 g
+      weight_multiplier: 0
+    - pocket_type: CONTAINER
+      volume_encumber_modifier: 0
+      weight_multiplier: 0
+      max_contains_volume: 6000 ml
+      max_contains_weight: 20000 kg
+      max_item_length: 100 cm
+      moves: 800
+      description: Synchronization point for ryūsei dō plate.
+      watertight: true
