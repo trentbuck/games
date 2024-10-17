@@ -1739,6 +1739,8 @@
             - stabilizer
             - butt_hook
             - recoil_stock
+            # mop built into gun!
+            - gun_mop
         - item: 8x40_250_mag
           count: 3
           ammo-item: 8mm_hvp
@@ -2160,3 +2162,21 @@
   copy-from: mp5sd_suppressor
   name:
     str: SUB CQB integral suppressor
+
+
+# I like playing with perk_bloody_mess mutation, so
+# I do not have to pulp zombies.
+# That sends splatter EVERYWHERE, so
+# then I end up swapping to a mop to clear that away.
+# It'd be nice if my gun had a mop attachment to do that continuously...
+- id: gun_mop
+  type: GUNMOD
+  copy-from: match_trigger
+  name:
+    str: prehensile snout
+  description:
+    There's a... thing hanging off your gun, ingesting nearby gore.
+  flags:
+    - MOP
+  use_action:
+    - MOP
