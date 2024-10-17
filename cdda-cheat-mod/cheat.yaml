@@ -1803,7 +1803,7 @@
       # https://docs.cataclysmdda.org/JSON_INFO.html#coverage
       coverage: 100
       cover_vitals: 100
-      layers: [SKINTIGHT]
+      # layers: [SKINTIGHT]
       covers:
         - torso
         - arm_l
