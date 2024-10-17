@@ -446,7 +446,6 @@
     - bio_flashlight
     - bio_tools
     - bio_surgical_razor
-    - bio_lockpick
     - bio_fingerhack
     - bio_fitnessband
     - bio_watch
@@ -465,7 +464,8 @@
     # nomad_bodyglove_2_twb replaces...
     # - bio_ar
     # - bio_eye_optic
-    - bio_radio
+    # - bio_lockpick
+    # - bio_radio
 
   items:
     both:
@@ -535,6 +535,7 @@
         # it's pure bash per hit is only slightly lower.
         - qt_mace
         - mjolnir
+        - jade_nagamaki
 
         # The knife is real fast and fun for combat, but
         # I would also like to have something with reach attacks.
@@ -1162,8 +1163,9 @@
           count: 20
         - item: duct_tape
           charges: 500
-        - item: superglue
-          count: 100
+        # FIXME: this is not working
+        # - item: superglue
+        #   count: 100
         - item: nail
           charges: 500
         # This replaces the IFAK packages.
@@ -1208,8 +1210,8 @@
         - item: radiocontrol
         - item: box_small
           count: 40
-        - item: fertilizer_commercial
-          count: 120
+        # - item: fertilizer_commercial
+        #   count: 120
         - item: disinfectant
           count: 50
         - item: survivor_hairtrimmer
@@ -1279,7 +1281,7 @@
           charges: 200
         - container-item: metal_tank
           item: water_clean
-          charges: 200
+          charges: 500
         - item: metal_tank
           count: 2
         - container-item: metal_tank
@@ -1505,6 +1507,10 @@
           count: 3
           charges: 100
           ammo-item: 9mmfmj
+        - item: glockbigmag
+          count: 10
+          charges: 33
+          ammo-item: 9mmfmj
         # - item: glock_19
         #   charges: 100
         #   ammo-item: 9mmfmj
@@ -1703,6 +1709,7 @@
           ammo-item: 8mm_hvp
           charges: 25
           # magazine: 8x40_25_mag
+          # UPDATE: "riv_suppressor" is migrated away in 0.I :-(
           contents-item:
             - modern_handguard
             - pistol_grip
@@ -1724,6 +1731,7 @@
             - riv_scope
             # - rifle_scope_high_end_mount
             # - holo_sight
+            # UPDATE: "riv_suppressor" is migrated away in 0.I :-(
             - riv_suppressor
             - modern_handguard
             - pistol_grip
@@ -1740,6 +1748,7 @@
           ammo-item: 8mm_hvp
           contents-item:
             - riv_scope
+            # UPDATE: "riv_suppressor" is migrated away in 0.I :-(
             - riv_suppressor
             - modern_handguard
             - pistol_grip
@@ -1891,7 +1900,10 @@
     - BAROMETER
     - COLLAR
     - SLEEP_IGNORE
-    - SUPER_FANCY
+    - PERFECT_LOCKPICK
+    - TWO_WAY_RADIO
+    - RAD_DETECT
+    # - SUPER_FANCY
     # Inhibits land walking.
     # - FIN
     # Prevents diving; I might want to dive sometime?
@@ -1951,7 +1963,8 @@
       max_contains_volume: 10 L
       max_contains_weight: 10 kg
       max_item_length: 200 cm
-      volume_encumber_modifier: 0.1
+      volume_encumber_modifier: 0
+      weight_multiplier: 0
       moves: 1
     - description: Pistol holster.
       magazine_well: 350 ml
@@ -1961,15 +1974,123 @@
       max_contains_volume: 1000 ml
       max_contains_weight: 2 kg
       max_item_length: 30 cm
+      volume_encumber_modifier: 0
+      weight_multiplier: 0
       moves: 1
     - description: Knife sheath.
       holster: true
       max_contains_volume: 1 L
       max_contains_weight: 2 kg
       max_item_length: 70 cm
+      volume_encumber_modifier: 0
+      weight_multiplier: 0
       moves: 1
       flag_restriction:
         - SHEATH_KNIFE
+    - description: Longsword scabbard.
+      holster: true
+      max_contains_volume: 4 L
+      max_contains_weight: 4 kg
+      max_item_length: 130 cm
+      volume_encumber_modifier: 0
+      weight_multiplier: 0
+      moves: 1
+      flag_restriction:
+        - SHEATH_SWORD
+    # - description: Bow sling.
+    #   pocket_type: CONTAINER
+    #   holster: true
+    #   min_item_volume: 500 ml
+    #   max_contains_volume: 7 L
+    #   max_contains_weight: 5 kg
+    #   max_item_length: 200 cm
+    #   volume_encumber_modifier: 0
+    #   weight_multiplier: 0
+    #   moves: 1
+    #   flag_restriction:
+    #     - SHEATH_BOW
+    # - description: Axe ring.
+    #   holster: true
+    #   max_contains_volume: 3250 ml
+    #   max_contains_weight: 5 kg
+    #   max_item_length: 100 cm
+    #   volume_encumber_modifier: 0
+    #   weight_multiplier: 0
+    #   moves: 1
+    #   flag_restriction:
+    #     - SHEATH_AXE
+
+    # The idea of these is to stop newly-picked-up ammo going being
+    # automatically bundled into annoying tiny packets in cardboard
+    # boxes, glass jars, et cetera.
+    - description: Ammo hopper (9mm Luger).
+      ammo_restriction:
+        9mm: 10000
+      volume_encumber_modifier: 0
+      weight_multiplier: 0
+      moves: 1
+    - description: Ammo hopper (2-line NATO).
+      ammo_restriction:
+        '223': 10000
+      volume_encumber_modifier: 0
+      weight_multiplier: 0
+      moves: 1
+    - description: Ammo hopper (3-line NATO).
+      ammo_restriction:
+        '308': 10000
+      volume_encumber_modifier: 0
+      weight_multiplier: 0
+      moves: 1
+    - description: Ammo hopper (8mm caseless).
+      ammo_restriction:
+        8x40mm: 10000
+      volume_encumber_modifier: 0
+      weight_multiplier: 0
+      moves: 1
+    - description: Ammo hopper (12 gauge shot).
+      ammo_restriction:
+        shot: 10000
+      volume_encumber_modifier: 0
+      weight_multiplier: 0
+      moves: 1
+    - description: Ammo hopper (40mm grenade).
+      ammo_restriction:
+        40x46mm: 10000
+      volume_encumber_modifier: 0
+      weight_multiplier: 0
+      moves: 1
+
+
+    # # Experimental magazine pockets
+    # - pocket_type: CONTAINER
+    #   description: Compact magazines.
+    #   max_contains_volume: 750 ml
+    #   max_contains_weight: 2 kg
+    #   max_item_length: 250 mm
+    #   volume_encumber_modifier: 0
+    #   weight_multiplier: 0
+    #   moves: 1
+    #   flag_restriction:
+    #     - MAG_COMPACT
+    # - pocket_type: CONTAINER
+    #   description: Compact magazines.
+    #   max_contains_volume: 5 L
+    #   max_contains_weight: 5 kg
+    #   max_item_length: 500 mm
+    #   volume_encumber_modifier: 0
+    #   weight_multiplier: 0
+    #   moves: 1
+    #   flag_restriction:
+    #     - MAG_BULKY
+    - pocket_type: CONTAINER
+      description: Magazines pouch.
+      volume_encumber_modifier: 0
+      weight_multiplier: 0
+      moves: 1
+      flag_restriction:
+        - MAG_COMPACT
+        - MAG_BULKY
+
     # https://cdda-guide.nornagon.net/item/debug_backpack
     # https://cdda-guide.nornagon.net/item/armor_star_samurai
     # FIXME: Make a few of these, so it can contain e.g. water and oil directly?
