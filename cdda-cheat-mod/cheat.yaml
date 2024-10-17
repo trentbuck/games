@@ -1493,7 +1493,9 @@
         #   contents-item:
         #     - light_grip
         #     - match_trigger
-        - item: ksub2000
+        - item:
+            # ksub2000
+            ksub2000cqb
           charges: 100
           ammo-item: 9mmfmj
           contents-item:
@@ -1998,3 +2000,42 @@
   variables:
     vehicle_name: Unicycle
     folded_parts: '[{"id":"frame_handle","base":{"typeid":"foldxlframe","item_tags":["VEHICLE"]},"mount_dx":0,"mount_dy":0},{"id":"saddle","base":{"typeid":"saddle","item_tags":["VEHICLE"]},"mount_dx":0,"mount_dy":0,"variant":"pedal"},{"id":"foot_pedals","base":{"typeid":"foot_crank","item_tags":["VEHICLE"]},"mount_dx":0,"mount_dy":0},{"id":"wheel_mount_light","base":{"typeid":"wheel_mount_light","item_tags":["VEHICLE"]},"mount_dx":0,"mount_dy":0},{"id":"wheel_unicycle","base":{"typeid":"wheel_bicycle","item_tags":["VEHICLE"]},"mount_dx":0,"mount_dy":0}]'
+
+
+# https://www.keltecweapons.com/firearm/rifles/sub2000-series/
+# https://www.keltecweapons.com/firearm/rifles/sub2000-cqb/
+#
+# Sub2000      Sub2000 CQB
+# ===========  ===========
+# 1.9kg        2.34kg            mass
+# 775mm        775mm             overall length
+# 742mm        742mm             length collapsed
+# 410mm        413mm             length folded
+# 410mm        410mm / 108m      barrel length
+# 1:254mm      1:254mm           twist rate
+# 22N          42N               trigger pull
+#
+# No info about the suppressor itself.
+- id: ksub2000cqb
+  type: GUN
+  copy-from: ksub2000
+  name:
+    str: suppressed Glock carbine
+  variants:
+    - id: ksub2000cqb
+      name: Kel-Tec SUB CQB suppressed carbine
+      description:
+        The 9mm SUB CQB was developed with personal defense in mind.
+        Integrated noise suppression offers a tactical advantage while protecting the defender from decibel chaos.
+        We highly recommend you utilize the integrated picatinny rails.
+        Add a combat light and quality optic to this quiet little protector for positive threat identification and target acquisition.
+  weight: 2340 g
+  built_in_mods:
+    - sub2000_folding_mechanism
+    - sub2000cqb_suppressor
+
+- id: sub2000cqb_suppressor
+  type: GUNMOD
+  copy-from: mp5sd_suppressor
+  name:
+    str: SUB CQB integral suppressor
