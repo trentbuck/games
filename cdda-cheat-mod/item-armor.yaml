@@ -1,0 +1,407 @@
+# I wonder how hard it is to make custom gear?
+- id: nomad_bodyglove_2_twb
+  type: ARMOR
+  name:
+    str: Zagreb armor
+  symbol: "["
+  color: white
+  description: Looks great to you, but everyone else thinks you're naked.
+  # copy-from: nomad_bodyglove_2
+  looks_like: rm13_armor
+  material:
+    - cotton
+  weight: 1 kg
+  volume: 1 L
+  longest_side: 10 cm
+  price: 1 USD
+  # NOTE: I was getting "NO SHOES" penalty because I marked this armor as flags: SKINTIGHT.
+  #       Adding armor: layers: [NORMAL] did not help.
+  #       This is because is_wearing_shoes only looks at the item-level (not armor-level) wear layer.
+  #       I initially "fixed" this with flags: [nothing, i.e. NORMAL] and armor: layers: [SKINTIGHT].
+  #       This caused the wear action to place this item at the wrong layer, when worn with other gear.
+  #       Later, I realized I can simply add flags: TOUGH_FEET which disables "NO SHOES" penalty.
+  #
+  # NOTE: my goal is to provide roughly equivalent armour and storage to this loadout:
+  #
+  #         SKINTIGHT:
+  #           https://cdda-guide.nornagon.net/item/nomad_bodyglove_2
+  #           https://cdda-guide.nornagon.net/item/helmet_liner
+  #           https://cdda-guide.nornagon.net/item/gloves_liner
+  #         NORMAL:
+  #           https://cdda-guide.nornagon.net/item/rm13_armor_on
+  #           OR
+  #           https://cdda-guide.nornagon.net/item/phase_immersion_suit_on
+  #           OR
+  #           https://cdda-guide.nornagon.net/item/activity_suit
+  #         STRAPPED:
+  #           https://cdda-guide.nornagon.net/item/survivor_vest
+  #           https://cdda-guide.nornagon.net/item/survivor_rig
+  #           https://cdda-guide.nornagon.net/item/survivor_belt_notools
+  #           OR
+  #           https://cdda-guide.nornagon.net/item/nomad_harness
+  #         OUTER:
+  #           https://cdda-guide.nornagon.net/item/trenchcoat_survivor
+  #           https://cdda-guide.nornagon.net/item/debug_backpack
+  #
+  # FIXME: then, merge in a bunch of utility bullshit, e.g. ZOOM from binoculars.
+  material_thickness: 1
+  environmental_protection: 80
+  armor:
+    # NOTE:
+    #   typical materials:
+    #     eyes:         lvl4ballisticglass thermo_resin
+    #     foot_bottom:  rubber
+    #     skintight:    lycra kevlar
+    #     normal:       nylon nomex kevlar_layered
+    #     rigid normal:
+    #       carbide hyperweave_[off|on]   (RM13)
+    #       carbide qt_steel superalloy   (Phase Immersion)
+    #       monolith (TOO OP, EVEN FOR ME!)
+    #       ceramic  (e.g. ESAPI plate inserts)
+    #   overall goal is approximately (worst-median-best):
+    #                    [UPS on]  [   off]
+    #     bash:          14-22-29  20-28-34
+    #     cut:           20-27-42  30-37-52
+    #     pierce:        17-25-39  25-33-47
+    #     ballistic:     20-26-38  32-38-50
+    #     acid:          45
+    #     fire:          40
+    #     encumbrance:   0-20
+    #     environmental: 40-80
+    #     warmth:        20-40
+    # https://docs.cataclysmdda.org/JSON_INFO.html#coverage
+    # https://docs.cataclysmdda.org/JSON_INFO.html#breathability
+    # https://cdda-guide.nornagon.net/item/armor_star_samurai_mask
+    # https://old.reddit.com/r/cataclysmdda/comments/1cgkq1i/a_introductory_guide_on_armor/
+    # all covers: [eyes, mouth, head, torso, arm_l, arm_r, leg_l, leg_r, foot_l, foot_r, head, hand_l, hand_r]
+
+    - covers: [head]
+      material:
+        # helmer_liner
+        - {thickness: 0.5, type: cotton}
+        # rm13_armor_on
+        - {thickness: 1, type: carbide}
+        - {thickness: 1, type: hyperweave_off}
+        - {thickness: 1, type: hyperweave_on}
+      coverage: 100
+      cover_vitals: 100
+      encumbrance: 12
+      volume_encumber_modifier: 0
+      breathability: SECOND_SKIN
+
+    - covers: [torso, arm_l, arm_r, leg_l, leg_r]
+      material:
+        # nomad_bodymesh_2
+        - {thickness: 0.2, type: lycra}
+        - {thickness: 0.8, type: rubber, covered_by_mat: 80}
+        - {thickness: 0.5, type: kevlar, covered_by_mat: 40}
+        # rm13_armor_on
+        - {thickness: 1, type: carbide}
+        - {thickness: 1, type: hyperweave_off}
+        - {thickness: 1, type: hyperweave_on}
+      coverage: 100
+      cover_vitals: 100
+      encumbrance: 10
+      volume_encumber_modifier: 0
+      breathability: SECOND_SKIN
+
+    - covers: [hand_l, hand_r]
+      material:
+        # gloves_liner
+        - {thickness: 0.1, type: cotton}
+        # rm13_armor_on
+        - {thickness: 1, type: carbide}
+        - {thickness: 1, type: hyperweave_off}
+        - {thickness: 1, type: hyperweave_on}
+      coverage: 100
+      cover_vitals: 100
+      encumbrance: 11
+      volume_encumber_modifier: 0
+      breathability: SECOND_SKIN
+
+    - covers: [foot_l, foot_r]
+      material:
+        # nomad_bodymesh_2
+        - {thickness: 0.2, type: lycra}
+        - {thickness: 0.8, type: kevlar, covered_by_mat: 40}
+        # rm13_armor_on
+        - {thickness: 1, type: carbide}
+        - {thickness: 1, type: hyperweave_off}
+        - {thickness: 1, type: hyperweave_on}
+      coverage: 100
+      cover_vitals: 100
+      encumbrance: 10
+      volume_encumber_modifier: 0
+      breathability: SECOND_SKIN
+
+    # FIXME: the foot bottoms sublocation should have no armor (e.g. hyperweave), but with ~5mm rubber (i.e. the soles).
+    #         - {thickness: 5, type: rubber}
+
+    # suvivor_vest
+
+    - covers: [mouth]
+      material:
+        # rm13_armor_on
+        - {thickness: 1, type: carbide}
+        - {thickness: 1, type: hyperweave_off}
+        - {thickness: 1, type: hyperweave_on}
+      coverage: 100
+      cover_vitals: 100
+      encumbrance: 10
+      volume_encumber_modifier: 0
+      breathability: SECOND_SKIN
+
+    - covers: [eyes]
+      material:
+        # rm13_armor_on
+        - {thickness: 1, type: lvl4ballisticglass}
+        - {thickness: 1, type: thermo_resin}
+      coverage: 100
+      cover_vitals: 100
+      encumbrance: 5
+      volume_encumber_modifier: 0
+      breathability: SECOND_SKIN
+
+
+  environmental_protection: 80
+  warmth: 30
+  relic_data:
+    passive_effects:
+      # https://cdda-guide.nornagon.net/item/phase_immersion_suit_on
+      # https://cdda-guide.nornagon.net/item/rm13_armor
+      - id: ench_climate_control_all
+      # https://cdda-guide.nornagon.net/item/utility_exoskeleton_off
+      - id: ench_exo_strength
+      - condition: ACTIVE
+        values:
+          - value: CARRY_WEIGHT
+            add: 215000
+      - condition: ALWAYS
+        values:
+          - value: MOVE_COST
+            multiply: -0.1
+  # FIXME: "e" on a locked door doesn't offer to use this item to pick the lock, but
+  #        You can manually use the item (%) and choose lockpick.
+  #        That is kind of crap, though.
+  qualities:
+    - [LOCKPICK, 40]
+  use_action:
+    - CROWBAR
+    # https://cdda-guide.nornagon.net/item/ar_glasses_advanced
+    - CAMERA
+    - PORTABLE_GAME
+    - EINKTABLETPC
+    - ELECTRICSTORAGE
+    - EBOOKSAVE
+    - EBOOKREAD
+    # https://cdda-guide.nornagon.net/item/fitness_band
+    # https://cdda-guide.nornagon.net/item/smart_watch
+    - FITNESS_CHECK
+    - CAMERA
+    - MP3
+    - CALORIES_INTAKE_TRACKER
+    # https://cdda-guide.nornagon.net/item/radglove
+    - RADGLOVE
+    # https://cdda-guide.nornagon.net/item/towel
+    - TOWEL
+  # tick_action:
+  #   - EPIC_MUSIC
+  # https://docs.cataclysmdda.org/JSON_FLAGS.html#armor
+  # https://docs.cataclysmdda.org/ARMOR_BALANCE_AND_DESIGN.html#layers
+  flags:
+    # Need to *not* have SKINTIGHT at the item level, else we get "No Shoes" penalty.
+    # Override this for the individual armor segments?
+    # UPDATE: TOUGH_FEET flag counters this?
+    - SKINTIGHT
+    - TOUGH_FEET
+    - VARSIZE
+    - HOOD
+    - COLLAR
+    - STURDY
+    - SOFT
+    - UNBREAKABLE
+    # https://cdda-guide.nornagon.net/item/binoculars
+    - ZOOM
+    - ENHANCED_VISION
+    # MISCELLANEOUS STUFF
+    - ONLY_ONE
+    - WATER_FRIENDLY
+    - ALLOWS_TAIL
+    - ALLOWS_TALONS
+    - ALLOWS_NATURAL_ATTACKS
+    - POWERARMOR_COMPATIBLE
+    - BAROMETER
+    - SLEEP_IGNORE
+    - PERFECT_LOCKPICK
+    - TWO_WAY_RADIO
+    - RAD_DETECT
+    # - SUPER_FANCY
+    # Inhibits land walking.
+    # - FIN
+    # Prevents diving; I might want to dive sometime?
+    # The survivor_dry_duffelbag also provides this.
+    # - FLOTATION
+    # https://cdda-guide.nornagon.net/item/phase_immersion_suit_on
+    # - RAD_PROOF
+    - RAD_RESIST
+    - PORTAL_PROOF
+    - STURDY
+    - WATERPROOF
+    - HYGROMETER
+    - THERMOMETER
+    - RAINPROOF
+    - WATCH
+    - ALARMCLOCK
+    - SWIM_GOGGLES
+    - SUN_GLASSES
+    - ELECTRIC_IMMUNE
+    - PARTIAL_DEAF
+    - GAS_PROOF
+    - TRADER_AVOID
+    - PSYSHIELD_PARTIAL
+    - PADDED
+    # Make sure this isn't damaged when punching bad guys!
+    - UNBREAKABLE_MELEE
+    # This is WAY too annoying.
+    # - GNV_EFFECT
+    # https://cdda-guide.nornagon.net/item/holo_cloak
+    - SOFT
+    # https://cdda-guide.nornagon.net/item/welding_mask
+    - FLASH_PROTECTION
+    # https://cdda-guide.nornagon.net/item/robofac_armor_anchor_on
+    # https://cdda-guide.nornagon.net/item/dimensional_anchor_on
+    - DIMENSIONAL_ANCHOR
+    # https://cdda-guide.nornagon.net/item/wearable_camera_pro
+    - CAMERA_PRO
+    # https://cdda-guide.nornagon.net/item/stethoscope
+    - SAFECRACK
+    # https://cdda-guide.nornagon.net/item/solarpack_on
+    - SOLARPACK_ON
+    # https://cdda-guide.nornagon.net/item/debug_backpack
+    - TARDIS
+  # FIXME: techniques: ...
+  pocket_data:
+    # https://cdda-guide.nornagon.net/item/ar_glasses_advanced
+    - pocket_type: EBOOK
+      rigid: true
+      max_contains_volume: 1 ml
+      max_contains_weight: 1 g
+      weight_multiplier: 0
+    # https://cdda-guide.nornagon.net/item/survivor_rig
+    # https://cdda-guide.nornagon.net/item/survivor_vest
+    - pocket_type: CONTAINER
+      description: Mêlée sheath.
+      max_contains_volume: 100000 L
+      max_contains_weight: 100000 kg
+      max_item_length: 1 km
+      volume_encumber_modifier: 0
+      weight_multiplier: 0
+      moves: 1
+      flag_restriction:
+        - SHEATH_KNIFE
+        - SHEATH_SWORD
+        - SHEATH_BOW
+        - SHEATH_AXE
+
+    - pocket_type: CONTAINER
+      description: Tool belt.
+      volume_encumber_modifier: 0
+      weight_multiplier: 0
+      max_contains_volume: 100000 L
+      max_contains_weight: 100000 kg
+      max_item_length: 1 km
+      moves: 1
+      flag_restriction:
+        - BELT_CLIP
+
+    - pocket_type: CONTAINER
+      description: Magazines pouch.
+      volume_encumber_modifier: 0
+      weight_multiplier: 0
+      max_contains_volume: 100000 L
+      max_contains_weight: 100000 kg
+      max_item_length: 1 km
+      moves: 1
+      flag_restriction:
+        - MAG_COMPACT
+        - MAG_BULKY
+
+    # The idea of these is to stop newly-picked-up ammo going being
+    # automatically bundled into annoying tiny packets in cardboard
+    # boxes, glass jars, et cetera.
+    # NOTE: these have to be separate pockets.
+    #       If you say ammo_restriction: [9mm: 100, shot: 100], then
+    #       you cannot have BOTH 9mm and shot in the pocket at the same time.
+    # UPDATE: this is not working AFAICT, stuff still ends up in random fucking pots and cardboard boxes.
+    - pocket_type: CONTAINER
+      description: Ammo hopper (9mm Luger).
+      ammo_restriction:
+        9mm: 10000
+      volume_encumber_modifier: 0
+      weight_multiplier: 0
+      moves: 1
+    - pocket_type: CONTAINER
+      description: Ammo hopper (2-line NATO).
+      ammo_restriction:
+        '223': 10000
+      volume_encumber_modifier: 0
+      weight_multiplier: 0
+      moves: 1
+    - pocket_type: CONTAINER
+      description: Ammo hopper (8mm caseless).
+      ammo_restriction:
+        8x40mm: 10000
+      volume_encumber_modifier: 0
+      weight_multiplier: 0
+      moves: 1
+    - pocket_type: CONTAINER
+      description: Ammo hopper (3-line NATO).
+      ammo_restriction:
+        '308': 10000
+      volume_encumber_modifier: 0
+      weight_multiplier: 0
+      moves: 1
+    - pocket_type: CONTAINER
+      description: Ammo hopper (12 gauge shot).
+      ammo_restriction:
+        shot: 10000
+      volume_encumber_modifier: 0
+      weight_multiplier: 0
+      moves: 1
+    - pocket_type: CONTAINER
+      description: Ammo hopper (40mm grenade).
+      ammo_restriction:
+        40x46mm: 10000
+      volume_encumber_modifier: 0
+      weight_multiplier: 0
+      moves: 1
+
+
+    # NOTE: this only works because "water" is a fake ammo type used to charge the mi-go skin.
+    #       For other fluids, e.g. id:camelbak doesn't playce any restriction...
+    # - pocket_type: CONTAINER
+    #   description: Camelbak.
+    #   watertight: true
+    #   ammo_restriction:
+    #     water: 200
+    #   volume_encumber_modifier: 0
+    #   weight_multiplier: 0
+    #   moves: 1
+
+    # https://cdda-guide.nornagon.net/item/debug_backpack
+    # https://cdda-guide.nornagon.net/item/armor_star_samurai
+    # FIXME: Make a few of these, so it can contain e.g. water and oil directly?
+    #        Compare with https://cdda-guide.nornagon.net/item/feeding_kit
+    # NOTE: I tried leaving off the max_contains_volume / max_contains_weight / max_item_length.
+    #       This "worked" at first, but kept dropping everything out of my pockets again, including on initial character creation.
+    #       Also, setting it too high seems to make it mad?
+    - pocket_type: CONTAINER
+      volume_encumber_modifier: 0
+      weight_multiplier: 0
+      max_contains_volume: 100000 L
+      max_contains_weight: 100000 kg
+      max_item_length: 1 km
+      moves: 1
+      watertight: true
+      airtight: true
+      description: Tardis pocket

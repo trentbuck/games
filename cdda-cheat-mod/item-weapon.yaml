@@ -1,0 +1,55 @@
+# I like playing with perk_bloody_mess mutation, so
+# I do not have to pulp zombies.
+# That sends splatter EVERYWHERE, so
+# then I end up swapping to a mop to clear that away.
+# It'd be nice if my gun had a mop attachment to do that continuously...
+- id: gun_mop
+  type: GUNMOD
+  copy-from: match_trigger
+  name:
+    str: prehensile snout
+  description:
+    There's a... thing hanging off your gun, ingesting nearby gore.
+  flags:
+    - MOP
+  use_action:
+    - MOP
+
+
+# https://www.keltecweapons.com/firearm/rifles/sub2000-series/
+# https://www.keltecweapons.com/firearm/rifles/sub2000-cqb/
+#
+# Sub2000      Sub2000 CQB
+# ===========  ===========
+# 1.9kg        2.34kg            mass
+# 775mm        775mm             overall length
+# 742mm        742mm             length collapsed
+# 410mm        413mm             length folded
+# 410mm        410mm / 108m      barrel length
+# 1:254mm      1:254mm           twist rate
+# 22N          42N               trigger pull
+#
+# No info about the suppressor itself.
+- id: ksub2000cqb
+  type: GUN
+  copy-from: ksub2000
+  name:
+    str: suppressed Glock carbine
+  variants:
+    - id: ksub2000cqb
+      name: Kel-Tec SUB CQB suppressed carbine
+      description:
+        The 9mm SUB CQB was developed with personal defense in mind.
+        Integrated noise suppression offers a tactical advantage while protecting the defender from decibel chaos.
+        We highly recommend you utilize the integrated picatinny rails.
+        Add a combat light and quality optic to this quiet little protector for positive threat identification and target acquisition.
+  weight: 2340 g
+  built_in_mods:
+    - sub2000_folding_mechanism
+    - sub2000cqb_suppressor
+- id: sub2000cqb_suppressor
+  type: GUNMOD
+  copy-from: mp5sd_suppressor
+  name:
+    str: SUB CQB integral suppressor
+

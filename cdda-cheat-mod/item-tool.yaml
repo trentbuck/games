@@ -1,0 +1,51 @@
+- id: sonic_screwdriver
+  type: TOOL
+  name:
+    str: sonic screwdriver
+  description:
+    A tool that can do basically anything the plot calls for.
+    Does NOT replace deployables like brazier, jumper cable, or funnel.
+  symbol: ';'
+  color: white
+  looks_like: knife_swissarmy
+  material:
+    - plastic
+    - steel
+  weight: 1 g
+  volume: 1 ml
+  longest_side: 1 cm
+  price: 1 cent
+  flags:
+    - TRADER_AVOID
+    - BELT_CLIP
+    - ALLOWS_REMOTE_USE
+    - MOP
+  use_action:
+    - MOP
+    - DIG
+    - RADIO_ON
+    - MOP
+    - weigh_self
+    - WASH_HARD_ITEMS
+    - WASH_ALL_ITEMS
+
+    # https://cdda-guide.nornagon.net/item/tailors_kit
+    # FIXME: need a complicated repair action thing here
+    - repair_fabric
+    - repair_metal
+    - GUN_REPAIR
+    # https://cdda-guide.nornagon.net/item_action/HEAT_ALL_ITEMS
+    - HEAT_ALL_ITEMS
+  qualities:
+    - [MOP, 1]
+
+    # https://cdda-guide.nornagon.net/tool_quality/ANALYSIS
+    - [ANALYSIS, 1]
+    # https://cdda-guide.nornagon.net/tool_quality/ANVIL
+    # https://cdda-guide.nornagon.net/item/anvil_crude
+    - [ANVIL, 3]
+    # https://cdda-guide.nornagon.net/tool_quality/LEATHER_AWL
+    # https://cdda-guide.nornagon.net/item/tailors_kit
+    - [LEATHER_AWL, 2]
+    # https://cdda-guide.nornagon.net/tool_quality/BOIL
+    - [BOIL, 2]

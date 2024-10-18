@@ -1,0 +1,13 @@
+- id: folded_unicycle_twb
+  type: TOOL
+  copy-from: generic_folded_vehicle
+  name:
+    str: folded Unicycle
+  description: A folded Unicycle.
+  weight: 4 kg
+  volume: 4 L
+  symbol: '0'
+  color: light_gray
+  variables:
+    vehicle_name: Unicycle
+    folded_parts: '[{"id":"frame_handle","base":{"typeid":"foldxlframe","item_tags":["VEHICLE"]},"mount_dx":0,"mount_dy":0},{"id":"saddle","base":{"typeid":"saddle","item_tags":["VEHICLE"]},"mount_dx":0,"mount_dy":0,"variant":"pedal"},{"id":"foot_pedals","base":{"typeid":"foot_crank","item_tags":["VEHICLE"]},"mount_dx":0,"mount_dy":0},{"id":"wheel_mount_light","base":{"typeid":"wheel_mount_light","item_tags":["VEHICLE"]},"mount_dx":0,"mount_dy":0},{"id":"wheel_unicycle","base":{"typeid":"wheel_bicycle","item_tags":["VEHICLE"]},"mount_dx":0,"mount_dy":0}]'

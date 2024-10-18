@@ -1,0 +1,91 @@
+# 20:52 <twb> In body graphs, 100% coverage of everything seems to leave torso_neck grey, even though everything else is green
+# 20:52 <twb> Am I doing it wrong?
+# 20:55 <twb> Example: https://i.imgur.com/nyjqGfV.png
+# 20:57 <twb> That zentai is defined as armor: - coverage: 100 covers: head mouth eyes torso arm_l arm_r hand_l hand_r leg_l leg_r foot_l foot_r
+# 20:57 <twb> So afaict "torso" doesn't include specifically_covers torso_neck?
+# 20:57 <twb> I don't know if this really *matters*, it has just been bugging me in the item view
+# 20:59 <twb> Looking in body view ({) under torso, I see that both "waist" and "neck" are empty, but the item viewer seems OK for waist
+# 21:00 <twb> also foot bottoms doesn't seem to show up in the body view ({)...
+- id: zentai_with_neck
+  type: ARMOR
+  name:
+    str: zentai with neck
+  copy-from: zentai
+  armor:
+    - coverage: 100
+      covers:
+        - arm_l
+        - arm_r
+        - eyes
+        - foot_l
+        - foot_r
+        - hand_l
+        - hand_r
+        - head
+        - leg_l
+        - leg_r
+        - mouth
+        - torso
+      specifically_covers:
+        - arm_elbow_l
+        - arm_elbow_r
+        - arm_lower_l
+        - arm_lower_r
+        - arm_shoulder_l
+        - arm_shoulder_r
+        - arm_upper_l
+        - arm_upper_r
+        - eyes_left
+        - eyes_right
+        - foot_ankle_l
+        - foot_ankle_r
+        - foot_arch_l
+        - foot_arch_r
+        - foot_heel_l
+        - foot_heel_r
+        - foot_sole_l
+        - foot_sole_r
+        - foot_toes_l
+        - foot_toes_r
+        - hand_back_l
+        - hand_back_r
+        - hand_fingers_l
+        - hand_fingers_r
+        - hand_palm_l
+        - hand_palm_r
+        - hand_wrist_l
+        - hand_wrist_r
+        - head_crown
+        - head_ear_l
+        - head_ear_r
+        - head_forehead
+        - head_nape
+        - head_throat
+        - leg_hip_l
+        - leg_hip_r
+        - leg_knee_l
+        - leg_knee_r
+        - leg_lower_l
+        - leg_lower_r
+        - leg_upper_l
+        - leg_upper_r
+        - mouth_cheeks
+        - mouth_chin
+        - mouth_lips
+        - mouth_nose
+        - torso_lower
+        - torso_upper
+    # "Secondary hanging locations should only be used on the BELTED layer"
+    - coverage: 100
+      layers: [BELTED]
+      covers:
+        - leg_l
+        - leg_r
+        - torso
+      specifically_covers:
+        - leg_draped_l
+        - leg_draped_r
+        - torso_hanging_back
+        - torso_hanging_front
+        - torso_neck
+        - torso_waist
