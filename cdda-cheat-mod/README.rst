@@ -1,3 +1,6 @@
-To use this mod, put it in ``~/.cataclysm-dda/mods/twb`` or ``C:\Users\twb\Downloads\dda\savedata\mods\twb``.
+To use this mod,
 
-To remove comments, ``make``.
+1. run ``make``; and
+2. put this directory in
+   ``~/.cataclysm-dda/mods/twb`` or
+   ``C:\Users\twb\Downloads\dda\savedata\mods\twb``.

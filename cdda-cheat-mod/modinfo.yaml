@@ -1,0 +1,16 @@
+- id: twb
+  type: MOD_INFO
+  name: Trent's Cheating Background
+  authors:
+    - trentbuck+Cataclysm-DDA@gmail.com
+  description: Let's you cheat right at the start, to play around
+  category: rebalance
+  dependencies:
+    - dda
+    # For PROF_AUTODOC
+    - package_bionic_professions
+    # Not actually neded, but these are all things I always want.
+    - no_npc_food
+    - no_fungal_growth
+    - personal_portal_storms
+    - speedydex

@@ -3,6 +3,10 @@
 # https://docs.ansible.com/ansible/latest/user_guide/playbooks.html
 # https://jinja.palletsprojects.com/templates/
 # https://yaml.org/spec/1.1/spec.pdf
-cheat.json: %.json: %.yaml
+all: $(patsubst %.yaml,%.json,$(wildcard *.yaml))
+%.json: %.yaml
 	yq . $< >/dev/null	# don't save file if has errors
 	yq . $< >$@
+clean distclean:
+	rm -f *.json
+.PHONY: all clean
