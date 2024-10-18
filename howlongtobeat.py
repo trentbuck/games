@@ -43,13 +43,12 @@ with sqlite3.connect('all-games.db') as conn:
         LEFT OUTER JOIN howlongtobeat ON (games.id = howlongtobeat.profile_steam)
         WHERE howlongtobeat.profile_steam IS NULL  -- haven't already fetched it
         AND price                                  -- skip free-to-play games
-        -- AND name > 'Box Ninja'
-        ORDER BY 1
+        ORDER BY time desc
         """).fetchall()
     # random.shuffle(rows)
-    for game_name, in rows:
-    # import sys
-    # for game_name in sys.argv[1:]:
+    # for game_name, in rows:
+    import sys
+    for game_name in sys.argv[1:]:
         logging.debug('QUERY %s', game_name)
         resp = sess.post('https://howlongtobeat.com/api/search/5fe4b12e81a8fb4c',
                          json={"useCache": True,
