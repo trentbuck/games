@@ -3,7 +3,7 @@
 # https://docs.ansible.com/ansible/latest/user_guide/playbooks.html
 # https://jinja.palletsprojects.com/templates/
 # https://yaml.org/spec/1.1/spec.pdf
-all: $(patsubst %.yaml,%.json,$(wildcard *.yaml))
+all: $(patsubst %.yaml,%.json,$(wildcard [a-z]*.yaml))
 %.json: %.yaml
 	yq . $< >/dev/null	# don't save file if has errors
 	yq . $< >$@

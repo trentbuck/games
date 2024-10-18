@@ -94,12 +94,12 @@
       items:
         # Custom armor that combines a bunch of stuff...
         - nomad_bodyglove_2_twb
-        - nomad_bodyglove_2
-        - helmet_liner
-        - gloves_liner
-        - debug_backpack
-        - waterskin
-        - waterskin
+        # - nomad_bodyglove_2
+        # - helmet_liner
+        # - gloves_liner
+        # - debug_backpack
+        # - waterskin
+        # - waterskin
         - metal_file
         - wash_kit
         - jumper_cable
