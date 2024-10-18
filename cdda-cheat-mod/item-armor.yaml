@@ -159,6 +159,7 @@
     #       If I go into a mi-go tower, where it's way too hot (>100), the head/mouth bonuses aren't added unwantedly.
     - HOOD
     - COLLAR
+    - POCKETS
     # It's a wetsuit as well, I guess?
     -
       WATERPROOF
