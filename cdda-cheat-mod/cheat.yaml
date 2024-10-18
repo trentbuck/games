@@ -383,9 +383,10 @@
   description: You never prosper.
   points: -1111
   vehicle:
+    # NOTE: folding_unicycle provides the light scout, so vehicle: provides the heavy "mobile HQ"
     # superbike
-    surv_car
-    # surv_rv
+    # surv_car
+    surv_rv
 
   ### Bionics stuff ###
   # "// MAYBE CBMS":
@@ -1125,8 +1126,8 @@
         - item: large_repairkit
           charges: 9999
         # Use this to avoid water damage to the equipment.
-        - item: bag_zipper_gallon
-          count: 10
+        # - item: bag_zipper_gallon
+        #   count: 10
         # - item: survivor_dry_bag
         #   custom-flags: [no_auto_equip]
         # - item: survivor_dry_duffelbag
@@ -1164,13 +1165,15 @@
         #   count: 100
         - item: nail
           charges: 500
+
         # This replaces the IFAK packages.
         # Putting them together makes the inventory menu less annoying.
         # FIXME: "charges" isn't working for this item?
-        - item: bandages
+        - item:
+            # adhesive_bandages
+            # bandages
+            medical_gauze
           count: 50
-        # - item: adhesive_bandages
-        #   count: 50
         - item: quikclot
           count: 10
         - item: arm_splint
@@ -1179,6 +1182,7 @@
           count: 2
         - item: flu_shot
         - item: wrapped_rad_badge
+
         # Ugh.  UPS ends up being MORE fiddly, sometimes.
         - item: heavy_atomic_battery_cell
           count: 11
@@ -1192,50 +1196,51 @@
         - item: light_minus_atomic_battery_cell
           count: 11
           charges: 500
+
         # Stuff that quest givers often ask for.
-        - item: acoustic_guitar
-          custom-flags: [no_auto_equip]
-        - item: holybook_quran
-        - item: book_pneumatics
-        - item: scrap
-          count: 50
+        # - item: acoustic_guitar
+        #   custom-flags: [no_auto_equip]
+        # - item: holybook_quran
+        # - item: book_pneumatics
+        # - item: scrap
+        #   count: 50
         # - item: magnetron
         #   count: 25
-        - item: lens_small
-          count: 5
-        - item: radiocontrol
-        - item: box_small
-          count: 40
+        # - item: lens_small
+        #   count: 5
+        # - item: radiocontrol
+        # - item: box_small_folded
+        #   count: 40
         # - item: fertilizer_commercial
         #   count: 120
-        - item: disinfectant
-          count: 50
-        - item: survivor_hairtrimmer
-        - item: anesthetic_kit
-          charges: 6000
-        - item: medium_battery_cell
-          charges: 500
-          count: 6
-        - item: bone
-          count: 8
-        - item: inhaler
-          count: 2
-          charges: 100
-        - container-item: box_cigarette
-          item: cig
-          count: 200
-        - item: bag_zipper_gallon
-          contents-item:
-            - weed
-            - weed
-            - weed
-            - weed
-            - weed
-            - weed
-            - weed
-            - weed
-            - weed
-            - weed
+        # - item: disinfectant
+        #   count: 50
+        # - item: survivor_hairtrimmer
+        # - item: anesthetic_kit
+        #   charges: 6000
+        # - item: medium_battery_cell
+        #   charges: 500
+        #   count: 6
+        # - item: bone
+        #   count: 8
+        # - item: inhaler
+        #   count: 2
+        #   charges: 100
+        # - container-item: box_cigarette
+        #   item: cig
+        #   count: 200
+        # - item: bag_zipper_gallon
+        #   contents-item:
+        #     - weed
+        #     - weed
+        #     - weed
+        #     - weed
+        #     - weed
+        #     - weed
+        #     - weed
+        #     - weed
+        #     - weed
+        #     - weed
 
         # If I have a bunch of MREs in my backpack, every time I open the "i" or "d" or "w" menus, the game hangs at 100% CPU for like 10-20 seconds.
         # It doesn't do this for the "/" menu.
@@ -1359,6 +1364,7 @@
         #   contents-item:
         #     - light_grip
         #     - match_trigger
+        #     - gun_mop
         # - item: mp5mag_40rd
         #   count: 5
         #   ammo-item: 9mmfmj
@@ -1385,6 +1391,7 @@
             - rifle_scope_high_end_mount
             - holo_sight
             - light_grip
+            - gun_mop
         - item: 84x246mm_hedp
           count: 6
         - item:
@@ -1396,6 +1403,7 @@
           contents-item:
             - rifle_scope_high_end_mount
             - holo_sight
+            - gun_mop
         - item: 40x46mm_m433
           count: 15
 
@@ -1467,6 +1475,7 @@
         #     - match_trigger
         #     - holo_sight
         #     - high_end_folding_stock
+        #     - gun_mop
         # - item: a180mag4
         #   count: 3
         #   charges: 275
@@ -1485,12 +1494,6 @@
         # NOTE: I didn't notice for a long time, but the bulky mags
         #       often have an invisible jam probability multiplier of 2.0x.
         #       Is it worth going back to smaller mags with COMPACT_MAG and regular jam rate?
-        # - item: hk_mp5sd
-        #   charges: 100
-        #   ammo-item: 9mmfmj
-        #   contents-item:
-        #     - light_grip
-        #     - match_trigger
         - item:
             # ksub2000
             ksub2000cqb
@@ -1499,6 +1502,7 @@
           contents-item:
             - light_grip
             - match_trigger
+            - gun_mop
         - item: glock_drum_100rd
           count: 3
           charges: 100
@@ -1513,12 +1517,14 @@
         #   contents-item:
         #     - light_grip
         #     - match_trigger
+        #     - gun_mop
         # - item: glock_20
         #   charges: 30
         #   ammo-item: 10mm_fmj
         #   contents-item:
         #     - light_grip
         #     - match_trigger
+        #     - gun_mop
         # - item: tdi_10mm_mag
         #   count: 3
         #   charges: 30
@@ -1529,6 +1535,7 @@
         #   contents-item:
         #     - light_grip
         #     - match_trigger
+        #     - gun_mop
         # - item: glock_21mag26
         #   count: 3
         #   charges: 26
@@ -1539,6 +1546,7 @@
         #   contents-item:
         #     - light_grip
         #     - match_trigger
+        #     - gun_mop
         # - item: glock40bigmag
         #   count: 3
         #   charges: 26
@@ -1556,6 +1564,7 @@
         #     - holo_sight
         #     - butt_hook
         #     - high_end_folding_stock
+        #     - gun_mop
         - item: rdb_223
           charges: 150
           ammo-item: 556_m855a1
@@ -1565,6 +1574,7 @@
             - holo_sight
             - holo_magnifier
             - pistol_grip
+            - gun_mop
         - item: stanag150
           count: 3
           charges: 150
@@ -1581,6 +1591,7 @@
             - modern_handguard
             - acog_scope
             - pistol_grip
+            - gun_mop
         - item: falbigmag
           count: 15
           charges: 30
@@ -1596,6 +1607,7 @@
         #     - holo_sight
         #     - butt_hook
         #     - high_end_folding_stock
+        #     - gun_mop
         # - item: m14mag
         #   count: 5
         #   charges: 20
@@ -1615,6 +1627,7 @@
             - choke
             - grip_mount
             - laser_sight
+            - gun_mop
         # - item: tavor_12
         #   charges: 5
         #   contents-item:
@@ -1683,8 +1696,6 @@
         # This is my go-to weapon for mook zombies, because
         # I don't have to keep reloading magazines or finding more ammo.
         - item: compbow
-          custom-flags:
-            - auto_wield
           # ammo-item: arrow_cf
           # charges: 1
           contents-item:
@@ -1693,6 +1704,7 @@
             - bow_silencer
             - laser_sight
             - bow_scope
+            - gun_mop
         - item: arrow_cf
           charges: 1000
 
@@ -1711,6 +1723,7 @@
             - pistol_grip
             - match_trigger
             - stabilizer
+            - gun_mop
         - item: 8x40_25_mag
           count: 5
           ammo-item: 8mm_hvp
@@ -1718,6 +1731,7 @@
         # This is one of my favourite "oh fuck" weapons.
         # It's very loud and the ammo is relatively heavy.
         - item: rm88_battle_rifle
+          custom-flags: [auto_wield]
           ammo-item: 8mm_hvp
           charges: 250
           # magazine: 8x40_250_mag
@@ -1754,6 +1768,7 @@
             - stabilizer
             - butt_hook
             - recoil_stock
+            - gun_mop
         - item: 8x40_500_mag
           count: 3
           ammo-item: 8mm_hvp
@@ -1778,7 +1793,6 @@
   volume: 1 ml
   longest_side: 1 cm
   price: 1 cent
-  price_postapoc: 1 cent
   material_thickness: 1
   environmental_protection: 80
   armor:
