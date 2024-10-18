@@ -1,4 +1,35 @@
 # I wonder how hard it is to make custom gear?
+#
+# My goal is to provide roughly equivalent armour and storage to this loadout:
+#
+#         SKINTIGHT:
+#           https://cdda-guide.nornagon.net/item/nomad_bodyglove_2
+#           https://cdda-guide.nornagon.net/item/helmet_liner
+#           https://cdda-guide.nornagon.net/item/gloves_liner
+#         NORMAL:
+#           https://cdda-guide.nornagon.net/item/rm13_armor_on
+#           OR
+#           https://cdda-guide.nornagon.net/item/phase_immersion_suit_on
+#           OR
+#           https://cdda-guide.nornagon.net/item/activity_suit
+#         STRAPPED:
+#           https://cdda-guide.nornagon.net/item/survivor_vest
+#           https://cdda-guide.nornagon.net/item/survivor_rig
+#           https://cdda-guide.nornagon.net/item/survivor_belt_notools
+#           OR
+#           https://cdda-guide.nornagon.net/item/nomad_harness
+#         OUTER:
+#           https://cdda-guide.nornagon.net/item/trenchcoat_survivor
+#           https://cdda-guide.nornagon.net/item/debug_backpack
+#
+# FIXME: then, merge in a bunch of utility bullshit, e.g. ZOOM from binoculars.
+#
+# NOTE: I was getting "NO SHOES" penalty because I marked this armor as flags: SKINTIGHT.
+#       Adding armor: layers: [NORMAL] did not help.
+#       This is because is_wearing_shoes only looks at the item-level (not armor-level) wear layer.
+#       I initially "fixed" this with flags: [nothing, i.e. NORMAL] and armor: layers: [SKINTIGHT].
+#       This caused the wear action to place this item at the wrong layer, when worn with other gear.
+#       Later, I realized I can simply add flags: TOUGH_FEET which disables "NO SHOES" penalty.
 - id: nomad_bodyglove_2_twb
   type: ARMOR
   name:
@@ -14,36 +45,6 @@
   volume: 1 L
   longest_side: 10 cm
   price: 1 USD
-  # NOTE: I was getting "NO SHOES" penalty because I marked this armor as flags: SKINTIGHT.
-  #       Adding armor: layers: [NORMAL] did not help.
-  #       This is because is_wearing_shoes only looks at the item-level (not armor-level) wear layer.
-  #       I initially "fixed" this with flags: [nothing, i.e. NORMAL] and armor: layers: [SKINTIGHT].
-  #       This caused the wear action to place this item at the wrong layer, when worn with other gear.
-  #       Later, I realized I can simply add flags: TOUGH_FEET which disables "NO SHOES" penalty.
-  #
-  # NOTE: my goal is to provide roughly equivalent armour and storage to this loadout:
-  #
-  #         SKINTIGHT:
-  #           https://cdda-guide.nornagon.net/item/nomad_bodyglove_2
-  #           https://cdda-guide.nornagon.net/item/helmet_liner
-  #           https://cdda-guide.nornagon.net/item/gloves_liner
-  #         NORMAL:
-  #           https://cdda-guide.nornagon.net/item/rm13_armor_on
-  #           OR
-  #           https://cdda-guide.nornagon.net/item/phase_immersion_suit_on
-  #           OR
-  #           https://cdda-guide.nornagon.net/item/activity_suit
-  #         STRAPPED:
-  #           https://cdda-guide.nornagon.net/item/survivor_vest
-  #           https://cdda-guide.nornagon.net/item/survivor_rig
-  #           https://cdda-guide.nornagon.net/item/survivor_belt_notools
-  #           OR
-  #           https://cdda-guide.nornagon.net/item/nomad_harness
-  #         OUTER:
-  #           https://cdda-guide.nornagon.net/item/trenchcoat_survivor
-  #           https://cdda-guide.nornagon.net/item/debug_backpack
-  #
-  # FIXME: then, merge in a bunch of utility bullshit, e.g. ZOOM from binoculars.
   material_thickness: 1
   environmental_protection: 80
   armor:
