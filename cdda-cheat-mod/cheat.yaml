@@ -315,7 +315,7 @@
     # Fuck it it's try this out.
     - prof_handloading
 
-    # If you set all skills to 10, you never experience the training system at all...
+  # If you set all skills to 10, you never experience the training system at all...
   skills:
      - { level: 3, name: speech }
      - { level: 3, name: computer }
