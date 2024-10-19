@@ -39,17 +39,18 @@
             ksub2000
             # ksub2000cqb
           charges: 33
-          # ammo-item: 9mmfmj
           contents-item:
             - light_grip
             - match_trigger
             - gun_mop
+          ammo-item: 9mmfmj
         - item: glockbigmag
           count: 9
-          # charges: 33
-          # ammo-item: 9mmfmj
+          charges: 33
+          ammo-item: 9mmfmj
+        - item: 9mmfmj
+          charges: 5000
         - item: rdb_223
-          ammo-item: 556_m855a1
           charges: 60
           contents-item:
             - match_trigger
@@ -58,14 +59,17 @@
             - holo_magnifier
             - pistol_grip
             - gun_mop
-        - item: stanag60
           ammo-item: 556_m855a1
+        - item: stanag60
           count: 5
           charges: 60
-        - item: clip223_10rd
           ammo-item: 556_m855a1
+        - item: clip223_10rd
           charges: 10
           count: 30
+          ammo-item: 556_m855a1
+        - item: 556_m855a1
+          charges: 5000
         - item: ksg
           charges: 24
           contents-item:
@@ -75,10 +79,11 @@
             - grip_mount
             - laser_sight
             - gun_mop
+        - item: shot_dragon
+          charges: 5000
         # Since the 8mm is kinda nerfed, switch to another Kel-Tec.
         - item: rfb_308
           charges: 50
-          ammo-item: 762_51_incendiary
           contents-item:
             - underbarrel_mount
             - match_trigger
@@ -86,10 +91,13 @@
             - acog_scope
             - pistol_grip
             - gun_mop
+          ammo-item: 762_51_incendiary
         - item: falbigmag
           count: 15
           charges: 30
           ammo-item: 762_51_incendiary
+        - item: 762_51_incendiary
+          charges: 5000
         # For a very strong character, this is a super nice weapon.
         # For weak characters, you can burn through stamina fast, like melee.
         # You can "adjust the strings" to trade stamina for damage/penetration.
