@@ -694,12 +694,6 @@
         # - novel_coa
         # - novel_coa2
 
-      # "//broken": [
-      #   "HOW THE FUCK DO I CREATE AN SD CARD PRE-LOADED WITH BOOKS?",
-      #   { "item": "mag_dude", "container-item": "usb_drive"},
-      #   { "item": "mobile_memory_card", "contents-item": ["mag_dude"]},
-      #   { "item": "mobile_memory_card_used", "contents-item": ["mag_dude"]},
-      #   { "item": "usb_drive", "contents-item": ["mag_dude"]}],
 
       # "entries" is the same as "items" except you can provide additional data, e.g.
       # • count (useful for ammo and consumables)
