@@ -89,10 +89,10 @@
     - bio_recoil
     - bio_syringe
     - bio_carbon
-    # nomad_bodyglove_2_twb doesn't replace?
+    # plot_armor doesn't replace?
     # FIXME: I have flags: PERFECT_LOCKPICK...
     # - bio_lockpick
-    # nomad_bodyglove_2_twb replaces...
+    # plot_armor replaces...
     # - bio_ar
     # - bio_eye_optic
     # - bio_radio
@@ -101,7 +101,7 @@
     both:
       items:
         # Custom armor that combines a bunch of stuff...
-        - nomad_bodyglove_2_twb
+        - plot_armor
         - metal_file
         - wash_kit
         - jumper_cable

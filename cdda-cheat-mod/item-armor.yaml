@@ -24,7 +24,7 @@
 #
 # FIXME: then, merge in a bunch of utility bullshit, e.g. ZOOM from binoculars.
 #
-- id: nomad_bodyglove_2_twb
+- id: plot_armor
   type: ARMOR
   name:
     str: Zagreb armor
