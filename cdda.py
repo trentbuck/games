@@ -7,6 +7,12 @@ import pathlib
 root = pathlib.Path('~/Desktop/Cataclysm-DDA/').expanduser().resolve()
 subprocess.check_call(['git', '-C', root, 'fetch', '--depth=1'])
 subprocess.check_call(['git', '-C', root, 'checkout', 'origin/master'])
+# To free up some space in .git again...
+#     git tag -d cdda-experimental-2021-07-03-0512 cdda-experimental-2023-02-14-0634 cdda-experimental-2023-03-01-2354 ...
+#     git reflog expire --expire=all --all
+#     git gc --prune=now
+# To manually add a single tag of a released version...
+#     git fetch --depth 1 origin 0.F:refs/remotes/origin/0.F
 # https://github.com/CleverRaven/Cataclysm-DDA/blob/master/doc/COMPILING/COMPILING.md#linux-native-sdl-builds
 # sudo apt install libsdl2-dev libsdl2-ttf-dev libsdl2-image-dev libsdl2-mixer-dev libfreetype6-dev build-essential
 # FIXME: 01:36 <NetSysFire> yeah i think you want USE_XDG_DIR=1 instead of USE_HOME_DIR=1
