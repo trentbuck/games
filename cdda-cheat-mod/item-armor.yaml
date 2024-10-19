@@ -373,3 +373,20 @@
     # https://cdda-guide.nornagon.net/item/two_way_radio
     # https://cdda-guide.nornagon.net/item/bio_radio
     - TWO_WAY_RADIO
+
+  relic_data:
+    passive_effects:
+      - id: ench_bloody_mess_twb
+
+
+- id: ench_bloody_mess_twb
+  type: enchantment
+  name:
+    str: Bloody Mess
+  description:
+    For whatever reason you seem to always make a real mess of things.
+    Enemies you kill tend to explode into a mess of viscera.
+  has: WORN
+  values:
+    - value: OVERKILL_DAMAGE
+      add: -1000
