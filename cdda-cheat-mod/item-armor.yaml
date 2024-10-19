@@ -276,7 +276,7 @@
       flag_restriction:
         - BELT_CLIP
     - pocket_type: CONTAINER
-      description: Mêlée sheath.
+      description: Weapon sheath.
       max_contains_volume: 100000 L
       max_contains_weight: 100000 kg
       max_item_length: 1 km
@@ -290,8 +290,15 @@
         - SHEATH_AXE
         - SHEATH_SPEAR
         - JAVELIN
+        # These aren't intended for pocket flag restriction, but might work...
+        - EASY_CLEAN
+        - LASER_SIGHT
+        - DISABLE_SIGHTS
+        - RELOAD_AND_SHOOT
+        - RELOAD_EJECT
+        - RELOAD_ONE
     - pocket_type: CONTAINER
-      description: Magazines pouch.
+      description: Magazine pouch.
       volume_encumber_modifier: 0
       weight_multiplier: 0
       max_contains_volume: 100000 L
@@ -301,6 +308,8 @@
       flag_restriction:
         - MAG_COMPACT
         - MAG_BULKY
+        - SPEEDLOADER
+        - SPEEDLOADER_CLIP
         - GRENADE
         - BATTERY_HEAVY
         - BATTERY_LIGHT
