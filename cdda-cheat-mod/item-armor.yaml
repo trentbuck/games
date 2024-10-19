@@ -21,9 +21,6 @@
 #         OUTER:
 #           https://cdda-guide.nornagon.net/item/trenchcoat_survivor
 #           https://cdda-guide.nornagon.net/item/debug_backpack
-#
-# FIXME: then, merge in a bunch of utility bullshit, e.g. ZOOM from binoculars.
-#
 - id: plot_armor
   type: ARMOR
   name:
@@ -335,3 +332,44 @@
       moves: 1
       watertight: true
       airtight: true
+
+
+# I was putting *way* too much stuff into plot_armor, and losing track.
+# Move some stuff into an amulet.
+# This also means these capabilities can be turned off easily by removing it.
+# So e.g. RAD_RESIST on plot armor, and RAD_PROOF + DIMENSIONAL_ANCHOR on the amulet?
+# I am using an amulet because basically nothing (just lanyard & pro camera) occupy the torso_neck slot.
+- id: amulet_of_yendor
+  type: ARMOR
+  name:
+    str: amulet of Yendor
+  symbol: "["
+  color: white
+  description: You hear a nearby thunderclap.
+  looks_like: lanyard
+  material: [plastic]
+  weight: 1 kg
+  volume: 1 L
+  longest_side: 10 cm
+  price: 1 USD
+  material_thickness: 1
+  flags:
+    - ONLY_ONE
+    - TRADER_AVOID
+    # When moving around on the overmap, auto-map stuff around you at a greater radius (doubled).
+    # https://cdda-guide.nornagon.net/json_flag/ENHANCED_VISION
+    # https://cdda-guide.nornagon.net/item/bio_eye_optic
+    # https://cdda-guide.nornagon.net/bionic/bio_eye_optic
+    # https://cdda-guide.nornagon.net/json_flag/ZOOM
+    # https://cdda-guide.nornagon.net/item/binoculars
+    # https://cdda-guide.nornagon.net/item/survivor_scope
+    # Huh.  You actually get this automatically if you have a
+    # magnified optic (e.g. ACOG) on any of your guns.
+    # https://cdda-guide.nornagon.net/item/acog_scope
+    - ENHANCED_VISION
+    - ZOOM
+    # https://cdda-guide.nornagon.net/json_flag/TWO_WAY_RADIO
+    # https://cdda-guide.nornagon.net/item/fake_radio
+    # https://cdda-guide.nornagon.net/item/two_way_radio
+    # https://cdda-guide.nornagon.net/item/bio_radio
+    - TWO_WAY_RADIO

@@ -16,6 +16,7 @@
       items:
         # Custom armor that combines a bunch of stuff...
         - plot_armor
+        - amulet_of_yendor
 
       # "entries" is the same as "items" except you can provide additional data, e.g.
       # • count (useful for ammo and consumables)

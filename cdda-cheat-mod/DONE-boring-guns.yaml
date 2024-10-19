@@ -127,7 +127,7 @@
           count: 3
           charges: 100
           ammo-item: 9mmfmj
-        
+
         - item: glock_19
           charges: 100
           ammo-item: 9mmfmj

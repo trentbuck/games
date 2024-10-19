@@ -57,10 +57,6 @@
 
 
   flags:
-    # https://cdda-guide.nornagon.net/item/binoculars
-    - ZOOM
-    - ENHANCED_VISION
-    - TWO_WAY_RADIO
     - RAD_DETECT
     - BAROMETER
     - HYGROMETER

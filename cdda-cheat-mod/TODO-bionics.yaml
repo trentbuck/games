@@ -43,7 +43,6 @@
   #   bio_fingerhack: electrohack + light battery
   #   bio_lockpick: locksmith_kit / crude_picklock
   #   bio_ears: earplugs
-  #   bio_eye_optic: binoculars / retractable telescope
   #   bio_tools:
   #     - NOT small_repairkit/large_repairkit!
   #     - NOT tailors_kit!
@@ -81,5 +80,3 @@
     # - bio_lockpick
     # plot_armor replaces...
     # - bio_ar
-    # - bio_eye_optic
-    # - bio_radio
