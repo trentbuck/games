@@ -12,6 +12,13 @@
     surv_rv
 
   ### Bionics stuff ###
+  # NOTE: Many CBMs conflict with mutations.
+  #       So e.g. if my cheating job gives me bio_ar,
+  #       I can't ever have CEPH_VISION, so
+  #       I can't become an octopus.
+  #       Therefore I *nowadays* think it's probably better to
+  #       pre-build a "do everything" custom tool (sonic_screwdriver).
+  #       NOTE: they ALSO conflict with some of the traits in job-trait-proficiency-skill.yaml
   # "// MAYBE CBMS":
   #   - bio_radscrubber
   #   - bio_scent_mask
@@ -65,6 +72,7 @@
     - bio_ups
     - bio_flashlight
     - bio_tools
+    # FIXME: consider: bio_multimeter -> bio_electrokit (these were split out from bio_tools in 0.H, I think).
     - bio_surgical_razor
     - bio_fingerhack
     - bio_fitnessband
@@ -94,12 +102,6 @@
       items:
         # Custom armor that combines a bunch of stuff...
         - nomad_bodyglove_2_twb
-        # - nomad_bodyglove_2
-        # - helmet_liner
-        # - gloves_liner
-        # - debug_backpack
-        # - waterskin
-        # - waterskin
         - metal_file
         - wash_kit
         - jumper_cable
@@ -735,10 +737,6 @@
           custom-flags: [no_auto_equip]
         - item: stethoscope
           custom-flags: [no_auto_equip]
-        - item: survivor_rig
-        - item: survivor_belt_notools
-        - item: survivor_vest
-        - item: trenchcoat_survivor
         - item: rm13_armor
           charges: 5000
         - item: tailors_kit
