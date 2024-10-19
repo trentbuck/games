@@ -1,0 +1,385 @@
+items:
+        - metal_file
+        - wash_kit
+        - jumper_cable
+        - rollmat
+        - e_tool
+        - bow_saw
+        - pliers_locking
+        - metal_smoother
+        - mop_folded
+        - butchering_kit
+        - hose
+        - crowbar
+        - punch_nail
+        - pin_reamer
+        - puller
+        - swage
+        - still
+        - chemistry_set
+        - fishing_rod_professional
+        - shears
+        - survivor_machete_qt
+        - spear_survivor
+        - mortar_pestle
+        - plastic_sheet
+        - improvised_oven
+        - crucible
+        - brazier
+        - anvil
+        - hotcut
+        - drift
+        - clay_quern
+        - tongs
+        - metalworking_tongs
+        - battery_ups
+        - battery_ups
+        - battery_ups
+        - mp3
+        - mirror
+        # - scuba_tank
+        # I haven't tried these but maybe they're fun.
+        # - folded_inflatable_boat
+        # - folded_skateboard_generic
+
+        # Sledges are useful for opening jammed safes and doors.
+        # The alternative would be a rocket launcher, maybe.
+        # You can also cut open doors with a cutting torch, BUT
+        # if you try that on a jammed gun safe, it'll detonate all the ammo within!
+        # PS: what actually matters is having a high single-hit bash damage.
+        # The heavy sledge was knackering me very quickly, and
+        # didn't seem to get through doors any faster than the short sledg.
+        # - hammer_sledge_short
+        # - hammer_sledge
+        # - hammer_sledge_heavy
+        # mace is actually better than sledge in terms of stamina &c, and
+        # it's pure bash per hit is only slightly lower.
+        - qt_mace
+        - mjolnir
+        - jade_nagamaki
+
+        # The knife is real fast and fun for combat, but
+        # I would also like to have something with reach attacks.
+        # What's the difference between REACH_ATTACK and REACH3?
+        # The latter is only on bullwhip and pike (all variants).
+        # The RM42 actually gives REACH_ATTACK when mounted on a gun.
+        # Although I think then I have to NOT use Taekwondo, so
+        # I attack with my bayonet instead of my feet...
+        # - bullwhip
+        # - pike
+        # - lucern_hammer
+        # I also had fun running around with a sword for a while.
+        # - qt_nodachi
+        # - qt_katana
+        # - qt_wakizashi
+        # kukri is better stamina and speed, except against heavily armoured dudes - and only slightly worse against those.  It has worse block, but still works with Ninjutsu techniques.
+        # kukri is purely better than survivor_machete_qt, except for blocking and grass cutting (who cares?)
+        # kukri is slightly slower but better stamina than qt_knife_trench.  kukri is much longer but a bit lighter than qt_knife_trench.  qt_knife_trench does piere, so it's a different kind of attack.
+        - qt_kukri
+        - qt_knife_trench
+        - knife_rm42
+
+        # I found a folding bicycle once by accident, and
+        # it's SUPER handy for quick trips.
+        # Slower, but much handier than a stolen car.
+        - folded_unicycle_twb
+          # folded_bicycle
+          # folded_skateboard_generic
+        # Unicycle folds up as well, but can't be spawned pre-folded???
+        # Define my own as a pre-defined vehicle! -- UPDATE: SOLVED!
+
+
+entries:
+        # grapnel is especially useful for getting out of the Hub 01 mission to the fallen skyscraper.
+        - item: grapnel
+          custom-flags: [no_auto_equip]
+        # After doing some fighting in the heat, I start to sweat and get damp.
+        # This makes me feel sad, and also maybe catch influenza after swimming to the AC.
+        # To "dry off" you "activate" a towel (but not a dishtowel) and the water moves into it.
+        # You can't wring out the towel; it empties itself automatically after a while.
+        # UPDATE: moved to Zagreb armor use_action: TOWEL
+        # - item: towel
+        #   custom-flags: [no_auto_equip]
+        # NOTE: when sleeping, you get is_snuggling bonus if there is something on the tile and
+        #         * it is armor (i.e. wearable)
+        #         * it is at least 250mL in volume
+        #         * it has >0 warmth
+        #         * it covers your torso or either leg
+        #       If there are multiple matching items, it says "pile of clothes", even if the "clothes" are sleeping bags and blankets.
+        #       Being in a vehicle also plays a factor - I *think* it's just saying that it'll consider clothes stored inside the vehicle's cargo space, without you having to physically move the blanket from the cargo bay to the driver's seat.
+        #       So it doesn't have to be a
+        #       sleeping bag (1000mL / 80warm) or
+        #       blanket (1550ml / 50warm),
+        #       really, it could be e.g. a
+        #       zentai (500ml / 20warm) or
+        #       t-shirt (500mL / 5warm) or
+        #       survivor trenchcoat (700mL / 20warm)
+        #       But the sleeping bag's warmth is much better than the others, so that probably helps.
+        #       https://github.com/CleverRaven/Cataclysm-DDA/blob/655cdeaac0c6/src/character.cpp#L8896-L8912
+        #       https://github.com/CleverRaven/Cataclysm-DDA/blob/655cdeaac0c6/src/character.cpp#L8971-L9013
+        - item: sleeping_bag_roll
+          custom-flags: [no_auto_equip]
+        - item: stethoscope
+          custom-flags: [no_auto_equip]
+        - item: rm13_armor
+          charges: 5000
+        - item: tailors_kit
+          charges: 400
+        - item: large_repairkit
+          charges: 9999
+        # Use this to avoid water damage to the equipment.
+        # - item: bag_zipper_gallon
+        #   count: 10
+        # - item: survivor_dry_bag
+        #   custom-flags: [no_auto_equip]
+        # - item: survivor_dry_duffelbag
+        #   custom-flags: [no_auto_equip]
+        #   contents-item:
+        #     # - eink_tablet_pc
+        #     - cordless_drill
+        - item: cordless_drill
+
+        # for when the Aircraft Carrier's a long way from land.
+        - item: swim_fins
+          custom-flags: [no_auto_equip]
+        - item: rebreather
+          custom-flags: [no_auto_equip]
+          charges: 360
+        # - item: goggles_swim
+        #   custom-flags: [no_auto_equip]
+        # Putting the UPS or battery into the drill is a fucking pain.
+        - item: hand_drill
+        - item: match
+          charges: 500
+        # FIXME: "charges" isn't working for string?
+        - item: string_36
+          count: 500
+        - item: string_6
+          count: 500
+        - item: 2x4
+          count: 20
+        - item: stick
+          count: 20
+        - item: duct_tape
+          charges: 500
+        # FIXME: this is not working
+        # - item: superglue
+        #   count: 100
+        - item: nail
+          charges: 500
+
+        # This replaces the IFAK packages.
+        # Putting them together makes the inventory menu less annoying.
+        # FIXME: "charges" isn't working for this item?
+        - item:
+            # adhesive_bandages
+            # bandages
+            medical_gauze
+          count: 50
+        - item: quikclot
+          count: 10
+        - item: arm_splint
+          count: 2
+        - item: leg_splint
+          count: 2
+        - item: flu_shot
+        - item: wrapped_rad_badge
+
+        # Ugh.  UPS ends up being MORE fiddly, sometimes.
+        - item: heavy_atomic_battery_cell
+          count: 11
+          charges: 10000
+        - item: light_atomic_battery_cell
+          count: 11
+          charges: 1000
+        - item: medium_atomic_battery_cell
+          count: 11
+          charges: 5000
+        - item: light_minus_atomic_battery_cell
+          count: 11
+          charges: 500
+
+        # Stuff that quest givers often ask for.
+        # - item: acoustic_guitar
+        #   custom-flags: [no_auto_equip]
+        # - item: holybook_quran
+        # - item: book_pneumatics
+        # - item: scrap
+        #   count: 50
+        # - item: magnetron
+        #   count: 25
+        # - item: lens_small
+        #   count: 5
+        # - item: radiocontrol
+        # - item: box_small_folded
+        #   count: 40
+        # - item: fertilizer_commercial
+        #   count: 120
+        # - item: disinfectant
+        #   count: 50
+        # - item: survivor_hairtrimmer
+        # - item: anesthetic_kit
+        #   charges: 6000
+        # - item: medium_battery_cell
+        #   charges: 500
+        #   count: 6
+        # - item: bone
+        #   count: 8
+        # - item: inhaler
+        #   count: 2
+        #   charges: 100
+        # - container-item: box_cigarette
+        #   item: cig
+        #   count: 200
+        # - item: bag_zipper_gallon
+        #   contents-item:
+        #     - weed
+        #     - weed
+        #     - weed
+        #     - weed
+        #     - weed
+        #     - weed
+        #     - weed
+        #     - weed
+        #     - weed
+        #     - weed
+
+        # If I have a bunch of MREs in my backpack, every time I open the "i" or "d" or "w" menus, the game hangs at 100% CPU for like 10-20 seconds.
+        # It doesn't do this for the "/" menu.
+        # To try to combat this, assign individual components from the MREs instead?
+        # I also want stuff that'll last for at least a season, maybe forever i.e. "sealed": true...
+        #
+        # This replaces the MRE packages.
+        # Putting them together makes the inventory menu less annoying.
+        # - item: chocolate_military
+        #   count: 50
+        # - item: fruit_leather
+        #   count: 50
+        # - item: cheese_hard
+        #   count: 100
+        # - item: can_cheese
+        #   count: 100
+        # - item: spread_peanutbutter
+        #   count: 100
+        # - item: crackers
+        #   count: 100
+        # - item: flour
+        #   count: 100
+        # There used to be "debug SPAM", which made you sad to eat it.
+        # This is better, it makes you happy to eat it.
+        # NOTE: still perishable, after 3 days.
+        # NOTE: doesn't include necessary vitamins.
+        - item: debug_calories
+          count: 100
+
+        # { "item": "mre_ravioli", "count": 10 },
+
+        #   2L    = "metal_tank_little"
+        #   3.75L = "jug_plastic"
+        #  60L    = "metal_tank" (needed for some crafting)
+        # 100L    = "30gal_drum", "30gal_drum_aluminum"
+        # 200L    = "55gal_drum", "55gal_drum_aluminum", "55gal_drum_rubber" (collapsible)
+        - container-item: 55gal_drum_rubber
+          item: water_clean
+          charges: 200
+        - container-item: metal_tank
+          item: water_clean
+          charges: 500
+        - item: metal_tank
+          count: 2
+        - container-item: metal_tank
+          item: salt_water
+          charges: 800
+        # kerosene = lamp_oil
+        - container-item: jug_plastic
+          item: lamp_oil
+          charges: 3750
+        - container-item: jug_plastic
+          item: motor_oil
+          charges: 3750
+        - container-item: jug_plastic
+          item: gasoline
+          charges: 3750
+        - container-item: jug_plastic
+          item: diesel
+          charges: 3750
+        - container-item: jug_plastic
+          item: jp8
+          charges: 3750
+        - container-item: jug_plastic
+          item: chem_ethanol
+          charges: 3750
+        - container-item: jug_plastic
+          item: methed_alcohol
+          charges: 3750
+        - container-item: jug_plastic
+          item: denat_alcohol
+          charges: 3750
+        - container-item: jug_plastic
+          item: chem_acetone
+          charges: 75
+        - container-item: jug_plastic
+          item: ammonia_liquid
+          charges: 15
+        - container-item: jug_plastic
+          item: bleach
+          charges: 30
+        - container-item: jug_plastic
+          item: cooking_oil
+          charges: 240
+        - container-item: jug_plastic
+          item: napalm
+          charges: 3750
+        # It's super duper useful to preserve stuff indefinitely using "sealed" items.
+        # That means you need a bunch of water (can be dirty), a pressure cooker, a fire, and
+        # sealable containers.  There are two available sealable containers,
+        # https://github.com/CleverRaven/Cataclysm-DDA/blob/master/data/json/requirements/cooking_tools.json
+        - item: pressure_cooker
+        - item: pot_canning
+        - item: jar_3l_glass_sealed
+          count: 10
+        - item: jar_glass_sealed
+          count: 20
+
+        # Smoked meat runs on a charcoal smoker.
+        # That is charged with consumable charcoal.
+        # You can make charcoal by burning wood (e.g. planks, logs) in a charcoal kiln.
+        - item: char_smoker
+          charges: 2000
+        - item: metal_tank_little
+          count: 4
+        - item: pipe
+          count: 32
+        - item: pipe_fittings
+          count: 8
+        - item: oxy_torch
+        - item: tinyweldtank
+          count: 3
+        - item: propane_torch
+        - item: small_propane_tank
+          count: 3
+          charges: 10000
+
+        # - item: hk_mp5sd
+        #   charges: 40
+        #   ammo-item: 9mmfmj
+        #   contents-item:
+        #     - light_grip
+        #     - match_trigger
+        #     - gun_mop
+        # - item: mp5mag_40rd
+        #   count: 5
+        #   ammo-item: 9mmfmj
+        #   charges: 40
+        # - item: phase_immersion_suit
+        #   custom-flags: [no_auto_equip]
+        # - item: jacket_eod
+        #   custom-flags: [no_auto_equip]
+        # - item: trousers_eod
+        #   custom-flags: [no_auto_equip]
+        # - item: helmet_eod
+        #   custom-flags: [no_auto_equip]
+        # - item: gloves_eod
+        #   custom-flags: [no_auto_equip]
+        # - item: foot_protectors_eod
+        #   custom-flags: [no_auto_equip]

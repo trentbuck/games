@@ -1,0 +1,393 @@
+- type: profession
+  items:
+    both:
+      entries:
+
+
+        # LAUNCHERS
+        # ########################################
+        - item:
+            # Obsoleted in CDDA 0.H :-(
+            # rm802
+            m320
+          ammo-item: 40x46mm_m433
+          charges: 1
+          contents-item:
+            - rifle_scope_high_end_mount
+            - holo_sight
+            - gun_mop
+        - item: 40x46mm_m433
+          count: 15
+        # This is massive a overkill weapon.
+        # When you get into the deep lab layers, where
+        # the universe fades away and dozens of hyper-regenerating shoggoths are in view,
+        # you might want this.
+        - item: m4_carlgustav
+          ammo-item: 84x246mm_hedp
+          charges: 1
+          contents-item:
+            - modern_handguard
+            - match_trigger
+            - rifle_scope_high_end_mount
+            - holo_sight
+            - light_grip
+            - gun_mop
+        - item: 84x246mm_hedp
+          count: 6
+
+
+
+        # RARE CALIBRES
+        # ########################################
+        # For just bumbling around having fun,
+        # it's nice to have stuff that shoots the most common rounds.
+        # These are 5.56×45mm NATO, 9×19mm Luger, and 00 shot.
+        # Fuck these calibres:
+        #
+        #   .50 Beowulf
+        #   .303 British
+        #   5.7 (guns keep jamming for some reason???)
+        #   7.62×53mmR (Mosin)
+        #   7.62×39mm (AKM)
+        #   5.45×39mm (AK-74)
+        #   .30 Carbine (M1 Carbine)
+        #   .30-06 (M1 Garand, Springfield)
+        #   .32, .380, ,38, .454, .460
+        #   .45 Colt (NOTE: not the same as .45 ACP!)
+        #   4.6mm (HK MP7)
+        #   .300 BLK
+        #   .357 SIG
+        #   700 NX
+        #   7.62×25 (Tokarev)
+        #   45-70 Government
+        #   .50 BMG (maybe keep this one?)
+        #
+        # UPDATE: the M1 .30 Carbine is pretty fun, it's in-between
+        #         PCCs and 2-line carbines.
+        #         But it's entirely the one gun and one magazine.
+        #
+        # Likewise the most common magazines are STANAG (up to 150rd).
+        # Fuck these guns with custom magazines:
+        #
+        #   S&W 22A
+        #   AUG
+        #   BAR
+        #   Bren 2
+        #   Browning BLR
+        #   Hi-Point *
+        #   Walther *
+        #   HK *
+        #   Vector SMG
+        #   M3, M9, M11, M17, M18
+        #   FN *
+        #   Ruger Mini-14
+        #   SIG (except the Stg 553)
+        #
+        # The 7.62×51mm NATO (M80) is kinda nice in an
+        # M14 EBR or something that takes FAL 30rd mags?
+        # Or just in an belt-fed single-shot M60 Civilian?
+        # I tried putting a single-shot trigger into an M249, but
+        # it broke right away.
+        #
+        # The American-180 is fun for leaving on burst
+        # and just burning through weak zombies.
+        #
+        # I kinda want to just have a complete collection
+        # of glocks, just so I can occasionally have fun
+        # throwing a bunch of random pistol cartridges
+        # downrange?  The COP Derringer was also fun for this.
+        #
+        # When I've been just throwing random bullets downrange,
+        # I found that the FMJ is better.  Typically it's -2dam +10AP,
+        # which lets me push over SWAT dudes in 1 shot instead of 2.
+        #
+        # UPDATE: American 180 goes away in CDDA 0.I.
+        - item: american_180
+          charges: 275
+          ammo-item: 22_fmj
+          contents-item:
+            - pistol_grip
+            - modern_handguard
+            - match_trigger
+            - holo_sight
+            - high_end_folding_stock
+            - gun_mop
+        - item: a180mag4
+          count: 3
+          charges: 275
+          ammo-item: 22_fmj
+
+        # A full Glock collection
+        # ##############################
+        - item: glock_18c
+          charges: 100
+          ammo-item: 9mmfmj
+          contents-item: []
+        - item: glock_drum_100rd
+          count: 3
+          charges: 100
+          ammo-item: 9mmfmj
+        
+        - item: glock_19
+          charges: 100
+          ammo-item: 9mmfmj
+          contents-item:
+            - light_grip
+            - match_trigger
+            - gun_mop
+        - item: glock_20
+          charges: 30
+          ammo-item: 10mm_fmj
+          contents-item:
+            - light_grip
+            - match_trigger
+            - gun_mop
+        - item: tdi_10mm_mag
+          count: 3
+          charges: 30
+          ammo-item: 10mm_fmj
+        - item: glock_21
+          charges: 26
+          ammo-item: 45_acp
+          contents-item:
+            - light_grip
+            - match_trigger
+            - gun_mop
+        - item: glock_21mag26
+          count: 3
+          charges: 26
+          ammo-item: 45_acp
+        - item: glock_22
+          charges: 22
+          ammo-item: 40fmj
+          contents-item:
+            - light_grip
+            - match_trigger
+            - gun_mop
+        - item: glock40bigmag
+          count: 3
+          charges: 26
+          ammo-item: 40fmj
+
+
+        # ===== 9x19mm Luger =====
+        # glock/ksub2000 have biggest 9x19mm mag (100).
+        # ksub200 has highest damage and range
+        # mp5/mp5sd is only 9x19 with burst (cf. auto).  I think it's only got a high price_postapoc because of a few years ago when sound and "night raids" were viable
+        # Because I'm cheating and carrying *all* the guns at once, I almost never bother with burst first; I just switch to a bigger calibre.
+        # So *I* don't actually care about burst at all, I think.
+        # What I *do* like is having >50 rounds in a magazine so I can just dump rounds into a horde of mooks.
+        # NOTE: I didn't notice for a long time, but the bulky mags
+        #       often have an invisible jam probability multiplier of 2.0x.
+        #       Is it worth going back to smaller mags with COMPACT_MAG and regular jam rate?
+        # [still active, in job-gear-implant.yaml]
+
+
+        # ===== 5.56x45mm NATO =====
+        - item: modular_m16a4
+          charges: 150
+          ammo-item: 556_m855a1
+          contents-item:
+            - pistol_grip
+            - modern_handguard
+            - match_trigger
+            - holo_magnifier
+            - holo_sight
+            - butt_hook
+            - high_end_folding_stock
+            - gun_mop
+        - item: stanag150
+          count: 3
+          charges: 150
+          ammo-item: 556_m855a1
+        - item: m14ebr
+          charges: 20
+          ammo-item: 762_51_incendiary
+          contents-item:
+            - pistol_grip
+            - modern_handguard
+            - match_trigger
+            - holo_magnifier
+            - holo_sight
+            - butt_hook
+            - high_end_folding_stock
+            - gun_mop
+        - item: m14mag
+          count: 5
+          charges: 20
+          ammo-item: 762_51_incendiary
+
+
+        # ===== 7.62 NATO =====
+        # I wish this fucker could take 50-round mags.  MDRX can, but then it'll sort into "M's" instead of "Kel's".
+        - item: rfb_308
+          charges: 50
+          ammo-item: 762_51_incendiary
+          contents-item:
+            - underbarrel_mount
+            - match_trigger
+            - modern_handguard
+            - acog_scope
+            - pistol_grip
+            - gun_mop
+        - item: falbigmag
+          count: 15
+          charges: 30
+          ammo-item: 762_51_incendiary
+
+        # ===== 12 gauge shot =====
+        # I had fun with the KSG (14 mag).
+        # The Tavor-12 (15 mag) and KSG-25 (24 mag) look similar.
+        # UPDATE: I got SUPER sick of reloading every 5 rounds, because switching tubes on empty isn't automatic.
+        # UPDATE: in 2024, the "auxiliary magazine" attachment bullshit is gone.
+        # UPDATE: KSG-25 is obsolete in 0.I
+        - item: tavor_12
+          charges: 5
+          contents-item:
+            - match_trigger
+            - holo_sight
+        - item: shot_00
+          count: 50
+
+        # Regular shot isn't that interesting, but
+        # dragon shot works like an incendiary grenade, but more directional.
+        # Very nice for dismissing a large crowd.
+        - item: shot_dragon
+          count: 50
+        # When there's a batch of like 20+ weak zombies packed together,
+        # I like to toss a grenade and duck around a corner.
+        - item: grenade
+          count: 50
+        - item: grenade_inc
+          count: 50
+
+        # "Fun" weapons for grinding the "not-fun" skills? (throwing, launcher, unarmed, blunt, piercing)
+        - item: varmint_airgun
+        - item: airgun_pellet_hunting
+          count: 5
+        - item: bbgun
+          charges: 150
+        - item: bb
+          count: 5
+        - item: sling
+        - item: bearing
+          count: 20
+        - item: staff_sling
+        - item: pool_ball
+          count: 1000
+        - item: rm451_flamethrower
+          ammo-item: napalm
+          charges: 4000
+        - item: rm4504
+          count: 3
+          ammo-item: napalm
+          charges: 4000
+        - item: rm802
+        - item: 40x46mm_m576
+          count: 20
+        - item: 40x46mm_flechette_m199
+          count: 20
+        - item: 40x46mm_slug_m199
+          count: 20
+        - item: 40x46mm_hornets_nest_410
+          count: 20
+        - item: 40x46mm_hornets_nest_22lr
+          count: 20
+        - item: qt_steel_staff
+        - item: qt_mace
+        - item: PR24-extended
+        - item: bat_metal
+        - item: qt_rapier
+        - item: qt_estoc
+        - item: cestus
+        - item: knuckle_impact
+        - item: knuckle_skewer
+        - item: spear_steel
+        - item: spear_dory
+
+        # ===== 8x40mm caseless =====
+        # I thought this one would be really nice, when
+        # I thought stealth and engaging at max distance was important.
+        # But the RM88 holds literally 10 times more ammo per magazine, and
+        # can burst fire for "oh fuck" stuff like shoggoths.
+        # UPDATE: 8mm_hvp is obsoleted in 0.H.
+        # UPDATE: Historically 8mm caseless was endgame gear,
+        #         limited mainly by the extremely rare ammunition.
+        #         As at 0.I it looks like it's nerfed to be barely better than 223.
+        - item: rm11b_sniper_rifle
+          ammo-item: 8mm_hvp
+          charges: 25
+          # UPDATE: "riv_suppressor" is migrated away in 0.I :-(
+          contents-item:
+            - modern_handguard
+            - pistol_grip
+            - match_trigger
+            - stabilizer
+            - gun_mop
+        - item: 8x40_25_mag
+          count: 12
+          charges: 25
+        # This is one of my favourite "oh fuck" weapons.
+        # It's very loud and the ammo is relatively heavy.
+        # It has a huge capacity (250) without disintegrating belt bullshit.
+        # It has burst fire for fast-regenerating shoggoths.
+        # UPDATE: the AP is dramatically worse in 0.H (and 8mm_hvp is gone).
+        # UPDATE: rm88 is gone in 0.I!
+        # UPDATE: rm614 is gone in 0.I!
+        # UPDATE: 250/500 round magazines are gone in 0.I!
+        #
+        # ====== =========== ===== ========== ====== ===== ====
+        # damage penetration range dispersion recoil noise item
+        # ====== =========== ===== ========== ====== ===== ====
+        # 42     6           36    20         1650   168   556 (0.F)
+        # 36     12          36    50         1650   168   556 (0.H)
+        # 42     18          42    75         2200   204   8mm_caseless (0.F)
+        # 47     8           42    75         2200   194   8mm_caseless (0.H)
+        # 58     6           65    5          3300   258   762_51 (0.F)
+        # 59     6           65    15         3000   260   762_51 (0.H)
+        # ====== =========== ===== ========== ====== ===== ====
+        - item: rm88_battle_rifle
+          custom-flags: [auto_wield]
+          # ammo-item: 8mm_hvp
+          charges: 250
+          # magazine: 8x40_250_mag
+          contents-item:
+            # These aren't actually compatible with this rifle, BUT
+            # the game doesn't stop me shoving them on.  Mua ha ha.
+            - riv_scope
+            # - rifle_scope_high_end_mount
+            # - holo_sight
+            # UPDATE: "riv_suppressor" is migrated away in 0.I :-(
+            # - riv_suppressor
+            - modern_handguard
+            - pistol_grip
+            - match_trigger
+            - stabilizer
+            - butt_hook
+            - recoil_stock
+            # mop built into gun!
+            - gun_mop
+        - item: 8x40_250_mag
+          count: 3
+          ammo-item: 8mm_hvp
+          charges: 250
+        - item: rm614_lmg
+          charges: 500
+          ammo-item: 8mm_hvp
+          contents-item:
+            - riv_scope
+            # UPDATE: "riv_suppressor" is migrated away in 0.I :-(
+            - riv_suppressor
+            - modern_handguard
+            - pistol_grip
+            - match_trigger
+            - stabilizer
+            - butt_hook
+            - recoil_stock
+            - gun_mop
+        - item: 8x40_500_mag
+          count: 3
+          ammo-item: 8mm_hvp
+          charges: 500
+        - item: 8mm_hvp
+          charges: 5000

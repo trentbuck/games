@@ -1,0 +1,502 @@
+items:
+        ########################################
+        # BOOKZ --- only the books that have recipes you can't get automatically with high-enough skill level.
+        # == anthology.json ==
+        # - book_anthology_moataatgb
+        # - book_anthology_sunvault
+        # - book_anthology_sst
+        # - book_anthology_bk
+        # - book_anthology_cw
+        # - book_anthology_an
+        # - book_anthology_htloop
+        # == archery.json ==
+        # - book_archery
+        # - manual_archery
+        # - mag_archery
+        # == barter.json ==
+        # - mag_barter
+        # - manual_business
+        # - textbook_business
+        # == bashing.json ==
+        # - mag_bashing
+        # - manual_bashing
+        # == chemistry.json ==
+        - adv_chemistry
+        # - modern_tanner
+        # - recipe_alpha
+        # - recipe_animal
+        # - recipe_chimera
+        # - recipe_creepy
+        # - recipe_elfa
+        # - recipe_labchem
+        # - recipe_maiar
+        # - recipe_medicalmut
+        # - recipe_raptor
+        # - recipe_serum
+        # - reference_cooking
+        # - textbook_chemistry
+        # - textbook_extraction
+        # - textbook_gaswarfare
+        # - basic_chemistry
+        # - catalytic_cracking_handbook
+        # - textbook_biodiesel
+        # == computer.json ==
+        # - SICP
+        # - computer_science
+        # - howto_computer
+        # - mag_computer
+        # - manual_computer
+        # - textbook_computer
+        # - webbasics_computer
+        # - hackerman_computer
+        # == cooking.json ==
+        # - brewing_cookbook
+        # - cookbook
+        # - cookbook_human
+        # - cookbook_italian
+        # - cookbook_mexican
+        # - cookbook_sushi
+        # - family_cookbook
+        # - mag_cooking
+        # - mag_glam
+        # - scots_cookbook
+        # - vinegar_maker
+        # - preserving_juice
+        # - offalcooking
+        # - dairy_book
+        # - cookbook_liverforkids
+        # - cookbook_bloodforgood
+        # - cookbook_daintydishes
+        # - cookbook_eatyrway
+        # - cookbook_foodfashions
+        # - winemaking_beginner
+        # - manual_canning
+        # - manual_sealing
+        # - vacuum_sealing
+        # - baking_book
+        # - fermenting_book
+        # - distilling_cookbook
+        # - sweets_book
+        # - survivalflavor_book
+        # - cookbook_indian
+        # == cutting.json ==
+        # - mag_cutting
+        # - manual_cutting
+        # - manual_swords
+        # == dodge.json ==
+        # - mag_dodge
+        - manual_dodge
+        # - manual_dodge_kid
+        # - book_nonf_hard_dodge_tlwd
+        # == driving.json ==
+        # - decoy_anarch
+        # - mag_cars
+        # - manual_driving
+        # - textbook_anarch
+        # == electronics.json ==
+        # - advanced_electronics
+        # - arduino_experiments
+        # - mag_electronics
+        # - manual_electronics
+        # - ic_reference_electronics
+        # - radio_book
+        # - recipe_atomic_battery
+        # - recipe_augs
+        # - recipe_lab_elec
+        # - recipe_mil_augs
+        # - repeater_mod_guide
+        # - textbook_electronics
+        # - textbook_robots
+        # - robofac_yrax_deactivation_manual
+        # - exodii_wiring_kit_reference
+        # - schematics_nursebot
+        # - schematics_grocerybot
+        # - schematics_copbot
+        # - schematics_eyebot
+        # - schematics_secubot
+        # - schematics_skitterbot
+        # - schematics_hazmatbot
+        # - schematics_molebot
+        # - schematics_riotbot
+        # - schematics_sciencebot
+        # - schematics_dispatch
+        # - schematics_dispatch_military
+        # - schematics_antimateriel
+        # - schematics_searchlight
+        # == fabrication.json ==
+        # - glassblowing_book
+        # - plastics_book
+        # - theater_props
+        # - jewelry_book
+        # - mag_fabrication
+        # - manual_fabrication
+        # - recipe_arrows
+        # - recipe_bows
+        # - recipe_bullets
+        # - recipe_caseless
+        # - recipe_lab_cvd
+        # - recipe_melee
+        # - textbook_armeast
+        # - textbook_armschina
+        # - textbook_armwest
+        # - textbook_fabrication
+        # - textbook_fireman
+        # - textbook_weapeast
+        # - textbook_weapwest
+        # - welding_book
+        # - 101_carpentry
+        # - carpentry_book
+        # - mag_carpentry
+        # - manual_carpentry
+        # - textbook_carpentry
+        # - reference_fabrication1
+        # - concrete_book
+        # - recipe_migo_plate
+        # == firstaid.json ==
+        # - emergency_book
+        # - mag_firstaid
+        # - manual_first_aid
+        # - pocket_firstaid
+        # - textbook_firstaid
+        # - booklet_firstaid
+        # - reference_firstaid1
+        # - reference_firstaid2
+        # - textbook_toxicology
+        # == gun.json ==
+        # - mag_guns
+        # - manual_gun
+        # - pocket_firearms
+        # - text_gunsmith
+        # == launcher.json ==
+        # - mag_launcher
+        # - manual_launcher
+        # == lockpick.json ==
+        # - book_lockpick
+        # == maps.json ==
+        - labmap
+        - militarymap
+        - survivormap
+        - roadmap
+        - subwaymap
+        - trailmap
+        - touristmap
+        - restaurantmap
+        - satellitemap
+        - urbexmap
+        - restaurantbrochure
+        - grocerybrochure
+        - historybrochure
+        - mallbrochure
+        - furniturebrochure
+        - technologybrochure
+        # == martial.json ==
+        # - manual_aikido
+        - manual_barbaran
+        # - manual_boxing
+        # - manual_capoeira
+        # - manual_centipede
+        # - manual_crane
+        # - manual_dragon
+        - manual_eskrima
+        # - manual_fencing
+        # - manual_judo
+        # - manual_karate
+        # - manual_bojutsu
+        # - manual_kickboxing
+        - manual_krav_maga
+        - manual_leopard
+        # - manual_lizard
+        # - manual_muay_thai
+        - manual_ninjutsu
+        - manual_niten
+        # - manual_pankration
+        # - manual_scorpion
+        # - manual_silat
+        # - manual_snake
+        - manual_taekwondo
+        # - manual_tai_chi
+        # - manual_tiger
+        # - manual_toad
+        # - manual_venom_snake
+        - manual_zui_quan
+        # - manual_sojutsu
+        # - manual_wingchun
+        # - manual_medievalpole
+        # - manual_swordsmanship
+        # == mechanics.json ==
+        # - book_icef
+        # - book_pneumatics
+        # - mag_fieldrepair
+        # - mag_mechanics
+        # - manual_makerspace
+        # - manual_robotics_kit
+        # - manual_engine_kit
+        # - manual_mechanics
+        # - textbook_atomic_lab
+        # - book_nonf_soft_mechnic_hotrod
+        # - textbook_mechanics
+        # == melee.json ==
+        # - mag_melee
+        # - manual_melee
+        # == misc.json ==
+        # - ZSG
+        # - black_box_transcript
+        # - commune_prospectus
+        # - decoy_elfa
+        # - essay_book
+        # - guidebook
+        # - mag_comic
+        # - mag_gaming
+        # - mag_news
+        # - book_nonf_zine_news_anlyst
+        # - mag_porn
+        # - necropolis_freq
+        # - news_regional
+        # - novel_adventure
+        # - novel_buddy
+        # - novel_crime
+        # - novel_crime2
+        # - novel_crime_murdergrape
+        # - novel_crime_midnight
+        # - novel_drama
+        # - novel_erotic
+        # - novel_experimental
+        # - novel_fantasy
+        # - novel_horror
+        # - novel_mystery
+        # - novel_road
+        # - book_fict_soft_west_gore
+        # - novel_romance
+        # - paperback_romance_circuses
+        # - paperback_romance_cloven
+        # - paperback_romance_conq
+        # - paperback_romance_dd
+        # - paperback_romance_diodes
+        # - paperback_romance_envyh
+        # - paperback_romance_grue
+        # - paperback_romance_rider
+        # - paperback_romance_rogue
+        # - paperback_romance_secret
+        # - novel_samurai
+        # - novel_satire
+        # - book_fict_soft_satire_hgod
+        # - book_fict_soft_satire_catch
+        # - book_fict_soft_satire_mandm
+        # - book_fict_soft_satire_dust
+        # - book_fict_soft_satire_cats
+        # - novel_spy
+        # - novel_spy_comefly
+        # - novel_spy_rocketsci
+        # - novel_swash
+        # - book_fict_soft_swash_blkfreight
+        # - book_fict_soft_swash_searovers
+        # - book_fict_soft_swash_buccaneer
+        # - novel_thriller
+        # - novel_tragedy
+        # - novel_war
+        # - novel_war2
+        # - novel_western
+        # - book_fict_soft_west_atwixt
+        # - book_fict_soft_west_bart
+        # - book_fict_soft_west_beans
+        # - book_fict_soft_west_calico
+        # - book_fict_soft_west_riot
+        # - book_fict_soft_west_vaq
+        # - book_fict_soft_west_vride
+        # - phonebook
+        # - photo_album
+        # - plays_book
+        # - poetry_book
+        # - priest_diary
+        # - record_accounting
+        # - record_patient
+        # - record_weather
+        # - story_book
+        # - tall_tales
+        # - visions_solitude
+        # - classic_literature
+        # - collector_book
+        # - occult_economicon
+        # - occult_bobliographon
+        # - occult_glimpses
+        # - necronomicon
+        # == misc_newage.json ==
+        # - book_newage_generic
+        # - book_newage_inpsychic
+        # - book_newage_healcrystals
+        # - book_newage_oilsecrets
+        # - book_newage_witchcraftbeg
+        # - book_newage_witchcraftadv
+        # - book_newage_beyondveil
+        # - book_newage_weapcrys
+        # - book_newage_aliens
+        # - book_newage_horoscopes
+        # == misc_philosophy.json ==
+        # - philosophy_book
+        # - book_nonf_hard_phil_mdlogic
+        # - book_nonf_hard_phil_aesth
+        # - book_nonf_hard_phil_phinfo
+        # - book_nonf_soft_phil_benoth
+        # == misc_pulp.json ==
+        # - novel_pulp
+        # - book_fict_soft_pulp_venus
+        # - book_fict_soft_pulp_wtmrw
+        # - book_fict_soft_pulp_nogod
+        # - book_fict_soft_pulp_ddive
+        # - book_fict_soft_pulp_squids
+        # - book_fict_soft_pulp_gcapes
+        # - book_fict_soft_pulp_yesmurd
+        # - book_fict_soft_pulp_flashcc
+        # == misc_scifi.json ==
+        # - novel_scifi
+        # - book_fict_soft_scifi_dune
+        # - book_fict_hard_scifi_dune
+        # - book_fict_hard_scifi_talnt
+        # - book_fict_hard_scifi_fifth
+        # - book_fict_hard_scifi_zamwe
+        # - book_fict_soft_scifi_zamwe
+        # - book_fict_soft_scifi_cybrd
+        # - book_fict_soft_scifi_brave
+        # - book_fict_soft_scifi_roadp
+        # - book_fict_soft_scifi_f451
+        # - book_fict_soft_docu_AWT
+        # == misc_sports.json ==
+        # - novel_sports
+        # - book_fict_soft_sports_bunt
+        # - book_fict_soft_sports_tdsp
+        # - book_fict_soft_sports_envy
+        # - book_fict_hard_sports_semi
+        # - book_fict_hard_sports_omni
+        # - book_fict_hard_sports_uni
+        # - book_nonf_soft_sports_bdgt
+        # - book_nonf_soft_sports_lads
+        # - book_nonf_soft_sports_vlly
+        # - book_nonf_hard_sports_morg
+        # - book_nonf_hard_sports_bike
+        # - book_nonf_hard_sports_ergo
+        # - book_nonf_hard_sports_hoop
+        # == nonfiction.json ==
+        # - book_nonf_hard_homemk_anythingcan
+        # - book_nonf_hard_homemk_grtrms
+        # - book_nonf_hard_homemk_handshome
+        # - book_nonf_hard_homemk_loverms
+        # - book_nonf_hard_homemk_nyparti
+        # - book_nonf_hard_homemk_outkitchn
+        # - book_nonf_hard_homemk_plantshome
+        # - book_nonf_hard_homemk_wmencolor
+        # - book_nonf_soft_wedding_coolring
+        # - book_nonf_soft_parent_howtogen
+        # - book_nonf_soft_safety_radiaea
+        # - book_nonf_hard_psych_forpsych
+        # - book_nonf_hard_psych_grconres
+        # - book_nonf_hard_psych_moodalm
+        # - book_nonf_hard_psych_phonodis
+        # - book_nonf_hard_psych_thergar
+        # - book_nonf_soft_psych_adrugds
+        # - book_nonf_soft_psych_arteatds
+        # - book_nonf_soft_psych_cggamers
+        # - book_nonf_soft_psych_paranoia
+        # - book_nonf_soft_psych_psycolo
+        # - book_nonf_soft_psych_psycstlk
+        # == pistol.json ==
+        # - mag_pistol
+        # - manual_pistol
+        # == rifle.json ==
+        # - mag_rifle
+        # - manual_rifle
+        # == shotgun.json ==
+        # - mag_shotgun
+        # - manual_shotgun
+        # == smg.json ==
+        # - mag_smg
+        # - manual_smg
+        # == speech.json ==
+        # - mag_tv
+        # - manual_speech
+        # - textbook_speech
+        # - dnd_handbook
+        # - book_nonf_soft_speech_naillaw
+        # == spiritual.json ==
+        # - mycenacean_hymns
+        # - holybook_bible1
+        # - holybook_bible2
+        # - holybook_bible3
+        # - holybook_granth
+        # - holybook_hadith
+        # - holybook_kallisti
+        # - holybook_kojiki
+        # - holybook_mormon
+        # - holybook_pastafarian
+        # - holybook_quran
+        # - holybook_satanic
+        # - holybook_scientology
+        # - holybook_slack
+        # - holybook_sutras
+        # - holybook_talmud
+        # - holybook_tanakh
+        # - holybook_tripitaka
+        # - holybook_upanishads
+        # - holybook_vedas
+        # - holybook_havamal
+        # == stabbing.json ==
+        # - mag_stabbing
+        # - manual_stabbing
+        # - manual_knives
+        # == survival.json ==
+        # - atomic_survival
+        # - fun_survival
+        # - mag_dude
+        # - mag_survival
+        # - manual_survival
+        - pocket_survival
+        # - survival_book
+        # - textbook_survival
+        # - textbook_botany
+        # - textbook_arthropod
+        # - isherwood_herbal_remedies
+        # == swimming.json ==
+        # - mag_swimming
+        # - manual_swimming
+        # == tailor.json ==
+        # - mag_animecon
+        # - mag_beauty
+        # - mag_tailor
+        # - manual_tailor
+        # - tailor_portfolio
+        # - tailor_japanese
+        # - recipe_fauxfur
+        # - textbook_tailor
+        # - scots_tailor
+        # - dieselpunk_tailor
+        # - bp_nomad_cowl
+        # - bp_nomad_bodyglove
+        # - bp_nomad_jumpsuit
+        # == throw.json ==
+        # - mag_throwing
+        # - manual_throw
+        # == traps.json ==
+        # - howto_traps
+        # - mag_traps
+        # - manual_traps
+        # - manual_traps_mil
+        # - textbook_traps
+        # - trappers_companion
+        # == unarmed.json ==
+        # - mag_unarmed
+        # - manual_brawl
+        # == young.json ==
+        # - child_book
+        # - fairy_tales
+        # - book_fict_soft_ya_adrk
+        # - book_fict_soft_ya_bjak
+        # - book_fict_soft_ya_burn
+        # - book_fict_soft_ya_hilo
+        # - book_fict_soft_ya_myeyes
+        # - book_fict_soft_ya_pbbr
+        # - book_fict_soft_ya_rwya
+        # - book_fict_soft_ya_sboy
+        # - book_fict_soft_ya_sumv
+        # - book_fict_hard_ya_dark
+        # - book_fict_hard_ya_btwo
+        # - novel_coa
+        # - novel_coa2
