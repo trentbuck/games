@@ -216,13 +216,13 @@
       volume_encumber_modifier: 0
       weight_multiplier: 0
       moves: 1
-    - pocket_type: CONTAINER
-      description: Ammo hopper (8mm CL).
-      ammo_restriction:
-        8x40mm: 10000
-      volume_encumber_modifier: 0
-      weight_multiplier: 0
-      moves: 1
+    # - pocket_type: CONTAINER
+    #   description: Ammo hopper (8mm CL).
+    #   ammo_restriction:
+    #     8x40mm: 10000
+    #   volume_encumber_modifier: 0
+    #   weight_multiplier: 0
+    #   moves: 1
     - pocket_type: CONTAINER
       description: Ammo hopper (7.62 NATO).
       ammo_restriction:
@@ -238,13 +238,13 @@
       volume_encumber_modifier: 0
       weight_multiplier: 0
       moves: 1
-    - pocket_type: CONTAINER
-      description: Ammo hopper (40×46 mm LV).
-      ammo_restriction:
-        40x46mm: 10000
-      volume_encumber_modifier: 0
-      weight_multiplier: 0
-      moves: 1
+    # - pocket_type: CONTAINER
+    #   description: Ammo hopper (40×46 mm LV).
+    #   ammo_restriction:
+    #     40x46mm: 10000
+    #   volume_encumber_modifier: 0
+    #   weight_multiplier: 0
+    #   moves: 1
     - pocket_type: CONTAINER
       description: Quiver.
       ammo_restriction:
