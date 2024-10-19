@@ -193,176 +193,176 @@
         ########################################
         # BOOKZ --- only the books that have recipes you can't get automatically with high-enough skill level.
         # == anthology.json ==
-        # "book_anthology_moataatgb"
-        # "book_anthology_sunvault"
-        # "book_anthology_sst"
-        # "book_anthology_bk"
-        # "book_anthology_cw"
-        # "book_anthology_an"
-        # "book_anthology_htloop"
+        # - book_anthology_moataatgb
+        # - book_anthology_sunvault
+        # - book_anthology_sst
+        # - book_anthology_bk
+        # - book_anthology_cw
+        # - book_anthology_an
+        # - book_anthology_htloop
         # == archery.json ==
-        # "book_archery"
-        # "manual_archery"
-        # "mag_archery"
+        # - book_archery
+        # - manual_archery
+        # - mag_archery
         # == barter.json ==
-        # "mag_barter"
-        # "manual_business"
-        # "textbook_business"
+        # - mag_barter
+        # - manual_business
+        # - textbook_business
         # == bashing.json ==
-        # "mag_bashing"
-        # "manual_bashing"
+        # - mag_bashing
+        # - manual_bashing
         # == chemistry.json ==
         - adv_chemistry
-        # "modern_tanner"
-        # "recipe_alpha"
-        # "recipe_animal"
-        # "recipe_chimera"
-        # "recipe_creepy"
-        # "recipe_elfa"
-        # "recipe_labchem"
-        # "recipe_maiar"
-        # "recipe_medicalmut"
-        # "recipe_raptor"
-        # "recipe_serum"
-        # "reference_cooking"
-        # "textbook_chemistry"
-        # "textbook_extraction"
-        # "textbook_gaswarfare"
-        # "basic_chemistry"
-        # "catalytic_cracking_handbook"
-        # "textbook_biodiesel"
+        # - modern_tanner
+        # - recipe_alpha
+        # - recipe_animal
+        # - recipe_chimera
+        # - recipe_creepy
+        # - recipe_elfa
+        # - recipe_labchem
+        # - recipe_maiar
+        # - recipe_medicalmut
+        # - recipe_raptor
+        # - recipe_serum
+        # - reference_cooking
+        # - textbook_chemistry
+        # - textbook_extraction
+        # - textbook_gaswarfare
+        # - basic_chemistry
+        # - catalytic_cracking_handbook
+        # - textbook_biodiesel
         # == computer.json ==
-        # "SICP"
-        # "computer_science"
-        # "howto_computer"
-        # "mag_computer"
-        # "manual_computer"
-        # "textbook_computer"
-        # "webbasics_computer"
-        # "hackerman_computer"
+        # - SICP
+        # - computer_science
+        # - howto_computer
+        # - mag_computer
+        # - manual_computer
+        # - textbook_computer
+        # - webbasics_computer
+        # - hackerman_computer
         # == cooking.json ==
-        # "brewing_cookbook"
-        # "cookbook"
-        # "cookbook_human"
-        # "cookbook_italian"
-        # "cookbook_mexican"
-        # "cookbook_sushi"
-        # "family_cookbook"
-        # "mag_cooking"
-        # "mag_glam"
-        # "scots_cookbook"
-        # "vinegar_maker"
-        # "preserving_juice"
-        # "offalcooking"
-        # "dairy_book"
-        # "cookbook_liverforkids"
-        # "cookbook_bloodforgood"
-        # "cookbook_daintydishes"
-        # "cookbook_eatyrway"
-        # "cookbook_foodfashions"
-        # "winemaking_beginner"
-        # "manual_canning"
-        # "manual_sealing"
-        # "vacuum_sealing"
-        # "baking_book"
-        # "fermenting_book"
-        # "distilling_cookbook"
-        # "sweets_book"
-        # "survivalflavor_book"
-        # "cookbook_indian"
+        # - brewing_cookbook
+        # - cookbook
+        # - cookbook_human
+        # - cookbook_italian
+        # - cookbook_mexican
+        # - cookbook_sushi
+        # - family_cookbook
+        # - mag_cooking
+        # - mag_glam
+        # - scots_cookbook
+        # - vinegar_maker
+        # - preserving_juice
+        # - offalcooking
+        # - dairy_book
+        # - cookbook_liverforkids
+        # - cookbook_bloodforgood
+        # - cookbook_daintydishes
+        # - cookbook_eatyrway
+        # - cookbook_foodfashions
+        # - winemaking_beginner
+        # - manual_canning
+        # - manual_sealing
+        # - vacuum_sealing
+        # - baking_book
+        # - fermenting_book
+        # - distilling_cookbook
+        # - sweets_book
+        # - survivalflavor_book
+        # - cookbook_indian
         # == cutting.json ==
-        # "mag_cutting"
-        # "manual_cutting"
-        # "manual_swords"
+        # - mag_cutting
+        # - manual_cutting
+        # - manual_swords
         # == dodge.json ==
-        # "mag_dodge"
+        # - mag_dodge
         - manual_dodge
-        # "manual_dodge_kid"
-        # "book_nonf_hard_dodge_tlwd"
+        # - manual_dodge_kid
+        # - book_nonf_hard_dodge_tlwd
         # == driving.json ==
-        # "decoy_anarch"
-        # "mag_cars"
-        # "manual_driving"
-        # "textbook_anarch"
+        # - decoy_anarch
+        # - mag_cars
+        # - manual_driving
+        # - textbook_anarch
         # == electronics.json ==
-        # "advanced_electronics"
-        # "arduino_experiments"
-        # "mag_electronics"
-        # "manual_electronics"
-        # "ic_reference_electronics"
-        # "radio_book"
-        # "recipe_atomic_battery"
-        # "recipe_augs"
-        # "recipe_lab_elec"
-        # "recipe_mil_augs"
-        # "repeater_mod_guide"
-        # "textbook_electronics"
-        # "textbook_robots"
-        # "robofac_yrax_deactivation_manual"
-        # "exodii_wiring_kit_reference"
-        # "schematics_nursebot"
-        # "schematics_grocerybot"
-        # "schematics_copbot"
-        # "schematics_eyebot"
-        # "schematics_secubot"
-        # "schematics_skitterbot"
-        # "schematics_hazmatbot"
-        # "schematics_molebot"
-        # "schematics_riotbot"
-        # "schematics_sciencebot"
-        # "schematics_dispatch"
-        # "schematics_dispatch_military"
-        # "schematics_antimateriel"
-        # "schematics_searchlight"
+        # - advanced_electronics
+        # - arduino_experiments
+        # - mag_electronics
+        # - manual_electronics
+        # - ic_reference_electronics
+        # - radio_book
+        # - recipe_atomic_battery
+        # - recipe_augs
+        # - recipe_lab_elec
+        # - recipe_mil_augs
+        # - repeater_mod_guide
+        # - textbook_electronics
+        # - textbook_robots
+        # - robofac_yrax_deactivation_manual
+        # - exodii_wiring_kit_reference
+        # - schematics_nursebot
+        # - schematics_grocerybot
+        # - schematics_copbot
+        # - schematics_eyebot
+        # - schematics_secubot
+        # - schematics_skitterbot
+        # - schematics_hazmatbot
+        # - schematics_molebot
+        # - schematics_riotbot
+        # - schematics_sciencebot
+        # - schematics_dispatch
+        # - schematics_dispatch_military
+        # - schematics_antimateriel
+        # - schematics_searchlight
         # == fabrication.json ==
-        # "glassblowing_book"
-        # "plastics_book"
-        # "theater_props"
-        # "jewelry_book"
-        # "mag_fabrication"
-        # "manual_fabrication"
-        # "recipe_arrows"
-        # "recipe_bows"
-        # "recipe_bullets"
-        # "recipe_caseless"
-        # "recipe_lab_cvd"
-        # "recipe_melee"
-        # "textbook_armeast"
-        # "textbook_armschina"
-        # "textbook_armwest"
-        # "textbook_fabrication"
-        # "textbook_fireman"
-        # "textbook_weapeast"
-        # "textbook_weapwest"
-        # "welding_book"
-        # "101_carpentry"
-        # "carpentry_book"
-        # "mag_carpentry"
-        # "manual_carpentry"
-        # "textbook_carpentry"
-        # "reference_fabrication1"
-        # "concrete_book"
-        # "recipe_migo_plate"
+        # - glassblowing_book
+        # - plastics_book
+        # - theater_props
+        # - jewelry_book
+        # - mag_fabrication
+        # - manual_fabrication
+        # - recipe_arrows
+        # - recipe_bows
+        # - recipe_bullets
+        # - recipe_caseless
+        # - recipe_lab_cvd
+        # - recipe_melee
+        # - textbook_armeast
+        # - textbook_armschina
+        # - textbook_armwest
+        # - textbook_fabrication
+        # - textbook_fireman
+        # - textbook_weapeast
+        # - textbook_weapwest
+        # - welding_book
+        # - 101_carpentry
+        # - carpentry_book
+        # - mag_carpentry
+        # - manual_carpentry
+        # - textbook_carpentry
+        # - reference_fabrication1
+        # - concrete_book
+        # - recipe_migo_plate
         # == firstaid.json ==
-        # "emergency_book"
-        # "mag_firstaid"
-        # "manual_first_aid"
-        # "pocket_firstaid"
-        # "textbook_firstaid"
-        # "booklet_firstaid"
-        # "reference_firstaid1"
-        # "reference_firstaid2"
-        # "textbook_toxicology"
+        # - emergency_book
+        # - mag_firstaid
+        # - manual_first_aid
+        # - pocket_firstaid
+        # - textbook_firstaid
+        # - booklet_firstaid
+        # - reference_firstaid1
+        # - reference_firstaid2
+        # - textbook_toxicology
         # == gun.json ==
-        # "mag_guns"
-        # "manual_gun"
-        # "pocket_firearms"
-        # "text_gunsmith"
+        # - mag_guns
+        # - manual_gun
+        # - pocket_firearms
+        # - text_gunsmith
         # == launcher.json ==
-        # "mag_launcher"
-        # "manual_launcher"
+        # - mag_launcher
+        # - manual_launcher
         # == lockpick.json ==
-        # "book_lockpick"
+        # - book_lockpick
         # == maps.json ==
         - labmap
         - militarymap
