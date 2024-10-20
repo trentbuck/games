@@ -11,8 +11,9 @@
     # surv_car
     surv_rv
 
-  CBMs:
-    - bio_lockpick              # see DONE-bionics.yaml
+  CBMs:                         # see DONE-bionics.yaml
+    - bio_lockpick
+    - bio_syringe
 
   items:
     both:

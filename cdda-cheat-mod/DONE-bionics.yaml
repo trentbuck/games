@@ -15,3 +15,9 @@
 #     - [LOCKPICK, 40]
 #   flags:
 #     - PERFECT_LOCKPICK
+
+
+
+# Likewise the bio_syringe has a coded-in-C++ bonus that you can't get
+# from any json (15s to inject vs. 300s w/ clean syringe).
+# And no mutation conflicts.
