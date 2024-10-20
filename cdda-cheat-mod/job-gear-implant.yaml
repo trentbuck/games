@@ -12,15 +12,14 @@
     surv_rv
 
   CBMs:
-    # See DONE-bionics.yaml
-    - bio_lockpick
+    - bio_lockpick              # see DONE-bionics.yaml
 
   items:
     both:
       items:
-        # Custom armor that combines a bunch of stuff...
-        - plot_armor
-        - amulet_of_yendor
+        - plot_armor            # see item-armor.yaml
+        - amulet_of_yendor      # see item-armor.yaml
+        - mjolnir               # see DONE-sledge.yaml
 
       # "entries" is the same as "items" except you can provide additional data, e.g.
       # • count (useful for ammo and consumables)

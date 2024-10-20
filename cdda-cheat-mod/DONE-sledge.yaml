@@ -1,0 +1,23 @@
+- type: profession
+  items:
+    both:
+      items:
+        # Sledges are useful for opening jammed safes and locked metal doors.
+        # The alternative would be a rocket launcher, maybe.
+        # You can also cut open doors with a cutting torch, BUT
+        # if you try that on a jammed gun safe, it'll detonate all the ammo within!
+        # NOTE: what actually matters is having a high single-hit bash damage.
+        # UPDATE: The heavy sledge was knackering me very quickly, and
+        #         didn't seem to get through doors any faster than the short sledge.
+        # UPDATE: mace (when made of endgame steel) is actually better than
+        #         sledge in terms of stamina &c, and it's pure bash per hit is
+        #         only slightly lower.
+        # UPDATE: legendary weapon is even better, by a huge margin.
+        #         You can use this to smash open *walls*, without
+        #         needing to have a cheating STR of 100 (which
+        #         immediately causes stamina KO in melee).
+        - mjolnir
+          # qt_mace
+          # hammer_sledge
+          # hammer_sledge_short
+          # hammer_sledge_heavy

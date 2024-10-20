@@ -42,20 +42,6 @@ items:
         # - folded_inflatable_boat
         # - folded_skateboard_generic
 
-        # Sledges are useful for opening jammed safes and doors.
-        # The alternative would be a rocket launcher, maybe.
-        # You can also cut open doors with a cutting torch, BUT
-        # if you try that on a jammed gun safe, it'll detonate all the ammo within!
-        # PS: what actually matters is having a high single-hit bash damage.
-        # The heavy sledge was knackering me very quickly, and
-        # didn't seem to get through doors any faster than the short sledg.
-        # - hammer_sledge_short
-        # - hammer_sledge
-        # - hammer_sledge_heavy
-        # mace is actually better than sledge in terms of stamina &c, and
-        # it's pure bash per hit is only slightly lower.
-        - qt_mace
-        - mjolnir
         - jade_nagamaki
 
         # The knife is real fast and fun for combat, but
