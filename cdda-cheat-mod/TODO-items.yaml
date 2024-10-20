@@ -65,16 +65,6 @@ items:
         - qt_knife_trench
         - knife_rm42
 
-        # I found a folding bicycle once by accident, and
-        # it's SUPER handy for quick trips.
-        # Slower, but much handier than a stolen car.
-        - folded_unicycle_twb
-          # folded_bicycle
-          # folded_skateboard_generic
-        # Unicycle folds up as well, but can't be spawned pre-folded???
-        # Define my own as a pre-defined vehicle! -- UPDATE: SOLVED!
-
-
 entries:
         # grapnel is especially useful for getting out of the Hub 01 mission to the fallen skyscraper.
         - item: grapnel

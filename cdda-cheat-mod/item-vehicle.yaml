@@ -1,3 +1,12 @@
+# Once I found a folding bicycle, and found it very handy for short trips.
+# It is faster than walking, and more maneouverable and sustainable than a car.
+# Folding means when you start walking again, you can fold it (vehicle -> item).
+# A unicycle is even better, but it can only spawn as a vehicle, not an item.
+# I fixed that by defining my own pre-folded one.
+# Mainline alternatives are:
+#
+#   • folded_bicycle (0.G and later)
+#   • folded_skateboard_generic (0.H and later)
 - id: folded_unicycle_twb
   type: TOOL
   copy-from: generic_folded_vehicle

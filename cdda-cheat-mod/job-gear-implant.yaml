@@ -19,6 +19,7 @@
       items:
         - plot_armor            # see item-armor.yaml
         - amulet_of_yendor      # see item-armor.yaml
+        - folded_unicycle_twb   # see item-vehicle.yaml
         - mjolnir               # see DONE-sledge.yaml
 
       # "entries" is the same as "items" except you can provide additional data, e.g.
