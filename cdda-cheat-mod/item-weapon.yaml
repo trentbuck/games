@@ -12,8 +12,9 @@
     There's a... thing hanging off your gun, ingesting nearby gore.
   flags:
     - MOP
-  use_action:
-    - MOP
+  # You don't actually nee this bit.
+  # use_action:
+  #   - MOP
 
 
 # https://www.keltecweapons.com/firearm/rifles/sub2000-series/
@@ -79,3 +80,69 @@
     loudness_modifier: 2
   flags:
     - IRREMOVABLE
+
+
+# Old commentary:
+#
+#     The knife is real fast and fun for combat, but
+#     I would also like to have something with reach attacks.
+#     What's the difference between REACH_ATTACK and REACH3?
+#     The latter is only on bullwhip and pike (all variants).
+#     The RM42 actually gives REACH_ATTACK when mounted on a gun.
+#     Although I think then I have to NOT use Taekwondo, so
+#     I attack with my bayonet instead of my feet...
+#
+#     I also had fun running around with a sword for a while (with Ni-ten Ichi-Ryu).
+#
+#     kukri is better stamina and speed, except against heavily armoured dudes - and only slightly worse against those.
+#     It has worse block, but still works with Ninjutsu techniques.
+#     kukri is purely better than survivor_machete_qt, except for blocking and grass cutting (who cares?)
+#     kukri is slightly slower but better stamina than qt_knife_trench.
+#     kukri is much longer but a bit lighter than qt_knife_trench.
+#     qt_knife_trench does pierce, so it's a different kind of attack.
+#
+# I want basically a bayonet/spear version of the RM42 knife.
+# https://docs.cataclysmdda.org/GAME_BALANCE.html#melee-weapons
+# Hrm, I should be looking for a balance of:
+#
+#    stamina cost per attack
+#    base moves per attack
+#    damage-per-[second|stamina] vs [agile|armored]
+#
+# Armored enemies are relatively rare, so
+# it makes sense to optimize mainly for fast anti-agile weapons.
+# The monomolecular blade might be abother candidate.
+- type: GENERIC
+  # id: kylie
+  # name:
+  #   str: buloke kylie
+  # description:
+  #   He was also holding a boomerang, and it wasn't one of those toy ones that came back.
+  #   This was one of the big, heavy, gently curved sort that didn't come back because
+  #   it was sticking in something's ribcage.
+  #   You could laugh at the idea of wooden weapons until you saw the kind of wood that grew here.
+  id: xylospongium
+  name:
+    str: xylospongium
+  description:
+    Seneca the Younger reported that a Germanic gladiator died by suicide with a sponge on a stick.
+    He hid in the latrine of an amphitheatre and pushed the wooden stick deep into his throat.
+  copy-from: knife_rm42
+  extend:
+    flags:
+      - MOP  # Melee weapons cannot have gun mods, so add auto-mop capability directly.
+      - SPEAR
+      - REACH_ATTACK
+      - REACH3
+      # - DIAMOND
+    techniques:
+      - IMPALE
+      - RAPID
+      - PRECISE
+  qualities: []
+  to_hit:
+    grip: weapon
+    length: long
+    surface: point
+    balance: good
+  repairs_with: [steel]

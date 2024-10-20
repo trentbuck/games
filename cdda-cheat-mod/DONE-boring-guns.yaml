@@ -293,17 +293,6 @@
           count: 20
         - item: 40x46mm_hornets_nest_22lr
           count: 20
-        - item: qt_steel_staff
-        - item: qt_mace
-        - item: PR24-extended
-        - item: bat_metal
-        - item: qt_rapier
-        - item: qt_estoc
-        - item: cestus
-        - item: knuckle_impact
-        - item: knuckle_skewer
-        - item: spear_steel
-        - item: spear_dory
 
         # ===== 8x40mm caseless =====
         # I thought this one would be really nice, when

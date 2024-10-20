@@ -40,30 +40,6 @@ items:
         # - scuba_tank
         # I haven't tried these but maybe they're fun.
         # - folded_inflatable_boat
-        # - folded_skateboard_generic
-
-        - jade_nagamaki
-
-        # The knife is real fast and fun for combat, but
-        # I would also like to have something with reach attacks.
-        # What's the difference between REACH_ATTACK and REACH3?
-        # The latter is only on bullwhip and pike (all variants).
-        # The RM42 actually gives REACH_ATTACK when mounted on a gun.
-        # Although I think then I have to NOT use Taekwondo, so
-        # I attack with my bayonet instead of my feet...
-        # - bullwhip
-        # - pike
-        # - lucern_hammer
-        # I also had fun running around with a sword for a while.
-        # - qt_nodachi
-        # - qt_katana
-        # - qt_wakizashi
-        # kukri is better stamina and speed, except against heavily armoured dudes - and only slightly worse against those.  It has worse block, but still works with Ninjutsu techniques.
-        # kukri is purely better than survivor_machete_qt, except for blocking and grass cutting (who cares?)
-        # kukri is slightly slower but better stamina than qt_knife_trench.  kukri is much longer but a bit lighter than qt_knife_trench.  qt_knife_trench does piere, so it's a different kind of attack.
-        - qt_kukri
-        - qt_knife_trench
-        - knife_rm42
 
 entries:
         # grapnel is especially useful for getting out of the Hub 01 mission to the fallen skyscraper.
