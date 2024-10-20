@@ -48,13 +48,8 @@
   #     - NOT tailors_kit!
   #     - NOT clamp/locking_pliers
   CBMs:
-    - bio_power_storage_mkII
-    - bio_power_storage_mkII
-    - bio_power_storage_mkII
-    - bio_power_storage_mkII
     - bio_cable
     - bio_metabolics
-    - bio_trickle_twb
     - bio_ups
     - bio_flashlight
     - bio_tools
@@ -75,8 +70,5 @@
     - bio_recoil
     - bio_syringe
     - bio_carbon
-    # plot_armor doesn't replace?
-    # FIXME: I have flags: PERFECT_LOCKPICK...
-    # - bio_lockpick
     # plot_armor replaces...
     # - bio_ar

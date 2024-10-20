@@ -11,6 +11,10 @@
     # surv_car
     surv_rv
 
+  CBMs:
+    # See DONE-bionics.yaml
+    - bio_lockpick
+
   items:
     both:
       items:

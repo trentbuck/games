@@ -1,0 +1,17 @@
+# https://cdda-guide.nornagon.net/tool_quality/LOCKPICK
+# https://github.com/CleverRaven/Cataclysm-DDA/blob/0.F/src/iexamine.cpp#L1602-L1657
+# https://github.com/CleverRaven/Cataclysm-DDA/blob/0.F/src/iuse.cpp#L3404-L3451
+# To automatically use a lockpick when hitting "e" on a door,
+# you need one of:
+#  * bio_lockpick (hardcoded in C++)
+#  * explicitly have use_action:PICK_LOCK
+#  * implicitly have use_action:PICK_LOCK due to type:TOOL + qualities:LOCKPICK
+# You get a "use <item>?" prompt EXCEPT FOR the bio_lockpick, so
+# for convenience it might be best to just keep that implant.
+# Also, bio_lockpick doesn't currently conflict with any mutations, which
+# is/was a major reason to avoid them.
+# - type: TOOL
+#   qualities:
+#     - [LOCKPICK, 40]
+#   flags:
+#     - PERFECT_LOCKPICK

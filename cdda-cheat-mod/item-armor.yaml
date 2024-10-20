@@ -353,6 +353,13 @@
   longest_side: 10 cm
   price: 1 USD
   material_thickness: 1
+  # NOTE: A wearable (type:ARMOR) with no armor: slots
+  #       is wearable (W) and won't conflic with anything.
+  # armor:
+  #   - covers: [torso]
+  #     specifically_covers: [torso_neck]
+  #     layers: [BELTED]
+  #     material: [{type: lycra}]
   flags:
     - ONLY_ONE
     - TRADER_AVOID
@@ -376,7 +383,11 @@
 
   relic_data:
     passive_effects:
+      # NOTE: I could inline the enchantments directly here.
+      #       The are outline only so they are visible in-game in the
+      #       item inspector (and in "@" under EFFECTS).
       - id: ench_bloody_mess_twb
+      - id: ench_bionic_power_twb
 
 
 - id: ench_bloody_mess_twb
@@ -390,3 +401,23 @@
   values:
     - value: OVERKILL_DAMAGE
       add: -1000
+
+- id: ench_bionic_power_twb
+  type: enchantment
+  name:
+    str: Bionic Power Supply
+  description:
+    You have a source of bionic power that slowly recharges.
+    It is sufficient for constant dim lighting, or
+    occasional utility bionics.
+  has: WORN
+  values:
+    # This replaces the since-removed bio_trickle.
+    # bio_tattoo_led is 1J/s for 5 LUMINATION
+    # bio_flashlight is 2J/s for 60 LUMINATION
+    # bio_flashlight_highmode is 15J/s for 500 LUMINATION.
+    # So let's assume we want a flat 2J/s.
+    # https://docs.cataclysmdda.org/MAGIC.html#enchantments
+    - {value: POWER_TRICKLE, add: 2000}
+    # This replaces 2 copies of bio_power_storage_mkII (2×250kJ)
+    - {value: BIONIC_POWER, add: 500000000}
