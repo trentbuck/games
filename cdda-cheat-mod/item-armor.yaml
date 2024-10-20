@@ -162,12 +162,9 @@
       WATERPROOF
       # WATER_FRIENDLY
 
-    -
-      RAD_RESIST
-      # RAD_PROOF
-
-    # This is OP?  Move to amulet of bullshit?
-    - PORTAL_PROOF
+    # NOTE: RAD_RESIST is mild version.
+    #       RAD_PROOF & PORTAL_PROOF moved into amulet_of_yendor.
+    - RAD_RESIST
 
     # Rarely-relevant combat stuff
     - ALLOWS_TAIL
@@ -363,6 +360,9 @@
   flags:
     - ONLY_ONE
     - TRADER_AVOID
+    # https://cdda-guide.nornagon.net/item/phase_immersion_suit_on
+    - RAD_PROOF
+    - PORTAL_PROOF
     # When moving around on the overmap, auto-map stuff around you at a greater radius (doubled).
     # https://cdda-guide.nornagon.net/json_flag/ENHANCED_VISION
     # https://cdda-guide.nornagon.net/item/bio_eye_optic
