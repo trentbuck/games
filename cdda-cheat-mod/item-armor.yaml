@@ -397,10 +397,17 @@
   description:
     For whatever reason you seem to always make a real mess of things.
     Enemies you kill tend to explode into a mess of viscera.
+    <good>Convenient</good> alternative to <info>corpse pulping</info>.
+    <bad>Inconvenient</bad> if you want to <info>dissect corpses</info>.
   has: WORN
   values:
+    # NOTE: Bombastic Perks uses -1000.
+    #       Can I tone this down, to "auto-pulp" basic zombies, but
+    #       leave the bigger stuff (e.g. mi-gos) as-is?
+    #       In a quick initial test, it looks like -100 usually pulps
+    #       and occasionally only damages (still shows warning icon).
     - value: OVERKILL_DAMAGE
-      add: -1000
+      add: -100
 
 - id: ench_bionic_power_twb
   type: enchantment
