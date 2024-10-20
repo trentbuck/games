@@ -20,4 +20,7 @@
     - ALLOWS_REMOTE_USE
     - UNBREAKABLE
   qualities:
-    - [HACK, 4]                 # electrohack | bio_fingerhack
+    - [HACK, 2]                 # bio_fingerhack electrohack
+    - [CUT, 2]
+    - [CUT_FINE, 5]             # bio_surgical_razor scalpel
+    - [BUTCHER, 37]             # butchering_kit
