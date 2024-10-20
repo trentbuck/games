@@ -19,3 +19,5 @@
     - BELT_CLIP
     - ALLOWS_REMOTE_USE
     - UNBREAKABLE
+  qualities:
+    - [HACK, 4]                 # electrohack | bio_fingerhack
