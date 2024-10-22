@@ -25,3 +25,4 @@
     - [CUT_FINE, 5]             # bio_surgical_razor scalpel
     - [BUTCHER, 37]             # butchering_kit
     - [LOCKPICK, 39]            # bio_lockpick (extra prompt, though)
+    - [GLARE, 1]                # bio_sunglasses goggles_welding

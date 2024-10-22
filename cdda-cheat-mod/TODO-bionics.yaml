@@ -34,7 +34,6 @@
   #   - bio_power_armor_interface_mkII
   # NOTE: most of these do not auto-activate, e.g. bio_UPS will not start charging your UPS-powered gear
   # "// CBMs replaces…":
-  #   bio_sunglasses: welding_goggles
   #   bio_fitnessband: smartphone (partially)
   #   bio_watch: smartphone (partially)
   #   bio_lighter: lighter
@@ -57,7 +56,6 @@
     - bio_painkiller
     - bio_speed
     - bio_ears
-    - bio_sunglasses
     - bio_digestion
     - bio_recycler
     - bio_purifier

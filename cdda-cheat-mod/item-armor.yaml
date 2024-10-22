@@ -380,6 +380,15 @@
     # https://cdda-guide.nornagon.net/item/two_way_radio
     # https://cdda-guide.nornagon.net/item/bio_radio
     - TWO_WAY_RADIO
+    # GLARE_RESIST is a stronger combination of FLASH_PROTECTION and SUN_GLASSES.
+    # Also rm13_armor_on provides hard-coded-in-C++ full flashbang protection.
+    # https://cdda-guide.nornagon.net/bionic/bio_sunglasses
+    # https://cdda-guide.nornagon.net/json_flag/FLASH_PROTECTION
+    # https://cdda-guide.nornagon.net/item/sunglasses
+    # https://cdda-guide.nornagon.net/item/welding_mask
+    # https://cdda-guide.nornagon.net/item/goggles_welding
+    - SUN_GLASSES
+    - FLASH_PROTECTION
 
   relic_data:
     passive_effects:
@@ -409,6 +418,7 @@
     - value: OVERKILL_DAMAGE
       add: -100
 
+
 - id: ench_bionic_power_twb
   type: enchantment
   name:
@@ -417,12 +427,13 @@
     You have a source of bionic power that slowly recharges.
     It is sufficient for constant dim lighting, or
     occasional utility bionics.
+    Trickle charge has no effect if you have 0 bionics.
   has: WORN
   values:
     # This replaces the since-removed bio_trickle.
-    # bio_tattoo_led is 1J/s for 5 LUMINATION
-    # bio_flashlight is 2J/s for 60 LUMINATION
-    # bio_flashlight_highmode is 15J/s for 500 LUMINATION.
+    # bio_tattoo_led is 1J/s (1W) for 5 LUMINATION
+    # bio_flashlight is 2J/s (2W) for 60 LUMINATION
+    # bio_flashlight_highmode is 15J/s (15W) for 500 LUMINATION.
     # So let's assume we want a flat 2J/s.
     # https://docs.cataclysmdda.org/MAGIC.html#enchantments
     - {value: POWER_TRICKLE, add: 2000}
