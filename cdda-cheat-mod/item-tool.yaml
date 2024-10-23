@@ -19,42 +19,67 @@
     - BELT_CLIP
     - ALLOWS_REMOTE_USE
     - UNBREAKABLE
+    - SAFECRACK            # stethoscope
   # FIXME: Do I need any of the action stuff?
   #        I think YES for at least repair_metal and repair_fabric.
   use_action:
     - GUN_REPAIR                # small_repairkit
     - repair_metal              # small_repairkit
     - repair_fabric             # tailors_kit
+    - WASH_ALL_ITEMS            # wash_kit sponge washboard
     # - CROWBAR
     # - HACKSAW
     # - link_up
   qualities:
-    - [HACK, 2]                 # bio_fingerhack electrohack
-    - [CUT, 2]                  # bio_tools
+    - [HACK, 2]         # bio_fingerhack electrohack
+    - [CUT, 2]          # bio_tools
     # https://cdda-guide.nornagon.net/item/toolset
     # https://cdda-guide.nornagon.net/item/integrated_welder
     # https://cdda-guide.nornagon.net/item/integrated_multimeter
-    - [CUT_FINE, 5]             # bio_surgical_razor scalpel
-    - [BUTCHER, 37]             # butchering_kit
-    - [LOCKPICK, 39]            # bio_lockpick (extra prompt, though)
-    - [GLARE, 1]                # bio_sunglasses goggles_welding
-    - [PRY, 4]                  # bio_tools crowbar halligan_bar
-    - [PRYING_NAIL, 1]          # bio_tools crowbar halligan_bar
-    - [SAW_W, 2]                # bio_tools saw
-    - [SAW_M, 2]                # bio_tools hacksaw
-    - [SAW_M_FINE, 1]           # bio_tools hacksaw
-    - [WRENCH, 2]               # bio_tools pliers_locking
-    - [WRENCH_FINE, 1]          # bio_tools
-    - [VISE, 1]                 # pliers_locking
-    - [SCREW, 1]                # bio_tools
-    - [SCREW_FINE, 1]           # bio_tools
-    - [WELD, 2]                 # bio_tools
-    - [HAMMER_FINE, 1]          # small_repairkit large_repairkit hammer
-    - [HAMMER, 3]               # small_repairkit large_repairkit hammer
-    - [CHISEL, 3]               # small_repairkit large_repairkit chisel
-    - [CHISEL_WOOD, 3]          # small_repairkit large_repairkit chisel
-    - [SEW, 4]                  # tailors_kit
-    - [SEW_CURVED, 1]           # tailors_kit
-    - [KNIT, 1]                 # tailors_kit
-    - [LEATHER_AWL, 2]          # tailors_kit
-    - [FABRIC_CUT, 2]           # tailors_kit
+    - [CUT_FINE, 5]           # bio_surgical_razor scalpel
+    - [BUTCHER, 37]           # butchering_kit
+    - [LOCKPICK, 39]          # bio_lockpick (extra prompt, though)
+    - [GLARE, 1]              # bio_sunglasses goggles_welding
+    - [PRY, 4]                # bio_tools crowbar halligan_bar
+    - [PRYING_NAIL, 1]        # bio_tools crowbar halligan_bar
+    - [SAW_W, 2]              # bio_tools saw
+    - [SAW_M, 2]              # bio_tools hacksaw
+    - [SAW_M_FINE, 1]         # bio_tools hacksaw
+    - [WRENCH, 2]             # bio_tools pliers_locking
+    - [WRENCH_FINE, 1]        # bio_tools
+    - [VISE, 1]               # pliers_locking
+    - [SCREW, 1]              # bio_tools
+    - [SCREW_FINE, 1]         # bio_tools
+    - [WELD, 2]               # bio_tools
+    - [HAMMER_FINE, 1]        # small_repairkit hammer
+    - [HAMMER, 3]             # small_repairkit hammer
+    - [CHISEL, 3]             # small_repairkit chisel
+    - [CHISEL_WOOD, 3]        # small_repairkit chisel
+    - [SEW, 4]                # tailors_kit
+    - [SEW_CURVED, 1]         # tailors_kit
+    - [KNIT, 1]               # tailors_kit
+    - [LEATHER_AWL, 2]        # tailors_kit
+    - [FABRIC_CUT, 2]         # tailors_kit
+    - [DIG, 3]                # e_tool shovel
+    - [FILE, 2]               # metal_file
+    - [GRIND, 2]              # metal_file
+    - [AXE, 4]                # chainsaw_on ax bow_saw
+    - [SMOOTH, 2]             # metal_smoother
+    - [MOP, 1]                # mop_folded
+    - [PUNCH, 2]              # punch_nail
+    - [REAM, 2]               # pin_reamer
+    - [PULL, 2]               # puller
+    - [DRILL, 3]              # hand_drill cordless_drill
+    - [DISTILL, 2]            # still chemistry_set
+    - [CHEM, 3]               # chemistry_set mess_kit improvised_oven
+    - [BOIL, 2]               # still survivor_mess_kit chemistry_set
+    - [HOTPLATE, 2]           # chemistry_set survivor_mess_kit
+    - [FISHING_ROD, 2]        # fishing_rod_tele
+    - [SHEAR, 3]              # shears elec_shears
+    - [GRASS_CUT, 2]          # survivor_machete_qt scythe sickle
+    - [FINE_GRIND, 1]         # mortar_pestle
+    - [CONTAIN, 2]            # mortar_pestle trashcan_large
+    - [SURFACE, 3]            # plastic_sheet f_plastic_groundsheet
+    - [COOK, 3]               # improvised_oven survivor_mess_kit
+    - [OVEN, 2]               # improvised_oven dutch_oven
+    - [ANVIL, 4]              # anvil_heavy anvil bench_vise

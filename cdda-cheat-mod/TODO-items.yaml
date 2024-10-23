@@ -1,30 +1,11 @@
 items:
-        - metal_file
-        - wash_kit
         - jumper_cable
         - rollmat
-        - e_tool
-        - bow_saw
-        - metal_smoother
-        - mop_folded
-        - butchering_kit
         - hose
-        - punch_nail
-        - pin_reamer
-        - puller
         - swage
         - still
-        - chemistry_set
-        - fishing_rod_professional
-        - shears
-        - survivor_machete_qt
-        - spear_survivor
-        - mortar_pestle
-        - plastic_sheet
-        - improvised_oven
         - crucible
         - brazier
-        - anvil
         - hotcut
         - drift
         - clay_quern
@@ -69,8 +50,6 @@ entries:
         #       https://github.com/CleverRaven/Cataclysm-DDA/blob/655cdeaac0c6/src/character.cpp#L8971-L9013
         - item: sleeping_bag_roll
           custom-flags: [no_auto_equip]
-        - item: stethoscope
-          custom-flags: [no_auto_equip]
         - item: rm13_armor
           charges: 5000
         # Use this to avoid water damage to the equipment.
@@ -82,8 +61,6 @@ entries:
         #   custom-flags: [no_auto_equip]
         #   contents-item:
         #     # - eink_tablet_pc
-        #     - cordless_drill
-        - item: cordless_drill
 
         # for when the Aircraft Carrier's a long way from land.
         - item: swim_fins
@@ -119,8 +96,8 @@ entries:
         # FIXME: "charges" isn't working for this item?
         - item:
             # adhesive_bandages
-            # bandages
-            medical_gauze
+            bandages
+            # medical_gauze
           count: 50
         - item: quikclot
           count: 10
