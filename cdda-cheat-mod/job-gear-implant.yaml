@@ -47,6 +47,7 @@
             # ksub2000cqb
           charges: 33
           contents-item:
+            # - suppressor      # 9mm loudness 80 always hearing-safe
             - light_grip
             - match_trigger
             - gun_mop
@@ -60,6 +61,7 @@
         - item: rdb_223
           charges: 60
           contents-item:
+            - suppressor       # 556 loudness 168 → 118 (hearing-safe)
             - match_trigger
             - modern_handguard
             - holo_sight
@@ -83,6 +85,7 @@
             - match_trigger
             - holo_sight
             - choke
+              # shot_suppressor  # shot_00 loudness 160 → 130 (hearing-safe)
             - grip_mount
             - laser_sight
             - gun_mop
@@ -92,6 +95,7 @@
         - item: rfb_308
           charges: 50
           contents-item:
+            # - suppressor  # 752_51 loudness 260 can't be made hearing-safe
             - underbarrel_mount
             - match_trigger
             - modern_handguard
@@ -119,4 +123,3 @@
             - gun_mop
         - item: arrow_cf
           charges: 1000
-

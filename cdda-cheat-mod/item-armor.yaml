@@ -390,6 +390,17 @@
     - SUN_GLASSES
     - FLASH_PROTECTION
 
+    # IMMUNE_HEARING_DAMAGE (bio_ears) is a stronger version of
+    # PARTIAL_DEAF (powered_earplugs_on), which is a QoL version of
+    # DEAF (powered_earplugs).
+    # The #1 most useful benefit is being able to fire unsuppressed
+    # firearms without going immediately deaf for 5 minutes.
+    # NOTE: Only noises over ~150 cause temporary hearing loss.
+    #       Hearing-safe: Glock 19/20/21/22/31, RM11B (just!)
+    #                     RDB (w/suppressor), KSG (w/shot_suppressor)
+    #       NOT hearing-safe: KSG, RDB, RFB, RM88, M24
+    - PARTIAL_DEAF
+
   relic_data:
     passive_effects:
       # NOTE: I could inline the enchantments directly here.
