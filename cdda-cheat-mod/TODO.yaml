@@ -1,21 +1,8 @@
-  # NOTE: because I'm declaring the conditions here inline, instead
-  #       of referring to a separate type:enchantment,
-  #       they do not show up in the item description.
-  #       UPDATE: just define one big enchantment somewhere else.
-  # NOTE: "has:WORN" prevents it activating when just being held.
-  #       "has:ACTIVE" is always false for us, so we can't use
-  #       e.g. ench_dampened_steps directly.
   relic_data:
     passive_effects:
       - condition: ALWAYS
         has: WORN
         values:
-          # https://cdda-guide.nornagon.net/item/phase_immersion_suit_on
-          # https://cdda-guide.nornagon.net/item/rm13_armor
-          - value: CLIMATE_CONTROL_HEAT
-            add: 50
-          - value: CLIMATE_CONTROL_CHILL
-            add: 50
             # https://cdda-guide.nornagon.net/item/utility_exoskeleton_off
           - value: CARRY_WEIGHT
             add: 215000

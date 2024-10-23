@@ -408,6 +408,8 @@
       #       item inspector (and in "@" under EFFECTS).
       - id: ench_bloody_mess_twb
       - id: ench_bionic_power_twb
+      - id: ench_climate_control_all_permanent
+      # - id: ench_dampened_steps_twb
 
 
 - id: ench_bloody_mess_twb
@@ -450,3 +452,17 @@
     - {value: POWER_TRICKLE, add: 2000}
     # This replaces 2 copies of bio_power_storage_mkII (2×250kJ)
     - {value: BIONIC_POWER, add: 500000000}
+
+
+# Same as upstream, except without "condition: ACTIVE", as
+# we do not make separate "foo_on" and "foo_off" item versions.
+# FIXME: do we EVEN CARE about this one?
+- id: ench_dampened_steps_twb
+  type: enchantment
+  name:
+    str: Dampened Steps
+  description:
+    You are wearing equipment that muffles your footsteps.
+  has: WORN
+  values:
+    - {value: FOOTSTEP_NOISE, multiply: -0.67}

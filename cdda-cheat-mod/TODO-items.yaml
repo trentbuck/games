@@ -50,8 +50,6 @@ entries:
         #       https://github.com/CleverRaven/Cataclysm-DDA/blob/655cdeaac0c6/src/character.cpp#L8971-L9013
         - item: sleeping_bag_roll
           custom-flags: [no_auto_equip]
-        - item: rm13_armor
-          charges: 5000
         # Use this to avoid water damage to the equipment.
         # - item: bag_zipper_gallon
         #   count: 10
