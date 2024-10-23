@@ -60,8 +60,6 @@
     - DIMENSIONAL_ANCHOR
     # https://cdda-guide.nornagon.net/item/wearable_camera_pro
     - CAMERA_PRO
-    # https://cdda-guide.nornagon.net/item/solarpack_on
-    - SOLARPACK_ON
 
   use_action:
     - RADIO_ON

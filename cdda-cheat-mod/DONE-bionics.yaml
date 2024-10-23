@@ -30,3 +30,9 @@
 # it is not displayed directly from the (E)at menu.
 # And no mutation conflicts.
 # https://github.com/CleverRaven/Cataclysm-DDA/blob/d75cf96721f8d7b2d46a7158988df634140991ad/src/game_inventory.cpp#L904
+
+
+# https://cdda-guide.nornagon.net/item/solarpack_on (flags: SOLARPACK_ON)
+# is useless without
+# https://cdda-guide.nornagon.net/bionic/bio_cable
+# you can't even unfold (activate) it without the implant.
