@@ -27,10 +27,8 @@
     - EBOOKREAD
     # https://cdda-guide.nornagon.net/item/fitness_band
     # https://cdda-guide.nornagon.net/item/smart_watch
-    - FITNESS_CHECK
     - CAMERA
     - MP3
-    - CALORIES_INTAKE_TRACKER
     # https://cdda-guide.nornagon.net/item/radglove
     - RADGLOVE
     # https://cdda-guide.nornagon.net/item/towel
@@ -64,8 +62,6 @@
   use_action:
     - RADIO_ON
     - weigh_self
-    # https://cdda-guide.nornagon.net/item_action/HEAT_ALL_ITEMS
-    - HEAT_ALL_ITEMS
   qualities:
     # https://cdda-guide.nornagon.net/tool_quality/ANALYSIS
     - [ANALYSIS, 1]

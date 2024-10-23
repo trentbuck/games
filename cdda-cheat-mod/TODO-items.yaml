@@ -282,17 +282,6 @@ entries:
           count: 3
           charges: 10000
 
-        # - item: hk_mp5sd
-        #   charges: 40
-        #   ammo-item: 9mmfmj
-        #   contents-item:
-        #     - light_grip
-        #     - match_trigger
-        #     - gun_mop
-        # - item: mp5mag_40rd
-        #   count: 5
-        #   ammo-item: 9mmfmj
-        #   charges: 40
         # - item: phase_immersion_suit
         #   custom-flags: [no_auto_equip]
         # - item: jacket_eod
