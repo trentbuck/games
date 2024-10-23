@@ -15,6 +15,9 @@
   #   - bio_nanobots
   #   - bio_geiger
   #   - bio_blood_anal
+  #   NOTE: bio_evap mechanics are hard-coded in C++:
+  #             // Aero-Evaporator provides water at 60 watts with 2 L / kWh efficiency
+  #             // which is 10 mL per 5 minutes.  Humidity can modify the amount gained.
   #   - bio_evap
   #   - bio_night_vision
   #   - bio_meteorologist
@@ -49,7 +52,6 @@
     - bio_ups
     - bio_flashlight
     # FIXME: consider bio_multimeter (split from bio_tools in 0.H, I think?)
-    - bio_fitnessband
     - bio_watch
     - bio_lighter
     - bio_painkiller
@@ -62,3 +64,7 @@
     - bio_recoil
     - bio_carbon
     - bio_ar
+
+# bio_ears → SAFECRACK_NO_TOOL
+# bio_ears → DEAF (useful for sleeping)
+# bio_blindfold → BLIND (useful for sleeping)

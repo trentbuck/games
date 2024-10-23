@@ -21,3 +21,12 @@
 # Likewise the bio_syringe has a coded-in-C++ bonus that you can't get
 # from any json (15s to inject vs. 300s w/ clean syringe).
 # And no mutation conflicts.
+
+
+# Likewise the bio_fitnessband (or fitness_band) has a coded-in-C++
+# bonus that you can't apply to custom items.
+# use_action: [FITNESS_CHECK, CALORIES_INTAKE_TRACKER]
+# Let you get similar information, but
+# it is not displayed directly from the (E)at menu.
+# And no mutation conflicts.
+# https://github.com/CleverRaven/Cataclysm-DDA/blob/d75cf96721f8d7b2d46a7158988df634140991ad/src/game_inventory.cpp#L904
