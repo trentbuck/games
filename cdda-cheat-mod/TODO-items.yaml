@@ -172,24 +172,25 @@ entries:
         #
         # This replaces the MRE packages.
         # Putting them together makes the inventory menu less annoying.
-        # - item: chocolate_military
-        #   count: 50
-        # - item: fruit_leather
-        #   count: 50
-        # - item: cheese_hard
-        #   count: 100
-        # - item: can_cheese
-        #   count: 100
-        # - item: spread_peanutbutter
-        #   count: 100
-        # - item: crackers
-        #   count: 100
-        # - item: flour
-        #   count: 100
+        - item: chocolate_military
+          count: 50
+        - item: fruit_leather
+          count: 50
+        - item: cheese_hard
+          count: 100
+        - item: can_cheese
+          count: 100
+        - item: spread_peanutbutter
+          count: 100
+        - item: crackers
+          count: 100
+        - item: flour
+          count: 100
         # There used to be "debug SPAM", which made you sad to eat it.
         # This is better, it makes you happy to eat it.
         # NOTE: still perishable, after 3 days.
         # NOTE: doesn't include necessary vitamins.
+        # NOTE: without bio_metabolics the huge calorie count makes this hard to eat at all.
         - item: debug_calories
           count: 100
 
