@@ -36,3 +36,7 @@
 # is useless without
 # https://cdda-guide.nornagon.net/bionic/bio_cable
 # you can't even unfold (activate) it without the implant.
+
+# bio_speed gives +10% movement (same as QUICK); they stack.
+# This ends up being a problem if you have followers, because
+# you immediately outpace them and can't find one another.

@@ -77,7 +77,10 @@
     - FAST_REFLEXES
     # - GOODHEARING
     - OUTDOORSMAN
-    - QUICK
+    # NOTE: QUICK gives +10% movement (same as bio_speed); they stack.
+    #       This ends up being a problem if you have followers, because
+    #       you immediately outpace them and can't find one another.
+    # - QUICK
     - POISRESIST
     - FASTREADER
     - THICKSKIN
