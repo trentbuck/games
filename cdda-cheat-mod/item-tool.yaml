@@ -30,6 +30,12 @@
     # - CROWBAR
     # - HACKSAW
     # - link_up
+    - type: heal
+      move_cost: 2000
+      bleed: 20
+      disinfectant_power: 4
+      bandages_power: 4
+      bite: 0.95
   qualities:
     - [HACK, 2]         # bio_fingerhack electrohack
     - [CUT, 2]          # bio_tools
