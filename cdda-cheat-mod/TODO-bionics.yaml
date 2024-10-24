@@ -56,8 +56,9 @@
     # NOTE: bio_purifier works by simply adding "env_protection: [15, mouth]".
     #       Since zagreb armor is already giving 40-80 environment_protection, this is moot.
     # - bio_purifier            # no mutation conflicts
-    - bio_recoil
-    - bio_carbon
+    # NOTE: I *think* bio_carbon just up-armors all your body parts by ~4, for all damage types except bash.
+    #       Zagreb armor already provides endgame-tier armor, so meh.
+    # - bio_carbon               # no mutation conflicts
     - bio_ar
 
 # bio_ears → SAFECRACK_NO_TOOL
