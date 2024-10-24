@@ -294,7 +294,7 @@
       - id: ench_bionic_power_twb
       - id: ench_climate_control_all_permanent
       # - id: ench_dampened_steps_twb
-      # - id: ench_bio_digestion_twb
+      # - id: ench_digestion_recycler_twb
 
 
 - id: ench_bloody_mess_twb
@@ -352,21 +352,36 @@
   values:
     - {value: FOOTSTEP_NOISE, multiply: -0.67}
 
-- id: ench_bio_digestion_twb
+
+# This pair of enhancements gives a pretty huge boost to how long you can go without eating/drinking.
+# I have left it off for now (in amulet_of_yendor relic_data).
+- id: ench_digestion_recycler_twb
   type: enchantment
   name:
-    str: Expanded Digestive System
-  description: You have been outfitted with three synthetic stomachs and industrial-grade
-    intestines.  Not only can you extract much more nutrition from food, but you are
-    highly resistant to foodborne illness, and can sometimes eat rotten food.
-  # FIXME: Enable these flags?  They are kinda OP...
-  #        OTOH the entire enchantment is pretty OP.
-  # flags:
-  #   - PARAIMMUNE
-  #   - IMMUNE_SPOIL
+    str: Expanded Digestive System & Recycler Unit
+  description:
+    You have been outfitted with three synthetic stomachs and industrial-grade intestines.
+    Not only can you extract much more nutrition from food, but
+    you are highly resistant to foodborne illness, and
+    can sometimes eat rotten food.
+    Your digestive system has been outfitted with a series of filters and processors,
+    allowing you to reclaim waste liquid and, to a lesser degree, nutrients.
+    The net effect is a greatly reduced need to eat and drink.
+  flags:
+    # https://cdda-guide.nornagon.net/bionic/bio_digestion
+    - PARAIMMUNE
+    - IMMUNE_SPOIL
   has: WORN
   values:
+    # https://cdda-guide.nornagon.net/bionic/bio_digestion
     - value: KCAL
       multiply: 0.5
     - value: VITAMIN_ABSORB_MOD
       multiply: 0.5
+    # https://cdda-guide.nornagon.net/bionic/bio_recycler
+    - value: HUNGER
+      multiply: -0.5
+    - value: THIRST
+      multiply: -0.5
+    - value: METABOLISM
+      multiply: -0.5
