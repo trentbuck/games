@@ -75,10 +75,6 @@
           count: 5
           charges: 60
           ammo-item: 556_m855a1
-        - item: clip223_10rd
-          charges: 10
-          count: 30
-          ammo-item: 556_m855a1
         - item: 556_m855a1
           charges: 5000
         - item: ksg
