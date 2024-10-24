@@ -87,16 +87,6 @@ entries:
         - item: nail
           charges: 500
 
-        # This replaces the IFAK packages.
-        # Putting them together makes the inventory menu less annoying.
-        # FIXME: "charges" isn't working for this item?
-        - item:
-            # adhesive_bandages
-            bandages
-            # medical_gauze
-          count: 50
-        - item: quikclot
-          count: 10
         - item: arm_splint
           count: 2
         - item: leg_splint
