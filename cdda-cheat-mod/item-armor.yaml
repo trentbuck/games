@@ -187,67 +187,6 @@
 
   pocket_data:
 
-    # NOTE: The idea of these is to stop newly-picked-up ammo going
-    #       being automatically bundled into annoying tiny packets in
-    #       cardboard boxes, glass jars, et cetera.
-    #
-    #       UPDATE: this is not working AFAICT,
-    #               stuff still ends up in random fucking pots and cardboard boxes.
-    # NOTE: these have to be separate pockets.
-    #       If you say ammo_restriction: [9mm: 100, shot: 100], then
-    #       you cannot have BOTH 9mm and shot in the pocket at the same time.
-    - pocket_type: CONTAINER
-      description: Ammo hopper (9mm NATO).
-      ammo_restriction:
-        9mm: 10000
-      volume_encumber_modifier: 0
-      weight_multiplier: 0
-      moves: 1
-    - pocket_type: CONTAINER
-      description: Ammo hopper (5.56 NATO).
-      ammo_restriction:
-        '223': 10000
-      volume_encumber_modifier: 0
-      weight_multiplier: 0
-      moves: 1
-    # - pocket_type: CONTAINER
-    #   description: Ammo hopper (8mm CL).
-    #   ammo_restriction:
-    #     8x40mm: 10000
-    #   volume_encumber_modifier: 0
-    #   weight_multiplier: 0
-    #   moves: 1
-    - pocket_type: CONTAINER
-      description: Ammo hopper (7.62 NATO).
-      ammo_restriction:
-        '308': 10000
-      volume_encumber_modifier: 0
-      weight_multiplier: 0
-      moves: 1
-    - pocket_type: CONTAINER
-      description: Ammo hopper (12 gauge shot).
-      ammo_restriction:
-        shot: 10000
-        20x66mm: 10000
-      volume_encumber_modifier: 0
-      weight_multiplier: 0
-      moves: 1
-    # - pocket_type: CONTAINER
-    #   description: Ammo hopper (40×46 mm LV).
-    #   ammo_restriction:
-    #     40x46mm: 10000
-    #   volume_encumber_modifier: 0
-    #   weight_multiplier: 0
-    #   moves: 1
-    - pocket_type: CONTAINER
-      description: Quiver.
-      ammo_restriction:
-        arrow: 10000
-        bolt: 10000
-      volume_encumber_modifier: 0
-      weight_multiplier: 0
-      moves: 1
-
     # "Organization" pockets.
     # NOTE: I wanted to have a "rifle sling" and "pistol holster", but
     #       existing rifle sling pockets don't mechanically limit to firearms.
@@ -329,6 +268,120 @@
       moves: 1
       watertight: true
       airtight: true
+
+
+# https://pid.bungie.org/cedar_box.html
+# FIXME: how do I define an eoc (or something)
+#        that makes the box "regenerate" (or consume negative amounts of) ammo?
+- id: cedar_box
+  type: ARMOR
+  name:
+    str: cedar box
+  description:
+    Muller gave Walter a gold key and sent him to recover a large amount of gold and a strange wooden box.
+    The box was made of cedar. Muller didn't tell me what it was supposed to do, or what it had to do with the gold.
+    I sent Walter to retrieve something, but it is a worthless archaeological artifact.  You'd have no interest in it.
+    People have told you about the cedar box? It is an art object of great value, but is otherwise useless.
+  symbol: '?'
+  color: yellow
+  looks_like: 30gal_drum
+  material: [monolith]
+  material_thickness: 1
+  weight: 1 kg
+  volume: 1 L
+  longest_side: 10 cm
+  price: 1 USD
+  flags:
+    - TRADER_AVOID
+    - TARDIS
+  pocket_data:
+
+    # NOTE: The idea of these is to stop newly-picked-up ammo going
+    #       being automatically bundled into annoying tiny packets in
+    #       cardboard boxes, glass jars, et cetera.
+    #
+    #       UPDATE: this is not working AFAICT,
+    #               stuff still ends up in random fucking pots and cardboard boxes.
+    # NOTE: these have to be separate pockets.
+    #       If you say ammo_restriction: [9mm: 100, shot: 100], then
+    #       you cannot have BOTH 9mm and shot in the pocket at the same time.
+    - pocket_type: CONTAINER
+      description: Ammo hopper (9mm NATO).
+      ammo_restriction:
+        9mm: 10000
+      volume_encumber_modifier: 0
+      weight_multiplier: 0
+      moves: 1
+    - pocket_type: CONTAINER
+      description: Ammo hopper (5.56 NATO).
+      ammo_restriction:
+        '223': 10000
+      volume_encumber_modifier: 0
+      weight_multiplier: 0
+      moves: 1
+    # - pocket_type: CONTAINER
+    #   description: Ammo hopper (8mm CL).
+    #   ammo_restriction:
+    #     8x40mm: 10000
+    #   volume_encumber_modifier: 0
+    #   weight_multiplier: 0
+    #   moves: 1
+    - pocket_type: CONTAINER
+      description: Ammo hopper (7.62 NATO).
+      ammo_restriction:
+        '308': 10000
+      volume_encumber_modifier: 0
+      weight_multiplier: 0
+      moves: 1
+    - pocket_type: CONTAINER
+      description: Ammo hopper (12 gauge shot).
+      ammo_restriction:
+        shot: 10000
+        20x66mm: 10000
+      volume_encumber_modifier: 0
+      weight_multiplier: 0
+      moves: 1
+    # - pocket_type: CONTAINER
+    #   description: Ammo hopper (40×46 mm LV).
+    #   ammo_restriction:
+    #     40x46mm: 10000
+    #   volume_encumber_modifier: 0
+    #   weight_multiplier: 0
+    #   moves: 1
+    - pocket_type: CONTAINER
+      description: Quiver.
+      ammo_restriction:
+        arrow: 10000
+        bolt: 10000
+      volume_encumber_modifier: 0
+      weight_multiplier: 0
+      moves: 1
+
+    - pocket_type: CONTAINER
+      description: Drum (water).
+      ammo_restriction:
+        water: 1000
+      volume_encumber_modifier: 0
+      weight_multiplier: 0
+      moves: 1
+      watertight: true
+
+    # - pocket_type: CONTAINER
+    #   ammo_restriction: {9mm: 10000}
+    # - pocket_type: CONTAINER
+    #   ammo_restriction: {water: 100}
+    #   watertight: true
+
+- id: cedar_box_contents
+  type: item_group
+  subtype: collection
+  entries:
+    - item: 9mm
+      count: 5000
+      container-item: 'null'
+    - item: water_clean
+      count: 100
+      container-item: 'null'
 
 
 # I was putting *way* too much stuff into plot_armor, and losing track.

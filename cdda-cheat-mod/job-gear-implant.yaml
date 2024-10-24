@@ -19,6 +19,7 @@
   items:
     both:
       items:
+        - cedar_box
         - plot_armor            # see item-armor.yaml
         - amulet_of_yendor      # see item-armor.yaml
         - sonic_screwdriver     # see item-tool.yaml
@@ -31,6 +32,12 @@
       # • weapon mods (useful for weapons)
       # • flags (useful for "don't wear by default" wearables, e.g. towel)
       entries:
+
+        - group: cedar_box_contents
+        # - item: cedar_box
+        # - item: water_clean
+        #   count: 100
+        #   container-item: 'null'
 
         # Firearms
         # ########################################
