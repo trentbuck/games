@@ -53,12 +53,12 @@
             - light_grip
             - match_trigger
             - gun_mop
-          ammo-item: 9mmfmj
+          ammo-item: 9mmP2
         - item: glockbigmag
           count: 9
           charges: 33
-          ammo-item: 9mmfmj
-        - item: 9mmfmj
+          ammo-item: 9mmP2
+        - item: 9mmP2
           charges: 5000
         - item: rdb_223
           charges: 60
@@ -70,12 +70,12 @@
             - holo_magnifier
             - pistol_grip
             - gun_mop
-          ammo-item: 556_m855a1
+          ammo-item: 556_m995
         - item: stanag60
           count: 5
           charges: 60
-          ammo-item: 556_m855a1
-        - item: 556_m855a1
+          ammo-item: 556_m995
+        - item: 556_m995
           charges: 5000
         - item: ksg
           charges: 24
@@ -100,12 +100,12 @@
             - acog_scope
             - pistol_grip
             - gun_mop
-          ammo-item: 762_51_incendiary
+          ammo-item: 762_51_m993
         - item: falbigmag
           count: 15
           charges: 30
-          ammo-item: 762_51_incendiary
-        - item: 762_51_incendiary
+          ammo-item: 762_51_m993
+        - item: 762_51_m993
           charges: 5000
         # For a very strong character, this is a super nice weapon.
         # For weak characters, you can burn through stamina fast, like melee.
