@@ -68,8 +68,6 @@ entries:
           charges: 360
         # - item: goggles_swim
         #   custom-flags: [no_auto_equip]
-        # Putting the UPS or battery into the drill is a fucking pain.
-        - item: hand_drill
         - item: match
           charges: 500
         # FIXME: "charges" isn't working for string?

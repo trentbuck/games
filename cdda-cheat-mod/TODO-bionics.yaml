@@ -48,7 +48,6 @@
   #     - NOT clamp/locking_pliers
   CBMs:
     - bio_cable
-    - bio_metabolics
     - bio_ups
     - bio_flashlight
     # FIXME: consider bio_multimeter (split from bio_tools in 0.H, I think?)
