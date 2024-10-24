@@ -36,8 +36,11 @@
     # https://cdda-guide.nornagon.net/item/toolset
     # https://cdda-guide.nornagon.net/item/integrated_welder
     # https://cdda-guide.nornagon.net/item/integrated_multimeter
-    - [CUT_FINE, 5]           # bio_surgical_razor scalpel
-    - [BUTCHER, 37]           # butchering_kit
+    # NOTE: max in-game CUT_FINE is 5, but butcher_time_to_cut awards speed bonus for [0..75].
+    #       I get SUPER BORED of dissecting to grind weakness proficiencies, so
+    #       crank this up absurdly high.  This reduces dissection time from 44min to 11min.
+    - [CUT_FINE, 75]          # bio_surgical_razor scalpel
+    - [BUTCHER, 75]           # butchering_kit
     - [LOCKPICK, 39]          # bio_lockpick (extra prompt, though)
     - [GLARE, 1]              # bio_sunglasses goggles_welding
     - [PRY, 4]                # bio_tools crowbar halligan_bar
