@@ -53,8 +53,9 @@
     - bio_flashlight  # Heavy flashlight (NOTES-illumination.csv) no mutation conflicts
     # FIXME: consider bio_multimeter (split from bio_tools in 0.H, I think?)
     - bio_painkiller            # no mutation conflicts
-    - bio_purifier
-    - bio_targeting
+    # NOTE: bio_purifier works by simply adding "env_protection: [15, mouth]".
+    #       Since zagreb armor is already giving 40-80 environment_protection, this is moot.
+    # - bio_purifier            # no mutation conflicts
     - bio_recoil
     - bio_carbon
     - bio_ar
