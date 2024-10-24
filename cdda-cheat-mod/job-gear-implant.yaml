@@ -33,11 +33,25 @@
       # • flags (useful for "don't wear by default" wearables, e.g. towel)
       entries:
 
-        - group: cedar_box_contents
+        # - group: cedar_box_contents
         # - item: cedar_box
-        # - item: water_clean
-        #   count: 100
-        #   container-item: 'null'
+        - {container-item: 'null', item: water_clean, count: 1000}
+        - {container-item: 'null', item: lamp_oil, count: 1}
+        - {container-item: 'null', item: motor_oil, count: 1}
+        - {container-item: 'null', item: gasoline, count: 1}
+        - {container-item: 'null', item: diesel, count: 1}
+        - {container-item: 'null', item: jp8, count: 1}
+        - {container-item: 'null', item: napalm, count: 1}
+        - {container-item: 'null', item: ammonia_liquid, count: 1}
+        - {container-item: 'null', item: propane, count: 1}
+        - {container-item: 'null', item: oxyacetylene, count: 1}
+        # - {container-item: 'null', item: chem_ethanol, count: 3750}
+        # - {container-item: 'null', item: methed_alcohol, count: 3750}
+        # - {container-item: 'null', item: denat_alcohol, count: 3750}
+        # - {container-item: 'null', item: chem_acetone, count: 75}
+        # - {container-item: 'null', item: bleach, count: 30}
+        # - {container-item: 'null', item: cooking_oil, count: 240}
+
 
         # Firearms
         # ########################################
