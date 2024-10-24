@@ -20,6 +20,7 @@
     - ALLOWS_REMOTE_USE
     - UNBREAKABLE
     - SAFECRACK            # stethoscope
+    - FIRESTARTER          # bio_lighter
   # FIXME: Do I need any of the action stuff?
   #        I think YES for at least repair_metal and repair_fabric.
   use_action:
