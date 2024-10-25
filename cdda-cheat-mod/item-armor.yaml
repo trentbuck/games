@@ -305,8 +305,8 @@
       - id: ench_bionic_power_twb
       - id: ench_climate_control_all_permanent
       # - id: ench_dampened_steps_twb
-      # - id: ench_digestion_recycler_twb
-      # - id: ench_targeting_recoil_twb (long-range firearms accuracy)
+      - id: ench_digestion_recycler_twb
+      - id: ench_targeting_recoil_twb
       - id: ench_memory_twb
 
 
