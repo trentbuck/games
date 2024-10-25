@@ -313,12 +313,15 @@
 - id: ench_bloody_mess_twb
   type: enchantment
   name:
-    str: Bloody Mess
+    str: Bloody Mess & Quickdraw
   description:
     For whatever reason you seem to always make a real mess of things.
     Enemies you kill tend to explode into a mess of viscera.
     <good>Convenient</good> alternative to <info>corpse pulping</info>.
     <bad>Inconvenient</bad> if you want to <info>dissect corpses</info>.
+    You pack things very efficiently!
+    Practicing with handguns has improved your draw speed with pretty much everything.
+    Retrieve objects 25% faster from containers.
   has: WORN
   values:
     # NOTE: Bombastic Perks uses -1000.
@@ -328,7 +331,10 @@
     #       and occasionally only damages (still shows warning icon).
     - value: OVERKILL_DAMAGE
       add: -100
-
+    # 10% faster -- PACKMULE (profession trait)
+    # 25% faster -- perk_quickdraw (bombastic perks)
+    - value: OBTAIN_COST_MULTIPLIER
+      multiply: -0.25
 
 - id: ench_bionic_power_twb
   type: enchantment
@@ -394,6 +400,9 @@
       multiply: -0.5
     - value: METABOLISM
       multiply: -0.5
+    # LIGHTEATER profession mutation
+    # - value: METABOLISM
+    #   multiply: -0.333
 
 
 - id: ench_targeting_recoil_twb
@@ -417,11 +426,12 @@
 - id: ench_memory_twb
   type: enchantment
   name:
-    str: Enhanced Memory Banks
+    str: Enhanced Memory Banks & Fast Reader
   description:
     Your memory has been enhanced with small quantum storage drives.
     You learn - both through reading and practice - more quickly.
     Additionally, you forget skills you've learned slower.
+    You're a quick reader, and can get through books a lot faster than most.
   values:
     - value: READING_EXP
       add: 4
@@ -429,3 +439,6 @@
       add: 40
     - value: LEARNING_FOCUS
       add: 20
+    # FASTREADER
+    - value: READING_SPEED_MULTIPLIER
+      multiply: -0.2

@@ -23,76 +23,90 @@
   # These are WELL over the max of 12, but you can pick freeform or single pool.
   traits:
     - DEBUG_CS
-    # - DEBUG_SPEED
-    - PROF_DICEMASTER
-    - PROF_FED
-    - PROF_BOXER
-    - PROF_MA_BLACK
-    - MARTIAL_FENCING
-    - PROF_KICKBOXER
-    - PROF_SKATER
-    - FASTHEALER2
+#BORING#    # - DEBUG_SPEED
+#BORING#    - PROF_DICEMASTER
+#BORING#    - PROF_FED
+#BORING#    - PROF_BOXER
+#BORING#    - PROF_MA_BLACK
+#BORING#    - MARTIAL_FENCING
+#BORING#    - PROF_KICKBOXER
+#BORING#    - PROF_SKATER
+#CONFLICTS MUTATIONS#    - FASTHEALER2
     # - STR_UP_2
     # - DEX_UP_2
     # - INT_UP_2
     # - PER_UP_2
-    - LIGHTEATER
-    - PACKMULE
+#CONFLICTS MUTATIONS#    - LIGHTEATER
+#MOVED TO ENCHANTMENT#    - PACKMULE
+# FIXME: move to enchantment?
     - TOUGH3
-    # - NAILS
-    - ROBUST
-    - DISRESISTANT
+#CONFLICTS MUTATIONS#    # - NAILS
+#CONFLICTS MUTATIONS#    - ROBUST
+#CONFLICTS MUTATIONS#    - DISRESISTANT
+# FIXME: move to enchantment?
     - STRONGKNEES
     # - WEAKSCENT
-    - TOLERANCE
-    - NONADDICTIVE
+#BORING#    - TOLERANCE
+#BORING#    - NONADDICTIVE
     # "SAPROVORE",
+# FIXME: move to enchantment?
     - WAKEFUL
-    - MASOCHIST
+#BORING?#    - MASOCHIST
     # "STYLISH",
-    - LIGHTSTEP
+#MOVED TO ench_dampened_steps_twb#    - LIGHTSTEP
+# FIXME: move to enchantment?
     - EAGLEEYED
     # +5 Taekwondo is great to avoid smashing your rifle to pieces when accidentally smacking a zombie.
-    - MARTIAL_ARTS
+    # NOTE: you can choose "force unarmed" to get the same effect (but without bonuses).
+    # NOTE: Taekwondo techniques require unarmed (not melee) skills to unlock, which
+    #       you won't train much if you're mostly using a gun and a knife...
+    # - MARTIAL_ARTS
     # +1 Ninjutsu is fun to switch to a sword and chop up motherfuckers.
-    - MARTIAL_ARTS2
+    # - MARTIAL_ARTS2
     # -1 These are all boring, and I'm sick of clicking through it in the new game menu.
     # - MARTIAL_ARTS3
     # Two Heavens Style is fun alternative to Ninjutsu.
     # - MARTIAL_ARTS5
-    - EASYSLEEPER
+# FIXME: move to enchantment?
+#CONFLICTS MUTATIONS#    - EASYSLEEPER
     # - PROJUNK
-    - OPTIMISTIC
+#BORING?#    - OPTIMISTIC
     # - NIGHTVISION3
     # - PAINRESIST
     # - NONADDICTIVE
     # - ANIMALEMPATH2
-    - LOVES_BOOKS
+#BORING?#    - LOVES_BOOKS
+# FIXME: can I turn this into an enchantment?
     - PAINREC3
     # - BOOMING_VOICE
-    - RESISTCHILL
-    - RESISTWARM
+#MOVED TO ench_climate_control_all_permanent#    - RESISTCHILL
+#MOVED TO ench_climate_control_all_permanent#    - RESISTWARM
+# FIXME: move to enchantment?
     - FAST_REFLEXES
     # - GOODHEARING
-    - OUTDOORSMAN
+#BORING#    - OUTDOORSMAN
     # NOTE: QUICK gives +10% movement (same as bio_speed); they stack.
     #       This ends up being a problem if you have followers, because
     #       you immediately outpace them and can't find one another.
     # - QUICK
-    - POISRESIST
-    - FASTREADER
-    - THICKSKIN
-    - STRONGBACK
+#BORING#    - POISRESIST
+#MOVED TO ench_memory_twb#    - FASTREADER
+#BORING#    - THICKSKIN
+#BORING#    - STRONGBACK
     # - STRONGSTOMACH
     # - GOODMEMORY
-    - DEFT
+#BORING#    - DEFT
     # - SPIRITUAL
     # - FASTLEARNER
+# FIXME: move to enchantment?
     - GOODCARDIO
     # - BEAUTIFUL3
     # - LIAR
     # - PSYCHOPATH
-    - FLEET2
+# FIXME: move to enchantment?
+#        NOTE: this interacts poorly with follower NPCs following you on foot.
+#              They get left behind and lost!
+#     - FLEET2
 
   proficiencies:
     # I really hate dissecting basic zombies & animals to acquire these.
