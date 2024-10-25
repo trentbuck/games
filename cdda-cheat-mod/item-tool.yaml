@@ -42,6 +42,7 @@
     - EBOOKSAVE                 # bio_ar (requires pocket_data:pocket_type:EBOOK)
     - EBOOKREAD                 # bio_ar (requires pocket_data:pocket_type:EBOOK)
     - CAMERA                    # bio_ar (remember out-of-view monsters in "#" menu)
+    - OXYTORCH                  # oxy_torch ("cut up metal" ≠ "cut metal" – this does locked doors)
     - type: heal
       move_cost: 2000
       bleed: 20

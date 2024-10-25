@@ -262,13 +262,6 @@ entries:
           count: 32
         - item: pipe_fittings
           count: 8
-        - item: oxy_torch
-        - item: tinyweldtank
-          count: 3
-        - item: propane_torch
-        - item: small_propane_tank
-          count: 3
-          charges: 10000
 
         # - item: phase_immersion_suit
         #   custom-flags: [no_auto_equip]
