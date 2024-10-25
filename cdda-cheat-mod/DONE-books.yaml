@@ -1,6 +1,11 @@
 items:
         ########################################
         # BOOKZ --- only the books that have recipes you can't get automatically with high-enough skill level.
+        #           UPDATE: Other than mutagens and "helps you train" recipes,
+        #                   the ONLY thing that I can see in 0.H that's not auto-learnt at 10-in-all-skills is
+        #                    * fungicide (don't care)
+        #                    * nomad bodyglove/jumpsuit variants
+        #                   Therefore we do not care about this stuff anymore.
         # == anthology.json ==
         # - book_anthology_moataatgb
         # - book_anthology_sunvault
@@ -21,7 +26,7 @@ items:
         # - mag_bashing
         # - manual_bashing
         # == chemistry.json ==
-        - adv_chemistry
+        # - adv_chemistry
         # - modern_tanner
         # - recipe_alpha
         # - recipe_animal
@@ -85,7 +90,7 @@ items:
         # - manual_swords
         # == dodge.json ==
         # - mag_dodge
-        - manual_dodge
+        # - manual_dodge
         # - manual_dodge_kid
         # - book_nonf_hard_dodge_tlwd
         # == driving.json ==
@@ -192,34 +197,34 @@ items:
         # - technologybrochure
         # == martial.json ==
         # - manual_aikido
-        - manual_barbaran
+        # - manual_barbaran
         # - manual_boxing
         # - manual_capoeira
         # - manual_centipede
         # - manual_crane
         # - manual_dragon
-        - manual_eskrima
+        # - manual_eskrima
         # - manual_fencing
         # - manual_judo
         # - manual_karate
         # - manual_bojutsu
         # - manual_kickboxing
-        - manual_krav_maga
-        - manual_leopard
+        # - manual_krav_maga
+        # - manual_leopard
         # - manual_lizard
         # - manual_muay_thai
-        - manual_ninjutsu
-        - manual_niten
+        # - manual_ninjutsu
+        # - manual_niten
         # - manual_pankration
         # - manual_scorpion
         # - manual_silat
         # - manual_snake
-        - manual_taekwondo
+        # - manual_taekwondo
         # - manual_tai_chi
         # - manual_tiger
         # - manual_toad
         # - manual_venom_snake
-        - manual_zui_quan
+        # - manual_zui_quan
         # - manual_sojutsu
         # - manual_wingchun
         # - manual_medievalpole
@@ -449,7 +454,7 @@ items:
         # - mag_dude
         # - mag_survival
         # - manual_survival
-        - pocket_survival
+        # - pocket_survival
         # - survival_book
         # - textbook_survival
         # - textbook_botany
