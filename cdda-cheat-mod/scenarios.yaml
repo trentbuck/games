@@ -1,0 +1,189 @@
+# For each existing job-limited scenario, add "cheater" job.
+# Based on this example:
+# https://github.com/CleverRaven/Cataclysm-DDA/blob/0.H-branch/data/mods/package_bionic_professions/scenarios.json#L16-L19
+
+- type: scenario
+  copy-from: bad_day
+  id: bad_day
+  extend:
+    professions:
+      - cheater_job
+
+- type: scenario
+  copy-from: medieval
+  id: medieval
+  extend:
+    professions:
+      - cheater_job
+
+- type: scenario
+  copy-from: lab_chal
+  id: lab_chal
+  extend:
+    professions:
+      - cheater_job
+
+- type: scenario
+  copy-from: lab_staff
+  id: lab_staff
+  extend:
+    professions:
+      - cheater_job
+
+- type: scenario
+  copy-from: lab_cargo_staff_1
+  id: lab_cargo_staff_1
+  extend:
+    professions:
+      - cheater_job
+
+- type: scenario
+  copy-from: alone
+  id: alone
+  extend:
+    professions:
+      - cheater_job
+
+- type: scenario
+  copy-from: patient
+  id: patient
+  extend:
+    professions:
+      - cheater_job
+
+- type: scenario
+  copy-from: prisonbreak
+  id: prisonbreak
+  extend:
+    professions:
+      - cheater_job
+
+- type: scenario
+  copy-from: alcatraz
+  id: alcatraz
+  extend:
+    professions:
+      - cheater_job
+
+- type: scenario
+  copy-from: migo_prisoner
+  id: migo_prisoner
+  extend:
+    professions:
+      - cheater_job
+
+- type: scenario
+  copy-from: mutant
+  id: mutant
+  extend:
+    professions:
+      - cheater_job
+
+- type: scenario
+  copy-from: foodplace
+  id: foodplace
+  extend:
+    professions:
+      - cheater_job
+
+- type: scenario
+  copy-from: last_delivery
+  id: last_delivery
+  extend:
+    professions:
+      - cheater_job
+
+- type: scenario
+  copy-from: last_flight
+  id: last_flight
+  extend:
+    professions:
+      - cheater_job
+
+- type: scenario
+  copy-from: heli_crash
+  id: heli_crash
+  extend:
+    professions:
+      - cheater_job
+
+- type: scenario
+  copy-from: Mine_bottom
+  id: Mine_bottom
+  extend:
+    professions:
+      - cheater_job
+
+- type: scenario
+  copy-from: overrun
+  id: overrun
+  extend:
+    professions:
+      - cheater_job
+
+- type: scenario
+  copy-from: presort
+  id: presort
+  extend:
+    professions:
+      - cheater_job
+
+- type: scenario
+  copy-from: portal_dependent
+  id: portal_dependent
+  extend:
+    professions:
+      - cheater_job
+
+- type: scenario
+  copy-from: Mansion
+  id: Mansion
+  extend:
+    professions:
+      - cheater_job
+
+- type: scenario
+  copy-from: aircraft_carrier_start
+  id: aircraft_carrier_start
+  extend:
+    professions:
+      - cheater_job
+
+- type: scenario
+  copy-from: golden_years
+  id: golden_years
+  extend:
+    professions:
+      - cheater_job
+
+- type: scenario
+  copy-from: nuclear_plant_start
+  id: nuclear_plant_start
+  extend:
+    professions:
+      - cheater_job
+
+
+# NOTE: The remaining three scenarios have add_professions:true.
+#       That might mean they are needless?
+
+- type: scenario
+  copy-from: ambushed
+  id: ambushed
+  extend:
+    professions:
+      - cheater_job
+
+- type: scenario
+  copy-from: summer_advanced_start
+  id: summer_advanced_start
+  extend:
+    professions:
+      - cheater_job
+
+- type: scenario
+  copy-from: faction_camp_start
+  id: faction_camp_start
+  extend:
+    professions:
+      - cheater_job

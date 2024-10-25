@@ -3,7 +3,7 @@
 # HOWEVER, they cannot express items or bionics.
 - type: profession
   subtype: hobby
-  id: cheater
+  id: cheater_hobby
   # "For some reason inflecting for gender in English vocation words
   # make me giggle, e.g. 'doctress', 'invigilatrix', 'authoress'."
   name:
@@ -314,7 +314,7 @@
 
 - type: profession
   subtype: hobby
-  id: cheater3
+  id: cheater_skills_debug
   name: Cheater (debug-level)
   description: Debug mutations - effectively disable some gameplay aspects entirely
     (e.g. immune to stamina)
