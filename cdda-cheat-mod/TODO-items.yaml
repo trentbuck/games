@@ -19,13 +19,6 @@ items:
         # - scuba_tank
 
 entries:
-        # After doing some fighting in the heat, I start to sweat and get damp.
-        # This makes me feel sad, and also maybe catch influenza after swimming to the AC.
-        # To "dry off" you "activate" a towel (but not a dishtowel) and the water moves into it.
-        # You can't wring out the towel; it empties itself automatically after a while.
-        # UPDATE: moved to Zagreb armor use_action: TOWEL
-        # - item: towel
-        #   custom-flags: [no_auto_equip]
         # NOTE: when sleeping, you get is_snuggling bonus if there is something on the tile and
         #         * it is armor (i.e. wearable)
         #         * it is at least 250mL in volume
@@ -36,6 +29,7 @@ entries:
         #       So it doesn't have to be a
         #       sleeping bag (1000mL / 80warm) or
         #       blanket (1550ml / 50warm),
+        #       emer_blanket (500mL / 50warm)
         #       really, it could be e.g. a
         #       zentai (500ml / 20warm) or
         #       t-shirt (500mL / 5warm) or
@@ -45,15 +39,6 @@ entries:
         #       https://github.com/CleverRaven/Cataclysm-DDA/blob/655cdeaac0c6/src/character.cpp#L8971-L9013
         - item: sleeping_bag_roll
           custom-flags: [no_auto_equip]
-        # Use this to avoid water damage to the equipment.
-        # - item: bag_zipper_gallon
-        #   count: 10
-        # - item: survivor_dry_bag
-        #   custom-flags: [no_auto_equip]
-        # - item: survivor_dry_duffelbag
-        #   custom-flags: [no_auto_equip]
-        #   contents-item:
-        #     # - eink_tablet_pc
 
         # for when the Aircraft Carrier's a long way from land.
         - item: swim_fins
@@ -63,8 +48,6 @@ entries:
           charges: 360
         # - item: goggles_swim
         #   custom-flags: [no_auto_equip]
-        - item: match
-          charges: 500
         # FIXME: "charges" isn't working for string?
         - item: string_36
           count: 500

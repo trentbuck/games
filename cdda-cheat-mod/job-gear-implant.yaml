@@ -26,7 +26,6 @@
         - folded_unicycle_twb   # see item-vehicle.yaml
         - xylospongium          # see item-weapon.yaml
         - mjolnir               # see DONE-sledge.yaml
-
         - flu_shot
 
       # "entries" is the same as "items" except you can provide additional data, e.g.
