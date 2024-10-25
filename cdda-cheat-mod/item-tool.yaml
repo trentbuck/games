@@ -49,6 +49,9 @@
       disinfectant_power: 4
       bandages_power: 4
       bite: 0.95
+    # This COULD be here, but it's too confusing.
+    # It shows up as "Activate item > sonic screwdriver > Inject".
+    # - FLU_VACCINE               # flu_shot
   qualities:
     - [HACK, 2]         # bio_fingerhack electrohack
     - [CUT, 2]          # bio_tools

@@ -13,7 +13,7 @@
 
   CBMs:                         # see DONE-bionics.yaml
     - bio_lockpick
-    - bio_syringe
+    # - bio_syringe  # NOTE: you get a free syringe when using a flu_shot
     - bio_fitnessband
 
   items:
@@ -26,6 +26,8 @@
         - folded_unicycle_twb   # see item-vehicle.yaml
         - xylospongium          # see item-weapon.yaml
         - mjolnir               # see DONE-sledge.yaml
+
+        - flu_shot
 
       # "entries" is the same as "items" except you can provide additional data, e.g.
       # • count (useful for ammo and consumables)

@@ -91,7 +91,6 @@ entries:
           count: 2
         - item: leg_splint
           count: 2
-        - item: flu_shot
         - item: wrapped_rad_badge
 
         # Ugh.  UPS ends up being MORE fiddly, sometimes.
