@@ -41,12 +41,7 @@
     - ELECTRICSTORAGE           # bio_ar
     - EBOOKSAVE                 # bio_ar (requires pocket_data:pocket_type:EBOOK)
     - EBOOKREAD                 # bio_ar (requires pocket_data:pocket_type:EBOOK)
-    # NOTE: Take a photo of monsters (or NPCs), then
-    #       later you can recall them with "#" key.
-    #       Bascially like in-game https://nornagon.github.io/cdda-guide/
-    - CAMERA                    # bio_ar
-    - PORTABLE_GAME             # bio_ar (FIXME: is this useful?)
-    - WEATHER_TOOL              # FIXME: is this useful?
+    - CAMERA                    # bio_ar (remember out-of-view monsters in "#" menu)
     - type: heal
       move_cost: 2000
       bleed: 20

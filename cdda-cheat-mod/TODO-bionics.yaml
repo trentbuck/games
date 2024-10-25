@@ -21,19 +21,7 @@
   #   - bio_evap
   #   - bio_night_vision
 
-bio_meteorologist is hard-coded in C++ to do:
-  - wind power (accounting for vehicle speed)
-  - weather
-  - temperature (THERMOMETER)
-  - humidity (HYGROMETER)
-  - pressure (BAROMETER)
-  - a "feels like" temperature
-  - it does not conflict with anything
 
-
-bio_geiger:
-  - might replace unwrapped radation badge in the sidebar?
-  - it does not conflict with anything
 
   #   - bio_meteorologist
   #   - bio_infrared

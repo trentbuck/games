@@ -48,3 +48,27 @@
 # NOTE: I *think* bio_carbon just up-armors all your body parts by ~4, for all damage types except bash.
 #       Zagreb armor already provides endgame-tier armor, so meh.
 # - bio_carbon               # no mutation conflicts
+
+# bio_meteorologist is hard-coded in C++ to do:
+#   - wind power (accounting for vehicle speed)
+#   - weather
+#   - temperature (THERMOMETER)
+#   - humidity (HYGROMETER)
+#   - pressure (BAROMETER)
+#   - a "feels like" temperature
+#   - it does not conflict with anything
+# UPDATE: I don't think it provides anything USEFUL, though.
+#         Compared to a THERMOMETER/BAROMETER/HYGOMETER-equipped player,
+#         nothing visibly changes in the sidebar.
+
+
+# bio_geiger:
+#   - might replace unwrapped radation badge in the sidebar?
+#     UPDATE: radiation on sidebar only in "custom" view, and
+#     when using that, does NOT check bio_geiger, ONLY flags:RAD_DETECT (rad_badge).
+#     The C++ code looks specifically for bio_geiger or rad_badge (not flags:RAD_DETECT).
+#     Further, since BADGE irradiation level does not match PLAYER irradiation level, just give this up as Too Hard.
+#   - triggers a warning once every 3 minutes if you're being irradiated (hard-coded in C++)
+#   - it does not conflict with anything
+#   - MOSTLY the only places you get irradiated are the Nuclear Power Plant and the Missile Silo, right?
+#     and you JUST KNOW when you go to those places, to watch out for radiation.
