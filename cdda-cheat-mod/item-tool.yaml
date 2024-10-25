@@ -14,6 +14,13 @@
   volume: 1 ml
   longest_side: 1 cm
   price: 1 cent
+  pocket_data:
+    - pocket_type: EBOOK
+      rigid: true
+      max_contains_volume: 1 ml
+      max_contains_weight: 1 g
+      weight_multiplier: 0
+      description: hidden, used for use_action:EBOOKSAVE
   flags:
     - TRADER_AVOID
     - BELT_CLIP
@@ -21,6 +28,8 @@
     - UNBREAKABLE
     - SAFECRACK            # stethoscope
     - FIRESTARTER          # bio_lighter
+    - FIRE                 # bonus for flags:FIRESTARTER
+    - CAMERA_PRO           # bonus for use_action:CAMERA
   # FIXME: Do I need any of the action stuff?
   #        I think YES for at least repair_metal and repair_fabric.
   use_action:
@@ -28,9 +37,16 @@
     - repair_metal              # small_repairkit
     - repair_fabric             # tailors_kit
     - WASH_ALL_ITEMS            # wash_kit sponge washboard
-    # - CROWBAR
-    # - HACKSAW
-    # - link_up
+    - EINKTABLETPC              # bio_ar
+    - ELECTRICSTORAGE           # bio_ar
+    - EBOOKSAVE                 # bio_ar (requires pocket_data:pocket_type:EBOOK)
+    - EBOOKREAD                 # bio_ar (requires pocket_data:pocket_type:EBOOK)
+    # NOTE: Take a photo of monsters (or NPCs), then
+    #       later you can recall them with "#" key.
+    #       Bascially like in-game https://nornagon.github.io/cdda-guide/
+    - CAMERA                    # bio_ar
+    - PORTABLE_GAME             # bio_ar (FIXME: is this useful?)
+    - WEATHER_TOOL              # FIXME: is this useful?
     - type: heal
       move_cost: 2000
       bleed: 20

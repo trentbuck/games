@@ -254,8 +254,14 @@
     # https://cdda-guide.nornagon.net/item/bio_radio
     - TWO_WAY_RADIO
     # https://cdda-guide.nornagon.net/item/bio_watch
+    # https://cdda-guide.nornagon.net/item/bio_ar
     - WATCH
     - ALARMCLOCK
+    - THERMOMETER
+    # https://cdda-guide.nornagon.net/item/phase_immersion_suit
+    # https://cdda-guide.nornagon.net/item/weather_radar
+    - HYGROMETER
+    - BAROMETER
     # GLARE_RESIST is a stronger combination of FLASH_PROTECTION and SUN_GLASSES.
     # Also rm13_armor_on provides hard-coded-in-C++ full flashbang protection.
     # https://cdda-guide.nornagon.net/bionic/bio_sunglasses

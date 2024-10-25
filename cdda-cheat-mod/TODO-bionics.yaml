@@ -52,11 +52,7 @@ bio_geiger:
   #   - bio_power_armor_interface_mkII
   # NOTE: most of these do not auto-activate, e.g. bio_UPS will not start charging your UPS-powered gear
   # "// CBMs replaces…":
-  #   bio_fitnessband: smartphone (partially)
-  #   bio_watch: smartphone (partially)
-  #   bio_lighter: lighter
   #   bio_ups: ups_off + heavy battery
-  #   bio_ears: earplugs
   #   bio_tools:
   #     - NOT small_repairkit/large_repairkit!
   #     - NOT tailors_kit!
@@ -68,7 +64,6 @@ bio_geiger:
     - bio_flashlight  # Heavy flashlight (NOTES-illumination.csv) no mutation conflicts
     # FIXME: consider bio_multimeter (split from bio_tools in 0.H, I think?)
     - bio_painkiller            # no mutation conflicts
-    - bio_ar
 
 # bio_ears → SAFECRACK_NO_TOOL
 # bio_ears → DEAF (useful for sleeping)
