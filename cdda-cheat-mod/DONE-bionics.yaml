@@ -40,3 +40,11 @@
 # bio_speed gives +10% movement (same as QUICK); they stack.
 # This ends up being a problem if you have followers, because
 # you immediately outpace them and can't find one another.
+
+# NOTE: bio_purifier works by simply adding "env_protection: [15, mouth]".
+#       Since zagreb armor is already giving 40-80 environment_protection, this is moot.
+# - bio_purifier            # no mutation conflicts
+
+# NOTE: I *think* bio_carbon just up-armors all your body parts by ~4, for all damage types except bash.
+#       Zagreb armor already provides endgame-tier armor, so meh.
+# - bio_carbon               # no mutation conflicts
