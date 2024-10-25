@@ -307,6 +307,7 @@
       # - id: ench_dampened_steps_twb
       # - id: ench_digestion_recycler_twb
       # - id: ench_targeting_recoil_twb (long-range firearms accuracy)
+      - id: ench_memory_twb
 
 
 - id: ench_bloody_mess_twb
@@ -412,3 +413,19 @@
     # https://cdda-guide.nornagon.net/bionic/bio_recoil
     - value: RECOIL_MODIFIER
       multiply: -0.35
+
+- id: ench_memory_twb
+  type: enchantment
+  name:
+    str: Enhanced Memory Banks
+  description:
+    Your memory has been enhanced with small quantum storage drives.
+    You learn - both through reading and practice - more quickly.
+    Additionally, you forget skills you've learned slower.
+  values:
+    - value: READING_EXP
+      add: 4
+    - value: SKILL_RUST_RESIST
+      add: 40
+    - value: LEARNING_FOCUS
+      add: 20
