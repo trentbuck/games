@@ -173,22 +173,23 @@ items:
         # == lockpick.json ==
         # - book_lockpick
         # == maps.json ==
-        - labmap
-        - militarymap
-        - survivormap
-        - roadmap
-        - subwaymap
-        - trailmap
-        - touristmap
-        - restaurantmap
-        - satellitemap
-        - urbexmap
-        - restaurantbrochure
-        - grocerybrochure
-        - historybrochure
-        - mallbrochure
-        - furniturebrochure
-        - technologybrochure
+        # If you want this, it's much easier to just do `mr5 (debug menu > map > reveal > all).
+        # - labmap
+        # - militarymap
+        # - survivormap
+        # - roadmap
+        # - subwaymap
+        # - trailmap
+        # - touristmap
+        # - restaurantmap
+        # - satellitemap
+        # - urbexmap
+        # - restaurantbrochure
+        # - grocerybrochure
+        # - historybrochure
+        # - mallbrochure
+        # - furniturebrochure
+        # - technologybrochure
         # == martial.json ==
         # - manual_aikido
         - manual_barbaran
