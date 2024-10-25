@@ -7,7 +7,7 @@
   category: rebalance
   dependencies:
     - dda
-    # Not actually neded, but these are all things I always want.
+    # Not actually needed, but these are all things I always want.
     - no_npc_food
     - no_fungal_growth
     - personal_portal_storms
