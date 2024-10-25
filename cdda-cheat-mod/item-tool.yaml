@@ -104,3 +104,52 @@
     - [COOK, 3]               # improvised_oven survivor_mess_kit
     - [OVEN, 2]               # improvised_oven dutch_oven
     - [ANVIL, 4]              # anvil_heavy anvil bench_vise
+
+
+# Adding this into the sonic screwdriver was to messy.
+# Specifically it's fiddly to replace "turn off" with "turn on",
+# without removing all the other use_actions.
+# Also considered:
+#   * stick with bio_flashlight
+#   * just use heavy_flashlight and scavenge batteries
+#   * same thing but wearable instead of transformable
+#     (that requires a custom enchantment which
+#     may not count as "voluntary" light for e.g. crafting,
+#     in the C++ hard-coded checks).
+#
+# See also NOTES-illumination.csv
+- id: Fiat_500_lux_off
+  type: TOOL
+  name:
+    str: Fiat 500 Lux (off)
+    str_pl: Fiat 500 Luxes (off)
+  description:
+    While most Fiat 500s are Italian city cars made since 1936,
+    this one seems to be more a kind of Hollywood Torch emitting 500 lux.
+  use_action:
+    type: transform
+    menu_text: Turn on
+    msg: Your %s activates.
+    target: Fiat_500_lux_on
+  symbol: ;
+  color: green
+  looks_like: flashlight
+  material: [plastic]
+  weight: 1 g
+  volume: 1 ml
+  longest_side: 1 cm
+  price: 1 cent
+- id: Fiat_500_lux_on
+  copy-from: Fiat_500_lux_off
+  type: TOOL
+  name:
+    str: Fiat 500 Lux (on)
+    str_pl: Fiat 500 Luxes (on)
+  looks_like: flashlight_on
+  use_action:
+    type: transform
+    menu_text: Turn off
+    msg: Your %s deactivates.
+    target: Fiat_500_lux_off
+  flags:
+    - LIGHT_500
