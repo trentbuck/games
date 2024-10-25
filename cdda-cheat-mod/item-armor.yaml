@@ -285,6 +285,11 @@
     # https://github.com/CleverRaven/Cataclysm-DDA/blob/0.G/src/lightmap.h#L11-L18
     - LIGHT_10
 
+    # https://cdda-guide.nornagon.net/bionic/bio_digestion
+    # See comments on ench_digestion_recycler_twb
+    # - PARAIMMUNE
+    # - IMMUNE_SPOIL
+
   relic_data:
     passive_effects:
       # NOTE: I could inline the enchantments directly here.
@@ -368,10 +373,6 @@
     Your digestive system has been outfitted with a series of filters and processors,
     allowing you to reclaim waste liquid and, to a lesser degree, nutrients.
     The net effect is a greatly reduced need to eat and drink.
-  flags:
-    # https://cdda-guide.nornagon.net/bionic/bio_digestion
-    - PARAIMMUNE
-    - IMMUNE_SPOIL
   has: WORN
   values:
     # https://cdda-guide.nornagon.net/bionic/bio_digestion
