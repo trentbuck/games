@@ -35,6 +35,9 @@
       # • flags (useful for "don't wear by default" wearables, e.g. towel)
       entries:
 
+        - item: grapnel  # useful to escape fallen skyscraper (Hub 01 mission)
+          custom-flags: [no_auto_equip]
+
         # Firearms
         # ########################################
         # By far the most common ammunition is

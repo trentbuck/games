@@ -17,13 +17,8 @@ items:
         - mp3
         - mirror
         # - scuba_tank
-        # I haven't tried these but maybe they're fun.
-        # - folded_inflatable_boat
 
 entries:
-        # grapnel is especially useful for getting out of the Hub 01 mission to the fallen skyscraper.
-        - item: grapnel
-          custom-flags: [no_auto_equip]
         # After doing some fighting in the heat, I start to sweat and get damp.
         # This makes me feel sad, and also maybe catch influenza after swimming to the AC.
         # To "dry off" you "activate" a towel (but not a dishtowel) and the water moves into it.
