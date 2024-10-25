@@ -18,7 +18,6 @@
 
   # All positive traits, except those with downsides.
   # DICEMASTER lets you read books easier & faster.
-  # AUTODOC & MD let you use the autodoc with fewer penalties.
   # SKATER is only useful if you're wearing rollerblades/rollerskates/heelies, which aren't compatible with RM13 full-body combat armor.
   # POLICE/PD_DET/SWAT/FED just prevents flying cameras from whinging at you.
   # These are WELL over the max of 12, but you can pick freeform or single pool.
@@ -26,7 +25,6 @@
     - DEBUG_CS
     # - DEBUG_SPEED
     - PROF_DICEMASTER
-    - PROF_AUTODOC
     - PROF_FED
     - PROF_BOXER
     - PROF_MA_BLACK
