@@ -1,63 +1,22 @@
-  relic_data:
-    passive_effects:
-      - condition: ALWAYS
-        has: WORN
-        values:
-            # https://cdda-guide.nornagon.net/item/utility_exoskeleton_off
-          - value: CARRY_WEIGHT
-            add: 215000
-          - value: MOVE_COST
-            multiply: -0.1
-
-  pocket_data:
-    # https://cdda-guide.nornagon.net/item/ar_glasses_advanced
-    - pocket_type: EBOOK
-      rigid: true
-      max_contains_volume: 1 ml
-      max_contains_weight: 1 g
-      weight_multiplier: 0
-
   use_action:
-    # https://cdda-guide.nornagon.net/item/ar_glasses_advanced
-    - CAMERA
-    - PORTABLE_GAME
-    - EINKTABLETPC
-    - ELECTRICSTORAGE
-    - EBOOKSAVE
-    - EBOOKREAD
-    # https://cdda-guide.nornagon.net/item/fitness_band
-    # https://cdda-guide.nornagon.net/item/smart_watch
-    - CAMERA
     - MP3
     # https://cdda-guide.nornagon.net/item/radglove
     - RADGLOVE
     # https://cdda-guide.nornagon.net/item/towel
     - TOWEL
 
-
   flags:
     - RAD_DETECT
-    - BAROMETER
-    - HYGROMETER
-    - THERMOMETER
-    - WATCH
-    - ALARMCLOCK
     - SWIM_GOGGLES
-    - SUN_GLASSES
     - ELECTRIC_IMMUNE
-    - PARTIAL_DEAF
     - GAS_PROOF
     - PSYSHIELD_PARTIAL
     - PADDED
     # This is WAY too annoying.
     # - GNV_EFFECT
-    # https://cdda-guide.nornagon.net/item/welding_mask
-    - FLASH_PROTECTION
     # https://cdda-guide.nornagon.net/item/robofac_armor_anchor_on
     # https://cdda-guide.nornagon.net/item/dimensional_anchor_on
     - DIMENSIONAL_ANCHOR
-    # https://cdda-guide.nornagon.net/item/wearable_camera_pro
-    - CAMERA_PRO
 
   use_action:
     - RADIO_ON
