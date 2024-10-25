@@ -139,6 +139,13 @@
       - IMPALE
       - RAPID
       - PRECISE
+      - WIDE
+      - SWEEP
+      - BRUTAL
+      - WBLOCK_2
+    weapon_category:
+      - POLEARMS
+      - SPEARS
   qualities: []
   to_hit:
     grip: weapon
