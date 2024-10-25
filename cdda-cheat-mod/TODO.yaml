@@ -2,8 +2,6 @@
     - MP3
     # https://cdda-guide.nornagon.net/item/radglove
     - RADGLOVE
-    # https://cdda-guide.nornagon.net/item/towel
-    - TOWEL
 
   flags:
     - RAD_DETECT
