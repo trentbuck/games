@@ -414,7 +414,7 @@
     their movement is synced with that of your arms, to a degree.
     Shots you fire will be much more accurate, particularly at long range.
     Reactive shock absorbers installed in your wrists and elbows which greatly reduce felt recoil.
-  condition: ALWAYS
+  has: WORN
   values:
     # https://cdda-guide.nornagon.net/bionic/bio_targeting
     - value: WEAPON_DISPERSION
@@ -432,6 +432,7 @@
     You learn - both through reading and practice - more quickly.
     Additionally, you forget skills you've learned slower.
     You're a quick reader, and can get through books a lot faster than most.
+  has: WORN
   values:
     - value: READING_EXP
       add: 4
