@@ -5,6 +5,23 @@
     female: Cheatress
   description: You never prosper.
   points: -1111
+
+  # What happens if I add ALL starting_missions?
+  # UPDATE: Some are dumb, but a couple are basically OK.
+  missions:
+    - MISSION_SOCIAL_BUTTERFLY
+    - MISSION_PATIENT
+    - MISSION_MAFIA_BOSS
+    - MISSION_OTAKU
+    - MISSION_NINJA
+    - MISSION_HUNTER
+    - MISSION_MANSION_START
+
+  # This makes "surrounded start" pretty funny.
+  # pets:
+  #   - name: mon_mi_go_scout
+  #     amount: 8
+
   vehicle:
     # NOTE: folding_unicycle provides the light scout, so vehicle: provides the heavy "mobile HQ"
     # superbike
