@@ -66,6 +66,7 @@
     #       crank this up absurdly high.  This reduces dissection time from 44min to 11min.
     - [CUT_FINE, 75]          # bio_surgical_razor scalpel
     - [BUTCHER, 75]           # butchering_kit
+    - [SUSPENDING, 2]         # fake_butcher_rack
     - [LOCKPICK, 39]          # bio_lockpick (extra prompt, though)
     - [GLARE, 1]              # bio_sunglasses goggles_welding
     - [PRY, 4]                # bio_tools crowbar halligan_bar
