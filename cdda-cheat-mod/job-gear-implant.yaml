@@ -39,6 +39,7 @@
         - plot_armor            # see item-armor.yaml
         - amulet_of_yendor      # see item-armor.yaml
         - sonic_screwdriver     # see item-tool.yaml
+        - tonic_screwdriver     # see item-tool.yaml
         - Fiat_500_lux_off      # see item-tool.yaml
         - folded_unicycle_twb   # see item-vehicle.yaml
         - xylospongium          # see item-weapon.yaml

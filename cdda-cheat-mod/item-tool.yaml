@@ -30,12 +30,9 @@
     - FIRESTARTER          # bio_lighter
     - FIRE                 # bonus for flags:FIRESTARTER
     - CAMERA_PRO           # bonus for use_action:CAMERA
-  # FIXME: Do I need any of the action stuff?
-  #        I think YES for at least repair_metal and repair_fabric.
+  # NOTE: repair_fabric and repair_metal are now in a separate tool.
   use_action:
     - GUN_REPAIR                # small_repairkit
-    - repair_metal              # small_repairkit
-    - repair_fabric             # tailors_kit
     - WASH_ALL_ITEMS            # wash_kit sponge washboard
     - EINKTABLETPC              # bio_ar
     - ELECTRICSTORAGE           # bio_ar
@@ -67,6 +64,7 @@
     - [CUT_FINE, 75]          # bio_surgical_razor scalpel
     - [BUTCHER, 75]           # butchering_kit
     - [SUSPENDING, 2]         # fake_butcher_rack
+    - [JACK, 16]              # jack jack_small v_airjack_item
     - [LOCKPICK, 39]          # bio_lockpick (extra prompt, though)
     - [GLARE, 1]              # bio_sunglasses goggles_welding
     - [PRY, 4]                # bio_tools crowbar halligan_bar
@@ -114,7 +112,114 @@
     - [ANVIL, 4]              # anvil_heavy anvil bench_vise
 
 
-# Adding this into the sonic screwdriver was to messy.
+# Adding this into the sonic screwdriver was too messy.
+# Specifically, as at 0.H, the repair_metal and repair_fabric items *MUST* be on an item that consumes charges.
+# If they are not, then after choosing the item to repair, 0.H segfaults, because the C++ code *assumes* this.
+# (The segfault happens somewhere in repair_item_finish(), but I didn't work out exactly where.)
+#
+# This is distinct from e.g. metal_cut, which is normally on oxyacetylene torches (consuming oxyacetylene), but
+# does not HAVE TO be.
+# But if I make the sonic_screwdriver use charges -- even if it is *zero* charges, then
+# I get an extra prompt every single time for every other action than repair_fabric and repair_metal.
+#
+# Regarding the name: I was trying to think of a "taste" instead of a "sound" screwdriver, but
+# I didn't like "gustatory screwdriver".  I started thinking about other senses organs like the halteres, and
+# settled for now on "precession screwdriver" as that is how the halteres operate.
+# UPDATE: then I thought about https://en.wikipedia.org/wiki/1977%E2%80%931980_Florida_orange_juice_boycott
+#         so now it's a virgin screwdriver / tonic screwdriver.
+#         Unfortunately you can't do material:[vodka,oj] because they're items, not materials.
+#         Also note that there exists id:drink_screwdriver in the game already.
+#         I thought about making this copy-from that, but I'm worried I'd accidentally drink my tool.
+- id: tonic_screwdriver
+  type: TOOL
+  name:
+    str: tonic screwdriver
+  description:
+    A repair tool that can do things a sonic screwdriver can't do.
+    This one is non-alcoholic - made of orange juice and tonic water (not vodka).
+  symbol: ';'
+  color: blue
+  looks_like: knife_swissarmy
+  material:
+    - plastic
+    - steel
+  weight: 1 g
+  volume: 1 ml
+  longest_side: 1 cm
+  price: 1 cent
+  flags:
+    - TRADER_AVOID
+    - BELT_CLIP
+    - ALLOWS_REMOTE_USE
+    - UNBREAKABLE
+    - USES_NEARBY_AMMO          # for repair_{fabric,metal}
+  charges_per_use: 0            # for repair_{fabric,metal}
+  ammo: [water]                 # for repair_{fabric,metal}
+  use_action:
+    # NOTE: materials MUST be explicitly listed.
+    #       Otherwise "% > repair" offers this tool, but then
+    #       say there are no compatible items.
+    #       This happens even if there are other charged usable tools (e.g. tailors_kit) on hand.
+    - type: repair_item
+      item_action_type: repair_fabric  # tailors_kit
+      materials:
+        - neoprene              # needle_curved
+        - cotton                # needle_bone
+        - leather
+        - lycra
+        - nylon
+        - wool
+        - fur
+        - faux_fur
+        - nomex
+        - kevlar
+        - kevlar_layered
+        - gutskin
+        - denim
+        - canvas
+      skill: tailor
+      cost_scaling: 0.1
+      tool_quality: 10
+      move_cost: 100
+    - type: repair_item
+      item_action_type: repair_metal  # small_repairkit
+      materials:
+        - iron                  # integrated_welder
+        - steel
+        - budget_steel
+        - lc_steel
+        - mc_steel
+        - hc_steel
+        - ch_steel
+        - lc_steel_chain
+        - mc_steel_chain
+        - hc_steel_chain
+        - ch_steel_chain
+        - aluminum
+        - copper
+        - bronze
+        - fancy_bronze
+        - silver
+        - gold
+        - platinum
+        - superalloy
+        - plastic
+        - lead
+        - tin
+        - zinc
+        - bone                  # misc_repairkit
+        - chitin
+        - paper
+        - cardboard
+        - wood
+        - kevlar_rigid
+      skill: fabrication
+      cost_scaling: 0
+      tool_quality: 10
+      move_cost: 100
+
+
+# Adding this into the sonic screwdriver was too messy.
 # Specifically it's fiddly to replace "turn off" with "turn on",
 # without removing all the other use_actions.
 # Also considered:
