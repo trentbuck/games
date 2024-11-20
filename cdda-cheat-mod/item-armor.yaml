@@ -426,14 +426,17 @@
 - id: ench_memory_twb
   type: enchantment
   name:
-    str: Enhanced Memory Banks & Fast Reader
+    str: Enhanced Memory Banks & Fast Reader & Debug Crafting Speed
   description:
     Your memory has been enhanced with small quantum storage drives.
     You learn - both through reading and practice - more quickly.
     Additionally, you forget skills you've learned slower.
     You're a quick reader, and can get through books a lot faster than most.
+    Craft the bug out 50 times faster.
   has: WORN
   values:
+    - value: CRAFTING_SPEED_MULTIPLIER
+      multiply: 50
     - value: READING_EXP
       add: 4
     - value: SKILL_RUST_RESIST

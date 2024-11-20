@@ -22,7 +22,6 @@
   # POLICE/PD_DET/SWAT/FED just prevents flying cameras from whinging at you.
   # These are WELL over the max of 12, but you can pick freeform or single pool.
   traits:
-    - DEBUG_CS
 #BORING#    # - DEBUG_SPEED
 #BORING#    - PROF_DICEMASTER
 #BORING#    - PROF_FED
