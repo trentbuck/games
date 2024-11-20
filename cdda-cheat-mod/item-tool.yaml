@@ -64,6 +64,7 @@
     - [CUT_FINE, 75]          # bio_surgical_razor scalpel
     - [BUTCHER, 75]           # butchering_kit
     - [SUSPENDING, 2]         # fake_butcher_rack
+    - [LIFT, 40]              # fake_lift_heavy
     - [JACK, 16]              # jack jack_small v_airjack_item
     - [LOCKPICK, 39]          # bio_lockpick (extra prompt, though)
     - [GLARE, 1]              # bio_sunglasses goggles_welding
