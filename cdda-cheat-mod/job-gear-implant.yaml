@@ -105,12 +105,16 @@
           contents-item:
             - match_trigger
             - holo_sight
-            - choke
-              # shot_suppressor  # shot_00 loudness 160 → 130 (hearing-safe)
+            - # choke          # can't fire slug/explosive shot, but lets you load it -- annoying!
+              shot_suppressor  # shot_00 loudness 160 → 130 (hearing-safe)
             - grip_mount
             - laser_sight
             - gun_mop
-        - item: shot_dragon
+        - item:
+            # In 0.I, incendiary shells are massively nerfed.
+            # They used to create raging fires from nothing; now they need something to burn.
+            # shot_dragon
+            shot_he
           charges: 5000
         # Since the 8mm is kinda nerfed, switch to another Kel-Tec.
         - item: rfb_308
