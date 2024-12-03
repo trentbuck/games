@@ -1,5 +1,5 @@
 rating,rating/hour,$,$/hour,"$/hour (steamdb)",time,hltb,id,name
-96.78,95.19,35.96,2157.60,35.96,,,294100,RimWorld
+96.78,95.19,35.96,2157.60,35.96,,"105.46 hours",294100,RimWorld
 96.1,94.52,,,,,"1.35 hours",1568400,"Sheepy: A Short Adventure"
 95.43,93.87,,,,,"6.37 hours",2220360,"Paper Lily - Chapter 1"
 95.42,93.86,,,,,"1.05 hours",2570630,"20 Small Mazes"
@@ -56,7 +56,7 @@ rating,rating/hour,$,$/hour,"$/hour (steamdb)",time,hltb,id,name
 90.86,89.37,,,,,,2954780,"Nightmare House: The Original Mod"
 90.85,89.36,27.47,1648.20,27.47,,"58.42 hours",1850570,"DEATH STRANDING DIRECTOR'S CUT"
 90.78,89.29,,,,,,3275270,"Shape of Dreams: Prologue"
-90.63,89.14,7.19,431.40,7.19,,,585420,Trailmakers
+90.63,89.14,7.19,431.40,7.19,,"33.71 hours",585420,Trailmakers
 90.63,89.14,16.99,1019.40,16.99,,"25.59 hours",930910,"STEINS;GATE: Linear Bounded Phenogram"
 90.62,89.13,9.43,565.80,9.43,,"0.00 hours",2318480,"Last Train Outta' Wormtown"
 90.62,89.13,,,,,,2989820,"Pocket Waifu: Desktop Pet"
@@ -106,10 +106,10 @@ rating,rating/hour,$,$/hour,"$/hour (steamdb)",time,hltb,id,name
 89.23,87.77,,,,,"12.75 hours",2093940,vivid/stasis
 89.2,87.74,,,,,,2480450,"Pesticide Not Required: Prologue"
 89.17,87.71,3.65,219.00,3.65,,"0.00 hours",235900,"RPG Maker XP"
-89.16,87.70,14.59,875.40,14.59,,,893850,":THE LONGING:"
+89.16,87.70,14.59,875.40,14.59,,"35.24 hours",893850,":THE LONGING:"
 89.12,87.66,,,,,"0.88 hours",2431090,FISHGUN
 89.12,87.66,,,,,,2859800,Harbinger
-89.1,87.64,6.19,371.40,6.19,,,1766740,"Choo-Choo Charles"
+89.1,87.64,6.19,371.40,6.19,,"3.05 hours",1766740,"Choo-Choo Charles"
 89.1,87.64,,,,,,3092660,"Reverse: 1999"
 89.09,87.63,,,,,"0.49 hours",765480,Karambola
 89.09,87.63,,,,,,3036480,"アリスのハニハニクラッシュ！"
@@ -398,7 +398,7 @@ rating,rating/hour,$,$/hour,"$/hour (steamdb)",time,hltb,id,name
 85.32,83.92,,,,,"0.00 hours",2363530,"Kemono Friends Opening Day"
 85.3,83.90,,,,,"0.54 hours",1692430,"Larry The Unlucky Part 1"
 85.29,83.89,,,,,"0.00 hours",2726560,"Kona & Snowrabbit"
-85.28,83.88,4.43,265.80,4.43,,,677120,"Heroes of Hammerwatch"
+85.28,83.88,4.43,265.80,4.43,,"30.91 hours",677120,"Heroes of Hammerwatch"
 85.26,83.86,,,,,"0.55 hours",1851380,"Happy's Humble Burger Barn"
 85.25,83.85,,,,,"0.00 hours",1892850,"A Wholesome Game About Farming"
 86.6,83.81,,,,"2 min","7.64 hours",672730,"Find You"
@@ -3496,7 +3496,7 @@ rating,rating/hour,$,$/hour,"$/hour (steamdb)",time,hltb,id,name
 74.74,73.51,,,,,,697900,"Bounty Below"
 77.19,73.51,2.59,51.80,2.59,"3 min","8.46 hours",65720,"Arma 2: Private Military Company"
 85.76,73.51,,,,"10 min","3.10 hours",8340,"Strong Bad Episode 1: Homestar Ruiner"
-74.73,73.50,2.19,131.40,2.19,,,576980,"Western 1849 Reloaded"
+74.73,73.50,2.19,131.40,2.19,,"5.20 hours",576980,"Western 1849 Reloaded"
 74.72,73.50,,,,,"0.00 hours",786680,"Dungeons Forever"
 74.72,73.50,,,,,"0.00 hours",850330,"best game eu"
 74.72,73.50,,,,,,1209750,FlowState
@@ -4593,7 +4593,7 @@ rating,rating/hour,$,$/hour,"$/hour (steamdb)",time,hltb,id,name
 72.21,71.03,,,,,,2781170,Harmoni
 72.21,71.03,,,,,,2988130,"Gang de Croquettes"
 72.21,71.03,,,,,,3100990,"Whale Well"
-72.2,71.02,11.39,683.40,11.39,,,1602080,Soulstice
+72.2,71.02,11.39,683.40,11.39,,"18.56 hours",1602080,Soulstice
 79.3,71.01,13.58,116.40,13.58,"7 min","4.76 hours",102840,"Shank 2"
 87.58,71.01,1.5,6.43,1.50,"14 min","7.11 hours",403830,"The Consuming Shadow"
 72.19,71.01,,,,,,762560,ManaRocks
@@ -7968,7 +7968,7 @@ rating,rating/hour,$,$/hour,"$/hour (steamdb)",time,hltb,id,name
 64.35,63.30,,,,,"0.00 hours",2442230,"Brave Nine"
 64.35,63.30,,,,,,2655230,"Shadow Of Sound"
 64.35,63.30,,,,,,2763430,Soundelta
-64.35,63.30,,,,,,2918150,"ONE PIECE Bounty Rush"
+64.35,63.30,,,,,"1.77 hours",2918150,"ONE PIECE Bounty Rush"
 64.35,63.30,,,,,"0.00 hours",2972040,"The Gap"
 64.35,63.30,,,,,,3085680,"カミゴロシ"
 77.0,63.29,1.48,6.83,1.48,"13 min","0.00 hours",1025480,"1-Bit Revival: The Residuals of Null"

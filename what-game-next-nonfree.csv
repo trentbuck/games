@@ -1,19 +1,19 @@
 rating,rating/hour,$,$/hour,"$/hour (steamdb)",time,hltb,id,name
-96.78,95.19,35.96,2157.60,35.96,,,294100,RimWorld
+96.78,95.19,35.96,2157.60,35.96,,"105.46 hours",294100,RimWorld
 92.78,91.26,5.99,359.40,5.99,"1 min","26.40 hours",265610,"Epic Battle Fantasy 4"
 91.45,89.95,3.62,217.20,3.62,,"3.89 hours",1444350,House
 91.31,89.81,6.74,404.40,6.74,,"4.25 hours",898890,"Endling - Extinction is Forever"
 91.05,89.56,29.68,1780.80,29.68,,"77.65 hours",1174180,"Red Dead Redemption 2"
 90.85,89.36,27.47,1648.20,27.47,,"58.42 hours",1850570,"DEATH STRANDING DIRECTOR'S CUT"
-90.63,89.14,7.19,431.40,7.19,,,585420,Trailmakers
+90.63,89.14,7.19,431.40,7.19,,"33.71 hours",585420,Trailmakers
 90.63,89.14,16.99,1019.40,16.99,,"25.59 hours",930910,"STEINS;GATE: Linear Bounded Phenogram"
 90.62,89.13,9.43,565.80,9.43,,"0.00 hours",2318480,"Last Train Outta' Wormtown"
 89.17,87.71,3.65,219.00,3.65,,"0.00 hours",235900,"RPG Maker XP"
-89.16,87.70,14.59,875.40,14.59,,,893850,":THE LONGING:"
-89.1,87.64,6.19,371.40,6.19,,,1766740,"Choo-Choo Charles"
+89.16,87.70,14.59,875.40,14.59,,"35.24 hours",893850,":THE LONGING:"
+89.1,87.64,6.19,371.40,6.19,,"3.05 hours",1766740,"Choo-Choo Charles"
 89.04,87.58,4.5,270.00,4.50,,,3261010,"中华一商：传承"
 86.93,85.50,16.99,1019.40,16.99,,"31.91 hours",819030,"STEINS;GATE ELITE"
-85.28,83.88,4.43,265.80,4.43,,,677120,"Heroes of Hammerwatch"
+85.28,83.88,4.43,265.80,4.43,,"30.91 hours",677120,"Heroes of Hammerwatch"
 84.92,83.53,2.9,174.00,2.90,"1 min","104.12 hours",245450,"Wizardry 8"
 87.63,83.46,2.9,58.00,2.90,"3 min","8.65 hours",356570,"Party Hard"
 88.87,83.32,7.25,108.75,7.25,"4 min","57.96 hours",92800,SpaceChem
@@ -399,7 +399,7 @@ rating,rating/hour,$,$/hour,"$/hour (steamdb)",time,hltb,id,name
 80.92,73.56,3.62,36.20,3.62,"6 min","8.32 hours",72000,Closure
 80.92,73.56,2.25,22.50,2.25,"6 min","0.00 hours",1677380,Astronium
 77.19,73.51,2.59,51.80,2.59,"3 min","8.46 hours",65720,"Arma 2: Private Military Company"
-74.73,73.50,2.19,131.40,2.19,,,576980,"Western 1849 Reloaded"
+74.73,73.50,2.19,131.40,2.19,,"5.20 hours",576980,"Western 1849 Reloaded"
 85.72,73.47,4.35,26.10,4.35,"10 min","6.33 hours",50000,Nimbus
 79.56,73.44,2.25,27.00,2.25,"5 min","3.02 hours",2073470,"Kanjozoku Game レーサー"
 80.78,73.44,3.62,36.20,3.62,"6 min","4.96 hours",751220,ETHEREAL
@@ -564,7 +564,7 @@ rating,rating/hour,$,$/hour,"$/hour (steamdb)",time,hltb,id,name
 80.51,71.04,1.14,8.55,1.14,"8 min","0.49 hours",1188000,Pulstario
 84.05,71.03,1.48,8.07,1.48,"11 min","14.33 hours",94300,"The Dream Machine"
 72.21,71.03,4.5,270.00,4.50,,,2256920,"Friendly Facade"
-72.2,71.02,11.39,683.40,11.39,,,1602080,Soulstice
+72.2,71.02,11.39,683.40,11.39,,"18.56 hours",1602080,Soulstice
 79.3,71.01,13.58,116.40,13.58,"7 min","4.76 hours",102840,"Shank 2"
 87.58,71.01,1.5,6.43,1.50,"14 min","7.11 hours",403830,"The Consuming Shadow"
 73.36,70.99,1.45,43.50,1.45,"2 min","18.03 hours",577670,"Demolish & Build 2018"
