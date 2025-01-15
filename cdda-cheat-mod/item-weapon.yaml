@@ -67,7 +67,7 @@
     This RK6S34 Mustela is a rather advanced version integral to the RM11B rifle system.
   weight: 0 g
   volume: 0 ml
-  price: 0
+  price: 1 USD
   price_postapoc: 1500
   install_time: 0 s
   material:
