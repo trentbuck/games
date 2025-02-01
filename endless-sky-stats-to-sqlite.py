@@ -69,6 +69,183 @@ left join ratings "energy capacity★" on ("energy capacity★".n = round(4 * lo
 ORDER BY overall desc;
 
 
+drop view if exists engines★;
+create view engines★ as
+-- Use a CTE to hide an insane, unique, near-unobtainable item that is screwing all the stats
+WITH engines_ AS (SELECT * FROM engines WHERE name NOT IN ("Fusion Drive"))
+select name
+     ,  round((0
+               + (4 - 4 * log((select 1 + max("cost") - min("cost") from engines_), 1 + "cost" - (select min("cost") from engines_)))
+               + (4 - 4 * log((select 1 + max("mass") - min("mass") from engines_), 1 + "mass" - (select min("mass") from engines_)))
+               + (4 * log((select 1 + max("outfit space") - min("outfit space") from engines_), 1 + "outfit space" - (select min("outfit space") from engines_)))
+               + (4 * log((select 1 + max("engine capacity") - min("engine capacity") from engines_), 1 + "engine capacity" - (select min("engine capacity") from engines_)))
+               + (4 * log((select 1 + max("thrust/s") - min("thrust/s") from engines_), 1 + "thrust/s" - (select min("thrust/s") from engines_)))
+               + (4 - 4 * log((select 1 + max("thrust energy/s") - min("thrust energy/s") from engines_), 1 + "thrust energy/s" - (select min("thrust energy/s") from engines_)))
+               + (4 - 4 * log((select 1 + max("thrust heat/s") - min("thrust heat/s") from engines_), 1 + "thrust heat/s" - (select min("thrust heat/s") from engines_)))
+               + (4 * log((select 1 + max("turn/s") - min("turn/s") from engines_), 1 + "turn/s" - (select min("turn/s") from engines_)))
+               + (4 - 4 * log((select 1 + max("turn energy/s") - min("turn energy/s") from engines_), 1 + "turn energy/s" - (select min("turn energy/s") from engines_)))
+               + (4 - 4 * log((select 1 + max("turn heat/s") - min("turn heat/s") from engines_), 1 + "turn heat/s" - (select min("turn heat/s") from engines_)))
+               + (4 * log((select 1 + max("reverse thrust/s") - min("reverse thrust/s") from engines_), 1 + "reverse thrust/s" - (select min("reverse thrust/s") from engines_)))
+               + (4 - 4 * log((select 1 + max("reverse energy/s") - min("reverse energy/s") from engines_), 1 + "reverse energy/s" - (select min("reverse energy/s") from engines_)))
+               + (4 - 4 * log((select 1 + max("reverse heat/s") - min("reverse heat/s") from engines_), 1 + "reverse heat/s" - (select min("reverse heat/s") from engines_)))
+               + (4 * log((select 1 + max("afterburner thrust/s") - min("afterburner thrust/s") from engines_), 1 + "afterburner thrust/s" - (select min("afterburner thrust/s") from engines_)))
+               + (4 - 4 * log((select 1 + max("afterburner energy/s") - min("afterburner energy/s") from engines_), 1 + "afterburner energy/s" - (select min("afterburner energy/s") from engines_)))
+               + (4 - 4 * log((select 1 + max("afterburner heat/s") - min("afterburner heat/s") from engines_), 1 + "afterburner heat/s" - (select min("afterburner heat/s") from engines_)))
+               + (4 - 4 * log((select 1 + max("afterburner fuel/s") - min("afterburner fuel/s") from engines_), 1 + "afterburner fuel/s" - (select min("afterburner fuel/s") from engines_)))
+        ) / 17.0 -- this is how many columns we're averaging
+        , 2)
+       AS overall
+     , "cost★".t as "cost"
+     , "mass★".t as "mass"
+     , "outfit space★".t as "outfit space"
+     , "engine capacity★".t as "engine capacity"
+     , "thrust/s★".t as "thrust/s"
+     , "thrust energy/s★".t as "thrust energy/s"
+     , "thrust heat/s★".t as "thrust heat/s"
+     , "turn/s★".t as "turn/s"
+     , "turn energy/s★".t as "turn energy/s"
+     , "turn heat/s★".t as "turn heat/s"
+     , "reverse thrust/s★".t as "reverse thrust/s"
+     , "reverse energy/s★".t as "reverse energy/s"
+     , "reverse heat/s★".t as "reverse heat/s"
+     , "afterburner thrust/s★".t as "afterburner thrust/s"
+     , "afterburner energy/s★".t as "afterburner energy/s"
+     , "afterburner heat/s★".t as "afterburner heat/s"
+     , "afterburner fuel/s★".t as "afterburner fuel/s"
+from engines_
+left join ratings "cost★" on ("cost★".n = round(4 - 4 * log((select 1 + max("cost") - min("cost") from engines_), 1 + "cost" - (select min("cost") from engines_)), 0))
+left join ratings "mass★" on ("mass★".n = round(4 - 4 * log((select 1 + max("mass") - min("mass") from engines_), 1 + "mass" - (select min("mass") from engines_)), 0))
+left join ratings "outfit space★" on ("outfit space★".n = round(4 * log((select 1 + max("outfit space") - min("outfit space") from engines_), 1 + "outfit space" - (select min("outfit space") from engines_)), 0))
+left join ratings "engine capacity★" on ("engine capacity★".n = round(4 * log((select 1 + max("engine capacity") - min("engine capacity") from engines_), 1 + "engine capacity" - (select min("engine capacity") from engines_)), 0))
+left join ratings "thrust/s★" on ("thrust/s★".n = round(4 * log((select 1 + max("thrust/s") - min("thrust/s") from engines_), 1 + "thrust/s" - (select min("thrust/s") from engines_)), 0))
+left join ratings "thrust energy/s★" on ("thrust energy/s★".n = round(4 - 4 * log((select 1 + max("thrust energy/s") - min("thrust energy/s") from engines_), 1 + "thrust energy/s" - (select min("thrust energy/s") from engines_)), 0))
+left join ratings "thrust heat/s★" on ("thrust heat/s★".n = round(4 - 4 * log((select 1 + max("thrust heat/s") - min("thrust heat/s") from engines_), 1 + "thrust heat/s" - (select min("thrust heat/s") from engines_)), 0))
+left join ratings "turn/s★" on ("turn/s★".n = round(4 * log((select 1 + max("turn/s") - min("turn/s") from engines_), 1 + "turn/s" - (select min("turn/s") from engines_)), 0))
+left join ratings "turn energy/s★" on ("turn energy/s★".n = round(4 - 4 * log((select 1 + max("turn energy/s") - min("turn energy/s") from engines_), 1 + "turn energy/s" - (select min("turn energy/s") from engines_)), 0))
+left join ratings "turn heat/s★" on ("turn heat/s★".n = round(4 - 4 * log((select 1 + max("turn heat/s") - min("turn heat/s") from engines_), 1 + "turn heat/s" - (select min("turn heat/s") from engines_)), 0))
+left join ratings "reverse thrust/s★" on ("reverse thrust/s★".n = round(4 * log((select 1 + max("reverse thrust/s") - min("reverse thrust/s") from engines_), 1 + "reverse thrust/s" - (select min("reverse thrust/s") from engines_)), 0))
+left join ratings "reverse energy/s★" on ("reverse energy/s★".n = round(4 - 4 * log((select 1 + max("reverse energy/s") - min("reverse energy/s") from engines_), 1 + "reverse energy/s" - (select min("reverse energy/s") from engines_)), 0))
+left join ratings "reverse heat/s★" on ("reverse heat/s★".n = round(4 - 4 * log((select 1 + max("reverse heat/s") - min("reverse heat/s") from engines_), 1 + "reverse heat/s" - (select min("reverse heat/s") from engines_)), 0))
+left join ratings "afterburner thrust/s★" on ("afterburner thrust/s★".n = round(4 * log((select 1 + max("afterburner thrust/s") - min("afterburner thrust/s") from engines_), 1 + "afterburner thrust/s" - (select min("afterburner thrust/s") from engines_)), 0))
+left join ratings "afterburner energy/s★" on ("afterburner energy/s★".n = round(4 - 4 * log((select 1 + max("afterburner energy/s") - min("afterburner energy/s") from engines_), 1 + "afterburner energy/s" - (select min("afterburner energy/s") from engines_)), 0))
+left join ratings "afterburner heat/s★" on ("afterburner heat/s★".n = round(4 - 4 * log((select 1 + max("afterburner heat/s") - min("afterburner heat/s") from engines_), 1 + "afterburner heat/s" - (select min("afterburner heat/s") from engines_)), 0))
+left join ratings "afterburner fuel/s★" on ("afterburner fuel/s★".n = round(4 - 4 * log((select 1 + max("afterburner fuel/s") - min("afterburner fuel/s") from engines_), 1 + "afterburner fuel/s" - (select min("afterburner fuel/s") from engines_)), 0))
+ORDER BY overall desc
+;
+
+drop view if exists weapons★;
+create view weapons★ as
+WITH weapons_ AS (SELECT * FROM weapons WHERE cost > 0)
+select name
+     , category
+     ,  round((0
+               + (4 - 4 * log((select 1 + max("cost") - min("cost") from weapons_), 1 + "cost" - (select min("cost") from weapons_)))
+               + (4 - 4 * log((select 1 + max("space") - min("space") from weapons_), 1 + "space" - (select min("space") from weapons_)))
+               + (    4 * log((select 1 + max("range") - min("range") from weapons_), 1 + "range" - (select min("range") from weapons_)))
+               + (4 - 4 * log((select 1 + max("reload") - min("reload") from weapons_), 1 + "reload" - (select min("reload") from weapons_)))
+               + (    4 * log((select 1 + max("burst count") - min("burst count") from weapons_), 1 + "burst count" - (select min("burst count") from weapons_)))
+               + (4 - 4 * log((select 1 + max("burst reload") - min("burst reload") from weapons_), 1 + "burst reload" - (select min("burst reload") from weapons_)))
+               + (    4 * log((select 1 + max("lifetime") - min("lifetime") from weapons_), 1 + "lifetime" - (select min("lifetime") from weapons_)))
+               + (    4 * log((select 1 + max("shots/second") - min("shots/second") from weapons_), 1 + "shots/second" - (select min("shots/second") from weapons_)))
+               + (4 - 4 * log((select 1 + max("energy/shot") - min("energy/shot") from weapons_), 1 + "energy/shot" - (select min("energy/shot") from weapons_)))
+               + (4 - 4 * log((select 1 + max("heat/shot") - min("heat/shot") from weapons_), 1 + "heat/shot" - (select min("heat/shot") from weapons_)))
+               + (4 - 4 * log((select 1 + max("recoil/shot") - min("recoil/shot") from weapons_), 1 + "recoil/shot" - (select min("recoil/shot") from weapons_)))
+               + (4 - 4 * log((select 1 + max("energy/s") - min("energy/s") from weapons_), 1 + "energy/s" - (select min("energy/s") from weapons_)))
+               + (4 - 4 * log((select 1 + max("heat/s") - min("heat/s") from weapons_), 1 + "heat/s" - (select min("heat/s") from weapons_)))
+               + (4 - 4 * log((select 1 + max("recoil/s") - min("recoil/s") from weapons_), 1 + "recoil/s" - (select min("recoil/s") from weapons_)))
+               + (    4 * log((select 1 + max("shield/s") - min("shield/s") from weapons_), 1 + "shield/s" - (select min("shield/s") from weapons_)))
+               + (    4 * log((select 1 + max("discharge/s") - min("discharge/s") from weapons_), 1 + "discharge/s" - (select min("discharge/s") from weapons_)))
+               + (    4 * log((select 1 + max("hull/s") - min("hull/s") from weapons_), 1 + "hull/s" - (select min("hull/s") from weapons_)))
+               + (    4 * log((select 1 + max("corrosion/s") - min("corrosion/s") from weapons_), 1 + "corrosion/s" - (select min("corrosion/s") from weapons_)))
+               + (    4 * log((select 1 + max("heat dmg/s") - min("heat dmg/s") from weapons_), 1 + "heat dmg/s" - (select min("heat dmg/s") from weapons_)))
+               + (    4 * log((select 1 + max("burn dmg/s") - min("burn dmg/s") from weapons_), 1 + "burn dmg/s" - (select min("burn dmg/s") from weapons_)))
+               + (    4 * log((select 1 + max("energy dmg/s") - min("energy dmg/s") from weapons_), 1 + "energy dmg/s" - (select min("energy dmg/s") from weapons_)))
+               + (    4 * log((select 1 + max("ion dmg/s") - min("ion dmg/s") from weapons_), 1 + "ion dmg/s" - (select min("ion dmg/s") from weapons_)))
+               + (    4 * log((select 1 + max("scrambling dmg/s") - min("scrambling dmg/s") from weapons_), 1 + "scrambling dmg/s" - (select min("scrambling dmg/s") from weapons_)))
+               + (    4 * log((select 1 + max("slow dmg/s") - min("slow dmg/s") from weapons_), 1 + "slow dmg/s" - (select min("slow dmg/s") from weapons_)))
+               + (    4 * log((select 1 + max("disruption dmg/s") - min("disruption dmg/s") from weapons_), 1 + "disruption dmg/s" - (select min("disruption dmg/s") from weapons_)))
+               + (    4 * log((select 1 + max("piercing") - min("piercing") from weapons_), 1 + "piercing" - (select min("piercing") from weapons_)))
+               + (    4 * log((select 1 + max("fuel dmg/s") - min("fuel dmg/s") from weapons_), 1 + "fuel dmg/s" - (select min("fuel dmg/s") from weapons_)))
+--             + (    4 * log((select 1 + max("leak dmg/s") - min("leak dmg/s") from weapons_), 1 + "leak dmg/s" - (select min("leak dmg/s") from weapons_)))
+               + (    4 * log((select 1 + max("push/s") - min("push/s") from weapons_), 1 + "push/s" - (select min("push/s") from weapons_)))
+               + (    4 * log((select 1 + max("homing") - min("homing") from weapons_), 1 + "homing" - (select min("homing") from weapons_)))
+               + (    4 * log((select 1 + max("strength") - min("strength") from weapons_), 1 + "strength" - (select min("strength") from weapons_)))
+               + (    4 * log((select 1 + max("deterrence") - min("deterrence") from weapons_), 1 + "deterrence" - (select min("deterrence") from weapons_)))
+        ) / 31.0 -- this is how many columns we're averaging
+        , 2)
+       AS overall
+     , "cost★".t as "cost"
+     , "cost★".t as "cost"
+     , "space★".t as "space"
+     , "range★".t as "range"
+     , "reload★".t as "reload"
+     , "burst count★".t as "burst count"
+     , "burst reload★".t as "burst reload"
+     , "lifetime★".t as "lifetime"
+     , "shots/second★".t as "shots/second"
+     , "energy/shot★".t as "energy/shot"
+     , "heat/shot★".t as "heat/shot"
+     , "recoil/shot★".t as "recoil/shot"
+     , "energy/s★".t as "energy/s"
+     , "heat/s★".t as "heat/s"
+     , "recoil/s★".t as "recoil/s"
+     , "shield/s★".t as "shield/s"
+     , "discharge/s★".t as "discharge/s"
+     , "hull/s★".t as "hull/s"
+     , "corrosion/s★".t as "corrosion/s"
+     , "heat dmg/s★".t as "heat dmg/s"
+     , "burn dmg/s★".t as "burn dmg/s"
+     , "energy dmg/s★".t as "energy dmg/s"
+     , "ion dmg/s★".t as "ion dmg/s"
+     , "scrambling dmg/s★".t as "scrambling dmg/s"
+     , "slow dmg/s★".t as "slow dmg/s"
+     , "disruption dmg/s★".t as "disruption dmg/s"
+     , "piercing★".t as "piercing"
+     , "fuel dmg/s★".t as "fuel dmg/s"
+     , "leak dmg/s★".t as "leak dmg/s"
+     , "push/s★".t as "push/s"
+     , "homing★".t as "homing"
+     , "strength★".t as "strength"
+     , "deterrence★".t as "deterrence"
+from weapons_
+left join ratings "cost★" on ("cost★".n =                         round(4 - 4 * log((select 1 + max("cost") - min("cost") from weapons_), 1 + "cost" - (select min("cost") from weapons_)), 0))
+left join ratings "space★" on ("space★".n =                       round(4 - 4 * log((select 1 + max("space") - min("space") from weapons_), 1 + "space" - (select min("space") from weapons_)), 0))
+left join ratings "range★" on ("range★".n =                       round(    4 * log((select 1 + max("range") - min("range") from weapons_), 1 + "range" - (select min("range") from weapons_)), 0))
+left join ratings "reload★" on ("reload★".n =                     round(4 - 4 * log((select 1 + max("reload") - min("reload") from weapons_), 1 + "reload" - (select min("reload") from weapons_)), 0))
+left join ratings "burst count★" on ("burst count★".n =           round(    4 * log((select 1 + max("burst count") - min("burst count") from weapons_), 1 + "burst count" - (select min("burst count") from weapons_)), 0))
+left join ratings "burst reload★" on ("burst reload★".n =         round(4 - 4 * log((select 1 + max("burst reload") - min("burst reload") from weapons_), 1 + "burst reload" - (select min("burst reload") from weapons_)), 0))
+-- FIXME: lifetime = 1 is a special case for beam weapons...
+left join ratings "lifetime★" on ("lifetime★".n =                 round(    4 * log((select 1 + max("lifetime") - min("lifetime") from weapons_), 1 + "lifetime" - (select min("lifetime") from weapons_)), 0))
+left join ratings "shots/second★" on ("shots/second★".n =         round(    4 * log((select 1 + max("shots/second") - min("shots/second") from weapons_), 1 + "shots/second" - (select min("shots/second") from weapons_)), 0))
+left join ratings "energy/shot★" on ("energy/shot★".n =           round(4 - 4 * log((select 1 + max("energy/shot") - min("energy/shot") from weapons_), 1 + "energy/shot" - (select min("energy/shot") from weapons_)), 0))
+left join ratings "heat/shot★" on ("heat/shot★".n =               round(4 - 4 * log((select 1 + max("heat/shot") - min("heat/shot") from weapons_), 1 + "heat/shot" - (select min("heat/shot") from weapons_)), 0))
+left join ratings "recoil/shot★" on ("recoil/shot★".n =           round(4 - 4 * log((select 1 + max("recoil/shot") - min("recoil/shot") from weapons_), 1 + "recoil/shot" - (select min("recoil/shot") from weapons_)), 0))
+left join ratings "energy/s★" on ("energy/s★".n =                 round(4 - 4 * log((select 1 + max("energy/s") - min("energy/s") from weapons_), 1 + "energy/s" - (select min("energy/s") from weapons_)), 0))
+left join ratings "heat/s★" on ("heat/s★".n =                     round(4 - 4 * log((select 1 + max("heat/s") - min("heat/s") from weapons_), 1 + "heat/s" - (select min("heat/s") from weapons_)), 0))
+left join ratings "recoil/s★" on ("recoil/s★".n =                 round(4 - 4 * log((select 1 + max("recoil/s") - min("recoil/s") from weapons_), 1 + "recoil/s" - (select min("recoil/s") from weapons_)), 0))
+left join ratings "shield/s★" on ("shield/s★".n =                 round(    4 * log((select 1 + max("shield/s") - min("shield/s") from weapons_), 1 + "shield/s" - (select min("shield/s") from weapons_)), 0))
+left join ratings "discharge/s★" on ("discharge/s★".n =           round(    4 * log((select 1 + max("discharge/s") - min("discharge/s") from weapons_), 1 + "discharge/s" - (select min("discharge/s") from weapons_)), 0))
+left join ratings "hull/s★" on ("hull/s★".n =                     round(    4 * log((select 1 + max("hull/s") - min("hull/s") from weapons_), 1 + "hull/s" - (select min("hull/s") from weapons_)), 0))
+left join ratings "corrosion/s★" on ("corrosion/s★".n =           round(    4 * log((select 1 + max("corrosion/s") - min("corrosion/s") from weapons_), 1 + "corrosion/s" - (select min("corrosion/s") from weapons_)), 0))
+left join ratings "heat dmg/s★" on ("heat dmg/s★".n =             round(    4 * log((select 1 + max("heat dmg/s") - min("heat dmg/s") from weapons_), 1 + "heat dmg/s" - (select min("heat dmg/s") from weapons_)), 0))
+left join ratings "burn dmg/s★" on ("burn dmg/s★".n =             round(    4 * log((select 1 + max("burn dmg/s") - min("burn dmg/s") from weapons_), 1 + "burn dmg/s" - (select min("burn dmg/s") from weapons_)), 0))
+left join ratings "energy dmg/s★" on ("energy dmg/s★".n =         round(    4 * log((select 1 + max("energy dmg/s") - min("energy dmg/s") from weapons_), 1 + "energy dmg/s" - (select min("energy dmg/s") from weapons_)), 0))
+left join ratings "ion dmg/s★" on ("ion dmg/s★".n =               round(    4 * log((select 1 + max("ion dmg/s") - min("ion dmg/s") from weapons_), 1 + "ion dmg/s" - (select min("ion dmg/s") from weapons_)), 0))
+left join ratings "scrambling dmg/s★" on ("scrambling dmg/s★".n = round(    4 * log((select 1 + max("scrambling dmg/s") - min("scrambling dmg/s") from weapons_), 1 + "scrambling dmg/s" - (select min("scrambling dmg/s") from weapons_)), 0))
+left join ratings "slow dmg/s★" on ("slow dmg/s★".n =             round(    4 * log((select 1 + max("slow dmg/s") - min("slow dmg/s") from weapons_), 1 + "slow dmg/s" - (select min("slow dmg/s") from weapons_)), 0))
+left join ratings "disruption dmg/s★" on ("disruption dmg/s★".n = round(    4 * log((select 1 + max("disruption dmg/s") - min("disruption dmg/s") from weapons_), 1 + "disruption dmg/s" - (select min("disruption dmg/s") from weapons_)), 0))
+left join ratings "piercing★" on ("piercing★".n =                 round(    4 * log((select 1 + max("piercing") - min("piercing") from weapons_), 1 + "piercing" - (select min("piercing") from weapons_)), 0))
+left join ratings "fuel dmg/s★" on ("fuel dmg/s★".n =             round(    4 * log((select 1 + max("fuel dmg/s") - min("fuel dmg/s") from weapons_), 1 + "fuel dmg/s" - (select min("fuel dmg/s") from weapons_)), 0))
+left join ratings "leak dmg/s★" on ("leak dmg/s★".n =             round(    4 * log((select 1 + max("leak dmg/s") - min("leak dmg/s") from weapons_), 1 + "leak dmg/s" - (select min("leak dmg/s") from weapons_)), 0))
+left join ratings "push/s★" on ("push/s★".n =                     round(    4 * log((select 1 + max("push/s") - min("push/s") from weapons_), 1 + "push/s" - (select min("push/s") from weapons_)), 0))
+left join ratings "homing★" on ("homing★".n =                     round(    4 * log((select 1 + max("homing") - min("homing") from weapons_), 1 + "homing" - (select min("homing") from weapons_)), 0))
+left join ratings "strength★" on ("strength★".n =                 round(    4 * log((select 1 + max("strength") - min("strength") from weapons_), 1 + "strength" - (select min("strength") from weapons_)), 0))
+left join ratings "deterrence★" on ("deterrence★".n =             round(    4 * log((select 1 + max("deterrence") - min("deterrence") from weapons_), 1 + "deterrence" - (select min("deterrence") from weapons_)), 0))
+ORDER BY overall desc
+;
+
+
+
 drop view if exists ships★;
 create view ships★ as
 -- Use a CTE to hide things like "Shooting Star", but keep drones (0 seat, 0 fuel)
