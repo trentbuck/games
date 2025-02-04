@@ -4,7 +4,16 @@ import subprocess
 import tempfile
 import pathlib
 
-db_path = pathlib.Path('endless-sky.db').resolve()
+prefix = 'Endless Sky ver. '
+version, = [
+    line[len(prefix):].strip()
+    for line in subprocess.run(
+            ['endless-sky', '--version'],
+            check=True,
+            text=True,
+            stderr=subprocess.PIPE).stderr.splitlines()
+    if line.startswith(prefix)]
+db_path = pathlib.Path(f'endless-sky-{version}.db').resolve()
 
 if False:
 
