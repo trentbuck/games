@@ -77,6 +77,244 @@ left join ratings "heat generation★" on ("heat generation★".n = 4 - round(4 
 left join ratings "energy capacity★" on ("energy capacity★".n = round(4 * log((select 1 + max("energy capacity") - min("energy capacity") from power), 1 + "energy capacity" - (select min("energy capacity") from power)), 0))
 ORDER BY overall desc;
 
+drop view if exists reactor★;
+create view reactor★ as
+-- REACTORS
+select
+cast(1000*"energy generation"/1.0/-"outfit space"/"heat generation" as int) as "overall efficiency",
+cast(100*"energy generation"/1.0/-"outfit space" as int) as "space efficiency",
+cast(100*"energy generation"/1.0/"heat generation" as int) as "heat efficiency",
+ * from power
+ where "energy generation"
+--  and "space efficiency" between 15 and 99
+--  and "heat efficiency" between 20 and 99
+ -- order by 2 desc, 3 desc;
+ order by mass desc;
+
+-- BATTERIES
+drop view if exists batteries★;
+create view batteries★ as
+select
+cast("energy capacity"/1.0/-"outfit space" as int) as "space efficiency",
+ * from power
+--  where "energy capacity" and "space efficiency" between 300 and 1100
+ order by 1 desc;
+
+-- Ka'Het engines drain energy constantly, rather than only when they're running.
+-- This isn't shown in "endless-sky --engines", so manually fudge those columns.
+UPDATE engines SET "thrust energy/s" = 654 WHERE "thrust energy/s" = 0 AND name = 'Vareti Engine Block';
+UPDATE engines SET "thrust energy/s" = 409 WHERE "thrust energy/s" = 0 AND name = 'Telis Engine Nacelles';
+UPDATE engines SET "thrust energy/s" = 301 WHERE "thrust energy/s" = 0 AND name = 'Maeri Engine Nacelles';
+UPDATE engines SET "thrust energy/s" = 194 WHERE "thrust energy/s" = 0 AND name = 'Ka''het Sustainer Nacelles';
+UPDATE engines SET "thrust energy/s" = 194 WHERE "thrust energy/s" = 0 AND name = 'Ka''het Compact Engine';
+drop view if exists engines_grouped;
+create view engines_grouped as
+select
+ -- skipping afterburner in the rating system
+ cast(sum("thrust/s" + "turn/s") / - "outfit space" as int) AS "space efficiency",
+ cast(sum("thrust/s" + "turn/s") / sum("thrust energy/s" + "turn energy/s") as int) AS "energy efficiency",
+ cast(sum("thrust/s" + "turn/s") / sum("thrust heat/s" + "turn heat/s") as int) AS "heat efficiency",
+ case
+ when name like 'Nami %'              then 'Bunrodea Nami'
+ when name like 'Ooki %'              then 'Bunrodea Ooki'
+ when name like 'Subarashii %'        then 'Bunrodea Subarashii'
+ when name like 'Large %'             then 'Coalition Large'
+ when name like 'Small %'             then 'Coalition Small'
+ when name like '%Baelie%'            then 'Hai Baelie'
+ when name like '%Basrem%'            then 'Hai Basrem'
+ when name like '%Benga%'             then 'Hai Benga'
+ when name like '%Biroo%'             then 'Hai Biroo'
+ when name like '%Bondir%'            then 'Hai Bondir'
+ when name like '%Bufaer%'            then 'Hai Bufaer'
+ when name like 'A%12_ Atomic%'       then 'Human Atomic 12x'
+ when name like 'A25_ Atomic%'        then 'Human Atomic 25x'
+ when name like 'A37_ Atomic%'        then 'Human Atomic 37x'
+ when name like 'A52_ Atomic%'        then 'Human Atomic 52x'
+ when name like 'A86_ Atomic%'        then 'Human Atomic 86x'
+ when name like 'X1050 %'             then 'Human Ion 1050'
+ when name like 'X1_00 %'             then 'Human Ion 1x00'
+ when name like 'X2_00 %'             then 'Human Ion 2x00'
+ when name like 'X3_00 %'             then 'Human Ion 3x00'
+ when name like 'X4_00 %'             then 'Human Ion 4x00'
+ when name like 'X5_00 %'             then 'Human Ion 5x00'
+ when name like 'Chipmunk %'          then 'Human Plasma Chipmunk'
+ when name like 'Greyhound %'         then 'Human Plasma Greyhound'
+ when name like 'Impala %'            then 'Human Plasma Impala'
+ when name like 'Orca %'              then 'Human Plasma Orca'
+ when name like 'Tyrant %'            then 'Human Plasma Tyrant'
+ when name like 'Maeri %'             then 'Ka''het Maeri'
+ when name like 'Telis %'             then 'Ka''het Telis'
+ when name like 'Vareti %'            then 'Ka''het Vareti'
+ when name like 'Arkrof GP%'          then 'Korath Arkrof'
+ when name like '% (Asteroid Class)'  then 'Korath Asteroid'
+ when name like '% (Comet Class)'     then 'Korath Comet'
+ when name like 'Farves GP%'          then 'Korath Farves'
+ when name like 'Gaktem GP%'          then 'Korath Gaktem'
+ when name like '% (Lunar Class)'     then 'Korath Lunar'
+ when name like '% (Meteor Class)'    then 'Korath Meteor'
+ when name like 'Nelmeb GP%'          then 'Korath Nelmeb'
+ when name like '% (Planetary Class)' then 'Korath Planetary'
+ when name like '% (Stellar Class)'   then 'Korath Stellar'
+ when name like 'Pug Akfar %'         then 'Pug Akfar'
+ when name like 'Pug Cormet %'        then 'Pug Cormet'
+ when name like 'Pug Lohmar %'        then 'Pug Lohmar'
+ when name like 'Medium Graviton %'   then 'Quarg Medium'
+ when name like 'Anvil-Class%'        then 'Remnant Anvil'
+ when name like 'Crucible-Class%'     then 'Remnant Crucible'
+ when name like 'Forge-Class%'        then 'Remnant Forge'
+ when name like 'Smelter-Class%'      then 'Remnant Smelter'
+ when name like '%Aqra%'              then 'Successor Aqra'
+ when name like '%Chyyra%'            then 'Successor Chyyra'
+ when name like '%Niis%'              then 'Successor Niis'
+ when name like '%Veusa%'             then 'Successor Veusa'
+ when name like 'Type 1 %'            then 'Wanderer 1'
+ when name like 'Type 2 %'            then 'Wanderer 2'
+ when name like 'Type 3 %'            then 'Wanderer 3'
+ when name like 'Type 4 %'            then 'Wanderer 4'
+ when name like 'Ka''het Compact %'   then 'Ka''het Compact'
+ when name like 'Ka''het Sustainer %' then 'Ka''het Sustainer'
+
+-- Skipping these because ICBF?
+-- "Bellows-Class Afterburner",640000,8,-11,-11,0,0,0,0,0,0,0,0,0,675000,360,1080,78
+-- Afterburner,70000,10,-10,-10,0,0,0,0,0,0,0,0,0,202500,0,600,6
+-- "Caldera Afterburner",390000,37,-37,-37,0,0,0,0,0,0,0,0,0,648000,0,2520,30
+-- "Capybara Reverse Thruster",20000,20,-20,0,0,0,0,0,0,0,78300,60,108,0,0,0,0
+-- "Chiisana Rift Steering",201000,17,-17,-17,0,0,0,48510,156,60,0,0,0,0,0,0,0
+-- "Chiisana Rift Thruster",130000,11,-11,-11,41985,69,39,0,0,0,0,0,0,0,0,0,0
+-- "Fission Drive",2650000,71,-71,-38,96120,90.48,171.6,28782,35.1,81.9,0,0,0,0,0,0,0
+-- "Fusion Drive",80000000,480,-480,-230,974700,660,1980,224640,273,741,230040,294,798,0,0,0,0
+-- "Inductive Extractor",120000,12,-12,-12,-43200,-1800,360,0,0,0,0,0,0,0,0,0,0
+-- "Ionic Afterburner",340000,16,-16,-16,0,0,0,0,0,0,0,0,0,169560,306,240,1.8
+-- "Korath Ark'parat Steering",36000,12,-12,-12,0,0,0,21600,36,42,0,0,0,0,0,0,0
+-- "Korath Ark'torbal Thruster",40000,17,-17,-17,48060,66,60,0,0,0,0,0,0,0,0,0,0
+-- "Korath Jak'parat Steering",2740000,67,-67,-67,0,0,0,151200,186,474,0,0,0,0,0,0,0
+-- "Korath Jak'torbal Thruster",317000,89,-89,-89,340740,354,858,0,0,0,0,0,0,0,0,0,0
+-- "MH Blue-Class Steering",28000,24,-24,-24,0,0,0,29880,60,180,0,0,0,0,0,0,0
+-- "MH Blue-Class Thruster",32000,27,-27,-27,86400,120,150,0,0,0,0,0,0,0,0,0,0
+-- "MH Green-Class Steering",35000,28,-28,-28,0,0,0,37080,66,186,0,0,0,0,0,0,0
+-- "MH Green-Class Thruster",44000,32,-32,-32,108000,132,168,0,0,0,0,0,0,0,0,0,0
+-- "MH Red-Class Steering",49000,41,-41,-41,0,0,0,68040,150,720,0,0,0,0,0,0,0
+-- "MH Red-Class Thruster",50000,41,-41,-41,172800,300,600,0,0,0,0,0,0,0,0,0,0
+-- "Magnetoplasma Drive",27000,12,-12,-12,32400,36,18,16200,36,18,32400,36,18,0,0,0,0
+-- "R-180 RCS Thrusters",54000,18,-18,-18,0,0,0,45000,90,-180,32400,90,-180,0,0,0,0
+-- "R-360 RCS Thrusters",126000,36,-36,-36,0,0,0,102600,180,-360,64800,180,-360,0,0,0,0
+-- "R-720 RCS Thrusters",270000,72,-72,-72,0,0,0,221400,360,-540,129600,360,-540,0,0,0,0
+-- "RG15 Torch Steering",15000,25,-25,-25,0,0,0,25830,24,51,0,0,0,0,0,0,0
+-- "RG15 Torch Thruster",17000,31,-31,-31,62478,42,90,0,0,0,0,0,0,0,0,0,0
+-- "RG18 Torch Steering",32000,39,-39,-39,0,0,0,47070,39,90,0,0,0,0,0,0,0
+-- "RG18 Torch Thruster",38000,51,-51,-51,110160,75,174,0,0,0,0,0,0,0,0,0,0
+-- "RG3 Torch Steering",70000,64,-64,-64,0,0,0,90360,69,168,0,0,0,0,0,0,0
+-- "RG3 Torch Thruster",84000,83,-83,-83,194400,132,324,0,0,0,0,0,0,0,0,0,0
+-- "Remass Injector",90000,6,-6,-3,0,0,0,0,0,0,0,0,0,324000,180,-1080,14.4
+-- "Reverse Thruster",140000,22,-22,0,0,0,0,0,0,0,101016,108,210,0,0,0,0
+-- "SC-1 Plasma Engines",21200,21,-21,-21,35370,24,60,14400,21,48,0,0,0,0,0,0,0
+-- "SC-12 Plasma Steering",17000,19,-19,-19,0,0,0,26730,27,69,0,0,0,0,0,0,0
+-- "SC-12 Plasma Thruster",20900,25,-25,-25,73116,51,135,0,0,0,0,0,0,0,0,0,0
+-- "SC-14 Plasma Steering",41500,34,-34,-34,0,0,0,57420,60,177,0,0,0,0,0,0,0
+-- "SC-14 Plasma Thruster",52500,45,-45,-45,142560,102,297,0,0,0,0,0,0,0,0,0,0
+-- "SC-15 Plasma Thrusters",170400,112,-112,-112,262440,186,570,0,0,0,81900,87,267,0,0,0,0
+-- "Volcano Afterburner",70000,10,-10,-10,0,0,0,0,0,0,0,0,0,146340,0,600,7.5
+-- `Z-333 "Spark" Fusion Torch`,1800000,333,-33,-33,324000,540,2700,0,0,0,0,0,0,0,0,0,0
+-- `Z-3600 "Beam" Amat Torch`,300000000,3600,-360,-360,2.16e+06,900,5400,360000,540,3240,0,0,0,0,0,0,0
+-- `Z-666 "Zap" Fusion Torch`,3900000,666,-66,-66,756000,1080,5400,0,0,0,0,0,0,0,0,0,0
+-- `Z-999 "Arc" Fusion Torch`,6000000,999,-99,-99,1.296e+06,1620,8100,0,0,0,0,0,0,0,0,0,0
+
+
+ else 'FIXME'
+ end AS clade,
+ count(*) as parts,
+ sum(cost) as cost,
+ sum(mass) as mass,
+ sum("outfit space") as "outfit space",
+ sum("engine capacity") as "engine capacity",
+ sum("thrust/s") as "thrust/s",
+ sum("thrust energy/s") as "thrust energy/s",
+ sum("thrust heat/s") as "thrust heat/s",
+ sum("turn/s") as "turn/s",
+ sum("turn energy/s") as "turn energy/s",
+ sum("turn heat/s") as "turn heat/s",
+ sum("reverse thrust/s") as "reverse thrust/s",
+ sum("reverse energy/s") as "reverse energy/s",
+ sum("reverse heat/s") as "reverse heat/s",
+ sum("afterburner thrust/s") as "afterburner thrust/s",
+ sum("afterburner energy/s") as "afterburner energy/s",
+ sum("afterburner heat/s") as "afterburner heat/s",
+ sum("afterburner fuel/s") as "afterburner fuel/s"
+ from engines
+ group by clade
+ order by
+ ("space efficiency" + "energy efficiency" + "heat efficiency")/3.0 desc
+ -- "outfit space"
+ -- substr(clade, 0, instr(clade, ' ')), mass desc
+ -- mass desc
+ -- "space efficiency"/10 + "energy efficiency" + "heat efficiency" desc
+;
+
+
+
+drop view if exists engines_thrusters★;
+create view engines_thrusters★ as
+-- Use a CTE to hide an insane, unique, near-unobtainable item that is screwing all the stats
+WITH engines_ AS (SELECT * FROM engines WHERE name NOT IN ("Fusion Drive", '`Z-3600 "Beam" Amat Torch`') AND "thrust/s" > 0)
+select name
+     ,  round((0
+               + (4 - 4 * log((select 1 + max("cost") - min("cost") from engines_), 1 + "cost" - (select min("cost") from engines_)))
+               + (4 - 4 * log((select 1 + max("mass") - min("mass") from engines_), 1 + "mass" - (select min("mass") from engines_)))
+               + (4 * log((select 1 + max("outfit space") - min("outfit space") from engines_), 1 + "outfit space" - (select min("outfit space") from engines_)))
+               + (4 * log((select 1 + max("engine capacity") - min("engine capacity") from engines_), 1 + "engine capacity" - (select min("engine capacity") from engines_)))
+               + (4 * log((select 1 + max("thrust/s") - min("thrust/s") from engines_), 1 + "thrust/s" - (select min("thrust/s") from engines_)))
+               + (4 - 4 * log((select 1 + max("thrust energy/s") - min("thrust energy/s") from engines_), 1 + "thrust energy/s" - (select min("thrust energy/s") from engines_)))
+               + (4 - 4 * log((select 1 + max("thrust heat/s") - min("thrust heat/s") from engines_), 1 + "thrust heat/s" - (select min("thrust heat/s") from engines_)))
+--               + (4 * log((select 1 + max("turn/s") - min("turn/s") from engines_), 1 + "turn/s" - (select min("turn/s") from engines_)))
+--               + (4 - 4 * log((select 1 + max("turn energy/s") - min("turn energy/s") from engines_), 1 + "turn energy/s" - (select min("turn energy/s") from engines_)))
+--               + (4 - 4 * log((select 1 + max("turn heat/s") - min("turn heat/s") from engines_), 1 + "turn heat/s" - (select min("turn heat/s") from engines_)))
+--               + (4 * log((select 1 + max("reverse thrust/s") - min("reverse thrust/s") from engines_), 1 + "reverse thrust/s" - (select min("reverse thrust/s") from engines_)))
+--               + (4 - 4 * log((select 1 + max("reverse energy/s") - min("reverse energy/s") from engines_), 1 + "reverse energy/s" - (select min("reverse energy/s") from engines_)))
+--               + (4 - 4 * log((select 1 + max("reverse heat/s") - min("reverse heat/s") from engines_), 1 + "reverse heat/s" - (select min("reverse heat/s") from engines_)))
+--               + (4 * log((select 1 + max("afterburner thrust/s") - min("afterburner thrust/s") from engines_), 1 + "afterburner thrust/s" - (select min("afterburner thrust/s") from engines_)))
+--               + (4 - 4 * log((select 1 + max("afterburner energy/s") - min("afterburner energy/s") from engines_), 1 + "afterburner energy/s" - (select min("afterburner energy/s") from engines_)))
+--               + (4 - 4 * log((select 1 + max("afterburner heat/s") - min("afterburner heat/s") from engines_), 1 + "afterburner heat/s" - (select min("afterburner heat/s") from engines_)))
+--               + (4 - 4 * log((select 1 + max("afterburner fuel/s") - min("afterburner fuel/s") from engines_), 1 + "afterburner fuel/s" - (select min("afterburner fuel/s") from engines_)))
+        ) / 17.0 -- this is how many columns we're averaging
+        , 2)
+       AS overall
+     , "cost★".t as "cost"
+     , "mass★".t as "mass"
+     , "outfit space★".t as "outfit space"
+     , "engine capacity★".t as "engine capacity"
+     , "thrust/s★".t as "thrust/s"
+     , "thrust energy/s★".t as "thrust energy/s"
+     , "thrust heat/s★".t as "thrust heat/s"
+     , "turn/s★".t as "turn/s"
+     , "turn energy/s★".t as "turn energy/s"
+     , "turn heat/s★".t as "turn heat/s"
+     , "reverse thrust/s★".t as "reverse thrust/s"
+     , "reverse energy/s★".t as "reverse energy/s"
+     , "reverse heat/s★".t as "reverse heat/s"
+     , "afterburner thrust/s★".t as "afterburner thrust/s"
+     , "afterburner energy/s★".t as "afterburner energy/s"
+     , "afterburner heat/s★".t as "afterburner heat/s"
+     , "afterburner fuel/s★".t as "afterburner fuel/s"
+from engines_
+left join ratings "cost★" on ("cost★".n = round(4 - 4 * log((select 1 + max("cost") - min("cost") from engines_), 1 + "cost" - (select min("cost") from engines_)), 0))
+left join ratings "mass★" on ("mass★".n = round(4 - 4 * log((select 1 + max("mass") - min("mass") from engines_), 1 + "mass" - (select min("mass") from engines_)), 0))
+left join ratings "outfit space★" on ("outfit space★".n = round(4 * log((select 1 + max("outfit space") - min("outfit space") from engines_), 1 + "outfit space" - (select min("outfit space") from engines_)), 0))
+left join ratings "engine capacity★" on ("engine capacity★".n = round(4 * log((select 1 + max("engine capacity") - min("engine capacity") from engines_), 1 + "engine capacity" - (select min("engine capacity") from engines_)), 0))
+left join ratings "thrust/s★" on ("thrust/s★".n = round(4 * log((select 1 + max("thrust/s") - min("thrust/s") from engines_), 1 + "thrust/s" - (select min("thrust/s") from engines_)), 0))
+left join ratings "thrust energy/s★" on ("thrust energy/s★".n = round(4 - 4 * log((select 1 + max("thrust energy/s") - min("thrust energy/s") from engines_), 1 + "thrust energy/s" - (select min("thrust energy/s") from engines_)), 0))
+left join ratings "thrust heat/s★" on ("thrust heat/s★".n = round(4 - 4 * log((select 1 + max("thrust heat/s") - min("thrust heat/s") from engines_), 1 + "thrust heat/s" - (select min("thrust heat/s") from engines_)), 0))
+left join ratings "turn/s★" on ("turn/s★".n = round(4 * log((select 1 + max("turn/s") - min("turn/s") from engines_), 1 + "turn/s" - (select min("turn/s") from engines_)), 0))
+left join ratings "turn energy/s★" on ("turn energy/s★".n = round(4 - 4 * log((select 1 + max("turn energy/s") - min("turn energy/s") from engines_), 1 + "turn energy/s" - (select min("turn energy/s") from engines_)), 0))
+left join ratings "turn heat/s★" on ("turn heat/s★".n = round(4 - 4 * log((select 1 + max("turn heat/s") - min("turn heat/s") from engines_), 1 + "turn heat/s" - (select min("turn heat/s") from engines_)), 0))
+left join ratings "reverse thrust/s★" on ("reverse thrust/s★".n = round(4 * log((select 1 + max("reverse thrust/s") - min("reverse thrust/s") from engines_), 1 + "reverse thrust/s" - (select min("reverse thrust/s") from engines_)), 0))
+left join ratings "reverse energy/s★" on ("reverse energy/s★".n = round(4 - 4 * log((select 1 + max("reverse energy/s") - min("reverse energy/s") from engines_), 1 + "reverse energy/s" - (select min("reverse energy/s") from engines_)), 0))
+left join ratings "reverse heat/s★" on ("reverse heat/s★".n = round(4 - 4 * log((select 1 + max("reverse heat/s") - min("reverse heat/s") from engines_), 1 + "reverse heat/s" - (select min("reverse heat/s") from engines_)), 0))
+left join ratings "afterburner thrust/s★" on ("afterburner thrust/s★".n = round(4 * log((select 1 + max("afterburner thrust/s") - min("afterburner thrust/s") from engines_), 1 + "afterburner thrust/s" - (select min("afterburner thrust/s") from engines_)), 0))
+left join ratings "afterburner energy/s★" on ("afterburner energy/s★".n = round(4 - 4 * log((select 1 + max("afterburner energy/s") - min("afterburner energy/s") from engines_), 1 + "afterburner energy/s" - (select min("afterburner energy/s") from engines_)), 0))
+left join ratings "afterburner heat/s★" on ("afterburner heat/s★".n = round(4 - 4 * log((select 1 + max("afterburner heat/s") - min("afterburner heat/s") from engines_), 1 + "afterburner heat/s" - (select min("afterburner heat/s") from engines_)), 0))
+left join ratings "afterburner fuel/s★" on ("afterburner fuel/s★".n = round(4 - 4 * log((select 1 + max("afterburner fuel/s") - min("afterburner fuel/s") from engines_), 1 + "afterburner fuel/s" - (select min("afterburner fuel/s") from engines_)), 0))
+ORDER BY overall desc
+;
 
 drop view if exists engines★;
 create view engines★ as
