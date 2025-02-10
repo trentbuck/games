@@ -566,6 +566,17 @@ ORDER BY overall desc
 --select name, x.t from power join ratings x on (x.n = cast(10 * mass / (select max(mass) from power) as int));
 --
 --log((select max(mass) from power), mass)
+
+
+-- Try to provide a sort order where "medium warships" sort above "heavy freighters".
+DROP VIEW ship_categories;
+CREATE VIEW ship_categories AS
+SELECT max(deterrence) as max_deterrence, category
+FROM ships_loaded_variants
+-- skip some unique / unobtainable ships
+GROUP BY 2
+ORDER BY 1 DESC;
+
 '''
 
 with sqlite3.connect(db_path) as conn:
