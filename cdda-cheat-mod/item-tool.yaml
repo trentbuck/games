@@ -15,7 +15,10 @@
   longest_side: 1 cm
   price: 1 cent
   pocket_data:
-    - pocket_type: EBOOK
+    - pocket_type: E_FILE_STORAGE
+      ememory_max: 2 TB
+      etransfer_rate: 1 TB
+      e_port: phone
       rigid: true
       max_contains_volume: 1 ml
       max_contains_weight: 1 g
@@ -34,10 +37,15 @@
   use_action:
     - GUN_REPAIR                # small_repairkit
     - WASH_ALL_ITEMS            # wash_kit sponge washboard
-    - EINKTABLETPC              # bio_ar
-    - ELECTRICSTORAGE           # bio_ar
+# Removed in this? https://github.com/CleverRaven/Cataclysm-DDA/pull/79097
+#                  https://github.com/CleverRaven/Cataclysm-DDA/commit/457ec4dced6fdeeae083c380b0260aa57a84c15f
+#                  https://github.com/CleverRaven/Cataclysm-DDA/commit/9e6ea30c1f179b4d25e7d5e1afa75851c9fe0774
+#                  https://github.com/CleverRaven/Cataclysm-DDA/commit/e3e7ee0da253215c05a1d85145d274f68e642c64
+#   - EINKTABLETPC              # bio_ar
+#   - ELECTRICSTORAGE           # bio_ar
+#   - EBOOKREAD                 # bio_ar (requires pocket_data:pocket_type:EBOOK)
     - EBOOKSAVE                 # bio_ar (requires pocket_data:pocket_type:EBOOK)
-    - EBOOKREAD                 # bio_ar (requires pocket_data:pocket_type:EBOOK)
+    - E_FILE_DEVICE             # bio_ar
     - CAMERA                    # bio_ar (remember out-of-view monsters in "#" menu)
     - OXYTORCH                  # oxy_torch ("cut up metal" ≠ "cut metal" – this does locked doors)
     - TOWEL                     # towel
