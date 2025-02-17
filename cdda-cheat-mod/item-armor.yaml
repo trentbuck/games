@@ -126,8 +126,8 @@
 
   # https://docs.cataclysmdda.org/JSON_FLAGS.html#armor
   # https://docs.cataclysmdda.org/ARMOR_BALANCE_AND_DESIGN.html#layers
+  max_worn: 1
   flags:
-    - ONLY_ONE
     - TRADER_AVOID
     # https://cdda-guide.nornagon.net/item/debug_backpack
     - TARDIS
@@ -230,8 +230,8 @@
   #     specifically_covers: [torso_neck]
   #     layers: [BELTED]
   #     material: [{type: lycra}]
+  max_worn: 1
   flags:
-    - ONLY_ONE
     - TRADER_AVOID
     # https://cdda-guide.nornagon.net/item/phase_immersion_suit_on
     - RAD_PROOF
