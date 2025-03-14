@@ -1,10 +1,11 @@
 import json
-import random
-import sqlite3
-import logging
-import re
-import lxml.html
 import json
+import logging
+import lxml.html
+import random
+import re
+import sqlite3
+import sys
 
 import httpx
 
@@ -12,7 +13,7 @@ logging.basicConfig(level=logging.INFO)
 sess = httpx.Client(http2=True)
 sess.headers.update(
     headers={
-        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/115.0',
+        'user-agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0',
         'referer': 'https://howlongtobeat.com/'})
 
 
@@ -39,22 +40,52 @@ def fudge_json(j: dict) -> dict:
 with sqlite3.connect('all-games.db') as conn:
     rows = conn.execute(
         """
-        SELECT games.name FROM games
-        LEFT OUTER JOIN howlongtobeat ON (games.id = howlongtobeat.profile_steam)
-        WHERE howlongtobeat.profile_steam IS NULL  -- haven't already fetched it
-        AND price                                  -- skip free-to-play games
-        ORDER BY time desc
+        -- SELECT games.name FROM games
+        -- LEFT OUTER JOIN howlongtobeat ON (games.id = howlongtobeat.profile_steam)
+        -- WHERE howlongtobeat.profile_steam IS NULL  -- haven't already fetched it
+        -- AND price                                  -- skip free-to-play games
+        -- -- ORDER BY time desc
+        -- ORDER BY rating desc
+        SELECT name FROM what_game_next WHERE hltb IS NULL AND "$" IS NOT NULL
         """).fetchall()
     # random.shuffle(rows)
-    # for game_name, in rows:
-    import sys
-    for game_name in sys.argv[1:]:
+    game_names = sys.argv[1:] or [cell for cell, in rows]
+    for game_name in game_names:
         logging.debug('QUERY %s', game_name)
-        resp = sess.post('https://howlongtobeat.com/api/search/5fe4b12e81a8fb4c',
+        resp = sess.post('https://howlongtobeat.com/api/search/b9a3d7c054cc3099',
+                         # json={"searchTerms":["red",
+                         #                      "dead",
+                         #                      "redemption",
+                         #                      "2"],
+                         #       "searchOptions":{"games":{"platform":"PC",
+                         #                                 "sortCategory":"popular",
+                         #                                 "rangeCategory":"main",
+                         #                                 "rangeTime":{"min":None,
+                         #                                              "max":None},
+                         #                                 "gameplay":{"perspective":"",
+                         #                                             "flow":"",
+                         #                                             "genre":"",
+                         #                                             "subGenre":" "},
+                         #                                 "rangeYear":{"min":"",
+                         #                                              "max":""}}},
+                         #       "useCache":True},
+
+
                          json={"useCache": True,
                                # If there's e.g. Final Fantasy VII for both PS1 and PC,
                                # skip the former.
-                               "searchOptions": {"platform": "PC"},
+                               # UPDATE: as at December 2024, all this other crap is also necessary, else we get a 404 or 500.
+                               "searchOptions":{"games":{"platform":"PC",
+                                                         "sortCategory":"popular",
+                                                         "rangeCategory":"main",
+                                                         "rangeTime":{"min":None,
+                                                                      "max":None},
+                                                         "gameplay":{"perspective":"",
+                                                                     "flow":"",
+                                                                     "genre":"",
+                                                                     "subGenre":" "},
+                                                         "rangeYear":{"min":"",
+                                                                      "max":""}}},
                                # NOTE: may want to use "searchTerms": game_name.split(), e.g.
                                # INFO:root:RESULTS My Time at Portia 1
                                # INFO:root:RESULTS STAR WARS™ Jedi Knight: Jedi Academy™ 0   <---
@@ -68,7 +99,8 @@ with sqlite3.connect('all-games.db') as conn:
                                    .replace('®', '')
                                    .replace('™', '')
                                    .split()),
-                               })
+                               }
+                         )
         resp.raise_for_status()
         logging.info('RESULTS %s %s', game_name, len(resp.json()['data']))
         conn.executemany(
