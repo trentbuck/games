@@ -102,6 +102,22 @@ LEFT JOIN howlongtobeat ON (id = profile_steam)
 ORDER BY rating_fudged / (1.0 + (time_fudged / 60.0)) DESC;
 
 
+-- Because dealing with printf'd fields in sqlitebrowser is a shitshow.
+CREATE VIEW IF NOT EXISTS what_game_next_numeric AS
+SELECT cast(round(rating) as int) AS rating,
+       round(rating_fudged/(1.0 + time_fudged/60.0), 1) AS "rating/h",
+       CASE WHEN price THEN cast(round(price/100.0) as int) END AS "$",
+       CASE WHEN price THEN cast(round(price / 100.0 / (1.0 + time_fudged / 60.0)) as int) END AS "$/h",
+       round(time/60.0, 1) AS h,
+       CASE WHEN comp_all THEN cast(round(comp_all/3600.0) as int) END AS hltb,
+       CASE WHEN time AND comp_all THEN round((time/60.0)/(comp_all/3600.0), 2) END AS "done?",
+       id,
+       name
+FROM games_fudged
+LEFT JOIN howlongtobeat ON (id=profile_steam)
+ORDER BY "rating/h" DESC;
+
+
 -- What games, after 1 hour more play, will most improve (lower) by "Average price per hour" KPI?
 CREATE VIEW IF NOT EXISTS what_game_next_to_lower_my_KPI AS
 SELECT *
