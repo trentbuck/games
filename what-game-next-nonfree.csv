@@ -1462,7 +1462,7 @@ rating,rating/hour,$,$/hour,"$/hour (steamdb)",time,hltb,id,name
 87.8,57.89,7.5,14.52,7.50,"31 min","1.75 hours",1572040,"Through The Fragmentation"
 76.19,57.87,1.21,3.82,1.21,"19 min","4.72 hours",277430,"Halo: Spartan Assault"
 79.02,57.82,4.49,12.25,4.49,"22 min","12.67 hours",621810,"Strain Tactics"
-71.3,57.81,10.19,43.67,10.19,"14 min","22.20 hours",628670,Hellpoint
+71.3,57.81,10.19,43.67,10.19,"14 min",,628670,Hellpoint
 87.67,57.80,3.23,6.25,3.23,"31 min","3.77 hours",224460,Contrast
 68.4,57.80,21.95,119.73,21.95,"11 min","28.41 hours",324260,VoidExpanse
 73.21,57.80,1.19,4.46,1.19,"16 min","8.85 hours",7210,"Runaway: A Road Adventure"
@@ -2671,7 +2671,7 @@ rating,rating/hour,$,$/hour,"$/hour (steamdb)",time,hltb,id,name
 71.2,29.67,14.5,10.36,10.36,"1.40 hours","0.00 hours",921710,"Galaxy Squad"
 70.19,29.66,5.79,4.24,4.24,"1.37 hours","8.75 hours",871530,"Radio Commander"
 83.53,29.66,2.99,1.65,1.65,"1.82 hours","8.31 hours",15190,"Brothers in Arms: Road to Hill 30"
-87.85,29.61,4.3,2.19,2.19,"1.97 hours","11.31 hours",316790,"Grim Fandango Remastered"
+87.85,29.61,4.3,2.19,2.19,"1.97 hours",,316790,"Grim Fandango Remastered"
 73.41,29.56,2.95,1.99,1.99,"1.48 hours","19.11 hours",307670,"Hard West"
 67.92,29.53,17.1,13.15,13.15,"1.30 hours","30.67 hours",768520,"Red Solstice 2: Survivors"
 91.04,29.53,8.78,4.21,4.21,"2.08 hours","5.29 hours",368390,"The Darkside Detective"
@@ -2865,7 +2865,7 @@ rating,rating/hour,$,$/hour,"$/hour (steamdb)",time,hltb,id,name
 91.3,20.67,8.5,2.49,2.49,"3.42 hours","11.47 hours",410980,"Master of Orion 2"
 89.19,20.66,8.68,2.62,2.62,"3.32 hours","5.85 hours",1570010,"FAR: Changing Tides"
 81.09,20.62,4.3,1.47,1.47,"2.93 hours","8.64 hours",115120,"Iron Brigade"
-94.81,20.61,5.07,1.41,1.41,"3.60 hours","3.83 hours",206190,Gunpoint
+94.81,20.61,5.07,1.41,1.41,"3.60 hours",,206190,Gunpoint
 62.13,20.60,42.95,21.30,21.30,"2.02 hours","34.50 hours",910830,"Rebel Galaxy Outlaw"
 87.65,20.54,11.8,3.61,3.61,"3.27 hours","4.53 hours",323380,"The Magic Circle"
 69.94,20.47,2.25,0.93,0.93,"2.42 hours","0.00 hours",1980350,"Run Build Pew!"
@@ -3079,11 +3079,11 @@ rating,rating/hour,$,$/hour,"$/hour (steamdb)",time,hltb,id,name
 94.33,10.38,3.49,0.43,0.43,"8.08 hours","14.62 hours",379720,DOOM
 73.04,10.12,11.99,1.93,1.93,"6.22 hours","25.89 hours",750130,"The Sinking City"
 95.0,10.09,3.36,0.40,0.40,"8.42 hours","14.35 hours",203160,"Tomb Raider"
-67.93,9.97,4.99,0.86,0.86,"5.82 hours","44.00 hours",236150,"Starpoint Gemini 2"
+67.93,9.97,4.99,0.86,0.86,"5.82 hours",,236150,"Starpoint Gemini 2"
 85.64,9.96,2.77,0.36,0.36,"7.60 hours","9.18 hours",1170760,"XIII - Classic"
 62.49,9.95,5.9,1.12,1.12,"5.28 hours","6.93 hours",928990,Undungeon
 81.97,9.90,10.73,1.47,1.47,"7.28 hours","24.50 hours",289130,"ENDLESS™ Legend"
-73.54,9.85,6.99,1.08,1.08,"6.47 hours","10.57 hours",1573720,"Agatha Christie - Hercule Poirot: The First Cases"
+73.54,9.85,6.99,1.08,1.08,"6.47 hours",,1573720,"Agatha Christie - Hercule Poirot: The First Cases"
 78.82,9.83,7.48,1.07,1.07,"7.02 hours","14.47 hours",235600,"Tom Clancy's Splinter Cell Blacklist"
 76.93,9.70,84.95,12.25,12.25,"6.93 hours","29.04 hours",658260,"BLUE REFLECTION"
 32.68,9.66,8.99,3.77,3.77,"2.38 hours","18.82 hours",714370,"LEFT ALIVE™"
@@ -3320,14 +3320,14 @@ rating,rating/hour,$,$/hour,"$/hour (steamdb)",time,hltb,id,name
 89.64,1.81,8.49,0.17,0.17,"2.03 days","15.48 hours",312660,"Sniper Elite 4"
 93.21,1.81,7.98,0.16,0.16,"2.11 days","96.15 hours",22320,"The Elder Scrolls III: Morrowind"
 65.25,1.80,13.73,0.39,0.39,"1.47 days","23.76 hours",597820,BIOMUTANT
-71.42,1.79,7.49,0.19,0.19,"1.62 days","38.90 hours",419480,"Starpoint Gemini Warlords"
+71.42,1.79,7.49,0.19,0.19,"1.62 days",,419480,"Starpoint Gemini Warlords"
 89.29,1.78,14.5,0.30,0.30,"2.05 days","36.26 hours",32370,"STAR WARS™ Knights of the Old Republic™"
 94.97,1.72,7.47,0.14,0.14,"2.26 days","56.86 hours",22380,"Fallout: New Vegas"
 87.99,1.71,7.99,0.16,0.16,"2.11 days","20.82 hours",403640,"Dishonored 2"
 75.42,1.70,10.99,0.25,0.25,"1.80 days","41.41 hours",606880,GreedFall
 92.82,1.69,13.72,0.26,0.26,"2.24 days","33.89 hours",927380,"Yakuza Kiwami 2"
 83.57,1.68,4.49,0.09,0.09,"2.03 days","44.10 hours",268500,"XCOM 2"
-70.85,1.68,16.17,0.39,0.39,"1.72 days","32.16 hours",839770,"Phoenix Point"
+70.85,1.68,16.17,0.39,0.39,"1.72 days",,839770,"Phoenix Point"
 81.68,1.65,10.75,0.22,0.22,"2.02 days","0.00 hours",954870,"Astrox Imperium"
 72.79,1.63,2.9,0.07,0.07,"1.82 days","28.44 hours",65780,"Arma: Gold Edition"
 75.15,1.62,29.73,0.66,0.66,"1.89 days","34.62 hours",320240,"We Happy Few"
@@ -3351,7 +3351,7 @@ rating,rating/hour,$,$/hour,"$/hour (steamdb)",time,hltb,id,name
 56.53,1.21,13.49,0.29,0.29,"1.91 days","29.31 hours",2239550,"Watch Dogs: Legion"
 83.69,1.19,14.5,0.21,0.21,"2.88 days","18.50 hours",20510,"S.T.A.L.K.E.R.: Clear Sky"
 57.2,1.14,12.48,0.25,0.25,"2.05 days","39.88 hours",360430,"Mafia III: Definitive Edition"
-77.54,1.14,1.5,0.02,0.02,"2.80 days","31.82 hours",65790,"Arma: Cold War Assault"
+77.54,1.14,1.5,0.02,0.02,"2.80 days",,65790,"Arma: Cold War Assault"
 93.55,1.08,28.95,0.34,0.34,"3.58 days","22.34 hours",41700,"S.T.A.L.K.E.R.: Call of Pripyat"
 81.91,1.06,22.47,0.29,0.29,"3.19 days","26.55 hours",578650,"The Outer Worlds"
 75.37,1.05,4.49,0.06,0.06,"2.95 days","38.20 hours",921800,Encased
@@ -3379,7 +3379,7 @@ rating,rating/hour,$,$/hour,"$/hour (steamdb)",time,hltb,id,name
 84.63,0.61,6.58,0.05,0.05,"5.71 days","101.80 hours",250520,Underrail
 84.17,0.59,8.99,0.06,0.06,"5.89 days","40.94 hours",397540,"Borderlands 3"
 78.88,0.55,14.99,0.11,0.11,"5.93 days","54.65 hours",460930,"Tom Clancy's Ghost Recon® Wildlands"
-71.87,0.48,8.99,0.06,0.06,"6.23 days","43.80 hours",2231380,"Ghost Recon Breakpoint"
+71.87,0.48,8.99,0.06,0.06,"6.23 days",,2231380,"Ghost Recon Breakpoint"
 ,0.45,3.7,0.02,0.02,"6.41 days","25.84 hours",33910,"Arma 2"
 89.51,0.39,8.99,0.04,0.04,"9.50 days","29.28 hours",107410,"Arma 3"
 82.33,0.07,9.98,0.01,0.01,"48.64 days","79.23 hours",377160,"Fallout 4"
