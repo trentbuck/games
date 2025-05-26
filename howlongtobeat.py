@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 import json
 import json
 import logging
@@ -44,55 +45,60 @@ def fudge_json(j: dict) -> dict:
 with sqlite3.connect('all-games.db') as conn:
     rows = conn.execute(
         """
-        -- SELECT games.name FROM games
-        -- LEFT OUTER JOIN howlongtobeat ON (games.id = howlongtobeat.profile_steam)
-        -- WHERE howlongtobeat.profile_steam IS NULL  -- haven't already fetched it
+        SELECT games.name FROM games
+        LEFT OUTER JOIN howlongtobeat ON (games.id = howlongtobeat.profile_steam)
+        WHERE howlongtobeat.profile_steam IS NULL  -- haven't already fetched it
         -- AND price                                  -- skip free-to-play games
         -- -- ORDER BY time desc
-        -- ORDER BY rating desc
-        SELECT name FROM what_game_next WHERE hltb IS NULL AND "$" IS NOT NULL
+        ORDER BY time desc, "$" desc, rating desc
+        -- SELECT name FROM what_game_next_numeric WHERE hltb IS NULL AND "$" IS NOT NULL order by rating desc
+        -- SELECT name FROM what_game_next_numeric WHERE hltb IS NULL
+        -- SELECT name FROM what_game_next_to_lower_my_KPI WHERE hltb IS NULL AND "$" IS NOT NULL
         """).fetchall()
     # random.shuffle(rows)
     game_names = sys.argv[1:] or [cell for cell, in rows]
     for game_name in game_names:
         logging.debug('QUERY %s', game_name)
-        resp = sess.post('https://howlongtobeat.com/api/ouch/0980d1750bf5c22b',
-                         json={
-                             "searchType":"games",
-                             "searchTerms": (
-                                 game_name
-                                 .replace('®', '')
-                                 .replace('™', '')
-                                 .split()),
-                             "searchPage":1,
-                             "size":20,
-                             "searchOptions":{"games":{"userId":0,
-                                                       "platform":"",
-                                                       "sortCategory":"popular",
-                                                       "rangeCategory":"main",
-                                                       "rangeTime":{"min": None,
-                                                                    "max": None},
-                                                       "gameplay":{"perspective":"",
-                                                                   "flow":"",
-                                                                   "genre":"",
-                                                                   "difficulty":""},
-                                                       "rangeYear":{"min":"",
-                                                                    "max":""},
-                                                       "modifier":""},
-                                              "users":{"sortCategory":"postcount"},
-                                              "lists":{"sortCategory":"follows"},
-                                              "filter":"",
-                                              "sort":0,
-                                              "randomizer":0},
-                             "useCache":True}
-                         )
+        resp = sess.post(
+            # 'https://howlongtobeat.com/api/ouch/0980d1750bf5c22b',
+	    'https://howlongtobeat.com/api/seek/d4b2e330db04dbf3',
+            json={
+                "searchType":"games",
+                "searchTerms": (
+                    game_name
+                    .replace('®', '')
+                    .replace('™', '')
+                    .split()),
+                "searchPage":1,
+                "size":20,
+                "searchOptions":{"games":{"userId":0,
+                                          "platform":"",
+                                          "sortCategory":"popular",
+                                          "rangeCategory":"main",
+                                          "rangeTime":{"min": None,
+                                                       "max": None},
+                                          "gameplay":{"perspective":"",
+                                                      "flow":"",
+                                                      "genre":"",
+                                                      "difficulty":""},
+                                          "rangeYear":{"min":"",
+                                                       "max":""},
+                                          "modifier":""},
+                                 "users":{"sortCategory":"postcount"},
+                                 "lists":{"sortCategory":"follows"},
+                                 "filter":"",
+                                 "sort":0,
+                                 "randomizer":0},
+                "useCache":True}
+        )
         resp.raise_for_status()
         logging.info('RESULTS %s %s', game_name, len(resp.json()['data']))
+        # import pathlib; pathlib.Path('/tmp/tmp.json').write_text(json.dumps(resp.json()['data']))  # DEBUGGING
         conn.executemany(
             """
             INSERT INTO howlongtobeat (game_id, game_name, profile_steam, comp_main, comp_plus, comp_100, comp_all)
             VALUES (:game_id, :game_name, :profile_steam, :comp_main, :comp_plus, :comp_100, :comp_all)
-            ON CONFLICT DO NOTHING;
+            ON CONFLICT DO NOTHING; -- FIXME: should this be ON CONFLICT REPLACE??? --twb, May 2025
             """,
             map(fudge_json, resp.json()['data']))
         conn.commit()
@@ -140,8 +146,8 @@ example_reponse = {
             "count_retired": 5,
             "profile_dev": "Rabotiagi games",
             "profile_popular": 12,
-# As at October 2024, this is now gone...
-# I can see it at curl https://howlongtobeat.com/game/93960 | grep -Fw 1599020
+            # As at October 2024, this is now gone...
+            # I can see it at curl https://howlongtobeat.com/game/93960 | grep -Fw 1599020
             "profile_steam": 1232130,
             "profile_platform": "PC",
             "release_world": 2020
