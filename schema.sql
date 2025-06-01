@@ -4,6 +4,10 @@ DROP TABLE IF EXISTS games;
 CREATE TABLE games (id INTEGER PRIMARY KEY, rating REAL, price INTEGER, time INTEGER, name TEXT);
 
 
+-- FIXME: add this to stats:
+-- with cte1 as (select sum(time)/60.0 as total_hours, julianday() - julianday('2018-02-18') as days_since_account_created from games)
+-- select round(total_hours / days_since_account_created, 1) as average_hours_per_day_in_steam, * from cte1;
+
 CREATE VIEW IF NOT EXISTS stats AS
 SELECT (sum(time / 60.0)) AS total_playtime,
        (avg(time / 60.0)) AS average_playtime,
@@ -105,7 +109,55 @@ ORDER BY rating_fudged / (1.0 + (time_fudged / 60.0)) DESC;
 -- Because dealing with printf'd fields in sqlitebrowser is a shitshow.
 CREATE VIEW IF NOT EXISTS what_game_next_numeric AS
 SELECT cast(round(rating) as int) AS rating,
-       round(rating_fudged/(1.0 + time_fudged/60.0), 1) AS "rating/h",
+       -- This is a simple scale where playing for 1 hour halves its rating.
+       -- This meant stuff with very long playtimes went to the very bottom, even though
+       -- a 90% rated game with 100 hours is probably still more fun to REPLAY than a 20% rated game with 0.5 hours.
+       -- Here is a synthetic example:
+       --  sqlite> create temporary table games_fudged (time_fudged I, rating I, name S);
+       --  sqlite> insert into games_fudged values (0, 90, 'great unplayed game'), (100*60, 90, 'great finished game'), (60, 90, 'great started game'), (0, 70, 'good unplayed game'), (100*60, 70, 'good finished game'), (60, 70, 'good started game'), (0, 30, 'trash unplayed game'), (100*60, 30, 'trash finished game'), (60, 90, 'trash started game');
+       --  sqlite> update games_fudged set rating = 30 where name like 'trash%';
+       --  sqlite> update games_fudged set time_fudged = 6 where name like '%started%'; -- 6 minutes, not 60 minutes
+       --  sqlite> select new-old as "δ", * from (select rating, round(rating/(1+log(60, 1+time_fudged)), 1) AS "new", round(rating/(1.0 + time_fudged/60.0), 1) as old, round(time_fudged/60.0, 1) as h, name from games_fudged) order by new desc;
+       --  δ      rating  new   old   h      name
+       --  -----  ------  ----  ----  -----  -------------------
+       --  0.0    90      90.0  90.0  0.0    great unplayed game
+       --  0.0    70      70.0  70.0  0.0     good unplayed game
+       --  -20.8  90      61.0  81.8  0.1    great started game
+       --  -16.2  70      47.4  63.6  0.1     good started game
+       --  0.0    30      30.0  30.0  0.0    trash unplayed game
+       --  27.9   90      28.8  0.9   100.0  great finished game
+       --  21.7   70      22.4  0.7   100.0   good finished game
+       --  -7.0   30      20.3  27.3  0.1    trash started game
+       --  9.3    30      9.6   0.3   100.0  trash finished game
+
+       -- And using real data as examples (trying to pick {good,ok,shit} {unplayed,finished,played-to-death}):
+       -- sqlite>select new-old as "δ", * from (select cast(rating_fudged as int) as rating, round(rating_fudged/(1+log(60, 1+time_fudged)), 1) AS "new", round(rating_fudged/(1.0 + time_fudged/60.0), 1) as old, round(time_fudged/60.0,1) as h, name from games_fudged where name in ('Fallout 4', 'Portal 2', 'Syberia 2', 'Just Cause 4', 'ZOMBI', 'Home', 'Arma Tactics', 'Sacred 3', 'Stranded')) order by old desc;
+       -- δ      rating  new   old   h       name
+       -- -----  ------  ----  ----  ------  ------------
+       -- -10.6  82      70.9  81.5  0.0     Syberia 2
+       -- -7.3   65      35.1  42.4  0.5     Home
+       -- -5.0   38      33.0  38.0  0.0     Stranded
+       -- 30.1   97      37.3  7.2   12.7    Portal 2
+       -- 18.9   62      24.3  5.4   10.7    ZOMBI
+       -- 8.2    28      11.4  3.2   7.9     Sacred 3
+       -- 11.0   34      12.3  1.3   25.4    Arma Tactics
+       -- 19.3   61      20.1  0.8   71.0    Just Cause 4
+       -- 22.0   82      22.1  0.1   1167.5  Fallout 4
+       -- sqlite> select new-old as "δ", * from (select cast(rating_fudged as int) as rating, round(rating_fudged/(1+log(60, 1+time_fudged)), 1) AS "new", round(rating_fudged/(1.0 + time_fudged/60.0), 1) as old, round(time_fudged/60.0,1) as h, name from games_fudged where name in ('Fallout 4', 'Portal 2', 'Syberia 2', 'Just Cause 4', 'ZOMBI', 'Home', 'Arma Tactics', 'Sacred 3', 'Stranded')) order by new desc;
+       -- δ      rating  new   old   h       name
+       -- -----  ------  ----  ----  ------  ------------
+       -- -10.6  82      70.9  81.5  0.0     Syberia 2
+       -- 30.1   97      37.3  7.2   12.7    Portal 2
+       -- -7.3   65      35.1  42.4  0.5     Home
+       -- -5.0   38      33.0  38.0  0.0     Stranded
+       -- 18.9   62      24.3  5.4   10.7    ZOMBI
+       -- 22.0   82      22.1  0.1   1167.5  Fallout 4
+       -- 19.3   61      20.1  0.8   71.0    Just Cause 4
+       -- 11.0   34      12.3  1.3   25.4    Arma Tactics
+       -- 8.2    28      11.4  3.2   7.9     Sacred 3
+
+       -- round(rating_fudged/(1.0 + time_fudged/60.0), 1) AS "rating/h",
+       round(rating_fudged/(1.0 + log(60, time_fudged)), 1) AS "rating/h",
        CASE WHEN price THEN cast(round(price/100.0) as int) END AS "$",
        CASE WHEN price THEN cast(round(price / 100.0 / (1.0 + time_fudged / 60.0)) as int) END AS "$/h",
        round(time/60.0, 1) AS h,
@@ -116,6 +168,10 @@ SELECT cast(round(rating) as int) AS rating,
 FROM games_fudged
 LEFT JOIN howlongtobeat ON (id=profile_steam)
 ORDER BY "rating/h" DESC;
+
+
+CREATE VIEW IF NOT EXISTS what_game_next_numeric_nonfree AS
+SELECT * FROM what_game_next_numeric WHERE "$" IS NOT NULL;
 
 
 -- What games, after 1 hour more play, will most improve (lower) by "Average price per hour" KPI?
