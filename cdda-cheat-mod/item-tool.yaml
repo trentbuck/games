@@ -167,7 +167,7 @@
     - UNBREAKABLE
     - USES_NEARBY_AMMO          # for repair_{fabric,metal}
   charges_per_use: 0            # for repair_{fabric,metal}
-  ammo: [water]                 # for repair_{fabric,metal}
+  tool_ammo: water              # for repair_{fabric,metal}
   use_action:
     # NOTE: materials MUST be explicitly listed.
     #       Otherwise "% > repair" offers this tool, but then
