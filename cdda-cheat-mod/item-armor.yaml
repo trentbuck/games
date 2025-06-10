@@ -300,18 +300,17 @@
     # - PARAIMMUNE
     # - IMMUNE_SPOIL
 
-  relic_data:
-    passive_effects:
-      # NOTE: I could inline the enchantments directly here.
-      #       The are outline only so they are visible in-game in the
-      #       item inspector (and in "@" under EFFECTS).
-      - id: ench_bloody_mess_twb
-      - id: ench_bionic_power_twb
-      - id: ench_climate_control_all_permanent
-      # - id: ench_dampened_steps_twb
-      - id: ench_digestion_recycler_twb
-      - id: ench_targeting_recoil_twb
-      - id: ench_memory_twb
+  passive_effects:
+    # NOTE: I could inline the enchantments directly here.
+    #       The are outline only so they are visible in-game in the
+    #       item inspector (and in "@" under EFFECTS).
+    - id: ench_bloody_mess_twb
+    - id: ench_bionic_power_twb
+    - id: ench_climate_control_all_permanent
+    # - id: ench_dampened_steps_twb
+    - id: ench_digestion_recycler_twb
+    - id: ench_targeting_recoil_twb
+    - id: ench_memory_twb
 
 
 - id: ench_bloody_mess_twb
@@ -377,7 +376,7 @@
 
 
 # This pair of enhancements gives a pretty huge boost to how long you can go without eating/drinking.
-# I have left it off for now (in amulet_of_yendor relic_data).
+# I have left it off for now (in amulet_of_yendor passive_effects).
 - id: ench_digestion_recycler_twb
   type: enchantment
   name:
