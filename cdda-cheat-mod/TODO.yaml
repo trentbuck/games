@@ -7,9 +7,13 @@
     - RAD_DETECT
     - SWIM_GOGGLES
     - ELECTRIC_IMMUNE
+    - EMP_ENERGYDRAIN_IMMUNE
+    - CALORIE_BURN
     - GAS_PROOF
     - PSYSHIELD_PARTIAL
     - PADDED
+    - THERMAL_VISION_GOOD_PASSIVE
+    - ELECTRIC_VISION
     # This is WAY too annoying.
     # - GNV_EFFECT
     # https://cdda-guide.nornagon.net/item/robofac_armor_anchor_on

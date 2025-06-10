@@ -252,6 +252,7 @@
         # Regular shot isn't that interesting, but
         # dragon shot works like an incendiary grenade, but more directional.
         # Very nice for dismissing a large crowd.
+        # UPDATE: dragon shot is completely nerfed in 0.I.
         - item: shot_dragon
           count: 50
         # When there's a batch of like 20+ weak zombies packed together,
@@ -324,6 +325,8 @@
         # UPDATE: rm88 is gone in 0.I!
         # UPDATE: rm614 is gone in 0.I!
         # UPDATE: 250/500 round magazines are gone in 0.I!
+        #
+        # Table below based on https://cdda-guide.nornagon.net/item/556
         #
         # ====== =========== ===== ========== ====== ===== ====
         # damage penetration range dispersion recoil noise item

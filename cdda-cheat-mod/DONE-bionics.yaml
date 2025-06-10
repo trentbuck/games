@@ -10,7 +10,9 @@
 # for convenience it might be best to just keep that implant.
 # Also, bio_lockpick doesn't currently conflict with any mutations, which
 # is/was a major reason to avoid them.
-# - type: TOOL
+# - type: ITEM
+#   subtypes:
+#    - TOOL
 #   qualities:
 #     - [LOCKPICK, 40]
 #   flags:

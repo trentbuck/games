@@ -1,5 +1,7 @@
 - id: sonic_screwdriver
-  type: TOOL
+  type: ITEM
+  subtypes:
+   - TOOL
   name:
     str: sonic screwdriver
   description:
@@ -140,7 +142,9 @@
 #         Also note that there exists id:drink_screwdriver in the game already.
 #         I thought about making this copy-from that, but I'm worried I'd accidentally drink my tool.
 - id: tonic_screwdriver
-  type: TOOL
+  type: ITEM
+  subtypes:
+   - TOOL
   name:
     str: tonic screwdriver
   description:
@@ -241,7 +245,9 @@
 #
 # See also NOTES-illumination.csv
 - id: Fiat_500_lux_off
-  type: TOOL
+  type: ITEM
+  subtypes:
+   - TOOL
   name:
     str: Fiat 500 Lux (off)
     str_pl: Fiat 500 Luxes (off)
@@ -263,7 +269,9 @@
   price: 1 cent
 - id: Fiat_500_lux_on
   copy-from: Fiat_500_lux_off
-  type: TOOL
+  type: ITEM
+  subtypes:
+   - TOOL
   name:
     str: Fiat 500 Lux (on)
     str_pl: Fiat 500 Luxes (on)

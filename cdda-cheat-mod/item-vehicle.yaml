@@ -8,7 +8,9 @@
 #   • folded_bicycle (0.G and later)
 #   • folded_skateboard_generic (0.H and later)
 - id: folded_unicycle_twb
-  type: TOOL
+  type: ITEM
+  subtypes:
+   - TOOL
   copy-from: generic_folded_vehicle
   name:
     str: folded Unicycle

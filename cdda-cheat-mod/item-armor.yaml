@@ -22,7 +22,9 @@
 #           https://cdda-guide.nornagon.net/item/trenchcoat_survivor
 #           https://cdda-guide.nornagon.net/item/debug_backpack
 - id: plot_armor
-  type: ARMOR
+  type: ITEM
+  subtypes:
+   - ARMOR
   name:
     str: Zagreb armor
   symbol: "["
@@ -210,7 +212,9 @@
 # So e.g. RAD_RESIST on plot armor, and RAD_PROOF + DIMENSIONAL_ANCHOR on the amulet?
 # I am using an amulet because basically nothing (just lanyard & pro camera) occupy the torso_neck slot.
 - id: amulet_of_yendor
-  type: ARMOR
+  type: ITEM
+  subtypes:
+   - ARMOR
   name:
     str: amulet of Yendor
   symbol: "["

@@ -4,7 +4,9 @@
 # then I end up swapping to a mop to clear that away.
 # It'd be nice if my gun had a mop attachment to do that continuously...
 - id: gun_mop
-  type: GUNMOD
+  type: ITEM
+  subtypes:
+   - GUNMOD
   copy-from: match_trigger
   name:
     str: prehensile snout
@@ -49,7 +51,9 @@
     - sub2000_folding_mechanism
     - sub2000cqb_suppressor
 - id: sub2000cqb_suppressor
-  type: GUNMOD
+  type: ITEM
+  subtypes:
+   - GUNMOD
   copy-from: mp5sd_suppressor
   name:
     str: SUB CQB integral suppressor
@@ -59,7 +63,9 @@
 # https://cdda-guide.nornagon.net/item/riv_suppressor?v=0.G
 - id: riv_suppressor_twb
   copy-from: suppressor
-  type: GUNMOD
+  type: ITEM
+  subtypes:
+   - GUNMOD
   name:
     str: RK6S34 suppressor
   description:
