@@ -119,7 +119,7 @@
 # Armored enemies are relatively rare, so
 # it makes sense to optimize mainly for fast anti-agile weapons.
 # The monomolecular blade might be abother candidate.
-- type: GENERIC
+- type: ITEM
   # id: kylie
   # name:
   #   str: buloke kylie
