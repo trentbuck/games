@@ -9,7 +9,9 @@
     - dda
     # Not actually needed, but these are all things I always want.
     - no_npc_food
-    - no_fungal_growth
+    # https://github.com/CleverRaven/Cataclysm-DDA/commits/master/data/mods/no_fungal_growth
+    # https://github.com/CleverRaven/Cataclysm-DDA/pull/79801
+    # - no_fungal_growth
     - personal_portal_storms
     - speedydex
     # Especially for Bloody Mess, which I have now added to amulet_of_yendor
