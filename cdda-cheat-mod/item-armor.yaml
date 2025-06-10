@@ -215,6 +215,7 @@
   type: ITEM
   subtypes:
    - ARMOR
+   - ARTIFACT
   name:
     str: amulet of Yendor
   symbol: "["
