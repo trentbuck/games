@@ -35,7 +35,7 @@
 # No info about the suppressor itself.
 - id: ksub2000cqb
   type: ITEM
-  subtype:
+  subtypes:
     - GUN
   copy-from: ksub2000
   name:
