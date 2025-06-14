@@ -1,0 +1,115 @@
+Author: Trent W. Buck <trentbuck@gmail.com>
+Description: give wimpy difficulty a cheating start
+ When you set your difficulty to "wimpy", this will:
+ Max out your stats (beyond the 60-80 maximum trainable level).
+ Give useful skills (but not all of them, so the menu stays bearable).
+ Give you the best melee weapon.
+ Give you the best gun (by far) and about 600 rounds of ammo.
+ Give you a couple of stacks of medkits.
+ Unlock (but not equip) the best armour (that's the var= at the end).
+ Note that your gun will still break after ~6 mags (~256 rounds).
+ Drop it on the ground and use v > Gun Expert to fix it.
+ Likewise to repair your melee, use v > Master Techie.
+References:
+ https://www.youtube.com/watch?v=RjMQ2q_nsh8
+ https://store.steampowered.com/app/652410/Brigand_Oaxaca/
+ https://laughingcoyote.net/brigand
+
+---
+Origin: (upstream|backport|vendor|other), (<patch-url>|commit:<commit-id>)
+Bug: <upstream-bugtracker-url>
+Bug-Debian: https://bugs.debian.org/<bugnumber>
+Bug-Ubuntu: https://launchpad.net/bugs/<bugnumber>
+Forwarded: (no|not-needed|<patch-forwarded-url>)
+Applied-Upstream: <version>, (<commit-url>|commit:<commid-id>)
+Reviewed-By: <name and email of someone who approved/reviewed the patch>
+Last-Update: 2025-06-14
+
+
+diff --git a/mnt/c/Program Files (x86)/Steam/steamapps/common/Brigand/Assets/BRIGAND - OAXACA/Scripts/difficulty.bsl.~1~ b/mnt/c/Program Files (x86)/Steam/steamapps/common/Brigand/Assets/BRIGAND - OAXACA/Scripts/difficulty.bsl
+index 09379b7..da94621 100755
+--- a/mnt/c/Program Files (x86)/Steam/steamapps/common/Brigand/Assets/BRIGAND - OAXACA/Scripts/difficulty.bsl.~1~	
++++ b/mnt/c/Program Files (x86)/Steam/steamapps/common/Brigand/Assets/BRIGAND - OAXACA/Scripts/difficulty.bsl	
+@@ -10,6 +10,82 @@ if_choice=1
+     reset
+   endif
+   var=127,0
++  skill=vitality,100
++  skill=willpower,100
++  skill=agility,60
++  skill=strength,90
++  skill=survival,90
++  skill=stealth,90
++  skill=charisma,90
++  skill=pistols,90
++  skill=rifles,90
++  skill=medicine,90
++  skill=chemistry,90
++  skill=hardware,90
++  skill=software,90
++  ability=bandage,1
++  ability=born leader,1
++  ability=cook meat,1
++  ability=detect motive,1
++  ability=gun expert,1
++  ability=immunization,1
++  ability=intimidate,1
++  ability=feather fall,1
++  ability=la mordida,1
++  ability=master of shadows,1
++  ability=master techie,1
++  ability=meditation,1
++  ability=medkit efficiency,1
++  ability=medkit mastery,1
++  ability=negotiator,1
++  ability=pharmaceuticals,1
++  ability=speed strike,1
++  moneyup=10000
++  give=katana
++  give=baronar
++  give=ammo6mm
++  give=ammo6mm
++  give=ammo6mm
++  give=ammo6mm
++  give=ammo6mm
++  give=ammo6mm
++  give=ammo6mm
++  give=ammo6mm
++  give=ammo6mm
++  give=ammo6mm
++  give=ammo6mm
++  give=ammo6mm
++  give=ammo6mm
++  give=ammo6mm
++  give=ammo6mm
++  give=ammo6mm
++  give=ammo6mm
++  give=ammo6mm
++  give=ammo6mm
++  give=ammo6mm
++  give=medkit
++  give=medkit
++  give=medkit
++  give=medkit
++  give=medkit
++  give=medkit
++  give=medkit
++  give=medkit
++  give=medkit
++  give=medkit
++  give=medkit
++  give=medkit
++  give=medkit
++  give=medkit
++  give=medkit
++  give=medkit
++  give=medkit
++  give=medkit
++  give=medkit
++  give=medkit
++  var=12,1
++  var=13,1
++  var=14,2
+   exit
+ endif
+ if_choice=2
