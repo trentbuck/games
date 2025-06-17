@@ -1,49 +1,49 @@
 $	Model	Type	Source	Release
 
 25000	1987 Pontiac Firebird Trans Am GTA	Retro Muscle	Autoshow, Wheelspin
-25000	1988 Chevrolet Monte Carlo Super Sport	Retro Muscle	Autoshow, Wheelspin
+x	1988 Chevrolet Monte Carlo Super Sport	Retro Muscle	Autoshow, Wheelspin
 25000	1993 Nissan 240SX SE	Retro Sports Cars	Autoshow, Wheelspin
 25000	1995 BMW M5	Retro Saloons	Autoshow, Wheelspin
-25000	1997 Honda Civic Type R	Retro Hot Hatch	Autoshow
+x	1997 Honda Civic Type R	Retro Hot Hatch	Autoshow
 25000	1997 Lexus SC300	Retro Sports Cars	Autoshow, Wheelspin
-25000	1998 Nissan Silvia K's Aero	Retro Sports Cars	Autoshow, Wheelspin
-25000	1998 Volkswagen Gti VR6 Mk3	Retro Hot Hatch	Autoshow, Wheelspin
-25000	2003 Honda S2000	Modern Sports Cars	Autoshow, Wheelspin
-25000	2004 Honda Civic Type-R	Retro Hot Hatch	Autoshow
-25000	2009 Ford Focus RS	Super Hot Hatch	Autoshow, Wheelspin
+x	1998 Nissan Silvia K's Aero	Retro Sports Cars	Autoshow, Wheelspin
+x	1998 Volkswagen Gti VR6 Mk3	Retro Hot Hatch	Autoshow, Wheelspin
+x	2003 Honda S2000	Modern Sports Cars	Autoshow, Wheelspin
+x	2004 Honda Civic Type-R	Retro Hot Hatch	Autoshow
+x	2009 Ford Focus RS	Super Hot Hatch	Autoshow, Wheelspin
 25000	2009 Honda S2000 CR	Modern Sports Cars	Autoshow, Wheelspin
 25000	2010 Ford Crown Victoria Police Interceptor	Retro Muscle	Autoshow, Wheelspin
 25000	2015 Polaris RZR XP 1000 EPS	UTV's	Autoshow, Wheelspin
-27000	2006 Mitsubishi Lancer Evolution IX MR	Modern Rally	Autoshow, Wheelspin
+x	2006 Mitsubishi Lancer Evolution IX MR	Modern Rally	Autoshow, Wheelspin
 x	1993 Ford SVT Cobra R	Retro Muscle	Autoshow, Wheelspin
 28000	1999 Mitsubishi Lancer Evolution VI GSR	Retro Rally	Autoshow, Wheelspin
 28000	2008 Renault Mégane R26.R	Super Hot Hatch	Autoshow, Wheelspin
 29000	2013 Renault Clio R.S. 200 EDC	Hot Hatch	Autoshow, Wheelspin
-30000	1993 Renault Clio Williams	Retro Hot Hatch	Autoshow, Wheelspin
+z30000	1993 Renault Clio Williams	Retro Hot Hatch	Autoshow, Wheelspin
 30000	1997 Land Rover Defender 90	Pickups & 4x4s	Autoshow, Wheelspin
-30000	2003 BMW M5	Retro Saloons	Autoshow, Wheelspin
+x	2003 BMW M5	Retro Saloons	Autoshow, Wheelspin
 30000	2003 Ford Focus RS	Hot Hatch	Autoshow, Wheelspin
-31000	2004 Mitsubishi Lancer Evolution VIII MR	Modern Rally	Autoshow, Wheelspin
+x	2004 Mitsubishi Lancer Evolution VIII MR	Modern Rally	Autoshow, Wheelspin
 31000	2008 SUBARU Impreza WRX STI	Modern Rally	Autoshow, Wheelspin
-32000	2013 SUBARU BRZ	Modern Sports Cars	Autoshow, Wheelspin
+x	2013 SUBARU BRZ	Modern Sports Cars	Autoshow, Wheelspin
 33000	2005 BMW M3	Retro Saloons	Autoshow, Wheelspin
 35000	1955 Chevrolet 150 Utility Sedan	Rods and Customs	Autoshow, Wheelspin
-35000	1972 Reliant Supervan III	Cult Cars	Autoshow, Wheelspin
+x	1972 Reliant Supervan III	Cult Cars	Autoshow, Wheelspin
 35000	1979 Chevrolet Camaro Z28	Classic Muscle	Autoshow, Wheelspin
 35000	1989 Porsche 944 Turbo	Retro Sports Cars	Autoshow, Wheelspin
 35000	1997 BMW M3	Retro Saloons	Autoshow, Wheelspin
 35000	2000 Nissan Silvia Spec-R	Retro Sports Cars	Autoshow, Wheelspin
-35000	2002 Chevrolet Corvette Z06	Retro Muscle	Autoshow, Wheelspin
-37000	1997 Nissan Skyline GT-R V-Spec	Retro Sports Cars	Autoshow, Wheelspin
-37000	2018 Renault Megane R.S.	Super Hot Hatch	Autoshow, Wheelspin
-38000	1975 Ford Bronco	Pickups & 4x4s	Autoshow, Wheelspin
-38000	1998 Toyota Supra RZ	Retro Sports Cars	Autoshow
+x	2002 Chevrolet Corvette Z06	Retro Muscle	Autoshow, Wheelspin
+x	1997 Nissan Skyline GT-R V-Spec	Retro Sports Cars	Autoshow, Wheelspin
+x	2018 Renault Megane R.S.	Super Hot Hatch	Autoshow, Wheelspin
+x	1975 Ford Bronco	Pickups & 4x4s	Autoshow, Wheelspin
+x	1998 Toyota Supra RZ	Retro Sports Cars	Autoshow
 38000	2016 Honda Civic Type R	Super Hot Hatch	Autoshow
-39000	2018 MINI John Cooper Works Countryman ALL4	Sports Utility Heroes	Autoshow, Wheelspin
+x	2018 MINI John Cooper Works Countryman ALL4	Sports Utility Heroes	Autoshow, Wheelspin
 40000	1963 Volkswagen Type 2 De Luxe	Cult Cars	Autoshow
-40000	2010 Nissan 370Z	Modern Sports Cars	Autoshow, Wheelspin
+x	2010 Nissan 370Z	Modern Sports Cars	Autoshow, Wheelspin
 40000	2018 Ford Mustang GT	Modern Muscle	Autoshow, Wheelspin
-42000	2011 Audi RS 3 Sportback	Super Hot Hatch	Autoshow, Wheelspin
+x	2011 Audi RS 3 Sportback	Super Hot Hatch	Autoshow, Wheelspin
 42000	2011 Ford F-150 SVT Raptor	Pickups & 4x4s	Autoshow, Wheelspin
 43000	2008 Mitsubishi Lancer Evolution X GSR	Modern Rally	Autoshow, Wheelspin
 45000	1995 Chevrolet Corvette ZR-1	Retro Muscle	Autoshow, Wheelspin
@@ -53,7 +53,7 @@ x	1993 Ford SVT Cobra R	Retro Muscle	Autoshow, Wheelspin
 46000	2017 Chevrolet Colorado ZR2	Pickups & 4x4s	Autoshow, Wheelspin
 47000	2017 Ram 2500 Power Wagon	Pickups & 4x4s	Autoshow, Wheelspin
 48000	1965 Pontiac GTO	Classic Muscle	Autoshow, Wheelspin
-50000	1972 Hoonigan Chevrolet Napalm Nova	Classic Muscle	Autoshow, Wheelspin
+x	1972 Hoonigan Chevrolet Napalm Nova	Classic Muscle	Autoshow, Wheelspin
 50000	1973 Land Rover Range Rover	Pickups & 4x4s	Autoshow, Wheelspin
 x	2011 Ford Transit SuperSportVan	Vans & Utility	Autoshow, Wheelspin
 50000	2012 Jeep Wrangler Rubicon	Pickups & 4x4s	Autoshow, Wheelspin
@@ -71,12 +71,12 @@ x	2015 Ford Falcon GT F 351	Modern Muscle	Autoshow, Wheelspin
 63000	2017 Ford F-150 Raptor	Pickups & 4x4s	Autoshow, Wheelspin
 65000	1970 Chevrolet El Camino Super Sport 454	Vans & Utility	Autoshow
 65000	2013 Mercedes-Benz A 45 AMG	Super Hot Hatch	Autoshow, Wheelspin
-65000	2016 Cadillac ATS-V	Modern Muscle	Autoshow, Wheelspin
+x	2016 Cadillac ATS-V	Modern Muscle	Autoshow, Wheelspin
 66000	1987 Ford Sierra Cosworth RS500	Retro Saloons	Autoshow, Wheelspin
 66000	1992 Ford Escort RS Cosworth	Retro Rally	Autoshow, Wheelspin
 69000	2016 BMW M2 Coupé	Super Saloons	Autoshow, Wheelspin
 70000	1991 BMW M3	Retro Saloons	Autoshow, Wheelspin
-70000	2018 Dodge Durango SRT	Sports Utility Heroes	Autoshow, Wheelspin
+x	2018 Dodge Durango SRT	Sports Utility Heroes	Autoshow, Wheelspin
 70000	2020 Ford Super Duty F-450 DRW Platinum	Pickups & 4x4s	Autoshow, Wheelspin
 73000	1973 Ford Escort RS1600	Classic Rally	Autoshow, Wheelspin
 73000	2018 Jeep Grand Cherokee Trackhawk	Sports Utility Heroes	Autoshow, Wheelspin
@@ -129,7 +129,7 @@ x	2015 Ford Falcon GT F 351	Modern Muscle	Autoshow, Wheelspin
 130000	1987 Buick Regal GNX	Retro Muscle	Autoshow, Wheelspin
 132000	2017 Nissan GT-R (R35)	Modern Supercars	Autoshow, Wheelspin
 133000	2015 Land Rover Range Rover Sport SVR	Sports Utility Heroes	Autoshow, Wheelspin
-135000	2019 Porsche Macan Turbo	Sports Utility Heroes	Autoshow, Wheelspin
+x	2019 Porsche Macan Turbo	Sports Utility Heroes	Autoshow, Wheelspin
 140000	1993 Porsche 968 Turbo S	Retro Sports Cars	Autoshow, Wheelspin
 150000	1956 Chevrolet 'Barbie Movie' Corvette EV	Rods and Customs	Autoshow	Series 22
 150000	1967 Chevrolet Corvette Stingray 427	Classic Muscle	Autoshow, Wheelspin
@@ -139,7 +139,7 @@ x	2015 Ford Falcon GT F 351	Modern Muscle	Autoshow, Wheelspin
 150000	2007 Peugeot 207 Super 2000	Rally Monsters	Autoshow, Wheelspin
 150000	2011 Hot Wheels Bone Shaker	Rods and Customs	Autoshow
 150000	2012 Mercedes-Benz C 63 AMG Coupe Black Series	Super Saloons	Autoshow, Wheelspin
-150000	2014 Porsche 911 Turbo S	Modern Supercars	Autoshow, Wheelspin
+x	2014 Porsche 911 Turbo S	Modern Supercars	Autoshow, Wheelspin
 150000	2016 Lotus 3-Eleven	Track Toys	Autoshow, Wheelspin
 150000	2017 Porsche Panamera Turbo	Super Saloons	Autoshow, Wheelspin
 150000	2018 Dodge Challenger SRT Demon	Modern Muscle	Autoshow, Wheelspin
@@ -147,7 +147,7 @@ x	2015 Ford Falcon GT F 351	Modern Muscle	Autoshow, Wheelspin
 155000	2009 Audi RS 6	Super Saloons	Autoshow, Wheelspin
 156000	2010 Maserati Gran Turismo S	GT Cars	Autoshow, Wheelspin
 160000	1971 Plymouth Cuda 426 Hemi	Classic Muscle	Autoshow, Wheelspin
-165000	1987 Mercedes-Benz AMG Hammer Coupe	Retro Saloons	Autoshow, Wheelspin
+x	1987 Mercedes-Benz AMG Hammer Coupe	Retro Saloons	Autoshow, Wheelspin
 174000	1997 Lamborghini Diablo SV	Retro Supercars	Autoshow, Wheelspin
 175000	1983 Audi Sport quattro	Retro Rally	Autoshow, Wheelspin
 175000	2018 Mercedes-AMG GT 4-Door Coupe	Super Saloons	Autoshow, Wheelspin
@@ -167,7 +167,7 @@ x	2015 Ford Falcon GT F 351	Modern Muscle	Autoshow, Wheelspin
 225000	2009 Ferrari 458 Italia	Modern Supercars	Autoshow, Wheelspin
 230000	1969 Ford Mustang Boss 302	Classic Muscle	Autoshow, Wheelspin
 235000	2016 Porsche 911 GT3 RS	Track Toys	Autoshow, Wheelspin
-240000	1959 Porsche 356 A 1600 Super	Rare Classics	Autoshow, Wheelspin
+x	1959 Porsche 356 A 1600 Super	Rare Classics	Autoshow, Wheelspin
 240000	2012 Porsche 911 GT2 RS	Track Toys	Autoshow, Wheelspin
 240000	2013 Aston Martin V12 Vantage S	Super GT	Autoshow, Wheelspin
 242000	2016 Audi R8 V10 plus	Modern Supercars	Autoshow, Wheelspin
@@ -208,7 +208,7 @@ x	2015 Ford Falcon GT F 351	Modern Muscle	Autoshow, Wheelspin
 500000	2007 Formula Drift #117 599 GTB Fiorano	Drift Cars	Autoshow, Wheelspin
 500000	2015 Ferrari F12tdf	Super GT	Autoshow, Wheelspin
 500000	2015 Mercedes-Benz #24 Tankpool24 Racing Truck	Trucks	Autoshow, Wheelspin
-500000	2016 RJ Anderson #37 Polaris RZR-Rockstar Energy Pro 2 Truck	Unlimited Offroad	Autoshow, Wheelspin
+x	2016 RJ Anderson #37 Polaris RZR-Rockstar Energy Pro 2 Truck	Unlimited Offroad	Autoshow, Wheelspin
 500000	2017 Ford #25 'Brocky' Ultra4 Bronco RTR	Unlimited Offroad	Autoshow, Wheelspin
 500000	2017 Ford M-Sport Fiesta RS	Rally Monsters	Autoshow, Wheelspin
 500000	2017 Volkswagen #34 Volkswagen Andretti Rallycross Beetle	Rally Monsters	Autoshow, Wheelspin
@@ -339,8 +339,8 @@ x	2015 Ford Falcon GT F 351	Modern Muscle	Autoshow, Wheelspin
 	2017 Alpine A110	Modern Sports Cars	Backstage, Wheelspin, Seasonal
 	2017 Aston Martin Vanquish Zagato Coupe	Super GT	Backstage, Seasonal	Series 36
 	2018 ATS GT	Modern Supercars	Seasonal	Series 6
-	2021 Alumicraft #122 Class 1 Buggy	Unlimited Buggies	Autoshow DLC	Rally Adventure, Expansions Bundle
-	2022 Alumicraft #6165 Trick Truck	Unlimited Offroad	Autoshow DLC	Rally Adventure, Expansions Bundle
+x	2021 Alumicraft #122 Class 1 Buggy	Unlimited Buggies	Autoshow DLC	Rally Adventure, Expansions Bundle
+x	2022 Alumicraft #6165 Trick Truck	Unlimited Offroad	Autoshow DLC	Rally Adventure, Expansions Bundle
 	2022 Aston Martin Valkyrie AMR Pro	Extreme Track Toys	Backstage, Seasonal	Series 31
 	2022 Extreme E #125 ABT Cupra XE	Unlimited Offroad	Seasonal	Series 10
 	2022 Extreme E #22 JBXE	Unlimited Offroad	Seasonal	Series 10
@@ -356,13 +356,13 @@ x	2015 Ford Falcon GT F 351	Modern Muscle	Autoshow, Wheelspin
 	1965 Toyota Sports 800	Classic Sports Cars	Seasonal	Series 17
 	1966 Chevrolet Nova Super Sport	Classic Muscle	Seasonal	Series 27
 	1966 Volkswagen Double Cab Pick-Up	Vans & Utility	Seasonal	Series 31
-	1967 FordRacing Escort Mk1	Classic Rally	Barn Find
+x	1967 FordRacing Escort Mk1	Classic Rally	Barn Find
 	1967 Mercedes-Benz 280 SL	Rare Classics	Backstage, Seasonal	Series 29
 	1968 Ford Mustang GT 2+2 Fastback	Classic Muscle	Barn Find
 	1968 Lancia Fulvia Coupe Rallye 1.6 HF	Classic Rally	Backstage, Seasonal	Series 31
 	1968 Plymouth Barracuda Formula-S	Classic Muscle	Seasonal	Series 9
 	1968 Pontiac Firebird	Classic Muscle	Seasonal	Series 27
-	1968 Renault 4L Export	Cult Cars	Barn Find
+x	1968 Renault 4L Export	Cult Cars	Barn Find
 	1969 FIAT Dino 2.4 Coupe	Classic Sports Cars	Backstage, Seasonal
 	1969 Ferrari Dino 246 GT	Rare Classics	Backstage, Wheelspin, Seasonal
 	1969 Hot Wheels Twin Mill	Rods and Customs	Wheelspin, Seasonal
@@ -398,7 +398,7 @@ x	2015 Ford Falcon GT F 351	Modern Muscle	Autoshow, Wheelspin
 	1992 Mercedes-Benz 500 E	Retro Saloons	Seasonal	Series 31
 	1992 Mitsubishi Galant VR-4	Retro Rally	Backstage, Seasonal	Series 17
 	1993 Jaguar XJ220	Retr Supercars	Wheelspin, Seasonal
-	1993 McLaren F1	Retro Supercars	Backstage, Wheelspin, Seasonal
+x	1993 McLaren F1	Retro Supercars	Backstage, Wheelspin, Seasonal
 	1994 Ford Supervan 3 'Donut Media Edition'	Track Toys	Accolade	Series 22
 	1995 Ford Mustang SVT Cobra R	Retro Muscle	Seasonal	Series 43
 	1995 Mitsubishi Lancer Evolution III GSR	Retro Rally	Backstage, Seasonal	Series 38
@@ -488,7 +488,7 @@ x	2015 Ford Falcon GT F 351	Modern Muscle	Autoshow, Wheelspin
 	2018 Porsche Macan LPR Rally Raid	Offroad	Wheelspin, Seasonal
 	2019 Ford Ranger Raptor	Pickups & 4x4s	Wheelspin, Seasonal
 	2019 Hennessey Camaro Exorcist	Track Toys	Accolade	Series 23
-	2019 Jimco #240 Fastball Racing Spec Trophy Truck	Unlimited Offroad	Autoshow DLC	Rally Adventure, Expansions Bundle
+x	2019 Jimco #240 Fastball Racing Spec Trophy Truck	Unlimited Offroad	Autoshow DLC	Rally Adventure, Expansions Bundle
 	2019 Porsche #70 Porsche Motorsport 935	Extreme Track Toys	Seasonal	Series 20
 	2019 Porsche 911 GT3 RS Forza Edition	Rally Monsters	Car Collection
 	2019 RAESR Tachyon Speed	Hypercars	Seasonal
@@ -497,7 +497,7 @@ x	2015 Ford Falcon GT F 351	Modern Muscle	Autoshow, Wheelspin
 	2020 Ferrari SF90 Stradale	Hypercars	Seasonal	Series 7
 	2020 Hyundai I30 N	Super Hot Hatch	Seasonal	Series 30
 	2020 Jaguar F-Type SVR	GT Cars	Seasonal	Series 32
-	2020 Jimco #179 Hammerhead Class 1	Unlimited Buggies	Autoshow DLC	Rally Adventure, Expansions Bundle
+x	2020 Jimco #179 Hammerhead Class 1	Unlimited Buggies	Autoshow DLC	Rally Adventure, Expansions Bundle
 	2020 Lynk & Co #100 Cyan Racing 03	Track Toys	Seasonal	Series 14
 	2020 MG #20 MG6 XPower	Track Toys	Backstage, Seasonal	Series 16
 	2020 Nissan GT-R NISMO (R35)	Track Toys	Backstage, Seasonal	Series 5
@@ -516,7 +516,7 @@ x	2015 Ford Falcon GT F 351	Modern Muscle	Autoshow, Wheelspin
 	2021 McLaren 765LT	Track Toys	Backstage, Seasonal	Series 6
 	2021 Mercedes-AMG GT Black Series	Track Toys	Seasonal	Series 22
 	2021 Mercedes-AMG SL 63	Super Saloons	Backstage, Seasonal	Series 31
-	2021 Polaris RZR Pro XP Factory Racing Limited Edition	UTV's	Autoshow DLC	Rally Adventure, Expansions Bundle
+x	2021 Polaris RZR Pro XP Factory Racing Limited Edition	UTV's	Autoshow DLC	Rally Adventure, Expansions Bundle
 	2021 Polaris RZR Pro XP Ultimate	UTV's	Seasonal	Series 18
 	2021 Porsche 911 GT3	Track Toys	Backstage, Seasonal	Series 8
 	2021 RJ Anderson #37 Polaris RZR Pro 4 Truck	Unlimited Offroad	Autoshow DLC	Rally Adventure, Expansions Bundle
@@ -529,7 +529,7 @@ x	2015 Ford Falcon GT F 351	Modern Muscle	Autoshow, Wheelspin
 	2022 Cadillac CT4-V Blackwing	Modern Muscle	Seasonal	Series 19
 	2022 Cadillac CT5-V Blackwing	Modern Muscle	Seasonal	Series 19
 	2022 Ford Bronco Raptor	Pickups & 4x4s	Seasonal	Series 26
-	2022 Ford F-150 Lightning Platinum	Pickups & 4x4s	Autoshow DLC	Rally Adventure, Expansions Bundle
+x	2022 Ford F-150 Lightning Platinum	Pickups & 4x4s	Autoshow DLC	Rally Adventure, Expansions Bundle
 	2022 Ford Focus ST	Super Hot Hatch	Backstage, Seasonal	Series 37
 	2022 GMC HUMMER EV Pickup	Pickups & 4x4s	Backstage, Seasonal	Series 21
 	2022 Gordon Murray Automotive T.50	Hypercars	Backstage, Seasonal	Series 28
@@ -540,7 +540,7 @@ x	2015 Ford Falcon GT F 351	Modern Muscle	Autoshow, Wheelspin
 	2022 Lynk & Co 02 Hatchback	Hot Hatch	Seasonal	Series 30
 	2022 MG MG7	Super Saloons	Seasonal	Series 30
 	2022 Mazda MX-5 Miata RF	Modern Sports Cars	Backstage, Seasonal	Series 36
-	2022 Porsche Mission R	Extreme Track Toys	Backstage, Seasonal	Series 20
+x	2022 Porsche Mission R	Extreme Track Toys	Backstage, Seasonal	Series 20
 	2022 Rivian R1S	Sports Utility Heroes	Backstage, Seasonal	Series 25
 	2022 Rivian R1T	Pickups & 4x4s	Seasonal	Series 25
 	2022 SUBARU BRZ	Modern Sports Cars	Seasonal	Series 28
