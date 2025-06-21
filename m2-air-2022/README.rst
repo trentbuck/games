@@ -39,7 +39,7 @@ Things I tried:
 • Asus Transformer TF101 (tegra2 arm tablet + clamshell keyboard/battery dock) (**fuck Nvidia**)
 • Acer C720 & C730 (ChromeOS replaces the netbook market)
 • Thinkpad T490s (Amazon EC2 web UI was OOMing chrome on my chromebook, so I gave up and bought a "maximally normie" laptop)
-• Pinephone (running pmOS + phosh
+• Pinephone (running pmOS + phosh)
 • iPhone SE 2022 (my dumb phone died one day, so I tried a "maximally normie" smartphone, and it mostly worked out)
 
 Things I didn't try
@@ -259,3 +259,26 @@ https://arstechnica.com/gadgets/2016/06/a-zfs-developers-analysis-of-the-good-an
 The ZFS guy complained that they hadn't implemented transparent compression, even though it's fucking easy to do.
 
 Later I found https://en.wikipedia.org/wiki/Apple_File_System#Compression and went "oh OK I guess it was implemented since I last checked" – but #macos says this is not the case.
+
+
+Steam
+====================
+
+| 23:17 <twb> Wow classy.  So Steam Client Beta has a arm64 build.  But you can't try it without installing Rosetta (Apple's equivalent of qemu-user-x86_64 + x86-64 standard libraries).  And because Rosetta is a .pkg, uninstalling it is *just not supporterd at all*.
+| 23:18 <twb> The only way to uninstall a .pkg is basically to say "what are all files created/overwritten by this .pkg?  rm them"
+| 23:18 <twb> Still.  After like 25 years of this OS existing.
+| 23:18 <twb> I remember 25 years ago on my mac mini, I had space to install XCode *or* Xorg, but not both, and they were both .pkg files, so after installing one, it was too late, there was no way to install the other
+
+
+| 00:10 <twb> Yeah so it looks like there's not yet any way to ask even steamdb.info "what architectures is this compiled for?"  You can look at the free-form text that the licensor types in at the bottom of the sale page and some of them will say "requires intel" or "requires intel or silicon universal binary" but since it's free-form there's no consistency and no search/filter
+| 00:15 <twb> it's so weird how this screen will "full screen" things but still leave space for the menu bar at the top, even though it's hidden
+| 00:16 <twb> screenshot hotkey doesn't work inside a fullscreen game (balatro)
+| 00:17 <twb> steam one does tho
+| 00:35 <twb> OK so with balatro running, which is 100MB unity game with native arm64 build, activity monitor estimates 10h24m @ 88% charge, so... about 12 hours with a *super basic* game running
+| 00:35 <twb> That's kinda sucky
+
+
+Miscellaneous
+====================
+
+| 23:28 <twb> Wow, macOS has *no* way to play Ogg Vorbis music out of the box?
