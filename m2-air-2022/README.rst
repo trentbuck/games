@@ -8,7 +8,7 @@ What I want & need
 
 Since about 2003 I wanted a "convergence desktop", i.e.
 I carry around a (trusted & trustworthy) smartphone.
-When working normally at a desk, it uses an external keyboard/monitor/mouse.
+When working normally at a desk, it uses an external keyboard/monitor/mouse (completely replacing a laptop/desktop).
 
 Ideally *all* of these goals are met:
 
@@ -180,3 +180,82 @@ Initial Setup
   | REDACTED> macOS does not lend itself to full keyboard control.
   | twb> And yet weirdly the macbooks don't have touchscreens
   | REDACTED> Modern Apple is stupid Apple. It died when Steve did.
+
+
+Browsing
+====================
+
+* FIXME: how do I make https://en.wikipedia.org/wiki/Special:Search/%s the default search engine?
+  In other browsers, the modern advice is to just browse to wikipedia and then go to the address bar, and it'll offer to add the wikipedia as a search engine.
+  It seems this doesn't exist on Safari?
+
+  https://en.wikipedia.org/wiki/Help:Searching_from_a_web_browser
+
+  That says "type 'wiki foo' to search wikipedia for foo", but that does not work for me as at 2025Q2.  They talk about Safari 8 which I think is very old?
+
+  https://en.wikipedia.org/wiki/OpenSearch_(specification)#Support → "This will not affect the ability to manually add an OpenSearch engine from a website[9]"
+
+  I found this but I do not fucking like having to hack this in AT ALL.  Also given the age, it probably predates "V3 Manifest" and "all safari extensions must be compiled into native macos apps" stuff.
+  https://github.com/MentalGear/OpenSearchSafari
+
+* FIXME: fuck me, there are ads.  Like... at all.
+
+  Hrm, so on macOS, Safari does not support any of: Privacy Badger, uBlock Origin, Firefox Focus -- the last one is what works on iOS outside of Europe.
+  And firefox-esr isn't in the first-party app store -- the one that security updates apply automatically from.
+
+  | 00:54 <twb> also ew, safari isn't blocking ads by default
+  | 00:54 <REDACTED1> Never has.
+  | 00:55 <twb> yeah I forgot I had to do something to make ads blocked on iOS too
+  | 00:56 <REDACTED1> twb: Use another browser & add your choice of blocker, or use AdGuard if you want to keep using Safari.
+  | 00:56 <twb> right
+  | 00:56 <REDACTED1> AdGuard is a 'network filter' that plugs in at the OS level (an adjunct to the network stack).
+  | 00:57 <REDACTED2> Or pihole that works on the network level and blocks ads in all your devices.
+  | 00:57 <REDACTED1> I use Orion (the *other* WebKit browser) these days. Very good blocking.
+  | 07:28 <twb> Weird.  I was looking at AdGuard which was mentioned earlier -- its homepage says "free and open source", but doesn't link to a git repo anywhere AFAICT
+  | 07:30 <twb> Just guessing it was github worked
+  | 07:30 <REDACTED2> Only some products from Adguard are open source...
+  | 07:31 <twb> Well, that one said "free and open source" and didn't link to the source
+  | 07:32 <REDACTED2> https://adguard.com/en/blog/adguard-open-source-policy.html
+  | 07:32 <REDACTED2> https://adguard.com/en/adguard-browser-extension/overview.html
+  | 07:32 <twb> It looks like safari already has basically the equivalent of chromium's "v3 manifest to kill ad blockers" thing
+  | 07:32 <REDACTED2> It does link them here..
+  | 07:32 <twb> REDACTED2: thanks
+  | 07:33 <twb> I somehow ended up on uh... https://adguard.com/en/adguard-safari/overview.html
+  | 07:34 <twb> Does macOS have an equivalent of /etc/hosts, so you can just dump a bunch of deliberately-wrong DNS resolution in there?
+  | 07:34 <twb> Looks like yes
+  | 07:35 <twb> Although possibly HTTP clients bypass it and do DOT by now
+  | 07:36 <REDACTED2> The v3 manifest "killing" ad blockers is a years old exageration, reality is most casual users won't notice any diff...
+  | 07:36 <REDACTED2> https://old.reddit.com/r/uBlockOrigin/comments/1j37112/ublock_origin_lite_is_like_95_percent_as_good_as/
+
+  :EFF Privacy Badger: https://github.com/EFForg/privacybadger/issues/549#issuecomment-2945008056 → we are blocked by Safari bugs
+  :Firefox Focus: https://support.mozilla.org/en-US/questions/1279485 → Firefox Focus is iOS/Android-only
+  :uBlock Origin: https://github.com/uBlockOrigin/uBlock-issues/issues/1123#issuecomment-926733561 → necessary WebExtensions APIs aren't supported (as at 2021)
+  :uBlock Origin Lite: https://github.com/uBlockOrigin/uBOL-home/issues/52 → https://github.com/uBlockOrigin/uBOL-home#ubo-lite → https://testflight.apple.com/join/JjTcThrV → looks like this is in open beta!
+
+  See also citation from Wikipedia https://www.zdnet.com/article/apple-neutered-ad-blockers-in-safari-but-unlike-chrome-users-didnt-say-a-thing/
+
+  See also how Apple *wants* you to create Safari ad blockers as native macOS apps: https://developer.apple.com/documentation/SafariServices/creating-a-content-blocker
+
+  See also how UBOL is different from UBO: https://github.com/uBlockOrigin/uBOL-home/wiki/Frequently-asked-questions-(FAQ)#filtering-capabilities-which-cant-be-ported-to-mv3
+
+
+Doing My Actual Job
+====================
+
+* Debian is in the Microsoft Store, but not in the Apple App Store :-/
+* Also missing:
+  * alpinelinux
+  * firefox esr
+  * emacs
+  * libvirt / virt-manager / virt-viewer
+
+* FIXME: are there options that are less completely shit than homebrew yet?  What are they?
+
+
+ZFS & backups
+====================
+https://arstechnica.com/gadgets/2016/06/a-zfs-developers-analysis-of-the-good-and-bad-in-apples-new-apfs-file-system/
+
+The ZFS guy complained that they hadn't implemented transparent compression, even though it's fucking easy to do.
+
+Later I found https://en.wikipedia.org/wiki/Apple_File_System#Compression and went "oh OK I guess it was implemented since I last checked" – but #macos says this is not the case.
