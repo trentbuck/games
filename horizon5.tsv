@@ -1,37 +1,5 @@
 $	Year	Model	Type	Source	Release
 
-65000	1970	Chevrolet El Camino Super Sport 454	Vans & Utility	Autoshow
-65000	2013	Mercedes-Benz A 45 AMG	Super Hot Hatch	Autoshow, Wheelspin
-78000	2012	Mercedes-Benz SLK 55 AMG	Modern Sports Cars	Autoshow, Wheelspin
-105000	2013	Mercedes-Benz E 63 AMG	Super Saloons	Autoshow, Wheelspin
-105000	2018	BMW M5	Super Saloons	Autoshow, Wheelspin
-105000	2018	Chevrolet Camaro ZL1 1LE	Track Toys	Autoshow, Wheelspin
-125000	2009	Chevrolet Corvette ZR1	Modern Muscle	Autoshow, Wheelspin
-130000	1977	Holden Torana A9X	Classic Muscle	Autoshow, Wheelspin
-133000	2015	Land Rover Range Rover Sport SVR	Sports Utility Heroes	Autoshow, Wheelspin
-150000	1990	Mercedes-Benz 190E 2.5-16 Evolution II	Retro Saloons	Autoshow, Wheelspin
-175000	2018	Mercedes-AMG GT 4-Door Coupe	Super Saloons	Autoshow, Wheelspin
-235000	2016	Porsche 911 GT3 RS	Track Toys	Autoshow, Wheelspin
-242000	2016	Audi R8 V10 plus	Modern Supercars	Autoshow, Wheelspin
-260000	2018	McLaren 600LT Coupe	Track Toys	Autoshow, Wheelspin
-275000	2018	Lamborghini Huracán Performante	Track Toys	Autoshow, Wheelspin
-300000	1978	Hoonigan Ford Escort RS1800	Rally Monsters	Autoshow, Wheelspin
-300000	2006	Formula Drift #43 Dodge Viper SRT10	Drift Cars	Autoshow, Wheelspin
-300000	2018	DeBerti Chevrolet Silverado 1500 Drift Truck	Drift Cars	Autoshow, Wheelspin
-315000	2018	Porsche 911 GT2 RS	Track Toys	Autoshow, Wheelspin
-320000	2010	Mosler MT900S	Extreme Track Toys	Autoshow, Wheelspin
-350000	2013	Mercedes-Benz G 65 AMG	Pickups & 4x4s	Autoshow, Wheelspin
-350000	2017	Ferrari 812 Superfast	Super GT	Autoshow, Wheelspin
-350000	2019	Hennessey VelociRaptor 6x6	Pickups & 4x4s	Autoshow, Wheelspin
-420000	2015	McLaren 650S Coupe	Modern Supercars	Autoshow, Wheelspin
-480000	2016	Lamborghini Aventador Superveloce	Hypercars	Autoshow, Wheelspin
-500000	1977	Hoonigan Gymkhana 10 Ford F-150 'Hoonitruck'	Drift Cars	Autoshow, Wheelspin
-500000	1991	Hoonigan Gymkhana 10 Ford Escort Cosworth Group A	Rally Monsters	Autoshow, Wheelspin
-500000	1994	Ford Supervan 3	Track Toys	Autoshow, Wheelspin
-500000	2004	Nissan Pickup #23 Rally Raid	Unlimited Offroad	Autoshow, Wheelspin
-500000	2017	Volkswagen #34 Volkswagen Andretti Rallycross Beetle	Rally Monsters	Autoshow, Wheelspin
-500000	2018	Ford #25 Mustang RTR	Drift Cars	Autoshow, Wheelspin
-500000	2018	Ford #88 Mustang RTR	Drift Cars	Autoshow, Wheelspin
 500000	2019	DeBerti Toyota Tacoma TRD The Performance Truck	Drift Cars	Autoshow
 525000	2014	Mercedes-Benz G 63 AMG 6x6	Pickups & 4x4s	Autoshow, Wheelspin
 550000	1974	Lancia Stratos HF Stradale	Classic Rally	Autoshow	Series 24
@@ -47,7 +15,6 @@ $	Year	Model	Type	Source	Release
 1300000	1926	Bugatti Type 35 C	Vintage Racers	Autoshow, Wheelspin
 1350000	2013	McLaren P1	Hypercars	Autoshow, Wheelspin
 1400000	2010	Aston Martin One-77	Super GT	Autoshow	Series 13
-1500000	1933	Napier Napier-Railton	Vintage Racers	Autoshow, Wheelspin
 1500000	2010	Jaguar C-X75	Modern Supercars	Autoshow, Wheelspin
 1500000	2018	Apollo Intensa Emozione	Extreme Track Toys	Autoshow, Wheelspin
 1800000	1990	Porsche 911 Reimagined by Singer - DLS	Modern Supercars	Autoshow	Series 10
@@ -88,7 +55,6 @@ $	Year	Model	Type	Source	Release
 7500000	1964	Jaguar Lightweight E-Type	Classic Racers	Autoshow, Wheelspin
 9000000	1967	Ferrari #24 Ferrari Spa 330 P4	Classic Racers	Autoshow, Wheelspin
 11000000	1966	Ford #2 GT40 MkII	Classic Racers	Autoshow, Wheelspin
-15000000	1939	Auto Union Type D	Vintage Racers	Autoshow
 15000000	1968	Alfa Romeo 33 Stradale	Classic Racers	Autoshow	Series 24
 15000000	1970	Porsche #3 917 LH	Classic Racers	Autoshow, Wheelspin
 15000000	1971	Porsche #23 917/20	Classic Racers	Autoshow	Series 10
@@ -108,9 +74,7 @@ $	Year	Model	Type	Source	Release
 	1958	Plymouth Fury	Rods and Customs	Seasonal	Series 15
 	1962	Lincoln Continental	Rods and Customs	Backstage, Seasonal	Series 27
 	1962	Peel P50	Cult Cars	Backstage, Seasonal
-	1963	Volkswagen Beetle	Cult Cars	Accolade
 	1963	Volkswagen Beetle Forza Edition	Track Toys	Accolade
-	1964	Ford GT40 Mk I	Classic Racers	Car Collection
 	1964	Plymouth Belvedere	Classic Muscle	Seasonal	Series 27
 	1964	Porsche 356 C Cabriolet Emory Special	Classic Sports Cars	Seasonal	Series 10
 	1965	Hoonigan Gymkhana 10 Ford Hoonicorn Mustang ]]][[[	Drift Cars	Seasonal
@@ -145,19 +109,14 @@ _	1980	Abarth Fiat 131	Classic Rally	Backstage, Seasonal	Series 24
 	1982	DeLorean DMC-12	Retro Sports Cars	Seasonal	Series 1
 	1982	Lancia 037 Stradale	Retro Rally	Seasonal	Series 24
 	1984	Honda Civic CRX Mugen	Retro Hot Hatch	Seasonal
-	1984	Peugeot 205 Turbo 16	Retro Rally	Accolade, Wheelspin
 	1985	HDT VK Commodore Group A	Retro Muscle	Seasonal	Series 11
 	1985	Nissan Safari Turbo	Pickups & 4x4s	Backstage, Seasonal	Series 18
-	1985	Toyota Sprinter Trueno GT Apex	Retro Sports Cars	Backstage, Wheelspin, Seasonal
 	1986	Citroën BX4TC	Retro Rally	Backstage, Seasonal	Series 34
 	1986	Ford F-150 XLT Lariat	Pickups & 4x4s	Backstage, Seasonal	Series 21
 	1986	Lancia Delta S4	Retro Rally	Seasonal	Series 24
-	1986	MG Metro 6R4	Rally Monsters	Accolade, Wheelspin
-	1987	Pontiac Firebird Trans Am GTA Forza Edition	Track Toys	Wheelspin, Seasonal
 	1987	Porsche 959	Retro Supercars	Autoshow, Wheelspin
 	1989	Ferrari F40 Competizione	Extreme Track Toys	Barn Find
 _	1990	Aston Martin Lagonda	Retro Sports Cars	Seasonal	Series 39
-	1990	Mazda Savanna RX-7	Retro Sports Cars	Accolade, Wheelspin
 	1990	SUBARU Legacy RS	Retro Rally	Seasonal	Series 11
 	1990	Vauxhall Lotus Carlton	Retro Saloons	Seasonal	Series 3
 	1991	GMC Syclone	Vans & Utility	Seasonal	Series 22
@@ -183,9 +142,6 @@ _	1992	Alfa Romeo 155 Q4	Retro Saloons	Backstage, Seasonal	Series 24
 	2002	Ferrari 575M Maranello	Retro Supercars	Backstage, Seasonal	Series 2
 	2002	Lotus Esprit V8	Retro Supercars	Seasonal	Series 31
 	2003	Ford Mustang SVT Cobra	Retro Muscle	Seasonal	Series 32
-	2003	Toyota Celica Sport Specialty II	Retro Sports Cars	Seasonal	Series 3
-	2004	Nissan Donut Media 350Z 'Low Car'	Track Toys	Accolade	Series 22
-	2004	Saleen S7	Retro Supercars	Wheelspin, Seasonal
 	2005	Ford GT	Retro Supercars	Backstage, Wheelspin, Seasonal
 	2005	Honda NSX-R GT	Retro Sports Cars	Seasonal
 	2005	Mitsubishi #1 Sierra Sierra Enterprises Lancer Evolution Time Attack	Extreme Track Toys	Backstage, Seasonal	Series 33
@@ -199,14 +155,12 @@ _	2008	Aston Martin DBS	GT Cars	Seasonal	Series 29
 	2009	Lotus 2-Eleven	Track Toys	Seasonal	Series 28
 	2009	Mercedes-Benz SL 65 AMG Black Series	Super GT	Seasonal	Series 22
 	2010	Ferrari 599 GTO	Super GT	Backstage, Seasonal	Series 2
-	2010	Lamborghini Murcielago LP 670-4 SV	Modern Supercars	Wheelspin, Seasonal
 	2010	Nissan Tsuru	Retro Saloons	Seasonal	Series 26
 	2010	Noble M600	Modern Supercars	Seasonal	Series 5
 	2010	Renault Clio R.S.	Hot Hatch	Seasonal	Series 16
 	2010	Renault Megane R.S. 250	Super Hot Hatch	Backstage, Seasonal	Series 16
 	2010	Rossion Q1	Modern Supercars	Seasonal	Series 27
 	2011	Koenigsegg Agera	Hypercars	Seasonal	Series 13
-	2011	Lamborghini Gallardo LP 570-4 Superleggera	Modern Supercars	Accolade
 	2011	Lamborghini Sesto Elemento Forza Edition	Extreme Track Toys	Wheelspin, Seasonal
 	2011	McLaren 12C Coupé	Modern Supercars	Backstage, Seasonal	Series 29
 	2011	Pagani Huayra Coupe	Hypercars	Backstage, Wheelspin, Seasonal	Series 29
@@ -249,8 +203,6 @@ _	2016	Ford #66 Ford Racing GTLM Le Mans	Extreme Track Toys	Seasonal	Series 33
 	2016	Zenvo ST1	Hypercars	Backstage, Seasonal	Series 3
 _	2017	Abarth 124 Spider	Modern Sports Cars	Seasonal	Series 24
 _	2017	Aston Martin Vanquish Zagato Coupe	Super GT	Backstage, Seasonal	Series 36
-	2017	Ferrari GTC4Lusso	Super GT	Accolade
-	2017	Ford #14 Rahal Letterman Lanigan Racing GRC Fiesta	Rally Monsters	Wheelspin, Seasonal
 _	2017	Porsche #92 Porsche GT Team 911 RSR	Extreme Track Toys	Seasonal	Series 33
 _	2018	ATS GT	Modern Supercars	Seasonal	Series 6
 	2018	Audi RS 4 Avant	Super Saloons	Seasonal	Series 8
@@ -263,7 +215,6 @@ _	2018	ATS GT	Modern Supercars	Seasonal	Series 6
 	2018	Nissan Sentra NISMO	Super Saloons	Seasonal	Series 12
 	2018	Porsche Macan LPR Rally Raid	Offroad	Wheelspin, Seasonal
 	2019	Ford Ranger Raptor	Pickups & 4x4s	Wheelspin, Seasonal
-	2019	Hennessey Camaro Exorcist	Track Toys	Accolade	Series 23
 _	2019	Porsche #70 Porsche Motorsport 935	Extreme Track Toys	Seasonal	Series 20
 	2019	Porsche 911 GT3 RS Forza Edition	Rally Monsters	Car Collection
 	2019	RAESR Tachyon Speed	Hypercars	Seasonal
@@ -314,7 +265,6 @@ _	2021	Mercedes-AMG GT Black Series	Track Toys	Seasonal	Series 22
 	2022	Ford Focus ST	Super Hot Hatch	Backstage, Seasonal	Series 37
 	2022	GMC HUMMER EV Pickup	Pickups & 4x4s	Backstage, Seasonal	Series 21
 	2022	Gordon Murray Automotive T.50	Hypercars	Backstage, Seasonal	Series 28
-	2022	Hennessey Mammoth 6x6	Pickups & 4x4s	Accolade	Horizon Realms
 	2022	Hyundai IONIQ 6	Super Saloons	Seasonal	Series 30
 	2022	Hyundai Kona N	Sports Utility Heroes	Seasonal	Series 30
 	2022	Hyundai N Vision 74	Track Toys	Backstage, Seasonal	Series 34
@@ -346,9 +296,60 @@ _	2023	Porsche 911 Turbo S	Modern Supercars	Seasonal	Series 40
 	2023	Toyota Camry TRD	Super Saloons	Seasonal	Series 37
 	2024	Ford Mustang Dark Horse	Modern Muscle	Backstage, Seasonal	Series 35
 	2024	Ford Mustang GT	Modern Muscle	Seasonal	Series 32
-	2024	Lamborghini Revuelto	Hypercars	Accolade	Horizon Realms
 	2024	Nissan Z NISMO	Modern Sports Cars	Seasonal	Series 41
 
+x	1970	Chevrolet El Camino Super Sport 454	Vans & Utility	Autoshow
+x	2013	Mercedes-Benz E 63 AMG	Super Saloons	Autoshow, Wheelspin
+x	1977	Holden Torana A9X	Classic Muscle	Autoshow, Wheelspin
+x	2015	Land Rover Range Rover Sport SVR	Sports Utility Heroes	Autoshow, Wheelspin
+x	1990	Mercedes-Benz 190E 2.5-16 Evolution II	Retro Saloons	Autoshow, Wheelspin
+x	2018	Mercedes-AMG GT 4-Door Coupe	Super Saloons	Autoshow, Wheelspin
+x	2016	Audi R8 V10 plus	Modern Supercars	Autoshow, Wheelspin
+x	2018	McLaren 600LT Coupe	Track Toys	Autoshow, Wheelspin
+x	2018	Lamborghini Huracán Performante	Track Toys	Autoshow, Wheelspin
+x	2018	Porsche 911 GT2 RS	Track Toys	Autoshow, Wheelspin
+x	2010	Mosler MT900S	Extreme Track Toys	Autoshow, Wheelspin
+x	2013	Mercedes-Benz G 65 AMG	Pickups & 4x4s	Autoshow, Wheelspin
+x	2017	Ferrari 812 Superfast	Super GT	Autoshow, Wheelspin
+x	2015	McLaren 650S Coupe	Modern Supercars	Autoshow, Wheelspin
+x	2016	Lamborghini Aventador Superveloce	Hypercars	Autoshow, Wheelspin
+x	1977	Hoonigan Gymkhana 10 Ford F-150 'Hoonitruck'	Drift Cars	Autoshow, Wheelspin
+x	1991	Hoonigan Gymkhana 10 Ford Escort Cosworth Group A	Rally Monsters	Autoshow, Wheelspin
+x	1994	Ford Supervan 3	Track Toys	Autoshow, Wheelspin
+x	2004	Nissan Pickup #23 Rally Raid	Unlimited Offroad	Autoshow, Wheelspin
+x	2017	Volkswagen #34 Volkswagen Andretti Rallycross Beetle	Rally Monsters	Autoshow, Wheelspin
+x	2018	Ford #25 Mustang RTR	Drift Cars	Autoshow, Wheelspin
+x	2018	Ford #88 Mustang RTR	Drift Cars	Autoshow, Wheelspin
+x	1933	Napier Napier-Railton	Vintage Racers	Autoshow, Wheelspin
+x	1939	Auto Union Type D	Vintage Racers	Autoshow
+x	1963	Volkswagen Beetle	Cult Cars	Accolade
+x	1964	Ford GT40 Mk I	Classic Racers	Car Collection
+x	1984	Peugeot 205 Turbo 16	Retro Rally	Accolade, Wheelspin
+x	1985	Toyota Sprinter Trueno GT Apex	Retro Sports Cars	Backstage, Wheelspin, Seasonal
+x	1986	MG Metro 6R4	Rally Monsters	Accolade, Wheelspin
+x	1987	Pontiac Firebird Trans Am GTA Forza Edition	Track Toys	Wheelspin, Seasonal
+x	1990	Mazda Savanna RX-7	Retro Sports Cars	Accolade, Wheelspin
+x	2003	Toyota Celica Sport Specialty II	Retro Sports Cars	Seasonal	Series 3
+x	2004	Nissan Donut Media 350Z 'Low Car'	Track Toys	Accolade	Series 22
+x	2004	Saleen S7	Retro Supercars	Wheelspin, Seasonal
+x	2010	Lamborghini Murcielago LP 670-4 SV	Modern Supercars	Wheelspin, Seasonal
+x	2011	Lamborghini Gallardo LP 570-4 Superleggera	Modern Supercars	Accolade
+x	2017	Ferrari GTC4Lusso	Super GT	Accolade
+x	2017	Ford #14 Rahal Letterman Lanigan Racing GRC Fiesta	Rally Monsters	Wheelspin, Seasonal
+x	2019	Hennessey Camaro Exorcist	Track Toys	Accolade	Series 23
+x	2022	Hennessey Mammoth 6x6	Pickups & 4x4s	Accolade	Horizon Realms
+x	2024	Lamborghini Revuelto	Hypercars	Accolade	Horizon Realms
+
+x	2013	Mercedes-Benz A 45 AMG	Super Hot Hatch	Autoshow, Wheelspin
+x	2012	Mercedes-Benz SLK 55 AMG	Modern Sports Cars	Autoshow, Wheelspin
+x	2018	BMW M5	Super Saloons	Autoshow, Wheelspin
+x	2018	Chevrolet Camaro ZL1 1LE	Track Toys	Autoshow, Wheelspin
+x	2009	Chevrolet Corvette ZR1	Modern Muscle	Autoshow, Wheelspin
+x	2016	Porsche 911 GT3 RS	Track Toys	Autoshow, Wheelspin
+x	1978	Hoonigan Ford Escort RS1800	Rally Monsters	Autoshow, Wheelspin
+x	2006	Formula Drift #43 Dodge Viper SRT10	Drift Cars	Autoshow, Wheelspin
+x	2018	DeBerti Chevrolet Silverado 1500 Drift Truck	Drift Cars	Autoshow, Wheelspin
+x	2019	Hennessey VelociRaptor 6x6	Pickups & 4x4s	Autoshow, Wheelspin
 x	2008	Mitsubishi Lancer Evolution X GSR	Modern Rally	Autoshow, Wheelspin
 x	1973	Land Rover Range Rover	Pickups & 4x4s	Autoshow, Wheelspin
 x	2014	Ford FPV Limited Edition Pursuit Ute	Vans & Utility	Autoshow, Wheelspin
