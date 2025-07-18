@@ -12,7 +12,7 @@ $	Year	Model	Type	Source	Release
 1200000	1987	Ferrari F40	Retro Supercars	Autoshow, Wheelspin
 1200000	2012	Hennessey Venom GT	Hypercars	Autoshow, Wheelspin
 1250000	1998	Nissan R390 (GT1)	Retro Supercars	Autoshow, Wheelspin
-1300000	1926	Bugatti Type 35 C	Vintage Racers	Autoshow, Wheelspin
+x	1926	Bugatti Type 35 C	Vintage Racers	Autoshow, Wheelspin
 1350000	2013	McLaren P1	Hypercars	Autoshow, Wheelspin
 1400000	2010	Aston Martin One-77	Super GT	Autoshow	Series 13
 1500000	2010	Jaguar C-X75	Modern Supercars	Autoshow, Wheelspin
@@ -25,7 +25,7 @@ $	Year	Model	Type	Source	Release
 2000000	1996	Ferrari F50 GT	Extreme Track Toys	Autoshow, Wheelspin
 2000000	2017	Koenigsegg Agera RS	Hypercars	Autoshow, Wheelspin
 2000000	2019	Rimac Concept Two	Hypercars	Autoshow, Wheelspin
-2100000	1965	Shelby Cobra 427 S/C	Rare Classics	Autoshow, Wheelspin
+x	1965	Shelby Cobra 427 S/C	Rare Classics	Autoshow, Wheelspin
 2200000	2011	Bugatti Veyron Super Sport	Hypercars	Autoshow
 2250000	2019	McLaren Speedtail	Hypercars	Autoshow, Wheelspin
 2300000	2016	Lamborghini Centenario LP 770-4	Hypercars	Autoshow, Wheelspin
@@ -46,7 +46,7 @@ $	Year	Model	Type	Source	Release
 3000000	2013	Lamborghini Veneno	Hypercars	Autoshow, Wheelspin
 3000000	2021	Rimac Nevera	Hypercars	Autoshow	Series 19
 3500000	1970	Ferrari 512 S	Classic Racers	Autoshow	Series 28
-3500000	1984	Ferrari 288 GTO	Retro Supercars	Autoshow, Wheelspin
+x	1984	Ferrari 288 GTO	Retro Supercars	Autoshow, Wheelspin
 3500000	2020	Lamborghini Sián Roadster	Hypercars	Autoshow	Series 15
 4000000	1930	Bentley Blower 4-1/2 Litre Supercharged	Vintage Racers	Autoshow, Wheelspin
 4000000	1965	Alfa Romeo Giulia TZ2	Classic Racers	Autoshow	Series 24
