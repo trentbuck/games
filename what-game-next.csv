@@ -99,7 +99,7 @@ rating,rating/h,$,$/h,h,hltb,done?,id,name
 89,89.3,,,,0,,2861560,"Lemonade Apocalypse"
 89,89.3,,,,1,,3071280,"BubbleBeast DigiDungeon"
 89,89.3,,,,0,,3224310,"you're just imagining it"
-89,89.2,30,29,,,,1889740,"Paper Trail"
+89,89.2,30,29,,7,,1889740,"Paper Trail"
 89,89.2,,,,14,,1916890,Slider
 89,89.2,,,,,,2121150,"Chess for idiots"
 89,89.2,,,,,,2480450,"Pesticide Not Required: Prologue"
@@ -3013,7 +3013,7 @@ rating,rating/h,$,$/h,h,hltb,done?,id,name
 75,75.5,,,,,,1014550,"One Synth"
 75,75.5,,,,,,1064590,Bax
 75,75.5,,,,,,1328510,"Save Iron Globe"
-76,75.5,44,43,,,,1368870,"Field of Glory II: Medieval"
+76,75.5,44,43,,21,,1368870,"Field of Glory II: Medieval"
 76,75.5,,,,1,,1421960,"HordeCore Prologue"
 76,75.5,,,,,,1452770,"Super Neat Cat"
 75,75.5,,,,,,1545430,Inward
@@ -4792,7 +4792,7 @@ rating,rating/h,$,$/h,h,hltb,done?,id,name
 71,71.2,,,,,,1773320,"Coin Treasures"
 71,71.2,,,,1,,1891430,"Meat Madness"
 71,71.2,,,,14,,1910780,"Fray Fight"
-71,71.2,36,35,,,,2023360,"The Last Case of Benedict Fox"
+71,71.2,36,35,,15,,2023360,"The Last Case of Benedict Fox"
 71,71.2,,,,1,,2284900,Alignment
 71,71.2,,,,,,2333820,Derealized
 71,71.2,,,,,,2424880,"Cosmic Coliseum: Prologue"
@@ -6082,7 +6082,7 @@ rating,rating/h,$,$/h,h,hltb,done?,id,name
 68,68.3,,,,2,,331580,"ULTRAWORLD EXODUS"
 87,68.3,2,1,0.1,1,0.03,420740,"The Deed"
 68,68.3,,,,3,,464050,"Heroes Must Die"
-68,68.3,22,21,,,,1165470,TombStar
+68,68.3,22,21,,5,,1165470,TombStar
 80,68.3,2,1,0.0,,,1180610,"Np Problems: Vertex Coloring"
 91,68.3,15,14,0.1,4,0.02,1444350,House
 68,68.3,,,,,,1635550,"Truck Mechanic: Dangerous Paths - Prologue"
@@ -7345,7 +7345,7 @@ rating,rating/h,$,$/h,h,hltb,done?,id,name
 65,65.2,,,,459,,842150,"Wild West Saga"
 65,65.2,,,,,,852500,WorldQuest
 65,65.2,,,,3,,1449750,"Space Commander: War and Trade"
-65,65.2,35,34,,,,1494260,"Loot River"
+65,65.2,35,34,,7,,1494260,"Loot River"
 65,65.2,,,,1,,1515290,Boodunnit
 76,65.2,,,0.0,1,0.07,1731870,"Viral Firar"
 87,65.2,,,0.1,0,0.19,1953060,"Time Thief"
@@ -10973,7 +10973,7 @@ rating,rating/h,$,$/h,h,hltb,done?,id,name
 54,53.5,,,,,,2127310,Deltazone
 54,53.5,,,,,,2151900,"Battle for borders"
 53,53.5,,,,,,2477290,"Half-Life 2 RTX"
-87,53.5,22,18,0.2,,,2721530,Afterplace
+87,53.5,22,18,0.2,6,0.03,2721530,Afterplace
 54,53.5,,,,,,2777030,"In The Shadows"
 54,53.5,,,,,,3453500,"Академия дронов"
 88,53.4,32,26,0.2,9,0.03,2610,GUN
@@ -11997,7 +11997,7 @@ rating,rating/h,$,$/h,h,hltb,done?,id,name
 91,49.0,6,4,0.5,2,0.23,1145960,"The White Door"
 49,49.0,,,0.0,,,1157250,"Anomaly Zone"
 87,49.0,,,0.4,,,1601340,"Psycho Bathroom"
-90,49.0,30,19,0.5,,,1781260,Promenade
+90,49.0,30,19,0.5,11,0.05,1781260,Promenade
 86,49.0,3,2,0.4,1,0.32,1878570,"Immortal Mantis"
 93,49.0,,,0.7,0,1.98,2057080,"Resonance of the Ocean"
 49,49.0,,,,,,2195200,"Find The Key"
@@ -13445,7 +13445,7 @@ rating,rating/h,$,$/h,h,hltb,done?,id,name
 84,41.0,30,14,1.2,14,0.09,1095120,"Helheim Hassle"
 76,41.0,47,30,0.6,24,0.02,1137300,"Sherlock Holmes Chapter One"
 69,41.0,8,6,0.3,2,0.13,1169740,"Danger Scavenger"
-77,41.0,43,27,0.6,,,1571460,"Zorro The Chronicles"
+77,41.0,43,27,0.6,6,0.1,1571460,"Zorro The Chronicles"
 89,41.0,3,1,2.0,14,0.14,2187290,"Wall World"
 41,41.0,,,,,,2520870,"Love In The Dark"
 41,41.0,,,,,,3653960,"家训 Dogma"
@@ -14018,7 +14018,7 @@ rating,rating/h,$,$/h,h,hltb,done?,id,name
 62,36.9,17,13,0.3,8,0.04,530950,"Tower 57"
 90,36.9,29,4,6.1,6,1.08,848350,"Katamari Damacy REROLL"
 85,36.9,6,1,3.4,,,880580,YORG.io
-71,36.9,29,17,0.7,,,975950,Effie
+71,36.9,29,17,0.7,5,0.15,975950,Effie
 82,36.9,4,1,2.4,11,0.22,1003890,"Blacksad: Under the Skin"
 60,36.9,29,24,0.2,11,0.02,1294880,"Blind Fate: Edo no Yami"
 69,36.9,2,1,0.6,,,1341310,"Space Pioneer"
@@ -14341,7 +14341,7 @@ rating,rating/h,$,$/h,h,hltb,done?,id,name
 71,34.2,,,1.4,1,1.01,352240,"The Westport Independent"
 70,34.2,22,10,1.3,7,0.17,442780,"STRAFE: Gold Edition"
 67,34.2,2,1,0.8,3,0.24,966430,Neverinth
-73,34.2,20,8,1.6,,,1065310,"Evil West"
+73,34.2,20,8,1.6,12,0.13,1065310,"Evil West"
 71,34.2,57,24,1.4,19,0.08,1602080,Soulstice
 ,34.1,,,1.3,,,1309,"SiN Multiplayer"
 57,34.1,,,0.3,18,0.01,39160,"Dungeon Siege III"

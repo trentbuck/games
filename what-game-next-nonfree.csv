@@ -1,7 +1,7 @@
 rating,rating/h,$,$/h,h,hltb,done?,id,name
 91,90.7,12,12,,28,,1210320,"Potion Craft: Alchemist Simulator"
 90,90.1,20,20,,3,,1668190,"Once Upon a Jester"
-89,89.2,30,29,,,,1889740,"Paper Trail"
+89,89.2,30,29,,7,,1889740,"Paper Trail"
 88,88.3,6,6,,7,,1771360,"Gerda: A Flame in Winter"
 88,87.8,22,22,,7,,1432100,"The Bookwalker"
 87,87.2,75,74,,19,,2414270,Sunderfolk
@@ -84,7 +84,7 @@ rating,rating/h,$,$/h,h,hltb,done?,id,name
 76,75.8,1,1,,1,,729460,"Distant Space 2"
 76,75.7,29,28,0.0,7,0.0,1099640,"Jack Move"
 76,75.6,5,4,,,,3361030,"Orbital Cascade"
-76,75.5,44,43,,,,1368870,"Field of Glory II: Medieval"
+76,75.5,44,43,,21,,1368870,"Field of Glory II: Medieval"
 75,75.4,6,6,,,,1955440,"Tick Tack Puppet"
 75,75.0,5,4,,,,1316460,Bounty
 75,75.0,6,6,,,,1978750,"PHOBOS: PSYCHODEATH 狂死"
@@ -119,7 +119,7 @@ rating,rating/h,$,$/h,h,hltb,done?,id,name
 84,71.4,1,1,0.0,1,0.03,2062920,TTV4
 71,71.3,1,1,0.0,,,1711840,"Ninja Stealth 4"
 71,71.2,2,1,0.0,2,0.01,291770,"The Last Crown: Midnight Horror"
-71,71.2,36,35,,,,2023360,"The Last Case of Benedict Fox"
+71,71.2,36,35,,15,,2023360,"The Last Case of Benedict Fox"
 71,71.1,6,6,,6,,624690,"NEXT JUMP: Shmup Tactics"
 71,71.1,40,39,,36,,2362420,"Mass Effect 2 (2010) Edition"
 83,71.0,44,43,0.0,31,0.0,292910,"Deponia: The Complete Journey"
@@ -169,7 +169,7 @@ rating,rating/h,$,$/h,h,hltb,done?,id,name
 68,68.5,3,3,,266,,1444670,"Greed Knights"
 87,68.3,8,7,0.1,26,0.0,6800,"Commandos: Behind Enemy Lines"
 87,68.3,2,1,0.1,1,0.03,420740,"The Deed"
-68,68.3,22,21,,,,1165470,TombStar
+68,68.3,22,21,,5,,1165470,TombStar
 80,68.3,2,1,0.0,,,1180610,"Np Problems: Vertex Coloring"
 91,68.3,15,14,0.1,4,0.02,1444350,House
 91,68.3,5,4,0.1,1,0.06,3463050,"Dreams of Aether"
@@ -236,7 +236,7 @@ rating,rating/h,$,$/h,h,hltb,done?,id,name
 87,65.2,10,10,0.1,60,0.0,25900,"King's Bounty: The Legend"
 65,65.2,9,9,0.0,1,0.03,63630,Manhole
 65,65.2,7,6,0.0,11,0.0,395570,"We Are The Dwarves"
-65,65.2,35,34,,,,1494260,"Loot River"
+65,65.2,35,34,,7,,1494260,"Loot River"
 83,65.1,8,7,0.1,25,0.0,6830,"Commandos 2: Men of Courage"
 82,65.0,15,14,0.1,39,0.0,12320,"Sacred Gold"
 76,65.0,8,7,0.0,43,0.0,46260,"Star Wolves 3: Civil War"
@@ -801,7 +801,7 @@ rating,rating/h,$,$/h,h,hltb,done?,id,name
 88,53.5,6,5,0.2,3,0.09,1234520,"The Escaper"
 92,53.5,2,2,0.3,4,0.08,1567440,inbento
 90,53.5,5,4,0.3,6,0.05,1615290,"Ravenous Devils"
-87,53.5,22,18,0.2,,,2721530,Afterplace
+87,53.5,22,18,0.2,6,0.03,2721530,Afterplace
 88,53.4,32,26,0.2,9,0.03,2610,GUN
 80,53.4,2,2,0.1,7,0.02,15080,"Rayman: Raving Rabbids"
 86,53.4,12,10,0.2,4,0.06,327560,"Near Death"
@@ -1228,7 +1228,7 @@ rating,rating/h,$,$/h,h,hltb,done?,id,name
 72,49.0,8,7,0.1,4,0.03,951530,"Alien Shooter - Last Hope"
 81,49.0,29,23,0.3,46,0.01,995980,"Fae Tactics"
 91,49.0,6,4,0.5,2,0.23,1145960,"The White Door"
-90,49.0,30,19,0.5,,,1781260,Promenade
+90,49.0,30,19,0.5,11,0.05,1781260,Promenade
 86,49.0,3,2,0.4,1,0.32,1878570,"Immortal Mantis"
 87,49.0,3,2,0.4,1,0.29,2424650,"Froggy's Battle"
 86,49.0,15,11,0.4,9,0.04,2837600,"The Alto Collection"
@@ -2262,7 +2262,7 @@ rating,rating/h,$,$/h,h,hltb,done?,id,name
 84,41.0,30,14,1.2,14,0.09,1095120,"Helheim Hassle"
 76,41.0,47,30,0.6,24,0.02,1137300,"Sherlock Holmes Chapter One"
 69,41.0,8,6,0.3,2,0.13,1169740,"Danger Scavenger"
-77,41.0,43,27,0.6,,,1571460,"Zorro The Chronicles"
+77,41.0,43,27,0.6,6,0.1,1571460,"Zorro The Chronicles"
 89,41.0,3,1,2.0,14,0.14,2187290,"Wall World"
 92,40.9,15,4,2.8,7,0.39,32360,"The Secret of Monkey Island: Special Edition"
 71,40.9,10,7,0.4,32,0.01,242940,Anachronox
@@ -2747,7 +2747,7 @@ rating,rating/h,$,$/h,h,hltb,done?,id,name
 62,36.9,17,13,0.3,8,0.04,530950,"Tower 57"
 90,36.9,29,4,6.1,6,1.08,848350,"Katamari Damacy REROLL"
 85,36.9,6,1,3.4,,,880580,YORG.io
-71,36.9,29,17,0.7,,,975950,Effie
+71,36.9,29,17,0.7,5,0.15,975950,Effie
 82,36.9,4,1,2.4,11,0.22,1003890,"Blacksad: Under the Skin"
 60,36.9,29,24,0.2,11,0.02,1294880,"Blind Fate: Edo no Yami"
 69,36.9,2,1,0.6,,,1341310,"Space Pioneer"
@@ -3027,7 +3027,7 @@ rating,rating/h,$,$/h,h,hltb,done?,id,name
 91,34.2,7,0,15.6,16,0.99,323190,Frostpunk
 70,34.2,22,10,1.3,7,0.17,442780,"STRAFE: Gold Edition"
 67,34.2,2,1,0.8,3,0.24,966430,Neverinth
-73,34.2,20,8,1.6,,,1065310,"Evil West"
+73,34.2,20,8,1.6,12,0.13,1065310,"Evil West"
 71,34.2,57,24,1.4,19,0.08,1602080,Soulstice
 59,34.1,8,6,0.4,4,0.08,468930,Phantaruk
 74,34.1,44,15,2.0,46,0.04,471010,"Seven: Enhanced Edition"
