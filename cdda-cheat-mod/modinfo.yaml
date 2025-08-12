@@ -13,6 +13,19 @@
     # https://github.com/CleverRaven/Cataclysm-DDA/pull/79801
     # - no_fungal_growth
     - personal_portal_storms
-    - speedydex
+    # Speedydex is gooooooone.
+    # It was doing this:
+    #     - type: EXTERNAL_OPTION
+    #       name: SPEEDYDEX_MIN_DEX
+    #       stype: int
+    #       value: 12
+    #     - type: EXTERNAL_OPTION
+    #       name: SPEEDYDEX_DEX_SPEED
+    #       stype: int
+    #       value: 2
+    # I am not sure exactly how to write this as a enchantment, but
+    # it would be along the lines of
+    # https://github.com/Erin105/StatsThroughSkills/blob/main/stats_mutation.json
+    # - speedydex
     # Especially for Bloody Mess, which I have now added to amulet_of_yendor
     # - bombastic_perks
