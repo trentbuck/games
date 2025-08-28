@@ -42,7 +42,7 @@ rating,rating/h,$,$/h,h,hltb,done?,id,name
 91,91.2,,,,0,,3030210,Slash/Jump
 91,91.2,,,,3,,3103840,"TCG Card Shop Simulator: Prologue"
 91,91.1,,,,1,,2529130,"URBO: Dream One"
-91,91.0,21,20,,,,1164940,Trepang2
+91,91.0,21,20,,7,,1164940,Trepang2
 91,91.0,,,,2,,2353760,"Landfall Archives"
 91,90.9,,,,1,,3080240,"Lots of Cats in Every Moment"
 91,90.8,,,,4,,2814910,"The Aquarium does not dance"
@@ -64,7 +64,7 @@ rating,rating/h,$,$/h,h,hltb,done?,id,name
 90,90.1,,,,2,,3361770,"Escape from Castle Claymount"
 90,90.0,,,,4,,2009720,"Mega Serval"
 90,90.0,,,,1,,2343240,"Wretched Depths"
-90,89.9,11,11,,,,410900,Forts
+90,89.9,11,11,,10,,410900,Forts
 90,89.9,,,,0,,2448340,"Try Again"
 90,89.9,,,,9,,2658710,"Tinkerlands: A Shipwrecked Adventure"
 90,89.9,,,,28,,2878140,"Gooba Ball"
@@ -95,7 +95,7 @@ rating,rating/h,$,$/h,h,hltb,done?,id,name
 89,89.4,,,,0,,2796550,Rental
 89,89.4,,,,1,,3071280,"BubbleBeast DigiDungeon"
 89,89.3,,,,27,,259080,"Just Cause 2: Multiplayer Mod"
-89,89.3,36,35,,,,1093290,"The Wild at Heart"
+89,89.3,36,35,,15,,1093290,"The Wild at Heart"
 89,89.3,,,,14,,1916890,Slider
 89,89.3,,,,13,,2093940,vivid/stasis
 89,89.3,,,,0,,2861560,"Lemonade Apocalypse"
@@ -120,7 +120,7 @@ rating,rating/h,$,$/h,h,hltb,done?,id,name
 89,89.0,,,,0,,2494720,"Little Man Has a Day"
 89,89.0,,,,1,,2647300,"Meow Moments: Celebrating Together"
 89,89.0,,,,1,,2670920,"Nut City Blues"
-89,89.0,22,22,,,,3286930,"Heretic + Hexen"
+89,89.0,22,22,,27,,3286930,"Heretic + Hexen"
 89,89.0,,,,0,,3351430,Batography
 89,88.9,,,,2,,2391710,"Gatekeeper: Infinity"
 89,88.9,,,,3,,3008200,"PAPERHEAD EP0"
@@ -254,7 +254,7 @@ rating,rating/h,$,$/h,h,hltb,done?,id,name
 87,87.0,,,,,,3659920,"Dream on"
 87,87.0,,,,,,3822990,"Stellar Witch"
 87,86.9,37,36,,15,,983970,Haven
-87,86.9,12,12,,,,1286990,CONSCRIPT
+87,86.9,12,12,,15,,1286990,CONSCRIPT
 87,86.9,,,,43,,1373440,"Picross for a Cause"
 87,86.9,,,,2,,2283350,"Reborn A Zombie!"
 87,86.9,,,,,,2361480,"The RPG: My First Dungeon Smells"
@@ -469,7 +469,7 @@ rating,rating/h,$,$/h,h,hltb,done?,id,name
 85,84.9,,,,4,,2025650,"FAREWELL SEN"
 85,84.9,,,,,,2186400,"Pirate Fighting Simulator"
 85,84.9,,,,,,2209190,"The Princess of the Tower Wants a Hero"
-85,84.9,8,7,,,,2457890,DRACOMATON
+85,84.9,8,7,,1,,2457890,DRACOMATON
 85,84.9,,,,,,2575060,"Lively Chair Simulator"
 85,84.9,,,,2,,2707360,Atan
 85,84.9,,,,103,,2836290,"On Track"
@@ -533,7 +533,7 @@ rating,rating/h,$,$/h,h,hltb,done?,id,name
 85,84.5,,,,,,1763620,Obama
 84,84.5,,,,,,1767320,"Gretel and Winslow's Mansion"
 85,84.5,,,,,,1899700,Graphwar
-85,84.5,2,2,,,,2065840,"TROUBLE JUICE"
+85,84.5,2,2,,3,,2065840,"TROUBLE JUICE"
 84,84.5,,,,,,2092190,"Nomori: Prologue"
 85,84.5,,,,1,,2163450,"Molytropia: Cloud in Shape of Hurt"
 85,84.5,,,,0,,2361510,"Andarin Weppes: Pre-Dementia"
@@ -861,7 +861,7 @@ rating,rating/h,$,$/h,h,hltb,done?,id,name
 83,82.8,,,,,,1170970,"Marbles on Stream"
 83,82.8,,,,,,1286140,"Dingletopia: Nation Under Siege (by Orcs)"
 83,82.8,,,0.0,1,0.02,1387150,"A Case of the Crabs: Rehash"
-83,82.8,11,11,,,,1402110,Eternights
+83,82.8,11,11,,13,,1402110,Eternights
 83,82.8,,,,1,,1561750,"Mission in Snowdriftland - Snowlogue"
 83,82.8,,,,1,,1592610,"The Tram of Wishes"
 83,82.8,,,,,,1816880,"EXIT 2"
@@ -2411,7 +2411,7 @@ rating,rating/h,$,$/h,h,hltb,done?,id,name
 77,77.4,,,,,,3778770,"Ignis Dei"
 77,77.4,,,,,,3851650,"The Darkest Dusk"
 77,77.3,,,,2,,378110,"Hack RUN"
-77,77.3,39,38,,,,538030,"Xenonauts 2"
+77,77.3,39,38,,24,,538030,"Xenonauts 2"
 77,77.3,,,,,,610620,"Too Loud"
 77,77.3,22,21,0.0,3,0.01,717610,"A Case of Distrust"
 77,77.3,15,14,,,,812380,"Flock of Dogs"
@@ -3174,7 +3174,7 @@ rating,rating/h,$,$/h,h,hltb,done?,id,name
 75,75.2,,,,66,,879250,"Dot to Dot Puzzles"
 75,75.2,,,0.0,,,999200,"Offendron Warrior"
 75,75.2,,,,1,,1109420,"The Luminist"
-75,75.2,17,17,,,,1319550,"Power of Ten"
+75,75.2,17,17,,8,,1319550,"Power of Ten"
 75,75.2,,,,0,,1344810,"Homeland: Lay to Rest"
 75,75.2,,,,,,1425580,"Last Soul"
 75,75.2,,,,,,1518440,MakerKing
@@ -4509,7 +4509,7 @@ rating,rating/h,$,$/h,h,hltb,done?,id,name
 72,72.2,,,,,,2876970,"Furious Flappers"
 72,72.2,,,,,,2918190,"Roaches: The Birthday Party"
 72,72.2,,,,,,2918950,"Tiny Ski"
-72,72.2,3,3,,,,2921380,"Caribbean Crashers"
+72,72.2,3,3,,0,,2921380,"Caribbean Crashers"
 72,72.2,,,,,,2937490,Iterations
 72,72.2,,,,,,2938060,"我是BUG"
 72,72.2,,,,,,2941950,"Battle Against the Acolytes of Science"
@@ -9413,7 +9413,7 @@ rating,rating/h,$,$/h,h,hltb,done?,id,name
 60,59.9,,,,,,2152610,"이세계 동사무소"
 60,59.9,,,,,,2217590,"Àrengard - Invasion"
 60,59.9,,,,,,2525270,"The House"
-60,59.9,6,5,,,,2955840,"Kitchen Wars"
+60,59.9,6,5,,2,,2955840,"Kitchen Wars"
 60,59.9,,,,,,3162780,"Drive Thru Miami Prologue"
 60,59.9,,,,,,3309950,PlanetX
 76,59.8,5,4,0.1,4,0.01,34810,"Project Freedom"
@@ -9644,7 +9644,7 @@ rating,rating/h,$,$/h,h,hltb,done?,id,name
 59,59.3,,,,,,1605430,"Roots of Tomorrow"
 83,59.3,,,0.1,,,1660480,Arausio
 59,59.3,,,,,,1828320,"Super Life: Franchise Lord"
-59,59.3,2,2,,,,2905180,"Shade Silver"
+59,59.3,2,2,,6,,2905180,"Shade Silver"
 94,59.3,,,0.2,0,0.58,3478700,"The Children of Clay"
 96,59.2,8,6,0.2,17,0.01,3590,"Plants vs. Zombies: Game of the Year"
 95,59.2,29,24,0.2,15,0.01,268910,Cuphead

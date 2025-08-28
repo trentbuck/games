@@ -1,22 +1,22 @@
 rating,rating/h,$,$/h,h,hltb,done?,id,name
 96,95.6,18,18,,19,,1533420,"Neon White"
 93,93.1,3,3,,1,,2539960,"Orbo's Odyssey"
-91,91.0,21,20,,,,1164940,Trepang2
-90,89.9,11,11,,,,410900,Forts
+91,91.0,21,20,,7,,1164940,Trepang2
+90,89.9,11,11,,10,,410900,Forts
 90,89.6,15,14,,2,,1425760,"Pulling No Punches"
-89,89.3,36,35,,,,1093290,"The Wild at Heart"
-89,89.0,22,22,,,,3286930,"Heretic + Hexen"
+89,89.3,36,35,,15,,1093290,"The Wild at Heart"
+89,89.0,22,22,,27,,3286930,"Heretic + Hexen"
 89,88.8,15,15,,36,,1545560,"Shadow Gambit: The Cursed Crew"
 88,88.0,9,9,,7,,1303950,"Toodee and Topdee"
 87,87.5,60,59,,19,,2414270,Sunderfolk
 87,86.9,37,36,,15,,983970,Haven
-87,86.9,12,12,,,,1286990,CONSCRIPT
+87,86.9,12,12,,15,,1286990,CONSCRIPT
 85,85.2,15,14,0.0,104,0.0,245450,"Wizardry 8"
-85,84.9,8,7,,,,2457890,DRACOMATON
-85,84.5,2,2,,,,2065840,"TROUBLE JUICE"
+85,84.9,8,7,,1,,2457890,DRACOMATON
+85,84.5,2,2,,3,,2065840,"TROUBLE JUICE"
 84,83.6,30,29,,14,,2131640,"METAL GEAR SOLID 2: Sons of Liberty - Master Collection Version"
 83,83.1,15,14,0.0,14,0.0,286480,"Black Mirror III"
-83,82.8,11,11,,,,1402110,Eternights
+83,82.8,11,11,,13,,1402110,Eternights
 83,82.7,19,18,0.0,8,0.0,46510,"Syberia 2"
 83,82.6,3,3,0.0,12,0.0,421050,"Deponia Doomsday"
 82,82.1,8,7,,3,,1035510,"Ultimate Zombie Defense"
@@ -65,7 +65,7 @@ rating,rating/h,$,$/h,h,hltb,done?,id,name
 78,77.6,5,4,,1,,2541360,"Tales From The Arcade: Starship Murder"
 78,77.5,56,55,,50,,1025440,"Fantasy General II"
 77,77.4,12,12,,6,,1059880,"Devious Dungeon"
-77,77.3,39,38,,,,538030,"Xenonauts 2"
+77,77.3,39,38,,24,,538030,"Xenonauts 2"
 77,77.3,22,21,0.0,3,0.01,717610,"A Case of Distrust"
 77,77.3,15,14,,,,812380,"Flock of Dogs"
 77,77.2,5,4,,,,2674270,"Cursed Order"
@@ -90,7 +90,7 @@ rating,rating/h,$,$/h,h,hltb,done?,id,name
 76,75.6,3,3,,,,3361890,V-Shift
 75,75.5,1,1,,,,3180450,"Battle Squares"
 75,75.4,6,6,,,,1955440,"Tick Tack Puppet"
-75,75.2,17,17,,,,1319550,"Power of Ten"
+75,75.2,17,17,,8,,1319550,"Power of Ten"
 75,75.1,5,4,,,,3361030,"Orbital Cascade"
 75,75.0,5,4,,,,1316460,Bounty
 75,75.0,1,1,,,,1978750,"PHOBOS: PSYCHODEATH 狂死"
@@ -112,7 +112,7 @@ rating,rating/h,$,$/h,h,hltb,done?,id,name
 73,72.5,6,6,,,,2530890,"Fruit Conflict"
 84,72.2,18,17,0.0,2,0.01,1520,DEFCON
 84,72.2,3,3,0.0,1,0.03,1533050,"Press Ctrl"
-72,72.2,3,3,,,,2921380,"Caribbean Crashers"
+72,72.2,3,3,,0,,2921380,"Caribbean Crashers"
 72,72.1,5,4,,,,1987030,"Heroes of Time"
 72,72.0,15,14,0.0,28,0.0,63650,"Uru: Complete Chronicles"
 84,72.0,1,1,0.0,4,0.01,1836120,QUICKERFLAK
@@ -412,7 +412,7 @@ rating,rating/h,$,$/h,h,hltb,done?,id,name
 80,59.9,3,3,0.1,2,0.03,640890,"Will Glow the Wisp"
 88,59.9,22,20,0.1,7,0.02,1395030,"Kathy Rain: Director's Cut"
 80,59.9,6,6,0.1,4,0.02,1606210,"Heck Deck"
-60,59.9,6,5,,,,2955840,"Kitchen Wars"
+60,59.9,6,5,,2,,2955840,"Kitchen Wars"
 76,59.8,5,4,0.1,4,0.01,34810,"Project Freedom"
 93,59.8,22,19,0.2,22,0.01,247080,"Crypt of the NecroDancer"
 60,59.8,2,1,0.0,,,450850,"Cube Land Arena"
@@ -442,7 +442,7 @@ rating,rating/h,$,$/h,h,hltb,done?,id,name
 59,59.3,8,7,,3,,481870,"Mini Thief"
 97,59.3,15,12,0.2,33,0.01,1118200,"People Playground"
 88,59.3,8,7,0.1,,,1273250,Breakpoint
-59,59.3,2,2,,,,2905180,"Shade Silver"
+59,59.3,2,2,,6,,2905180,"Shade Silver"
 96,59.2,8,6,0.2,17,0.01,3590,"Plants vs. Zombies: Game of the Year"
 95,59.2,29,24,0.2,15,0.01,268910,Cuphead
 75,59.2,12,11,0.1,37,0.0,391030,"Hard to Be a God"
