@@ -1,0 +1,211 @@
+; -*-conf-windows-*-
+; Put this in ...\steam\steamapps\common\fallout 3 goty\.
+; Make sure the console is working.
+; Leave the vault 101 and wait for all the DLC popups to appear.
+; Run "bat fallout3-twb-cheat" in the debug console.
+; Reminder: when the fucking backtick key fails to do anything,
+;           1. turn off gamepad in in-game settings menu
+;           2. Start > Device Manager > Windows eHome Infrared Receiver
+;              Change Settings
+;              Uninstall driver
+;              Play game.
+;              DO NOT restart (it gets reinstalled every boot).
+
+savegame "Fresh Start Before"
+tmm 1,0,1
+
+player.forceav carryweight 11111
+player.forceav actionpoints 1111
+player.setav speedmult 175
+player.setscale 1.10
+
+player.rewardkarma 1000
+
+player.setav barter 111
+player.setav bigguns 111
+player.setav energyweapons 111
+player.setav explosives 111
+player.setav lockpick 111
+player.setav medicine 111
+player.setav meleeweapons 111
+player.setav repair 111
+player.setav science 111
+player.setav smallguns 111
+player.setav sneak 111
+player.setav speech 111
+player.setav unarmed 111
+
+player.setav strength 11
+player.setav perception 11
+player.setav endurance 11
+player.setav charisma 11
+player.setav intelligence 11
+player.setav agility 11
+player.setav luck 11
+
+; https://fallout.fandom.com/wiki/Help:Form_IDs
+; ✓01xxxxxx Operation: Anchorage
+; ✓02xxxxxx The Pitt
+; ✓03xxxxxx Broken Steel
+; ✓04xxxxxx Point Lookout
+; ✓05xxxxxx Mothership Zeta
+
+; perks
+; NOTE: if you give yourself ALL perks,
+;       then you'll soft-lock on level up screen.
+;       give perks I want here, and add useless skill perks to exit level-up.
+; NOTE: if a perk has >1 rank, there's 1 line per rank
+; ESSENTIAL perks
+player.addperk 00031DB3
+player.addperk 00031DB7
+player.addperk 00031DBB
+player.addperk 00044CAF
+player.addperk 00031DCC
+player.addperk 00099834
+; combat perks
+player.addperk 00031DD9
+player.addperk 00031DDB
+player.addperk 00031DDB
+player.addperk 00031DDB
+player.addperk 00094EBA
+player.addperk 00031DE0
+player.addperk 00094EBB
+player.addperk 00031DAB
+player.addperk 00031DAB
+player.addperk 00031DAB
+player.addperk 00099828
+player.addperk 00031DA9
+player.addperk 00094EC1
+player.addperk 00031DB2
+player.addperk 00031DC2
+player.addperk 00031DB4
+player.addperk 00094EC4
+player.addperk 00044CAA
+player.addperk 000331D7
+player.addperk 000331DB
+player.addperk 000331DF
+player.addperk 000331D5
+player.addperk 000331D9
+player.addperk 000331DD
+player.addperk 00035E04
+player.addperk 0003066B
+player.addperk 00024D5C
+player.addperk 0400D1FE
+player.addperk 0500ABB0
+player.addperk 030011C2
+player.addperk 030011BD
+player.addperk 030011C2
+player.addperk 02007354
+player.addperk 020073ea
+player.addperk 0400d1fa
+player.addperk 0400d1fd
+player.addperk 0400d1fb
+; gameplay/quest perks
+player.addperk 94eb9
+player.addperk 94eb8
+player.addperk 3142
+player.addperk 00044CAC
+player.addperk 00044CA8
+player.addperk 00031DE5
+player.addperk 00058FDF
+player.addperk 030011BE
+player.addperk 03004c71
+
+
+; money and lockpicks
+player.additem f 1111111
+player.additem a 1111
+
+
+
+;; weapons
+;; Alien Epoxy (repairs equipped weapon, can't repair 0% weapon, can't repair armor).
+player.additem 5006BE3 11111
+; bb
+player.additem 2935B 11111
+player.additem 6B535 1
+; .32
+player.additem 207F7 11111
+player.additem 66C76 1
+; 10mm
+player.additem 4241 11111
+player.additem 400ED14 1
+player.additem 60C2C 1
+; 5.56mm
+player.additem 4240 11111
+player.additem 200B512 1
+player.additem 200737c 1
+; 5mm
+player.additem 6B53D 11111
+player.additem 6B538 1
+; dart
+player.additem 2936e 11111
+player.additem 432A 1
+; .44
+; not doing Lincoln because quest item
+player.additem 2937e 11111
+; 12 gauge
+player.additem 28eea 11111
+player.additem 6B534 1
+; railway
+player.additem 29384 11111
+player.additem 
+; .308
+player.additem 6b53c 11111
+player.additem CB548 1
+player.additem 92966 1
+; MFC
+player.additem 4485 11111
+player.additem 6B539 1
+player.additem 61793 1
+; SEC (Gaze is a laser shotgun -- bad in vats, good outside vats)
+player.additem 20772 11111
+player.additem C553F 1
+; mesmertron ammo (just in case)
+player.additem 6A80D 111
+; melee
+; UPDATE: don't use slasher knife because it is plot cursed and can't be unequipped
+;player.additem 2869C 1
+player.additem 100B554 1
+player.equipitem 100B554
+player.additem 500083B 1
+player.additem 1003F44 1
+player.additem 200b4b3 1
+player.additem CAFA9 1
+player.additem 432b 1
+
+
+; armour/clothing
+; this is the SIM VERSION so it has effectively infinite HP
+; include a few copies so I can give them to party members?
+; update: give them stealth RECON armor instead
+; update: Chinese Stealth Armor is either "has stealth effect" (non-sim) or "has high durability" (sim version).  Can't have both at once.
+; player.additem 1003A02 1
+player.additem 100c18f 1
+player.equipitem 100c18f
+; therefore include a bunch of recon armor as spare parts
+player.additem 3064d 111
+; stealth recon armor (cut content) (has stealth effect)
+player.additem 100160f 11
+player.additem 100160e 11
+; probably never need a SEVA suit but fuck it.
+player.additem 3307A 1
+; other random sim gear from Operation Anchorage
+player.additem 100C1C8 1
+player.additem 100C1CA 1
+player.additem 1001F09 1
+player.additem 1001F08 1
+player.additem 1003AF9 1
+player.additem 1003AFC 1
+
+
+; other consumables
+player.additem 00015167 1111
+player.additem 00015168 1111
+player.additem 00015169 1111
+
+
+
+; player.srm
+
+savegame "Fresh Start After"
