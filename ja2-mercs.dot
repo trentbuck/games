@@ -1,0 +1,216 @@
+digraph {
+    rankdir=LR;
+    node[shape=record,style=filled]
+    // [label="\N|{{AGI|DEX|STR|LDR|WIS}|{LVL|MRK|EXP|MEC|MED}}|/day||"]
+    // AIM
+    node[fillcolor=palegreen]
+    Gus		// [label="\N|HP|{{AGI|DEX|STR|LDR|WIS}|{LVL|MRK|EXP|MEC|MED}}|/day||"]
+    Magic	// [label="\N|HP|{{AGI|DEX|STR|LDR|WIS}|{LVL|MRK|EXP|MEC|MED}}|/day||"]
+    Scully	// [label="\N|HP|{{AGI|DEX|STR|LDR|WIS}|{LVL|MRK|EXP|MEC|MED}}|/day||"]
+    Reaper	// [label="\N|HP|{{AGI|DEX|STR|LDR|WIS}|{LVL|MRK|EXP|MEC|MED}}|/day||"]
+    Shadow	// [label="\N|HP|{{AGI|DEX|STR|LDR|WIS}|{LVL|MRK|EXP|MEC|MED}}|/day||"]
+    Ivan	// [label="\N|HP|{{AGI|DEX|STR|LDR|WIS}|{LVL|MRK|EXP|MEC|MED}}|/day||"]
+    Scope	// [label="\N|HP|{{AGI|DEX|STR|LDR|WIS}|{LVL|MRK|EXP|MEC|MED}}|/day||"]
+    Lynx	// [label="\N|HP|{{AGI|DEX|STR|LDR|WIS}|{LVL|MRK|EXP|MEC|MED}}|/day||"]
+    Trevor	// [label="\N|HP|{{AGI|DEX|STR|LDR|WIS}|{LVL|MRK|EXP|MEC|MED}}|/day||"]
+    Static	// [label="\N|HP|{{AGI|DEX|STR|LDR|WIS}|{LVL|MRK|EXP|MEC|MED}}|/day||"]
+    Len		// [label="\N|HP|{{AGI|DEX|STR|LDR|WIS}|{LVL|MRK|EXP|MEC|MED}}|/day||"]
+    Vicki	// [label="\N|HP|{{AGI|DEX|STR|LDR|WIS}|{LVL|MRK|EXP|MEC|MED}}|/day||"]
+    Sidney	// [label="\N|HP|{{AGI|DEX|STR|LDR|WIS}|{LVL|MRK|EXP|MEC|MED}}|/day||"]
+    Raider	// [label="\N|HP|{{AGI|DEX|STR|LDR|WIS}|{LVL|MRK|EXP|MEC|MED}}|/day||"]
+    Buzz	// [label="\N|HP|{{AGI|DEX|STR|LDR|WIS}|{LVL|MRK|EXP|MEC|MED}}|/day||"]
+    Raven	// [label="\N|HP|{{AGI|DEX|STR|LDR|WIS}|{LVL|MRK|EXP|MEC|MED}}|/day||"]
+    Thor	// [label="\N|HP|{{AGI|DEX|STR|LDR|WIS}|{LVL|MRK|EXP|MEC|MED}}|/day||"]
+    Stephen	// [label="\N|HP|{{AGI|DEX|STR|LDR|WIS}|{LVL|MRK|EXP|MEC|MED}}|/day||"]
+    Cliff	// [label="\N|HP|{{AGI|DEX|STR|LDR|WIS}|{LVL|MRK|EXP|MEC|MED}}|/day||"]
+    Nails	// [label="\N|HP|{{AGI|DEX|STR|LDR|WIS}|{LVL|MRK|EXP|MEC|MED}}|/day||"]
+    Fidel	// [label="\N|HP|{{AGI|DEX|STR|LDR|WIS}|{LVL|MRK|EXP|MEC|MED}}|/day||"]
+    Ice		// [label="\N|HP|{{AGI|DEX|STR|LDR|WIS}|{LVL|MRK|EXP|MEC|MED}}|/day||"]
+    Danny	// [label="\N|HP|{{AGI|DEX|STR|LDR|WIS}|{LVL|MRK|EXP|MEC|MED}}|/day||"]
+    Wolf	// [label="\N|HP|{{AGI|DEX|STR|LDR|WIS}|{LVL|MRK|EXP|MEC|MED}}|/day||"]
+    "Dr. Q"	// [label="\N|HP|{{AGI|DEX|STR|LDR|WIS}|{LVL|MRK|EXP|MEC|MED}}|/day||"]
+    Malice	// [label="\N|HP|{{AGI|DEX|STR|LDR|WIS}|{LVL|MRK|EXP|MEC|MED}}|/day||"]
+    Hitman	// [label="\N|HP|{{AGI|DEX|STR|LDR|WIS}|{LVL|MRK|EXP|MEC|MED}}|/day||"]
+    Red		// [label="\N|HP|{{AGI|DEX|STR|LDR|WIS}|{LVL|MRK|EXP|MEC|MED}}|/day||"]
+    Blood	// [label="\N|HP|{{AGI|DEX|STR|LDR|WIS}|{LVL|MRK|EXP|MEC|MED}}|/day||"]
+    Spider	// [label="\N|HP|{{AGI|DEX|STR|LDR|WIS}|{LVL|MRK|EXP|MEC|MED}}|/day||"]
+    Steroid	// [label="\N|99 HP|{{AGI 56|DEX 48|STR 97|LDR 9|WIS 62}|{LVL 1|MRK 89|EXP 13|MEC 76|MED 22}}|950/day|{Electronic|Lockpicking}|-"]
+    Meltdown	// [label="\N|HP|{{AGI|DEX|STR|LDR|WIS}|{LVL|MRK|EXP|MEC|MED}}|/day||"]
+    Buns	// [label="\N|HP|{{AGI|DEX|STR|LDR|WIS}|{LVL|MRK|EXP|MEC|MED}}|/day||"]
+    Fox		// [label="\N|HP|{{AGI|DEX|STR|LDR|WIS}|{LVL|MRK|EXP|MEC|MED}}|/day||"]
+    Grunty	// [label="\N|HP|{{AGI|DEX|STR|LDR|WIS}|{LVL|MRK|EXP|MEC|MED}}|/day||"]
+    Grizzly	// [label="\N|HP|{{AGI|DEX|STR|LDR|WIS}|{LVL|MRK|EXP|MEC|MED}}|/day||"]
+    Barry	// [label="\N|HP|{{AGI|DEX|STR|LDR|WIS}|{LVL|MRK|EXP|MEC|MED}}|/day||"]
+    Igor	// [label="\N|HP|{{AGI|DEX|STR|LDR|WIS}|{LVL|MRK|EXP|MEC|MED}}|/day||"]
+    MD		// [label="\N|HP|{{AGI|DEX|STR|LDR|WIS}|{LVL|MRK|EXP|MEC|MED}}|/day||"]
+    Bull	// [label="\N|HP|{{AGI|DEX|STR|LDR|WIS}|{LVL|MRK|EXP|MEC|MED}}|/day||"]
+
+    // MERC
+    node[fillcolor=lightblue]
+    Biff 	// [label="\N|HP 73|{{AGI 74|DEX 71|STR 41|LDR 13|WIS 58}|{LVL 2|MRK 57|EXP 0|MEC 4|MED 24}}|200/day|Teaching|{Coward|Nervous}"]
+    Haywire	// [label="\N|HP|{{AGI|DEX|STR|LDR|WIS}|{LVL|MRK|EXP|MEC|MED}}|/day||"]
+    Gasket	// [label="\N|HP|{{AGI|DEX|STR|LDR|WIS}|{LVL|MRK|EXP|MEC|MED}}|/day||"]
+    Razor	// [label="\N|73 HP|{{AGI 88|DEX 91|STR 86|LDR 4|WIS 53}|{LVL 2|MRK 50|EXP 2|MEC 8|MED 12}}|150/day|Knifing|{Psycho|Aggressive}"]
+    Flo		// [label="\N|HP|{{AGI|DEX|STR|LDR|WIS}|{LVL|MRK|EXP|MEC|MED}}|/day||"]
+    Gumpy	// [label="\N|HP|{{AGI|DEX|STR|LDR|WIS}|{LVL|MRK|EXP|MEC|MED}}|/day||"]
+    Bubba	// [label="\N|HP|{{AGI|DEX|STR|LDR|WIS}|{LVL|MRK|EXP|MEC|MED}}|/day||"]
+    Larry	// [label="\N (sober)|HP|{{AGI|DEX|STR|LDR|WIS}|{LVL|MRK|EXP|MEC|MED}}|/day||"]
+    Numb	// [label="\N|HP|{{AGI|DEX|STR|LDR|WIS}|{LVL|MRK|EXP|MEC|MED}}|/day||"]
+    Cougar	// [label="\N|HP|{{AGI|DEX|STR|LDR|WIS}|{LVL|MRK|EXP|MEC|MED}}|/day||"]
+    // Native
+    node[fillcolor=lightpink]
+    Maddog	// [label="\N|HP|{{AGI|DEX|STR|LDR|WIS}|{LVL|MRK|EXP|MEC|MED}}|/day||"]
+    Dimitri	// [label="\N|HP|{{AGI|DEX|STR|LDR|WIS}|{LVL|MRK|EXP|MEC|MED}}|/day||"]
+    Miguel	// [label="\N|HP|{{AGI|DEX|STR|LDR|WIS}|{LVL|MRK|EXP|MEC|MED}}|/day||"]
+    Carlos	// [label="\N|HP|{{AGI|DEX|STR|LDR|WIS}|{LVL|MRK|EXP|MEC|MED}}|/day||"]
+    Ira		// [label="\N|HP|{{AGI|DEX|STR|LDR|WIS}|{LVL|MRK|EXP|MEC|MED}}|/day||"]
+    Slay	// [label="\N|HP|{{AGI|DEX|STR|LDR|WIS}|{LVL|MRK|EXP|MEC|MED}}|/day||"]
+    Devin	// [label="\N|HP|{{AGI|DEX|STR|LDR|WIS}|{LVL|MRK|EXP|MEC|MED}}|/day||"]
+    Iggy	// [label="\N|HP|{{AGI|DEX|STR|LDR|WIS}|{LVL|MRK|EXP|MEC|MED}}|/day||"]
+    Shank	// [label="\N|HP|{{AGI|DEX|STR|LDR|WIS}|{LVL|MRK|EXP|MEC|MED}}|/day||"]
+    Dynamo	// [label="\N|HP|{{AGI|DEX|STR|LDR|WIS}|{LVL|MRK|EXP|MEC|MED}}|/day||"]
+    Conrad	// [label="\N|HP|{{AGI|DEX|STR|LDR|WIS}|{LVL|MRK|EXP|MEC|MED}}|/day||"]
+
+
+    // If another node shows up, it's a fuckup.
+    node[shape=circle,color=red]
+
+    // LIKES - TWO-WAY
+    edge [len=2,color=green,dir=both,penwidth=4]
+    Carlos -> Dimitri
+    Ira -> Miguel
+    Miguel -> Carlos
+    Miguel -> Dimitri
+    Raider -> Raven
+    Grunty -> Igor
+    Grunty -> Ivan
+    Igor -> Ivan
+    Bull -> Nails
+    Fidel -> Razor
+    Raven -> Spider
+    Biff -> Flo
+    Biff -> Larry
+    Blood -> Magic
+    Buns -> Raider
+    Fox -> Wolf
+    Haywire -> Razor
+    Ice -> Magic
+    Meltdown -> Stephen
+    Scope -> Sidney
+    Spider -> Static
+    Spider -> Vicki
+
+    // LIKES
+    edge [len=2,color=green,dir=forward,penwidth=1]
+    Carlos -> Ira
+    "Dr. Q" -> Vicki
+    Barry -> Red
+    Bubba -> Bull
+    Bubba -> Buzz
+    Bull -> Biff
+    Buns -> Sidney
+    Conrad -> Stephen
+    Cougar -> Len
+    Cougar -> Wolf
+    Devin -> Red
+    Dynamo -> Blood
+    Fidel -> Haywire
+    Flo -> Lynx
+    Fox -> Grizzly
+    Gasket -> Vicki
+    Grizzly -> Bull
+    Grizzly -> Shadow
+    Grizzly -> Wolf
+    Grunty -> Buns
+    Gus -> Len
+    Gus -> Scully
+    Haywire -> Numb
+    Hitman -> Buns
+    Hitman -> Grunty
+    Hitman -> Raven
+    Ice -> Blood
+    Ice -> Grizzly
+    Iggy -> Ivan
+    Larry -> Flo
+    Len -> "Dr. Q"
+    Len -> Vicki
+    Lynx -> Ice
+    MD -> Danny
+    Maddog -> Fox
+    Malice -> Fox
+    Malice -> Meltdown
+    Malice -> Spider
+    Ira -> Dimitri
+    Miguel -> Shadow
+    Nails -> Fox
+    Numb -> Malice
+    Shank -> Ivan
+    Sidney -> Stephen
+    Slay -> Magic
+    Steroid -> Grizzly
+    Thor -> Ice
+    Thor -> Spider
+    Thor -> Static
+    Wolf -> Lynx
+
+    // Dislikes
+    edge [len=4,color=red,dir=forward,penwidth=1]
+    Blood -> Bubba
+    Blood -> Cliff
+    Buns -> Fox
+    Buns -> Gumpy
+    Buns -> Reaper
+    Danny -> Biff
+    Danny -> Bubba
+    Danny -> Steroid
+    Devin -> Buns
+    Dimitri -> Stephen
+    Dynamo -> Bubba
+    Fidel -> Flo
+    Fox -> Haywire
+    Fox -> Steroid
+    Gasket -> Igor
+    Gasket -> Ivan
+    Grizzly -> "Dr. Q"
+    Gus -> Flo
+    Haywire -> Flo
+    Ice -> Bubba
+    Iggy -> Fidel
+    Ira -> Malice
+    Ivan -> Bubba
+    Larry -> Steroid
+    Magic -> Bubba
+    Magic -> Buns
+    Miguel -> Iggy
+    Nails -> Biff
+    Numb -> Scope
+    Numb -> Sidney
+    Numb -> Vicki
+    Razor -> Biff
+    Razor -> Flo
+    Reaper -> Numb
+    Red -> Buns
+    Sidney -> Haywire
+    Sidney -> Meltdown
+    Slay -> Flo
+    Spider -> Buns
+    Static -> Razor
+    Stephen -> Nails
+    Steroid -> Igor
+    Steroid -> Ivan
+    Trevor -> Fidel
+    Trevor -> Thor
+    Vicki -> Gasket
+    Wolf -> Numb
+
+    // HATES - TWO-WAY
+    edge [len=4,color=red,dir=both,penwidth=4]
+    Biff -> Meltdown
+    Buzz -> Lynx
+    Flo -> Meltdown
+    Hitman -> Raider
+    Larry -> Static
+    Len -> Numb
+    Static -> Stephen
+
+}
