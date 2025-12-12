@@ -107,7 +107,7 @@
             - holo_sight
             - # choke          # can't fire slug/explosive shot, but lets you load it -- annoying!
               shot_suppressor  # shot_00 loudness 160 → 130 (hearing-safe)
-            - grip_mount
+            - grip_mod
             - laser_sight
             - gun_mop
         - item:
