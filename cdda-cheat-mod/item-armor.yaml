@@ -288,18 +288,18 @@
     #       NOT hearing-safe: KSG, RDB, RFB, RM88, M24
     - PARTIAL_DEAF
 
-    # Is it annoying to have a *permanent* source of basic light?
-    # UPDATE: apparently not!  Can sleep just fine with this dim light.
-    # AFAICT LIGHT_10 is the minimum to read without penalty.
-    # FIXME: We definitely want a toggle-able source of strong illumination, too...
-    # https://github.com/CleverRaven/Cataclysm-DDA/blob/0.G/src/character.cpp#L2507-L2513
-    # https://github.com/CleverRaven/Cataclysm-DDA/blob/0.G/src/lightmap.h#L11-L18
-    - LIGHT_10
-
     # https://cdda-guide.nornagon.net/bionic/bio_digestion
     # See comments on ench_digestion_recycler_twb
     # - PARAIMMUNE
     # - IMMUNE_SPOIL
+
+  # Is it annoying to have a *permanent* source of basic light?
+  # UPDATE: apparently not!  Can sleep just fine with this dim light.
+  # AFAICT light: 10 is the minimum to read without penalty.
+  # FIXME: We definitely want a toggle-able source of strong illumination, too...
+  # https://github.com/CleverRaven/Cataclysm-DDA/blob/0.G/src/character.cpp#L2507-L2513
+  # https://github.com/CleverRaven/Cataclysm-DDA/blob/0.G/src/lightmap.h#L11-L18
+  light: 10
 
   passive_effects:
     # NOTE: I could inline the enchantments directly here.
