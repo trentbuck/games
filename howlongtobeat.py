@@ -14,6 +14,9 @@ logging.basicConfig(level=logging.INFO)
 sess = httpx.Client(http2=True)
 sess.headers.update(
     headers={
+        # I copied this out of Firefox network tab, it will expire and need to be renewed...
+        # I didn't actually log in or anything, so this token should be anonymous...
+        'x-auth-token': 'MTU5LjE5Ni4yMzAuMjV8MTc2NjIyMTM0MDg5MC43MGJmNjc4MzAzZjYyOTUzN2VmZDk0NWM5MTQ3MWEyMmU2ODg2NDQwZDIyMzY3YmJjZjMyYzNkZmQ2OWZjN2Mz',
         'user-agent': 'Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0',
         'referer': 'https://howlongtobeat.com/'})
 
@@ -34,11 +37,14 @@ def fudge_json(j: dict) -> dict:
         game_dict['profile_steam']
         for game_dict in new_dict['props']['pageProps']['game']['data']['game'])
     j['profile_steam'] = profile_steam
+    if j['profile_steam'] == 0:
+        j['profile_steam'] = None
     # I think returning a partial record might be how they're treating anyone they think is scraping now???
     # if not(any(k in j for k in {'comp_main', 'comp_all', 'comp_100', 'comp_plus'})):
     #     logging.warning('SKIPPING! %s (%s)', j['game_name'], j['profile_steam'])
     #     return {'comp_main': None, 'comp_all': None, 'comp_100': None, 'comp_plus': None} | j
-    logging.info('profile_steam %s', profile_steam)
+    # UPDATE: httpx logs its own events now so this is not really useful.
+    # logging.info('profile_steam %s', profile_steam)
     return j
 
 
@@ -48,11 +54,11 @@ with sqlite3.connect('all-games.db') as conn:
         SELECT games.name FROM games
         LEFT OUTER JOIN howlongtobeat ON (games.id = howlongtobeat.profile_steam)
         WHERE howlongtobeat.profile_steam IS NULL  -- haven't already fetched it
-        -- AND price                                  -- skip free-to-play games
-        -- -- ORDER BY time desc
-        ORDER BY time desc, "$" desc, rating desc
+        AND price                                  -- skip free-to-play games
+        ORDER BY time desc
+        -- ORDER BY time desc, "$" desc, rating desc
         -- SELECT name FROM what_game_next_numeric WHERE hltb IS NULL AND "$" IS NOT NULL order by rating desc
-        -- SELECT name FROM what_game_next_numeric WHERE hltb IS NULL
+        -- SELECT name FROM what_game_next_numeric_nonfree WHERE hltb IS NULL ORDER BY "$" DESC
         -- SELECT name FROM what_game_next_to_lower_my_KPI WHERE hltb IS NULL AND "$" IS NOT NULL
         """).fetchall()
     # random.shuffle(rows)
@@ -61,13 +67,19 @@ with sqlite3.connect('all-games.db') as conn:
         logging.debug('QUERY %s', game_name)
         resp = sess.post(
             # 'https://howlongtobeat.com/api/ouch/0980d1750bf5c22b',
-	    'https://howlongtobeat.com/api/seek/d4b2e330db04dbf3',
+	    # 'https://howlongtobeat.com/api/seek/d4b2e330db04dbf3',
+            # 'https://howlongtobeat.com/api/seek/6e17f7a193ef3188',
+	    # 'https://howlongtobeat.com/api/seek/4b4b4927c2c36e68',
+	    # 'https://howlongtobeat.com/api/locate/5d6cf2e5eb308ba8',
+	    'https://howlongtobeat.com/api/search',
             json={
                 "searchType":"games",
                 "searchTerms": (
                     game_name
                     .replace('®', '')
                     .replace('™', '')
+                    .replace(' - ', '')
+                    .replace(': ', ' ')
                     .split()),
                 "searchPage":1,
                 "size":20,
@@ -93,6 +105,7 @@ with sqlite3.connect('all-games.db') as conn:
         )
         resp.raise_for_status()
         logging.info('RESULTS %s %s', game_name, len(resp.json()['data']))
+        # import pprint; pprint.pprint(resp.json()['data'])
         # import pathlib; pathlib.Path('/tmp/tmp.json').write_text(json.dumps(resp.json()['data']))  # DEBUGGING
         conn.executemany(
             """
