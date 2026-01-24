@@ -16,10 +16,14 @@
   volume: 1 ml
   longest_side: 1 cm
   price: 1 cent
+  # Used to E_FILE_STORAGE pocket
+  etransfer_rate: 1 TB
   pocket_data:
     - pocket_type: E_FILE_STORAGE
       ememory_max: 2 TB
-      etransfer_rate: 1 TB
+      # etransfer_rate: 1 TB
+      # DEBUG: sonic screwdriver (2.0 TB free) is candidate for transferring e-files but has no etransfer_rate ???
+      # FIXME: what's the BEST e_port -- is laptop a superset of the others?
       e_port: phone
       rigid: true
       max_contains_volume: 1 ml
