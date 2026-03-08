@@ -4,8 +4,8 @@ rating,rating/h,$,$/h,h,hltb,done?,id,name
 89,89.4,2,2,,15,,282800,"100% Orange Juice"
 89,89.1,6,6,,8,,1924360,"Lil' Guardsman"
 88,87.8,,,,42,,12250,"Grand Theft Auto: San Andreas"
-87,87.1,23,23,,,,1272840,Dordogne
-87,86.8,12,12,,,,2512920,"Garlic Builder"
+87,87.1,23,23,,4,,1272840,Dordogne
+87,86.8,12,12,,9,,2512920,"Garlic Builder"
 87,86.7,19,19,,5,,1055850,"Inspector Waffles"
 87,86.5,3,3,,11,,1210230,"Suits: Absolute Power"
 86,86.1,15,14,,4,,465100,"LUNA The Shadow Dust"
@@ -15,7 +15,7 @@ rating,rating/h,$,$/h,h,hltb,done?,id,name
 85,85.0,15,14,0.0,104,0.0,245450,"Wizardry 8"
 85,84.9,11,11,,,,2562620,"The Palace on the Hill"
 84,84.3,6,6,,18,,1536620,"Galactic Glitch"
-84,84.0,3,3,,,,442210,Switchcars
+84,84.0,3,3,,3,,442210,Switchcars
 84,83.7,9,9,,12,,2243110,"EMPTY SHELL"
 83,83.4,15,14,0.0,14,0.0,286480,"Black Mirror III"
 83,83.2,,,0.0,,,15130,"Beyond Good & Evil"
@@ -83,15 +83,15 @@ rating,rating/h,$,$/h,h,hltb,done?,id,name
 76,76.1,12,12,,28,,1731070,"Asterigos: Curse of the Stars"
 76,75.7,29,28,0.0,7,0.0,1099640,"Jack Move"
 76,75.7,5,4,,2,,2547140,"Undercroft Warriors"
-75,75.5,15,14,,,,2644360,Kingsgrave
+75,75.5,15,14,,6,,2644360,Kingsgrave
 75,75.1,,,,3,,769920,"Odysseus Kosmos and his Robot Quest - Episode 1"
 75,75.0,,,,1,,272060,Serena
 75,74.8,,,,4,,278910,Interplanetary
-75,74.8,29,28,,,,1600370,"Not Tonight 2"
+75,74.8,29,28,,9,,1600370,"Not Tonight 2"
 87,74.4,,,0.0,4,0.01,9040,"Quake Mission Pack 1: Scourge of Armagon"
 87,74.1,1,1,0.0,2,0.02,586350,UBERMOSH:WRAITH
 74,73.9,,,0.0,3,0.01,8380,"Strong Bad Episode 5: 8-Bit Is Enough"
-74,73.6,37,36,,,,1122690,"Last Stop"
+74,73.6,37,36,,6,,1122690,"Last Stop"
 74,73.6,44,43,,21,,1368870,"Field of Glory II: Medieval"
 86,73.2,1,1,0.0,4,0.01,1836120,QUICKERFLAK
 73,73.2,40,39,,36,,2362420,"Mass Effect 2 (2010) Edition"
@@ -167,7 +167,7 @@ rating,rating/h,$,$/h,h,hltb,done?,id,name
 69,69.0,,,,3,,1269500,"Crowalt: Traces of the Lost Colony"
 69,68.9,1,1,,2,,1990740,"Barro GT"
 80,68.7,15,14,0.0,3,0.01,325520,"Fire: Ungh’s Quest"
-69,68.7,2,1,,,,3447170,Cursedland
+69,68.7,2,1,,2,,3447170,Cursedland
 92,68.7,5,4,0.1,1,0.06,3463050,"Dreams of Aether"
 87,68.4,8,7,0.1,26,0.0,6800,"Commandos: Behind Enemy Lines"
 68,68.3,15,15,0.0,11,0.0,11040,"Sherlock Holmes: Nemesis"
@@ -292,7 +292,7 @@ rating,rating/h,$,$/h,h,hltb,done?,id,name
 90,62.6,6,5,0.1,4,0.03,344480,Quell
 84,62.6,12,11,0.1,2,0.03,574310,"The Mooseman"
 79,62.6,1,1,0.1,1,0.03,1105620,Exertus
-94,62.6,,,0.1,,,2171690,Handshakes
+94,62.6,,,0.1,1,0.12,2171690,Handshakes
 94,62.5,,,0.1,1,0.09,1281800,"Samsara Room"
 63,62.5,2,1,0.0,,,1386110,"Xentron Attack"
 62,62.5,12,12,,3,,2337860,Nubs!
@@ -313,7 +313,7 @@ rating,rating/h,$,$/h,h,hltb,done?,id,name
 91,61.9,10,9,0.1,3,0.04,272600,"Detective Grimoire"
 79,61.9,8,7,0.1,2,0.03,510620,THOTH
 89,61.8,15,13,0.1,25,0.0,667600,"Sky Force Reloaded"
-62,61.8,2,2,,,,1456200,"Initial Drift Online"
+62,61.8,2,2,,3,,1456200,"Initial Drift Online"
 72,61.7,6,6,0.0,,,1285070,"Bad Run - Turbo Edition"
 95,61.7,8,7,0.1,8,0.02,1292940,"Cube Escape Collection"
 93,61.6,,,0.1,14,0.01,13240,"Unreal Tournament: Game of the Year Edition"
@@ -333,7 +333,7 @@ rating,rating/h,$,$/h,h,hltb,done?,id,name
 94,61.2,59,51,0.1,32,0.0,610370,"Desperados III"
 88,61.2,6,5,0.1,0,2.35,1232130,"BEAR, VODKA, STALINGRAD! 🐻"
 92,61.2,,,0.1,1,0.25,1516240,Mitoza
-61,61.2,8,7,,,,3180310,"Billies Wheelie"
+61,61.2,8,7,,4,,3180310,"Billies Wheelie"
 85,61.1,8,7,0.1,6,0.01,38720,RUSH
 90,61.1,,,0.1,1,0.12,1475380,TheDawn
 90,61.1,2,1,0.1,1,0.13,1554840,"Toree 3D"
@@ -428,7 +428,7 @@ rating,rating/h,$,$/h,h,hltb,done?,id,name
 95,59.2,29,24,0.2,15,0.01,268910,Cuphead
 89,59.2,5,4,0.1,9,0.02,1546790,"Peace, Death! 2"
 59,59.2,1,1,,11,,1755300,"Smart Factory Tycoon"
-89,59.2,9,8,0.1,,,1876850,"Babushka's Glitch Dungeon"
+89,59.2,9,8,0.1,3,0.05,1876850,"Babushka's Glitch Dungeon"
 79,59.1,8,7,0.1,4,0.02,205840,Yesterday
 82,59.1,29,27,0.1,,,334310,"Plebby Quest: The Crusades"
 89,59.1,29,26,0.1,8,0.02,405820,Turok
@@ -554,7 +554,7 @@ rating,rating/h,$,$/h,h,hltb,done?,id,name
 85,57.3,6,5,0.1,4,0.03,436390,"Prison Run and Gun"
 86,57.3,15,13,0.1,5,0.03,617440,"Juanito Arcade Mayhem"
 91,57.3,,,0.2,2,0.11,875610,"Loop-Loop DX"
-90,57.3,,,0.2,,,980610,Quaver
+90,57.3,,,0.2,57,0.0,980610,Quaver
 91,57.3,8,6,0.2,1,0.13,1146510,"Deep Sleep Trilogy"
 86,57.3,,,0.1,3,0.05,1345470,"Lockheart Indigo"
 85,57.3,,,0.1,1,0.13,1647160,"Deepest Sword"
@@ -659,7 +659,7 @@ rating,rating/h,$,$/h,h,hltb,done?,id,name
 90,56.0,,,0.2,,,1406040,"Scarlet Hollow — Episode 1"
 75,55.9,2,2,0.1,5,0.01,204060,"Superbrothers: Sword & Sworcery EP"
 80,55.9,6,5,0.1,5,0.02,285840,"Enemy Mind"
-65,55.9,3,3,0.0,,,510840,Evolvation
+65,55.9,3,3,0.0,3,0.01,510840,Evolvation
 90,55.9,9,7,0.2,2,0.09,676820,"Subsurface Circular"
 94,55.9,,,0.3,0,0.77,1241700,"There is no game: Jam Edition 2015"
 86,55.9,5,4,0.1,7,0.02,1356480,"Sokpop S08: helionaut"
@@ -897,7 +897,7 @@ rating,rating/h,$,$/h,h,hltb,done?,id,name
 88,53.5,6,5,0.2,3,0.09,1234520,"The Escaper"
 91,53.5,2,1,0.3,0,0.99,1258310,"Mushroom Cats 2"
 81,53.5,6,5,0.1,38,0.0,1285010,"Cyber Protocol"
-79,53.5,,,0.1,,,1533600,"The 2020 Trail"
+79,53.5,,,0.1,6,0.02,1533600,"The 2020 Trail"
 87,53.5,5,4,0.2,1,0.39,1975180,"The Night of the Scissors"
 87,53.5,22,18,0.2,6,0.03,2721530,Afterplace
 82,53.4,9,8,0.1,6,0.02,63660,"Myst: Masterpiece Edition"
@@ -984,7 +984,7 @@ rating,rating/h,$,$/h,h,hltb,done?,id,name
 88,52.8,12,9,0.3,7,0.04,1303950,"Toodee and Topdee"
 82,52.8,,,0.2,1,0.24,1948620,"Albert Innovation"
 95,52.8,,,0.5,5,0.1,2415010,"A Date with Death"
-89,52.8,4,3,0.3,,,3809940,"Drill Bird"
+89,52.8,4,3,0.3,1,0.26,3809940,"Drill Bird"
 67,52.7,8,7,0.1,6,0.01,338420,Alum
 91,52.7,,,0.3,1,0.4,409160,"Dr. Langeskov, The Tiger, and The Terribly Cursed Emerald: A Whirlwind Heist"
 85,52.7,8,6,0.2,17,0.01,656970,MagiCat
@@ -1283,7 +1283,7 @@ rating,rating/h,$,$/h,h,hltb,done?,id,name
 81,50.2,,,0.2,,,1763230,"Mi Scusi"
 86,50.2,8,6,0.3,1,0.27,2431100,"That Which Gave Chase"
 91,50.2,12,8,0.5,1,0.34,2477090,"Mosa Lina"
-93,50.2,,,0.6,,,3692660,"The New Flesh"
+93,50.2,,,0.6,1,0.48,3692660,"The New Flesh"
 89,50.1,20,14,0.4,13,0.03,207320,"Ys: The Oath in Felghana"
 76,50.1,8,7,0.1,12,0.01,207570,"English Country Tune"
 72,50.1,5,4,0.1,4,0.03,214570,"Ether Vapor Remaster"
@@ -1322,7 +1322,7 @@ rating,rating/h,$,$/h,h,hltb,done?,id,name
 90,49.9,23,16,0.4,10,0.04,675260,"Batman: The Enemy Within - The Telltale Series"
 84,49.9,,,0.3,,,909110,"Acid Nimbus"
 93,49.9,,,0.6,18,0.03,1216200,"Coloring Game 2"
-88,49.9,,,0.4,,,1252780,"Bloons Monkey City"
+88,49.9,,,0.4,30,0.01,1252780,"Bloons Monkey City"
 77,49.9,,,0.1,1,0.26,1332210,"Signs of the Sojourner: Prologue"
 74,49.9,15,13,0.1,1,0.16,1340180,"Sherwood Extreme"
 86,49.9,6,5,0.3,2,0.13,1525320,"Dadish 2"
@@ -1401,7 +1401,7 @@ rating,rating/h,$,$/h,h,hltb,done?,id,name
 90,49.4,,,0.5,1,0.43,1274140,"One Dreamer: Prologue"
 88,49.4,5,3,0.4,1,0.35,1323000,"Space Court"
 84,49.4,18,14,0.3,3,0.09,1417890,"Catie in MeowmeowLand"
-80,49.4,8,6,0.2,,,2825110,Technotopia
+80,49.4,8,6,0.2,5,0.05,2825110,Technotopia
 83,49.3,8,6,0.3,4,0.07,94590,"Puzzle Agent 2"
 91,49.3,22,14,0.5,3,0.18,250260,"Jazzpunk: Director's Cut"
 83,49.3,10,8,0.3,4,0.08,403180,"Draw a Stickman: EPIC 2"
@@ -1473,7 +1473,7 @@ rating,rating/h,$,$/h,h,hltb,done?,id,name
 81,48.9,29,23,0.3,46,0.01,995980,"Fae Tactics"
 92,48.9,22,14,0.6,9,0.07,1045720,"The Coma 2: Vicious Sisters"
 87,48.9,3,2,0.4,1,0.29,2424650,"Froggy's Battle"
-49,48.9,1,1,,,,2623090,"Battle Simulator: Counter Stickman"
+49,48.9,1,1,,2,,2623090,"Battle Simulator: Counter Stickman"
 88,48.8,,,0.4,,,235780,"MINERVA: Metastasis"
 72,48.8,9,8,0.1,4,0.03,320330,Earthworms
 90,48.8,9,6,0.5,5,0.1,355170,"Sam & Max Hit the Road"
@@ -1499,7 +1499,7 @@ rating,rating/h,$,$/h,h,hltb,done?,id,name
 85,48.7,17,12,0.4,2,0.18,720660,Overloop
 86,48.7,15,11,0.4,,,1363690,"Fantastic Contraption Classic 1 & 2"
 90,48.7,7,5,0.6,7,0.08,1406850,"The Legend of Tianding"
-92,48.7,,,0.6,,,1535560,"Farmer Against Potatoes Idle"
+92,48.7,,,0.6,1283,0.0,1535560,"Farmer Against Potatoes Idle"
 92,48.7,18,11,0.7,5,0.12,2378620,"Anomaly Agent"
 68,48.6,15,13,0.1,12,0.01,280,"Half-Life: Source"
 78,48.6,15,12,0.2,,,26000,"The Maw"
@@ -1605,7 +1605,7 @@ rating,rating/h,$,$/h,h,hltb,done?,id,name
 69,47.9,19,17,0.1,7,0.02,361550,Cradle
 85,47.9,5,3,0.4,6,0.07,474750,Reigns
 94,47.9,22,12,0.8,51,0.02,516750,"My Summer Car"
-80,47.9,8,7,0.3,,,610960,"Red Obsidian Remnant"
+80,47.9,8,7,0.3,3,0.1,610960,"Red Obsidian Remnant"
 72,47.9,10,9,0.1,6,0.02,711430,"Miss Fisher and the Deathly Maze"
 67,47.9,15,13,0.1,,,857540,"Soviet Bear Uni Adventure"
 72,47.9,12,10,0.1,103,0.0,937940,"Sea Dogs: City of Abandoned Ships"
@@ -2078,7 +2078,7 @@ rating,rating/h,$,$/h,h,hltb,done?,id,name
 88,45.0,23,13,0.8,6,0.13,1364100,Lacuna
 82,45.0,9,6,0.5,,,1415020,"Bloody Service"
 72,45.0,30,25,0.2,4,0.05,1698220,"Teslagrad 2"
-92,45.0,,,1.2,,,3224770,"Umamusume: Pretty Derby"
+92,45.0,,,1.2,32,0.04,3224770,"Umamusume: Pretty Derby"
 87,44.9,6,3,0.8,24,0.03,48190,"Assassin's Creed Brotherhood"
 86,44.9,7,4,0.7,25,0.03,313690,"LEGO® Batman™ 3: Beyond Gotham"
 77,44.9,15,11,0.3,4,0.08,319850,"Bridge Constructor Medieval"
@@ -2493,7 +2493,7 @@ rating,rating/h,$,$/h,h,hltb,done?,id,name
 77,42.4,36,25,0.5,7,0.07,1075170,"Weaving Tides"
 71,42.4,44,35,0.3,19,0.01,1608700,Soundfall
 86,42.4,3,1,1.2,1,0.86,1620720,"The Forest Quartet"
-86,42.4,,,1.1,,,1877960,Trimps
+86,42.4,,,1.1,1030,0.0,1877960,Trimps
 88,42.4,22,9,1.4,22,0.07,2020860,"Rush Rally 3"
 88,42.4,,,1.3,1,1.27,2735870,Underminer
 92,42.4,13,4,2.0,24,0.08,3083300,Proverbs
@@ -2508,7 +2508,7 @@ rating,rating/h,$,$/h,h,hltb,done?,id,name
 76,42.3,3,2,0.5,7,0.07,513230,"The Underground Man"
 68,42.3,7,6,0.2,5,0.04,746030,"Wreckin Ball Adventure"
 86,42.3,85,40,1.1,32,0.04,819030,"STEINS;GATE ELITE"
-77,42.3,8,5,0.5,,,2852980,Necroking
+77,42.3,8,5,0.5,6,0.08,2852980,Necroking
 78,42.2,,,0.5,5,0.11,216110,"Tiny Troopers"
 62,42.2,12,10,0.1,9,0.01,277270,"Return to Mysterious Island 2"
 87,42.2,15,6,1.4,3,0.43,303430,Roundabout
@@ -2565,7 +2565,7 @@ rating,rating/h,$,$/h,h,hltb,done?,id,name
 96,41.9,45,11,3.1,67,0.05,787480,"Phoenix Wright: Ace Attorney Trilogy"
 88,41.9,20,8,1.5,4,0.37,938560,INMOST
 71,41.9,19,14,0.3,11,0.03,982040,"Don't Die, Minerva!"
-84,41.9,10,5,1.0,,,1054510,"Survivalist: Invisible Strain"
+84,41.9,10,5,1.0,129,0.01,1054510,"Survivalist: Invisible Strain"
 90,41.9,12,4,1.8,8,0.22,1080750,Mutazione
 91,41.9,2,0,2.0,7,0.3,1139890,"Dictators:No Peace Countryballs"
 80,41.9,22,13,0.7,9,0.08,1173200,"Metal Unit"
@@ -2711,7 +2711,7 @@ rating,rating/h,$,$/h,h,hltb,done?,id,name
 81,40.9,15,8,0.9,5,0.19,950300,REDO!
 65,40.9,35,30,0.2,7,0.02,1494260,"Loot River"
 74,40.9,10,7,0.5,,,1555920,"CAN ANDROIDS SURVIVE"
-80,40.9,,,0.8,,,2482190,"Power Fantasy"
+80,40.9,,,0.8,3,0.29,2482190,"Power Fantasy"
 78,40.9,15,9,0.7,4,0.18,2632930,"Life Eater"
 74,40.8,,,0.5,13,0.03,17430,"Need for Speed: Undercover"
 91,40.8,22,6,2.6,7,0.38,22000,"World of Goo"
@@ -2809,7 +2809,7 @@ rating,rating/h,$,$/h,h,hltb,done?,id,name
 89,40.3,38,11,2.3,28,0.08,673880,"Warhammer 40,000: Mechanicus"
 81,40.3,1,1,1.0,3,0.4,946770,"Scheming Through The Zombie Apocalypse Ep2: Caged"
 93,40.3,27,6,3.4,5,0.63,953490,CARRION
-70,40.3,,,0.3,,,1241500,"Dirty Harry's Thunder Drive"
+70,40.3,,,0.3,0,0.72,1241500,"Dirty Harry's Thunder Drive"
 72,40.3,27,19,0.4,15,0.03,1367300,"Blade Assault"
 82,40.3,,,1.1,,,1395230,"Almost My Floor: Prologue"
 85,40.2,24,9,1.6,5,0.34,246580,"The Typing of The Dead: Overkill"
@@ -2822,7 +2822,7 @@ rating,rating/h,$,$/h,h,hltb,done?,id,name
 86,40.2,40,14,1.8,16,0.11,1462570,"Lost in Random™"
 92,40.2,,,3.3,340,0.01,1468260,"Leaf Blower Revolution - Idle Game"
 58,40.2,8,7,0.1,,,1541420,"The Farmthis Gallery"
-74,40.2,,,0.5,,,2742840,Saturn
+74,40.2,,,0.5,11,0.05,2742840,Saturn
 82,40.1,3,1,1.3,8,0.16,19800,"Brothers in Arms: Earned in Blood"
 78,40.1,,,0.8,11,0.08,34270,"SEGA Mega Drive & Genesis Classics"
 85,40.1,,,1.6,5,0.32,45450,"Fortix 2"
@@ -3449,7 +3449,7 @@ rating,rating/h,$,$/h,h,hltb,done?,id,name
 68,35.8,2,1,0.7,11,0.06,699670,"Feudal Alloy"
 74,35.8,38,16,1.3,39,0.03,812040,"Shortest Trip to Earth"
 71,35.8,45,23,0.9,11,0.08,816090,"Space Hulk: Deathwing - Enhanced Edition"
-,35.8,,,0.8,,,1582620,"Mega Man X DiVE"
+,35.8,,,0.8,55,0.02,1582620,"Mega Man X DiVE"
 68,35.7,2,1,0.7,3,0.23,21010,"Watchmen: The End Is Nigh"
 89,35.7,,,7.7,10,0.74,57640,"Broken Sword 1 - Shadow of the Templars: Director's Cut (2009)"
 96,35.7,15,1,15.9,10,1.52,223470,"POSTAL 2"
@@ -3477,7 +3477,7 @@ rating,rating/h,$,$/h,h,hltb,done?,id,name
 87,35.5,22,3,6.3,14,0.45,1728660,"Rush Rally Origins"
 85,35.5,8,1,5.3,3,2.07,2213120,"While We Wait Here"
 75,35.5,12,5,1.6,12,0.13,2277320,"Necrosmith 2"
-82,35.5,4,1,3.5,,,2747550,Bloodshed
+82,35.5,4,1,3.5,10,0.35,2747550,Bloodshed
 85,35.4,15,2,5.4,6,0.87,32640,"Delta Force: Land Warrior"
 85,35.4,44,7,5.5,15,0.37,324800,"Shadow Warrior 2"
 77,35.4,60,20,2.1,37,0.06,536270,"Ancestors: The Humankind Odyssey "
@@ -3768,7 +3768,7 @@ rating,rating/h,$,$/h,h,hltb,done?,id,name
 76,32.8,30,6,3.9,264,0.01,359320,"Elite Dangerous"
 79,32.8,3,0,5.3,13,0.4,394310,"Punch Club"
 79,32.8,15,2,5.3,6,0.94,414720,"Astrox: Hostile Space Excavation"
-64,32.8,,,0.8,,,600750,"Star Trek Timelines"
+64,32.8,,,0.8,417,0.0,600750,"Star Trek Timelines"
 86,32.8,57,4,12.1,11,1.08,629820,Maneater
 48,32.8,2,2,0.1,,,715020,"Elden: Path of the Forgotten"
 67,32.8,30,13,1.2,4,0.31,962630,"Transient: Extended Edition"
@@ -3923,7 +3923,7 @@ rating,rating/h,$,$/h,h,hltb,done?,id,name
 88,30.8,6,0,35.2,31,1.15,208650,"Batman™: Arkham Knight"
 89,30.8,40,1,39.2,27,1.46,480490,Prey
 79,30.8,40,3,10.7,36,0.3,729040,"Borderlands GOTY Enhanced"
-60,30.8,,,0.8,,,1717170,"Gentlemen's Club"
+60,30.8,,,0.8,6,0.14,1717170,"Gentlemen's Club"
 65,30.7,7,3,1.6,3,0.62,22310,"Rogue Warrior"
 79,30.7,28,2,11.3,10,1.14,222480,"Resident Evil Revelations"
 79,30.7,19,2,11.1,37,0.3,239120,"Final Fantasy III (3D Remake)"
