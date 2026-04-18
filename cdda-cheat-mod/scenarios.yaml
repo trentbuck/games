@@ -17,13 +17,6 @@
       - cheater_job
 
 - type: scenario
-  copy-from: lab_chal
-  id: lab_chal
-  extend:
-    professions:
-      - cheater_job
-
-- type: scenario
   copy-from: lab_staff
   id: lab_staff
   extend:
