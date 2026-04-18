@@ -96,7 +96,8 @@
             - hybrid_sight_4x
             - red_dot_sight
             - pistol_grip
-            - cheek_grip
+            - cheek_pad
+            - offset_grip
             - gun_mop
           ammo-item: 556_m995
         - item: stanag60
