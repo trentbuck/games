@@ -32,8 +32,8 @@
     - bio_lockpick
     # - bio_syringe  # NOTE: you get a free syringe when using a flu_shot
     - bio_fitnessband
-  cancels:
-    - NO_CBM_INSTALLATION
+  traits:
+    - CBM_Interface
 
   items:
     both:
