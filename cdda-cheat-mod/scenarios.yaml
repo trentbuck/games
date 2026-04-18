@@ -9,19 +9,19 @@
     professions:
       - cheater_job
 
-- type: scenario
-  copy-from: medieval
-  id: twb_medieval
-  extend:
-    professions:
-      - cheater_job
+#CIRCULAR???# - type: scenario
+#CIRCULAR???#   copy-from: medieval
+#CIRCULAR???#   id: twb_medieval
+#CIRCULAR???#   extend:
+#CIRCULAR???#     professions:
+#CIRCULAR???#       - cheater_job
 
-- type: scenario
-  copy-from: lab_staff
-  id: twb_lab_staff
-  extend:
-    professions:
-      - cheater_job
+#CIRCULAR???# - type: scenario
+#CIRCULAR???#   copy-from: lab_staff
+#CIRCULAR???#   id: twb_lab_staff
+#CIRCULAR???#   extend:
+#CIRCULAR???#     professions:
+#CIRCULAR???#       - cheater_job
 
 - type: scenario
   copy-from: lab_cargo_staff_1
