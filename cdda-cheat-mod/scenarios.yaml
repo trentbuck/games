@@ -4,154 +4,154 @@
 
 - type: scenario
   copy-from: bad_day
-  id: twb_bad_day
+  id: bad_day
   extend:
     professions:
       - cheater_job
 
 #CIRCULAR???# - type: scenario
 #CIRCULAR???#   copy-from: medieval
-#CIRCULAR???#   id: twb_medieval
+#CIRCULAR???#   id: medieval
 #CIRCULAR???#   extend:
 #CIRCULAR???#     professions:
 #CIRCULAR???#       - cheater_job
 
 #CIRCULAR???# - type: scenario
 #CIRCULAR???#   copy-from: lab_staff
-#CIRCULAR???#   id: twb_lab_staff
+#CIRCULAR???#   id: lab_staff
 #CIRCULAR???#   extend:
 #CIRCULAR???#     professions:
 #CIRCULAR???#       - cheater_job
 
 - type: scenario
   copy-from: lab_cargo_staff_1
-  id: twb_lab_cargo_staff_1
+  id: lab_cargo_staff_1
   extend:
     professions:
       - cheater_job
 
 - type: scenario
   copy-from: alone
-  id: twb_alone
+  id: alone
   extend:
     professions:
       - cheater_job
 
 - type: scenario
   copy-from: patient
-  id: twb_patient
+  id: patient
   extend:
     professions:
       - cheater_job
 
 - type: scenario
   copy-from: prisonbreak
-  id: twb_prisonbreak
+  id: prisonbreak
   extend:
     professions:
       - cheater_job
 
 - type: scenario
   copy-from: alcatraz
-  id: twb_alcatraz
+  id: alcatraz
   extend:
     professions:
       - cheater_job
 
 - type: scenario
   copy-from: migo_prisoner
-  id: twb_migo_prisoner
+  id: migo_prisoner
   extend:
     professions:
       - cheater_job
 
 - type: scenario
   copy-from: mutant
-  id: twb_mutant
+  id: mutant
   extend:
     professions:
       - cheater_job
 
 - type: scenario
   copy-from: foodplace
-  id: twb_foodplace
+  id: foodplace
   extend:
     professions:
       - cheater_job
 
 - type: scenario
   copy-from: last_delivery
-  id: twb_last_delivery
+  id: last_delivery
   extend:
     professions:
       - cheater_job
 
 - type: scenario
   copy-from: last_flight
-  id: twb_last_flight
+  id: last_flight
   extend:
     professions:
       - cheater_job
 
 - type: scenario
   copy-from: heli_crash
-  id: twb_heli_crash
+  id: heli_crash
   extend:
     professions:
       - cheater_job
 
 - type: scenario
   copy-from: Mine_bottom
-  id: twb_Mine_bottom
+  id: Mine_bottom
   extend:
     professions:
       - cheater_job
 
 - type: scenario
   copy-from: overrun
-  id: twb_overrun
+  id: overrun
   extend:
     professions:
       - cheater_job
 
 - type: scenario
   copy-from: presort
-  id: twb_presort
+  id: presort
   extend:
     professions:
       - cheater_job
 
 - type: scenario
   copy-from: portal_dependent
-  id: twb_portal_dependent
+  id: portal_dependent
   extend:
     professions:
       - cheater_job
 
 - type: scenario
   copy-from: Mansion
-  id: twb_Mansion
+  id: Mansion
   extend:
     professions:
       - cheater_job
 
 - type: scenario
   copy-from: aircraft_carrier_start
-  id: twb_aircraft_carrier_start
+  id: aircraft_carrier_start
   extend:
     professions:
       - cheater_job
 
 - type: scenario
   copy-from: golden_years
-  id: twb_golden_years
+  id: golden_years
   extend:
     professions:
       - cheater_job
 
 - type: scenario
   copy-from: nuclear_plant_start
-  id: twb_nuclear_plant_start
+  id: nuclear_plant_start
   extend:
     professions:
       - cheater_job
@@ -162,21 +162,21 @@
 
 - type: scenario
   copy-from: ambushed
-  id: twb_ambushed
+  id: ambushed
   extend:
     professions:
       - cheater_job
 
 - type: scenario
   copy-from: summer_advanced_start
-  id: twb_summer_advanced_start
+  id: summer_advanced_start
   extend:
     professions:
       - cheater_job
 
 - type: scenario
   copy-from: faction_camp_start
-  id: twb_faction_camp_start
+  id: faction_camp_start
   extend:
     professions:
       - cheater_job
