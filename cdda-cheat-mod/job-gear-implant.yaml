@@ -32,6 +32,8 @@
     - bio_lockpick
     # - bio_syringe  # NOTE: you get a free syringe when using a flu_shot
     - bio_fitnessband
+  cancels:
+    - NO_CBM_INSTALLATION
 
   items:
     both:
@@ -89,9 +91,12 @@
             - suppressor       # 556 loudness 168 → 118 (hearing-safe)
             - match_trigger
             - modern_handguard
-            - holo_sight
-            - holo_magnifier
+            # - holo_sight
+            # - holo_magnifier
+            - hybrid_sight_4x
+            - red_dot_sight
             - pistol_grip
+            - cheek_grip
             - gun_mop
           ammo-item: 556_m995
         - item: stanag60
@@ -107,7 +112,6 @@
             - holo_sight
             - # choke          # can't fire slug/explosive shot, but lets you load it -- annoying!
               shot_suppressor  # shot_00 loudness 160 → 130 (hearing-safe)
-            - grip_mod
             - laser_sight
             - gun_mop
         - item:
@@ -124,7 +128,10 @@
             - underbarrel_mount
             - match_trigger
             - modern_handguard
-            - acog_scope
+            # - acog_scope
+            # - hybrid_sight_4x
+            - rifle_scope_high_end_mount
+            - red_dot_sight
             - pistol_grip
             - gun_mop
           ammo-item: 762_51_m993
