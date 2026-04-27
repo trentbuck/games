@@ -1,0 +1,15 @@
+comfort,coverage,floor_bedding_warmth,id
+10,?,?,M_SKIN3 (mutation)
+5,40,1000,f_bed
+4,40,800,f_floor_mattress
+4,?,700,bed (vehicle_part)
+4,40,500,f_makeshift_bed
+4,,60,f_sofa
+4,,,SHELL2
+4,,,WEB_WALKER
+4,,-1000,tr_rollmat
+4,?,-1400,f_hammock
+2,35,200,f_straw_bed
+2,,100,f_hay
+1,90,200,f_cardboard_box
+1,,50,f_leaves_pile

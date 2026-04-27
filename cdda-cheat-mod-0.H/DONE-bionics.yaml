@@ -1,0 +1,74 @@
+# https://cdda-guide.nornagon.net/tool_quality/LOCKPICK
+# https://github.com/CleverRaven/Cataclysm-DDA/blob/0.F/src/iexamine.cpp#L1602-L1657
+# https://github.com/CleverRaven/Cataclysm-DDA/blob/0.F/src/iuse.cpp#L3404-L3451
+# To automatically use a lockpick when hitting "e" on a door,
+# you need one of:
+#  * bio_lockpick (hardcoded in C++)
+#  * explicitly have use_action:PICK_LOCK
+#  * implicitly have use_action:PICK_LOCK due to type:TOOL + qualities:LOCKPICK
+# You get a "use <item>?" prompt EXCEPT FOR the bio_lockpick, so
+# for convenience it might be best to just keep that implant.
+# Also, bio_lockpick doesn't currently conflict with any mutations, which
+# is/was a major reason to avoid them.
+# - type: TOOL
+#   qualities:
+#     - [LOCKPICK, 40]
+#   flags:
+#     - PERFECT_LOCKPICK
+
+
+
+# Likewise the bio_syringe has a coded-in-C++ bonus that you can't get
+# from any json (15s to inject vs. 300s w/ clean syringe).
+# And no mutation conflicts.
+
+
+# Likewise the bio_fitnessband (or fitness_band) has a coded-in-C++
+# bonus that you can't apply to custom items.
+# use_action: [FITNESS_CHECK, CALORIES_INTAKE_TRACKER]
+# Let you get similar information, but
+# it is not displayed directly from the (E)at menu.
+# And no mutation conflicts.
+# https://github.com/CleverRaven/Cataclysm-DDA/blob/d75cf96721f8d7b2d46a7158988df634140991ad/src/game_inventory.cpp#L904
+
+
+# https://cdda-guide.nornagon.net/item/solarpack_on (flags: SOLARPACK_ON)
+# is useless without
+# https://cdda-guide.nornagon.net/bionic/bio_cable
+# you can't even unfold (activate) it without the implant.
+
+# bio_speed gives +10% movement (same as QUICK); they stack.
+# This ends up being a problem if you have followers, because
+# you immediately outpace them and can't find one another.
+
+# NOTE: bio_purifier works by simply adding "env_protection: [15, mouth]".
+#       Since zagreb armor is already giving 40-80 environment_protection, this is moot.
+# - bio_purifier            # no mutation conflicts
+
+# NOTE: I *think* bio_carbon just up-armors all your body parts by ~4, for all damage types except bash.
+#       Zagreb armor already provides endgame-tier armor, so meh.
+# - bio_carbon               # no mutation conflicts
+
+# bio_meteorologist is hard-coded in C++ to do:
+#   - wind power (accounting for vehicle speed)
+#   - weather
+#   - temperature (THERMOMETER)
+#   - humidity (HYGROMETER)
+#   - pressure (BAROMETER)
+#   - a "feels like" temperature
+#   - it does not conflict with anything
+# UPDATE: I don't think it provides anything USEFUL, though.
+#         Compared to a THERMOMETER/BAROMETER/HYGOMETER-equipped player,
+#         nothing visibly changes in the sidebar.
+
+
+# bio_geiger:
+#   - might replace unwrapped radation badge in the sidebar?
+#     UPDATE: radiation on sidebar only in "custom" view, and
+#     when using that, does NOT check bio_geiger, ONLY flags:RAD_DETECT (rad_badge).
+#     The C++ code looks specifically for bio_geiger or rad_badge (not flags:RAD_DETECT).
+#     Further, since BADGE irradiation level does not match PLAYER irradiation level, just give this up as Too Hard.
+#   - triggers a warning once every 3 minutes if you're being irradiated (hard-coded in C++)
+#   - it does not conflict with anything
+#   - MOSTLY the only places you get irradiated are the Nuclear Power Plant and the Missile Silo, right?
+#     and you JUST KNOW when you go to those places, to watch out for radiation.

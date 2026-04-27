@@ -1,0 +1,150 @@
+- type: profession
+  id: cheater_job
+  name:
+    male: Cheater
+    female: Cheatress
+  description: You never prosper.
+  points: -1111
+
+  # What happens if I add ALL starting_missions?
+  # UPDATE: Some are dumb, but a couple are basically OK.
+  missions:
+    - MISSION_SOCIAL_BUTTERFLY
+    - MISSION_PATIENT
+    - MISSION_MAFIA_BOSS
+    - MISSION_OTAKU
+    - MISSION_NINJA
+    - MISSION_HUNTER
+    - MISSION_MANSION_START
+
+  # This makes "surrounded start" pretty funny.
+  # pets:
+  #   - name: mon_mi_go_scout
+  #     amount: 8
+
+  vehicle:
+    # NOTE: folding_unicycle provides the light scout, so vehicle: provides the heavy "mobile HQ"
+    # superbike
+    # surv_car
+    surv_rv
+
+  CBMs:                         # see DONE-bionics.yaml
+    - bio_lockpick
+    # - bio_syringe  # NOTE: you get a free syringe when using a flu_shot
+    - bio_fitnessband
+
+  items:
+    both:
+      items:
+        - plot_armor            # see item-armor.yaml
+        - amulet_of_yendor      # see item-armor.yaml
+        - sonic_screwdriver     # see item-tool.yaml
+        - tonic_screwdriver     # see item-tool.yaml
+        - Fiat_500_lux_off      # see item-tool.yaml
+        - folded_unicycle_twb   # see item-vehicle.yaml
+        - xylospongium          # see item-weapon.yaml
+        - mjolnir               # see DONE-sledge.yaml
+        - flu_shot
+
+      # "entries" is the same as "items" except you can provide additional data, e.g.
+      # • count (useful for ammo and consumables)
+      # • weapon mods (useful for weapons)
+      # • flags (useful for "don't wear by default" wearables, e.g. towel)
+      entries:
+
+        - item: grapnel  # useful to escape fallen skyscraper (Hub 01 mission)
+          custom-flags: [no_auto_equip]
+
+        # Firearms
+        # ########################################
+        # By far the most common ammunition is
+        # 9mm Luger, 5.56 NATO (and 12g shotgun).
+        # Have one tricked-out weapon of each.
+        # It should take common mags (Glock, STANAG).
+        # The mags should be the biggest without a hidden jam penalty.
+        # As at 0.H, "night raids" are long gone, so fuck suppressors (MP5SD)?
+        # As I have a debug backpack, ignore burst/auto - rather than rapid fire,
+        # I will simply switch to a bigger gun.
+        # Try to have 300 rounds of magazines for each calibre.
+        # For more discussion, see done-boring-guns.yaml
+        - item:
+            ksub2000
+            # ksub2000cqb
+          charges: 33
+          contents-item:
+            # - suppressor      # 9mm loudness 80 always hearing-safe
+            - light_grip
+            - match_trigger
+            - gun_mop
+          ammo-item: 9mmP2
+        - item: glockbigmag
+          count: 9
+          charges: 33
+          ammo-item: 9mmP2
+        - item: 9mmP2
+          charges: 5000
+        - item: rdb_223
+          charges: 60
+          contents-item:
+            - suppressor       # 556 loudness 168 → 118 (hearing-safe)
+            - match_trigger
+            - modern_handguard
+            - holo_sight
+            - holo_magnifier
+            - pistol_grip
+            - gun_mop
+          ammo-item: 556_m995
+        - item: stanag60
+          count: 5
+          charges: 60
+          ammo-item: 556_m995
+        - item: 556_m995
+          charges: 5000
+        - item: ksg
+          charges: 24
+          contents-item:
+            - match_trigger
+            - holo_sight
+            - # choke          # can't fire slug/explosive shot, but lets you load it -- annoying!
+              shot_suppressor  # shot_00 loudness 160 → 130 (hearing-safe)
+            - grip_mount
+            - laser_sight
+            - gun_mop
+        - item:
+            # In 0.I, incendiary shells are massively nerfed.
+            # They used to create raging fires from nothing; now they need something to burn.
+            # shot_dragon
+            shot_he
+          charges: 5000
+        # Since the 8mm is kinda nerfed, switch to another Kel-Tec.
+        - item: rfb_308
+          charges: 50
+          contents-item:
+            # - suppressor  # 752_51 loudness 260 can't be made hearing-safe
+            - underbarrel_mount
+            - match_trigger
+            - modern_handguard
+            - acog_scope
+            - pistol_grip
+            - gun_mop
+          ammo-item: 762_51_m993
+        - item: falbigmag
+          count: 15
+          charges: 30
+          ammo-item: 762_51_m993
+        - item: 762_51_m993
+          charges: 5000
+        # For a very strong character, this is a super nice weapon.
+        # For weak characters, you can burn through stamina fast, like melee.
+        # You can "adjust the strings" to trade stamina for damage/penetration.
+        # Not having to juggle magazines is nice.
+        - item: compbow
+          contents-item:
+            - arrowrest
+            - bow_stabilizer_set
+            - bow_silencer
+            - laser_sight
+            - bow_scope
+            - gun_mop
+        - item: arrow_cf
+          charges: 1000

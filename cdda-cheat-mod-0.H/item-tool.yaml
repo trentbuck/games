@@ -1,0 +1,279 @@
+- id: sonic_screwdriver
+  type: TOOL
+  name:
+    str: sonic screwdriver
+  description:
+    A tool that can do basically anything the plot calls for.
+  symbol: ';'
+  color: white
+  looks_like: knife_swissarmy
+  material:
+    - plastic
+    - steel
+  weight: 1 g
+  volume: 1 ml
+  longest_side: 1 cm
+  price: 1 cent
+  pocket_data:
+    - pocket_type: E_FILE_STORAGE
+      ememory_max: 2 TB
+      etransfer_rate: 1 TB
+      e_port: phone
+      rigid: true
+      max_contains_volume: 1 ml
+      max_contains_weight: 1 g
+      weight_multiplier: 0
+      description: hidden, used for use_action:EBOOKSAVE
+  flags:
+    - TRADER_AVOID
+    - BELT_CLIP
+    - ALLOWS_REMOTE_USE
+    - UNBREAKABLE
+    - SAFECRACK            # stethoscope
+    - FIRESTARTER          # bio_lighter
+    - FIRE                 # bonus for flags:FIRESTARTER
+    - CAMERA_PRO           # bonus for use_action:CAMERA
+  # NOTE: repair_fabric and repair_metal are now in a separate tool.
+  use_action:
+    - GUN_REPAIR                # small_repairkit
+    - WASH_ALL_ITEMS            # wash_kit sponge washboard
+# Removed in this? https://github.com/CleverRaven/Cataclysm-DDA/pull/79097
+#                  https://github.com/CleverRaven/Cataclysm-DDA/commit/457ec4dced6fdeeae083c380b0260aa57a84c15f
+#                  https://github.com/CleverRaven/Cataclysm-DDA/commit/9e6ea30c1f179b4d25e7d5e1afa75851c9fe0774
+#                  https://github.com/CleverRaven/Cataclysm-DDA/commit/e3e7ee0da253215c05a1d85145d274f68e642c64
+#   - EINKTABLETPC              # bio_ar
+#   - ELECTRICSTORAGE           # bio_ar
+#   - EBOOKREAD                 # bio_ar (requires pocket_data:pocket_type:EBOOK)
+    - EBOOKSAVE                 # bio_ar (requires pocket_data:pocket_type:EBOOK)
+    - E_FILE_DEVICE             # bio_ar
+    - CAMERA                    # bio_ar (remember out-of-view monsters in "#" menu)
+    - OXYTORCH                  # oxy_torch ("cut up metal" ≠ "cut metal" – this does locked doors)
+    - TOWEL                     # towel
+    - type: firestarter         # lighter
+      moves: 50
+    - type: heal
+      move_cost: 2000
+      bleed: 20
+      disinfectant_power: 4
+      bandages_power: 4
+      bite: 0.95
+    # This COULD be here, but it's too confusing.
+    # It shows up as "Activate item > sonic screwdriver > Inject".
+    # - FLU_VACCINE               # flu_shot
+  qualities:
+    # NOTE: not in 0.H-branch, but is in default, as at October 2024...
+    #- [HACK, 2]         # bio_fingerhack electrohack
+    - [CUT, 2]          # bio_tools
+    # https://cdda-guide.nornagon.net/item/toolset
+    # https://cdda-guide.nornagon.net/item/integrated_welder
+    # https://cdda-guide.nornagon.net/item/integrated_multimeter
+    # NOTE: max in-game CUT_FINE is 5, but butcher_time_to_cut awards speed bonus for [0..75].
+    #       I get SUPER BORED of dissecting to grind weakness proficiencies, so
+    #       crank this up absurdly high.  This reduces dissection time from 44min to 11min.
+    - [CUT_FINE, 75]          # bio_surgical_razor scalpel
+    - [BUTCHER, 75]           # butchering_kit
+    - [SUSPENDING, 2]         # fake_butcher_rack
+    - [LIFT, 40]              # fake_lift_heavy
+    - [JACK, 16]              # jack jack_small v_airjack_item
+    - [LOCKPICK, 39]          # bio_lockpick (extra prompt, though)
+    - [GLARE, 1]              # bio_sunglasses goggles_welding
+    - [PRY, 4]                # bio_tools crowbar halligan_bar
+    - [PRYING_NAIL, 1]        # bio_tools crowbar halligan_bar
+    - [SAW_W, 2]              # bio_tools saw
+    - [SAW_M, 2]              # bio_tools hacksaw
+    - [SAW_M_FINE, 1]         # bio_tools hacksaw
+    - [WRENCH, 2]             # bio_tools pliers_locking
+    - [WRENCH_FINE, 1]        # bio_tools
+    - [VISE, 1]               # pliers_locking
+    - [SCREW, 1]              # bio_tools
+    - [SCREW_FINE, 1]         # bio_tools
+    - [WELD, 2]               # bio_tools
+    - [HAMMER_FINE, 1]        # small_repairkit hammer
+    - [HAMMER, 3]             # small_repairkit hammer
+    - [CHISEL, 3]             # small_repairkit chisel
+    - [CHISEL_WOOD, 3]        # small_repairkit chisel
+    - [SEW, 4]                # tailors_kit
+    - [SEW_CURVED, 1]         # tailors_kit
+    - [KNIT, 1]               # tailors_kit
+    - [LEATHER_AWL, 2]        # tailors_kit
+    - [FABRIC_CUT, 2]         # tailors_kit
+    - [DIG, 3]                # e_tool shovel
+    - [FILE, 2]               # metal_file
+    - [GRIND, 2]              # metal_file
+    - [AXE, 4]                # chainsaw_on ax bow_saw
+    - [SMOOTH, 2]             # metal_smoother
+    - [MOP, 1]                # mop_folded
+    - [PUNCH, 2]              # punch_nail
+    - [REAM, 2]               # pin_reamer
+    - [PULL, 2]               # puller
+    - [DRILL, 3]              # hand_drill cordless_drill
+    - [DISTILL, 2]            # still chemistry_set
+    - [CHEM, 3]               # chemistry_set mess_kit improvised_oven
+    - [BOIL, 2]               # still survivor_mess_kit chemistry_set
+    # NOTE: not in 0.H-branch, but is in default, as at October 2024...
+    #- [HOTPLATE, 2]           # chemistry_set survivor_mess_kit
+    - [FISHING_ROD, 2]        # fishing_rod_tele
+    - [SHEAR, 3]              # shears elec_shears
+    - [GRASS_CUT, 2]          # survivor_machete_qt scythe sickle
+    - [FINE_GRIND, 1]         # mortar_pestle
+    - [CONTAIN, 2]            # mortar_pestle trashcan_large
+    - [SURFACE, 3]            # plastic_sheet f_plastic_groundsheet
+    - [COOK, 3]               # improvised_oven survivor_mess_kit
+    - [OVEN, 2]               # improvised_oven dutch_oven
+    - [ANVIL, 4]              # anvil_heavy anvil bench_vise
+
+
+# Adding this into the sonic screwdriver was too messy.
+# Specifically, as at 0.H, the repair_metal and repair_fabric items *MUST* be on an item that consumes charges.
+# If they are not, then after choosing the item to repair, 0.H segfaults, because the C++ code *assumes* this.
+# (The segfault happens somewhere in repair_item_finish(), but I didn't work out exactly where.)
+#
+# This is distinct from e.g. metal_cut, which is normally on oxyacetylene torches (consuming oxyacetylene), but
+# does not HAVE TO be.
+# But if I make the sonic_screwdriver use charges -- even if it is *zero* charges, then
+# I get an extra prompt every single time for every other action than repair_fabric and repair_metal.
+#
+# Regarding the name: I was trying to think of a "taste" instead of a "sound" screwdriver, but
+# I didn't like "gustatory screwdriver".  I started thinking about other senses organs like the halteres, and
+# settled for now on "precession screwdriver" as that is how the halteres operate.
+# UPDATE: then I thought about https://en.wikipedia.org/wiki/1977%E2%80%931980_Florida_orange_juice_boycott
+#         so now it's a virgin screwdriver / tonic screwdriver.
+#         Unfortunately you can't do material:[vodka,oj] because they're items, not materials.
+#         Also note that there exists id:drink_screwdriver in the game already.
+#         I thought about making this copy-from that, but I'm worried I'd accidentally drink my tool.
+- id: tonic_screwdriver
+  type: TOOL
+  name:
+    str: tonic screwdriver
+  description:
+    A repair tool that can do things a sonic screwdriver can't do.
+    This one is non-alcoholic - made of orange juice and tonic water (not vodka).
+  symbol: ';'
+  color: blue
+  looks_like: knife_swissarmy
+  material:
+    - plastic
+    - steel
+  weight: 1 g
+  volume: 1 ml
+  longest_side: 1 cm
+  price: 1 cent
+  flags:
+    - TRADER_AVOID
+    - BELT_CLIP
+    - ALLOWS_REMOTE_USE
+    - UNBREAKABLE
+    - USES_NEARBY_AMMO          # for repair_{fabric,metal}
+  charges_per_use: 0            # for repair_{fabric,metal}
+  ammo: [water]                 # for repair_{fabric,metal}
+  use_action:
+    # NOTE: materials MUST be explicitly listed.
+    #       Otherwise "% > repair" offers this tool, but then
+    #       say there are no compatible items.
+    #       This happens even if there are other charged usable tools (e.g. tailors_kit) on hand.
+    - type: repair_item
+      item_action_type: repair_fabric  # tailors_kit
+      materials:
+        - neoprene              # needle_curved
+        - cotton                # needle_bone
+        - leather
+        - lycra
+        - nylon
+        - wool
+        - fur
+        - faux_fur
+        - nomex
+        - kevlar
+        - kevlar_layered
+        - gutskin
+        - denim
+        - canvas
+      skill: tailor
+      cost_scaling: 0.1
+      tool_quality: 10
+      move_cost: 100
+    - type: repair_item
+      item_action_type: repair_metal  # small_repairkit
+      materials:
+        - iron                  # integrated_welder
+        - steel
+        - budget_steel
+        - lc_steel
+        - mc_steel
+        - hc_steel
+        - ch_steel
+        - lc_steel_chain
+        - mc_steel_chain
+        - hc_steel_chain
+        - ch_steel_chain
+        - aluminum
+        - copper
+        - bronze
+        - fancy_bronze
+        - silver
+        - gold
+        - platinum
+        - superalloy
+        - plastic
+        - lead
+        - tin
+        - zinc
+        - bone                  # misc_repairkit
+        - chitin
+        - paper
+        - cardboard
+        - wood
+        - kevlar_rigid
+      skill: fabrication
+      cost_scaling: 0
+      tool_quality: 10
+      move_cost: 100
+
+
+# Adding this into the sonic screwdriver was too messy.
+# Specifically it's fiddly to replace "turn off" with "turn on",
+# without removing all the other use_actions.
+# Also considered:
+#   * stick with bio_flashlight
+#   * just use heavy_flashlight and scavenge batteries
+#   * same thing but wearable instead of transformable
+#     (that requires a custom enchantment which
+#     may not count as "voluntary" light for e.g. crafting,
+#     in the C++ hard-coded checks).
+#
+# See also NOTES-illumination.csv
+- id: Fiat_500_lux_off
+  type: TOOL
+  name:
+    str: Fiat 500 Lux (off)
+    str_pl: Fiat 500 Luxes (off)
+  description:
+    While most Fiat 500s are Italian city cars made since 1936,
+    this one seems to be more a kind of Hollywood Torch emitting 500 lux.
+  use_action:
+    type: transform
+    menu_text: Turn on
+    msg: Your %s activates.
+    target: Fiat_500_lux_on
+  symbol: ;
+  color: green
+  looks_like: flashlight
+  material: [plastic]
+  weight: 1 g
+  volume: 1 ml
+  longest_side: 1 cm
+  price: 1 cent
+- id: Fiat_500_lux_on
+  copy-from: Fiat_500_lux_off
+  type: TOOL
+  name:
+    str: Fiat 500 Lux (on)
+    str_pl: Fiat 500 Luxes (on)
+  looks_like: flashlight_on
+  use_action:
+    type: transform
+    menu_text: Turn off
+    msg: Your %s deactivates.
+    target: Fiat_500_lux_off
+  flags:
+    - LIGHT_500

@@ -1,0 +1,284 @@
+# FIXME: How the fuck do I create an SD card pre-loaded with digital books?
+
+# This doesn't work because the books want to spawn in type: CONTAINER pocket, instead of type: EBOOK pocket.
+# 01:24:35.102 ERROR : src/item.cpp:1802 [ret_val<void>
+# item::put_in(const item&, pocket_type, bool, Character*)] tried to
+# put an item (book_archery) count (1) in a container (eink_tablet_pc)
+# that cannot contain it: pocket with type (CONTAINER) not found
+- type: profession
+  subtype: hobby
+  id: ebook-test
+  name: ebook-test
+  description: ebook-test
+  points: -1111
+  items:
+    both:
+      items:
+        - item: book_archery
+          container-item: eink_tablet_pc
+        - item: book_archery
+          container-item: memory_card
+        - item: memory_card
+          contents-item:
+            - book_archery
+            - mag_archery
+            - manual_archery
+        - item: eink_tablet_pc
+          charges: 5000
+          contents-item:
+            - book_archery
+            - mag_archery
+            - manual_archery
+        - item: laptop
+          charges: 5000
+          contents-item:
+            - book_archery
+            - mag_archery
+            - manual_archery
+        - item: smart_phone
+          charges: 5000
+          contents-item:
+            - book_archery
+            - mag_archery
+            - manual_archery
+
+
+# How do I start a game with ebooks?
+# That is, some kind of electronic (memory card, smartphone, &c) with books in its "type: EBOOK" pocket.
+# Here is what I see from an actual save game.
+#
+# - typeid: memory_card
+#   bday: 5328239
+#   owner: your_followers
+#   last_temp_check: 0
+#   contents:
+#     contents:
+#       - pocket_type: 6
+#         contents:
+#           - typeid: book_archery
+#             bday: 5328241
+#             owner: your_followers
+#             last_temp_check: 0
+#             variant: book_archery_2
+#           - typeid: manual_archery
+#             bday: 5328241
+#             owner: your_followers
+#             last_temp_check: 0
+#             variant: manual_archery_1
+#           - typeid: mag_archery
+#             bday: 5328241
+#             owner: your_followers
+#             last_temp_check: 0
+#             variant: mag_archery_2
+#           - typeid: book_archery
+#             bday: 5328241
+#             owner: your_followers
+#             last_temp_check: 0
+#             variant: book_archery_1
+#         _sealed: false
+#         no_rigid: []
+#       - pocket_type: 8
+#         contents: []
+#         _sealed: false
+#         no_rigid: []
+#     additional_pockets: []
+#
+# - typeid: eink_tablet_pc
+#   bday: 5328239
+#   owner: your_followers
+#   last_temp_check: 0
+#   contents:
+#     contents:
+#       - pocket_type: 1
+#         contents:
+#           - typeid: battery
+#             charges: 85
+#             bday: 5328239
+#             owner: your_followers
+#             last_temp_check: 0
+#             item_tags:
+#               - IRREMOVABLE
+#               - NO_DROP
+#         _sealed: false
+#         no_rigid: []
+#         favorite_settings:
+#           name: null
+#           priority: 0
+#           item_whitelist: []
+#           item_blacklist: []
+#           category_whitelist: []
+#           category_blacklist: []
+#           collapsed: true
+#           disabled: false
+#           unload: true
+#           player_edited: false
+#       - pocket_type: 6
+#         contents:
+#           - typeid: book_archery
+#             bday: 5328241
+#             owner: your_followers
+#             last_temp_check: 0
+#             variant: book_archery_2
+#           - typeid: manual_archery
+#             bday: 5328241
+#             owner: your_followers
+#             last_temp_check: 0
+#             variant: manual_archery_1
+#           - typeid: mag_archery
+#             bday: 5328241
+#             owner: your_followers
+#             last_temp_check: 0
+#             variant: mag_archery_2
+#           - typeid: book_archery
+#             bday: 5328241
+#             owner: your_followers
+#             last_temp_check: 0
+#             variant: book_archery_1
+#         _sealed: false
+#         no_rigid: []
+#       - pocket_type: 3
+#         contents: []
+#         _sealed: false
+#         no_rigid: []
+#       - pocket_type: 8
+#         contents: []
+#         _sealed: false
+#         no_rigid: []
+#       - pocket_type: 7
+#         contents: []
+#         _sealed: false
+#         no_rigid: []
+#     additional_pockets: []
+#
+# - typeid: smart_phone
+#   bday: 5328239
+#   owner: your_followers
+#   last_temp_check: 0
+#   contents:
+#     contents:
+#       - pocket_type: 1
+#         contents:
+#           - typeid: battery
+#             charges: 56
+#             bday: 5332375
+#             last_temp_check: 0
+#             item_tags:
+#               - IRREMOVABLE
+#               - NO_DROP
+#         _sealed: false
+#         no_rigid: []
+#         favorite_settings:
+#           name: null
+#           priority: 0
+#           item_whitelist: []
+#           item_blacklist: []
+#           category_whitelist: []
+#           category_blacklist: []
+#           collapsed: true
+#           disabled: false
+#           unload: true
+#           player_edited: false
+#       - pocket_type: 6
+#         contents:
+#           - typeid: book_archery
+#             bday: 5328241
+#             owner: your_followers
+#             last_temp_check: 0
+#             variant: book_archery_1
+#           - typeid: mag_archery
+#             bday: 5328241
+#             owner: your_followers
+#             last_temp_check: 0
+#             variant: mag_archery_2
+#           - typeid: manual_archery
+#             bday: 5328241
+#             owner: your_followers
+#             last_temp_check: 0
+#             variant: manual_archery_1
+#           - typeid: book_archery
+#             bday: 5328241
+#             owner: your_followers
+#             last_temp_check: 0
+#             variant: book_archery_2
+#         _sealed: false
+#         no_rigid: []
+#       - pocket_type: 3
+#         contents: []
+#         _sealed: false
+#         no_rigid: []
+#       - pocket_type: 8
+#         contents: []
+#         _sealed: false
+#         no_rigid: []
+#       - pocket_type: 7
+#         contents: []
+#         _sealed: false
+#         no_rigid: []
+#     additional_pockets: []
+#
+# - typeid: laptop
+#   bday: 5328239
+#   owner: your_followers
+#   last_temp_check: 0
+#   contents:
+#     contents:
+#       - pocket_type: 1
+#         contents:
+#           - typeid: battery
+#             charges: 166
+#             bday: 5328239
+#             owner: your_followers
+#             last_temp_check: 0
+#             item_tags:
+#               - IRREMOVABLE
+#               - NO_DROP
+#         _sealed: false
+#         no_rigid: []
+#         favorite_settings:
+#           name: null
+#           priority: 0
+#           item_whitelist: []
+#           item_blacklist: []
+#           category_whitelist: []
+#           category_blacklist: []
+#           collapsed: true
+#           disabled: false
+#           unload: true
+#           player_edited: false
+#       - pocket_type: 6
+#         contents:
+#           - typeid: book_archery
+#             bday: 5328241
+#             owner: your_followers
+#             last_temp_check: 0
+#             variant: book_archery_1
+#           - typeid: mag_archery
+#             bday: 5328241
+#             owner: your_followers
+#             last_temp_check: 0
+#             variant: mag_archery_2
+#           - typeid: manual_archery
+#             bday: 5328241
+#             owner: your_followers
+#             last_temp_check: 0
+#             variant: manual_archery_1
+#           - typeid: book_archery
+#             bday: 5328241
+#             owner: your_followers
+#             last_temp_check: 0
+#             variant: book_archery_2
+#         _sealed: false
+#         no_rigid: []
+#       - pocket_type: 3
+#         contents: []
+#         _sealed: false
+#         no_rigid: []
+#       - pocket_type: 8
+#         contents: []
+#         _sealed: false
+#         no_rigid: []
+#       - pocket_type: 7
+#         contents: []
+#         _sealed: false
+#         no_rigid: []
+#     additional_pockets: []

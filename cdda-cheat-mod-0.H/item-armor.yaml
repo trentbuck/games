@@ -1,0 +1,454 @@
+# I wonder how hard it is to make custom gear?
+#
+# My goal is to provide roughly equivalent armour and storage to this loadout:
+#
+#         SKINTIGHT:
+#           https://cdda-guide.nornagon.net/item/nomad_bodyglove_2
+#           https://cdda-guide.nornagon.net/item/helmet_liner
+#           https://cdda-guide.nornagon.net/item/gloves_liner
+#         NORMAL:
+#           https://cdda-guide.nornagon.net/item/rm13_armor_on
+#           OR
+#           https://cdda-guide.nornagon.net/item/phase_immersion_suit_on
+#           OR
+#           https://cdda-guide.nornagon.net/item/activity_suit
+#         STRAPPED:
+#           https://cdda-guide.nornagon.net/item/survivor_vest
+#           https://cdda-guide.nornagon.net/item/survivor_rig
+#           https://cdda-guide.nornagon.net/item/survivor_belt_notools
+#           OR
+#           https://cdda-guide.nornagon.net/item/nomad_rig_on
+#         OUTER:
+#           https://cdda-guide.nornagon.net/item/trenchcoat_survivor
+#           https://cdda-guide.nornagon.net/item/debug_backpack
+- id: plot_armor
+  type: ARMOR
+  name:
+    str: Zagreb armor
+  symbol: "["
+  color: white
+  description: Looks great to you, but everyone else thinks you're naked.
+  # copy-from: nomad_bodyglove_2
+  looks_like:
+    # Black armor, yellow faceplate
+    # rm13_armor
+    # GET OUT OF HERE, STALKER!
+    # Navy camo, black boots/gloves, silver faceplate (https://stalker.fandom.com/wiki/SEVA_suit?)
+    # robofac_enviro_suit
+    # Green armor, blue faceplate/goggles, backpack, tan chest rig. https://stalker.fandom.com/wiki/Sunrise_suit
+    # combat_exoskeleton_light
+    # combat_exoskeleton_medium
+    combat_exoskeleton_heavy
+  material: [monolith]
+  repairs_with: [cotton]
+  weight: 1 kg
+  volume: 1 L
+  longest_side: 10 cm
+  price: 1 USD
+  material_thickness: 1
+
+  # NOTE:
+  #   typical materials:
+  #     eyes:         lvl4ballisticglass thermo_resin
+  #     foot_bottom:  rubber
+  #     skintight:    lycra kevlar
+  #     normal:       nylon nomex kevlar_layered
+  #     rigid normal:
+  #       carbide hyperweave_[off|on]   (RM13)
+  #       carbide qt_steel superalloy   (Phase Immersion)
+  #       monolith (TOO OP, EVEN FOR ME!)
+  #       ceramic  (e.g. ESAPI plate inserts)
+  #   overall goal is approximately (worst-median-best):
+  #                    [UPS off]  [UPS on]
+  #     bash:          14-22-29   20-28-34
+  #     cut:           20-27-42   30-37-52
+  #     pierce:        17-25-39   25-33-47
+  #     ballistic:     20-26-38   32-38-50
+  #     acid:          45
+  #     fire:          40
+  #     encumbrance:   0-20
+  #     environmental: 40-80
+  #     warmth:        20-40
+  # https://docs.cataclysmdda.org/JSON_INFO.html#coverage
+  # https://docs.cataclysmdda.org/JSON_INFO.html#breathability
+  # https://cdda-guide.nornagon.net/item/armor_star_samurai_mask
+  # https://old.reddit.com/r/cataclysmdda/comments/1cgkq1i/a_introductory_guide_on_armor/
+  # Try to take a middle-ground between "precise but verbose" and "short but sloppy".
+  # Start with a baseline covering "all" body parts, like
+  #   * fabric 100% thin skintight
+  #   * mail    95% flexible normal
+  #   * plate   80% rigid outer
+  # Additional notes:
+  #   * Avoid any encumbrance for mouth (stamina) or fingertips (crafting)!
+  #     Uparmor backs of hands, downarmor fingertips?
+  #   * Give the eyes see-through material?
+  #     (Or: claim it's using indirect vision, like
+  #     https://static.wikia.nocookie.net/armedassault/images/6/66/Arma3-dlc-tanks-08.jpg
+  #     or I guess fucking Iron Man.)
+  #   * A lot of upstream stuff specifically gives foot bottoms less armor and more rubber. ICBF.
+  # UPDATE: encumbrance got too hard and ICBF.
+  environmental_protection: 60
+  warmth: 30
+  armor:
+    - covers: [eyes, head, torso, arm_l, arm_r, leg_l, leg_r, foot_l, foot_r, head, mouth, hand_l, hand_r]
+      material:
+        # Bodymesh
+        - {covered_by_mat: 100, thickness: 0.2, type: lycra}
+        - {covered_by_mat: 100, thickness: 0.8, type: rubber}
+        - {covered_by_mat: 100, thickness: 0.5, type: kevlar}
+        # glove/helmet liner
+        - {covered_by_mat:  10, thickness: 0.6, type: cotton}
+        # RM13
+        - {covered_by_mat: 100, thickness: 1.0, type: carbide}
+        - {covered_by_mat: 100, thickness: 2.0, type: hyperweave_on}
+        - {covered_by_mat:  10, thickness: 5.0, type: rubber}
+        # Harness/Vest/Rig/Belt
+        - {covered_by_mat:  10, thickness: 1.0, type: nylon}
+        - {covered_by_mat:  10, thickness: 4.0, type: leather}
+        - {covered_by_mat:  10, thickness: 1.0, type: canvas}
+        # Trenchcoat
+        - {covered_by_mat:  70, thickness: 1.5, type: canvas}
+        - {covered_by_mat:  70, thickness: 1.5, type: kevlar}
+      breathability: SECOND_SKIN
+      volume_encumber_modifier: 0
+      encumbrance: 0
+      coverage: 100
+      cover_vitals: 100
+    # Workaround https://github.com/CleverRaven/Cataclysm-DDA/issues/77120
+    # - covers: [torso]
+    #   specifically_covers: [torso_neck]
+    #   layers: [BELTED]
+    #   coverage: 100
+    #   cover_vitals: 100
+    #   encumbrance: 0
+    #   volume_encumber_modifier: 0
+    #   breathability: SECOND_SKIN
+
+  # https://docs.cataclysmdda.org/JSON_FLAGS.html#armor
+  # https://docs.cataclysmdda.org/ARMOR_BALANCE_AND_DESIGN.html#layers
+  max_worn: 1
+  flags:
+    - TRADER_AVOID
+    # https://cdda-guide.nornagon.net/item/debug_backpack
+    - TARDIS
+    - SEMITANGIBLE
+    # NOTE: I was getting "NO SHOES" penalty because I marked this armor as flags: SKINTIGHT.
+    #       Adding armor: layers: [NORMAL] did not help.
+    #       This is because is_wearing_shoes only looks at the item-level (not armor-level) wear layer.
+    #       I initially "fixed" this with flags: [nothing, i.e. NORMAL] and armor: layers: [SKINTIGHT].
+    #       This caused the wear action to place this item at the wrong layer, when worn with other gear.
+    #       Later, I realized I can simply add flags: TOUGH_FEET which disables "NO SHOES" penalty.
+    - SKINTIGHT
+    - TOUGH_FEET
+    - SOFT
+    # This means if you spawn it later,
+    # you also have to spawn a tailor kit and refit it.
+    # Do not want.
+    # - VARSIZE
+    # FIXME: one of the other... do we add repairs_with, or just make it completely unbreakable?
+    -
+      STURDY
+      # UNBREAKABLE
+    # NOTE: if I allow these, then de-facto what happens is when combine with ench_climate_control_all,
+    #       everything is 0 warmth except for head (20) and mouth (27).
+    #       If I comment them out, everything is 0 warmth except head (-2).
+    #       UPDATE: this is actually fine.  It's only doing that because it's 0 warm with climate control.
+    #       If I go into a mi-go tower, where it's way too hot (>100), the head/mouth bonuses aren't added unwantedly.
+    - HOOD
+    - COLLAR
+    - POCKETS
+    # It's a wetsuit as well, I guess?
+    -
+      WATERPROOF
+      # WATER_FRIENDLY
+
+    # NOTE: RAD_RESIST is mild version.
+    #       RAD_PROOF & PORTAL_PROOF moved into amulet_of_yendor.
+    - RAD_RESIST
+
+    # Rarely-relevant combat stuff
+    - ALLOWS_TAIL
+    - ALLOWS_TALONS
+    - ALLOWS_NATURAL_ATTACKS
+    - POWERARMOR_COMPATIBLE
+
+    # NOTE: These flags give movement bonuses... but also penalties.
+    #       Therefore they are a "sometimes gear".
+    # - FIN
+    # - FLOTATION
+    # -
+    #   ROLLER_INLINE
+    #   # ROLLER_QUAD
+    #   # ROLLER_ONE
+
+  # FIXME: techniques: ...
+
+  pocket_data:
+    # The "everything else" pocket.
+    # https://cdda-guide.nornagon.net/item/debug_backpack
+    # https://cdda-guide.nornagon.net/item/armor_star_samurai
+    # FIXME: Make a few of these, so it can contain e.g. water and oil directly?
+    #        Compare with https://cdda-guide.nornagon.net/item/feeding_kit
+    # NOTE: I tried leaving off the max_contains_volume / max_contains_weight / max_item_length.
+    #       This "worked" at first, but kept dropping everything out of my pockets again, including on initial character creation.
+    #       Also, setting it too high seems to make it mad?
+    - pocket_type: CONTAINER
+      description: Tardis pocket.
+      volume_encumber_modifier: 0
+      weight_multiplier: 0
+      max_contains_volume: 100000 L
+      max_contains_weight: 100000 kg
+      max_item_length: 1 km
+      moves: 1
+      watertight: true
+      airtight: true
+
+
+# I was putting *way* too much stuff into plot_armor, and losing track.
+# Move some stuff into an amulet.
+# This also means these capabilities can be turned off easily by removing it.
+# So e.g. RAD_RESIST on plot armor, and RAD_PROOF + DIMENSIONAL_ANCHOR on the amulet?
+# I am using an amulet because basically nothing (just lanyard & pro camera) occupy the torso_neck slot.
+- id: amulet_of_yendor
+  type: ARMOR
+  name:
+    str: amulet of Yendor
+  symbol: "["
+  color: white
+  description: You hear a nearby thunderclap.
+  looks_like: lanyard
+  material: [plastic]
+  weight: 1 kg
+  volume: 1 L
+  longest_side: 10 cm
+  price: 1 USD
+  material_thickness: 1
+  # NOTE: A wearable (type:ARMOR) with no armor: slots
+  #       is wearable (W) and won't conflic with anything.
+  # armor:
+  #   - covers: [torso]
+  #     specifically_covers: [torso_neck]
+  #     layers: [BELTED]
+  #     material: [{type: lycra}]
+  max_worn: 1
+  flags:
+    - TRADER_AVOID
+    # https://cdda-guide.nornagon.net/item/phase_immersion_suit_on
+    - RAD_PROOF
+    - PORTAL_PROOF
+    # When moving around on the overmap, auto-map stuff around you at a greater radius (doubled).
+    # https://cdda-guide.nornagon.net/json_flag/ENHANCED_VISION
+    # https://cdda-guide.nornagon.net/item/bio_eye_optic
+    # https://cdda-guide.nornagon.net/bionic/bio_eye_optic
+    # https://cdda-guide.nornagon.net/json_flag/ZOOM
+    # https://cdda-guide.nornagon.net/item/binoculars
+    # https://cdda-guide.nornagon.net/item/survivor_scope
+    # Huh.  You actually get this automatically if you have a
+    # magnified optic (e.g. ACOG) on any of your guns.
+    # https://cdda-guide.nornagon.net/item/acog_scope
+    - ENHANCED_VISION
+    - ZOOM
+    # https://cdda-guide.nornagon.net/json_flag/TWO_WAY_RADIO
+    # https://cdda-guide.nornagon.net/item/fake_radio
+    # https://cdda-guide.nornagon.net/item/two_way_radio
+    # https://cdda-guide.nornagon.net/item/bio_radio
+    - TWO_WAY_RADIO
+    # https://cdda-guide.nornagon.net/item/bio_watch
+    # https://cdda-guide.nornagon.net/item/bio_ar
+    - WATCH
+    - ALARMCLOCK
+    - THERMOMETER
+    # https://cdda-guide.nornagon.net/item/phase_immersion_suit
+    # https://cdda-guide.nornagon.net/item/weather_radar
+    - HYGROMETER
+    - BAROMETER
+    # GLARE_RESIST is a stronger combination of FLASH_PROTECTION and SUN_GLASSES.
+    # Also rm13_armor_on provides hard-coded-in-C++ full flashbang protection.
+    # https://cdda-guide.nornagon.net/bionic/bio_sunglasses
+    # https://cdda-guide.nornagon.net/json_flag/FLASH_PROTECTION
+    # https://cdda-guide.nornagon.net/item/sunglasses
+    # https://cdda-guide.nornagon.net/item/welding_mask
+    # https://cdda-guide.nornagon.net/item/goggles_welding
+    - SUN_GLASSES
+    - FLASH_PROTECTION
+
+    # IMMUNE_HEARING_DAMAGE (bio_ears) is a stronger version of
+    # PARTIAL_DEAF (powered_earplugs_on), which is a QoL version of
+    # DEAF (powered_earplugs).
+    # The #1 most useful benefit is being able to fire unsuppressed
+    # firearms without going immediately deaf for 5 minutes.
+    # NOTE: Only noises over ~150 cause temporary hearing loss.
+    #       Hearing-safe: Glock 19/20/21/22/31, RM11B (just!)
+    #                     RDB (w/suppressor), KSG (w/shot_suppressor)
+    #       NOT hearing-safe: KSG, RDB, RFB, RM88, M24
+    - PARTIAL_DEAF
+
+    # Is it annoying to have a *permanent* source of basic light?
+    # UPDATE: apparently not!  Can sleep just fine with this dim light.
+    # AFAICT LIGHT_10 is the minimum to read without penalty.
+    # FIXME: We definitely want a toggle-able source of strong illumination, too...
+    # https://github.com/CleverRaven/Cataclysm-DDA/blob/0.G/src/character.cpp#L2507-L2513
+    # https://github.com/CleverRaven/Cataclysm-DDA/blob/0.G/src/lightmap.h#L11-L18
+    - LIGHT_10
+
+    # https://cdda-guide.nornagon.net/bionic/bio_digestion
+    # See comments on ench_digestion_recycler_twb
+    # - PARAIMMUNE
+    # - IMMUNE_SPOIL
+
+  relic_data:
+    passive_effects:
+      # NOTE: I could inline the enchantments directly here.
+      #       The are outline only so they are visible in-game in the
+      #       item inspector (and in "@" under EFFECTS).
+      - id: ench_bloody_mess_twb
+      - id: ench_bionic_power_twb
+      - id: ench_climate_control_all_permanent
+      # - id: ench_dampened_steps_twb
+      - id: ench_digestion_recycler_twb
+      - id: ench_targeting_recoil_twb
+      - id: ench_memory_twb
+
+
+- id: ench_bloody_mess_twb
+  type: enchantment
+  name:
+    str: Bloody Mess & Quickdraw
+  description:
+    For whatever reason you seem to always make a real mess of things.
+    Enemies you kill tend to explode into a mess of viscera.
+    <good>Convenient</good> alternative to <info>corpse pulping</info>.
+    <bad>Inconvenient</bad> if you want to <info>dissect corpses</info>.
+    You pack things very efficiently!
+    Practicing with handguns has improved your draw speed with pretty much everything.
+    Retrieve objects 25% faster from containers.
+  has: WORN
+  values:
+    # NOTE: Bombastic Perks uses -1000.
+    #       Can I tone this down, to "auto-pulp" basic zombies, but
+    #       leave the bigger stuff (e.g. mi-gos) as-is?
+    #       In a quick initial test, it looks like -100 usually pulps
+    #       and occasionally only damages (still shows warning icon).
+    - value: OVERKILL_DAMAGE
+      add: -100
+    # 10% faster -- PACKMULE (profession trait)
+    # 25% faster -- perk_quickdraw (bombastic perks)
+    # NOTE: not in 0.H-branch, but is in default, as at October 2024...
+    # - value: OBTAIN_COST_MULTIPLIER
+    #   multiply: -0.25
+
+- id: ench_bionic_power_twb
+  type: enchantment
+  name:
+    str: Bionic Power Supply
+  description:
+    You have a source of bionic power that slowly recharges.
+    It is sufficient for constant dim lighting, or
+    occasional utility bionics.
+    Trickle charge has no effect if you have 0 bionics.
+  has: WORN
+  values:
+    # This replaces the since-removed bio_trickle.
+    # bio_tattoo_led is 1J/s (1W) for 5 LUMINATION
+    # bio_flashlight is 2J/s (2W) for 60 LUMINATION
+    # bio_flashlight_highmode is 15J/s (15W) for 500 LUMINATION.
+    # So let's assume we want a flat 2J/s.
+    # https://docs.cataclysmdda.org/MAGIC.html#enchantments
+    # NOTE: not in 0.H-branch, but is in default, as at October 2024...
+    #- {value: POWER_TRICKLE, add: 2000}
+    # This replaces 2 copies of bio_power_storage_mkII (2×250kJ)
+    - {value: BIONIC_POWER, add: 500000000}
+
+
+# Same as upstream, except without "condition: ACTIVE", as
+# we do not make separate "foo_on" and "foo_off" item versions.
+# FIXME: do we EVEN CARE about this one?
+- id: ench_dampened_steps_twb
+  type: enchantment
+  name:
+    str: Dampened Steps
+  description:
+    You are wearing equipment that muffles your footsteps.
+  has: WORN
+  values:
+    - {value: FOOTSTEP_NOISE, multiply: -0.67}
+
+
+# This pair of enhancements gives a pretty huge boost to how long you can go without eating/drinking.
+# I have left it off for now (in amulet_of_yendor relic_data).
+- id: ench_digestion_recycler_twb
+  type: enchantment
+  name:
+    str: Expanded Digestive System & Recycler Unit
+  description:
+    You have been outfitted with three synthetic stomachs and industrial-grade intestines.
+    Not only can you extract much more nutrition from food, but
+    you are highly resistant to foodborne illness, and
+    can sometimes eat rotten food.
+    Your digestive system has been outfitted with a series of filters and processors,
+    allowing you to reclaim waste liquid and, to a lesser degree, nutrients.
+    The net effect is a greatly reduced need to eat and drink.
+  has: WORN
+  values:
+    # https://cdda-guide.nornagon.net/bionic/bio_digestion
+    # NOTE: not in 0.H-branch, but is in default, as at October 2024...
+    #- value: KCAL
+    #  multiply: 0.5
+    # NOTE: not in 0.H-branch, but is in default, as at October 2024...
+    #- value: VITAMIN_ABSORB_MOD
+    #  multiply: 0.5
+    # https://cdda-guide.nornagon.net/bionic/bio_recycler
+    - value: HUNGER
+      multiply: -0.5
+    - value: THIRST
+      multiply: -0.5
+    - value: METABOLISM
+      multiply: -0.5
+    # LIGHTEATER profession mutation
+    # - value: METABOLISM
+    #   multiply: -0.333
+
+
+- id: ench_targeting_recoil_twb
+  type: enchantment
+  name:
+    str: Targeting System & Recoil Compensators
+  description:
+    Your eyes are surgically equipped with range finders, and
+    their movement is synced with that of your arms, to a degree.
+    Shots you fire will be much more accurate, particularly at long range.
+    Reactive shock absorbers installed in your wrists and elbows which greatly reduce felt recoil.
+  has: WORN
+  values:
+    # https://cdda-guide.nornagon.net/bionic/bio_targeting
+    - value: WEAPON_DISPERSION
+      multiply: -0.25
+    # https://cdda-guide.nornagon.net/bionic/bio_recoil
+    - value: RECOIL_MODIFIER
+      multiply: -0.35
+
+- id: ench_memory_twb
+  type: enchantment
+  name:
+    str: Enhanced Memory Banks & Fast Reader & Debug Crafting Speed
+  description:
+    Your memory has been enhanced with small quantum storage drives.
+    You learn - both through reading and practice - more quickly.
+    Additionally, you forget skills you've learned slower.
+    You're a quick reader, and can get through books a lot faster than most.
+    Craft the bug out 50 times faster.
+  has: WORN
+  values:
+    # NOTE: not in 0.H-branch, but is in default, as at October 2024...
+    # - value: CRAFTING_SPEED_MULTIPLIER
+    #   multiply: 50
+    - value: READING_EXP
+      add: 4
+    - value: SKILL_RUST_RESIST
+      add: 40
+    - value: LEARNING_FOCUS
+      add: 20
+    # FASTREADER
+    # NOTE: not in 0.H-branch, but is in default, as at October 2024...
+    #- value: READING_SPEED_MULTIPLIER
+    #  multiply: -0.2

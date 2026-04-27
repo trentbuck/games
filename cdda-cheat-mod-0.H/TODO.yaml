@@ -1,0 +1,24 @@
+  use_action:
+    - MP3
+    # https://cdda-guide.nornagon.net/item/radglove
+    - RADGLOVE
+
+  flags:
+    - RAD_DETECT
+    - SWIM_GOGGLES
+    - ELECTRIC_IMMUNE
+    - GAS_PROOF
+    - PSYSHIELD_PARTIAL
+    - PADDED
+    # This is WAY too annoying.
+    # - GNV_EFFECT
+    # https://cdda-guide.nornagon.net/item/robofac_armor_anchor_on
+    # https://cdda-guide.nornagon.net/item/dimensional_anchor_on
+    - DIMENSIONAL_ANCHOR
+
+  use_action:
+    - RADIO_ON
+    - weigh_self
+  qualities:
+    # https://cdda-guide.nornagon.net/tool_quality/ANALYSIS
+    - [ANALYSIS, 1]

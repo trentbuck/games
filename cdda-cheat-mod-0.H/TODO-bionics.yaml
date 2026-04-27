@@ -1,0 +1,56 @@
+  ### Bionics stuff ###
+  # NOTE: Many CBMs conflict with mutations.
+  #       So e.g. if my cheating job gives me bio_ar,
+  #       I can't ever have CEPH_VISION, so
+  #       I can't become an octopus.
+  #       Therefore I *nowadays* think it's probably better to
+  #       pre-build a "do everything" custom tool (sonic_screwdriver).
+  #       NOTE: they ALSO conflict with some of the traits in job-trait-proficiency-skill.yaml
+  # "// MAYBE CBMS":
+  #   - bio_radscrubber
+  #   - bio_scent_mask
+  #   - bio_remote
+  #   - bio_ground_sonar
+  #   - bio_climate
+  #   - bio_nanobots
+  #   - bio_geiger
+  #   - bio_blood_anal
+  #   NOTE: bio_evap mechanics are hard-coded in C++:
+  #             // Aero-Evaporator provides water at 60 watts with 2 L / kWh efficiency
+  #             // which is 10 mL per 5 minutes.  Humidity can modify the amount gained.
+  #   - bio_evap
+  #   - bio_night_vision
+
+
+
+  #   - bio_meteorologist
+  #   - bio_infrared
+  #   # handy to counteract getting winded when pulping corpses???
+  #   - bio_gills
+  #   - bio_soporific
+  #   - bio_taste_blocker
+  #   - bio_face_mask
+  #   - bio_dex_enhancer
+  #   - bio_eye_enhancer
+  #   - bio_int_enhancer
+  #   - bio_str_enhancer
+  #   - bio_membrane
+  #   - bio_weight
+  #   - bio_power_armor_interface_mkII
+  # NOTE: most of these do not auto-activate, e.g. bio_UPS will not start charging your UPS-powered gear
+  # "// CBMs replaces…":
+  #   bio_ups: ups_off + heavy battery
+  #   bio_tools:
+  #     - NOT small_repairkit/large_repairkit!
+  #     - NOT tailors_kit!
+  #     - NOT clamp/locking_pliers
+  CBMs:
+    - bio_metabolics  # Get power from food- avoid going overweight? -- MUTATION CONFLICTS!
+    - bio_cable  # Get power from solar backpack & running cars. no mutation conflicts
+    - bio_ups  # Power laser rifles &c from yourself no mutation conflicts
+    # FIXME: consider bio_multimeter (split from bio_tools in 0.H, I think?)
+    - bio_painkiller            # no mutation conflicts
+
+# bio_ears → SAFECRACK_NO_TOOL
+# bio_ears → DEAF (useful for sleeping)
+# bio_blindfold → BLIND (useful for sleeping)
