@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff>
+  <add sel="/macros/macro[@name='ship_ter_s_xperimental_01_a_macro']/properties">
+    <traveldrivestability maxvalue="20000" />
+    <radar range="180000"/>	<!-- I be AWACS, muthafucka -->
+    <modifiers>
+      <!-- <shield rechargerate="10" capacity="10" rechargedelay="0.1" /> -->
+      <weapon heat="0.01" />
+    </modifiers>
+  </add>
+  <replace sel="/macros/macro[@name='storage_ter_s_xperimental_01_a_macro']/properties/cargo/@tags"		>container solid liquid condensate</replace>
+  <replace sel="/macros/macro[@name='storage_ter_s_xperimental_01_a_macro']/properties/cargo/@max"		>1000000</replace>
+  <replace sel="/macros/macro[@name='ship_ter_s_xperimental_01_a_macro']/properties/hull/@max"			>1000000</replace>
+  <replace sel="/macros/macro[@name='shield_ter_s_xperimental_01_mk5_macro']/properties/recharge/@max"		>1000000</replace>
+  <replace sel="/macros/macro[@name='shield_ter_s_xperimental_01_mk5_macro']/properties/recharge/@rate"		>1000</replace>
+  <replace sel="/macros/macro[@name='shield_ter_s_xperimental_01_mk5_macro']/properties/recharge/@delay"	>1</replace>
+  <replace sel="/macros/macro[@name='ship_ter_s_xperimental_01_a_macro']/properties/people/@capacity"		>1000000</replace>
+
+  <!-- Try to get to 1km/s 250m/s� combat and 15km/s 1km/s� travel -->
+  <replace sel="/macros/macro[@name='ship_ter_s_xperimental_01_a_macro']/properties/jerk">
+    <jerk>
+      <forward accel="1" decel="1" />
+      <forward_boost accel="1" />
+      <forward_travel accel="3" decel="3" />
+      <strafe value="1" />
+      <angular value="1" />
+    </jerk>
+  </replace>
+  <replace sel="/macros/macro[@name='ship_ter_s_xperimental_01_a_macro']/properties/physics">
+    <physics mass="1">
+      <!-- With exactly zero inertia, piloting feels very nice, but
+	   autopilot (and even the Enter menu) constantly jiggles back and forth.
+	   Also overshoots gates and disables autopilot constantly, very annoying.
+	   If I set it to a very small value can I fix the latter?
+      -->
+      <inertia pitch="0" yaw="0" roll="1" />
+      <drag forward="1" reverse="1" horizontal="1" vertical="1" pitch="1" yaw="1" roll="1" />
+      <accfactors forward="1.5" reverse="1.5" />
+    </physics>
+  </replace>
+
+  <!-- M-class engines -->
+  <replace sel="/macros/macro[@name='ship_ter_s_xperimental_01_a_macro']/properties/thrusters/@tags"				> medium</replace>
+  <replace sel="/components/component[@name='ship_ter_s_xperimental_01']/connections/connection[@name='con_engine_01']/@tags"	>advanced engine medium</replace>
+  <replace sel="/components/component[@name='ship_ter_s_xperimental_01']/connections/connection[@name='con_engine_02']/@tags"	>advanced engine medium</replace>
+
+  <!-- M-class weapons & allow terran high energy weapons -->
+  <replace sel="/components/component[@name='ship_ter_s_xperimental_01']/connections/connection[@name='con_weapon_01']/@tags"		>advanced highpower combat platformcollision ship_ter_s_xperimental_01 medium weapon symmetry symmetry_left symmetry_1</replace>
+  <replace sel="/components/component[@name='ship_ter_s_xperimental_01']/connections/connection[@name='con_weapon_02']/@tags"		>advanced highpower combat platformcollision ship_ter_s_xperimental_01 medium weapon symmetry symmetry_left symmetry_2</replace>
+  <replace sel="/components/component[@name='ship_ter_s_xperimental_01']/connections/connection[@name='con_weapon_03']/@tags"		>advanced highpower combat platformcollision ship_ter_s_xperimental_01 medium weapon symmetry symmetry_left symmetry_3</replace>
+  <replace sel="/components/component[@name='ship_ter_s_xperimental_01']/connections/connection[@name='con_weapon_04']/@tags"		>advanced highpower combat platformcollision ship_ter_s_xperimental_01 medium weapon symmetry symmetry_right symmetry_3</replace>
+  <replace sel="/components/component[@name='ship_ter_s_xperimental_01']/connections/connection[@name='con_weapon_05']/@tags"		>advanced highpower combat platformcollision ship_ter_s_xperimental_01 medium weapon symmetry symmetry_right symmetry_2</replace>
+  <replace sel="/components/component[@name='ship_ter_s_xperimental_01']/connections/connection[@name='con_weapon_06']/@tags"		>advanced highpower combat platformcollision ship_ter_s_xperimental_01 medium weapon symmetry symmetry_right symmetry_1</replace>
+
+  <!-- <replace sel="/macros/macro[@name='ship_ter_s_xperimental_01_a_macro']/properties/storage/@missile"		>1000000</replace> -->
+  <!-- <replace sel="/components/component[@name='ship_ter_s_xperimental_01']/connections/connection[@name='con_missilelauncher_01']/@tags"	>advanced missile small medium weapon</replace> -->
+  <!-- what about if we mount a sapporo on this launcher loooool -->
+  <!-- <replace sel="/components/component[@name='ship_ter_s_xperimental_01']/connections/connection[@name='con_missilelauncher_01']/@tags"	>large mandatory ship_ter_l_flagship_01 weapon</replace> -->
+  <!-- Max 10 forward weapons, so remove the missile launcher -->
+  <remove sel="/components/component[@name='ship_ter_s_xperimental_01']/connections/connection[@name='con_missilelauncher_01']" />
+
+  <add sel="/components/component[@name='ship_ter_s_xperimental_01']/connections">
+
+      <connection name="con_weapon_07" tags="advanced highpower combat platformcollision ship_ter_s_xperimental_01 medium weapon symmetry symmetry_left symmetry_4 ">
+        <offset>
+          <position x="-11.88466" y="-0.7421181" z="2.028337" />
+        </offset>
+      </connection>
+      <connection name="con_weapon_08" tags="advanced highpower combat platformcollision ship_ter_s_xperimental_01 medium weapon symmetry symmetry_left symmetry_5 ">
+        <offset>
+          <position x="-10.82304" y="-0.4060514" z="2.296598" />
+        </offset>
+      </connection>
+      <connection name="con_weapon_09" tags="advanced highpower combat platformcollision ship_ter_s_xperimental_01 medium weapon symmetry symmetry_right symmetry_5 ">
+        <offset>
+          <position x="10.82304" y="-0.4060514" z="2.296598" />
+        </offset>
+      </connection>
+      <connection name="con_weapon_10" tags="advanced highpower combat platformcollision ship_ter_s_xperimental_01 medium weapon symmetry symmetry_right symmetry_4 ">
+        <offset>
+          <position x="11.88466" y="-0.7421181" z="2.028337" />
+        </offset>
+      </connection>
+
+  </add>
+
+
+
+</diff>
