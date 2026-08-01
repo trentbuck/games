@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff>
+  <replace sel="/macros/macro[@name='storage_ter_s_xperimental_01_a_macro']/properties/cargo">
+    <!-- Same as biggest freighter, rounded up to one significant figure -->
+    <cargo max="1000000" tags="container solid liquid condensate" />
+  </replace>
+</diff>

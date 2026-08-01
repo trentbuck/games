@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<content id="twb" name="twb" description="Turn X-Shuttle into do-all cheat pocket dreadnoughts" author="twb" version="100" date="2026-08-01" save="0" enabled="1">
+  <dependency id="ego_dlc_timelines" version="100" />
+  <dependency id="ego_dlc_terran" version="100" />
+</content>

@@ -1,12 +1,16 @@
 #!/usr/bin/python3
-# Convert *.cat + *.dat into *.zip.
+# Convert x.cat + x.dat into x.zip.
 # Only include .xml files (not big art assets).
 from pathlib import Path
 from zipfile import ZipFile, ZIP_DEFLATED
 root = Path('/mnt/c/Program Files (x86)/Steam/steamapps/common/X4 Foundations')
 keywords = {
-    'ter_s_xperimental',
+    '_s_racer_',
+    'ter_s_xperimental', 
+    # 'bor_s_scout_02',
     # 'gen_m_yacht',
+    # 'gen_s_racer',
+    # 'xl_battleship',
 }
 with ZipFile(root / 'TWB-XML.zip', mode='w', compression=ZIP_DEFLATED) as zipfile:
     for cat_path in root.glob('**/**.cat'):
@@ -24,3 +28,5 @@ with ZipFile(root / 'TWB-XML.zip', mode='w', compression=ZIP_DEFLATED) as zipfil
                     zipfile.writestr(str(prefix / asset_path), dat_handle.read(asset_bytes))
                 else:
                     dat_handle.seek(total_offset)
+            
+

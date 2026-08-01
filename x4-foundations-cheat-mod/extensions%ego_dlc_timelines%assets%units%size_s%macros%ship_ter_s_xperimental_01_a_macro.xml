@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff>
+  <replace sel="/macros/macro/properties/hull/@max">10000000</replace>
+  <!-- WARNING: if you allocate e.g. 1M crew, every time you kill someone the level-up code will seem to hang the game!
+       Also you will end up with dozens of people with the same name, because there is only a few possible crew member names.
+       Biggest ship in 9.0 has 612 crew.
+       Mean crew sizes: 2 S, 11 M, 68 L, 164 XL.
+  -->
+  <replace sel="/macros/macro/properties/people/@capacity">1000</replace>
+  <!-- I *could* hack the shield by editing the unique Mk5 shield, but -->
+  <add sel="/macros/macro[@name='ship_ter_s_xperimental_01_a_macro']/properties">
+    <traveldrivestability maxvalue="20000" />
+    <radar range="200000"/>	<!-- I be AWACS, muthafucka -->
+    <modifiers>
+      <shield rechargerate="50" capacity="2000" rechargedelay="0.1" />
+      <weapon heat="0.01" />
+    </modifiers>
+  </add>
+  <!-- Try to get to 1km/s 250m/s² combat and 15km/s 1km/s² travel -->
+  <replace sel="/macros/macro[@name='ship_ter_s_xperimental_01_a_macro']/properties/physics">
+    <!-- With exactly zero inertia, piloting feels very nice, but
+	 autopilot (and even the Enter menu) constantly jiggles back and forth.
+	 Also overshoots gates and disables autopilot constantly, very annoying.
+	 If I set it to a very small value can I fix the latter?
+    
+         To get an idea of what is a best "credible" number...
+
+	 Mass:				min 0.25;	mean 4XS 10S 39M 297L 1121XL
+	 Inertia pitch:			min 0.0025;	mean 1XS  3S  9M 221L 1942XL
+	 Inertia yaw:			min 0.0025;	mean 1XS  3S  9M 221L 1942XL
+	 Inertia roll:			min 0.0025;	mean 1XS  2S  8M 189L 1378XL
+	 Drag forward:			min 0.07;	mean 2XS  4S  8M  90L  352XL
+	 Drag reverse:			min 0.07;	mean 7XS 17S 30M 378L 1408XL
+	 Drag horizontal:		min 0.07;	mean 6XS  5S 17M  80L  379XL
+	 Drag vertical:			min 0.07;	mean 6XS  5S 17M  80L  379XL
+	 Drag pitch:			min 0.005;	mean 1XS  4S 13M 132L  877XL
+	 Drag yaw:			min 0.005;	mean 1XS  4S 13M 133L  877XL
+	 Drag roll:			min 0.005;	mean 1XS  4S 13M 130L  880XL
+	 Accfactors forward:		max 1.85;	mean 1XS  1S  1M   1L    1XL
+	 Accfactors reverse:		max 1.3;	mean 1XS  1S  1M   1L    1XL
+	 Accfactors horizontal:		max 2.25;	mean 1XS  1S  1M   1L    1XL
+	 Accfactors vertical:		max 2.25;	mean 1XS  1S  1M   1L    1XL
+	 Jerk forward accel:		max 1;		mean -XS  0S  0M   0L    0XL
+	 Jerk forward decel:		max 1;		mean -XS  1S  1M   1L    1XL
+	 Jerk forward ratio:		min 3;		mean -XS  3S  3M   3L    3XL
+	 Jerk foward boost accel:	max 1;		mean -XS  0S  0M   0L    0XL
+	 Jerk forward boost decel:	max 1;		mean -XS  -S  -M   -L    -XL
+	 Jerk forward boost ratio:	min 2;		mean -XS  3S  3M   3L    3XL
+	 Jerk forward travel accel:	max 1;		mean -XS  0S  0M   0L    0XL
+	 Jerk forward travel decel:	max 0.9;	mean -XS  1S  1M   1L    1XL
+	 Jerk forward travel ratio:	min 2;		mean -XS  4S  3M   3L    3XL
+	 Jerk strafe value:		max 1;		mean -XS  1S  1M   0L    0XL 
+	 Jerk angular value:		max 1;		mean -XS  1S  1M   0L    0XL 
+    -->
+    <!-- This is working well but it's a touch slower than I would like. -->
+    <!-- <physics mass="0.5"> -->
+    <!--   <inertia pitch="0.25" yaw="0.25" roll="0.4" /> -->
+    <!--   <drag forward="2" reverse="7" horizontal="6" vertical="6" pitch="1" yaw="1" roll="1" /> -->
+    <!--   <accfactors forward="1.85" reverse="1.3" horizonal="2.25" vertical="2.25" /> -->
+    <!-- </physics> -->
+    <physics mass="1">
+      <inertia pitch="1" yaw="1" roll="0.8" />
+      <drag forward="1" reverse="3" horizontal="1" vertical="1" pitch="2" yaw="2" roll="22" />
+      <accfactors forward="1.8" reverse="1.3" horizonal="2.25" vertical="2.25" />
+    </physics>
+  </replace>
+  <replace sel="/macros/macro[@name='ship_ter_s_xperimental_01_a_macro']/properties/jerk">
+    <!-- This is working well but it's a touch slower than I would like. -->
+    <!-- <jerk> -->
+    <!--   <forward		accel="1" decel="1" ratio="3" /> -->
+    <!--   <forward_boost	accel="1" decel="1" ratio="2" /> -->
+    <!--   <forward_travel	accel="1" decel="0.9" ratio="2" /> -->
+    <!--   <strafe   value="1" /> -->
+    <!--   <angular  value="1" /> -->
+    <!-- </jerk> -->
+    <jerk>
+      <forward		accel="1" decel="1" />
+      <forward_boost	accel="1" decel="1" />
+      <forward_travel	accel="1" decel="1" />
+    </jerk>
+
+  </replace>
+
+  <!-- M-class engines (I don't think this one actually matters) -->
+  <replace sel="/macros/macro[@name='ship_ter_s_xperimental_01_a_macro']/properties/thrusters/@tags">medium</replace>
+
+</diff>
