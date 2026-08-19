@@ -4,148 +4,19 @@ import subprocess
 import json
 import pprint
 
-# from jsonpath_ng import jsonpath, parse
-# print(parse('Components[Type="MGSC.Difficulty"]').find(dat))
-
 src_path = pathlib.Path('slot_0_session.dat')
 dst_path = pathlib.Path('slot_1_session.dat')
 subprocess.check_call(['cp', '--backup=numbered', '--force', dst_path, dst_path])
 dat = json.loads(src_path.read_bytes()) # read_bytes because UTF-8 *with* BOM
-#help(json.dumps)
 
-# mercenaries, = [d['Content']
-#                 for d in dat['Components']
-#                 if d['Type'] == 'MGSC.Mercenaries']
-
-# all_classes = {'scouts_of_hades', 'eclipse_blades', 'tifton_elite',
-#     'phoenix_brigade', 'doppelganger_pack', 'golem_group', 'unit_317',
-#     'tunnel_rats', 'valkyrie_squad', 'cobra', 'tongkong',
-#     'angels_of_spades', 'martian_mech',
-# }
-# mercenaries['UnlockedClasses'] = sorted(all_classes | set(mercenaries['UnlockedClasses'])) # mainly for early tunnel_rats
-# if False:
-#     # This isn't working AFAICT
-#     # I think instead we need to add mercenary_chip items to the inventory...
-#     all_mercs = {
-#         'auberon_lukas',
-#         'bob_denarre',
-#         'edward_lowrance',
-#         'francis_reid_daly',
-#         'hannah_reich',
-#         'Isabella_capet',
-#         'jacques_kennet',
-#         'jan_shrammert',
-#         'kenzie_yukio',
-#         'laksha_saminath',
-#         'marika_wulfnod',
-#         'maximilian_rohr',
-#         'niko_medich',
-#         'persival_fawcett',
-#         'priya_marlon',
-#         'victoria_boudicca',
-#     }
-#     mercenaries['UnlockedMercenaries'] = sorted(all_mercs | set(mercenaries['UnlockedMercenaries']))
-#     # Don't add any mercenaries, but give already-bred mercenaries best stats of all mercenaries.
-
-
-# # Note this excludes perks provided by class!
-# # Note this excludes the "rank_N" perks that implement levelling up!
-# all_perks = [
-#     # {'Parameters': [], 'AIParameters': [], 'PerkId': 'rank_0', 'NextPerkId': 'rank_1', 'LevelUpActionType': 'AnyKill', 'CurrentExp': '0', 'ExpPerAction': '1', 'MaxExp': '7', 'PerkType': 'Rank'},
-#     {'Parameters': [{'PerkId': 'assault_reflex_basic', 'NextPerkId': 'assault_reflex_advanced', 'Name': 'IDuration', 'ValType': 'Int', 'IntVal': '2'}, {'Name': 'ICooldown', 'ValType': 'Int', 'IntVal': '12'}, {'Name': 'IActivation', 'ValType': 'Int', 'IntVal': '80'}, {'Name': 'IAddedAP', 'ValType': 'Int', 'IntVal': '1'}], 'AIParameters': [], 'LevelUpActionType': 'EnemyAttackMissed', 'CurrentExp': '10', 'ExpPerAction': '5', 'MaxExp': '20', 'PerkType': 'Trigger'},
-#     {'Parameters': [{'PerkId': 'athletics_basic', 'NextPerkId': 'athletics_advanced', 'Name': 'FSprintAccDebuff', 'ValType': 'Float', 'FloatVal': '-0.35'}], 'AIParameters': [], 'LevelUpActionType': 'Run', 'CurrentExp': '0', 'ExpPerAction': '1', 'MaxExp': '30', 'PerkType': 'Passive'},
-#     {'Parameters': [{'PerkId': 'battle_physicist_basic', 'NextPerkId': 'battle_physicist_advanced', 'Name': 'FEnergySaving', 'ValType': 'Float', 'FloatVal': '0.2'}], 'AIParameters': [], 'LevelUpActionType': 'DisassembleBatteryGuns', 'CurrentExp': '0', 'ExpPerAction': '5', 'MaxExp': '20', 'PerkType': 'Passive'},
-#     {'Parameters': [{'PerkId': 'berserk_gang_basic', 'NextPerkId': 'berserk_gang_advanced', 'Name': 'IDuration', 'ValType': 'Int', 'IntVal': '6'}, {'Name': 'ICooldown', 'ValType': 'Int', 'IntVal': '14'}, {'Name': 'IActivation', 'ValType': 'Int', 'IntVal': '80'}, {'Name': 'IHealthRegen', 'ValType': 'Int', 'IntVal': '4'}, {'Name': 'IPainRegen', 'ValType': 'Int', 'IntVal': '3'}], 'AIParameters': [], 'LevelUpActionType': 'ReceiveDamagingWound', 'CurrentExp': '0', 'ExpPerAction': '10', 'MaxExp': '20', 'PerkType': 'Trigger'},
-#     {'Parameters': [{'PerkId': 'blind_fury_basic', 'NextPerkId': 'blind_fury_advanced', 'Name': 'IDuration', 'ValType': 'Int', 'IntVal': '3'}, {'Name': 'ICooldown', 'ValType': 'Int', 'IntVal': '9'}, {'Name': 'IActivation', 'ValType': 'Int', 'IntVal': '80'}, {'Name': 'FDamage', 'ValType': 'Float', 'FloatVal': '0.55'}], 'AIParameters': [], 'LevelUpActionType': 'PlayerHitted', 'CurrentExp': '10', 'ExpPerAction': '10', 'MaxExp': '20', 'PerkType': 'Trigger'},
-#     {'Parameters': [{'PerkId': 'cannibalism_basic', 'NextPerkId': 'cannibalism_advanced', 'Name': 'IDuration', 'ValType': 'Int', 'IntVal': '3'}, {'Name': 'ICooldown', 'ValType': 'Int', 'IntVal': '15'}, {'Name': 'IActivation', 'ValType': 'Int', 'IntVal': '80'}, {'Name': 'FDamage', 'ValType': 'Float', 'FloatVal': '0.45'}], 'AIParameters': [], 'LevelUpActionType': 'EatRawHumanMeat', 'CurrentExp': '0', 'ExpPerAction': '10', 'MaxExp': '20', 'PerkType': 'Trigger'},
-#     {'Parameters': [{'PerkId': 'carnage_basic', 'NextPerkId': 'carnage_advanced', 'Name': 'IDuration', 'ValType': 'Int', 'IntVal': '2'}, {'Name': 'ICooldown', 'ValType': 'Int', 'IntVal': '20'}, {'Name': 'IActivation', 'ValType': 'Int', 'IntVal': '120'}, {'Name': 'FRestoreAP', 'ValType': 'Float', 'FloatVal': '0.7'}], 'AIParameters': [], 'LevelUpActionType': 'OnMeleeWoundInflict', 'CurrentExp': '0', 'ExpPerAction': '10', 'MaxExp': '20', 'PerkType': 'Trigger'},
-#     {'Parameters': [{'PerkId': 'cauterize_basic', 'NextPerkId': 'cauterize_advanced', 'Name': 'IDuration', 'ValType': 'Int', 'IntVal': '3'}, {'Name': 'ICooldown', 'ValType': 'Int', 'IntVal': '7'}, {'Name': 'IActivation', 'ValType': 'Int', 'IntVal': '40'}, {'Name': 'BBurnImmune', 'ValType': 'Boolean', 'BoolVal': 'True'}, {'Name': 'IHealthRegen', 'ValType': 'Int', 'IntVal': '6'}], 'AIParameters': [], 'LevelUpActionType': 'OnTakingBurn', 'CurrentExp': '0', 'ExpPerAction': '10', 'MaxExp': '20', 'PerkType': 'Trigger'},
-#     {'Parameters': [{'PerkId': 'cautious_basic', 'NextPerkId': 'cautious_advanced', 'Name': 'IDuration', 'ValType': 'Int', 'IntVal': '5'}, {'Name': 'ICooldown', 'ValType': 'Int', 'IntVal': '22'}, {'Name': 'IActivation', 'ValType': 'Int', 'IntVal': '120'}, {'Name': 'FCritChance', 'ValType': 'Float', 'FloatVal': '0.3'}, {'Name': 'FCritDamage', 'ValType': 'Float', 'FloatVal': '0.5'}], 'AIParameters': [], 'LevelUpActionType': 'NoticeHiddenEnemy', 'CurrentExp': '0', 'ExpPerAction': '10', 'MaxExp': '20', 'PerkType': 'Trigger'},
-#     {'Parameters': [{'PerkId': 'cold_weapon_wielding_basic', 'NextPerkId': 'cold_weapon_wielding_advanced', 'Name': 'FMeleeAccuracy', 'ValType': 'Float', 'FloatVal': '0.15'}], 'AIParameters': [], 'LevelUpActionType': 'MeleeHitOnEnemy', 'CurrentExp': '0', 'ExpPerAction': '5', 'MaxExp': '20', 'PerkType': 'Passive'},
-#     {'Parameters': [{'PerkId': 'covermaster_basic', 'NextPerkId': 'covermaster_advanced', 'Name': 'ICoverOverallBonus', 'ValType': 'Int', 'IntVal': '15'}], 'AIParameters': [], 'LevelUpActionType': 'EnemyAttackMissed', 'CurrentExp': '0', 'ExpPerAction': '2', 'MaxExp': '20', 'PerkType': 'Passive'},
-#     {'Parameters': [{'PerkId': 'cqc_specialist_master', 'NextPerkId': 'cqc_specialist_legend', 'Name': 'FScatter', 'ValType': 'Float', 'FloatVal': '-0.35'}, {'Name': 'FRangeAccuracy', 'ValType': 'Float', 'FloatVal': '0.2'}], 'AIParameters': [], 'LevelUpActionType': 'ShotRangedWeapon', 'CurrentExp': '22', 'ExpPerAction': '2', 'MaxExp': '80', 'PerkType': 'Passive'},
-#     {'Parameters': [{'PerkId': 'dirty_shot_basic', 'NextPerkId': 'dirty_shot_advanced', 'Name': 'IDuration', 'ValType': 'Int', 'IntVal': '1'}, {'Name': 'ICooldown', 'ValType': 'Int', 'IntVal': '6'}, {'Name': 'IActivation', 'ValType': 'Int', 'IntVal': '40'}, {'Name': 'IEnemyStunDuration', 'ValType': 'Int', 'IntVal': '1'}, {'Name': 'IEnemyCount', 'ValType': 'Int', 'IntVal': '1'}], 'AIParameters': [], 'LevelUpActionType': 'OnCrit', 'CurrentExp': '0', 'ExpPerAction': '10', 'MaxExp': '20', 'PerkType': 'Trigger'},
-#     {'Parameters': [{'PerkId': 'fire_transfer_advanced', 'NextPerkId': 'fire_transfer_master', 'Name': 'IDuration', 'ValType': 'Int', 'IntVal': '2'}, {'Name': 'ICooldown', 'ValType': 'Int', 'IntVal': '4'}, {'Name': 'IActivation', 'ValType': 'Int', 'IntVal': '10'}, {'Name': 'FCritChance', 'ValType': 'Float', 'FloatVal': '0.55'}, {'Name': 'BActionPointDuration', 'ValType': 'Boolean', 'BoolVal': 'True'}], 'AIParameters': [], 'LevelUpActionType': 'AnyKill', 'CurrentExp': '8', 'ExpPerAction': '2', 'MaxExp': '50', 'PerkType': 'Trigger'},
-#     {'Parameters': [{'PerkId': 'gear_maintenance_basic', 'NextPerkId': 'gear_maintenance_advanced', 'Name': 'FPhysicalResists', 'ValType': 'Float', 'FloatVal': '0.15'}, {'Name': 'FArmorDurability', 'ValType': 'Float', 'FloatVal': '0.15'}], 'AIParameters': [], 'LevelUpActionType': 'PhysicalDmgAbsorbedByResist', 'CurrentExp': '4', 'ExpPerAction': '2', 'MaxExp': '20', 'PerkType': 'Passive'},
-#     {'Parameters': [{'PerkId': 'handmade_shotgun_ammo_basic', 'NextPerkId': 'handmade_shotgun_ammo_advanced', 'Name': 'FShellAmmoDamage', 'ValType': 'Float', 'FloatVal': '0.2'}], 'AIParameters': [], 'LevelUpActionType': 'ShotShellsAmmo', 'CurrentExp': '0', 'ExpPerAction': '2', 'MaxExp': '20', 'PerkType': 'Passive'},
-#     {'Parameters': [{'PerkId': 'marauder_basic', 'NextPerkId': 'marauder_advanced', 'Name': 'FLootCorpseItem', 'ValType': 'Float', 'FloatVal': '0.3'}, {'Name': 'FLootStorageItem', 'ValType': 'Float', 'FloatVal': '0.3'}], 'AIParameters': [], 'LevelUpActionType': 'LootUniqCorpse', 'CurrentExp': '0', 'ExpPerAction': '1', 'MaxExp': '20', 'PerkType': 'Passive'},
-#     {'Parameters': [{'PerkId': 'military_training_legend', 'NextPerkId': {}, 'Name': 'IStarvStanceBonus', 'ValType': 'Int', 'IntVal': '-5'}], 'AIParameters': [], 'LevelUpActionType': 'WeightMove', 'CurrentExp': '0', 'ExpPerAction': '0', 'MaxExp': '0', 'PerkType': 'Passive'},
-#     {'Parameters': [{'PerkId': 'reaction_training_basic', 'NextPerkId': 'reaction_training_advanced', 'Name': 'FDodge', 'ValType': 'Float', 'FloatVal': '0.1'}], 'AIParameters': [], 'LevelUpActionType': 'EnemyAttackMissed', 'CurrentExp': '0', 'ExpPerAction': '4', 'MaxExp': '20', 'PerkType': 'Passive'},
-#     {'Parameters': [{'PerkId': 'reinforced_battery_basic', 'NextPerkId': 'reinforced_battery_advanced', 'Name': 'FBatteryAmmoDamage', 'ValType': 'Float', 'FloatVal': '0.15'}], 'AIParameters': [], 'LevelUpActionType': 'OnAttackWithBatteryAmmo', 'CurrentExp': '0', 'ExpPerAction': '2', 'MaxExp': '20', 'PerkType': 'Passive'},
-#     {'Parameters': [{'PerkId': 'revealing_flame_basic', 'NextPerkId': 'revealing_flame_advanced', 'Name': 'IDuration', 'ValType': 'Int', 'IntVal': '8'}, {'Name': 'ICooldown', 'ValType': 'Int', 'IntVal': '12'}, {'Name': 'IActivation', 'ValType': 'Int', 'IntVal': '80'}, {'Name': 'IRevealRange', 'ValType': 'Int', 'IntVal': '4'}, {'Name': 'BRevealingSignal', 'ValType': 'Boolean', 'BoolVal': 'True'}], 'AIParameters': [], 'LevelUpActionType': 'PutFireOnEnemy', 'CurrentExp': '0', 'ExpPerAction': '10', 'MaxExp': '20', 'PerkType': 'Trigger'},
-#     {'Parameters': [{'PerkId': 'scholar_basic', 'NextPerkId': 'scholar_advanced', 'Name': 'IScholarCraft', 'ValType': 'Int', 'IntVal': '1'}], 'AIParameters': [], 'LevelUpActionType': 'OnProductionCraft', 'CurrentExp': '0', 'ExpPerAction': '1', 'MaxExp': '20', 'PerkType': 'Passive'},
-#     {'Parameters': [{'PerkId': 'shielding_basic', 'NextPerkId': 'shielding_advanced', 'Name': 'FElementalResists', 'ValType': 'Float', 'FloatVal': '0.25'}], 'AIParameters': [], 'LevelUpActionType': 'ElementalDmgAbsorbedByResist', 'CurrentExp': '0', 'ExpPerAction': '4', 'MaxExp': '20', 'PerkType': 'Passive'},
-#     {'Parameters': [{'PerkId': 'talent_beneficial_mutation', 'NextPerkId': {}, 'Name': 'BIgnoreInfection', 'ValType': 'Boolean', 'BoolVal': 'True'}, {'Name': 'FMissingHealthDamageIncrease', 'ValType': 'Float', 'FloatVal': '0.05'}], 'AIParameters': [], 'LevelUpActionType': 'None', 'CurrentExp': '0', 'ExpPerAction': '0', 'MaxExp': '0', 'PerkType': 'Talent'},
-#     {'Parameters': [{'PerkId': 'talent_dog_of_war', 'NextPerkId': '', 'Name': 'IHealthRegen', 'ValType': 'Int', 'IntVal': '2'}, {'Name': 'IPerkCooldownBonus', 'ValType': 'Int', 'IntVal': '-3'}], 'AIParameters': [], 'LevelUpActionType': 'None', 'CurrentExp': '0', 'ExpPerAction': '0', 'MaxExp': '0', 'PerkType': 'Talent'},
-#     {'Parameters': [{'PerkId': 'talent_dreamer', 'NextPerkId': '', 'Name': 'IQMorphGain', 'ValType': 'Int', 'IntVal': '-1'}, {'Name': 'IAILosBonus', 'ValType': 'Int', 'IntVal': '-1'}], 'AIParameters': [], 'LevelUpActionType': 'None', 'CurrentExp': '0', 'ExpPerAction': '0', 'MaxExp': '0', 'PerkType': 'Talent'},
-#     {'Parameters': [{'PerkId': 'talent_feel_no_pain', 'NextPerkId': {}, 'Name': 'BIgnorePain', 'ValType': 'Boolean', 'BoolVal': 'True'}, {'Name': 'FIncomeCritMult', 'ValType': 'Float', 'FloatVal': '-0.5'}], 'AIParameters': [], 'LevelUpActionType': 'None', 'CurrentExp': '0', 'ExpPerAction': '0', 'MaxExp': '0', 'PerkType': 'Talent'},
-#     {'Parameters': [{'PerkId': 'talent_field_medic', 'NextPerkId': '', 'Name': 'IFixationHeal', 'ValType': 'Int', 'IntVal': '3'}, {'Name': 'FImplantDropChance', 'ValType': 'Float', 'FloatVal': '0.25'}], 'AIParameters': [], 'LevelUpActionType': 'None', 'CurrentExp': '0', 'ExpPerAction': '0', 'MaxExp': '0', 'PerkType': 'Talent'},
-#     {'Parameters': [{'PerkId': 'talent_gunsmith', 'NextPerkId': {}, 'Name': 'FWeaponDurability', 'ValType': 'Float', 'FloatVal': '1.2'}, {'Name': 'FEquipWeaponWeight', 'ValType': 'Float', 'FloatVal': '-0.5'}], 'AIParameters': [], 'LevelUpActionType': 'None', 'CurrentExp': '0', 'ExpPerAction': '0', 'MaxExp': '0', 'PerkType': 'Talent'},
-#     {'Parameters': [{'PerkId': 'talent_invincible', 'NextPerkId': {}, 'Name': 'IResists', 'ValType': 'Int', 'IntVal': '12'}, {'Name': 'FWeightMeleeDmgIncrease', 'ValType': 'Float', 'FloatVal': '0.12'}, {'Name': 'IKiloDmgThreshold', 'ValType': 'Int', 'IntVal': '10'}], 'AIParameters': [], 'LevelUpActionType': 'None', 'CurrentExp': '0', 'ExpPerAction': '0', 'MaxExp': '0', 'PerkType': 'Talent'},
-#     {'Parameters': [{'PerkId': 'talent_ninjutsu', 'NextPerkId': '', 'Name': 'FWeightAffectDodge', 'ValType': 'Float', 'FloatVal': '0.6'}, {'Name': 'IThrowRangeBonus', 'ValType': 'Int', 'IntVal': '2'}], 'AIParameters': [], 'LevelUpActionType': 'None', 'CurrentExp': '0', 'ExpPerAction': '0', 'MaxExp': '0', 'PerkType': 'Talent'},
-#     {'Parameters': [{'PerkId': 'talent_one_man_army', 'NextPerkId': '', 'Name': 'BThirdWeaponSlot', 'ValType': 'Boolean', 'BoolVal': 'True'}, {'Name': 'FExplosionIncomeDamageMult', 'ValType': 'Float', 'FloatVal': '-0.5'}], 'AIParameters': [], 'LevelUpActionType': 'None', 'CurrentExp': '0', 'ExpPerAction': '0', 'MaxExp': '0', 'PerkType': 'Talent'},
-#     {'Parameters': [{'PerkId': 'talent_preparation', 'NextPerkId': '', 'Name': 'BBackstabResistIgnore', 'ValType': 'Boolean', 'BoolVal': 'True'}, {'Name': 'IRevealRange', 'ValType': 'Int', 'IntVal': '4'}], 'AIParameters': [], 'LevelUpActionType': 'None', 'CurrentExp': '0', 'ExpPerAction': '0', 'MaxExp': '0', 'PerkType': 'Talent'},
-#     {'Parameters': [{'PerkId': 'talent_sniper', 'NextPerkId': {}, 'Name': 'IWeaponDistance', 'ValType': 'Int', 'IntVal': '2'}, {'Name': 'IEnemyHuntBonus', 'ValType': 'Int', 'IntVal': '-2'}], 'AIParameters': [], 'LevelUpActionType': 'None', 'CurrentExp': '0', 'ExpPerAction': '0', 'MaxExp': '0', 'PerkType': 'Talent'},
-#     {'Parameters': [{'PerkId': 'talent_strafe', 'NextPerkId': '', 'Name': 'BRunActions', 'ValType': 'Boolean', 'BoolVal': 'True'}, {'Name': 'FUsedApDodgeBonus', 'ValType': 'Float', 'FloatVal': '0.1'}], 'AIParameters': [], 'LevelUpActionType': 'None', 'CurrentExp': '0', 'ExpPerAction': '0', 'MaxExp': '0', 'PerkType': 'Talent'},
-#     {'Parameters': [{'PerkId': 'talent_tactical_reload', 'NextPerkId': '', 'Name': 'IAddedProj', 'ValType': 'Int', 'IntVal': '1'}, {'Name': 'IConstReload', 'ValType': 'Int', 'IntVal': '1'}], 'AIParameters': [], 'LevelUpActionType': 'None', 'CurrentExp': '0', 'ExpPerAction': '0', 'MaxExp': '0', 'PerkType': 'Talent'},
-#     {'Parameters': [{'PerkId': 'talent_thrift', 'NextPerkId': {}, 'Name': 'IAllConsumablesStack', 'ValType': 'Int', 'IntVal': '4'}, {'Name': 'FPhysicalResistsWeightModifier', 'ValType': 'Float', 'FloatVal': '0.4'}], 'AIParameters': [], 'LevelUpActionType': 'None', 'CurrentExp': '0', 'ExpPerAction': '0', 'MaxExp': '0', 'PerkType': 'Talent'},
-# ]
-
-# creature_datas = [
-#     e['CreatureData']
-#     for d in dat['Components']
-#     if d['Type'] == 'MGSC.Mercenaries'
-#     for e in d['Content']['Values']]
-# # for creature_data in creature_datas:
-# #     for key, value in creature_data.items():
-# #         print(key, value, sep='\t')
-# # FIXME: I AM NOT CONVINCED THIS IS ACTUALLY WORKING!
-# for creature_data in creature_datas:
-#     creature_data.update({
-#         'BaseHealth': '200',        # health, higher is better
-#         'MeleeDamage': {
-#             'damage': 'blunt',  # normally always blunt
-#             'minDmg': '9',      # normally 2-9
-#             'maxDmg': '21',     # normally 10-21
-#             'critChance': '0.08', # normally 0.04-0.08
-#             'critDmg': '0.5'},    # normally 0.3-0.5
-#         # crit chance
-#         'BaseMeleeAccuracy': '0.5', # melee accuracy
-#         'BaseRangeAccuracy': '0.5', # ranged accuracy
-#         'BaseDodge': '0.36',        # dodge chance
-#         'StarvationLimit': '3000',  # normally 1800-2400
-#         'BaseLosLevel':	'12',            # Sight Range (normal range 10-10)
-#         'PainThresholdBase': '16',  # normally 8-16
-#         'PainThresholdLimit': '16', # normally 8-16
-#         # 'PainThresholdRegen': '1',        # normally always 1
-#         'AttackWoundChanceMult': '1.25', # inflict wound chance modifier
-#         'ReceiveWoundChanceMult': '0.6', # receive wound chance modifier -- LOWER is better - normal range 0.6-1
-#         'BaseActionPoints': '3',         # normal range 0-0
-#         # 'BaseOverallDmgMult': '1',       # normal range 1-1
-#         # 'BaseOverallDodgeMult': '1',     # normal range 1-1
-#         # 'GrenadeDamageMult': '1',      # normal range 1-1
-#         'CoverBlockChanceBonus': '15', # normal range 0-15
-#         'CoverHitChanceBonus': '15',  # normal range 0-15
-#         'IgnoreInfection': True,      # True is better
-#         'IgnorePain': True,           # True is better
-#         # 'IgnoreStarvation': True,     # normally always False
-#         # 'LookAngle': '100',     # normally always 100 (increase this to 180 or 270???)
-#         'WeaponDistanceBonus': '2', # normally 0-2, only vicky has this
-        
-#         })
-
-
-if True:
+if True:                        # add unlock chips to ship inventory
     unlock_chips_quicklist = {
-        'tia_chip': ['tia_disc_assault_1', 
-                     'tia_shock_assault_1', # guess?
-                     ],
+        'tia_chip': ['tia_disc_assault_1', 'tia_shock_assault_1'],
         'sun_chip': ['sun_servo_backpack_1', 'sun_laser_powersword_1', 'sun_laser_marksman_1',],
         'low_chip': ['mre_pack_1', 'medical_kit_2', ],
         'chu_chip': ['chu_shotgun_1',],
-        # 'she_chip': ['she_plasma_assault',],
         'medium_chip': ['rifle_basic_ammo', 'military_axe_1', 'military_minigun_1', 'military_assault_1', 'military_smg_1',],
-        # armor unlocks in sets, so only need 1 of 4 a set named x_{helmet,armor,pants,boots}_y.
+        # NOTE: armor unlocks in sets, so only need 1 of 4 a set named x_{helmet,armor,pants,boots}_y.
         'high_chip': ['automap',
                       'heavy_armored_vest_1',
                       'military_power_armor_1', # 'military_power_helmet_1', 'military_power_pants_1', 'military_power_boots_1'
@@ -154,7 +25,7 @@ if True:
                      'rwa_power_armor_1', # 'rwa_power_helmet_1', 'rwa_power_pants_1', 'rwa_power_boots_1', # lv10, best anti-human
                      'rwa_heavy_armor_1', # 'rwa_heavy_helmet_1', 'rwa_heavy_pants_1', 'rwa_heavy_boots_1', # lv7, best anti-ssethtzentach
                      ],
-        'dil_chip': ['dil_battery_ammo', 'dil_sound_assault_1', 'dil_sound_pistol_2', 'dil_chaos_smg_1', 'dil_shock_sniper_1',],
+        'dil_chip': ['dil_battery_ammo', 'dil_sound_assault_1', 'dil_sound_pistol_2', 'dil_chaos_assault_1', 'dil_chaos_smg_1', 'dil_shock_sniper_1',],
         'fra_chip': ['fra_security_assault_1',],
         'sbn_chip': ['sbn_rail_assault_1', 'laser_sniper_1', 'laser_smg_1', 'sbn_rail_smg_1', 'sbn_rail_shotgun_1', 'sbn_rail_pistol_1',],
         'class_chip': {
@@ -174,7 +45,6 @@ if True:
         },
         'mercenary_chip': {
             'auberon_lukas',
-            'mirza_aishatu',
             'bob_denarre',
             'edward_lowrance',
             'francis_reid_daly',
@@ -186,6 +56,7 @@ if True:
             'laksha_saminath',
             'marika_wulfnod',
             'maximilian_rohr',
+            'mirza_aishatu',
             'niko_medich',
             'persival_fawcett',
             'priya_marlon',
@@ -223,240 +94,159 @@ if True:
         if d['Type'] == 'MGSC.MagnumCargo'
         for e in d['Content']['ShipCargo']]
     ship_cargos[0] += unlock_chips
-else:
-    # Just edit the list of unlocked recipes directly.
-    desirable_recipes = {
-        "army_pistol_4",
-        "automap",              # dataminer
-        "dil_battery_ammo",
-        "dil_chaos_smg_1",
-        "dil_chaos_assault_1",
-        "dil_sound_pistol_2",
-        "dil_sound_assault_1",
-        "dil_sound_shotgun_1",
-        "fra_security_assault_1",
-        "medical_kit_2",
-        'heavy_armored_vest_1',   # panzer vest
-        'military_axe_1',
-        "military_armored_vest_1", # veteran vest
-        "military_power_armor_1", # frame armor lv8
-        "military_power_boots_1",
-        "military_power_helmet_1",
-        "military_power_pants_1",
-        "mre_pack_1",           # best food?
-        "plasma_shotgun_2",
-        "rwa_heavy_armor_1",    # carnage armor lv7
-        "rwa_heavy_boots_1",
-        "rwa_heavy_helmet_1",
-        "rwa_heavy_pants_1",
-        "rwa_military_pistol_1",
-        "rwa_military_smg_1",   # best smg?
-        "rwa_power_armor_1",    # warlord armor lv10
-        "rwa_power_boots_1",
-        "rwa_power_helmet_1",
-        "rwa_power_pants_1",
-        "sbn_rail_assault_1",   # suppressed ammoless ~low-dam weapons
-        "sbn_rail_pistol_1",
-        "sbn_rail_shotgun_1",
-        "sbn_rail_smg_1",
-        'laser_sniper_1',
-        'laser_smg_1',
-        'chu_shotgun_1',          # best sg?
-        "sun_laser_powersword_1", # best sword w/ammo
-        "sun_servo_backpack_1", # best backpack
-        "tia_disc_assault_1",
-        "tia_shock_smg_1",      # guess
-      }
-    cargodict, = [
-        d['Content']
-        for d in dat['Components']
-        if d['Type'] == 'MGSC.MagnumCargo']
-    cargodict['UnlockedProductionItems'] = sorted(set(cargodict['UnlockedProductionItems']) | desirable_recipes)
-    
-
-
-armor_loadout = [
-    { # archangel backpack (best overall balance, plus cheatiest settings already gives me X4 slots)
-        "Type": "MGSC.PickupItem",
-        "Content": {
-            "StackCount": "1",
-            "_components": [
-                {
-                    "Type": "MGSC.BreakableItemComponent",
-                    "Content": {
-                        "CurrentPercent": "1",
-                        "MaxPenaltyPercent": "0",
-                        "MaxDurability": "220",
-                        "MinDurabilityAfterRepair": "0",
-                        "Unbreakable": "False"
-                    }
-                },
-                {
-                    "Type": "MGSC.ExtendedHeightComp",
-                    "Content": {
-                        # NOTE: 12->64 doesn't show up in the hover tooltip, but
-                        #       it DOES actually work when equipped.
-                        #       I'm a little paranoid about whether this will "eat" items in lower slots though...
-                    "ExtendedHeight": "64" # 12
-                    }
-                }
-            ],
-            "Id": "sun_servo_backpack_1",
-            "SingleWeight": "0.1",  # 1.3
-            "InventoryWidthSize": "1",
-            "ExaminedItem": "False",
-            "LockCounter": "0",
-            "IsUseRestricted": "False",
-            "ExaminedItem": "True",
-            "InventoryPos": "0 0"
-        }
-    }, 
-    {   # veteran vest (I picked this over panzer for the quick slots)
-        "Type": "MGSC.PickupItem",
-        "Content": {
-            "StackCount": "1",
-            "_components": [
-                {
-                    "Type": "MGSC.BreakableItemComponent",
-                    "Content": {
-                        "CurrentPercent": "1",
-                        "MaxPenaltyPercent": "0",
-                        "MaxDurability": "100",
-                        "MinDurabilityAfterRepair": "0",
-                        "Unbreakable": "False"
-                    }
-                }
-            ],
-            "Id": "military_armored_vest_1",
-            "SingleWeight": "0.1",  # 2.4
-            "InventoryWidthSize": "1",
-            "ExaminedItem": "True",
-            "LockCounter": "0",
-            "IsUseRestricted": "False",
-            "InventoryPos": "0 0"
-        }
-    },
-*[{
-              "Type": "MGSC.PickupItem",
-              "Content": {
+   
+if True:                        # add 20 backpacks & vests to inventory
+    pack_and_vest = [
+        { # archangel backpack (best overall balance, plus cheatiest settings already gives me X4 slots)
+            "Type": "MGSC.PickupItem",
+            "Content": {
                 "StackCount": "1",
                 "_components": [
-                  {
-                    "Type": "MGSC.BreakableItemComponent",
-                    "Content": {
-                      "CurrentPercent": "1",
-                      "MaxPenaltyPercent": "0",
-                      "MaxDurability": '1000', # cheat
-                      "MinDurabilityAfterRepair": "0",
-                      "Unbreakable": "False"
+                    {
+                        "Type": "MGSC.BreakableItemComponent",
+                        "Content": {
+                            "CurrentPercent": "1",
+                            "MaxPenaltyPercent": "0",
+                            "MaxDurability": "220",
+                            "MinDurabilityAfterRepair": "0",
+                            "Unbreakable": "False"
+                        }
+                    },
+                    {
+                        "Type": "MGSC.ExtendedHeightComp",
+                        "Content": {
+                            # NOTE: 12->64 doesn't show up in the hover tooltip, but
+                            #       it DOES actually work when equipped.
+                            #       I'm a little paranoid about whether this will "eat" items in lower slots though...
+                    "ExtendedHeight": "64" # 12
+                        }
                     }
-                  }
                 ],
-                "Id": armor_id,
-                "SingleWeight": "0.1", # cheat
+                "Id": "sun_servo_backpack_1",
+                "SingleWeight": "0.1",  # 1.3
+                "InventoryWidthSize": "1",
+                "ExaminedItem": "False",
+                "LockCounter": "0",
+                "IsUseRestricted": "False",
+                "ExaminedItem": "True",
+                "InventoryPos": "0 0"
+            }
+        }, 
+        {   # veteran vest (I picked this over panzer for the quick slots)
+            "Type": "MGSC.PickupItem",
+            "Content": {
+                "StackCount": "1",
+                "_components": [
+                    {
+                        "Type": "MGSC.BreakableItemComponent",
+                        "Content": {
+                            "CurrentPercent": "1",
+                            "MaxPenaltyPercent": "0",
+                            "MaxDurability": "100",
+                            "MinDurabilityAfterRepair": "0",
+                            "Unbreakable": "False"
+                        }
+                    }
+                ],
+                "Id": "military_armored_vest_1",
+                "SingleWeight": "0.1",  # 2.4
                 "InventoryWidthSize": "1",
                 "ExaminedItem": "True",
                 "LockCounter": "0",
                 "IsUseRestricted": "False",
                 "InventoryPos": "0 0"
-              }
             }
-  for armor_id in [
-          # As at 1.x, rwa_heavy is STRICTLY WORSE than rwa_power.
-          # 'rwa_heavy_armor_1', 'rwa_heavy_helmet_1', 'rwa_heavy_pants_1', 'rwa_heavy_boots_1', # lv7, best anti-ssethtzentach
-          'military_power_armor_1', 'military_power_helmet_1', 'military_power_pants_1', 'military_power_boots_1', # lv8 frame armor
-          'rwa_power_armor_1', 'rwa_power_helmet_1', 'rwa_power_pants_1', 'rwa_power_boots_1', # lv10, best anti-human
-  ]],
-]
+        }]
+    ship_cargos = [
+        e['Items']
+        for d in dat['Components']
+        if d['Type'] == 'MGSC.MagnumCargo'
+        for e in d['Content']['ShipCargo']]
+    ship_cargos[0] += [
+        item
+        for item in pack_and_vest
+        for _ in range(20)]          # 17 clones + Big Boss + some spares
 
-# Add top-tier gear to the Ship Cargo list.
-# We'll put everything in grid position 0 0.
-# This makes it not directly accessible, but you
-# can just hit the sort button to get it all repositioned neatly afterwards.
-# /Components/*[@Type="MGSC.MagnumCargo"]/ShipCargo[0]/Items
-# THIS IS WORKING, yay.
-ship_cargos = [
-    e['Items']
-    for d in dat['Components']
-    if d['Type'] == 'MGSC.MagnumCargo'
-    for e in d['Content']['ShipCargo']]
-ship_cargos[0] += [
-    x
-    for x in armor_loadout
-    for _ in range(17)          # 17 clones (excl. Big Boss)
-]
+
+if True:                        # non-customized armor
+    armor_ids = {
+        # As at 1.x, rwa_heavy is STRICTLY WORSE than rwa_power.
+        # 'rwa_heavy_armor_1', 'rwa_heavy_helmet_1', 'rwa_heavy_pants_1', 'rwa_heavy_boots_1', # lv7, best anti-ssethtzentach
+        # 'military_power_armor_1', 'military_power_helmet_1', 'military_power_pants_1', 'military_power_boots_1', # lv8 frame armor
+        'rwa_power_armor_1', 'rwa_power_helmet_1', 'rwa_power_pants_1', 'rwa_power_boots_1', # lv10, best anti-human
+        }
+    armor_loadout = [*[
+        {"Type": "MGSC.PickupItem",
+         "Content": {
+             "Id": armor_id,
+             "StackCount": "1",
+             "_components": [
+                 {"Type": "MGSC.BreakableItemComponent",
+                  "Content": {
+                      "CurrentPercent": "1",
+                      "MaxPenaltyPercent": "0",
+                      "MaxDurability": '1000', # cheat
+                      "MinDurabilityAfterRepair": "0",
+                      "Unbreakable": "False"}}],
+               "SingleWeight": "0.1", # cheat
+               "InventoryWidthSize": "1",
+               "ExaminedItem": "True",
+               "LockCounter": "0",
+               "IsUseRestricted": "False",
+               "InventoryPos": "0 0"}}
+        for armor_id in armor_ids]]
+    ship_cargos = [
+        e['Items']
+        for d in dat['Components']
+        if d['Type'] == 'MGSC.MagnumCargo'
+        for e in d['Content']['ShipCargo']]
+    ship_cargos[0] += [
+        x
+        for x in armor_loadout
+        for _ in range(20)]          # 17 clones + Big Boss + some spares
 
 # Weapons are more complicated because they have inline stats.
 # It might be better to craft them...
-example_weapons = [
-    {
-        "Type": "MGSC.PickupItem",
-        "Content": {
-            "StackCount": "1",
-            "_components": [
-                {
-                    "Type": "MGSC.BreakableItemComponent",
-                    "Content": {
-                        "CurrentPercent": "1",
-                        "MaxPenaltyPercent": "0",
-                        "MaxDurability": "220",
-                        "MinDurabilityAfterRepair": "0",
-                        "Unbreakable": "False"
-                    }
-                },
-                {
-                    "Type": "MGSC.WeaponComponent",
-                    "Content": {
-                        "InstanceId": "32f327b5-636d-4691-a73e-f257bda5f2a4",
-                        "CurrentAmmo": "21",
-                        "LastReloadAmount": "0",
-                        "Traits": [
-                            {
-                                "Parameters": [
-                                    {
-                                        "Name": "BSuppressor",
-                                        "ValType": "Boolean",
-                                        "BoolVal": "True"
-                                    }
-                                ],
-                                "TraitId": "suppressor",
-                                "ItemTraitType": "WeaponTrait",
-                                "TraitContext": "Passive"
-                            },
-                            {
-                                "Parameters": [
-                                    {
-                                        "Name": "FPierce",
-                                        "ValType": "Float",
-                                        "FloatVal": "0.7"
-                                    }
-                                ],
-                                "TraitId": "piercing",
-                                "ItemTraitType": "WeaponTrait",
-                                "TraitContext": "Passive"
-                            }
-                        ],
-                        "_weaponId": "sbn_rail_pistol_1",
-                        "_currentAmmoId": "implicted_em_ammo",
-                        "_currentFireModeId": "rifle_1"
-                    }
-                }
-            ],
-            "Id": "sbn_rail_pistol_1",
-            "SingleWeight": "1.52",
-            "InventoryWidthSize": "2",
-            "ExaminedItem": "True",
-            "LockCounter": "0",
-            "IsUseRestricted": "False",
-            "InventoryPos": "0 21"
-        }
-    },
-]
+if False:
+    example_weapon = {
+        'Type': 'MGSC.PickupItem',
+        'Content': {'Id': 'sbn_rail_pistol_1',
+                    'ExaminedItem': 'True',
+                    'InventoryPos': '0 21',
+                    'InventoryWidthSize': '2',
+                    'IsUseRestricted': 'False',
+                    'LockCounter': '0',
+                    'SingleWeight': '1.52',
+                    'StackCount': '1',
+                    '_components': [
+                        {'Type': 'MGSC.BreakableItemComponent',
+                         'Content': {'CurrentPercent': '1',
+                                     'MaxDurability': '220',
+                                     'MaxPenaltyPercent': '0',
+                                     'MinDurabilityAfterRepair': '0',
+                                     'Unbreakable': 'False'}},
+                        {'Type': 'MGSC.WeaponComponent',
+                         'Content': {'CurrentAmmo': '21',
+                                     'InstanceId': '32f327b5-636d-4691-a73e-f257bda5f2a4',
+                                     'LastReloadAmount': '0',
+                                     'Traits': [{'ItemTraitType': 'WeaponTrait',
+                                                 'TraitId': 'suppressor',
+                                                 'TraitContext': 'Passive',
+                                                 'Parameters': [{'BoolVal': 'True',
+                                                                 'Name': 'BSuppressor',
+                                                                 'ValType': 'Boolean'}]},
+                                                {'TraitId': 'piercing',
+                                                 'TraitContext': 'Passive',
+                                                 'ItemTraitType': 'WeaponTrait',
+                                                 'Parameters': [{'FloatVal': '0.7',
+                                                                 'Name': 'FPierce',
+                                                                 'ValType': 'Float'}]}],
+                                     '_currentAmmoId': 'implicted_em_ammo',
+                                     '_currentFireModeId': 'rifle_1',
+                                     '_weaponId': 'sbn_rail_pistol_1'}}]}}
 
-# Go through ALL the existing weapons/armor in the cargo hold and set their weight to 0.1kg?
 
-# Add to cargo hold all the items necessary to fully upgrade all ship tech trees?
-if True:
+if True: # Add to cargo hold all the items necessary to fully upgrade all ship tech trees? (except quest item)
     ship_cargos = [
         e['Items']
         for d in dat['Components']
@@ -573,75 +363,235 @@ if True:
                 "broken_weapon",
                 "wire",
                 "metal_tread",
-                
-        }
+        }]
+
+
+if True:   # pre-complete slow/expensive item & clone upgrade projects
+    # WARNING: I tried bumping the stats of armor up, but they then didn't take?
+    #          Therefore I did the upgrade in-game and then copied the ModificationsCount and stats over.
+    new_projects = [
+        # Clones
+        {'ProjectType': 'Mercenary',
+         'DevelopId': 'persival_fawcett',
+         'StartTime': '694339524866210000', # FIXME: is this appropriate?
+         'FinishTime': '694341979580480000', # FIXME: is this appropriate?
+         'ModificationsCount': '49',
+         'AppliedModifications': [
+             {'Key': 'mercenary_health', 'Value': '230'},
+             {'Key': 'mercenary_pain_threshold', 'Value': '30'},
+             {'Key': 'mercenary_dodge', 'Value': '0.5'},
+             {'Key': 'mercenary_starvation', 'Value': '3000'},
+             {'Key': 'mercenary_range_accuracy', 'Value': '0.45'}],
+         'CachedItems': [],
+         'IsInDevelopmentb': 'False',
+         'ModifyStartPrice': '0',
+         'UpcomingModifications': [],
+         'UpcomingModificationsCount': '0'},
+        # Classes
+        {'ProjectType': 'MercenaryClass',
+         'DevelopId': 'scouts_of_hades',
+         'StartTime': '694339524866210000', # FIXME: is this appropriate?
+         'FinishTime': '694341979580480000', # FIXME: is this appropriate?
+         'ModificationsCount': '4',
+         'AppliedModifications': [
+             {'Key': 'mercenaryclass_perk0', 'Value': 'cyber_compatibility_basic'},
+             {'Key': 'mercenaryclass_perk2', 'Value': 'steel_without_basic'},
+             {'Key': 'mercenaryclass_perk3', 'Value': 'battle_concentration_basic'},
+             {'Key': 'mercenaryclass_perk4', 'Value': 'reaction_training_basic'}],
+         'CachedItems': [],
+         'IsInDevelopment': 'False',
+         'ModifyStartPrice': '30',
+         'UpcomingModifications': [],
+         'UpcomingModificationsCount': '0'},
+        # Weapons
+        {'ProjectType': 'RangeWeapon',
+         'DevelopId': 'sbn_rail_assault_1',
+         'StartTime': '694339524866210000', # FIXME: is this appropriate?
+         'FinishTime': '694341979580480000', # FIXME: is this appropriate?
+         'AppliedModifications': [
+             {'Key': 'rangeweapon_max_durability', 'Value': '215'},
+             {'Key': 'rangeweapon_damage', 'Value': '150'},
+             {'Key': 'rangeweapon_crit_damage', 'Value': '2.5'},
+             {'Key': 'rangeweapon_accuracy', 'Value': '0.65'},
+             {'Key': 'rangeweapon_scatter_angle', 'Value': '0.9'}],
+         'CachedItems': [],
+         'IsInDevelopment': 'False',
+         'ModificationsCount': '40',
+         'ModifyStartPrice': '11',
+         'UpcomingModifications': [],
+         'UpcomingModificationsCount': '0'},
+        {'ProjectType': 'RangeWeapon',
+         'DevelopId': 'dil_chaos_assault_1',
+         'StartTime': '694339524866210000', # FIXME: is this appropriate?
+         'FinishTime': '694341979580480000', # FIXME: is this appropriate?
+         'ModificationsCount': '40',
+         'AppliedModifications': [
+             {'Key': 'rangeweapon_max_durability', 'Value': '145'},
+             {'Key': 'rangeweapon_weight', 'Value': '4.74'},
+             {'Key': 'rangeweapon_damage', 'Value': '136'},
+             {'Key': 'rangeweapon_crit_damage', 'Value': '2.05'},
+             {'Key': 'rangeweapon_accuracy', 'Value': '0.52'},
+             {'Key': 'rangeweapon_scatter_angle', 'Value': '3'},
+             {'Key': 'rangeweapon_reload_duration', 'Value': '5'},
+             {'Key': 'rangeweapon_magazine_capacity', 'Value': '35'}],
+         'CachedItems': [],
+         'IsInDevelopment': 'False',
+         'ModifyStartPrice': '11',
+         'UpcomingModifications': [],
+         'UpcomingModificationsCount': '0'},
+        {'ProjectType': 'MeleeWeapon',
+         'DevelopId': 'military_axe_1',
+         'StartTime': '694339524866210000', # FIXME: is this appropriate?
+         'FinishTime': '694341979580480000', # FIXME: is this appropriate?
+         'ModificationsCount': '11',
+         'AppliedModifications': [
+             {'Key': 'meleeweapon_max_durability', 'Value': '135'},
+             {'Key': 'meleeweapon_damage', 'Value': '71'},
+             {'Key': 'meleeweapon_crit_damage', 'Value': '1.95'},
+             {'Key': 'meleeweapon_accuracy', 'Value': '0.4'}],
+         'CachedItems': [],
+         'IsInDevelopment': 'False',
+         'ModifyStartPrice': '11',
+         'UpcomingModifications': [],
+         'UpcomingModificationsCount': '0'},
+
+        # Armor
+        {"ProjectType": "Armor",
+         "DevelopId": "rwa_power_armor_1",
+         'StartTime': '694339524866210000', # FIXME: is this appropriate?
+         'FinishTime': '694341979580480000', # FIXME: is this appropriate?
+         "IsInDevelopment": "False",
+         "ModificationsCount": "40",
+         "UpcomingModificationsCount": "0",
+      "ModifyStartPrice": "33",
+         "AppliedModifications": [
+             {"Key": "armor_resist_blunt", "Value": "40"},
+             {"Key": "armor_resist_fire", "Value": "40"},
+             {"Key": "armor_resist_pierce", "Value": "40"},
+             {"Key": "armor_resist_cold", "Value": "36"},
+             {"Key": "armor_resist_lacer", "Value": "38"},
+             {"Key": "armor_resist_shock", "Value": "36"},
+             {"Key": "armor_resist_beam", "Value": "36"},
+             {"Key": "armor_resist_poison", "Value": "36"}],
+         "UpcomingModifications": [],
+         "CachedItems": []},
+        {'ProjectType': 'Helmet',
+         'DevelopId': 'rwa_power_helmet_1',
+         'StartTime': '694339524866210000', # FIXME: is this appropriate?
+         'FinishTime': '694341979580480000', # FIXME: is this appropriate?
+         'ModificationsCount': '40',
+         'AppliedModifications': [
+             {'Key': 'helmet_resist_blunt', 'Value': '21'},
+             {'Key': 'helmet_resist_fire', 'Value': '19'},
+             {'Key': 'helmet_resist_pierce', 'Value': '21'},
+             {'Key': 'helmet_resist_cold', 'Value': '20'},
+             {'Key': 'helmet_resist_lacer', 'Value': '21'},
+             {'Key': 'helmet_resist_shock', 'Value': '19'},
+             {'Key': 'helmet_resist_beam', 'Value': '19'},
+             {'Key': 'helmet_resist_poison', 'Value': '18'}],
+         'CachedItems': [],
+         'IsInDevelopment': 'False',
+         'ModifyStartPrice': '13',
+         'UpcomingModifications': [],
+         'UpcomingModificationsCount': '0'},
+        {'ProjectType': 'Leggings',
+         'DevelopId': 'rwa_power_pants_1',
+         'StartTime': '694339524866210000', # FIXME: is this appropriate?
+         'FinishTime': '694341979580480000', # FIXME: is this appropriate?
+         'ModificationsCount': '40',
+         'AppliedModifications': [
+             {'Key': 'leggings_resist_blunt', 'Value': '30'},
+             {'Key': 'leggings_resist_fire', 'Value': '30'},
+             {'Key': 'leggings_resist_pierce', 'Value': '27'},
+             {'Key': 'leggings_resist_cold', 'Value': '27'},
+             {'Key': 'leggings_resist_lacer', 'Value': '29'},
+             {'Key': 'leggings_resist_shock', 'Value': '27'},
+             {'Key': 'leggings_resist_beam', 'Value': '27'},
+             {'Key': 'leggings_resist_poison', 'Value': '30'}],
+         'CachedItems': [],
+         'IsInDevelopment': 'False',
+         'ModifyStartPrice': '23',
+         'UpcomingModifications': [],
+         'UpcomingModificationsCount': '0'},
+        {'ProjectType': 'Boots',
+         'DevelopId': 'rwa_power_boots_1',
+         'StartTime': '694339524866210000', # FIXME: is this appropriate?
+         'FinishTime': '694341979580480000', # FIXME: is this appropriate?
+         'ModificationsCount': '40',
+         'AppliedModifications': [
+             {'Key': 'boots_resist_blunt', 'Value': '19'},
+             {'Key': 'boots_resist_fire', 'Value': '17'},
+             {'Key': 'boots_resist_pierce', 'Value': '19'},
+             {'Key': 'boots_resist_cold', 'Value': '16'},
+             {'Key': 'boots_resist_lacer', 'Value': '20'},
+             {'Key': 'boots_resist_shock', 'Value': '17'},
+             {'Key': 'boots_resist_beam', 'Value': '17'},
+             {'Key': 'boots_resist_poison', 'Value': '20'}],
+         'CachedItems': [],
+         'IsInDevelopment': 'False',
+         'ModifyStartPrice': '13',
+         'UpcomingModifications': [],
+         'UpcomingModificationsCount': '0'},
     ]
+    projects, = [
+        d['Content']['Values']
+        for d in dat['Components']
+        if d['Type'] == 'MGSC.MagnumProjects']
+    for new_project in new_projects:
+        if not any(new_project['DevelopId'] == p['DevelopId'] for p in projects):
+            projects.append(new_project)
+    # UPDATE: upgraded clones don't get the attribute benefits unless you reboot them.
+    #         You can do this from the clone upgrade scheme, AFTER the upgrade completes.
+    # UPDATE: upgraded classes don't affect already-assigned classes.
+    #         You can fix this by going to a clone's assigned class, changing it, then changing it back.
+    # UPDATE: when you modify an item, newly-made items change from
+    #         "rwa_power_helmet_1" to
+    #         "rwa_power_helmet_1_custom".
+    #         Any items you already had DON'T get upgraded.
+    #         You MUST unlock the ship's upgrade station, THEN
+    #         upgrade the item, THEN
+    #         make the armour/weapon item in the ship's factory station.
+    #         Then for the actual stat changes you have something like this in MGSC.MagnumProjects:
+    # See if we can fix that...
+    # UPDATE: too annoying, needs to go into .Traits._weaponId and stuff as well...
+    if False:
+        item_dicts = [
+            item['Content']
+            for d in dat['Components']
+            if d['Type'] == 'MGSC.MagnumCargo'
+            for e in d['Content']['ShipCargo']
+            for item in e['Items']]
+        develop_ids = {p['DevelopId'] for p in projects}
+        for i in item_dicts:
+            if i['Id'] in develop_ids:
+                i['Id'] = i['Id'] + '_custom'
+    else:
+        item_dicts = [
+            item['Content']
+            for d in dat['Components']
+            if d['Type'] == 'MGSC.MagnumCargo'
+            for e in d['Content']['ShipCargo']
+            for item in e['Items']]
+        for i in item_dicts:
+            if i['Id'] in {'rwa_power_armor_1', 'rwa_power_helmet_1', 'rwa_power_pants_1', 'rwa_power_boots_1'}:
+                i['Id'] = i['Id'] + '_custom'
+        
+    
 
-
-# import pprint
-# pprint.pprint(mercenaries)
-
-# pprint.pprint(dat)
-
-
-# UPDATE: when you modify an item it changes from
-#         "rwa_power_helmet_1" to
-#         "rwa_power_helmet_1_custom".
-#         Any items you already had DON'T get upgraded.
-#         You MUST unlock the ship's upgrade station, THEN
-#         upgrade the item, THEN
-#         make the armour/weapon item in the ship's factory station.
-#         Then for the actual stat changes you have something like this in MGSC.MagnumProjects:
-#         
-
-{
-    "ProjectType": "Helmet",
-    "DevelopId": "rwa_power_helmet_1",
-    "StartTime": "694339524866210000",
-    "FinishTime": "694342084866210000",
-    "IsInDevelopment": "False",
-    "ModificationsCount": "40",
-    "UpcomingModificationsCount": "0",
-    "ModifyStartPrice": "13",
-    "AppliedModifications": [
-        {
-            "Key": "helmet_resist_blunt",
-            "Value": "80"
-        },
-        {
-            "Key": "helmet_resist_fire",
-            "Value": "80"
-        },
-        {
-            "Key": "helmet_resist_pierce",
-            "Value": "80"
-        },
-        {
-            "Key": "helmet_resist_cold",
-            "Value": "80"
-        },
-        {
-            "Key": "helmet_resist_lacer",
-            "Value": "80"
-        },
-        {
-            "Key": "helmet_resist_shock",
-            "Value": "80"
-        },
-        {
-            "Key": "helmet_resist_beam",
-            "Value": "80"
-        },
-        {
-            "Key": "helmet_resist_poison",
-            "Value": "80"
-        }
-    ],
-    "UpcomingModifications": [],
-    "CachedItems": [
-        # The things you spent on the upgrades end up here.
-        # This is only so you get them back if you cancel it while it's in progress.
-    ]
-}
+# Go through ALL the existing weapons/armor in the cargo hold and set their weight to 0.1kg?
+# And mark them as "seen".
+if True:
+    item_dicts = [
+        item['Content']
+        for d in dat['Components']
+        if d['Type'] == 'MGSC.MagnumCargo'
+        for e in d['Content']['ShipCargo']
+        for item in e['Items']]
+    for i in item_dicts:
+        if 'ExaminedItem' in i:
+            i['ExaminedItem'] = 'True'
+        if 'SingleWeight' in i:
+            if float(i['SingleWeight']) > 0.1: # don't INCREASE ammo weight!
+                i['SingleWeight'] = '0.1'
 
 dst_path.write_text(json.dumps(dat, indent=2))
